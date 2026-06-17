@@ -4,7 +4,7 @@
 
 ### BillingAccountIamBinding <a name="BillingAccountIamBinding" id="@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBinding.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the BillingAccountIamBinding t
 
 The id of the existing BillingAccountIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ new BillingAccountIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#expression BillingAccountIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#title BillingAccountIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#description BillingAccountIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#expression BillingAccountIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#title BillingAccountIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#description BillingAccountIamBinding#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#expression BillingAccountIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#expression BillingAccountIamBinding#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#title BillingAccountIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#title BillingAccountIamBinding#title}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#description BillingAccountIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#description BillingAccountIamBinding#description}.
 
 ---
 
@@ -926,11 +926,11 @@ new BillingAccountIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.billingAccountId">BillingAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#billing_account_id BillingAccountIamBinding#billing_account_id}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#members BillingAccountIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#role BillingAccountIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.billingAccountId">BillingAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#billing_account_id BillingAccountIamBinding#billing_account_id}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#members BillingAccountIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#role BillingAccountIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingCondition">BillingAccountIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#id BillingAccountIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamBinding.BillingAccountIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#id BillingAccountIamBinding#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ public string BillingAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#billing_account_id BillingAccountIamBinding#billing_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#billing_account_id BillingAccountIamBinding#billing_account_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#members BillingAccountIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#members BillingAccountIamBinding#members}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#role BillingAccountIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#role BillingAccountIamBinding#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public BillingAccountIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#condition BillingAccountIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#condition BillingAccountIamBinding#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/billing_account_iam_binding#id BillingAccountIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/billing_account_iam_binding#id BillingAccountIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeStoragePoolTypes <a name="DataGoogleComputeStoragePoolTypes" id="@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypes.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleComputeStoragePo
 
 The id of the existing DataGoogleComputeStoragePoolTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ const dataGoogleComputeStoragePoolTypesConfig: dataGoogleComputeStoragePoolTypes
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypesConfig.property.storagePoolType">storagePoolType</a></code> | <code>string</code> | Name of the storage pool type. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypesConfig.property.zone">zone</a></code> | <code>string</code> | The name of the zone. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypesConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types#project DataGoogleComputeStoragePoolTypes#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePoolTypes.DataGoogleComputeStoragePoolTypesConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types#project DataGoogleComputeStoragePoolTypes#project}. |
 
 ---
 
@@ -905,7 +905,7 @@ public readonly storagePoolType: string;
 
 Name of the storage pool type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types#storage_pool_type DataGoogleComputeStoragePoolTypes#storage_pool_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types#storage_pool_type DataGoogleComputeStoragePoolTypes#storage_pool_type}
 
 ---
 
@@ -919,7 +919,7 @@ public readonly zone: string;
 
 The name of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types#zone DataGoogleComputeStoragePoolTypes#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types#zone DataGoogleComputeStoragePoolTypes#zone}
 
 ---
 
@@ -931,7 +931,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_storage_pool_types#project DataGoogleComputeStoragePoolTypes#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_storage_pool_types#project DataGoogleComputeStoragePoolTypes#project}.
 
 ---
 

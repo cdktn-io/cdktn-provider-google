@@ -4,7 +4,7 @@
 
 ### BigqueryConnectionIamBinding <a name="BigqueryConnectionIamBinding" id="@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BigqueryConnectionIamBindi
 
 The id of the existing BigqueryConnectionIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryconnecti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#expression BigqueryConnectionIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#title BigqueryConnectionIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#description BigqueryConnectionIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#expression BigqueryConnectionIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#title BigqueryConnectionIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#description BigqueryConnectionIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#expression BigqueryConnectionIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#expression BigqueryConnectionIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#title BigqueryConnectionIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#title BigqueryConnectionIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#description BigqueryConnectionIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#description BigqueryConnectionIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryconnecti
 | <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#connection_id BigqueryConnectionIamBinding#connection_id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#members BigqueryConnectionIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#role BigqueryConnectionIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#connection_id BigqueryConnectionIamBinding#connection_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#members BigqueryConnectionIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#role BigqueryConnectionIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingCondition">BigqueryConnectionIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#id BigqueryConnectionIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#location BigqueryConnectionIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#project BigqueryConnectionIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#id BigqueryConnectionIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#location BigqueryConnectionIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#project BigqueryConnectionIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#connection_id BigqueryConnectionIamBinding#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#connection_id BigqueryConnectionIamBinding#connection_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#members BigqueryConnectionIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#members BigqueryConnectionIamBinding#members}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#role BigqueryConnectionIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#role BigqueryConnectionIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition BigqueryConnectionIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#condition BigqueryConnectionIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#condition BigqueryConnectionIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#id BigqueryConnectionIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#id BigqueryConnectionIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#location BigqueryConnectionIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#location BigqueryConnectionIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_connection_iam_binding#project BigqueryConnectionIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_connection_iam_binding#project BigqueryConnectionIamBinding#project}.
 
 ---
 

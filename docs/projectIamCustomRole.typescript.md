@@ -4,7 +4,7 @@
 
 ### ProjectIamCustomRole <a name="ProjectIamCustomRole" id="@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role google_project_iam_custom_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role google_project_iam_custom_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRole.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ProjectIamCustomRole to im
 
 The id of the existing ProjectIamCustomRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ const projectIamCustomRoleConfig: projectIamCustomRole.ProjectIamCustomRoleConfi
 | <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.title">title</a></code> | <code>string</code> | A human-readable title for the role. |
 | <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.description">description</a></code> | <code>string</code> | A human-readable description for the role. |
-| <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#id ProjectIamCustomRole#id}. |
+| <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#id ProjectIamCustomRole#id}. |
 | <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.project">project</a></code> | <code>string</code> | The project that the service account will be created in. Defaults to the provider project configuration. |
 | <code><a href="#@cdktn/provider-google.projectIamCustomRole.ProjectIamCustomRoleConfig.property.stage">stage</a></code> | <code>string</code> | The current launch stage of the role. Defaults to GA. |
 
@@ -1031,7 +1031,7 @@ The names of the permissions this role grants when bound in an IAM policy.
 
 At least one permission must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#permissions ProjectIamCustomRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#permissions ProjectIamCustomRole#permissions}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly roleId: string;
 
 The camel case role id to use for this role. Cannot contain - characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#role_id ProjectIamCustomRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#role_id ProjectIamCustomRole#role_id}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly title: string;
 
 A human-readable title for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#title ProjectIamCustomRole#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#title ProjectIamCustomRole#title}
 
 ---
 
@@ -1081,7 +1081,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#deletion_policy ProjectIamCustomRole#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#deletion_policy ProjectIamCustomRole#deletion_policy}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly description: string;
 
 A human-readable description for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#description ProjectIamCustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#description ProjectIamCustomRole#description}
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#id ProjectIamCustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#id ProjectIamCustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ public readonly project: string;
 
 The project that the service account will be created in. Defaults to the provider project configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#project ProjectIamCustomRole#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#project ProjectIamCustomRole#project}
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly stage: string;
 
 The current launch stage of the role. Defaults to GA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/project_iam_custom_role#stage ProjectIamCustomRole#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_iam_custom_role#stage ProjectIamCustomRole#stage}
 
 ---
 

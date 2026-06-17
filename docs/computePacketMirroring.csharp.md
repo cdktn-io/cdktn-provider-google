@@ -4,7 +4,7 @@
 
 ### ComputePacketMirroring <a name="ComputePacketMirroring" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.Initializer"></a>
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the ComputePacketMirroring to 
 
 The id of the existing ComputePacketMirroring that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1128,7 +1128,7 @@ public string Url { get; set; }
 
 The URL of the forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
 
 ---
 
@@ -1182,9 +1182,9 @@ new ComputePacketMirroringConfig {
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of the rule. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.enable">Enable</a></code> | <code>string</code> | Indicates whether or not this packet mirroring takes effect. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilter">ComputePacketMirroringFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.priority">Priority</a></code> | <code>double</code> | Since only one rule can be active at a time, priority is used to break ties in the case of two rules that apply to the same instances. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.region">Region</a></code> | <code>string</code> | The Region in which the created address should reside. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a></code> | timeouts block. |
 
@@ -1270,7 +1270,7 @@ public ComputePacketMirroringCollectorIlb CollectorIlb { get; set; }
 
 collector_ilb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#collector_ilb ComputePacketMirroring#collector_ilb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#collector_ilb ComputePacketMirroring#collector_ilb}
 
 ---
 
@@ -1284,7 +1284,7 @@ public ComputePacketMirroringMirroredResources MirroredResources { get; set; }
 
 mirrored_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#mirrored_resources ComputePacketMirroring#mirrored_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#mirrored_resources ComputePacketMirroring#mirrored_resources}
 
 ---
 
@@ -1298,7 +1298,7 @@ public string Name { get; set; }
 
 The name of the packet mirroring rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#name ComputePacketMirroring#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#name ComputePacketMirroring#name}
 
 ---
 
@@ -1312,7 +1312,7 @@ public ComputePacketMirroringNetwork Network { get; set; }
 
 network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#network ComputePacketMirroring#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#network ComputePacketMirroring#network}
 
 ---
 
@@ -1333,7 +1333,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#deletion_policy ComputePacketMirroring#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#deletion_policy ComputePacketMirroring#deletion_policy}
 
 ---
 
@@ -1347,7 +1347,7 @@ public string Description { get; set; }
 
 A human-readable description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#description ComputePacketMirroring#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#description ComputePacketMirroring#description}
 
 ---
 
@@ -1364,7 +1364,7 @@ Indicates whether or not this packet mirroring takes effect.
 If set to FALSE, this packet mirroring
 policy will not be enforced on the network. The default is TRUE. Possible values: ["TRUE", "FALSE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#enable ComputePacketMirroring#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#enable ComputePacketMirroring#enable}
 
 ---
 
@@ -1378,7 +1378,7 @@ public ComputePacketMirroringFilter Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#filter ComputePacketMirroring#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#filter ComputePacketMirroring#filter}
 
 ---
 
@@ -1390,7 +1390,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1407,7 +1407,7 @@ public double Priority { get; set; }
 
 Since only one rule can be active at a time, priority is used to break ties in the case of two rules that apply to the same instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#priority ComputePacketMirroring#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#priority ComputePacketMirroring#priority}
 
 ---
 
@@ -1419,7 +1419,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}.
 
 ---
 
@@ -1433,7 +1433,7 @@ public string Region { get; set; }
 
 The Region in which the created address should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#region ComputePacketMirroring#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#region ComputePacketMirroring#region}
 
 ---
 
@@ -1447,7 +1447,7 @@ public ComputePacketMirroringTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#timeouts ComputePacketMirroring#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#timeouts ComputePacketMirroring#timeouts}
 
 ---
 
@@ -1487,7 +1487,7 @@ IP CIDR ranges that apply as a filter on the source (ingress) or destination (eg
 
 Only IPv4 is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#cidr_ranges ComputePacketMirroring#cidr_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#cidr_ranges ComputePacketMirroring#cidr_ranges}
 
 ---
 
@@ -1501,7 +1501,7 @@ public string Direction { get; set; }
 
 Direction of traffic to mirror. Default value: "BOTH" Possible values: ["INGRESS", "EGRESS", "BOTH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#direction ComputePacketMirroring#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#direction ComputePacketMirroring#direction}
 
 ---
 
@@ -1515,7 +1515,7 @@ public string[] IpProtocols { get; set; }
 
 Possible IP protocols including tcp, udp, icmp and esp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#ip_protocols ComputePacketMirroring#ip_protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#ip_protocols ComputePacketMirroring#ip_protocols}
 
 ---
 
@@ -1553,7 +1553,7 @@ public IResolvable|ComputePacketMirroringMirroredResourcesInstances[] Instances 
 
 instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#instances ComputePacketMirroring#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#instances ComputePacketMirroring#instances}
 
 ---
 
@@ -1567,7 +1567,7 @@ public IResolvable|ComputePacketMirroringMirroredResourcesSubnetworks[] Subnetwo
 
 subnetworks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#subnetworks ComputePacketMirroring#subnetworks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#subnetworks ComputePacketMirroring#subnetworks}
 
 ---
 
@@ -1581,7 +1581,7 @@ public string[] Tags { get; set; }
 
 All instances with these tags will be mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#tags ComputePacketMirroring#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#tags ComputePacketMirroring#tags}
 
 ---
 
@@ -1615,7 +1615,7 @@ public string Url { get; set; }
 
 The URL of the instances where this rule should be active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
 
 ---
 
@@ -1649,7 +1649,7 @@ public string Url { get; set; }
 
 The URL of the subnetwork where this rule should be active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
 
 ---
 
@@ -1683,7 +1683,7 @@ public string Url { get; set; }
 
 The full self_link URL of the network where this rule is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
 
 ---
 
@@ -1705,9 +1705,9 @@ new ComputePacketMirroringTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}. |
 
 ---
 
@@ -1719,7 +1719,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}.
 
 ---
 
@@ -1731,7 +1731,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}.
 
 ---
 
@@ -1743,7 +1743,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}.
 
 ---
 

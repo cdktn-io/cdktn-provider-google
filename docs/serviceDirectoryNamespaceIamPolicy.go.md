@@ -4,7 +4,7 @@
 
 ### ServiceDirectoryNamespaceIamPolicy <a name="ServiceDirectoryNamespaceIamPolicy" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServiceDirectoryNamespaceI
 
 The id of the existing ServiceDirectoryNamespaceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,9 +800,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectory
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#name ServiceDirectoryNamespaceIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#policy_data ServiceDirectoryNamespaceIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#id ServiceDirectoryNamespaceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#name ServiceDirectoryNamespaceIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#policy_data ServiceDirectoryNamespaceIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#id ServiceDirectoryNamespaceIamPolicy#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#name ServiceDirectoryNamespaceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#name ServiceDirectoryNamespaceIamPolicy#name}.
 
 ---
 
@@ -896,7 +896,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#policy_data ServiceDirectoryNamespaceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#policy_data ServiceDirectoryNamespaceIamPolicy#policy_data}.
 
 ---
 
@@ -908,7 +908,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/service_directory_namespace_iam_policy#id ServiceDirectoryNamespaceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_directory_namespace_iam_policy#id ServiceDirectoryNamespaceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

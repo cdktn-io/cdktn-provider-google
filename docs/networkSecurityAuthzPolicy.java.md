@@ -4,7 +4,7 @@
 
 ### NetworkSecurityAuthzPolicy <a name="NetworkSecurityAuthzPolicy" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer"></a>
 
@@ -29,6 +29,7 @@ NetworkSecurityAuthzPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .httpRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRules>)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .networkRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules>)
 //  .policyProfile(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(NetworkSecurityAuthzPolicyTimeouts)
@@ -54,10 +55,11 @@ NetworkSecurityAuthzPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.httpRules">httpRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRules">NetworkSecurityAuthzPolicyHttpRules</a>></code> | http_rules block. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Set of labels associated with the AuthzExtension resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.networkRules">networkRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>></code> | network_rules block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.policyProfile">policyProfile</a></code> | <code>java.lang.String</code> | Defines the type of authorization being performed. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts">NetworkSecurityAuthzPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -138,7 +140,7 @@ When a request arrives, the policies are evaluated in the following order:
 3. If there are no ALLOW policies for the resource or if any of the ALLOW policies match the request, the request is allowed.
 4. Else the request is denied by default if none of the configured AuthzPolicies with ALLOW action match the request. Possible values: ["ALLOW", "DENY", "CUSTOM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Identifier. Name of the AuthzPolicy resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -168,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
 
 ---
 
@@ -178,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
 
 ---
 
@@ -195,7 +197,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
 
 ---
 
@@ -205,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
 
 ---
 
@@ -215,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
 
 ---
 
@@ -223,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -239,7 +241,17 @@ Set of labels associated with the AuthzExtension resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+
+---
+
+##### `networkRules`<sup>Optional</sup> <a name="networkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer.parameter.networkRules"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>>
+
+network_rules block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#network_rules NetworkSecurityAuthzPolicy#network_rules}
 
 ---
 
@@ -256,7 +268,7 @@ Only CUSTOM action is allowed in this policy profile. AuthzExtensions in the cus
 protocol and be capable of receiving all ext_proc events (REQUEST_HEADERS, REQUEST_BODY, REQUEST_TRAILERS,
 RESPONSE_HEADERS, RESPONSE_BODY, RESPONSE_TRAILERS) with FULL_DUPLEX_STREAMED body send mode. Possible values: ["REQUEST_AUTHZ", "CONTENT_AUTHZ"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
 
 ---
 
@@ -264,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
 
 ---
 
@@ -274,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
 
 ---
 
@@ -308,6 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putCustomProvider">putCustomProvider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putHttpRules">putHttpRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules">putNetworkRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTarget">putTarget</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetCustomProvider">resetCustomProvider</a></code> | *No description.* |
@@ -316,6 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetHttpRules">resetHttpRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetNetworkRules">resetNetworkRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetPolicyProfile">resetPolicyProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -657,6 +671,18 @@ public void putHttpRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyHt
 
 ---
 
+##### `putNetworkRules` <a name="putNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules"></a>
+
+```java
+public void putNetworkRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>>
+
+---
+
 ##### `putTarget` <a name="putTarget" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTarget"></a>
 
 ```java
@@ -715,6 +741,12 @@ public void resetId()
 
 ```java
 public void resetLabels()
+```
+
+##### `resetNetworkRules` <a name="resetNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetNetworkRules"></a>
+
+```java
+public void resetNetworkRules()
 ```
 
 ##### `resetPolicyProfile` <a name="resetPolicyProfile" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetPolicyProfile"></a>
@@ -838,7 +870,7 @@ The construct id used in the generated config for the NetworkSecurityAuthzPolicy
 
 The id of the existing NetworkSecurityAuthzPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,6 +904,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.customProvider">customProvider</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference">NetworkSecurityAuthzPolicyCustomProviderOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.httpRules">httpRules</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesList">NetworkSecurityAuthzPolicyHttpRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRules">networkRules</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList">NetworkSecurityAuthzPolicyNetworkRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.target">target</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTargetOutputReference">NetworkSecurityAuthzPolicyTargetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeoutsOutputReference">NetworkSecurityAuthzPolicyTimeoutsOutputReference</a></code> | *No description.* |
@@ -885,6 +918,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRulesInput">networkRulesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.policyProfileInput">policyProfileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.targetInput">targetInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTarget">NetworkSecurityAuthzPolicyTarget</a></code> | *No description.* |
@@ -1083,6 +1117,16 @@ public NetworkSecurityAuthzPolicyHttpRulesList getHttpRules();
 
 ---
 
+##### `networkRules`<sup>Required</sup> <a name="networkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRules"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesList getNetworkRules();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList">NetworkSecurityAuthzPolicyNetworkRulesList</a>
+
+---
+
 ##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.target"></a>
 
 ```java
@@ -1210,6 +1254,16 @@ public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `networkRulesInput`<sup>Optional</sup> <a name="networkRulesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRulesInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules> getNetworkRulesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>>
 
 ---
 
@@ -1388,6 +1442,7 @@ NetworkSecurityAuthzPolicyConfig.builder()
 //  .httpRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRules>)
 //  .id(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .networkRules(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules>)
 //  .policyProfile(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(NetworkSecurityAuthzPolicyTimeouts)
@@ -1413,10 +1468,11 @@ NetworkSecurityAuthzPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.httpRules">httpRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRules">NetworkSecurityAuthzPolicyHttpRules</a>></code> | http_rules block. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Set of labels associated with the AuthzExtension resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.networkRules">networkRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>></code> | network_rules block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.policyProfile">policyProfile</a></code> | <code>java.lang.String</code> | Defines the type of authorization being performed. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts">NetworkSecurityAuthzPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1511,7 +1567,7 @@ When a request arrives, the policies are evaluated in the following order:
 3. If there are no ALLOW policies for the resource or if any of the ALLOW policies match the request, the request is allowed.
 4. Else the request is denied by default if none of the configured AuthzPolicies with ALLOW action match the request. Possible values: ["ALLOW", "DENY", "CUSTOM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
 
 ---
 
@@ -1525,7 +1581,7 @@ public java.lang.String getLocation();
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
 
 ---
 
@@ -1539,7 +1595,7 @@ public java.lang.String getName();
 
 Identifier. Name of the AuthzPolicy resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -1553,7 +1609,7 @@ public NetworkSecurityAuthzPolicyTarget getTarget();
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
 
 ---
 
@@ -1567,7 +1623,7 @@ public NetworkSecurityAuthzPolicyCustomProvider getCustomProvider();
 
 custom_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
 
 ---
 
@@ -1588,7 +1644,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
 
 ---
 
@@ -1602,7 +1658,7 @@ public java.lang.String getDescription();
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
 
 ---
 
@@ -1616,7 +1672,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRules> getHttpRu
 
 http_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
 
 ---
 
@@ -1628,7 +1684,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1648,7 +1704,21 @@ Set of labels associated with the AuthzExtension resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+
+---
+
+##### `networkRules`<sup>Optional</sup> <a name="networkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.networkRules"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules> getNetworkRules();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>>
+
+network_rules block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#network_rules NetworkSecurityAuthzPolicy#network_rules}
 
 ---
 
@@ -1669,7 +1739,7 @@ Only CUSTOM action is allowed in this policy profile. AuthzExtensions in the cus
 protocol and be capable of receiving all ext_proc events (REQUEST_HEADERS, REQUEST_BODY, REQUEST_TRAILERS,
 RESPONSE_HEADERS, RESPONSE_BODY, RESPONSE_TRAILERS) with FULL_DUPLEX_STREAMED body send mode. Possible values: ["REQUEST_AUTHZ", "CONTENT_AUTHZ"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
 
 ---
 
@@ -1681,7 +1751,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
 
 ---
 
@@ -1695,7 +1765,7 @@ public NetworkSecurityAuthzPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
 
 ---
 
@@ -1731,7 +1801,7 @@ public NetworkSecurityAuthzPolicyCustomProviderAuthzExtension getAuthzExtension(
 
 authz_extension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
 
 ---
 
@@ -1745,7 +1815,7 @@ public NetworkSecurityAuthzPolicyCustomProviderCloudIap getCloudIap();
 
 cloud_iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
 
 ---
 
@@ -1781,7 +1851,7 @@ A list of references to authorization extensions that will be invoked for reques
 
 Limited to 1 custom provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -1815,7 +1885,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enable Cloud IAP at the AuthzPolicy level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
 
 ---
 
@@ -1853,7 +1923,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFrom getFrom();
 
 from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
 
 ---
 
@@ -1867,7 +1937,7 @@ public NetworkSecurityAuthzPolicyHttpRulesTo getTo();
 
 to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
 
 ---
 
@@ -1883,7 +1953,7 @@ CEL expression that describes the conditions to be satisfied for the action.
 
 The result of the CEL expression is ANDed with the from and to. Refer to the CEL language reference for a list of available attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
 
 ---
 
@@ -1919,7 +1989,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromNotSour
 
 not_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
 
 ---
 
@@ -1933,7 +2003,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromSources
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
 
 ---
 
@@ -1971,7 +2041,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromNotSour
 
 ip_blocks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
 
 ---
 
@@ -1985,7 +2055,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromNotSour
 
 principals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
 
 ---
 
@@ -1999,7 +2069,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromNotSour
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -2035,7 +2105,7 @@ public java.lang.Number getLength();
 
 The length of the address range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
 
 ---
 
@@ -2049,7 +2119,7 @@ public java.lang.String getPrefix();
 
 The address prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2100,7 +2170,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2114,7 +2184,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2130,7 +2200,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2149,7 +2219,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2163,7 +2233,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal getP
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
 
 ---
 
@@ -2179,7 +2249,7 @@ An enum to decide what principal value the principal rule will match against.
 
 If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
 
 ---
 
@@ -2198,7 +2268,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2245,7 +2315,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2259,7 +2329,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2275,7 +2345,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2294,7 +2364,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2313,7 +2383,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2349,7 +2419,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamServiceAccou
 
 iam_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
 
 ---
 
@@ -2363,7 +2433,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesTagValueIdSet g
 
 tag_value_id_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
 
 ---
 
@@ -2410,7 +2480,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2424,7 +2494,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2440,7 +2510,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2459,7 +2529,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2478,7 +2548,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2515,7 +2585,7 @@ A list of resource tag value permanent IDs to match against the resource manager
 The match follows AND semantics which means all the ids must match.
 Limited to 5 matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
 
 ---
 
@@ -2553,7 +2623,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromSources
 
 ip_blocks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
 
 ---
 
@@ -2567,7 +2637,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromSources
 
 principals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
 
 ---
 
@@ -2581,7 +2651,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesFromSources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -2617,7 +2687,7 @@ public java.lang.Number getLength();
 
 The length of the address range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
 
 ---
 
@@ -2631,7 +2701,7 @@ public java.lang.String getPrefix();
 
 The address prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2682,7 +2752,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2696,7 +2766,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2712,7 +2782,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2731,7 +2801,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2745,7 +2815,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal getPrin
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
 
 ---
 
@@ -2761,7 +2831,7 @@ An enum to decide what principal value the principal rule will match against.
 
 If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
 
 ---
 
@@ -2780,7 +2850,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2827,7 +2897,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2841,7 +2911,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2857,7 +2927,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2876,7 +2946,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2895,7 +2965,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2931,7 +3001,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServiceAccount 
 
 iam_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
 
 ---
 
@@ -2945,7 +3015,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesTagValueIdSet getT
 
 tag_value_id_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
 
 ---
 
@@ -2992,7 +3062,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3006,7 +3076,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3022,7 +3092,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3041,7 +3111,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3060,7 +3130,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3097,7 +3167,7 @@ A list of resource tag value permanent IDs to match against the resource manager
 The match follows AND semantics which means all the ids must match.
 Limited to 5 matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
 
 ---
 
@@ -3133,7 +3203,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToNotOperat
 
 not_operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
 
 ---
 
@@ -3147,7 +3217,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
 
 ---
 
@@ -3187,7 +3257,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet getHeaderSet(
 
 header_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
 
 ---
 
@@ -3201,7 +3271,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToNotOperat
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
 
 ---
 
@@ -3217,7 +3287,7 @@ A list of HTTP methods to match against.
 
 Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -3231,7 +3301,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToNotOperat
 
 paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
 
 ---
 
@@ -3265,7 +3335,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToNotOperat
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
 
 ---
 
@@ -3301,7 +3371,7 @@ public java.lang.String getName();
 
 Specifies the name of the header in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -3315,7 +3385,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValue g
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
 
 ---
 
@@ -3362,7 +3432,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3376,7 +3446,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3392,7 +3462,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3411,7 +3481,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3430,7 +3500,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3477,7 +3547,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3491,7 +3561,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3507,7 +3577,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3526,7 +3596,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3545,7 +3615,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3592,7 +3662,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3606,7 +3676,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3622,7 +3692,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3641,7 +3711,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3660,7 +3730,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3702,7 +3772,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSet getHeaderSet();
 
 header_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
 
 ---
 
@@ -3716,7 +3786,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
 
 ---
 
@@ -3730,7 +3800,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsMcp getMcp();
 
 mcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
 
 ---
 
@@ -3746,7 +3816,7 @@ A list of HTTP methods to match against.
 
 Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -3760,7 +3830,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
 
 ---
 
@@ -3794,7 +3864,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
 
 ---
 
@@ -3830,7 +3900,7 @@ public java.lang.String getName();
 
 Specifies the name of the header in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -3844,7 +3914,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeadersValue getV
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
 
 ---
 
@@ -3891,7 +3961,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3905,7 +3975,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3921,7 +3991,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3940,7 +4010,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3959,7 +4029,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -4006,7 +4076,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -4020,7 +4090,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -4036,7 +4106,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -4055,7 +4125,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -4074,7 +4144,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -4110,7 +4180,7 @@ public java.lang.String getBaseProtocolMethodsOption();
 
 If specified, matches on the MCP protocol’s non-access specific methods namely: * initialize/ * completion/ * logging/ * notifications/ * ping Default value: "SKIP_BASE_PROTOCOL_METHODS" Possible values: ["SKIP_BASE_PROTOCOL_METHODS", "MATCH_BASE_PROTOCOL_METHODS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
 
 ---
 
@@ -4124,7 +4194,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 methods block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -4167,7 +4237,7 @@ Allowed values are as follows:
 3) “prompts/get”, “tools/call”, “resources/subscribe”, “resources/unsubscribe”, “resources/read”
    Params cannot be specified for categories 1) and 2).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -4181,7 +4251,7 @@ public IResolvable|java.util.List<NetworkSecurityAuthzPolicyHttpRulesToOperation
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
 
 ---
 
@@ -4223,7 +4293,7 @@ public java.lang.String getContains();
 
 A substring match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -4237,7 +4307,7 @@ public java.lang.String getExact();
 
 An exact match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -4251,7 +4321,7 @@ public java.lang.Boolean|IResolvable getIgnoreCase();
 
 Specifies that the string match should be case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -4265,7 +4335,7 @@ public java.lang.String getPrefix();
 
 A prefix match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -4279,7 +4349,7 @@ public java.lang.String getSuffix();
 
 A suffix match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -4326,7 +4396,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -4340,7 +4410,7 @@ public java.lang.String getExact();
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -4356,7 +4426,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -4375,7 +4445,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -4394,7 +4464,579 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRules <a name="NetworkSecurityAuthzPolicyNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRules;
+
+NetworkSecurityAuthzPolicyNetworkRules.builder()
+//  .from(NetworkSecurityAuthzPolicyNetworkRulesFrom)
+//  .to(NetworkSecurityAuthzPolicyNetworkRulesTo)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.from">from</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | from block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.to">to</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | to block. |
+
+---
+
+##### `from`<sup>Optional</sup> <a name="from" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.from"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFrom getFrom();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+from block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+
+---
+
+##### `to`<sup>Optional</sup> <a name="to" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.to"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesTo getTo();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+to block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFrom <a name="NetworkSecurityAuthzPolicyNetworkRulesFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFrom;
+
+NetworkSecurityAuthzPolicyNetworkRulesFrom.builder()
+//  .notSources(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSources>)
+//  .sources(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSources>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.notSources">notSources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>></code> | not_sources block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.sources">sources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>></code> | sources block. |
+
+---
+
+##### `notSources`<sup>Optional</sup> <a name="notSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.notSources"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSources> getNotSources();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>>
+
+not_sources block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+
+---
+
+##### `sources`<sup>Optional</sup> <a name="sources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.sources"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSources> getSources();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>>
+
+sources block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSources <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.builder()
+//  .ipBlocks(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks>)
+//  .principals(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.ipBlocks">ipBlocks</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>></code> | ip_blocks block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.principals">principals</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>></code> | principals block. |
+
+---
+
+##### `ipBlocks`<sup>Optional</sup> <a name="ipBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.ipBlocks"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks> getIpBlocks();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>>
+
+ip_blocks block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+
+---
+
+##### `principals`<sup>Optional</sup> <a name="principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.principals"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals> getPrincipals();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>>
+
+principals block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.builder()
+    .length(java.lang.Number)
+    .prefix(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.length">length</a></code> | <code>java.lang.Number</code> | The length of the address range. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.prefix">prefix</a></code> | <code>java.lang.String</code> | The address prefix. |
+
+---
+
+##### `length`<sup>Required</sup> <a name="length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.length"></a>
+
+```java
+public java.lang.Number getLength();
+```
+
+- *Type:* java.lang.Number
+
+The length of the address range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.prefix"></a>
+
+```java
+public java.lang.String getPrefix();
+```
+
+- *Type:* java.lang.String
+
+The address prefix.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.builder()
+//  .principal(NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal)
+//  .principalSelector(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principal">principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | principal block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principalSelector">principalSelector</a></code> | <code>java.lang.String</code> | An enum to decide what principal value the principal rule will match against. |
+
+---
+
+##### `principal`<sup>Optional</sup> <a name="principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principal"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal getPrincipal();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+principal block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+
+---
+
+##### `principalSelector`<sup>Optional</sup> <a name="principalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principalSelector"></a>
+
+```java
+public java.lang.String getPrincipalSelector();
+```
+
+- *Type:* java.lang.String
+
+An enum to decide what principal value the principal rule will match against.
+
+If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.builder()
+//  .exact(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.property.exact">exact</a></code> | <code>java.lang.String</code> | The input string must match exactly the string specified here. Examples: * abc only matches the value abc. |
+
+---
+
+##### `exact`<sup>Optional</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSources <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSources;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromSources.builder()
+//  .ipBlocks(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks>)
+//  .principals(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.ipBlocks">ipBlocks</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>></code> | ip_blocks block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.principals">principals</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>></code> | principals block. |
+
+---
+
+##### `ipBlocks`<sup>Optional</sup> <a name="ipBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.ipBlocks"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks> getIpBlocks();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>>
+
+ip_blocks block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+
+---
+
+##### `principals`<sup>Optional</sup> <a name="principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.principals"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals> getPrincipals();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>>
+
+principals block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.builder()
+    .length(java.lang.Number)
+    .prefix(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.length">length</a></code> | <code>java.lang.Number</code> | The length of the address range. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.prefix">prefix</a></code> | <code>java.lang.String</code> | The address prefix. |
+
+---
+
+##### `length`<sup>Required</sup> <a name="length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.length"></a>
+
+```java
+public java.lang.Number getLength();
+```
+
+- *Type:* java.lang.Number
+
+The length of the address range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.prefix"></a>
+
+```java
+public java.lang.String getPrefix();
+```
+
+- *Type:* java.lang.String
+
+The address prefix.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.builder()
+//  .principal(NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal)
+//  .principalSelector(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principal">principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | principal block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principalSelector">principalSelector</a></code> | <code>java.lang.String</code> | An enum to decide what principal value the principal rule will match against. |
+
+---
+
+##### `principal`<sup>Optional</sup> <a name="principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principal"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal getPrincipal();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+principal block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+
+---
+
+##### `principalSelector`<sup>Optional</sup> <a name="principalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principalSelector"></a>
+
+```java
+public java.lang.String getPrincipalSelector();
+```
+
+- *Type:* java.lang.String
+
+An enum to decide what principal value the principal rule will match against.
+
+If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal;
+
+NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.builder()
+//  .exact(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.property.exact">exact</a></code> | <code>java.lang.String</code> | The input string must match exactly the string specified here. Examples: * abc only matches the value abc. |
+
+---
+
+##### `exact`<sup>Optional</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesTo <a name="NetworkSecurityAuthzPolicyNetworkRulesTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesTo;
+
+NetworkSecurityAuthzPolicyNetworkRulesTo.builder()
+//  .operations(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperations>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.property.operations">operations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>></code> | operations block. |
+
+---
+
+##### `operations`<sup>Optional</sup> <a name="operations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.property.operations"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperations> getOperations();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>>
+
+operations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperations <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperations;
+
+NetworkSecurityAuthzPolicyNetworkRulesToOperations.builder()
+//  .snis(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.property.snis">snis</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>></code> | snis block. |
+
+---
+
+##### `snis`<sup>Optional</sup> <a name="snis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.property.snis"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis> getSnis();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>>
+
+snis block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#snis NetworkSecurityAuthzPolicy#snis}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis;
+
+NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.builder()
+//  .exact(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.property.exact">exact</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}. |
+
+---
+
+##### `exact`<sup>Optional</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}.
 
 ---
 
@@ -4434,7 +5076,7 @@ Must not be specified when targeting Agent
 Gateway. All resources referenced by this policy and extensions must share the same load balancing scheme.
 For more information, refer to [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
 
 ---
 
@@ -4448,7 +5090,7 @@ public java.util.List<java.lang.String> getResources();
 
 A list of references to the Forwarding Rules or Secure Web Proxy Gateways or Agent Gateways on which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -4470,9 +5112,9 @@ NetworkSecurityAuthzPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}. |
 
 ---
 
@@ -4484,7 +5126,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}.
 
 ---
 
@@ -4496,7 +5138,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}.
 
 ---
 
@@ -4508,7 +5150,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}.
 
 ---
 
@@ -20322,6 +20964,5582 @@ public NetworkSecurityAuthzPolicyHttpRulesTo getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesTo">NetworkSecurityAuthzPolicyHttpRulesTo</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.lengthInput">lengthInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefixInput">prefixInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.length">length</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefix">prefix</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `lengthInput`<sup>Optional</sup> <a name="lengthInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.lengthInput"></a>
+
+```java
+public java.lang.Number getLengthInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `prefixInput`<sup>Optional</sup> <a name="prefixInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefixInput"></a>
+
+```java
+public java.lang.String getPrefixInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `length`<sup>Required</sup> <a name="length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.length"></a>
+
+```java
+public java.lang.Number getLength();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefix"></a>
+
+```java
+public java.lang.String getPrefix();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSources> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks">putIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals">putPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetIpBlocks">resetIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetPrincipals">resetPrincipals</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putIpBlocks` <a name="putIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks"></a>
+
+```java
+public void putIpBlocks(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>>
+
+---
+
+##### `putPrincipals` <a name="putPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals"></a>
+
+```java
+public void putPrincipals(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>>
+
+---
+
+##### `resetIpBlocks` <a name="resetIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetIpBlocks"></a>
+
+```java
+public void resetIpBlocks()
+```
+
+##### `resetPrincipals` <a name="resetPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetPrincipals"></a>
+
+```java
+public void resetPrincipals()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocks">ipBlocks</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principals">principals</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocksInput">ipBlocksInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principalsInput">principalsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipBlocks`<sup>Required</sup> <a name="ipBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocks"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList getIpBlocks();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList</a>
+
+---
+
+##### `principals`<sup>Required</sup> <a name="principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principals"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList getPrincipals();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList</a>
+
+---
+
+##### `ipBlocksInput`<sup>Optional</sup> <a name="ipBlocksInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocksInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks> getIpBlocksInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>>
+
+---
+
+##### `principalsInput`<sup>Optional</sup> <a name="principalsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principalsInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals> getPrincipalsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal">putPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipal">resetPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipalSelector">resetPrincipalSelector</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPrincipal` <a name="putPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal"></a>
+
+```java
+public void putPrincipal(NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `resetPrincipal` <a name="resetPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipal"></a>
+
+```java
+public void resetPrincipal()
+```
+
+##### `resetPrincipalSelector` <a name="resetPrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipalSelector"></a>
+
+```java
+public void resetPrincipalSelector()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principal">principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalInput">principalInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelectorInput">principalSelectorInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelector">principalSelector</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principal"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference getPrincipal();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference</a>
+
+---
+
+##### `principalInput`<sup>Optional</sup> <a name="principalInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalInput"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal getPrincipalInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `principalSelectorInput`<sup>Optional</sup> <a name="principalSelectorInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelectorInput"></a>
+
+```java
+public java.lang.String getPrincipalSelectorInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalSelector`<sup>Required</sup> <a name="principalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelector"></a>
+
+```java
+public java.lang.String getPrincipalSelector();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resetExact">resetExact</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetExact` <a name="resetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resetExact"></a>
+
+```java
+public void resetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exactInput">exactInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exact">exact</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exactInput`<sup>Optional</sup> <a name="exactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exactInput"></a>
+
+```java
+public java.lang.String getExactInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exact`<sup>Required</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.internalValue"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources">putNotSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources">putSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetNotSources">resetNotSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetSources">resetSources</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putNotSources` <a name="putNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources"></a>
+
+```java
+public void putNotSources(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSources> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>>
+
+---
+
+##### `putSources` <a name="putSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources"></a>
+
+```java
+public void putSources(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSources> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>>
+
+---
+
+##### `resetNotSources` <a name="resetNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetNotSources"></a>
+
+```java
+public void resetNotSources()
+```
+
+##### `resetSources` <a name="resetSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetSources"></a>
+
+```java
+public void resetSources()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSources">notSources</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sources">sources</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSourcesInput">notSourcesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sourcesInput">sourcesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `notSources`<sup>Required</sup> <a name="notSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSources"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList getNotSources();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList</a>
+
+---
+
+##### `sources`<sup>Required</sup> <a name="sources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sources"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList getSources();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList</a>
+
+---
+
+##### `notSourcesInput`<sup>Optional</sup> <a name="notSourcesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSourcesInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromNotSources> getNotSourcesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>>
+
+---
+
+##### `sourcesInput`<sup>Optional</sup> <a name="sourcesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sourcesInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSources> getSourcesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.internalValue"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFrom getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.lengthInput">lengthInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefixInput">prefixInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.length">length</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefix">prefix</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `lengthInput`<sup>Optional</sup> <a name="lengthInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.lengthInput"></a>
+
+```java
+public java.lang.Number getLengthInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `prefixInput`<sup>Optional</sup> <a name="prefixInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefixInput"></a>
+
+```java
+public java.lang.String getPrefixInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `length`<sup>Required</sup> <a name="length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.length"></a>
+
+```java
+public java.lang.Number getLength();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefix"></a>
+
+```java
+public java.lang.String getPrefix();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSources> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks">putIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals">putPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetIpBlocks">resetIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetPrincipals">resetPrincipals</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putIpBlocks` <a name="putIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks"></a>
+
+```java
+public void putIpBlocks(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>>
+
+---
+
+##### `putPrincipals` <a name="putPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals"></a>
+
+```java
+public void putPrincipals(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>>
+
+---
+
+##### `resetIpBlocks` <a name="resetIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetIpBlocks"></a>
+
+```java
+public void resetIpBlocks()
+```
+
+##### `resetPrincipals` <a name="resetPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetPrincipals"></a>
+
+```java
+public void resetPrincipals()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocks">ipBlocks</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principals">principals</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocksInput">ipBlocksInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principalsInput">principalsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ipBlocks`<sup>Required</sup> <a name="ipBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocks"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList getIpBlocks();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList</a>
+
+---
+
+##### `principals`<sup>Required</sup> <a name="principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principals"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList getPrincipals();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList</a>
+
+---
+
+##### `ipBlocksInput`<sup>Optional</sup> <a name="ipBlocksInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocksInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks> getIpBlocksInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>>
+
+---
+
+##### `principalsInput`<sup>Optional</sup> <a name="principalsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principalsInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals> getPrincipalsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal">putPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipal">resetPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipalSelector">resetPrincipalSelector</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPrincipal` <a name="putPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal"></a>
+
+```java
+public void putPrincipal(NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `resetPrincipal` <a name="resetPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipal"></a>
+
+```java
+public void resetPrincipal()
+```
+
+##### `resetPrincipalSelector` <a name="resetPrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipalSelector"></a>
+
+```java
+public void resetPrincipalSelector()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principal">principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalInput">principalInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelectorInput">principalSelectorInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelector">principalSelector</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principal"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference getPrincipal();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference</a>
+
+---
+
+##### `principalInput`<sup>Optional</sup> <a name="principalInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalInput"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal getPrincipalInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `principalSelectorInput`<sup>Optional</sup> <a name="principalSelectorInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelectorInput"></a>
+
+```java
+public java.lang.String getPrincipalSelectorInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalSelector`<sup>Required</sup> <a name="principalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelector"></a>
+
+```java
+public java.lang.String getPrincipalSelector();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resetExact">resetExact</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetExact` <a name="resetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resetExact"></a>
+
+```java
+public void resetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exactInput">exactInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exact">exact</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exactInput`<sup>Optional</sup> <a name="exactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exactInput"></a>
+
+```java
+public java.lang.String getExactInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exact`<sup>Required</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.internalValue"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesList <a name="NetworkSecurityAuthzPolicyNetworkRulesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRules> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom">putFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo">putTo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetFrom">resetFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetTo">resetTo</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putFrom` <a name="putFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom"></a>
+
+```java
+public void putFrom(NetworkSecurityAuthzPolicyNetworkRulesFrom value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+##### `putTo` <a name="putTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo"></a>
+
+```java
+public void putTo(NetworkSecurityAuthzPolicyNetworkRulesTo value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+---
+
+##### `resetFrom` <a name="resetFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetFrom"></a>
+
+```java
+public void resetFrom()
+```
+
+##### `resetTo` <a name="resetTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetTo"></a>
+
+```java
+public void resetTo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.from">from</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.to">to</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference">NetworkSecurityAuthzPolicyNetworkRulesToOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fromInput">fromInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.toInput">toInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `from`<sup>Required</sup> <a name="from" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.from"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference getFrom();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference</a>
+
+---
+
+##### `to`<sup>Required</sup> <a name="to" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.to"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesToOutputReference getTo();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference">NetworkSecurityAuthzPolicyNetworkRulesToOutputReference</a>
+
+---
+
+##### `fromInput`<sup>Optional</sup> <a name="fromInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fromInput"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesFrom getFromInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+##### `toInput`<sup>Optional</sup> <a name="toInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.toInput"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesTo getToInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRules getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsList <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperations> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis">putSnis</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resetSnis">resetSnis</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSnis` <a name="putSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis"></a>
+
+```java
+public void putSnis(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>>
+
+---
+
+##### `resetSnis` <a name="resetSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resetSnis"></a>
+
+```java
+public void resetSnis()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snis">snis</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snisInput">snisInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `snis`<sup>Required</sup> <a name="snis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snis"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList getSnis();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList</a>
+
+---
+
+##### `snisInput`<sup>Optional</sup> <a name="snisInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snisInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis> getSnisInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resetExact">resetExact</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetExact` <a name="resetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resetExact"></a>
+
+```java
+public void resetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exactInput">exactInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exact">exact</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exactInput`<sup>Optional</sup> <a name="exactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exactInput"></a>
+
+```java
+public java.lang.String getExactInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `exact`<sup>Required</sup> <a name="exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exact"></a>
+
+```java
+public java.lang.String getExact();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.network_security_authz_policy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations">putOperations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resetOperations">resetOperations</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putOperations` <a name="putOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations"></a>
+
+```java
+public void putOperations(IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperations> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>>
+
+---
+
+##### `resetOperations` <a name="resetOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resetOperations"></a>
+
+```java
+public void resetOperations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operations">operations</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operationsInput">operationsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `operations`<sup>Required</sup> <a name="operations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operations"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsList getOperations();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsList</a>
+
+---
+
+##### `operationsInput`<sup>Optional</sup> <a name="operationsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operationsInput"></a>
+
+```java
+public IResolvable|java.util.List<NetworkSecurityAuthzPolicyNetworkRulesToOperations> getOperationsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.internalValue"></a>
+
+```java
+public NetworkSecurityAuthzPolicyNetworkRulesTo getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
 
 ---
 

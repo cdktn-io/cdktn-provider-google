@@ -4,7 +4,7 @@
 
 ### ComputeSubnetworkIamBinding <a name="ComputeSubnetworkIamBinding" id="@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeSubnetworkIamBindin
 
 The id of the existing ComputeSubnetworkIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ new ComputeSubnetworkIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#expression ComputeSubnetworkIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#title ComputeSubnetworkIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#description ComputeSubnetworkIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#expression ComputeSubnetworkIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#title ComputeSubnetworkIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#description ComputeSubnetworkIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#expression ComputeSubnetworkIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#expression ComputeSubnetworkIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#title ComputeSubnetworkIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#title ComputeSubnetworkIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#description ComputeSubnetworkIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#description ComputeSubnetworkIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ new ComputeSubnetworkIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#members ComputeSubnetworkIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#role ComputeSubnetworkIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.subnetwork">Subnetwork</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#subnetwork ComputeSubnetworkIamBinding#subnetwork}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#members ComputeSubnetworkIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#role ComputeSubnetworkIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.subnetwork">Subnetwork</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#subnetwork ComputeSubnetworkIamBinding#subnetwork}. |
 | <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingCondition">ComputeSubnetworkIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#id ComputeSubnetworkIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#project ComputeSubnetworkIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#region ComputeSubnetworkIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#id ComputeSubnetworkIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#project ComputeSubnetworkIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#region ComputeSubnetworkIamBinding#region}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#members ComputeSubnetworkIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#members ComputeSubnetworkIamBinding#members}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#role ComputeSubnetworkIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#role ComputeSubnetworkIamBinding#role}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Subnetwork { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#subnetwork ComputeSubnetworkIamBinding#subnetwork}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#subnetwork ComputeSubnetworkIamBinding#subnetwork}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public ComputeSubnetworkIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#condition ComputeSubnetworkIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#condition ComputeSubnetworkIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#id ComputeSubnetworkIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#id ComputeSubnetworkIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#project ComputeSubnetworkIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#project ComputeSubnetworkIamBinding#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_subnetwork_iam_binding#region ComputeSubnetworkIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_subnetwork_iam_binding#region ComputeSubnetworkIamBinding#region}.
 
 ---
 

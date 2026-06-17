@@ -4,7 +4,7 @@
 
 ### DataGoogleTagsTagValue <a name="DataGoogleTagsTagValue" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value google_tags_tag_value}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value google_tags_tag_value}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataGoogleTagsTagValue to 
 
 The id of the existing DataGoogleTagsTagValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -701,8 +701,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagsta
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
 
 ---
 
@@ -784,7 +784,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}.
 
 ---
 
@@ -796,7 +796,7 @@ ShortName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}.
 
 ---
 

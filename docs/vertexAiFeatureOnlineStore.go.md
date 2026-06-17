@@ -4,7 +4,7 @@
 
 ### VertexAiFeatureOnlineStore <a name="VertexAiFeatureOnlineStore" id="@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore.Initializer"></a>
 
@@ -631,7 +631,7 @@ The construct id used in the generated config for the VertexAiFeatureOnlineStore
 
 The id of the existing VertexAiFeatureOnlineStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1190,7 +1190,7 @@ AutoScaling VertexAiFeatureOnlineStoreBigtableAutoScaling
 
 auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#auto_scaling VertexAiFeatureOnlineStore#auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#auto_scaling VertexAiFeatureOnlineStore#auto_scaling}
 
 ---
 
@@ -1204,7 +1204,7 @@ EnableDirectBigtableAccess interface{}
 
 Optional. If true, enable direct access to the Bigtable instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#enable_direct_bigtable_access VertexAiFeatureOnlineStore#enable_direct_bigtable_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#enable_direct_bigtable_access VertexAiFeatureOnlineStore#enable_direct_bigtable_access}
 
 ---
 
@@ -1218,7 +1218,7 @@ Zone *string
 
 The zone where the Bigtable instance will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#zone VertexAiFeatureOnlineStore#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#zone VertexAiFeatureOnlineStore#zone}
 
 ---
 
@@ -1258,7 +1258,7 @@ The maximum number of nodes to scale up to.
 
 Must be greater than or equal to minNodeCount, and less than or equal to 10 times of 'minNodeCount'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#max_node_count VertexAiFeatureOnlineStore#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#max_node_count VertexAiFeatureOnlineStore#max_node_count}
 
 ---
 
@@ -1272,7 +1272,7 @@ MinNodeCount *f64
 
 The minimum number of nodes to scale down to. Must be greater than or equal to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#min_node_count VertexAiFeatureOnlineStore#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#min_node_count VertexAiFeatureOnlineStore#min_node_count}
 
 ---
 
@@ -1288,7 +1288,7 @@ A percentage of the cluster's CPU capacity.
 
 Can be from 10% to 80%. When a cluster's CPU utilization exceeds the target that you have set, Bigtable immediately adds nodes to the cluster. When CPU utilization is substantially lower than the target, Bigtable removes nodes. If not set will default to 50%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#cpu_utilization_target VertexAiFeatureOnlineStore#cpu_utilization_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#cpu_utilization_target VertexAiFeatureOnlineStore#cpu_utilization_target}
 
 ---
 
@@ -1339,10 +1339,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeatureo
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreEncryptionSpec">VertexAiFeatureOnlineStoreEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | If set to true, any FeatureViews and Features for this FeatureOnlineStore will also be deleted. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels with user-defined metadata to organize your feature online stores. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.optimized">Optimized</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreOptimized">VertexAiFeatureOnlineStoreOptimized</a></code> | optimized block. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.region">Region</a></code> | <code>*string</code> | The region of feature online store. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts">VertexAiFeatureOnlineStoreTimeouts</a></code> | timeouts block. |
 
@@ -1430,7 +1430,7 @@ The resource name of the Feature Online Store.
 
 This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#name VertexAiFeatureOnlineStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#name VertexAiFeatureOnlineStore#name}
 
 ---
 
@@ -1444,7 +1444,7 @@ Bigtable VertexAiFeatureOnlineStoreBigtable
 
 bigtable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#bigtable VertexAiFeatureOnlineStore#bigtable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#bigtable VertexAiFeatureOnlineStore#bigtable}
 
 ---
 
@@ -1458,7 +1458,7 @@ DedicatedServingEndpoint VertexAiFeatureOnlineStoreDedicatedServingEndpoint
 
 dedicated_serving_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#dedicated_serving_endpoint VertexAiFeatureOnlineStore#dedicated_serving_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#dedicated_serving_endpoint VertexAiFeatureOnlineStore#dedicated_serving_endpoint}
 
 ---
 
@@ -1479,7 +1479,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#deletion_policy VertexAiFeatureOnlineStore#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#deletion_policy VertexAiFeatureOnlineStore#deletion_policy}
 
 ---
 
@@ -1493,7 +1493,7 @@ EncryptionSpec VertexAiFeatureOnlineStoreEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#encryption_spec VertexAiFeatureOnlineStore#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#encryption_spec VertexAiFeatureOnlineStore#encryption_spec}
 
 ---
 
@@ -1507,7 +1507,7 @@ ForceDestroy interface{}
 
 If set to true, any FeatureViews and Features for this FeatureOnlineStore will also be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#force_destroy VertexAiFeatureOnlineStore#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#force_destroy VertexAiFeatureOnlineStore#force_destroy}
 
 ---
 
@@ -1519,7 +1519,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1539,7 +1539,7 @@ The labels with user-defined metadata to organize your feature online stores.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#labels VertexAiFeatureOnlineStore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#labels VertexAiFeatureOnlineStore#labels}
 
 ---
 
@@ -1553,7 +1553,7 @@ Optimized VertexAiFeatureOnlineStoreOptimized
 
 optimized block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#optimized VertexAiFeatureOnlineStore#optimized}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#optimized VertexAiFeatureOnlineStore#optimized}
 
 ---
 
@@ -1565,7 +1565,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}.
 
 ---
 
@@ -1579,7 +1579,7 @@ Region *string
 
 The region of feature online store. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#region VertexAiFeatureOnlineStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#region VertexAiFeatureOnlineStore#region}
 
 ---
 
@@ -1593,7 +1593,7 @@ Timeouts VertexAiFeatureOnlineStoreTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#timeouts VertexAiFeatureOnlineStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#timeouts VertexAiFeatureOnlineStore#timeouts}
 
 ---
 
@@ -1627,7 +1627,7 @@ PrivateServiceConnectConfig VertexAiFeatureOnlineStoreDedicatedServingEndpointPr
 
 private_service_connect_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#private_service_connect_config VertexAiFeatureOnlineStore#private_service_connect_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#private_service_connect_config VertexAiFeatureOnlineStore#private_service_connect_config}
 
 ---
 
@@ -1665,7 +1665,7 @@ If set to true, customers will use private service connection to send request.
 
 Otherwise, the connection will set to public endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#enable_private_service_connect VertexAiFeatureOnlineStore#enable_private_service_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#enable_private_service_connect VertexAiFeatureOnlineStore#enable_private_service_connect}
 
 ---
 
@@ -1679,7 +1679,7 @@ ProjectAllowlist *[]*string
 
 A list of Projects from which the forwarding rule will target the service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#project_allowlist VertexAiFeatureOnlineStore#project_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#project_allowlist VertexAiFeatureOnlineStore#project_allowlist}
 
 ---
 
@@ -1715,7 +1715,7 @@ The Cloud KMS resource identifier of the customer managed encryption key used to
 
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the compute resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#kms_key_name VertexAiFeatureOnlineStore#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#kms_key_name VertexAiFeatureOnlineStore#kms_key_name}
 
 ---
 
@@ -1750,9 +1750,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeatureo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}. |
 
 ---
 
@@ -1764,7 +1764,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}.
 
 ---
 
@@ -1776,7 +1776,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}.
 
 ---
 
@@ -1788,7 +1788,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}.
 
 ---
 

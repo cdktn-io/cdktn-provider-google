@@ -4,7 +4,7 @@
 
 ### DataGooglePubsubTopic <a name="DataGooglePubsubTopic" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGooglePubsubTopic to i
 
 The id of the existing DataGooglePubsubTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -783,8 +783,8 @@ const dataGooglePubsubTopicConfig: dataGooglePubsubTopic.DataGooglePubsubTopicCo
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.name">name</a></code> | <code>string</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -868,7 +868,7 @@ public readonly name: string;
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -880,7 +880,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -895,7 +895,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -8190,6 +8190,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.firstRevisionId">firstRevisionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.lastRevisionId">lastRevisionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettings">DataGooglePubsubTopicSchemaSettings</a></code> | *No description.* |
 
@@ -8223,6 +8225,26 @@ public readonly fqn: string;
 
 ```typescript
 public readonly encoding: string;
+```
+
+- *Type:* string
+
+---
+
+##### `firstRevisionId`<sup>Required</sup> <a name="firstRevisionId" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.firstRevisionId"></a>
+
+```typescript
+public readonly firstRevisionId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lastRevisionId`<sup>Required</sup> <a name="lastRevisionId" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.lastRevisionId"></a>
+
+```typescript
+public readonly lastRevisionId: string;
 ```
 
 - *Type:* string

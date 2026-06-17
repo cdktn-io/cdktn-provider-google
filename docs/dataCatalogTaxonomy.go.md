@@ -4,7 +4,7 @@
 
 ### DataCatalogTaxonomy <a name="DataCatalogTaxonomy" id="@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy google_data_catalog_taxonomy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy google_data_catalog_taxonomy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the DataCatalogTaxonomy to imp
 
 The id of the existing DataCatalogTaxonomy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,8 +974,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogtaxon
 | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.activatedPolicyTypes">ActivatedPolicyTypes</a></code> | <code>*[]*string</code> | A list of policy types that are activated for this taxonomy. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.description">Description</a></code> | <code>*string</code> | Description of this taxonomy. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#id DataCatalogTaxonomy#id}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#project DataCatalogTaxonomy#project}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#id DataCatalogTaxonomy#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#project DataCatalogTaxonomy#project}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.region">Region</a></code> | <code>*string</code> | Taxonomy location region. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts">DataCatalogTaxonomyTimeouts</a></code> | timeouts block. |
 
@@ -1066,7 +1066,7 @@ It must: contain only unicode letters, numbers, underscores, dashes
 and spaces; not start or end with spaces; and be at most 200 bytes
 long when encoded in UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#display_name DataCatalogTaxonomy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#display_name DataCatalogTaxonomy#display_name}
 
 ---
 
@@ -1083,7 +1083,7 @@ A list of policy types that are activated for this taxonomy.
 If not set,
 defaults to an empty list. Possible values: ["POLICY_TYPE_UNSPECIFIED", "FINE_GRAINED_ACCESS_CONTROL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#activated_policy_types DataCatalogTaxonomy#activated_policy_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#activated_policy_types DataCatalogTaxonomy#activated_policy_types}
 
 ---
 
@@ -1104,7 +1104,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#deletion_policy DataCatalogTaxonomy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#deletion_policy DataCatalogTaxonomy#deletion_policy}
 
 ---
 
@@ -1122,7 +1122,7 @@ It must: contain only unicode characters,
 tabs, newlines, carriage returns and page breaks; and be at most 2000 bytes
 long when encoded in UTF-8. If not set, defaults to an empty description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#description DataCatalogTaxonomy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#description DataCatalogTaxonomy#description}
 
 ---
 
@@ -1134,7 +1134,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#id DataCatalogTaxonomy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#id DataCatalogTaxonomy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1149,7 +1149,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#project DataCatalogTaxonomy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#project DataCatalogTaxonomy#project}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Region *string
 
 Taxonomy location region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#region DataCatalogTaxonomy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#region DataCatalogTaxonomy#region}
 
 ---
 
@@ -1177,7 +1177,7 @@ Timeouts DataCatalogTaxonomyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#timeouts DataCatalogTaxonomy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#timeouts DataCatalogTaxonomy#timeouts}
 
 ---
 
@@ -1199,9 +1199,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogtaxon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#create DataCatalogTaxonomy#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#delete DataCatalogTaxonomy#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#update DataCatalogTaxonomy#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#create DataCatalogTaxonomy#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#delete DataCatalogTaxonomy#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#update DataCatalogTaxonomy#update}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#create DataCatalogTaxonomy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#create DataCatalogTaxonomy#create}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#delete DataCatalogTaxonomy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#delete DataCatalogTaxonomy#delete}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/data_catalog_taxonomy#update DataCatalogTaxonomy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/data_catalog_taxonomy#update DataCatalogTaxonomy#update}.
 
 ---
 

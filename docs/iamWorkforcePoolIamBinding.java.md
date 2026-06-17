@@ -4,7 +4,7 @@
 
 ### IamWorkforcePoolIamBinding <a name="IamWorkforcePoolIamBinding" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer"></a>
 
@@ -39,12 +39,12 @@ IamWorkforcePoolIamBinding.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.workforcePoolId">workforcePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.workforcePoolId">workforcePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition">IamWorkforcePoolIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#condition IamWorkforcePoolIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#condition IamWorkforcePoolIamBinding#condition}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the IamWorkforcePoolIamBinding
 
 The id of the existing IamWorkforcePoolIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ IamWorkforcePoolIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#expression IamWorkforcePoolIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#title IamWorkforcePoolIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#description IamWorkforcePoolIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#expression IamWorkforcePoolIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#title IamWorkforcePoolIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#description IamWorkforcePoolIamBinding#description}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#expression IamWorkforcePoolIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#expression IamWorkforcePoolIamBinding#expression}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#title IamWorkforcePoolIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#title IamWorkforcePoolIamBinding#title}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#description IamWorkforcePoolIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#description IamWorkforcePoolIamBinding#description}.
 
 ---
 
@@ -1073,12 +1073,12 @@ IamWorkforcePoolIamBindingConfig.builder()
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.workforcePoolId">workforcePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.workforcePoolId">workforcePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition">IamWorkforcePoolIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#members IamWorkforcePoolIamBinding#members}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#role IamWorkforcePoolIamBinding#role}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getWorkforcePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#workforce_pool_id IamWorkforcePoolIamBinding#workforce_pool_id}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public IamWorkforcePoolIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#condition IamWorkforcePoolIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#condition IamWorkforcePoolIamBinding#condition}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#id IamWorkforcePoolIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_iam_binding#location IamWorkforcePoolIamBinding#location}.
 
 ---
 

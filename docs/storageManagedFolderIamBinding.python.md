@@ -4,7 +4,7 @@
 
 ### StorageManagedFolderIamBinding <a name="StorageManagedFolderIamBinding" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer"></a>
 
@@ -41,12 +41,12 @@ storageManagedFolderIamBinding.StorageManagedFolderIamBinding(
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.managedFolder">managed_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.managedFolder">managed_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition">StorageManagedFolderIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#condition StorageManagedFolderIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#condition StorageManagedFolderIamBinding#condition}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -559,7 +559,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}.
 
 ---
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}.
 
 ---
 
@@ -575,7 +575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}.
 
 ---
 
@@ -705,7 +705,7 @@ The construct id used in the generated config for the StorageManagedFolderIamBin
 
 The id of the existing StorageManagedFolderIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1061,9 +1061,9 @@ storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}. |
 
 ---
 
@@ -1075,7 +1075,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#expression StorageManagedFolderIamBinding#expression}.
 
 ---
 
@@ -1087,7 +1087,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#title StorageManagedFolderIamBinding#title}.
 
 ---
 
@@ -1099,7 +1099,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#description StorageManagedFolderIamBinding#description}.
 
 ---
 
@@ -1138,12 +1138,12 @@ storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig(
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.managedFolder">managed_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.managedFolder">managed_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition">StorageManagedFolderIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}. |
 
 ---
 
@@ -1225,7 +1225,7 @@ bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}.
 
 ---
 
@@ -1237,7 +1237,7 @@ managed_folder: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#managed_folder StorageManagedFolderIamBinding#managed_folder}.
 
 ---
 
@@ -1249,7 +1249,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#members StorageManagedFolderIamBinding#members}.
 
 ---
 
@@ -1261,7 +1261,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#role StorageManagedFolderIamBinding#role}.
 
 ---
 
@@ -1275,7 +1275,7 @@ condition: StorageManagedFolderIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#condition StorageManagedFolderIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#condition StorageManagedFolderIamBinding#condition}
 
 ---
 
@@ -1287,7 +1287,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_managed_folder_iam_binding#id StorageManagedFolderIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### DataGoogleDataprocMetastoreServiceIamPolicy <a name="DataGoogleDataprocMetastoreServiceIamPolicy" id="@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleDataprocMetastor
 
 The id of the existing DataGoogleDataprocMetastoreServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,10 +724,10 @@ new DataGoogleDataprocMetastoreServiceIamPolicyConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#service_id DataGoogleDataprocMetastoreServiceIamPolicy#service_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#id DataGoogleDataprocMetastoreServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#location DataGoogleDataprocMetastoreServiceIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#project DataGoogleDataprocMetastoreServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#service_id DataGoogleDataprocMetastoreServiceIamPolicy#service_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#id DataGoogleDataprocMetastoreServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#location DataGoogleDataprocMetastoreServiceIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#project DataGoogleDataprocMetastoreServiceIamPolicy#project}. |
 
 ---
 
@@ -809,7 +809,7 @@ public string ServiceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#service_id DataGoogleDataprocMetastoreServiceIamPolicy#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#service_id DataGoogleDataprocMetastoreServiceIamPolicy#service_id}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#id DataGoogleDataprocMetastoreServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#id DataGoogleDataprocMetastoreServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#location DataGoogleDataprocMetastoreServiceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#location DataGoogleDataprocMetastoreServiceIamPolicy#location}.
 
 ---
 
@@ -848,7 +848,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service_iam_policy#project DataGoogleDataprocMetastoreServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service_iam_policy#project DataGoogleDataprocMetastoreServiceIamPolicy#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### BigqueryRowAccessPolicy <a name="BigqueryRowAccessPolicy" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy google_bigquery_row_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy google_bigquery_row_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the BigqueryRowAccessPolicy to
 
 The id of the existing BigqueryRowAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,8 +979,8 @@ const bigqueryRowAccessPolicyConfig: bigqueryRowAccessPolicy.BigqueryRowAccessPo
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.tableId">tableId</a></code> | <code>string</code> | The ID of the table containing this row access policy. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.grantees">grantees</a></code> | <code>string[]</code> | Input only. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts">BigqueryRowAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1065,7 +1065,7 @@ public readonly datasetId: string;
 
 The ID of the dataset containing this row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#dataset_id BigqueryRowAccessPolicy#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#dataset_id BigqueryRowAccessPolicy#dataset_id}
 
 ---
 
@@ -1087,7 +1087,7 @@ date_field = CAST('2019-9-27' as DATE)
 nullable_field is not NULL
 numeric_field BETWEEN 1.0 AND 5.0
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#filter_predicate BigqueryRowAccessPolicy#filter_predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#filter_predicate BigqueryRowAccessPolicy#filter_predicate}
 
 ---
 
@@ -1105,7 +1105,7 @@ The ID must contain only
 letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum
 length is 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#policy_id BigqueryRowAccessPolicy#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#policy_id BigqueryRowAccessPolicy#policy_id}
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly tableId: string;
 
 The ID of the table containing this row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#table_id BigqueryRowAccessPolicy#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#table_id BigqueryRowAccessPolicy#table_id}
 
 ---
 
@@ -1141,7 +1141,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#deletion_policy BigqueryRowAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#deletion_policy BigqueryRowAccessPolicy#deletion_policy}
 
 ---
 
@@ -1178,7 +1178,7 @@ the internet, including authenticated and unauthenticated users. Because
 BigQuery requires authentication before a user can access the service,
 allUsers includes only authenticated users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#grantees BigqueryRowAccessPolicy#grantees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#grantees BigqueryRowAccessPolicy#grantees}
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#id BigqueryRowAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1205,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#project BigqueryRowAccessPolicy#project}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly timeouts: BigqueryRowAccessPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#timeouts BigqueryRowAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#timeouts BigqueryRowAccessPolicy#timeouts}
 
 ---
 
@@ -1237,9 +1237,9 @@ const bigqueryRowAccessPolicyTimeouts: bigqueryRowAccessPolicy.BigqueryRowAccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
 
 ---
 

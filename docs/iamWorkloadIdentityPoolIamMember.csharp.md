@@ -4,7 +4,7 @@
 
 ### IamWorkloadIdentityPoolIamMember <a name="IamWorkloadIdentityPoolIamMember" id="@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member google_iam_workload_identity_pool_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member google_iam_workload_identity_pool_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IamWorkloadIdentityPoolIam
 
 The id of the existing IamWorkloadIdentityPoolIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new IamWorkloadIdentityPoolIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#expression IamWorkloadIdentityPoolIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#title IamWorkloadIdentityPoolIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#description IamWorkloadIdentityPoolIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#expression IamWorkloadIdentityPoolIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#title IamWorkloadIdentityPoolIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#description IamWorkloadIdentityPoolIamMember#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#expression IamWorkloadIdentityPoolIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#expression IamWorkloadIdentityPoolIamMember#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#title IamWorkloadIdentityPoolIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#title IamWorkloadIdentityPoolIamMember#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#description IamWorkloadIdentityPoolIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#description IamWorkloadIdentityPoolIamMember#description}.
 
 ---
 
@@ -956,12 +956,12 @@ new IamWorkloadIdentityPoolIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#member IamWorkloadIdentityPoolIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#role IamWorkloadIdentityPoolIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.workloadIdentityPoolId">WorkloadIdentityPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#workload_identity_pool_id IamWorkloadIdentityPoolIamMember#workload_identity_pool_id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#member IamWorkloadIdentityPoolIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#role IamWorkloadIdentityPoolIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.workloadIdentityPoolId">WorkloadIdentityPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#workload_identity_pool_id IamWorkloadIdentityPoolIamMember#workload_identity_pool_id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberCondition">IamWorkloadIdentityPoolIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#id IamWorkloadIdentityPoolIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#project IamWorkloadIdentityPoolIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#id IamWorkloadIdentityPoolIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkloadIdentityPoolIamMember.IamWorkloadIdentityPoolIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#project IamWorkloadIdentityPoolIamMember#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#member IamWorkloadIdentityPoolIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#member IamWorkloadIdentityPoolIamMember#member}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#role IamWorkloadIdentityPoolIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#role IamWorkloadIdentityPoolIamMember#role}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public string WorkloadIdentityPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#workload_identity_pool_id IamWorkloadIdentityPoolIamMember#workload_identity_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#workload_identity_pool_id IamWorkloadIdentityPoolIamMember#workload_identity_pool_id}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public IamWorkloadIdentityPoolIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#condition IamWorkloadIdentityPoolIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#condition IamWorkloadIdentityPoolIamMember#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#id IamWorkloadIdentityPoolIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#id IamWorkloadIdentityPoolIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/iam_workload_identity_pool_iam_member#project IamWorkloadIdentityPoolIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workload_identity_pool_iam_member#project IamWorkloadIdentityPoolIamMember#project}.
 
 ---
 

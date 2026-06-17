@@ -4,7 +4,7 @@
 
 ### DataGooglePubsubTopic <a name="DataGooglePubsubTopic" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer"></a>
 
@@ -39,8 +39,8 @@ dataGooglePubsubTopic.DataGooglePubsubTopic(
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -526,7 +526,7 @@ The construct id used in the generated config for the DataGooglePubsubTopic to i
 
 The id of the existing DataGooglePubsubTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,8 +919,8 @@ dataGooglePubsubTopic.DataGooglePubsubTopicConfig(
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.name">name</a></code> | <code>str</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -1004,7 +1004,7 @@ name: str
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1031,7 +1031,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -8918,6 +8918,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.encoding">encoding</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.firstRevisionId">first_revision_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.lastRevisionId">last_revision_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.schema">schema</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettings">DataGooglePubsubTopicSchemaSettings</a></code> | *No description.* |
 
@@ -8951,6 +8953,26 @@ fqn: str
 
 ```python
 encoding: str
+```
+
+- *Type:* str
+
+---
+
+##### `first_revision_id`<sup>Required</sup> <a name="first_revision_id" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.firstRevisionId"></a>
+
+```python
+first_revision_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `last_revision_id`<sup>Required</sup> <a name="last_revision_id" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference.property.lastRevisionId"></a>
+
+```python
+last_revision_id: str
 ```
 
 - *Type:* str

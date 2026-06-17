@@ -4,7 +4,7 @@
 
 ### NetworkSecurityAuthzPolicy <a name="NetworkSecurityAuthzPolicy" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putCustomProvider">PutCustomProvider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putHttpRules">PutHttpRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules">PutNetworkRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTarget">PutTarget</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetCustomProvider">ResetCustomProvider</a></code> | *No description.* |
@@ -84,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetHttpRules">ResetHttpRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetLabels">ResetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetNetworkRules">ResetNetworkRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetPolicyProfile">ResetPolicyProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -423,6 +425,18 @@ private void PutHttpRules(IResolvable|NetworkSecurityAuthzPolicyHttpRules[] Valu
 
 ---
 
+##### `PutNetworkRules` <a name="PutNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules"></a>
+
+```csharp
+private void PutNetworkRules(IResolvable|NetworkSecurityAuthzPolicyNetworkRules[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putNetworkRules.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]
+
+---
+
 ##### `PutTarget` <a name="PutTarget" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.putTarget"></a>
 
 ```csharp
@@ -481,6 +495,12 @@ private void ResetId()
 
 ```csharp
 private void ResetLabels()
+```
+
+##### `ResetNetworkRules` <a name="ResetNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetNetworkRules"></a>
+
+```csharp
+private void ResetNetworkRules()
 ```
 
 ##### `ResetPolicyProfile` <a name="ResetPolicyProfile" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.resetPolicyProfile"></a>
@@ -604,7 +624,7 @@ The construct id used in the generated config for the NetworkSecurityAuthzPolicy
 
 The id of the existing NetworkSecurityAuthzPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,6 +658,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.customProvider">CustomProvider</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyCustomProviderOutputReference">NetworkSecurityAuthzPolicyCustomProviderOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.httpRules">HttpRules</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesList">NetworkSecurityAuthzPolicyHttpRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRules">NetworkRules</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList">NetworkSecurityAuthzPolicyNetworkRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.target">Target</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTargetOutputReference">NetworkSecurityAuthzPolicyTargetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeoutsOutputReference">NetworkSecurityAuthzPolicyTimeoutsOutputReference</a></code> | *No description.* |
@@ -651,6 +672,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRulesInput">NetworkRulesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.policyProfileInput">PolicyProfileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.targetInput">TargetInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTarget">NetworkSecurityAuthzPolicyTarget</a></code> | *No description.* |
@@ -849,6 +871,16 @@ public NetworkSecurityAuthzPolicyHttpRulesList HttpRules { get; }
 
 ---
 
+##### `NetworkRules`<sup>Required</sup> <a name="NetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRules"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesList NetworkRules { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList">NetworkSecurityAuthzPolicyNetworkRulesList</a>
+
+---
+
 ##### `Target`<sup>Required</sup> <a name="Target" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.target"></a>
 
 ```csharp
@@ -976,6 +1008,16 @@ public string NameInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `NetworkRulesInput`<sup>Optional</sup> <a name="NetworkRulesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicy.property.networkRulesInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRules[] NetworkRulesInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]
 
 ---
 
@@ -1154,6 +1196,7 @@ new NetworkSecurityAuthzPolicyConfig {
     IResolvable|NetworkSecurityAuthzPolicyHttpRules[] HttpRules = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRules[] NetworkRules = null,
     string PolicyProfile = null,
     string Project = null,
     NetworkSecurityAuthzPolicyTimeouts Timeouts = null
@@ -1179,10 +1222,11 @@ new NetworkSecurityAuthzPolicyConfig {
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of the resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.httpRules">HttpRules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRules">NetworkSecurityAuthzPolicyHttpRules</a>[]</code> | http_rules block. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of labels associated with the AuthzExtension resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.networkRules">NetworkRules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]</code> | network_rules block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.policyProfile">PolicyProfile</a></code> | <code>string</code> | Defines the type of authorization being performed. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts">NetworkSecurityAuthzPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1277,7 +1321,7 @@ When a request arrives, the policies are evaluated in the following order:
 3. If there are no ALLOW policies for the resource or if any of the ALLOW policies match the request, the request is allowed.
 4. Else the request is denied by default if none of the configured AuthzPolicies with ALLOW action match the request. Possible values: ["ALLOW", "DENY", "CUSTOM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
 
 ---
 
@@ -1291,7 +1335,7 @@ public string Location { get; set; }
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
 
 ---
 
@@ -1305,7 +1349,7 @@ public string Name { get; set; }
 
 Identifier. Name of the AuthzPolicy resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -1319,7 +1363,7 @@ public NetworkSecurityAuthzPolicyTarget Target { get; set; }
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
 
 ---
 
@@ -1333,7 +1377,7 @@ public NetworkSecurityAuthzPolicyCustomProvider CustomProvider { get; set; }
 
 custom_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
 
 ---
 
@@ -1354,7 +1398,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
 
 ---
 
@@ -1368,7 +1412,7 @@ public string Description { get; set; }
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
 
 ---
 
@@ -1382,7 +1426,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRules[] HttpRules { get; set; }
 
 http_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
 
 ---
 
@@ -1394,7 +1438,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1414,7 +1458,21 @@ Set of labels associated with the AuthzExtension resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+
+---
+
+##### `NetworkRules`<sup>Optional</sup> <a name="NetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyConfig.property.networkRules"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRules[] NetworkRules { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]
+
+network_rules block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#network_rules NetworkSecurityAuthzPolicy#network_rules}
 
 ---
 
@@ -1435,7 +1493,7 @@ Only CUSTOM action is allowed in this policy profile. AuthzExtensions in the cus
 protocol and be capable of receiving all ext_proc events (REQUEST_HEADERS, REQUEST_BODY, REQUEST_TRAILERS,
 RESPONSE_HEADERS, RESPONSE_BODY, RESPONSE_TRAILERS) with FULL_DUPLEX_STREAMED body send mode. Possible values: ["REQUEST_AUTHZ", "CONTENT_AUTHZ"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
 
 ---
 
@@ -1447,7 +1505,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}.
 
 ---
 
@@ -1461,7 +1519,7 @@ public NetworkSecurityAuthzPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
 
 ---
 
@@ -1497,7 +1555,7 @@ public NetworkSecurityAuthzPolicyCustomProviderAuthzExtension AuthzExtension { g
 
 authz_extension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
 
 ---
 
@@ -1511,7 +1569,7 @@ public NetworkSecurityAuthzPolicyCustomProviderCloudIap CloudIap { get; set; }
 
 cloud_iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
 
 ---
 
@@ -1547,7 +1605,7 @@ A list of references to authorization extensions that will be invoked for reques
 
 Limited to 1 custom provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -1581,7 +1639,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Enable Cloud IAP at the AuthzPolicy level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
 
 ---
 
@@ -1619,7 +1677,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFrom From { get; set; }
 
 from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
 
 ---
 
@@ -1633,7 +1691,7 @@ public NetworkSecurityAuthzPolicyHttpRulesTo To { get; set; }
 
 to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
 
 ---
 
@@ -1649,7 +1707,7 @@ CEL expression that describes the conditions to be satisfied for the action.
 
 The result of the CEL expression is ANDed with the from and to. Refer to the CEL language reference for a list of available attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
 
 ---
 
@@ -1685,7 +1743,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromNotSources[] NotSource
 
 not_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
 
 ---
 
@@ -1699,7 +1757,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromSources[] Sources { ge
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
 
 ---
 
@@ -1737,7 +1795,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesIpBlocks[] I
 
 ip_blocks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
 
 ---
 
@@ -1751,7 +1809,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals[]
 
 principals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
 
 ---
 
@@ -1765,7 +1823,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResources[] 
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -1801,7 +1859,7 @@ public double Length { get; set; }
 
 The length of the address range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
 
 ---
 
@@ -1815,7 +1873,7 @@ public string Prefix { get; set; }
 
 The address prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -1866,7 +1924,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -1880,7 +1938,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -1896,7 +1954,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -1915,7 +1973,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -1929,7 +1987,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal Prin
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
 
 ---
 
@@ -1945,7 +2003,7 @@ An enum to decide what principal value the principal rule will match against.
 
 If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
 
 ---
 
@@ -1964,7 +2022,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2011,7 +2069,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2025,7 +2083,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2041,7 +2099,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2060,7 +2118,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2079,7 +2137,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2115,7 +2173,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamServiceAccou
 
 iam_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
 
 ---
 
@@ -2129,7 +2187,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesTagValueIdSet T
 
 tag_value_id_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
 
 ---
 
@@ -2176,7 +2234,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2190,7 +2248,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2206,7 +2264,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2225,7 +2283,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2244,7 +2302,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2281,7 +2339,7 @@ A list of resource tag value permanent IDs to match against the resource manager
 The match follows AND semantics which means all the ids must match.
 Limited to 5 matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
 
 ---
 
@@ -2319,7 +2377,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocks[] IpBl
 
 ip_blocks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
 
 ---
 
@@ -2333,7 +2391,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals[] Pr
 
 principals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
 
 ---
 
@@ -2347,7 +2405,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesFromSourcesResources[] Res
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -2383,7 +2441,7 @@ public double Length { get; set; }
 
 The length of the address range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
 
 ---
 
@@ -2397,7 +2455,7 @@ public string Prefix { get; set; }
 
 The address prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2448,7 +2506,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2462,7 +2520,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2478,7 +2536,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2497,7 +2555,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2511,7 +2569,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal Princip
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
 
 ---
 
@@ -2527,7 +2585,7 @@ An enum to decide what principal value the principal rule will match against.
 
 If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
 
 ---
 
@@ -2546,7 +2604,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2593,7 +2651,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2607,7 +2665,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2623,7 +2681,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2642,7 +2700,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2661,7 +2719,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2697,7 +2755,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServiceAccount 
 
 iam_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
 
 ---
 
@@ -2711,7 +2769,7 @@ public NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesTagValueIdSet TagV
 
 tag_value_id_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
 
 ---
 
@@ -2758,7 +2816,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -2772,7 +2830,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -2788,7 +2846,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -2807,7 +2865,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -2826,7 +2884,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -2863,7 +2921,7 @@ A list of resource tag value permanent IDs to match against the resource manager
 The match follows AND semantics which means all the ids must match.
 Limited to 5 matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
 
 ---
 
@@ -2899,7 +2957,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToNotOperations[] NotOpera
 
 not_operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
 
 ---
 
@@ -2913,7 +2971,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperations[] Operations 
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
 
 ---
 
@@ -2953,7 +3011,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet HeaderSet { g
 
 header_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
 
 ---
 
@@ -2967,7 +3025,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts[] Hos
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
 
 ---
 
@@ -2983,7 +3041,7 @@ A list of HTTP methods to match against.
 
 Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -2997,7 +3055,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths[] Pat
 
 paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
 
 ---
 
@@ -3031,7 +3089,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHe
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
 
 ---
 
@@ -3067,7 +3125,7 @@ public string Name { get; set; }
 
 Specifies the name of the header in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -3081,7 +3139,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValue V
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
 
 ---
 
@@ -3128,7 +3186,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3142,7 +3200,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3158,7 +3216,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3177,7 +3235,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3196,7 +3254,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3243,7 +3301,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3257,7 +3315,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3273,7 +3331,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3292,7 +3350,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3311,7 +3369,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3358,7 +3416,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3372,7 +3430,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3388,7 +3446,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3407,7 +3465,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3426,7 +3484,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3468,7 +3526,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSet HeaderSet { get;
 
 header_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
 
 ---
 
@@ -3482,7 +3540,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts[] Hosts 
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
 
 ---
 
@@ -3496,7 +3554,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsMcp Mcp { get; set; }
 
 mcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
 
 ---
 
@@ -3512,7 +3570,7 @@ A list of HTTP methods to match against.
 
 Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -3526,7 +3584,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths[] Paths 
 
 paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
 
 ---
 
@@ -3560,7 +3618,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeade
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
 
 ---
 
@@ -3596,7 +3654,7 @@ public string Name { get; set; }
 
 Specifies the name of the header in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -3610,7 +3668,7 @@ public NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeadersValue Valu
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
 
 ---
 
@@ -3657,7 +3715,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3671,7 +3729,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3687,7 +3745,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3706,7 +3764,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3725,7 +3783,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3772,7 +3830,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -3786,7 +3844,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -3802,7 +3860,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -3821,7 +3879,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -3840,7 +3898,7 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -3876,7 +3934,7 @@ public string BaseProtocolMethodsOption { get; set; }
 
 If specified, matches on the MCP protocol’s non-access specific methods namely: * initialize/ * completion/ * logging/ * notifications/ * ping Default value: "SKIP_BASE_PROTOCOL_METHODS" Possible values: ["SKIP_BASE_PROTOCOL_METHODS", "MATCH_BASE_PROTOCOL_METHODS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
 
 ---
 
@@ -3890,7 +3948,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethods[] M
 
 methods block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
 
 ---
 
@@ -3933,7 +3991,7 @@ Allowed values are as follows:
 3) “prompts/get”, “tools/call”, “resources/subscribe”, “resources/unsubscribe”, “resources/read”
    Params cannot be specified for categories 1) and 2).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
 
 ---
 
@@ -3947,7 +4005,7 @@ public IResolvable|NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsPara
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
 
 ---
 
@@ -3989,7 +4047,7 @@ public string Contains { get; set; }
 
 A substring match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -4003,7 +4061,7 @@ public string Exact { get; set; }
 
 An exact match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -4017,7 +4075,7 @@ public bool|IResolvable IgnoreCase { get; set; }
 
 Specifies that the string match should be case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -4031,7 +4089,7 @@ public string Prefix { get; set; }
 
 A prefix match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -4045,7 +4103,7 @@ public string Suffix { get; set; }
 
 A suffix match on the MCP method parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 
 ---
 
@@ -4092,7 +4150,7 @@ Examples:
 
 * abc matches the value xyz.abc.def
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
 
 ---
 
@@ -4106,7 +4164,7 @@ public string Exact { get; set; }
 
 The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
 
 ---
 
@@ -4122,7 +4180,7 @@ If true, indicates the exact/prefix/suffix/contains matching should be case inse
 
 For example, the matcher data will match both input string Data and data if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
 
 ---
 
@@ -4141,7 +4199,7 @@ Examples:
 
 * abc matches the value abc.xyz
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
 
 ---
 
@@ -4160,7 +4218,579 @@ Examples:
 
 * abc matches the value xyz.abc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRules <a name="NetworkSecurityAuthzPolicyNetworkRules" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRules {
+    NetworkSecurityAuthzPolicyNetworkRulesFrom From = null,
+    NetworkSecurityAuthzPolicyNetworkRulesTo To = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.from">From</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | from block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.to">To</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | to block. |
+
+---
+
+##### `From`<sup>Optional</sup> <a name="From" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.from"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFrom From { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+from block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+
+---
+
+##### `To`<sup>Optional</sup> <a name="To" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules.property.to"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesTo To { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+to block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFrom <a name="NetworkSecurityAuthzPolicyNetworkRulesFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFrom {
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] NotSources = null,
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources[] Sources = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.notSources">NotSources</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]</code> | not_sources block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.sources">Sources</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]</code> | sources block. |
+
+---
+
+##### `NotSources`<sup>Optional</sup> <a name="NotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.notSources"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] NotSources { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]
+
+not_sources block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+
+---
+
+##### `Sources`<sup>Optional</sup> <a name="Sources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom.property.sources"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources[] Sources { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]
+
+sources block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSources <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSources {
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] IpBlocks = null,
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] Principals = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.ipBlocks">IpBlocks</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]</code> | ip_blocks block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.principals">Principals</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]</code> | principals block. |
+
+---
+
+##### `IpBlocks`<sup>Optional</sup> <a name="IpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.ipBlocks"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] IpBlocks { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]
+
+ip_blocks block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+
+---
+
+##### `Principals`<sup>Optional</sup> <a name="Principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources.property.principals"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] Principals { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]
+
+principals block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks {
+    double Length,
+    string Prefix
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.length">Length</a></code> | <code>double</code> | The length of the address range. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.prefix">Prefix</a></code> | <code>string</code> | The address prefix. |
+
+---
+
+##### `Length`<sup>Required</sup> <a name="Length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.length"></a>
+
+```csharp
+public double Length { get; set; }
+```
+
+- *Type:* double
+
+The length of the address range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks.property.prefix"></a>
+
+```csharp
+public string Prefix { get; set; }
+```
+
+- *Type:* string
+
+The address prefix.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals {
+    NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal Principal = null,
+    string PrincipalSelector = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | principal block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principalSelector">PrincipalSelector</a></code> | <code>string</code> | An enum to decide what principal value the principal rule will match against. |
+
+---
+
+##### `Principal`<sup>Optional</sup> <a name="Principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principal"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal Principal { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+principal block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+
+---
+
+##### `PrincipalSelector`<sup>Optional</sup> <a name="PrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals.property.principalSelector"></a>
+
+```csharp
+public string PrincipalSelector { get; set; }
+```
+
+- *Type:* string
+
+An enum to decide what principal value the principal rule will match against.
+
+If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal {
+    string Exact = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.property.exact">Exact</a></code> | <code>string</code> | The input string must match exactly the string specified here. Examples: * abc only matches the value abc. |
+
+---
+
+##### `Exact`<sup>Optional</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal.property.exact"></a>
+
+```csharp
+public string Exact { get; set; }
+```
+
+- *Type:* string
+
+The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSources <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSources {
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] IpBlocks = null,
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] Principals = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.ipBlocks">IpBlocks</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]</code> | ip_blocks block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.principals">Principals</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]</code> | principals block. |
+
+---
+
+##### `IpBlocks`<sup>Optional</sup> <a name="IpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.ipBlocks"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] IpBlocks { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]
+
+ip_blocks block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+
+---
+
+##### `Principals`<sup>Optional</sup> <a name="Principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources.property.principals"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] Principals { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]
+
+principals block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks {
+    double Length,
+    string Prefix
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.length">Length</a></code> | <code>double</code> | The length of the address range. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.prefix">Prefix</a></code> | <code>string</code> | The address prefix. |
+
+---
+
+##### `Length`<sup>Required</sup> <a name="Length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.length"></a>
+
+```csharp
+public double Length { get; set; }
+```
+
+- *Type:* double
+
+The length of the address range.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks.property.prefix"></a>
+
+```csharp
+public string Prefix { get; set; }
+```
+
+- *Type:* string
+
+The address prefix.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals {
+    NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal Principal = null,
+    string PrincipalSelector = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | principal block. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principalSelector">PrincipalSelector</a></code> | <code>string</code> | An enum to decide what principal value the principal rule will match against. |
+
+---
+
+##### `Principal`<sup>Optional</sup> <a name="Principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principal"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal Principal { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+principal block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+
+---
+
+##### `PrincipalSelector`<sup>Optional</sup> <a name="PrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals.property.principalSelector"></a>
+
+```csharp
+public string PrincipalSelector { get; set; }
+```
+
+- *Type:* string
+
+An enum to decide what principal value the principal rule will match against.
+
+If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal {
+    string Exact = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.property.exact">Exact</a></code> | <code>string</code> | The input string must match exactly the string specified here. Examples: * abc only matches the value abc. |
+
+---
+
+##### `Exact`<sup>Optional</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal.property.exact"></a>
+
+```csharp
+public string Exact { get; set; }
+```
+
+- *Type:* string
+
+The input string must match exactly the string specified here. Examples: * abc only matches the value abc.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesTo <a name="NetworkSecurityAuthzPolicyNetworkRulesTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesTo {
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations[] Operations = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.property.operations">Operations</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]</code> | operations block. |
+
+---
+
+##### `Operations`<sup>Optional</sup> <a name="Operations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo.property.operations"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations[] Operations { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]
+
+operations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperations <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperations {
+    IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] Snis = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.property.snis">Snis</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]</code> | snis block. |
+
+---
+
+##### `Snis`<sup>Optional</sup> <a name="Snis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations.property.snis"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] Snis { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]
+
+snis block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#snis NetworkSecurityAuthzPolicy#snis}
+
+---
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis {
+    string Exact = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.property.exact">Exact</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}. |
+
+---
+
+##### `Exact`<sup>Optional</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis.property.exact"></a>
+
+```csharp
+public string Exact { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}.
 
 ---
 
@@ -4200,7 +4830,7 @@ Must not be specified when targeting Agent
 Gateway. All resources referenced by this policy and extensions must share the same load balancing scheme.
 For more information, refer to [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
 
 ---
 
@@ -4214,7 +4844,7 @@ public string[] Resources { get; set; }
 
 A list of references to the Forwarding Rules or Secure Web Proxy Gateways or Agent Gateways on which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 
 ---
 
@@ -4236,9 +4866,9 @@ new NetworkSecurityAuthzPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}. |
 
 ---
 
@@ -4250,7 +4880,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}.
 
 ---
 
@@ -4262,7 +4892,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}.
 
 ---
 
@@ -4274,7 +4904,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}.
 
 ---
 
@@ -20088,6 +20718,5582 @@ public NetworkSecurityAuthzPolicyHttpRulesTo InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesTo">NetworkSecurityAuthzPolicyHttpRulesTo</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.lengthInput">LengthInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.length">Length</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefix">Prefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LengthInput`<sup>Optional</sup> <a name="LengthInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.lengthInput"></a>
+
+```csharp
+public double LengthInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `PrefixInput`<sup>Optional</sup> <a name="PrefixInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefixInput"></a>
+
+```csharp
+public string PrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Length`<sup>Required</sup> <a name="Length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.length"></a>
+
+```csharp
+public double Length { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.prefix"></a>
+
+```csharp
+public string Prefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks">PutIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals">PutPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetIpBlocks">ResetIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetPrincipals">ResetPrincipals</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIpBlocks` <a name="PutIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks"></a>
+
+```csharp
+private void PutIpBlocks(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putIpBlocks.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]
+
+---
+
+##### `PutPrincipals` <a name="PutPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals"></a>
+
+```csharp
+private void PutPrincipals(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.putPrincipals.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]
+
+---
+
+##### `ResetIpBlocks` <a name="ResetIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetIpBlocks"></a>
+
+```csharp
+private void ResetIpBlocks()
+```
+
+##### `ResetPrincipals` <a name="ResetPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.resetPrincipals"></a>
+
+```csharp
+private void ResetPrincipals()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocks">IpBlocks</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principals">Principals</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocksInput">IpBlocksInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principalsInput">PrincipalsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IpBlocks`<sup>Required</sup> <a name="IpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocks"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList IpBlocks { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList</a>
+
+---
+
+##### `Principals`<sup>Required</sup> <a name="Principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principals"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList Principals { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList</a>
+
+---
+
+##### `IpBlocksInput`<sup>Optional</sup> <a name="IpBlocksInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.ipBlocksInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] IpBlocksInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks</a>[]
+
+---
+
+##### `PrincipalsInput`<sup>Optional</sup> <a name="PrincipalsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.principalsInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] PrincipalsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal">PutPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipal">ResetPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipalSelector">ResetPrincipalSelector</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutPrincipal` <a name="PutPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal"></a>
+
+```csharp
+private void PutPrincipal(NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.putPrincipal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `ResetPrincipal` <a name="ResetPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipal"></a>
+
+```csharp
+private void ResetPrincipal()
+```
+
+##### `ResetPrincipalSelector` <a name="ResetPrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.resetPrincipalSelector"></a>
+
+```csharp
+private void ResetPrincipalSelector()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalInput">PrincipalInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelectorInput">PrincipalSelectorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelector">PrincipalSelector</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Principal`<sup>Required</sup> <a name="Principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principal"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference Principal { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference</a>
+
+---
+
+##### `PrincipalInput`<sup>Optional</sup> <a name="PrincipalInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalInput"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal PrincipalInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `PrincipalSelectorInput`<sup>Optional</sup> <a name="PrincipalSelectorInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelectorInput"></a>
+
+```csharp
+public string PrincipalSelectorInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrincipalSelector`<sup>Required</sup> <a name="PrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.principalSelector"></a>
+
+```csharp
+public string PrincipalSelector { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resetExact">ResetExact</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetExact` <a name="ResetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.resetExact"></a>
+
+```csharp
+private void ResetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exactInput">ExactInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exact">Exact</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExactInput`<sup>Optional</sup> <a name="ExactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exactInput"></a>
+
+```csharp
+public string ExactInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Exact`<sup>Required</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.exact"></a>
+
+```csharp
+public string Exact { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference.property.internalValue"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources">PutNotSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources">PutSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetNotSources">ResetNotSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetSources">ResetSources</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutNotSources` <a name="PutNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources"></a>
+
+```csharp
+private void PutNotSources(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putNotSources.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]
+
+---
+
+##### `PutSources` <a name="PutSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources"></a>
+
+```csharp
+private void PutSources(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.putSources.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]
+
+---
+
+##### `ResetNotSources` <a name="ResetNotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetNotSources"></a>
+
+```csharp
+private void ResetNotSources()
+```
+
+##### `ResetSources` <a name="ResetSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.resetSources"></a>
+
+```csharp
+private void ResetSources()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSources">NotSources</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sources">Sources</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSourcesInput">NotSourcesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sourcesInput">SourcesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NotSources`<sup>Required</sup> <a name="NotSources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSources"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList NotSources { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList</a>
+
+---
+
+##### `Sources`<sup>Required</sup> <a name="Sources" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sources"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList Sources { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList</a>
+
+---
+
+##### `NotSourcesInput`<sup>Optional</sup> <a name="NotSourcesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.notSourcesInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] NotSourcesInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromNotSources">NetworkSecurityAuthzPolicyNetworkRulesFromNotSources</a>[]
+
+---
+
+##### `SourcesInput`<sup>Optional</sup> <a name="SourcesInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.sourcesInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources[] SourcesInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference.property.internalValue"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFrom InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.lengthInput">LengthInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.length">Length</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefix">Prefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LengthInput`<sup>Optional</sup> <a name="LengthInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.lengthInput"></a>
+
+```csharp
+public double LengthInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `PrefixInput`<sup>Optional</sup> <a name="PrefixInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefixInput"></a>
+
+```csharp
+public string PrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Length`<sup>Required</sup> <a name="Length" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.length"></a>
+
+```csharp
+public double Length { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.prefix"></a>
+
+```csharp
+public string Prefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks">PutIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals">PutPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetIpBlocks">ResetIpBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetPrincipals">ResetPrincipals</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIpBlocks` <a name="PutIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks"></a>
+
+```csharp
+private void PutIpBlocks(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putIpBlocks.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]
+
+---
+
+##### `PutPrincipals` <a name="PutPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals"></a>
+
+```csharp
+private void PutPrincipals(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.putPrincipals.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]
+
+---
+
+##### `ResetIpBlocks` <a name="ResetIpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetIpBlocks"></a>
+
+```csharp
+private void ResetIpBlocks()
+```
+
+##### `ResetPrincipals` <a name="ResetPrincipals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.resetPrincipals"></a>
+
+```csharp
+private void ResetPrincipals()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocks">IpBlocks</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principals">Principals</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocksInput">IpBlocksInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principalsInput">PrincipalsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IpBlocks`<sup>Required</sup> <a name="IpBlocks" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocks"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList IpBlocks { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList</a>
+
+---
+
+##### `Principals`<sup>Required</sup> <a name="Principals" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principals"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList Principals { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList</a>
+
+---
+
+##### `IpBlocksInput`<sup>Optional</sup> <a name="IpBlocksInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.ipBlocksInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] IpBlocksInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks</a>[]
+
+---
+
+##### `PrincipalsInput`<sup>Optional</sup> <a name="PrincipalsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.principalsInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] PrincipalsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSources InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSources">NetworkSecurityAuthzPolicyNetworkRulesFromSources</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal">PutPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipal">ResetPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipalSelector">ResetPrincipalSelector</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutPrincipal` <a name="PutPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal"></a>
+
+```csharp
+private void PutPrincipal(NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.putPrincipal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `ResetPrincipal` <a name="ResetPrincipal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipal"></a>
+
+```csharp
+private void ResetPrincipal()
+```
+
+##### `ResetPrincipalSelector` <a name="ResetPrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.resetPrincipalSelector"></a>
+
+```csharp
+private void ResetPrincipalSelector()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalInput">PrincipalInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelectorInput">PrincipalSelectorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelector">PrincipalSelector</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Principal`<sup>Required</sup> <a name="Principal" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principal"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference Principal { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference</a>
+
+---
+
+##### `PrincipalInput`<sup>Optional</sup> <a name="PrincipalInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalInput"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal PrincipalInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+##### `PrincipalSelectorInput`<sup>Optional</sup> <a name="PrincipalSelectorInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelectorInput"></a>
+
+```csharp
+public string PrincipalSelectorInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrincipalSelector`<sup>Required</sup> <a name="PrincipalSelector" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.principalSelector"></a>
+
+```csharp
+public string PrincipalSelector { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resetExact">ResetExact</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetExact` <a name="ResetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.resetExact"></a>
+
+```csharp
+private void ResetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exactInput">ExactInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exact">Exact</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExactInput`<sup>Optional</sup> <a name="ExactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exactInput"></a>
+
+```csharp
+public string ExactInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Exact`<sup>Required</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.exact"></a>
+
+```csharp
+public string Exact { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference.property.internalValue"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal">NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesList <a name="NetworkSecurityAuthzPolicyNetworkRulesList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRules[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom">PutFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo">PutTo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetFrom">ResetFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetTo">ResetTo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutFrom` <a name="PutFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom"></a>
+
+```csharp
+private void PutFrom(NetworkSecurityAuthzPolicyNetworkRulesFrom Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putFrom.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+##### `PutTo` <a name="PutTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo"></a>
+
+```csharp
+private void PutTo(NetworkSecurityAuthzPolicyNetworkRulesTo Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.putTo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+---
+
+##### `ResetFrom` <a name="ResetFrom" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetFrom"></a>
+
+```csharp
+private void ResetFrom()
+```
+
+##### `ResetTo` <a name="ResetTo" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.resetTo"></a>
+
+```csharp
+private void ResetTo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.from">From</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.to">To</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference">NetworkSecurityAuthzPolicyNetworkRulesToOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fromInput">FromInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.toInput">ToInput</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.from"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference From { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference">NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference</a>
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.to"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesToOutputReference To { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference">NetworkSecurityAuthzPolicyNetworkRulesToOutputReference</a>
+
+---
+
+##### `FromInput`<sup>Optional</sup> <a name="FromInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.fromInput"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesFrom FromInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesFrom">NetworkSecurityAuthzPolicyNetworkRulesFrom</a>
+
+---
+
+##### `ToInput`<sup>Optional</sup> <a name="ToInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.toInput"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesTo ToInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRules InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRules">NetworkSecurityAuthzPolicyNetworkRules</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsList <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis">PutSnis</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resetSnis">ResetSnis</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutSnis` <a name="PutSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis"></a>
+
+```csharp
+private void PutSnis(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.putSnis.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]
+
+---
+
+##### `ResetSnis` <a name="ResetSnis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.resetSnis"></a>
+
+```csharp
+private void ResetSnis()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snis">Snis</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snisInput">SnisInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Snis`<sup>Required</sup> <a name="Snis" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snis"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList Snis { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList</a>
+
+---
+
+##### `SnisInput`<sup>Optional</sup> <a name="SnisInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.snisInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] SnisInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get"></a>
+
+```csharp
+private NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>[]
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resetExact">ResetExact</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetExact` <a name="ResetExact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.resetExact"></a>
+
+```csharp
+private void ResetExact()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exactInput">ExactInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exact">Exact</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExactInput`<sup>Optional</sup> <a name="ExactInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exactInput"></a>
+
+```csharp
+public string ExactInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Exact`<sup>Required</sup> <a name="Exact" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.exact"></a>
+
+```csharp
+public string Exact { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis">NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis</a>
+
+---
+
+
+### NetworkSecurityAuthzPolicyNetworkRulesToOutputReference <a name="NetworkSecurityAuthzPolicyNetworkRulesToOutputReference" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new NetworkSecurityAuthzPolicyNetworkRulesToOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations">PutOperations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resetOperations">ResetOperations</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutOperations` <a name="PutOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations"></a>
+
+```csharp
+private void PutOperations(IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.putOperations.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]
+
+---
+
+##### `ResetOperations` <a name="ResetOperations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.resetOperations"></a>
+
+```csharp
+private void ResetOperations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operations">Operations</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operationsInput">OperationsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Operations`<sup>Required</sup> <a name="Operations" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operations"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesToOperationsList Operations { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperationsList">NetworkSecurityAuthzPolicyNetworkRulesToOperationsList</a>
+
+---
+
+##### `OperationsInput`<sup>Optional</sup> <a name="OperationsInput" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.operationsInput"></a>
+
+```csharp
+public IResolvable|NetworkSecurityAuthzPolicyNetworkRulesToOperations[] OperationsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOperations">NetworkSecurityAuthzPolicyNetworkRulesToOperations</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesToOutputReference.property.internalValue"></a>
+
+```csharp
+public NetworkSecurityAuthzPolicyNetworkRulesTo InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyNetworkRulesTo">NetworkSecurityAuthzPolicyNetworkRulesTo</a>
 
 ---
 

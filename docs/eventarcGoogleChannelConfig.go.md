@@ -4,7 +4,7 @@
 
 ### EventarcGoogleChannelConfig <a name="EventarcGoogleChannelConfig" id="@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the EventarcGoogleChannelConfi
 
 The id of the existing EventarcGoogleChannelConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,8 +906,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/eventarcgooglech
 | <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.location">Location</a></code> | <code>*string</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.name">Name</a></code> | <code>*string</code> | Required. The resource name of the config. Must be in the format of, 'projects/{project}/locations/{location}/googleChannelConfig'. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.cryptoKeyName">CryptoKeyName</a></code> | <code>*string</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#id EventarcGoogleChannelConfig#id}. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#project EventarcGoogleChannelConfig#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#id EventarcGoogleChannelConfig#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#project EventarcGoogleChannelConfig#project}. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts">EventarcGoogleChannelConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -992,7 +992,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#location EventarcGoogleChannelConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#location EventarcGoogleChannelConfig#location}
 
 ---
 
@@ -1006,7 +1006,7 @@ Name *string
 
 Required. The resource name of the config. Must be in the format of, 'projects/{project}/locations/{location}/googleChannelConfig'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#name EventarcGoogleChannelConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#name EventarcGoogleChannelConfig#name}
 
 ---
 
@@ -1022,7 +1022,7 @@ Optional.
 
 Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#crypto_key_name EventarcGoogleChannelConfig#crypto_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#crypto_key_name EventarcGoogleChannelConfig#crypto_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1036,7 +1036,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#id EventarcGoogleChannelConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#id EventarcGoogleChannelConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#project EventarcGoogleChannelConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#project EventarcGoogleChannelConfig#project}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Timeouts EventarcGoogleChannelConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#timeouts EventarcGoogleChannelConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#timeouts EventarcGoogleChannelConfig#timeouts}
 
 ---
 
@@ -1087,9 +1087,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/eventarcgooglech
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#create EventarcGoogleChannelConfig#create}. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#delete EventarcGoogleChannelConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#update EventarcGoogleChannelConfig#update}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#create EventarcGoogleChannelConfig#create}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#delete EventarcGoogleChannelConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#update EventarcGoogleChannelConfig#update}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#create EventarcGoogleChannelConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#create EventarcGoogleChannelConfig#create}.
 
 ---
 
@@ -1113,7 +1113,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#delete EventarcGoogleChannelConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#delete EventarcGoogleChannelConfig#delete}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/eventarc_google_channel_config#update EventarcGoogleChannelConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/eventarc_google_channel_config#update EventarcGoogleChannelConfig#update}.
 
 ---
 

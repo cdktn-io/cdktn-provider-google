@@ -4,7 +4,7 @@
 
 ### DataGoogleDataprocMetastoreService <a name="DataGoogleDataprocMetastoreService" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service google_dataproc_metastore_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service google_dataproc_metastore_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleDataprocMetastor
 
 The id of the existing DataGoogleDataprocMetastoreService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,8 +994,8 @@ new DataGoogleDataprocMetastoreServiceConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.location">Location</a></code> | <code>string</code> | The location where the metastore service should reside. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | The ID of the metastore service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#id DataGoogleDataprocMetastoreService#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#project DataGoogleDataprocMetastoreService#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#id DataGoogleDataprocMetastoreService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#project DataGoogleDataprocMetastoreService#project}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ public string Location { get; set; }
 
 The location where the metastore service should reside. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#location DataGoogleDataprocMetastoreService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#location DataGoogleDataprocMetastoreService#location}
 
 ---
 
@@ -1097,7 +1097,7 @@ The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 3 and 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#service_id DataGoogleDataprocMetastoreService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#service_id DataGoogleDataprocMetastoreService#service_id}
 
 ---
 
@@ -1109,7 +1109,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#id DataGoogleDataprocMetastoreService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#id DataGoogleDataprocMetastoreService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/dataproc_metastore_service#project DataGoogleDataprocMetastoreService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/dataproc_metastore_service#project DataGoogleDataprocMetastoreService#project}.
 
 ---
 
