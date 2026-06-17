@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktn from 'cdktn';
 
 export interface StorageBucketIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#condition StorageBucketIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#condition StorageBucketIamMember#condition}
   */
   readonly condition?: StorageBucketIamMemberCondition;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#timeouts StorageBucketIamMember#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#timeouts StorageBucketIamMember#timeouts}
   */
   readonly timeouts?: StorageBucketIamMemberTimeouts;
 }
 export interface StorageBucketIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}
   */
   readonly title: string;
 }
@@ -190,7 +190,7 @@ export class StorageBucketIamMemberConditionOutputReference extends cdktn.Comple
 }
 export interface StorageBucketIamMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#create StorageBucketIamMember#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#create StorageBucketIamMember#create}
   */
   readonly create?: string;
 }
@@ -284,7 +284,7 @@ export class StorageBucketIamMemberTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member}
 */
 export class StorageBucketIamMember extends cdktn.TerraformResource {
 
@@ -300,7 +300,7 @@ export class StorageBucketIamMember extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBucketIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBucketIamMember to import
-  * @param importFromId The id of the existing StorageBucketIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBucketIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBucketIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -312,7 +312,7 @@ export class StorageBucketIamMember extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -323,7 +323,7 @@ export class StorageBucketIamMember extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_bucket_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

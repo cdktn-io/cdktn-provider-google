@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface VmwareengineExternalAccessRuleConfig extends cdktn.TerraformMet
   /**
   * The action that the external access rule performs. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#action VmwareengineExternalAccessRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#action VmwareengineExternalAccessRule#action}
   */
   readonly action: string;
   /**
@@ -27,23 +27,23 @@ export interface VmwareengineExternalAccessRuleConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#deletion_policy VmwareengineExternalAccessRule#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#deletion_policy VmwareengineExternalAccessRule#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-provided description for the external access rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#description VmwareengineExternalAccessRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#description VmwareengineExternalAccessRule#description}
   */
   readonly description?: string;
   /**
   * A list of destination ports to which the external access rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#destination_ports VmwareengineExternalAccessRule#destination_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#destination_ports VmwareengineExternalAccessRule#destination_ports}
   */
   readonly destinationPorts: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,13 +52,13 @@ export interface VmwareengineExternalAccessRuleConfig extends cdktn.TerraformMet
   /**
   * The IP protocol to which the external access rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#ip_protocol VmwareengineExternalAccessRule#ip_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#ip_protocol VmwareengineExternalAccessRule#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
   * The ID of the external access rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#name VmwareengineExternalAccessRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#name VmwareengineExternalAccessRule#name}
   */
   readonly name: string;
   /**
@@ -66,37 +66,37 @@ export interface VmwareengineExternalAccessRuleConfig extends cdktn.TerraformMet
   * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
   * For example: projects/my-project/locations/us-west1-a/networkPolicies/my-policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#parent VmwareengineExternalAccessRule#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#parent VmwareengineExternalAccessRule#parent}
   */
   readonly parent: string;
   /**
   * External access rule priority, which determines the external access rule to use when multiple rules apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#priority VmwareengineExternalAccessRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#priority VmwareengineExternalAccessRule#priority}
   */
   readonly priority: number;
   /**
   * A list of source ports to which the external access rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#source_ports VmwareengineExternalAccessRule#source_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#source_ports VmwareengineExternalAccessRule#source_ports}
   */
   readonly sourcePorts: string[];
   /**
   * destination_ip_ranges block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
   */
   readonly destinationIpRanges: VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktn.IResolvable;
   /**
   * source_ip_ranges block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
   */
   readonly sourceIpRanges: VmwareengineExternalAccessRuleSourceIpRanges[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#timeouts VmwareengineExternalAccessRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#timeouts VmwareengineExternalAccessRule#timeouts}
   */
   readonly timeouts?: VmwareengineExternalAccessRuleTimeouts;
 }
@@ -104,13 +104,13 @@ export interface VmwareengineExternalAccessRuleDestinationIpRanges {
   /**
   * The name of an 'ExternalAddress' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#external_address VmwareengineExternalAccessRule#external_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#external_address VmwareengineExternalAccessRule#external_address}
   */
   readonly externalAddress?: string;
   /**
   * An IP address range in the CIDR format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
   */
   readonly ipAddressRange?: string;
 }
@@ -257,13 +257,13 @@ export interface VmwareengineExternalAccessRuleSourceIpRanges {
   /**
   * A single IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#ip_address VmwareengineExternalAccessRule#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#ip_address VmwareengineExternalAccessRule#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * An IP address range in the CIDR format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
   */
   readonly ipAddressRange?: string;
 }
@@ -408,15 +408,15 @@ export class VmwareengineExternalAccessRuleSourceIpRangesList extends cdktn.Comp
 }
 export interface VmwareengineExternalAccessRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}
   */
   readonly update?: string;
 }
@@ -568,7 +568,7 @@ export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}
 */
 export class VmwareengineExternalAccessRule extends cdktn.TerraformResource {
 
@@ -584,7 +584,7 @@ export class VmwareengineExternalAccessRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VmwareengineExternalAccessRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmwareengineExternalAccessRule to import
-  * @param importFromId The id of the existing VmwareengineExternalAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VmwareengineExternalAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmwareengineExternalAccessRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -596,7 +596,7 @@ export class VmwareengineExternalAccessRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -607,7 +607,7 @@ export class VmwareengineExternalAccessRule extends cdktn.TerraformResource {
       terraformResourceType: 'google_vmwareengine_external_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

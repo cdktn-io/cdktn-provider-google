@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,19 +21,25 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#deletion_policy DatabaseMigrationServiceMigrationJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#deletion_policy DatabaseMigrationServiceMigrationJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
+  * The desired state of the migration job. If set to 'RUNNING', the migration job will be started. Possible values: ["NOT_STARTED", "RUNNING"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#desired_state DatabaseMigrationServiceMigrationJob#desired_state}
+  */
+  readonly desiredState?: string;
+  /**
   * The name of the destination connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{destinationConnectionProfile}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#destination DatabaseMigrationServiceMigrationJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#destination DatabaseMigrationServiceMigrationJob#destination}
   */
   readonly destination: string;
   /**
   * The migration job display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#display_name DatabaseMigrationServiceMigrationJob#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#display_name DatabaseMigrationServiceMigrationJob#display_name}
   */
   readonly displayName?: string;
   /**
@@ -41,18 +47,18 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   * in the format: (gs://[BUCKET_NAME]/[OBJECT_NAME]).
   * This field and the "dump_flags" field are mutually exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#dump_path DatabaseMigrationServiceMigrationJob#dump_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#dump_path DatabaseMigrationServiceMigrationJob#dump_path}
   */
   readonly dumpPath?: string;
   /**
   * The type of the data dump. Supported for MySQL to CloudSQL for MySQL
   * migrations only. Possible values: ["LOGICAL", "PHYSICAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#dump_type DatabaseMigrationServiceMigrationJob#dump_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#dump_type DatabaseMigrationServiceMigrationJob#dump_type}
   */
   readonly dumpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#id DatabaseMigrationServiceMigrationJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#id DatabaseMigrationServiceMigrationJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,83 +71,89 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#labels DatabaseMigrationServiceMigrationJob#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#labels DatabaseMigrationServiceMigrationJob#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the migration job should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#location DatabaseMigrationServiceMigrationJob#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#location DatabaseMigrationServiceMigrationJob#location}
   */
   readonly location?: string;
   /**
   * The ID of the migration job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#migration_job_id DatabaseMigrationServiceMigrationJob#migration_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#migration_job_id DatabaseMigrationServiceMigrationJob#migration_job_id}
   */
   readonly migrationJobId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#project DatabaseMigrationServiceMigrationJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#project DatabaseMigrationServiceMigrationJob#project}
   */
   readonly project?: string;
   /**
   * The name of the source connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{sourceConnectionProfile}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#source DatabaseMigrationServiceMigrationJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#source DatabaseMigrationServiceMigrationJob#source}
   */
   readonly source: string;
   /**
+  * If set to true, will stop the Terraform apply if there are validation warnings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#stop_on_warnings DatabaseMigrationServiceMigrationJob#stop_on_warnings}
+  */
+  readonly stopOnWarnings?: boolean | cdktn.IResolvable;
+  /**
   * The type of the migration job. Possible values: ["ONE_TIME", "CONTINUOUS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
   */
   readonly type: string;
   /**
   * dump_flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
   */
   readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlags;
   /**
   * objects_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#objects_config DatabaseMigrationServiceMigrationJob#objects_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#objects_config DatabaseMigrationServiceMigrationJob#objects_config}
   */
   readonly objectsConfig?: DatabaseMigrationServiceMigrationJobObjectsConfig;
   /**
   * performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#performance_config DatabaseMigrationServiceMigrationJob#performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#performance_config DatabaseMigrationServiceMigrationJob#performance_config}
   */
   readonly performanceConfig?: DatabaseMigrationServiceMigrationJobPerformanceConfig;
   /**
   * postgres_homogeneous_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#postgres_homogeneous_config DatabaseMigrationServiceMigrationJob#postgres_homogeneous_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#postgres_homogeneous_config DatabaseMigrationServiceMigrationJob#postgres_homogeneous_config}
   */
   readonly postgresHomogeneousConfig?: DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig;
   /**
   * reverse_ssh_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#reverse_ssh_connectivity DatabaseMigrationServiceMigrationJob#reverse_ssh_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#reverse_ssh_connectivity DatabaseMigrationServiceMigrationJob#reverse_ssh_connectivity}
   */
   readonly reverseSshConnectivity?: DatabaseMigrationServiceMigrationJobReverseSshConnectivity;
   /**
   * static_ip_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#static_ip_connectivity DatabaseMigrationServiceMigrationJob#static_ip_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#static_ip_connectivity DatabaseMigrationServiceMigrationJob#static_ip_connectivity}
   */
   readonly staticIpConnectivity?: DatabaseMigrationServiceMigrationJobStaticIpConnectivity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#timeouts DatabaseMigrationServiceMigrationJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#timeouts DatabaseMigrationServiceMigrationJob#timeouts}
   */
   readonly timeouts?: DatabaseMigrationServiceMigrationJobTimeouts;
   /**
   * vpc_peering_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vpc_peering_connectivity DatabaseMigrationServiceMigrationJob#vpc_peering_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vpc_peering_connectivity DatabaseMigrationServiceMigrationJob#vpc_peering_connectivity}
   */
   readonly vpcPeeringConnectivity?: DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity;
 }
@@ -235,13 +247,13 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags {
   /**
   * The name of the flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#name DatabaseMigrationServiceMigrationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#name DatabaseMigrationServiceMigrationJob#name}
   */
   readonly name?: string;
   /**
   * The vale of the flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#value DatabaseMigrationServiceMigrationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#value DatabaseMigrationServiceMigrationJob#value}
   */
   readonly value?: string;
 }
@@ -388,7 +400,7 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlags {
   /**
   * dump_flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
   */
   readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktn.IResolvable;
 }
@@ -475,28 +487,28 @@ export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsC
   * The database name. Required only if the object uses
   * a database name as part of its unique identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#database DatabaseMigrationServiceMigrationJob#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#database DatabaseMigrationServiceMigrationJob#database}
   */
   readonly database?: string;
   /**
   * The schema name. Required only if the object uses
   * a schema name as part of its unique identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#schema DatabaseMigrationServiceMigrationJob#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#schema DatabaseMigrationServiceMigrationJob#schema}
   */
   readonly schema?: string;
   /**
   * The table name. Required only if the object is a level
   * below database or schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#table DatabaseMigrationServiceMigrationJob#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#table DatabaseMigrationServiceMigrationJob#table}
   */
   readonly table?: string;
   /**
   * The category of the migration job object: 'DATABASE',
   * 'SCHEMA', or 'TABLE'. Possible values: ["DATABASE", "SCHEMA", "TABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
   */
   readonly type: string;
 }
@@ -666,7 +678,7 @@ export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsC
   /**
   * object_identifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#object_identifier DatabaseMigrationServiceMigrationJob#object_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#object_identifier DatabaseMigrationServiceMigrationJob#object_identifier}
   */
   readonly objectIdentifier?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier;
 }
@@ -787,13 +799,13 @@ export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsC
   * migrated. When set to 'ALL_OBJECTS', all objects available on the
   * source are migrated. Possible values: ["ALL_OBJECTS", "SPECIFIED_OBJECTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#objects_selection_type DatabaseMigrationServiceMigrationJob#objects_selection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#objects_selection_type DatabaseMigrationServiceMigrationJob#objects_selection_type}
   */
   readonly objectsSelectionType?: string;
   /**
   * object_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#object_configs DatabaseMigrationServiceMigrationJob#object_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#object_configs DatabaseMigrationServiceMigrationJob#object_configs}
   */
   readonly objectConfigs?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs[] | cdktn.IResolvable;
 }
@@ -908,7 +920,7 @@ export interface DatabaseMigrationServiceMigrationJobObjectsConfig {
   /**
   * source_objects_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#source_objects_config DatabaseMigrationServiceMigrationJob#source_objects_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#source_objects_config DatabaseMigrationServiceMigrationJob#source_objects_config}
   */
   readonly sourceObjectsConfig?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig;
 }
@@ -994,7 +1006,7 @@ export interface DatabaseMigrationServiceMigrationJobPerformanceConfig {
   /**
   * Initial dump parallelism level. Possible values: ["MIN", "OPTIMAL", "MAX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#dump_parallel_level DatabaseMigrationServiceMigrationJob#dump_parallel_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#dump_parallel_level DatabaseMigrationServiceMigrationJob#dump_parallel_level}
   */
   readonly dumpParallelLevel?: string;
 }
@@ -1080,13 +1092,13 @@ export interface DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig {
   /**
   * Whether the migration uses native logical replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#is_native_logical DatabaseMigrationServiceMigrationJob#is_native_logical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#is_native_logical DatabaseMigrationServiceMigrationJob#is_native_logical}
   */
   readonly isNativeLogical: boolean | cdktn.IResolvable;
   /**
   * Maximum number of additional subscriptions to use for the migration job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#max_additional_subscriptions DatabaseMigrationServiceMigrationJob#max_additional_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#max_additional_subscriptions DatabaseMigrationServiceMigrationJob#max_additional_subscriptions}
   */
   readonly maxAdditionalSubscriptions?: number;
 }
@@ -1199,27 +1211,27 @@ export interface DatabaseMigrationServiceMigrationJobReverseSshConnectivity {
   * The name of the virtual machine (Compute Engine) used as the bastion server
   * for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vm DatabaseMigrationServiceMigrationJob#vm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vm DatabaseMigrationServiceMigrationJob#vm}
   */
   readonly vm?: string;
   /**
   * The IP of the virtual machine (Compute Engine) used as the bastion server
   * for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vm_ip DatabaseMigrationServiceMigrationJob#vm_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vm_ip DatabaseMigrationServiceMigrationJob#vm_ip}
   */
   readonly vmIp?: string;
   /**
   * The forwarding port of the virtual machine (Compute Engine) used as the
   * bastion server for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vm_port DatabaseMigrationServiceMigrationJob#vm_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vm_port DatabaseMigrationServiceMigrationJob#vm_port}
   */
   readonly vmPort?: number;
   /**
   * The name of the VPC to peer with the Cloud SQL private network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
   */
   readonly vpc?: string;
 }
@@ -1439,15 +1451,15 @@ export class DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputRefer
 }
 export interface DatabaseMigrationServiceMigrationJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#create DatabaseMigrationServiceMigrationJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#create DatabaseMigrationServiceMigrationJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#delete DatabaseMigrationServiceMigrationJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#delete DatabaseMigrationServiceMigrationJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#update DatabaseMigrationServiceMigrationJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#update DatabaseMigrationServiceMigrationJob#update}
   */
   readonly update?: string;
 }
@@ -1601,7 +1613,7 @@ export interface DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity {
   /**
   * The name of the VPC network to peer with the Cloud SQL private network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
   */
   readonly vpc?: string;
 }
@@ -1685,7 +1697,7 @@ export class DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}
 */
 export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResource {
 
@@ -1701,7 +1713,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a DatabaseMigrationServiceMigrationJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServiceMigrationJob to import
-  * @param importFromId The id of the existing DatabaseMigrationServiceMigrationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseMigrationServiceMigrationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServiceMigrationJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1713,7 +1725,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1724,7 +1736,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
       terraformResourceType: 'google_database_migration_service_migration_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1736,6 +1748,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
       forEach: config.forEach
     });
     this._deletionPolicy = config.deletionPolicy;
+    this._desiredState = config.desiredState;
     this._destination = config.destination;
     this._displayName = config.displayName;
     this._dumpPath = config.dumpPath;
@@ -1746,6 +1759,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
     this._migrationJobId = config.migrationJobId;
     this._project = config.project;
     this._source = config.source;
+    this._stopOnWarnings = config.stopOnWarnings;
     this._type = config.type;
     this._dumpFlags.internalValue = config.dumpFlags;
     this._objectsConfig.internalValue = config.objectsConfig;
@@ -1780,6 +1794,22 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   // Temporarily expose input value. Use with caution.
   public get deletionPolicyInput() {
     return this._deletionPolicy;
+  }
+
+  // desired_state - computed: true, optional: true, required: false
+  private _desiredState?: string; 
+  public get desiredState() {
+    return this.getStringAttribute('desired_state');
+  }
+  public set desiredState(value: string) {
+    this._desiredState = value;
+  }
+  public resetDesiredState() {
+    this._desiredState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredStateInput() {
+    return this._desiredState;
   }
 
   // destination - computed: false, optional: false, required: true
@@ -1960,6 +1990,22 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
     return this.getStringAttribute('state');
   }
 
+  // stop_on_warnings - computed: false, optional: true, required: false
+  private _stopOnWarnings?: boolean | cdktn.IResolvable; 
+  public get stopOnWarnings() {
+    return this.getBooleanAttribute('stop_on_warnings');
+  }
+  public set stopOnWarnings(value: boolean | cdktn.IResolvable) {
+    this._stopOnWarnings = value;
+  }
+  public resetStopOnWarnings() {
+    this._stopOnWarnings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stopOnWarningsInput() {
+    return this._stopOnWarnings;
+  }
+
   // terraform_labels - computed: true, optional: false, required: false
   private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
@@ -2114,6 +2160,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      desired_state: cdktn.stringToTerraform(this._desiredState),
       destination: cdktn.stringToTerraform(this._destination),
       display_name: cdktn.stringToTerraform(this._displayName),
       dump_path: cdktn.stringToTerraform(this._dumpPath),
@@ -2124,6 +2171,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
       migration_job_id: cdktn.stringToTerraform(this._migrationJobId),
       project: cdktn.stringToTerraform(this._project),
       source: cdktn.stringToTerraform(this._source),
+      stop_on_warnings: cdktn.booleanToTerraform(this._stopOnWarnings),
       type: cdktn.stringToTerraform(this._type),
       dump_flags: databaseMigrationServiceMigrationJobDumpFlagsToTerraform(this._dumpFlags.internalValue),
       objects_config: databaseMigrationServiceMigrationJobObjectsConfigToTerraform(this._objectsConfig.internalValue),
@@ -2140,6 +2188,12 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
     const attrs = {
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      desired_state: {
+        value: cdktn.stringToHclTerraform(this._desiredState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2203,6 +2257,12 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      stop_on_warnings: {
+        value: cdktn.booleanToHclTerraform(this._stopOnWarnings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       type: {
         value: cdktn.stringToHclTerraform(this._type),

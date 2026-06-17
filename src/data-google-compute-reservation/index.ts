@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DataGoogleComputeReservationConfig extends cdktn.TerraformMetaA
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation#name DataGoogleComputeReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation#name DataGoogleComputeReservation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation#project DataGoogleComputeReservation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation#project DataGoogleComputeReservation#project}
   */
   readonly project?: string;
   /**
   * The zone where the reservation is made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation#zone DataGoogleComputeReservation#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation#zone DataGoogleComputeReservation#zone}
   */
   readonly zone: string;
 }
@@ -113,6 +113,82 @@ export class DataGoogleComputeReservationDeleteAfterDurationList extends cdktn.C
   */
   public get(index: number): DataGoogleComputeReservationDeleteAfterDurationOutputReference {
     return new DataGoogleComputeReservationDeleteAfterDurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleComputeReservationParams {
+}
+
+export function dataGoogleComputeReservationParamsToTerraform(struct?: DataGoogleComputeReservationParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleComputeReservationParamsToHclTerraform(struct?: DataGoogleComputeReservationParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleComputeReservationParamsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeReservationParams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeReservationParams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // resource_manager_tags - computed: true, optional: false, required: false
+  private _resourceManagerTags = new cdktn.StringMap(this, "resource_manager_tags");
+  public get resourceManagerTags() {
+    return this._resourceManagerTags;
+  }
+}
+
+export class DataGoogleComputeReservationParamsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeReservationParamsOutputReference {
+    return new DataGoogleComputeReservationParamsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGoogleComputeReservationReservationSharingPolicy {
@@ -1186,7 +1262,7 @@ export class DataGoogleComputeReservationSpecificReservationList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation google_compute_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation google_compute_reservation}
 */
 export class DataGoogleComputeReservation extends cdktn.TerraformDataSource {
 
@@ -1202,7 +1278,7 @@ export class DataGoogleComputeReservation extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeReservation to import
-  * @param importFromId The id of the existing DataGoogleComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1214,7 +1290,7 @@ export class DataGoogleComputeReservation extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1225,7 +1301,7 @@ export class DataGoogleComputeReservation extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_reservation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -1307,6 +1383,12 @@ export class DataGoogleComputeReservation extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // params - computed: true, optional: false, required: false
+  private _params = new DataGoogleComputeReservationParamsList(this, "params", false);
+  public get params() {
+    return this._params;
   }
 
   // project - computed: false, optional: true, required: false

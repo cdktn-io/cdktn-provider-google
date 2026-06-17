@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface KmsKeyRingImportJobConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#deletion_policy KmsKeyRingImportJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#deletion_policy KmsKeyRingImportJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#id KmsKeyRingImportJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#id KmsKeyRingImportJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,33 +34,33 @@ export interface KmsKeyRingImportJobConfig extends cdktn.TerraformMetaArguments 
   /**
   * It must be unique within a KeyRing and match the regular expression [a-zA-Z0-9_-]{1,63}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#import_job_id KmsKeyRingImportJob#import_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#import_job_id KmsKeyRingImportJob#import_job_id}
   */
   readonly importJobId: string;
   /**
   * The wrapping method to be used for incoming key material. Possible values: ["RSA_OAEP_3072_SHA1_AES_256", "RSA_OAEP_4096_SHA1_AES_256", "RSA_OAEP_3072_SHA256_AES_256", "RSA_OAEP_4096_SHA256_AES_256", "RSA_OAEP_3072_SHA256", "RSA_OAEP_4096_SHA256"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#import_method KmsKeyRingImportJob#import_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#import_method KmsKeyRingImportJob#import_method}
   */
   readonly importMethod: string;
   /**
   * The KeyRing that this import job belongs to.
   * Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#key_ring KmsKeyRingImportJob#key_ring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#key_ring KmsKeyRingImportJob#key_ring}
   */
   readonly keyRing: string;
   /**
   * The protection level of the ImportJob. This must match the protectionLevel of the
   * versionTemplate on the CryptoKey you attempt to import into. Possible values: ["SOFTWARE", "HSM", "EXTERNAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#protection_level KmsKeyRingImportJob#protection_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#protection_level KmsKeyRingImportJob#protection_level}
   */
   readonly protectionLevel: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#timeouts KmsKeyRingImportJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#timeouts KmsKeyRingImportJob#timeouts}
   */
   readonly timeouts?: KmsKeyRingImportJobTimeouts;
 }
@@ -221,11 +221,11 @@ export class KmsKeyRingImportJobPublicKeyList extends cdktn.ComplexList {
 }
 export interface KmsKeyRingImportJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#create KmsKeyRingImportJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#create KmsKeyRingImportJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#delete KmsKeyRingImportJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#delete KmsKeyRingImportJob#delete}
   */
   readonly delete?: string;
 }
@@ -348,7 +348,7 @@ export class KmsKeyRingImportJobTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job}
 */
 export class KmsKeyRingImportJob extends cdktn.TerraformResource {
 
@@ -364,7 +364,7 @@ export class KmsKeyRingImportJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmsKeyRingImportJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsKeyRingImportJob to import
-  * @param importFromId The id of the existing KmsKeyRingImportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsKeyRingImportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsKeyRingImportJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -376,7 +376,7 @@ export class KmsKeyRingImportJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -387,7 +387,7 @@ export class KmsKeyRingImportJob extends cdktn.TerraformResource {
       terraformResourceType: 'google_kms_key_ring_import_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
