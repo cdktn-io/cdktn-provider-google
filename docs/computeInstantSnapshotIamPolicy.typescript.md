@@ -4,7 +4,7 @@
 
 ### ComputeInstantSnapshotIamPolicy <a name="ComputeInstantSnapshotIamPolicy" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ComputeInstantSnapshotIamP
 
 The id of the existing ComputeInstantSnapshotIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,11 +847,11 @@ const computeInstantSnapshotIamPolicyConfig: computeInstantSnapshotIamPolicy.Com
 | <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#name ComputeInstantSnapshotIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#policy_data ComputeInstantSnapshotIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#id ComputeInstantSnapshotIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#project ComputeInstantSnapshotIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.zone">zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#zone ComputeInstantSnapshotIamPolicy#zone}. |
+| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#name ComputeInstantSnapshotIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#policy_data ComputeInstantSnapshotIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#id ComputeInstantSnapshotIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#project ComputeInstantSnapshotIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.property.zone">zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#zone ComputeInstantSnapshotIamPolicy#zone}. |
 
 ---
 
@@ -933,7 +933,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#name ComputeInstantSnapshotIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#name ComputeInstantSnapshotIamPolicy#name}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#policy_data ComputeInstantSnapshotIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#policy_data ComputeInstantSnapshotIamPolicy#policy_data}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#id ComputeInstantSnapshotIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#id ComputeInstantSnapshotIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +972,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#project ComputeInstantSnapshotIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#project ComputeInstantSnapshotIamPolicy#project}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly zone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/compute_instant_snapshot_iam_policy#zone ComputeInstantSnapshotIamPolicy#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_instant_snapshot_iam_policy#zone ComputeInstantSnapshotIamPolicy#zone}.
 
 ---
 

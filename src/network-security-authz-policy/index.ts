@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -23,7 +23,7 @@ export interface NetworkSecurityAuthzPolicyConfig extends cdktn.TerraformMetaArg
   * 3. If there are no ALLOW policies for the resource or if any of the ALLOW policies match the request, the request is allowed.
   * 4. Else the request is denied by default if none of the configured AuthzPolicies with ALLOW action match the request. Possible values: ["ALLOW", "DENY", "CUSTOM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#action NetworkSecurityAuthzPolicy#action}
   */
   readonly action: string;
   /**
@@ -35,17 +35,17 @@ export interface NetworkSecurityAuthzPolicyConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#deletion_policy NetworkSecurityAuthzPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human-readable description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#description NetworkSecurityAuthzPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,19 +58,19 @@ export interface NetworkSecurityAuthzPolicyConfig extends cdktn.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#labels NetworkSecurityAuthzPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#location NetworkSecurityAuthzPolicy#location}
   */
   readonly location: string;
   /**
   * Identifier. Name of the AuthzPolicy resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
   */
   readonly name: string;
   /**
@@ -81,35 +81,41 @@ export interface NetworkSecurityAuthzPolicyConfig extends cdktn.TerraformMetaArg
   * protocol and be capable of receiving all ext_proc events (REQUEST_HEADERS, REQUEST_BODY, REQUEST_TRAILERS,
   * RESPONSE_HEADERS, RESPONSE_BODY, RESPONSE_TRAILERS) with FULL_DUPLEX_STREAMED body send mode. Possible values: ["REQUEST_AUTHZ", "CONTENT_AUTHZ"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#policy_profile NetworkSecurityAuthzPolicy#policy_profile}
   */
   readonly policyProfile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#project NetworkSecurityAuthzPolicy#project}
   */
   readonly project?: string;
   /**
   * custom_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#custom_provider NetworkSecurityAuthzPolicy#custom_provider}
   */
   readonly customProvider?: NetworkSecurityAuthzPolicyCustomProvider;
   /**
   * http_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
   */
   readonly httpRules?: NetworkSecurityAuthzPolicyHttpRules[] | cdktn.IResolvable;
   /**
+  * network_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#network_rules NetworkSecurityAuthzPolicy#network_rules}
+  */
+  readonly networkRules?: NetworkSecurityAuthzPolicyNetworkRules[] | cdktn.IResolvable;
+  /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#target NetworkSecurityAuthzPolicy#target}
   */
   readonly target: NetworkSecurityAuthzPolicyTarget;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
   */
   readonly timeouts?: NetworkSecurityAuthzPolicyTimeouts;
 }
@@ -117,7 +123,7 @@ export interface NetworkSecurityAuthzPolicyCustomProviderAuthzExtension {
   /**
   * A list of references to authorization extensions that will be invoked for requests matching this policy. Limited to 1 custom provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
   */
   readonly resources: string[];
 }
@@ -200,7 +206,7 @@ export interface NetworkSecurityAuthzPolicyCustomProviderCloudIap {
   /**
   * Enable Cloud IAP at the AuthzPolicy level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#enabled NetworkSecurityAuthzPolicy#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -283,13 +289,13 @@ export interface NetworkSecurityAuthzPolicyCustomProvider {
   /**
   * authz_extension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#authz_extension NetworkSecurityAuthzPolicy#authz_extension}
   */
   readonly authzExtension?: NetworkSecurityAuthzPolicyCustomProviderAuthzExtension;
   /**
   * cloud_iap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#cloud_iap NetworkSecurityAuthzPolicy#cloud_iap}
   */
   readonly cloudIap?: NetworkSecurityAuthzPolicyCustomProviderCloudIap;
 }
@@ -404,13 +410,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesIpBlocks {
   /**
   * The length of the address range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
   */
   readonly length: number;
   /**
   * The address prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix: string;
 }
@@ -553,7 +559,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrin
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -561,13 +567,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrin
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -575,7 +581,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrin
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -583,7 +589,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrin
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -787,7 +793,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -795,13 +801,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -809,13 +815,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
   * An enum to decide what principal value the principal rule will match against. If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
   */
   readonly principalSelector?: string;
   /**
@@ -823,13 +829,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
   */
   readonly principal?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsPrincipal;
 }
@@ -1123,7 +1129,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamSe
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -1131,13 +1137,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamSe
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -1145,7 +1151,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamSe
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -1153,7 +1159,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamSe
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -1356,7 +1362,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesTagVa
   * A list of resource tag value permanent IDs to match against the resource manager tags value associated with the source VM of a request. The match follows AND semantics which means all the ids must match.
   * Limited to 5 matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
   */
   readonly ids?: string[];
 }
@@ -1442,13 +1448,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResources {
   /**
   * iam_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
   */
   readonly iamServiceAccount?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesIamServiceAccount;
   /**
   * tag_value_id_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
   */
   readonly tagValueIdSet?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResourcesTagValueIdSet;
 }
@@ -1595,19 +1601,19 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromNotSources {
   /**
   * ip_blocks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
   */
   readonly ipBlocks?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesIpBlocks[] | cdktn.IResolvable;
   /**
   * principals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
   */
   readonly principals?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals[] | cdktn.IResolvable;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
   */
   readonly resources?: NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesResources[] | cdktn.IResolvable;
 }
@@ -1783,13 +1789,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocks {
   /**
   * The length of the address range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
   */
   readonly length: number;
   /**
   * The address prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix: string;
 }
@@ -1932,7 +1938,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincip
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -1940,13 +1946,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincip
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -1954,7 +1960,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincip
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -1962,7 +1968,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincip
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -2166,7 +2172,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -2174,13 +2180,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -2188,13 +2194,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
   * An enum to decide what principal value the principal rule will match against. If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
   */
   readonly principalSelector?: string;
   /**
@@ -2202,13 +2208,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
   */
   readonly principal?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipalsPrincipal;
 }
@@ -2502,7 +2508,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServi
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -2510,13 +2516,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServi
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -2524,7 +2530,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServi
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -2532,7 +2538,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServi
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -2735,7 +2741,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesTagValue
   * A list of resource tag value permanent IDs to match against the resource manager tags value associated with the source VM of a request. The match follows AND semantics which means all the ids must match.
   * Limited to 5 matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
   */
   readonly ids?: string[];
 }
@@ -2821,13 +2827,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSourcesResources {
   /**
   * iam_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#iam_service_account NetworkSecurityAuthzPolicy#iam_service_account}
   */
   readonly iamServiceAccount?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesIamServiceAccount;
   /**
   * tag_value_id_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#tag_value_id_set NetworkSecurityAuthzPolicy#tag_value_id_set}
   */
   readonly tagValueIdSet?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesTagValueIdSet;
 }
@@ -2974,19 +2980,19 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFromSources {
   /**
   * ip_blocks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
   */
   readonly ipBlocks?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesIpBlocks[] | cdktn.IResolvable;
   /**
   * principals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
   */
   readonly principals?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesPrincipals[] | cdktn.IResolvable;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
   */
   readonly resources?: NetworkSecurityAuthzPolicyHttpRulesFromSourcesResources[] | cdktn.IResolvable;
 }
@@ -3162,13 +3168,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesFrom {
   /**
   * not_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
   */
   readonly notSources?: NetworkSecurityAuthzPolicyHttpRulesFromNotSources[] | cdktn.IResolvable;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
   */
   readonly sources?: NetworkSecurityAuthzPolicyHttpRulesFromSources[] | cdktn.IResolvable;
 }
@@ -3285,7 +3291,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHead
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -3293,13 +3299,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHead
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -3307,7 +3313,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHead
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -3315,7 +3321,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHead
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -3517,13 +3523,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHead
   /**
   * Specifies the name of the header in the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
   */
   readonly name?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
   */
   readonly value?: NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersValue;
 }
@@ -3670,7 +3676,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
   */
   readonly headers?: NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeaders[] | cdktn.IResolvable;
 }
@@ -3758,7 +3764,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -3766,13 +3772,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -3780,7 +3786,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -3788,7 +3794,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -4024,7 +4030,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -4032,13 +4038,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -4046,7 +4052,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -4054,7 +4060,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -4288,25 +4294,25 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToNotOperations {
   /**
   * A list of HTTP methods to match against. Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
   */
   readonly methods?: string[];
   /**
   * header_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
   */
   readonly headerSet?: NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet;
   /**
   * hosts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
   */
   readonly hosts?: NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHosts[] | cdktn.IResolvable;
   /**
   * paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
   */
   readonly paths?: NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPaths[] | cdktn.IResolvable;
 }
@@ -4513,7 +4519,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -4521,13 +4527,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -4535,7 +4541,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -4543,7 +4549,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -4745,13 +4751,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders
   /**
   * Specifies the name of the header in the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
   */
   readonly name?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#value NetworkSecurityAuthzPolicy#value}
   */
   readonly value?: NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeadersValue;
 }
@@ -4898,7 +4904,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSet {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#headers NetworkSecurityAuthzPolicy#headers}
   */
   readonly headers?: NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSetHeaders[] | cdktn.IResolvable;
 }
@@ -4986,7 +4992,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -4994,13 +5000,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -5008,7 +5014,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -5016,7 +5022,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -5250,31 +5256,31 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsParams
   /**
   * A substring match on the MCP method parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
   * An exact match on the MCP method parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * Specifies that the string match should be case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * A prefix match on the MCP method parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
   * A suffix match on the MCP method parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -5512,13 +5518,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethods {
   * 3) “prompts/get”, “tools/call”, “resources/subscribe”, “resources/unsubscribe”, “resources/read”
   * Params cannot be specified for categories 1) and 2).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#name NetworkSecurityAuthzPolicy#name}
   */
   readonly name: string;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
   */
   readonly params?: NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsParams[] | cdktn.IResolvable;
 }
@@ -5662,13 +5668,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsMcp {
   /**
   * If specified, matches on the MCP protocol’s non-access specific methods namely: * initialize/ * completion/ * logging/ * notifications/ * ping Default value: "SKIP_BASE_PROTOCOL_METHODS" Possible values: ["SKIP_BASE_PROTOCOL_METHODS", "MATCH_BASE_PROTOCOL_METHODS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#base_protocol_methods_option NetworkSecurityAuthzPolicy#base_protocol_methods_option}
   */
   readonly baseProtocolMethodsOption?: string;
   /**
   * methods block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
   */
   readonly methods?: NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethods[] | cdktn.IResolvable;
 }
@@ -5785,7 +5791,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths {
   * Examples:
   * * abc matches the value xyz.abc.def
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#contains NetworkSecurityAuthzPolicy#contains}
   */
   readonly contains?: string;
   /**
@@ -5793,13 +5799,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths {
   * Examples:
   * * abc only matches the value abc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
   */
   readonly exact?: string;
   /**
   * If true, indicates the exact/prefix/suffix/contains matching should be case insensitive. For example, the matcher data will match both input string Data and data if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
@@ -5807,7 +5813,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths {
   * Examples:
   * * abc matches the value abc.xyz
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
   */
   readonly prefix?: string;
   /**
@@ -5815,7 +5821,7 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths {
   * Examples:
   * * abc matches the value xyz.abc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
   */
   readonly suffix?: string;
 }
@@ -6049,31 +6055,31 @@ export interface NetworkSecurityAuthzPolicyHttpRulesToOperations {
   /**
   * A list of HTTP methods to match against. Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#methods NetworkSecurityAuthzPolicy#methods}
   */
   readonly methods?: string[];
   /**
   * header_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#header_set NetworkSecurityAuthzPolicy#header_set}
   */
   readonly headerSet?: NetworkSecurityAuthzPolicyHttpRulesToOperationsHeaderSet;
   /**
   * hosts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
   */
   readonly hosts?: NetworkSecurityAuthzPolicyHttpRulesToOperationsHosts[] | cdktn.IResolvable;
   /**
   * mcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
   */
   readonly mcp?: NetworkSecurityAuthzPolicyHttpRulesToOperationsMcp;
   /**
   * paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
   */
   readonly paths?: NetworkSecurityAuthzPolicyHttpRulesToOperationsPaths[] | cdktn.IResolvable;
 }
@@ -6307,13 +6313,13 @@ export interface NetworkSecurityAuthzPolicyHttpRulesTo {
   /**
   * not_operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_operations NetworkSecurityAuthzPolicy#not_operations}
   */
   readonly notOperations?: NetworkSecurityAuthzPolicyHttpRulesToNotOperations[] | cdktn.IResolvable;
   /**
   * operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
   */
   readonly operations?: NetworkSecurityAuthzPolicyHttpRulesToOperations[] | cdktn.IResolvable;
 }
@@ -6428,19 +6434,19 @@ export interface NetworkSecurityAuthzPolicyHttpRules {
   /**
   * CEL expression that describes the conditions to be satisfied for the action. The result of the CEL expression is ANDed with the from and to. Refer to the CEL language reference for a list of available attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
   */
   readonly when?: string;
   /**
   * from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
   */
   readonly from?: NetworkSecurityAuthzPolicyHttpRulesFrom;
   /**
   * to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
   */
   readonly to?: NetworkSecurityAuthzPolicyHttpRulesTo;
 }
@@ -6612,20 +6618,1696 @@ export class NetworkSecurityAuthzPolicyHttpRulesList extends cdktn.ComplexList {
     return new NetworkSecurityAuthzPolicyHttpRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks {
+  /**
+  * The length of the address range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+  */
+  readonly length: number;
+  /**
+  * The address prefix.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  */
+  readonly prefix: string;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    length: cdktn.numberToTerraform(struct!.length),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    length: {
+      value: cdktn.numberToHclTerraform(struct!.length),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefix: {
+      value: cdktn.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._length !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.length = this._length;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._length = undefined;
+      this._prefix = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._length = value.length;
+      this._prefix = value.prefix;
+    }
+  }
+
+  // length - computed: false, optional: false, required: true
+  private _length?: number; 
+  public get length() {
+    return this.getNumberAttribute('length');
+  }
+  public set length(value: number) {
+    this._length = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lengthInput() {
+    return this._length;
+  }
+
+  // prefix - computed: false, optional: false, required: true
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal {
+  /**
+  * The input string must match exactly the string specified here.
+  * Examples:
+  * * abc only matches the value abc.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  */
+  readonly exact?: string;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    exact: cdktn.stringToTerraform(struct!.exact),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    exact: {
+      value: cdktn.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals {
+  /**
+  * An enum to decide what principal value the principal rule will match against. If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+  */
+  readonly principalSelector?: string;
+  /**
+  * principal block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+  */
+  readonly principal?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    principal_selector: cdktn.stringToTerraform(struct!.principalSelector),
+    principal: networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalToTerraform(struct!.principal),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    principal_selector: {
+      value: cdktn.stringToHclTerraform(struct!.principalSelector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    principal: {
+      value: networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalToHclTerraform(struct!.principal),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._principalSelector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principalSelector = this._principalSelector;
+    }
+    if (this._principal?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._principalSelector = undefined;
+      this._principal.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._principalSelector = value.principalSelector;
+      this._principal.internalValue = value.principal;
+    }
+  }
+
+  // principal_selector - computed: false, optional: true, required: false
+  private _principalSelector?: string; 
+  public get principalSelector() {
+    return this.getStringAttribute('principal_selector');
+  }
+  public set principalSelector(value: string) {
+    this._principalSelector = value;
+  }
+  public resetPrincipalSelector() {
+    this._principalSelector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalSelectorInput() {
+    return this._principalSelector;
+  }
+
+  // principal - computed: false, optional: true, required: false
+  private _principal = new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipalOutputReference(this, "principal");
+  public get principal() {
+    return this._principal;
+  }
+  public putPrincipal(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsPrincipal) {
+    this._principal.internalValue = value;
+  }
+  public resetPrincipal() {
+    this._principal.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromNotSources {
+  /**
+  * ip_blocks block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+  */
+  readonly ipBlocks?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] | cdktn.IResolvable;
+  /**
+  * principals block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+  */
+  readonly principals?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] | cdktn.IResolvable;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ip_blocks: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksToTerraform, true)(struct!.ipBlocks),
+    principals: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsToTerraform, true)(struct!.principals),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromNotSourcesToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ip_blocks: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksToHclTerraform, true)(struct!.ipBlocks),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList",
+    },
+    principals: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsToHclTerraform, true)(struct!.principals),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromNotSources | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipBlocks?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipBlocks = this._ipBlocks?.internalValue;
+    }
+    if (this._principals?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principals = this._principals?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSources | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipBlocks.internalValue = undefined;
+      this._principals.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipBlocks.internalValue = value.ipBlocks;
+      this._principals.internalValue = value.principals;
+    }
+  }
+
+  // ip_blocks - computed: false, optional: true, required: false
+  private _ipBlocks = new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocksList(this, "ip_blocks", false);
+  public get ipBlocks() {
+    return this._ipBlocks;
+  }
+  public putIpBlocks(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesIpBlocks[] | cdktn.IResolvable) {
+    this._ipBlocks.internalValue = value;
+  }
+  public resetIpBlocks() {
+    this._ipBlocks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipBlocksInput() {
+    return this._ipBlocks.internalValue;
+  }
+
+  // principals - computed: false, optional: true, required: false
+  private _principals = new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipalsList(this, "principals", false);
+  public get principals() {
+    return this._principals;
+  }
+  public putPrincipals(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesPrincipals[] | cdktn.IResolvable) {
+    this._principals.internalValue = value;
+  }
+  public resetPrincipals() {
+    this._principals.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalsInput() {
+    return this._principals.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks {
+  /**
+  * The length of the address range.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#length NetworkSecurityAuthzPolicy#length}
+  */
+  readonly length: number;
+  /**
+  * The address prefix.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
+  */
+  readonly prefix: string;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    length: cdktn.numberToTerraform(struct!.length),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    length: {
+      value: cdktn.numberToHclTerraform(struct!.length),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefix: {
+      value: cdktn.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._length !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.length = this._length;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._length = undefined;
+      this._prefix = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._length = value.length;
+      this._prefix = value.prefix;
+    }
+  }
+
+  // length - computed: false, optional: false, required: true
+  private _length?: number; 
+  public get length() {
+    return this.getNumberAttribute('length');
+  }
+  public set length(value: number) {
+    this._length = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lengthInput() {
+    return this._length;
+  }
+
+  // prefix - computed: false, optional: false, required: true
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal {
+  /**
+  * The input string must match exactly the string specified here.
+  * Examples:
+  * * abc only matches the value abc.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  */
+  readonly exact?: string;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    exact: cdktn.stringToTerraform(struct!.exact),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    exact: {
+      value: cdktn.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals {
+  /**
+  * An enum to decide what principal value the principal rule will match against. If not specified, the PrincipalSelector is CLIENT_CERT_URI_SAN. Default value: "CLIENT_CERT_URI_SAN" Possible values: ["PRINCIPAL_SELECTOR_UNSPECIFIED", "CLIENT_CERT_URI_SAN", "CLIENT_CERT_DNS_NAME_SAN", "CLIENT_CERT_COMMON_NAME"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal_selector NetworkSecurityAuthzPolicy#principal_selector}
+  */
+  readonly principalSelector?: string;
+  /**
+  * principal block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principal NetworkSecurityAuthzPolicy#principal}
+  */
+  readonly principal?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    principal_selector: cdktn.stringToTerraform(struct!.principalSelector),
+    principal: networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalToTerraform(struct!.principal),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    principal_selector: {
+      value: cdktn.stringToHclTerraform(struct!.principalSelector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    principal: {
+      value: networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalToHclTerraform(struct!.principal),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._principalSelector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principalSelector = this._principalSelector;
+    }
+    if (this._principal?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._principalSelector = undefined;
+      this._principal.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._principalSelector = value.principalSelector;
+      this._principal.internalValue = value.principal;
+    }
+  }
+
+  // principal_selector - computed: false, optional: true, required: false
+  private _principalSelector?: string; 
+  public get principalSelector() {
+    return this.getStringAttribute('principal_selector');
+  }
+  public set principalSelector(value: string) {
+    this._principalSelector = value;
+  }
+  public resetPrincipalSelector() {
+    this._principalSelector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalSelectorInput() {
+    return this._principalSelector;
+  }
+
+  // principal - computed: false, optional: true, required: false
+  private _principal = new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipalOutputReference(this, "principal");
+  public get principal() {
+    return this._principal;
+  }
+  public putPrincipal(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsPrincipal) {
+    this._principal.internalValue = value;
+  }
+  public resetPrincipal() {
+    this._principal.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFromSources {
+  /**
+  * ip_blocks block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#ip_blocks NetworkSecurityAuthzPolicy#ip_blocks}
+  */
+  readonly ipBlocks?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] | cdktn.IResolvable;
+  /**
+  * principals block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#principals NetworkSecurityAuthzPolicy#principals}
+  */
+  readonly principals?: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] | cdktn.IResolvable;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ip_blocks: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksToTerraform, true)(struct!.ipBlocks),
+    principals: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsToTerraform, true)(struct!.principals),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromSourcesToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ip_blocks: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksToHclTerraform, true)(struct!.ipBlocks),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList",
+    },
+    principals: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsToHclTerraform, true)(struct!.principals),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFromSources | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipBlocks?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipBlocks = this._ipBlocks?.internalValue;
+    }
+    if (this._principals?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principals = this._principals?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFromSources | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipBlocks.internalValue = undefined;
+      this._principals.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipBlocks.internalValue = value.ipBlocks;
+      this._principals.internalValue = value.principals;
+    }
+  }
+
+  // ip_blocks - computed: false, optional: true, required: false
+  private _ipBlocks = new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocksList(this, "ip_blocks", false);
+  public get ipBlocks() {
+    return this._ipBlocks;
+  }
+  public putIpBlocks(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesIpBlocks[] | cdktn.IResolvable) {
+    this._ipBlocks.internalValue = value;
+  }
+  public resetIpBlocks() {
+    this._ipBlocks.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipBlocksInput() {
+    return this._ipBlocks.internalValue;
+  }
+
+  // principals - computed: false, optional: true, required: false
+  private _principals = new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipalsList(this, "principals", false);
+  public get principals() {
+    return this._principals;
+  }
+  public putPrincipals(value: NetworkSecurityAuthzPolicyNetworkRulesFromSourcesPrincipals[] | cdktn.IResolvable) {
+    this._principals.internalValue = value;
+  }
+  public resetPrincipals() {
+    this._principals.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalsInput() {
+    return this._principals.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesFromSources[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesFrom {
+  /**
+  * not_sources block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#not_sources NetworkSecurityAuthzPolicy#not_sources}
+  */
+  readonly notSources?: NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] | cdktn.IResolvable;
+  /**
+  * sources block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#sources NetworkSecurityAuthzPolicy#sources}
+  */
+  readonly sources?: NetworkSecurityAuthzPolicyNetworkRulesFromSources[] | cdktn.IResolvable;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesFromToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFrom): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    not_sources: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesToTerraform, true)(struct!.notSources),
+    sources: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesFromSourcesToTerraform, true)(struct!.sources),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesFromToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference | NetworkSecurityAuthzPolicyNetworkRulesFrom): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    not_sources: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromNotSourcesToHclTerraform, true)(struct!.notSources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList",
+    },
+    sources: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesFromSourcesToHclTerraform, true)(struct!.sources),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesFrom | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._notSources?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notSources = this._notSources?.internalValue;
+    }
+    if (this._sources?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesFrom | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._notSources.internalValue = undefined;
+      this._sources.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._notSources.internalValue = value.notSources;
+      this._sources.internalValue = value.sources;
+    }
+  }
+
+  // not_sources - computed: false, optional: true, required: false
+  private _notSources = new NetworkSecurityAuthzPolicyNetworkRulesFromNotSourcesList(this, "not_sources", false);
+  public get notSources() {
+    return this._notSources;
+  }
+  public putNotSources(value: NetworkSecurityAuthzPolicyNetworkRulesFromNotSources[] | cdktn.IResolvable) {
+    this._notSources.internalValue = value;
+  }
+  public resetNotSources() {
+    this._notSources.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notSourcesInput() {
+    return this._notSources.internalValue;
+  }
+
+  // sources - computed: false, optional: true, required: false
+  private _sources = new NetworkSecurityAuthzPolicyNetworkRulesFromSourcesList(this, "sources", false);
+  public get sources() {
+    return this._sources;
+  }
+  public putSources(value: NetworkSecurityAuthzPolicyNetworkRulesFromSources[] | cdktn.IResolvable) {
+    this._sources.internalValue = value;
+  }
+  public resetSources() {
+    this._sources.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourcesInput() {
+    return this._sources.internalValue;
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#exact NetworkSecurityAuthzPolicy#exact}
+  */
+  readonly exact?: string;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesToOperationsSnisToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    exact: cdktn.stringToTerraform(struct!.exact),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesToOperationsSnisToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    exact: {
+      value: cdktn.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exact = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: true, required: false
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  public resetExact() {
+    this._exact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesToOperations {
+  /**
+  * snis block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#snis NetworkSecurityAuthzPolicy#snis}
+  */
+  readonly snis?: NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] | cdktn.IResolvable;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesToOperationsToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    snis: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesToOperationsSnisToTerraform, true)(struct!.snis),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesToOperationsToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    snis: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesToOperationsSnisToHclTerraform, true)(struct!.snis),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesToOperations | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._snis?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snis = this._snis?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesToOperations | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._snis.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._snis.internalValue = value.snis;
+    }
+  }
+
+  // snis - computed: false, optional: true, required: false
+  private _snis = new NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnisList(this, "snis", false);
+  public get snis() {
+    return this._snis;
+  }
+  public putSnis(value: NetworkSecurityAuthzPolicyNetworkRulesToOperationsSnis[] | cdktn.IResolvable) {
+    this._snis.internalValue = value;
+  }
+  public resetSnis() {
+    this._snis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snisInput() {
+    return this._snis.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesToOperationsList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRulesToOperations[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesToOperationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRulesTo {
+  /**
+  * operations block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#operations NetworkSecurityAuthzPolicy#operations}
+  */
+  readonly operations?: NetworkSecurityAuthzPolicyNetworkRulesToOperations[] | cdktn.IResolvable;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesToToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOutputReference | NetworkSecurityAuthzPolicyNetworkRulesTo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operations: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesToOperationsToTerraform, true)(struct!.operations),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesToToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRulesToOutputReference | NetworkSecurityAuthzPolicyNetworkRulesTo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operations: {
+      value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesToOperationsToHclTerraform, true)(struct!.operations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesToOperationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesToOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRulesTo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operations?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operations = this._operations?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRulesTo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._operations.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._operations.internalValue = value.operations;
+    }
+  }
+
+  // operations - computed: false, optional: true, required: false
+  private _operations = new NetworkSecurityAuthzPolicyNetworkRulesToOperationsList(this, "operations", false);
+  public get operations() {
+    return this._operations;
+  }
+  public putOperations(value: NetworkSecurityAuthzPolicyNetworkRulesToOperations[] | cdktn.IResolvable) {
+    this._operations.internalValue = value;
+  }
+  public resetOperations() {
+    this._operations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationsInput() {
+    return this._operations.internalValue;
+  }
+}
+export interface NetworkSecurityAuthzPolicyNetworkRules {
+  /**
+  * from block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+  */
+  readonly from?: NetworkSecurityAuthzPolicyNetworkRulesFrom;
+  /**
+  * to block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+  */
+  readonly to?: NetworkSecurityAuthzPolicyNetworkRulesTo;
+}
+
+export function networkSecurityAuthzPolicyNetworkRulesToTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    from: networkSecurityAuthzPolicyNetworkRulesFromToTerraform(struct!.from),
+    to: networkSecurityAuthzPolicyNetworkRulesToToTerraform(struct!.to),
+  }
+}
+
+
+export function networkSecurityAuthzPolicyNetworkRulesToHclTerraform(struct?: NetworkSecurityAuthzPolicyNetworkRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    from: {
+      value: networkSecurityAuthzPolicyNetworkRulesFromToHclTerraform(struct!.from),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesFromList",
+    },
+    to: {
+      value: networkSecurityAuthzPolicyNetworkRulesToToHclTerraform(struct!.to),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesToList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecurityAuthzPolicyNetworkRules | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._from?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from?.internalValue;
+    }
+    if (this._to?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.to = this._to?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityAuthzPolicyNetworkRules | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._from.internalValue = undefined;
+      this._to.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._from.internalValue = value.from;
+      this._to.internalValue = value.to;
+    }
+  }
+
+  // from - computed: false, optional: true, required: false
+  private _from = new NetworkSecurityAuthzPolicyNetworkRulesFromOutputReference(this, "from");
+  public get from() {
+    return this._from;
+  }
+  public putFrom(value: NetworkSecurityAuthzPolicyNetworkRulesFrom) {
+    this._from.internalValue = value;
+  }
+  public resetFrom() {
+    this._from.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromInput() {
+    return this._from.internalValue;
+  }
+
+  // to - computed: false, optional: true, required: false
+  private _to = new NetworkSecurityAuthzPolicyNetworkRulesToOutputReference(this, "to");
+  public get to() {
+    return this._to;
+  }
+  public putTo(value: NetworkSecurityAuthzPolicyNetworkRulesTo) {
+    this._to.internalValue = value;
+  }
+  public resetTo() {
+    this._to.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toInput() {
+    return this._to.internalValue;
+  }
+}
+
+export class NetworkSecurityAuthzPolicyNetworkRulesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityAuthzPolicyNetworkRules[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecurityAuthzPolicyNetworkRulesOutputReference {
+    return new NetworkSecurityAuthzPolicyNetworkRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkSecurityAuthzPolicyTarget {
   /**
   * Required when targeting forwarding rules and secure web proxy. Must not be specified when targeting Agent
   * Gateway. All resources referenced by this policy and extensions must share the same load balancing scheme.
   * For more information, refer to [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#load_balancing_scheme NetworkSecurityAuthzPolicy#load_balancing_scheme}
   */
   readonly loadBalancingScheme?: string;
   /**
   * A list of references to the Forwarding Rules or Secure Web Proxy Gateways or Agent Gateways on which this
   * policy will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
   */
   readonly resources?: string[];
 }
@@ -6738,15 +8420,15 @@ export class NetworkSecurityAuthzPolicyTargetOutputReference extends cdktn.Compl
 }
 export interface NetworkSecurityAuthzPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#create NetworkSecurityAuthzPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#delete NetworkSecurityAuthzPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#update NetworkSecurityAuthzPolicy#update}
   */
   readonly update?: string;
 }
@@ -6898,7 +8580,7 @@ export class NetworkSecurityAuthzPolicyTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy}
 */
 export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
 
@@ -6914,7 +8596,7 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityAuthzPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityAuthzPolicy to import
-  * @param importFromId The id of the existing NetworkSecurityAuthzPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityAuthzPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityAuthzPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -6926,7 +8608,7 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_authz_policy google_network_security_authz_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6937,7 +8619,7 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_authz_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -6959,6 +8641,7 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
     this._project = config.project;
     this._customProvider.internalValue = config.customProvider;
     this._httpRules.internalValue = config.httpRules;
+    this._networkRules.internalValue = config.networkRules;
     this._target.internalValue = config.target;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -7156,6 +8839,22 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
     return this._httpRules.internalValue;
   }
 
+  // network_rules - computed: false, optional: true, required: false
+  private _networkRules = new NetworkSecurityAuthzPolicyNetworkRulesList(this, "network_rules", false);
+  public get networkRules() {
+    return this._networkRules;
+  }
+  public putNetworkRules(value: NetworkSecurityAuthzPolicyNetworkRules[] | cdktn.IResolvable) {
+    this._networkRules.internalValue = value;
+  }
+  public resetNetworkRules() {
+    this._networkRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkRulesInput() {
+    return this._networkRules.internalValue;
+  }
+
   // target - computed: false, optional: false, required: true
   private _target = new NetworkSecurityAuthzPolicyTargetOutputReference(this, "target");
   public get target() {
@@ -7202,6 +8901,7 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
       project: cdktn.stringToTerraform(this._project),
       custom_provider: networkSecurityAuthzPolicyCustomProviderToTerraform(this._customProvider.internalValue),
       http_rules: cdktn.listMapper(networkSecurityAuthzPolicyHttpRulesToTerraform, true)(this._httpRules.internalValue),
+      network_rules: cdktn.listMapper(networkSecurityAuthzPolicyNetworkRulesToTerraform, true)(this._networkRules.internalValue),
       target: networkSecurityAuthzPolicyTargetToTerraform(this._target.internalValue),
       timeouts: networkSecurityAuthzPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -7274,6 +8974,12 @@ export class NetworkSecurityAuthzPolicy extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "NetworkSecurityAuthzPolicyHttpRulesList",
+      },
+      network_rules: {
+        value: cdktn.listMapperHcl(networkSecurityAuthzPolicyNetworkRulesToHclTerraform, true)(this._networkRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkSecurityAuthzPolicyNetworkRulesList",
       },
       target: {
         value: networkSecurityAuthzPolicyTargetToHclTerraform(this._target.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface PubsubLiteReservationConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#deletion_policy PubsubLiteReservation#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#deletion_policy PubsubLiteReservation#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#id PubsubLiteReservation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,17 +34,17 @@ export interface PubsubLiteReservationConfig extends cdktn.TerraformMetaArgument
   /**
   * Name of the reservation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#name PubsubLiteReservation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#project PubsubLiteReservation#project}
   */
   readonly project?: string;
   /**
   * The region of the pubsub lite reservation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#region PubsubLiteReservation#region}
   */
   readonly region?: string;
   /**
@@ -52,27 +52,27 @@ export interface PubsubLiteReservationConfig extends cdktn.TerraformMetaArgument
   * equivalent to 1 MiB/s of published messages or 2 MiB/s of subscribed
   * messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#throughput_capacity PubsubLiteReservation#throughput_capacity}
   */
   readonly throughputCapacity: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#timeouts PubsubLiteReservation#timeouts}
   */
   readonly timeouts?: PubsubLiteReservationTimeouts;
 }
 export interface PubsubLiteReservationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#create PubsubLiteReservation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#delete PubsubLiteReservation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#update PubsubLiteReservation#update}
   */
   readonly update?: string;
 }
@@ -224,7 +224,7 @@ export class PubsubLiteReservationTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation}
 */
 export class PubsubLiteReservation extends cdktn.TerraformResource {
 
@@ -240,7 +240,7 @@ export class PubsubLiteReservation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PubsubLiteReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PubsubLiteReservation to import
-  * @param importFromId The id of the existing PubsubLiteReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PubsubLiteReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PubsubLiteReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -252,7 +252,7 @@ export class PubsubLiteReservation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +263,7 @@ export class PubsubLiteReservation extends cdktn.TerraformResource {
       terraformResourceType: 'google_pubsub_lite_reservation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

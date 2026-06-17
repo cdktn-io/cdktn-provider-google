@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/monitoring_uptime_check_ips
+// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/monitoring_uptime_check_ips
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleMonitoringUptimeCheckIpsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/monitoring_uptime_check_ips#id DataGoogleMonitoringUptimeCheckIps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/monitoring_uptime_check_ips#id DataGoogleMonitoringUptimeCheckIps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -107,7 +107,7 @@ export class DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips}
 */
 export class DataGoogleMonitoringUptimeCheckIps extends cdktn.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataGoogleMonitoringUptimeCheckIps extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataGoogleMonitoringUptimeCheckIps resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleMonitoringUptimeCheckIps to import
-  * @param importFromId The id of the existing DataGoogleMonitoringUptimeCheckIps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/monitoring_uptime_check_ips#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleMonitoringUptimeCheckIps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/monitoring_uptime_check_ips#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleMonitoringUptimeCheckIps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -135,7 +135,7 @@ export class DataGoogleMonitoringUptimeCheckIps extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.36.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class DataGoogleMonitoringUptimeCheckIps extends cdktn.TerraformDataSourc
       terraformResourceType: 'google_monitoring_uptime_check_ips',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.36.0',
+        providerVersion: '7.37.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
