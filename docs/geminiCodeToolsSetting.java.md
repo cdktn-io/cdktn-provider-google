@@ -4,7 +4,7 @@
 
 ### GeminiCodeToolsSetting <a name="GeminiCodeToolsSetting" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer"></a>
 
@@ -44,10 +44,10 @@ GeminiCodeToolsSetting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.codeToolsSettingId">codeToolsSettingId</a></code> | <code>java.lang.String</code> | Id of the Code Tools Setting. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.enabledTool">enabledTool</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledTool">GeminiCodeToolsSettingEnabledTool</a>></code> | enabled_tool block. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts">GeminiCodeToolsSettingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Id of the Code Tools Setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 enabled_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
 
 ---
 
@@ -145,7 +145,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
 
 ---
 
@@ -714,7 +714,7 @@ The construct id used in the generated config for the GeminiCodeToolsSetting to 
 
 The id of the existing GeminiCodeToolsSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1180,10 +1180,10 @@ GeminiCodeToolsSettingConfig.builder()
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.codeToolsSettingId">codeToolsSettingId</a></code> | <code>java.lang.String</code> | Id of the Code Tools Setting. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.enabledTool">enabledTool</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledTool">GeminiCodeToolsSettingEnabledTool</a>></code> | enabled_tool block. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts">GeminiCodeToolsSettingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1268,7 +1268,7 @@ public java.lang.String getCodeToolsSettingId();
 
 Id of the Code Tools Setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
 
 ---
 
@@ -1282,7 +1282,7 @@ public IResolvable|java.util.List<GeminiCodeToolsSettingEnabledTool> getEnabledT
 
 enabled_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
 
 ---
 
@@ -1303,7 +1303,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
 
 ---
 
@@ -1315,7 +1315,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1335,7 +1335,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
 
 ---
 
@@ -1349,7 +1349,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
 
 ---
 
@@ -1361,7 +1361,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
 
 ---
 
@@ -1375,7 +1375,7 @@ public GeminiCodeToolsSettingTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
 
 ---
 
@@ -1417,7 +1417,7 @@ public java.lang.String getHandle();
 
 Handle used to invoke the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#handle GeminiCodeToolsSetting#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#handle GeminiCodeToolsSetting#handle}
 
 ---
 
@@ -1431,7 +1431,7 @@ public java.lang.String getTool();
 
 Link to the Tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#tool GeminiCodeToolsSetting#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#tool GeminiCodeToolsSetting#tool}
 
 ---
 
@@ -1445,7 +1445,7 @@ public java.lang.String getAccountConnector();
 
 Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account_connector_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#account_connector GeminiCodeToolsSetting#account_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#account_connector GeminiCodeToolsSetting#account_connector}
 
 ---
 
@@ -1459,7 +1459,7 @@ public IResolvable|java.util.List<GeminiCodeToolsSettingEnabledToolConfig> getCo
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#config GeminiCodeToolsSetting#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#config GeminiCodeToolsSetting#config}
 
 ---
 
@@ -1473,7 +1473,7 @@ public java.lang.String getUriOverride();
 
 Overridden URI, if allowed by Tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#uri_override GeminiCodeToolsSetting#uri_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#uri_override GeminiCodeToolsSetting#uri_override}
 
 ---
 
@@ -1509,7 +1509,7 @@ public java.lang.String getKey();
 
 Key of the configuration item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#key GeminiCodeToolsSetting#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#key GeminiCodeToolsSetting#key}
 
 ---
 
@@ -1523,7 +1523,7 @@ public java.lang.String getValue();
 
 Value of the configuration item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#value GeminiCodeToolsSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#value GeminiCodeToolsSetting#value}
 
 ---
 
@@ -1545,9 +1545,9 @@ GeminiCodeToolsSettingTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}. |
 
 ---
 
@@ -1559,7 +1559,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}.
 
 ---
 
@@ -1571,7 +1571,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}.
 
 ---
 
@@ -1583,7 +1583,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}.
 
 ---
 

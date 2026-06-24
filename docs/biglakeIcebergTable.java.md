@@ -4,7 +4,7 @@
 
 ### BiglakeIcebergTable <a name="BiglakeIcebergTable" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer"></a>
 
@@ -29,6 +29,7 @@ BiglakeIcebergTable.Builder.create(Construct scope, java.lang.String id)
 //  .partitionSpec(BiglakeIcebergTablePartitionSpec)
 //  .project(java.lang.String)
 //  .properties(java.util.Map<java.lang.String, java.lang.String>)
+//  .sortOrder(BiglakeIcebergTableSortOrder)
 //  .timeouts(BiglakeIcebergTableTimeouts)
     .build();
 ```
@@ -49,11 +50,12 @@ BiglakeIcebergTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | The parent namespace of the table. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.schema">schema</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema">BiglakeIcebergTableSchema</a></code> | schema block. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the table. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.partitionSpec">partitionSpec</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec">BiglakeIcebergTablePartitionSpec</a></code> | partition_spec block. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.properties">properties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined properties for the table. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.sortOrder">sortOrder</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a></code> | sort_order block. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts">BiglakeIcebergTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the IcebergCatalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent namespace of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
 
 ---
 
@@ -171,7 +173,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
 
 ---
 
@@ -179,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -192,7 +194,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
 
 ---
 
@@ -202,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 partition_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}.
 
 ---
 
@@ -220,7 +222,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-defined properties for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+
+---
+
+##### `sortOrder`<sup>Optional</sup> <a name="sortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer.parameter.sortOrder"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a>
+
+sort_order block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#sort_order BiglakeIcebergTable#sort_order}
 
 ---
 
@@ -230,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
 
 ---
 
@@ -264,6 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putPartitionSpec">putPartitionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putSchema">putSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putSortOrder">putSortOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetId">resetId</a></code> | *No description.* |
@@ -271,6 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetPartitionSpec">resetPartitionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetProperties">resetProperties</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetSortOrder">resetSortOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -610,6 +624,18 @@ public void putSchema(BiglakeIcebergTableSchema value)
 
 ---
 
+##### `putSortOrder` <a name="putSortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putSortOrder"></a>
+
+```java
+public void putSortOrder(BiglakeIcebergTableSortOrder value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putSortOrder.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.putTimeouts"></a>
 
 ```java
@@ -656,6 +682,12 @@ public void resetProject()
 
 ```java
 public void resetProperties()
+```
+
+##### `resetSortOrder` <a name="resetSortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetSortOrder"></a>
+
+```java
+public void resetSortOrder()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.resetTimeouts"></a>
@@ -767,7 +799,7 @@ The construct id used in the generated config for the BiglakeIcebergTable to imp
 
 The id of the existing BiglakeIcebergTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,6 +831,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.partitionSpec">partitionSpec</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference">BiglakeIcebergTablePartitionSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.schema">schema</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaOutputReference">BiglakeIcebergTableSchemaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.sortOrder">sortOrder</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference">BiglakeIcebergTableSortOrderOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeoutsOutputReference">BiglakeIcebergTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.catalogInput">catalogInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -810,6 +843,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.propertiesInput">propertiesInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.schemaInput">schemaInput</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema">BiglakeIcebergTableSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.sortOrderInput">sortOrderInput</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts">BiglakeIcebergTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.catalog">catalog</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -984,6 +1018,16 @@ public BiglakeIcebergTableSchemaOutputReference getSchema();
 
 ---
 
+##### `sortOrder`<sup>Required</sup> <a name="sortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.sortOrder"></a>
+
+```java
+public BiglakeIcebergTableSortOrderOutputReference getSortOrder();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference">BiglakeIcebergTableSortOrderOutputReference</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.timeouts"></a>
 
 ```java
@@ -1091,6 +1135,16 @@ public BiglakeIcebergTableSchema getSchemaInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema">BiglakeIcebergTableSchema</a>
+
+---
+
+##### `sortOrderInput`<sup>Optional</sup> <a name="sortOrderInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.property.sortOrderInput"></a>
+
+```java
+public BiglakeIcebergTableSortOrder getSortOrderInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a>
 
 ---
 
@@ -1229,6 +1283,7 @@ BiglakeIcebergTableConfig.builder()
 //  .partitionSpec(BiglakeIcebergTablePartitionSpec)
 //  .project(java.lang.String)
 //  .properties(java.util.Map<java.lang.String, java.lang.String>)
+//  .sortOrder(BiglakeIcebergTableSortOrder)
 //  .timeouts(BiglakeIcebergTableTimeouts)
     .build();
 ```
@@ -1249,11 +1304,12 @@ BiglakeIcebergTableConfig.builder()
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The parent namespace of the table. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.schema">schema</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema">BiglakeIcebergTableSchema</a></code> | schema block. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the table. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.partitionSpec">partitionSpec</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec">BiglakeIcebergTablePartitionSpec</a></code> | partition_spec block. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.properties">properties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined properties for the table. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.sortOrder">sortOrder</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a></code> | sort_order block. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts">BiglakeIcebergTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1338,7 +1394,7 @@ public java.lang.String getCatalog();
 
 The name of the IcebergCatalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
 
 ---
 
@@ -1352,7 +1408,7 @@ public java.lang.String getName();
 
 The name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
 
 ---
 
@@ -1366,7 +1422,7 @@ public java.lang.String getNamespace();
 
 The parent namespace of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
 
 ---
 
@@ -1380,7 +1436,7 @@ public BiglakeIcebergTableSchema getSchema();
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
 
 ---
 
@@ -1401,7 +1457,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
 
 ---
 
@@ -1413,7 +1469,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1430,7 +1486,7 @@ public java.lang.String getLocation();
 
 The location of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
 
 ---
 
@@ -1444,7 +1500,7 @@ public BiglakeIcebergTablePartitionSpec getPartitionSpec();
 
 partition_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
 
 ---
 
@@ -1456,7 +1512,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}.
 
 ---
 
@@ -1470,7 +1526,21 @@ public java.util.Map<java.lang.String, java.lang.String> getProperties();
 
 User-defined properties for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+
+---
+
+##### `sortOrder`<sup>Optional</sup> <a name="sortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.property.sortOrder"></a>
+
+```java
+public BiglakeIcebergTableSortOrder getSortOrder();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a>
+
+sort_order block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#sort_order BiglakeIcebergTable#sort_order}
 
 ---
 
@@ -1484,7 +1554,7 @@ public BiglakeIcebergTableTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
 
 ---
 
@@ -1518,7 +1588,7 @@ public IResolvable|java.util.List<BiglakeIcebergTablePartitionSpecFields> getFie
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
 
 ---
 
@@ -1556,7 +1626,7 @@ public java.lang.String getName();
 
 The name of the partition field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
 
 ---
 
@@ -1570,7 +1640,7 @@ public java.lang.Number getSourceId();
 
 The source field ID for the partition field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
 
 ---
 
@@ -1584,7 +1654,7 @@ public java.lang.String getTransform();
 
 The transform to apply to the source field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
 
 ---
 
@@ -1622,7 +1692,7 @@ public IResolvable|java.util.List<BiglakeIcebergTableSchemaFields> getFields();
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
 
 ---
 
@@ -1636,7 +1706,7 @@ public java.util.List<java.lang.Number> getIdentifierFieldIds();
 
 The field IDs that make up the identifier for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
 
 ---
 
@@ -1650,7 +1720,7 @@ public java.lang.String getType();
 
 The type of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
 
 ---
 
@@ -1692,7 +1762,7 @@ public java.lang.Number getId();
 
 The unique identifier of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1709,7 +1779,7 @@ public java.lang.String getName();
 
 The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
 
 ---
 
@@ -1723,7 +1793,7 @@ public java.lang.Boolean|IResolvable getRequired();
 
 Whether the field is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
 
 ---
 
@@ -1737,7 +1807,7 @@ public java.lang.String getType();
 
 The type of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
 
 ---
 
@@ -1751,7 +1821,123 @@ public java.lang.String getDoc();
 
 A description of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
+
+---
+
+### BiglakeIcebergTableSortOrder <a name="BiglakeIcebergTableSortOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.biglake_iceberg_table.BiglakeIcebergTableSortOrder;
+
+BiglakeIcebergTableSortOrder.builder()
+    .fields(IResolvable|java.util.List<BiglakeIcebergTableSortOrderFields>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder.property.fields">fields</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>></code> | fields block. |
+
+---
+
+##### `fields`<sup>Required</sup> <a name="fields" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder.property.fields"></a>
+
+```java
+public IResolvable|java.util.List<BiglakeIcebergTableSortOrderFields> getFields();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>>
+
+fields block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+
+---
+
+### BiglakeIcebergTableSortOrderFields <a name="BiglakeIcebergTableSortOrderFields" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.biglake_iceberg_table.BiglakeIcebergTableSortOrderFields;
+
+BiglakeIcebergTableSortOrderFields.builder()
+    .direction(java.lang.String)
+    .nullOrder(java.lang.String)
+    .sourceId(java.lang.Number)
+    .transform(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.direction">direction</a></code> | <code>java.lang.String</code> | The sort direction for the sort field. Possible values: "asc", "desc". |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.nullOrder">nullOrder</a></code> | <code>java.lang.String</code> | The null ordering for the sort field. Possible values: "nulls-first", "nulls-last". |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.sourceId">sourceId</a></code> | <code>java.lang.Number</code> | The source field ID for the sort field. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.transform">transform</a></code> | <code>java.lang.String</code> | The transform to apply to the source field. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+The sort direction for the sort field. Possible values: "asc", "desc".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#direction BiglakeIcebergTable#direction}
+
+---
+
+##### `nullOrder`<sup>Required</sup> <a name="nullOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.nullOrder"></a>
+
+```java
+public java.lang.String getNullOrder();
+```
+
+- *Type:* java.lang.String
+
+The null ordering for the sort field. Possible values: "nulls-first", "nulls-last".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#null_order BiglakeIcebergTable#null_order}
+
+---
+
+##### `sourceId`<sup>Required</sup> <a name="sourceId" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.sourceId"></a>
+
+```java
+public java.lang.Number getSourceId();
+```
+
+- *Type:* java.lang.Number
+
+The source field ID for the sort field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+
+---
+
+##### `transform`<sup>Required</sup> <a name="transform" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.property.transform"></a>
+
+```java
+public java.lang.String getTransform();
+```
+
+- *Type:* java.lang.String
+
+The transform to apply to the source field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
 
 ---
 
@@ -1773,9 +1959,9 @@ BiglakeIcebergTableTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}. |
 
 ---
 
@@ -1787,7 +1973,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}.
 
 ---
 
@@ -1799,7 +1985,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}.
 
 ---
 
@@ -1811,7 +1997,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}.
 
 ---
 
@@ -3509,6 +3695,816 @@ public BiglakeIcebergTableSchema getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema">BiglakeIcebergTableSchema</a>
+
+---
+
+
+### BiglakeIcebergTableSortOrderFieldsList <a name="BiglakeIcebergTableSortOrderFieldsList" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.biglake_iceberg_table.BiglakeIcebergTableSortOrderFieldsList;
+
+new BiglakeIcebergTableSortOrderFieldsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.get"></a>
+
+```java
+public BiglakeIcebergTableSortOrderFieldsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BiglakeIcebergTableSortOrderFields> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>>
+
+---
+
+
+### BiglakeIcebergTableSortOrderFieldsOutputReference <a name="BiglakeIcebergTableSortOrderFieldsOutputReference" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.biglake_iceberg_table.BiglakeIcebergTableSortOrderFieldsOutputReference;
+
+new BiglakeIcebergTableSortOrderFieldsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.nullOrderInput">nullOrderInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.sourceIdInput">sourceIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.transformInput">transformInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.nullOrder">nullOrder</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.sourceId">sourceId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.transform">transform</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nullOrderInput`<sup>Optional</sup> <a name="nullOrderInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.nullOrderInput"></a>
+
+```java
+public java.lang.String getNullOrderInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sourceIdInput`<sup>Optional</sup> <a name="sourceIdInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.sourceIdInput"></a>
+
+```java
+public java.lang.Number getSourceIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `transformInput`<sup>Optional</sup> <a name="transformInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.transformInput"></a>
+
+```java
+public java.lang.String getTransformInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nullOrder`<sup>Required</sup> <a name="nullOrder" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.nullOrder"></a>
+
+```java
+public java.lang.String getNullOrder();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sourceId`<sup>Required</sup> <a name="sourceId" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.sourceId"></a>
+
+```java
+public java.lang.Number getSourceId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `transform`<sup>Required</sup> <a name="transform" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.transform"></a>
+
+```java
+public java.lang.String getTransform();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BiglakeIcebergTableSortOrderFields getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>
+
+---
+
+
+### BiglakeIcebergTableSortOrderOutputReference <a name="BiglakeIcebergTableSortOrderOutputReference" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.biglake_iceberg_table.BiglakeIcebergTableSortOrderOutputReference;
+
+new BiglakeIcebergTableSortOrderOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.putFields">putFields</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putFields` <a name="putFields" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.putFields"></a>
+
+```java
+public void putFields(IResolvable|java.util.List<BiglakeIcebergTableSortOrderFields> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.putFields.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList">BiglakeIcebergTableSortOrderFieldsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.orderId">orderId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `fields`<sup>Required</sup> <a name="fields" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fields"></a>
+
+```java
+public BiglakeIcebergTableSortOrderFieldsList getFields();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList">BiglakeIcebergTableSortOrderFieldsList</a>
+
+---
+
+##### `orderId`<sup>Required</sup> <a name="orderId" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.orderId"></a>
+
+```java
+public java.lang.Number getOrderId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `fieldsInput`<sup>Optional</sup> <a name="fieldsInput" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.fieldsInput"></a>
+
+```java
+public IResolvable|java.util.List<BiglakeIcebergTableSortOrderFields> getFieldsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields">BiglakeIcebergTableSortOrderFields</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.property.internalValue"></a>
+
+```java
+public BiglakeIcebergTableSortOrder getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder">BiglakeIcebergTableSortOrder</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectUsageExportBucket <a name="ProjectUsageExportBucket" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer"></a>
 
@@ -41,7 +41,7 @@ ProjectUsageExportBucket.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | The bucket to store reports in. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}. |
+| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.prefix">prefix</a></code> | <code>java.lang.String</code> | A prefix for the reports, for instance, the project name. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The project to set the export bucket on. If it is not provided, the provider project is used. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts">ProjectUsageExportBucketTimeouts</a></code> | timeouts block. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The bucket to store reports in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#bucket_name ProjectUsageExportBucket#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#bucket_name ProjectUsageExportBucket#bucket_name}
 
 ---
 
@@ -131,7 +131,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#deletion_policy ProjectUsageExportBucket#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#deletion_policy ProjectUsageExportBucket#deletion_policy}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -152,7 +152,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A prefix for the reports, for instance, the project name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#prefix ProjectUsageExportBucket#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#prefix ProjectUsageExportBucket#prefix}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The project to set the export bucket on. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#project ProjectUsageExportBucket#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#project ProjectUsageExportBucket#project}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#timeouts ProjectUsageExportBucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#timeouts ProjectUsageExportBucket#timeouts}
 
 ---
 
@@ -669,7 +669,7 @@ The construct id used in the generated config for the ProjectUsageExportBucket t
 
 The id of the existing ProjectUsageExportBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,7 +1033,7 @@ ProjectUsageExportBucketConfig.builder()
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | The bucket to store reports in. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}. |
+| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.prefix">prefix</a></code> | <code>java.lang.String</code> | A prefix for the reports, for instance, the project name. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.project">project</a></code> | <code>java.lang.String</code> | The project to set the export bucket on. If it is not provided, the provider project is used. |
 | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts">ProjectUsageExportBucketTimeouts</a></code> | timeouts block. |
@@ -1120,7 +1120,7 @@ public java.lang.String getBucketName();
 
 The bucket to store reports in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#bucket_name ProjectUsageExportBucket#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#bucket_name ProjectUsageExportBucket#bucket_name}
 
 ---
 
@@ -1141,7 +1141,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#deletion_policy ProjectUsageExportBucket#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#deletion_policy ProjectUsageExportBucket#deletion_policy}
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#id ProjectUsageExportBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1170,7 +1170,7 @@ public java.lang.String getPrefix();
 
 A prefix for the reports, for instance, the project name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#prefix ProjectUsageExportBucket#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#prefix ProjectUsageExportBucket#prefix}
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getProject();
 
 The project to set the export bucket on. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#project ProjectUsageExportBucket#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#project ProjectUsageExportBucket#project}
 
 ---
 
@@ -1198,7 +1198,7 @@ public ProjectUsageExportBucketTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#timeouts ProjectUsageExportBucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#timeouts ProjectUsageExportBucket#timeouts}
 
 ---
 
@@ -1219,8 +1219,8 @@ ProjectUsageExportBucketTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#create ProjectUsageExportBucket#create}. |
-| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#delete ProjectUsageExportBucket#delete}. |
+| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#create ProjectUsageExportBucket#create}. |
+| <code><a href="#@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#delete ProjectUsageExportBucket#delete}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#create ProjectUsageExportBucket#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#create ProjectUsageExportBucket#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/project_usage_export_bucket#delete ProjectUsageExportBucket#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/project_usage_export_bucket#delete ProjectUsageExportBucket#delete}.
 
 ---
 

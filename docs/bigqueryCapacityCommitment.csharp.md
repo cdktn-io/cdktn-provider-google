@@ -4,7 +4,7 @@
 
 ### BigqueryCapacityCommitment <a name="BigqueryCapacityCommitment" id="@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment google_bigquery_capacity_commitment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment.Initializer"></a>
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the BigqueryCapacityCommitment
 
 The id of the existing BigqueryCapacityCommitment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,9 +1092,9 @@ new BigqueryCapacityCommitmentConfig {
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.edition">Edition</a></code> | <code>string</code> | The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS. |
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.enforceSingleAdminProjectPerOrg">EnforceSingleAdminProjectPerOrg</a></code> | <code>string</code> | If true, fail the request if another project in the organization has a capacity commitment. |
-| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.location">Location</a></code> | <code>string</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
-| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.renewalPlan">RenewalPlan</a></code> | <code>string</code> | The plan this capacity commitment is converted to after commitmentEndTime passes. |
 | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts">BigqueryCapacityCommitmentTimeouts</a></code> | timeouts block. |
 
@@ -1180,7 +1180,7 @@ public string Plan { get; set; }
 
 Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#plan BigqueryCapacityCommitment#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#plan BigqueryCapacityCommitment#plan}
 
 ---
 
@@ -1194,7 +1194,7 @@ public double SlotCount { get; set; }
 
 Number of slots in this commitment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#slot_count BigqueryCapacityCommitment#slot_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#slot_count BigqueryCapacityCommitment#slot_count}
 
 ---
 
@@ -1213,7 +1213,7 @@ empty. This field must only contain lower case alphanumeric characters or dashes
 cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if the capacity commitment is split
 or merged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#capacity_commitment_id BigqueryCapacityCommitment#capacity_commitment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#capacity_commitment_id BigqueryCapacityCommitment#capacity_commitment_id}
 
 ---
 
@@ -1234,7 +1234,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#deletion_policy BigqueryCapacityCommitment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#deletion_policy BigqueryCapacityCommitment#deletion_policy}
 
 ---
 
@@ -1248,7 +1248,7 @@ public string Edition { get; set; }
 
 The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#edition BigqueryCapacityCommitment#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#edition BigqueryCapacityCommitment#edition}
 
 ---
 
@@ -1262,7 +1262,7 @@ public string EnforceSingleAdminProjectPerOrg { get; set; }
 
 If true, fail the request if another project in the organization has a capacity commitment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#enforce_single_admin_project_per_org BigqueryCapacityCommitment#enforce_single_admin_project_per_org}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#enforce_single_admin_project_per_org BigqueryCapacityCommitment#enforce_single_admin_project_per_org}
 
 ---
 
@@ -1274,7 +1274,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#id BigqueryCapacityCommitment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1291,7 +1291,7 @@ public string Location { get; set; }
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#location BigqueryCapacityCommitment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#location BigqueryCapacityCommitment#location}
 
 ---
 
@@ -1303,7 +1303,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#project BigqueryCapacityCommitment#project}.
 
 ---
 
@@ -1319,7 +1319,7 @@ The plan this capacity commitment is converted to after commitmentEndTime passes
 
 Once the plan is changed, committed period is extended according to commitment plan. Only applicable for some commitment plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#renewal_plan BigqueryCapacityCommitment#renewal_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#renewal_plan BigqueryCapacityCommitment#renewal_plan}
 
 ---
 
@@ -1333,7 +1333,7 @@ public BigqueryCapacityCommitmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#timeouts BigqueryCapacityCommitment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#timeouts BigqueryCapacityCommitment#timeouts}
 
 ---
 
@@ -1355,9 +1355,9 @@ new BigqueryCapacityCommitmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}. |
 
 ---
 
@@ -1369,7 +1369,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#create BigqueryCapacityCommitment#create}.
 
 ---
 
@@ -1381,7 +1381,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#delete BigqueryCapacityCommitment#delete}.
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/bigquery_capacity_commitment#update BigqueryCapacityCommitment#update}.
 
 ---
 

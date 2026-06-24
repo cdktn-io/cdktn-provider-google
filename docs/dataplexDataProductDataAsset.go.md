@@ -4,7 +4,7 @@
 
 ### DataplexDataProductDataAsset <a name="DataplexDataProductDataAsset" id="@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset google_dataplex_data_product_data_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAsset.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the DataplexDataProductDataAss
 
 The id of the existing DataplexDataProductDataAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,7 +1022,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataprod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetAccessGroupConfigs.property.accessGroup">AccessGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetAccessGroupConfigs.property.accessGroup">AccessGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetAccessGroupConfigs.property.iamRoles">IamRoles</a></code> | <code>*[]*string</code> | IAM roles granted on the resource. |
 
 ---
@@ -1035,7 +1035,7 @@ AccessGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#access_group DataplexDataProductDataAsset#access_group}.
 
 ---
 
@@ -1049,7 +1049,7 @@ IamRoles *[]*string
 
 IAM roles granted on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#iam_roles DataplexDataProductDataAsset#iam_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#iam_roles DataplexDataProductDataAsset#iam_roles}
 
 ---
 
@@ -1098,9 +1098,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataprod
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.resource">Resource</a></code> | <code>*string</code> | Full resource name of the cloud resource. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.accessGroupConfigs">AccessGroupConfigs</a></code> | <code>interface{}</code> | access_group_configs block. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts">DataplexDataProductDataAssetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1185,7 +1185,7 @@ DataAssetId *string
 
 The ID of the data asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#data_asset_id DataplexDataProductDataAsset#data_asset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#data_asset_id DataplexDataProductDataAsset#data_asset_id}
 
 ---
 
@@ -1199,7 +1199,7 @@ DataProductId *string
 
 The ID of the parent data product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#data_product_id DataplexDataProductDataAsset#data_product_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#data_product_id DataplexDataProductDataAsset#data_product_id}
 
 ---
 
@@ -1213,7 +1213,7 @@ Location *string
 
 The location for the data asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#location DataplexDataProductDataAsset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#location DataplexDataProductDataAsset#location}
 
 ---
 
@@ -1227,7 +1227,7 @@ Resource *string
 
 Full resource name of the cloud resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#resource DataplexDataProductDataAsset#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#resource DataplexDataProductDataAsset#resource}
 
 ---
 
@@ -1241,7 +1241,7 @@ AccessGroupConfigs interface{}
 
 access_group_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#access_group_configs DataplexDataProductDataAsset#access_group_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#access_group_configs DataplexDataProductDataAsset#access_group_configs}
 
 ---
 
@@ -1262,7 +1262,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#deletion_policy DataplexDataProductDataAsset#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#deletion_policy DataplexDataProductDataAsset#deletion_policy}
 
 ---
 
@@ -1274,7 +1274,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#id DataplexDataProductDataAsset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1294,7 +1294,7 @@ User-defined labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#labels DataplexDataProductDataAsset#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#labels DataplexDataProductDataAsset#labels}
 
 ---
 
@@ -1306,7 +1306,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#project DataplexDataProductDataAsset#project}.
 
 ---
 
@@ -1320,7 +1320,7 @@ Timeouts DataplexDataProductDataAssetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#timeouts DataplexDataProductDataAsset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#timeouts DataplexDataProductDataAsset#timeouts}
 
 ---
 
@@ -1342,9 +1342,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataprod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductDataAsset.DataplexDataProductDataAssetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}. |
 
 ---
 
@@ -1356,7 +1356,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#create DataplexDataProductDataAsset#create}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#delete DataplexDataProductDataAsset#delete}.
 
 ---
 
@@ -1380,7 +1380,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dataplex_data_product_data_asset#update DataplexDataProductDataAsset#update}.
 
 ---
 

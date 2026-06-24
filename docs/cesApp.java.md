@@ -4,7 +4,7 @@
 
 ### CesApp <a name="CesApp" id="@cdktn/provider-google.cesApp.CesApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app google_ces_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app google_ces_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesApp.Initializer"></a>
 
@@ -69,13 +69,13 @@ CesApp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.evaluationMetricsThresholds">evaluationMetricsThresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | evaluation_metrics_thresholds block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.globalInstruction">globalInstruction</a></code> | <code>java.lang.String</code> | Instructions for all the agents in the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.guardrails">guardrails</a></code> | <code>java.util.List<java.lang.String></code> | List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#id CesApp#id}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#id CesApp#id}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.languageSettings">languageSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettings">CesAppLanguageSettings</a></code> | language_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.loggingSettings">loggingSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | logging_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata about the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.modelSettings">modelSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppModelSettings">CesAppModelSettings</a></code> | model_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.pinned">pinned</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the app is pinned in the app list. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#project CesApp#project}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#project CesApp#project}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.rootAgent">rootAgent</a></code> | <code>java.lang.String</code> | The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts">CesAppTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.timeZoneSettings">timeZoneSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettings">CesAppTimeZoneSettings</a></code> | time_zone_settings block. |
@@ -153,7 +153,7 @@ The ID to use for the app, which will become the final component of the app's re
 If not provided, a unique ID will be
 automatically assigned for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#app_id CesApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#app_id CesApp#app_id}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#display_name CesApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#display_name CesApp#display_name}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#location CesApp#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#location CesApp#location}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 audio_processing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_certificate_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_store_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_channel_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
 
 ---
 
@@ -230,7 +230,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
 
 ---
 
@@ -263,7 +263,7 @@ Instructions for all the agents in the app.
 You can use this instruction to set up a stable identity or personality
 across all the agents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#guardrails CesApp#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#guardrails CesApp#guardrails}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#id CesApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#id CesApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -294,7 +294,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 language_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#language_settings CesApp#language_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#language_settings CesApp#language_settings}
 
 ---
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
 
 ---
 
@@ -317,7 +317,7 @@ Metadata about the app.
 This field can be used to store additional
 information relevant to the app's details or intended usages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#metadata CesApp#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#metadata CesApp#metadata}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#model_settings CesApp#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#model_settings CesApp#model_settings}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the app is pinned in the app list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#pinned CesApp#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#pinned CesApp#pinned}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#project CesApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#project CesApp#project}.
 
 ---
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#root_agent CesApp#root_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#root_agent CesApp#root_agent}
 
 ---
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#timeouts CesApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#timeouts CesApp#timeouts}
 
 ---
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 time_zone_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
 
 ---
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 variable_declarations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
 
 ---
 
@@ -1134,7 +1134,7 @@ The construct id used in the generated config for the CesApp to import.
 
 The id of the existing CesApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1948,7 +1948,7 @@ public CesAppAudioProcessingConfigAmbientSoundConfig getAmbientSoundConfig();
 
 ambient_sound_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
 
 ---
 
@@ -1962,7 +1962,7 @@ public CesAppAudioProcessingConfigBargeInConfig getBargeInConfig();
 
 barge_in_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
 
 ---
 
@@ -1979,7 +1979,7 @@ The duration of user inactivity (no speech or interaction) before the agent prom
 If not set, the agent will not prompt
 the user for reengagement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
 
 ---
 
@@ -1993,7 +1993,7 @@ public IResolvable|java.util.List<CesAppAudioProcessingConfigSynthesizeSpeechCon
 
 synthesize_speech_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
 
 ---
 
@@ -2031,7 +2031,7 @@ public java.lang.String getGcsUri();
 
 Ambient noise as a mono-channel, 16kHz WAV file stored in [Cloud Storage](https://cloud.google.com/storage). Note: Please make sure the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com' has 'storage.objects.get' permission to the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
 
 ---
 
@@ -2050,7 +2050,7 @@ Valid values are: - "coffee_shop" - "keyboard" - "keypad" - "hum"
 -"room_1" - "room_2" - "room_3"
 -"room_4" - "room_5" - "air_conditioner"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
 
 ---
 
@@ -2064,7 +2064,7 @@ public java.lang.Number getVolumeGainDb();
 
 Volume gain (in dB) of the normal native volume supported by ambient noise, in the range [-96.0, 16.0]. If unset, or set to a value of 0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB) will play at approximately half the amplitude of the normal native signal amplitude. A value of +6.0 (dB) will play at approximately twice the amplitude of the normal native signal amplitude. We strongly recommend not to exceed +10 (dB) as there's usually no effective increase in loudness for any value greater than that.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
 
 ---
 
@@ -2101,7 +2101,7 @@ If enabled, the agent will adapt its next response based on the assumption that 
 This should not be used in scenarios where agent responses are displayed
 visually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
 
 ---
 
@@ -2123,7 +2123,7 @@ CesAppAudioProcessingConfigSynthesizeSpeechConfigs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#language_code CesApp#language_code}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#language_code CesApp#language_code}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.speakingRate">speakingRate</a></code> | <code>java.lang.Number</code> | The speaking rate/speed in the range [0.25, 2.0]. 1.0 is the normal native speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is half as fast. Values outside of the range [0.25, 2.0] will return an error. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.voice">voice</a></code> | <code>java.lang.String</code> | The name of the voice. |
 
@@ -2137,7 +2137,7 @@ public java.lang.String getLanguageCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#language_code CesApp#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#language_code CesApp#language_code}.
 
 ---
 
@@ -2151,7 +2151,7 @@ public java.lang.Number getSpeakingRate();
 
 The speaking rate/speed in the range [0.25, 2.0]. 1.0 is the normal native speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is half as fast. Values outside of the range [0.25, 2.0] will return an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
 
 ---
 
@@ -2170,7 +2170,7 @@ voice based on the other parameters such as language_code.
 For the list of available voices, please refer to Supported voices and
 languages from Cloud Text-to-Speech.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#voice CesApp#voice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#voice CesApp#voice}
 
 ---
 
@@ -2208,7 +2208,7 @@ public java.lang.String getPrivateKey();
 
 The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#private_key CesApp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#private_key CesApp#private_key}
 
 ---
 
@@ -2222,7 +2222,7 @@ public java.lang.String getTlsCertificate();
 
 The TLS certificate encoded in PEM format. This string must include the begin header and end footer lines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
 
 ---
 
@@ -2236,7 +2236,7 @@ public java.lang.String getPassphrase();
 
 The passphrase to decrypt the private key. Should be left unset if the private key is not encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#passphrase CesApp#passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#passphrase CesApp#passphrase}
 
 ---
 
@@ -2305,13 +2305,13 @@ CesAppConfig.builder()
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.evaluationMetricsThresholds">evaluationMetricsThresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | evaluation_metrics_thresholds block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.globalInstruction">globalInstruction</a></code> | <code>java.lang.String</code> | Instructions for all the agents in the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.guardrails">guardrails</a></code> | <code>java.util.List<java.lang.String></code> | List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#id CesApp#id}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#id CesApp#id}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.languageSettings">languageSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettings">CesAppLanguageSettings</a></code> | language_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.loggingSettings">loggingSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | logging_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Metadata about the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.modelSettings">modelSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppModelSettings">CesAppModelSettings</a></code> | model_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.pinned">pinned</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the app is pinned in the app list. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#project CesApp#project}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#project CesApp#project}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.rootAgent">rootAgent</a></code> | <code>java.lang.String</code> | The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts">CesAppTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.timeZoneSettings">timeZoneSettings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettings">CesAppTimeZoneSettings</a></code> | time_zone_settings block. |
@@ -2403,7 +2403,7 @@ The ID to use for the app, which will become the final component of the app's re
 If not provided, a unique ID will be
 automatically assigned for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#app_id CesApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#app_id CesApp#app_id}
 
 ---
 
@@ -2417,7 +2417,7 @@ public java.lang.String getDisplayName();
 
 Display name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#display_name CesApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#display_name CesApp#display_name}
 
 ---
 
@@ -2431,7 +2431,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#location CesApp#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#location CesApp#location}
 
 ---
 
@@ -2445,7 +2445,7 @@ public CesAppAudioProcessingConfig getAudioProcessingConfig();
 
 audio_processing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
 
 ---
 
@@ -2459,7 +2459,7 @@ public CesAppClientCertificateSettings getClientCertificateSettings();
 
 client_certificate_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
 
 ---
 
@@ -2473,7 +2473,7 @@ public CesAppDataStoreSettings getDataStoreSettings();
 
 data_store_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
 
 ---
 
@@ -2487,7 +2487,7 @@ public CesAppDefaultChannelProfile getDefaultChannelProfile();
 
 default_channel_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
 
 ---
 
@@ -2508,7 +2508,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
 
 ---
 
@@ -2522,7 +2522,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -2536,7 +2536,7 @@ public CesAppEvaluationMetricsThresholds getEvaluationMetricsThresholds();
 
 evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
 
 ---
 
@@ -2553,7 +2553,7 @@ Instructions for all the agents in the app.
 You can use this instruction to set up a stable identity or personality
 across all the agents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
 
 ---
 
@@ -2567,7 +2567,7 @@ public java.util.List<java.lang.String> getGuardrails();
 
 List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#guardrails CesApp#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#guardrails CesApp#guardrails}
 
 ---
 
@@ -2579,7 +2579,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#id CesApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#id CesApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2596,7 +2596,7 @@ public CesAppLanguageSettings getLanguageSettings();
 
 language_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#language_settings CesApp#language_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#language_settings CesApp#language_settings}
 
 ---
 
@@ -2610,7 +2610,7 @@ public CesAppLoggingSettings getLoggingSettings();
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
 
 ---
 
@@ -2627,7 +2627,7 @@ Metadata about the app.
 This field can be used to store additional
 information relevant to the app's details or intended usages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#metadata CesApp#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#metadata CesApp#metadata}
 
 ---
 
@@ -2641,7 +2641,7 @@ public CesAppModelSettings getModelSettings();
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#model_settings CesApp#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#model_settings CesApp#model_settings}
 
 ---
 
@@ -2655,7 +2655,7 @@ public java.lang.Boolean|IResolvable getPinned();
 
 Whether the app is pinned in the app list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#pinned CesApp#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#pinned CesApp#pinned}
 
 ---
 
@@ -2667,7 +2667,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#project CesApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#project CesApp#project}.
 
 ---
 
@@ -2681,7 +2681,7 @@ public java.lang.String getRootAgent();
 
 The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#root_agent CesApp#root_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#root_agent CesApp#root_agent}
 
 ---
 
@@ -2695,7 +2695,7 @@ public CesAppTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#timeouts CesApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#timeouts CesApp#timeouts}
 
 ---
 
@@ -2709,7 +2709,7 @@ public CesAppTimeZoneSettings getTimeZoneSettings();
 
 time_zone_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
 
 ---
 
@@ -2723,7 +2723,7 @@ public java.lang.String getToolExecutionMode();
 
 The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
 
 ---
 
@@ -2737,7 +2737,7 @@ public IResolvable|java.util.List<CesAppVariableDeclarations> getVariableDeclara
 
 variable_declarations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
 
 ---
 
@@ -2805,7 +2805,7 @@ public java.lang.String getChannelType();
 
 The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#channel_type CesApp#channel_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#channel_type CesApp#channel_type}
 
 ---
 
@@ -2822,7 +2822,7 @@ Whether to disable user barge-in in the conversation.
 * true: User interruptions are disabled while the agent is speaking.
 * false: The agent retains automatic control over when the user can interrupt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
 
 ---
 
@@ -2836,7 +2836,7 @@ public java.lang.Boolean|IResolvable getDisableDtmf();
 
 Whether to disable DTMF (dual-tone multi-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
 
 ---
 
@@ -2850,7 +2850,7 @@ public CesAppDefaultChannelProfilePersonaProperty getPersonaProperty();
 
 persona_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#persona_property CesApp#persona_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#persona_property CesApp#persona_property}
 
 ---
 
@@ -2864,7 +2864,7 @@ public java.lang.String getProfileId();
 
 The unique identifier of the channel profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#profile_id CesApp#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#profile_id CesApp#profile_id}
 
 ---
 
@@ -2878,7 +2878,7 @@ public CesAppDefaultChannelProfileWebWidgetConfig getWebWidgetConfig();
 
 web_widget_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
 
 ---
 
@@ -2912,7 +2912,7 @@ public java.lang.String getPersona();
 
 The persona of the channel. Possible values: UNKNOWN CONCISE CHATTY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#persona CesApp#persona}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#persona CesApp#persona}
 
 ---
 
@@ -2950,7 +2950,7 @@ public java.lang.String getModality();
 
 The modality of the web widget. Possible values: UNKNOWN_MODALITY CHAT_AND_VOICE VOICE_ONLY CHAT_ONLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#modality CesApp#modality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#modality CesApp#modality}
 
 ---
 
@@ -2964,7 +2964,7 @@ public java.lang.String getTheme();
 
 The theme of the web widget. Possible values: UNKNOWN_THEME LIGHT DARK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#theme CesApp#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#theme CesApp#theme}
 
 ---
 
@@ -2978,7 +2978,7 @@ public java.lang.String getWebWidgetTitle();
 
 The title of the web widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
 
 ---
 
@@ -3012,7 +3012,7 @@ public CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds getGol
 
 golden_evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
 
 ---
 
@@ -3048,7 +3048,7 @@ public CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpecta
 
 expectation_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
 
 ---
 
@@ -3062,7 +3062,7 @@ public CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLev
 
 turn_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
 
 ---
 
@@ -3096,7 +3096,7 @@ public java.lang.Number getToolInvocationParameterCorrectnessThreshold();
 
 The success threshold for individual tool invocation parameter correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
 
 ---
 
@@ -3132,7 +3132,7 @@ public java.lang.Number getOverallToolInvocationCorrectnessThreshold();
 
 The success threshold for overall tool invocation correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
 
 ---
 
@@ -3146,7 +3146,7 @@ public java.lang.Number getSemanticSimilaritySuccessThreshold();
 
 The success threshold for semantic similarity. Must be an integer between 0 and 4. Default is >= 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
 
 ---
 
@@ -3186,7 +3186,7 @@ public java.lang.String getDefaultLanguageCode();
 
 The default language code of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
 
 ---
 
@@ -3200,7 +3200,7 @@ public java.lang.Boolean|IResolvable getEnableMultilingualSupport();
 
 Enables multilingual support. If true, agents in the app will use pre-built instructions to improve handling of multilingual input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
 
 ---
 
@@ -3222,7 +3222,7 @@ Valid values are:
   an EndSession signal with corresponding metadata
   to terminate the conversation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
 
 ---
 
@@ -3236,7 +3236,7 @@ public java.util.List<java.lang.String> getSupportedLanguageCodes();
 
 List of languages codes supported by the app, in addition to the 'default_language_code'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
 
 ---
 
@@ -3278,7 +3278,7 @@ public CesAppLoggingSettingsAudioRecordingConfig getAudioRecordingConfig();
 
 audio_recording_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
 
 ---
 
@@ -3292,7 +3292,7 @@ public CesAppLoggingSettingsBigqueryExportSettings getBigqueryExportSettings();
 
 bigquery_export_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
 
 ---
 
@@ -3306,7 +3306,7 @@ public CesAppLoggingSettingsCloudLoggingSettings getCloudLoggingSettings();
 
 cloud_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
 
 ---
 
@@ -3320,7 +3320,7 @@ public CesAppLoggingSettingsConversationLoggingSettings getConversationLoggingSe
 
 conversation_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
 
 ---
 
@@ -3334,7 +3334,7 @@ public CesAppLoggingSettingsRedactionConfig getRedactionConfig();
 
 redaction_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
 
 ---
 
@@ -3370,7 +3370,7 @@ public java.lang.String getGcsBucket();
 
 The [Cloud Storage](https://cloud.google.com/storage) bucket to store the session audio recordings. The URI must start with "gs://". Note: If the Cloud Storage bucket is in a different project from the app, you should grant 'storage.objects.create' permission to the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
 
 ---
 
@@ -3395,7 +3395,7 @@ dynamically substituted at serving time:
   If the path prefix is not specified, the default prefix
   '$project/$location/$app/$date/$session/' will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
 
 ---
 
@@ -3433,7 +3433,7 @@ public java.lang.String getDataset();
 
 The BigQuery dataset to export the data to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#dataset CesApp#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#dataset CesApp#dataset}
 
 ---
 
@@ -3447,7 +3447,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicates whether the BigQuery export is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#enabled CesApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#enabled CesApp#enabled}
 
 ---
 
@@ -3465,7 +3465,7 @@ Note: If the BigQuery dataset is in a different project from the app, you should
 roles/bigquery.admin role to the CES service agent service-<PROJECT-
 NUMBER>@gcp-sa-ces.iam.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#project CesApp#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#project CesApp#project}
 
 ---
 
@@ -3499,7 +3499,7 @@ public java.lang.Boolean|IResolvable getEnableCloudLogging();
 
 Whether to enable Cloud Logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
 
 ---
 
@@ -3533,7 +3533,7 @@ public java.lang.Boolean|IResolvable getDisableConversationLogging();
 
 Whether to disable conversation logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
 
 ---
 
@@ -3571,7 +3571,7 @@ public java.lang.String getDeidentifyTemplate();
 
 [DLP](https://cloud.google.com/dlp/docs) deidentify template name to instruct on how to de-identify content. Format: 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
 
 ---
 
@@ -3585,7 +3585,7 @@ public java.lang.Boolean|IResolvable getEnableRedaction();
 
 If true, redaction will be applied in various logging scenarios, including conversation history, Cloud Logging and audio recording.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
 
 ---
 
@@ -3599,7 +3599,7 @@ public java.lang.String getInspectTemplate();
 
 [DLP](https://cloud.google.com/dlp/docs) inspect template name to configure detection of sensitive data types. Format: 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
 
 ---
 
@@ -3637,7 +3637,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#model CesApp#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#model CesApp#model}
 
 ---
 
@@ -3656,7 +3656,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#temperature CesApp#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#temperature CesApp#temperature}
 
 ---
 
@@ -3678,9 +3678,9 @@ CesAppTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#create CesApp#create}. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#delete CesApp#delete}. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#update CesApp#update}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#create CesApp#create}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#delete CesApp#delete}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#update CesApp#update}. |
 
 ---
 
@@ -3692,7 +3692,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#create CesApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#create CesApp#create}.
 
 ---
 
@@ -3704,7 +3704,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#delete CesApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#delete CesApp#delete}.
 
 ---
 
@@ -3716,7 +3716,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#update CesApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#update CesApp#update}.
 
 ---
 
@@ -3750,7 +3750,7 @@ public java.lang.String getTimeZone();
 
 The time zone of the app from the time zone database, e.g., America/Los_Angeles, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#time_zone CesApp#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#time_zone CesApp#time_zone}
 
 ---
 
@@ -3788,7 +3788,7 @@ public java.lang.String getDescription();
 
 The description of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -3805,7 +3805,7 @@ The name of the variable.
 The name must start with a letter or underscore
 and contain only letters, numbers, or underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#name CesApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#name CesApp#name}
 
 ---
 
@@ -3819,7 +3819,7 @@ public CesAppVariableDeclarationsSchema getSchema();
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#schema CesApp#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#schema CesApp#schema}
 
 ---
 
@@ -3881,7 +3881,7 @@ public java.lang.String getType();
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#type CesApp#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#type CesApp#type}
 
 ---
 
@@ -3899,7 +3899,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
 
 ---
 
@@ -3913,7 +3913,7 @@ public java.lang.String getAnyOf();
 
 Optional. The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#any_of CesApp#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#any_of CesApp#any_of}
 
 ---
 
@@ -3932,7 +3932,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be encoded as a JSON string.
 Use 'jsonencode' in Terraform HCL to encode the default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#default CesApp#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#default CesApp#default}
 
 ---
 
@@ -3946,7 +3946,7 @@ public java.lang.String getDefs();
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#defs CesApp#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#defs CesApp#defs}
 
 ---
 
@@ -3960,7 +3960,7 @@ public java.lang.String getDescription();
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -3981,7 +3981,7 @@ Examples:
 2. We can define apartment number as :
    {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#enum CesApp#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#enum CesApp#enum}
 
 ---
 
@@ -3995,7 +3995,7 @@ public java.lang.String getItems();
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#items CesApp#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#items CesApp#items}
 
 ---
 
@@ -4009,7 +4009,7 @@ public java.lang.Boolean|IResolvable getNullable();
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#nullable CesApp#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#nullable CesApp#nullable}
 
 ---
 
@@ -4023,7 +4023,7 @@ public java.lang.String getPrefixItems();
 
 Optional. Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
 
 ---
 
@@ -4037,7 +4037,7 @@ public java.lang.String getProperties();
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#properties CesApp#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#properties CesApp#properties}
 
 ---
 
@@ -4070,7 +4070,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#ref CesApp#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#ref CesApp#ref}
 
 ---
 
@@ -4084,7 +4084,7 @@ public java.util.List<java.lang.String> getRequired();
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#required CesApp#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#required CesApp#required}
 
 ---
 
@@ -4098,7 +4098,7 @@ public java.lang.String getTitle();
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#title CesApp#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#title CesApp#title}
 
 ---
 
@@ -4112,7 +4112,7 @@ public java.lang.Boolean|IResolvable getUniqueItems();
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_app#unique_items CesApp#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_app#unique_items CesApp#unique_items}
 
 ---
 

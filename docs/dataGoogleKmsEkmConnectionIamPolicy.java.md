@@ -4,7 +4,7 @@
 
 ### DataGoogleKmsEkmConnectionIamPolicy <a name="DataGoogleKmsEkmConnectionIamPolicy" id="@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy google_kms_ekm_connection_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer"></a>
 
@@ -37,10 +37,10 @@ DataGoogleKmsEkmConnectionIamPolicy.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}.
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataGoogleKmsEkmConnection
 
 The id of the existing DataGoogleKmsEkmConnectionIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,10 +817,10 @@ DataGoogleKmsEkmConnectionIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleKmsEkmConnectionIamPolicy.DataGoogleKmsEkmConnectionIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}. |
 
 ---
 
@@ -902,7 +902,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#name DataGoogleKmsEkmConnectionIamPolicy#name}.
 
 ---
 
@@ -914,7 +914,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#id DataGoogleKmsEkmConnectionIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#location DataGoogleKmsEkmConnectionIamPolicy#location}.
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_ekm_connection_iam_policy#project DataGoogleKmsEkmConnectionIamPolicy#project}.
 
 ---
 

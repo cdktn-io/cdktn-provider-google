@@ -4,7 +4,7 @@
 
 ### WorkbenchInstanceIamMember <a name="WorkbenchInstanceIamMember" id="@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member google_workbench_instance_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member google_workbench_instance_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer"></a>
 
@@ -40,13 +40,13 @@ WorkbenchInstanceIamMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition">WorkbenchInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#condition WorkbenchInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#condition WorkbenchInstanceIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the WorkbenchInstanceIamMember
 
 The id of the existing WorkbenchInstanceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ WorkbenchInstanceIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#expression WorkbenchInstanceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#title WorkbenchInstanceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#description WorkbenchInstanceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#expression WorkbenchInstanceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#title WorkbenchInstanceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#description WorkbenchInstanceIamMember#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#expression WorkbenchInstanceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#expression WorkbenchInstanceIamMember#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#title WorkbenchInstanceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#title WorkbenchInstanceIamMember#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#description WorkbenchInstanceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#description WorkbenchInstanceIamMember#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ WorkbenchInstanceIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberCondition">WorkbenchInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamMember.WorkbenchInstanceIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#member WorkbenchInstanceIamMember#member}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#name WorkbenchInstanceIamMember#name}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#role WorkbenchInstanceIamMember#role}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public WorkbenchInstanceIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#condition WorkbenchInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#condition WorkbenchInstanceIamMember#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#id WorkbenchInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#location WorkbenchInstanceIamMember#location}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/workbench_instance_iam_member#project WorkbenchInstanceIamMember#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeSnapshot <a name="DataGoogleComputeSnapshot" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataGoogleComputeSnapshot 
 
 The id of the existing DataGoogleComputeSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -459,6 +459,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.labelFingerprint">labelFingerprint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.labels">labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.licenses">licenses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList">DataGoogleComputeSnapshotParamsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.snapshotEncryptionKey">snapshotEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList">DataGoogleComputeSnapshotSnapshotEncryptionKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.snapshotId">snapshotId</a></code> | <code>number</code> | *No description.* |
@@ -692,6 +693,16 @@ public readonly licenses: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot.property.params"></a>
+
+```typescript
+public readonly params: DataGoogleComputeSnapshotParamsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList">DataGoogleComputeSnapshotParamsList</a>
 
 ---
 
@@ -946,11 +957,11 @@ const dataGoogleComputeSnapshotConfig: dataGoogleComputeSnapshot.DataGoogleCompu
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#filter DataGoogleComputeSnapshot#filter}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#id DataGoogleComputeSnapshot#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#most_recent DataGoogleComputeSnapshot#most_recent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#filter DataGoogleComputeSnapshot#filter}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#id DataGoogleComputeSnapshot#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#most_recent DataGoogleComputeSnapshot#most_recent}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.name">name</a></code> | <code>string</code> | Name of the resource; |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#project DataGoogleComputeSnapshot#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#project DataGoogleComputeSnapshot#project}. |
 
 ---
 
@@ -1032,7 +1043,7 @@ public readonly filter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#filter DataGoogleComputeSnapshot#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#filter DataGoogleComputeSnapshot#filter}.
 
 ---
 
@@ -1044,7 +1055,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#id DataGoogleComputeSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#id DataGoogleComputeSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1070,7 @@ public readonly mostRecent: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#most_recent DataGoogleComputeSnapshot#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#most_recent DataGoogleComputeSnapshot#most_recent}.
 
 ---
 
@@ -1081,7 +1092,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#name DataGoogleComputeSnapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#name DataGoogleComputeSnapshot#name}
 
 ---
 
@@ -1093,9 +1104,20 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_snapshot#project DataGoogleComputeSnapshot#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_snapshot#project DataGoogleComputeSnapshot#project}.
 
 ---
+
+### DataGoogleComputeSnapshotParams <a name="DataGoogleComputeSnapshotParams" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParams.Initializer"></a>
+
+```typescript
+import { dataGoogleComputeSnapshot } from '@cdktn/provider-google'
+
+const dataGoogleComputeSnapshotParams: dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParams = { ... }
+```
+
 
 ### DataGoogleComputeSnapshotSnapshotEncryptionKey <a name="DataGoogleComputeSnapshotSnapshotEncryptionKey" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey"></a>
 
@@ -1120,6 +1142,433 @@ const dataGoogleComputeSnapshotSourceDiskEncryptionKey: dataGoogleComputeSnapsho
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataGoogleComputeSnapshotParamsList <a name="DataGoogleComputeSnapshotParamsList" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer"></a>
+
+```typescript
+import { dataGoogleComputeSnapshot } from '@cdktn/provider-google'
+
+new dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.get"></a>
+
+```typescript
+public get(index: number): DataGoogleComputeSnapshotParamsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGoogleComputeSnapshotParamsOutputReference <a name="DataGoogleComputeSnapshotParamsOutputReference" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer"></a>
+
+```typescript
+import { dataGoogleComputeSnapshot } from '@cdktn/provider-google'
+
+new dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParams">DataGoogleComputeSnapshotParams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceManagerTags`<sup>Required</sup> <a name="resourceManagerTags" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.resourceManagerTags"></a>
+
+```typescript
+public readonly resourceManagerTags: StringMap;
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParamsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGoogleComputeSnapshotParams;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotParams">DataGoogleComputeSnapshotParams</a>
+
+---
+
 
 ### DataGoogleComputeSnapshotSnapshotEncryptionKeyList <a name="DataGoogleComputeSnapshotSnapshotEncryptionKeyList" id="@cdktn/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList"></a>
 

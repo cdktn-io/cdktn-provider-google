@@ -4,7 +4,7 @@
 
 ### CesAgent <a name="CesAgent" id="@cdktn/provider-google.cesAgent.CesAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent google_ces_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent google_ces_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAgent.CesAgent.Initializer"></a>
 
@@ -70,11 +70,11 @@ CesAgent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the agent. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.guardrails">guardrails</a></code> | <code>java.util.List<java.lang.String></code> | List of guardrails for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#id CesAgent#id}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#id CesAgent#id}. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.instruction">instruction</a></code> | <code>java.lang.String</code> | Instructions for the LLM model to guide the agent's behavior. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.llmAgent">llmAgent</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentLlmAgent">CesAgentLlmAgent</a></code> | llm_agent block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.modelSettings">modelSettings</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentModelSettings">CesAgentModelSettings</a></code> | model_settings block. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#project CesAgent#project}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#project CesAgent#project}. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.remoteDialogflowAgent">remoteDialogflowAgent</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentRemoteDialogflowAgent">CesAgentRemoteDialogflowAgent</a></code> | remote_dialogflow_agent block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts">CesAgentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgent.Initializer.parameter.tools">tools</a></code> | <code>java.util.List<java.lang.String></code> | List of available tools for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'. |
@@ -148,7 +148,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#app CesAgent#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#app CesAgent#app}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#display_name CesAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#display_name CesAgent#display_name}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#location CesAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#location CesAgent#location}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 after_agent_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 after_model_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 after_tool_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
 
 ---
 
@@ -211,7 +211,7 @@ The ID to use for the agent, which will become the final component of the agent'
 If not provided, a unique ID will be
 automatically assigned for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 before_agent_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 before_model_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 before_tool_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of child agents in the agent tree. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
 
 ---
 
@@ -268,7 +268,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
 
 ---
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of guardrails for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
 
 ---
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#id CesAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#id CesAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -309,7 +309,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Instructions for the LLM model to guide the agent's behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#instruction CesAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#instruction CesAgent#instruction}
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 llm_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
 
 ---
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#project CesAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#project CesAgent#project}.
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 remote_dialogflow_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of available tools for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#tools CesAgent#tools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#tools CesAgent#tools}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 toolsets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
 
 ---
 
@@ -1109,7 +1109,7 @@ The construct id used in the generated config for the CesAgent to import.
 
 The id of the existing CesAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1899,7 +1899,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -1913,7 +1913,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -1927,7 +1927,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -1965,7 +1965,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -1979,7 +1979,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -1993,7 +1993,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -2031,7 +2031,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -2045,7 +2045,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -2059,7 +2059,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -2097,7 +2097,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -2111,7 +2111,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -2125,7 +2125,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -2163,7 +2163,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -2177,7 +2177,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -2191,7 +2191,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -2229,7 +2229,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#python_code CesAgent#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#python_code CesAgent#python_code}
 
 ---
 
@@ -2243,7 +2243,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -2257,7 +2257,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#disabled CesAgent#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#disabled CesAgent#disabled}
 
 ---
 
@@ -2327,11 +2327,11 @@ CesAgentConfig.builder()
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the agent. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.guardrails">guardrails</a></code> | <code>java.util.List<java.lang.String></code> | List of guardrails for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#id CesAgent#id}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#id CesAgent#id}. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.instruction">instruction</a></code> | <code>java.lang.String</code> | Instructions for the LLM model to guide the agent's behavior. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.llmAgent">llmAgent</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentLlmAgent">CesAgentLlmAgent</a></code> | llm_agent block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.modelSettings">modelSettings</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentModelSettings">CesAgentModelSettings</a></code> | model_settings block. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#project CesAgent#project}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#project CesAgent#project}. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.remoteDialogflowAgent">remoteDialogflowAgent</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentRemoteDialogflowAgent">CesAgentRemoteDialogflowAgent</a></code> | remote_dialogflow_agent block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts">CesAgentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesAgent.CesAgentConfig.property.tools">tools</a></code> | <code>java.util.List<java.lang.String></code> | List of available tools for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'. |
@@ -2419,7 +2419,7 @@ public java.lang.String getApp();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#app CesAgent#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#app CesAgent#app}
 
 ---
 
@@ -2433,7 +2433,7 @@ public java.lang.String getDisplayName();
 
 Display name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#display_name CesAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#display_name CesAgent#display_name}
 
 ---
 
@@ -2447,7 +2447,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#location CesAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#location CesAgent#location}
 
 ---
 
@@ -2461,7 +2461,7 @@ public IResolvable|java.util.List<CesAgentAfterAgentCallbacks> getAfterAgentCall
 
 after_agent_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
 
 ---
 
@@ -2475,7 +2475,7 @@ public IResolvable|java.util.List<CesAgentAfterModelCallbacks> getAfterModelCall
 
 after_model_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
 
 ---
 
@@ -2489,7 +2489,7 @@ public IResolvable|java.util.List<CesAgentAfterToolCallbacks> getAfterToolCallba
 
 after_tool_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
 
 ---
 
@@ -2506,7 +2506,7 @@ The ID to use for the agent, which will become the final component of the agent'
 If not provided, a unique ID will be
 automatically assigned for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#agent_id CesAgent#agent_id}
 
 ---
 
@@ -2520,7 +2520,7 @@ public IResolvable|java.util.List<CesAgentBeforeAgentCallbacks> getBeforeAgentCa
 
 before_agent_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
 
 ---
 
@@ -2534,7 +2534,7 @@ public IResolvable|java.util.List<CesAgentBeforeModelCallbacks> getBeforeModelCa
 
 before_model_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
 
 ---
 
@@ -2548,7 +2548,7 @@ public IResolvable|java.util.List<CesAgentBeforeToolCallbacks> getBeforeToolCall
 
 before_tool_callbacks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
 
 ---
 
@@ -2562,7 +2562,7 @@ public java.util.List<java.lang.String> getChildAgents();
 
 List of child agents in the agent tree. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
 
 ---
 
@@ -2583,7 +2583,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#deletion_policy CesAgent#deletion_policy}
 
 ---
 
@@ -2597,7 +2597,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#description CesAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#description CesAgent#description}
 
 ---
 
@@ -2611,7 +2611,7 @@ public java.util.List<java.lang.String> getGuardrails();
 
 List of guardrails for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#guardrails CesAgent#guardrails}
 
 ---
 
@@ -2623,7 +2623,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#id CesAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#id CesAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2640,7 +2640,7 @@ public java.lang.String getInstruction();
 
 Instructions for the LLM model to guide the agent's behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#instruction CesAgent#instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#instruction CesAgent#instruction}
 
 ---
 
@@ -2654,7 +2654,7 @@ public CesAgentLlmAgent getLlmAgent();
 
 llm_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#llm_agent CesAgent#llm_agent}
 
 ---
 
@@ -2668,7 +2668,7 @@ public CesAgentModelSettings getModelSettings();
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#model_settings CesAgent#model_settings}
 
 ---
 
@@ -2680,7 +2680,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#project CesAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#project CesAgent#project}.
 
 ---
 
@@ -2694,7 +2694,7 @@ public CesAgentRemoteDialogflowAgent getRemoteDialogflowAgent();
 
 remote_dialogflow_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#remote_dialogflow_agent CesAgent#remote_dialogflow_agent}
 
 ---
 
@@ -2708,7 +2708,7 @@ public CesAgentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#timeouts CesAgent#timeouts}
 
 ---
 
@@ -2722,7 +2722,7 @@ public java.util.List<java.lang.String> getTools();
 
 List of available tools for the agent. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#tools CesAgent#tools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#tools CesAgent#tools}
 
 ---
 
@@ -2736,7 +2736,7 @@ public IResolvable|java.util.List<CesAgentToolsets> getToolsets();
 
 toolsets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
 
 ---
 
@@ -2786,7 +2786,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#model CesAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#model CesAgent#model}
 
 ---
 
@@ -2805,7 +2805,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#temperature CesAgent#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#temperature CesAgent#temperature}
 
 ---
 
@@ -2849,7 +2849,7 @@ public java.lang.String getAgent();
 
 The [Dialogflow](https://cloud.google.com/dialogflow/cx/docs/concept/console-conversational-agents agent resource name. Format: 'projects/{project}/locations/{location}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#agent CesAgent#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#agent CesAgent#agent}
 
 ---
 
@@ -2863,7 +2863,7 @@ public java.lang.String getFlowId();
 
 The flow ID of the flow in the Dialogflow agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#flow_id CesAgent#flow_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#flow_id CesAgent#flow_id}
 
 ---
 
@@ -2879,7 +2879,7 @@ The environment ID of the Dialogflow agent be used for the agent execution.
 
 If not specified, the draft environment will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#environment_id CesAgent#environment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#environment_id CesAgent#environment_id}
 
 ---
 
@@ -2893,7 +2893,7 @@ public java.util.Map<java.lang.String, java.lang.String> getInputVariableMapping
 
 The mapping of the app variables names to the Dialogflow session parameters names to be sent to the Dialogflow agent as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#input_variable_mapping CesAgent#input_variable_mapping}
 
 ---
 
@@ -2907,7 +2907,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOutputVariableMappin
 
 The mapping of the Dialogflow session parameters names to the app variables names to be sent back to the CES agent after the Dialogflow agent execution ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#output_variable_mapping CesAgent#output_variable_mapping}
 
 ---
 
@@ -2923,7 +2923,7 @@ Indicates whether to respect the message-level interruption settings configured 
 
 * If false: all response messages from the Dialogflow agent follow the app-level barge-in settings. * If true: only response messages with ['allow_playback_interruption'](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#text) set to true will be interruptable, all other messages follow the app-level barge-in settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
 
 ---
 
@@ -2945,9 +2945,9 @@ CesAgentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#create CesAgent#create}. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#delete CesAgent#delete}. |
-| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#update CesAgent#update}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#create CesAgent#create}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#delete CesAgent#delete}. |
+| <code><a href="#@cdktn/provider-google.cesAgent.CesAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#update CesAgent#update}. |
 
 ---
 
@@ -2959,7 +2959,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#create CesAgent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#create CesAgent#create}.
 
 ---
 
@@ -2971,7 +2971,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#delete CesAgent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#delete CesAgent#delete}.
 
 ---
 
@@ -2983,7 +2983,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#update CesAgent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#update CesAgent#update}.
 
 ---
 
@@ -3019,7 +3019,7 @@ public java.lang.String getToolset();
 
 The resource name of the toolset. Format: 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#toolset CesAgent#toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#toolset CesAgent#toolset}
 
 ---
 
@@ -3033,7 +3033,7 @@ public java.util.List<java.lang.String> getToolIds();
 
 The tools IDs to filter the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_agent#tool_ids CesAgent#tool_ids}
 
 ---
 

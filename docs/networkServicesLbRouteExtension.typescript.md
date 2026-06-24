@@ -4,7 +4,7 @@
 
 ### NetworkServicesLbRouteExtension <a name="NetworkServicesLbRouteExtension" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the NetworkServicesLbRouteExte
 
 The id of the existing NetworkServicesLbRouteExtension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1044,9 +1044,9 @@ const networkServicesLbRouteExtensionConfig: networkServicesLbRouteExtension.Net
 | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.name">name</a></code> | <code>string</code> | Name of the LbRouteExtension resource in the following format: projects/{project}/locations/{location}/lbRouteExtensions/{lbRouteExtension}. |
 | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.description">description</a></code> | <code>string</code> | A human-readable description of the resource. |
-| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Set of labels associated with the LbRouteExtension resource. |
-| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts">NetworkServicesLbRouteExtensionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ public readonly extensionChains: IResolvable | NetworkServicesLbRouteExtensionEx
 
 extension_chains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#extension_chains NetworkServicesLbRouteExtension#extension_chains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#extension_chains NetworkServicesLbRouteExtension#extension_chains}
 
 ---
 
@@ -1147,7 +1147,7 @@ A list of references to the forwarding rules to which this service extension is 
 
 At least one forwarding rule is required. There can be only one LbRouteExtension resource per forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#forwarding_rules NetworkServicesLbRouteExtension#forwarding_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#forwarding_rules NetworkServicesLbRouteExtension#forwarding_rules}
 
 ---
 
@@ -1164,7 +1164,7 @@ All backend services and forwarding rules referenced by this extension must shar
 For more information, refer to [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service) and
 [Supported application load balancers](https://cloud.google.com/service-extensions/docs/callouts-overview#supported-lbs). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#load_balancing_scheme NetworkServicesLbRouteExtension#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#load_balancing_scheme NetworkServicesLbRouteExtension#load_balancing_scheme}
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly location: string;
 
 The location of the route extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#location NetworkServicesLbRouteExtension#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#location NetworkServicesLbRouteExtension#location}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly name: string;
 
 Name of the LbRouteExtension resource in the following format: projects/{project}/locations/{location}/lbRouteExtensions/{lbRouteExtension}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
 
 ---
 
@@ -1214,7 +1214,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#deletion_policy NetworkServicesLbRouteExtension#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#deletion_policy NetworkServicesLbRouteExtension#deletion_policy}
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly description: string;
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#description NetworkServicesLbRouteExtension#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#description NetworkServicesLbRouteExtension#description}
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1260,7 +1260,7 @@ Set of labels associated with the LbRouteExtension resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#labels NetworkServicesLbRouteExtension#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#labels NetworkServicesLbRouteExtension#labels}
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly timeouts: NetworkServicesLbRouteExtensionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#timeouts NetworkServicesLbRouteExtension#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#timeouts NetworkServicesLbRouteExtension#timeouts}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly extensions: IResolvable | NetworkServicesLbRouteExtensionExtensi
 
 extensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#extensions NetworkServicesLbRouteExtension#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#extensions NetworkServicesLbRouteExtension#extensions}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly matchCondition: NetworkServicesLbRouteExtensionExtensionChainsMa
 
 match_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#match_condition NetworkServicesLbRouteExtension#match_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#match_condition NetworkServicesLbRouteExtension#match_condition}
 
 ---
 
@@ -1353,7 +1353,7 @@ The name must conform with RFC-1034, is restricted to lower-cased letters, numbe
 and can have a maximum length of 63 characters. Additionally, the first character must be a letter
 and the last character must be a letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
 
 ---
 
@@ -1399,7 +1399,7 @@ The name must conform with RFC-1034, is restricted to lower-cased letters, numbe
 and can have a maximum length of 63 characters. Additionally, the first character must be a letter
 and the last a letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
 
 ---
 
@@ -1416,7 +1416,7 @@ The reference to the service that runs the extension.
 * To configure a callout extension, service must be a fully-qualified reference to a backend service.
 * To configure a plugin extension, service must be a reference to a WasmPlugin resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#service NetworkServicesLbRouteExtension#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#service NetworkServicesLbRouteExtension#service}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly authority: string;
 
 The :authority header in the gRPC request sent from Envoy to the extension service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#authority NetworkServicesLbRouteExtension#authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#authority NetworkServicesLbRouteExtension#authority}
 
 ---
 
@@ -1450,7 +1450,7 @@ When set to FALSE: * If response headers have not been delivered to the downstre
 a generic 500 error is returned to the client. The error response can be tailored by
 configuring a custom error response in the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#fail_open NetworkServicesLbRouteExtension#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#fail_open NetworkServicesLbRouteExtension#fail_open}
 
 ---
 
@@ -1466,7 +1466,7 @@ List of the HTTP headers to forward to the extension (from the client or backend
 
 If omitted, all headers are sent. Each element is a string indicating the header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#forward_headers NetworkServicesLbRouteExtension#forward_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#forward_headers NetworkServicesLbRouteExtension#forward_headers}
 
 ---
 
@@ -1480,7 +1480,7 @@ public readonly metadata: {[ key: string ]: string};
 
 The metadata provided here is included as part of the 'metadata_context' (of type 'google.protobuf.Struct') in the 'ProcessingRequest' message sent to the extension server. The metadata is available under the namespace 'com.google.lb_route_extension.<resource_name>.<chain_name>.<extension_name>'. The following variables are supported in the metadata: '{forwarding_rule_id}' - substituted with the forwarding rule's fully qualified resource name. This field must not be set for plugin extensions. Setting it results in a validation error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#metadata NetworkServicesLbRouteExtension#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#metadata NetworkServicesLbRouteExtension#metadata}
 
 ---
 
@@ -1500,7 +1500,7 @@ This field is helpful when you want to try out the extension in async log-only m
 Supported by regional 'LbTrafficExtension' and 'LbRouteExtension' resources.
 Only 'STREAMED' (default) body processing mode is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#observability_mode NetworkServicesLbRouteExtension#observability_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#observability_mode NetworkServicesLbRouteExtension#observability_mode}
 
 ---
 
@@ -1520,7 +1520,7 @@ When this field is set to 'FULL_DUPLEX_STREAMED', 'supported_events' must includ
 This field can be set only when the 'service' field of the extension points to a 'BackendService'.
 Only 'FULL_DUPLEX_STREAMED' mode is supported for 'LbRouteExtension' resources. Possible values: ["BODY_SEND_MODE_UNSPECIFIED", "BODY_SEND_MODE_STREAMED", "BODY_SEND_MODE_FULL_DUPLEX_STREAMED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#request_body_send_mode NetworkServicesLbRouteExtension#request_body_send_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#request_body_send_mode NetworkServicesLbRouteExtension#request_body_send_mode}
 
 ---
 
@@ -1537,7 +1537,7 @@ A set of events during request or response processing for which this extension i
 This field is optional for the LbRouteExtension resource. If unspecified, 'REQUEST_HEADERS' event is assumed as supported.
 Possible values: 'REQUEST_HEADERS', 'REQUEST_BODY', 'REQUEST_TRAILERS'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#supported_events NetworkServicesLbRouteExtension#supported_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#supported_events NetworkServicesLbRouteExtension#supported_events}
 
 ---
 
@@ -1554,7 +1554,7 @@ Specifies the timeout for each individual message on the stream.
 The timeout must be between 10-1000 milliseconds.
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#timeout NetworkServicesLbRouteExtension#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#timeout NetworkServicesLbRouteExtension#timeout}
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly celExpression: string;
 
 A Common Expression Language (CEL) expression that is used to match requests for which the extension chain is executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#cel_expression NetworkServicesLbRouteExtension#cel_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#cel_expression NetworkServicesLbRouteExtension#cel_expression}
 
 ---
 
@@ -1604,9 +1604,9 @@ const networkServicesLbRouteExtensionTimeouts: networkServicesLbRouteExtension.N
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}. |
 
 ---
 
@@ -1618,7 +1618,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}.
 
 ---
 

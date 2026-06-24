@@ -4,7 +4,7 @@
 
 ### GkeHubFeatureIamMember <a name="GkeHubFeatureIamMember" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member google_gke_hub_feature_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer"></a>
 
@@ -42,13 +42,13 @@ gkeHubFeatureIamMember.GkeHubFeatureIamMember(
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition">GkeHubFeatureIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#condition GkeHubFeatureIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#condition GkeHubFeatureIamMember#condition}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}.
 
 ---
 
@@ -571,7 +571,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}.
 
 ---
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}.
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}.
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the GkeHubFeatureIamMember to 
 
 The id of the existing GkeHubFeatureIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,9 +1107,9 @@ gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}. |
 
 ---
 
@@ -1121,7 +1121,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#expression GkeHubFeatureIamMember#expression}.
 
 ---
 
@@ -1133,7 +1133,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#title GkeHubFeatureIamMember#title}.
 
 ---
 
@@ -1145,7 +1145,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#description GkeHubFeatureIamMember#description}.
 
 ---
 
@@ -1185,13 +1185,13 @@ gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig(
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition">GkeHubFeatureIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}. |
 
 ---
 
@@ -1273,7 +1273,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#member GkeHubFeatureIamMember#member}.
 
 ---
 
@@ -1285,7 +1285,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#name GkeHubFeatureIamMember#name}.
 
 ---
 
@@ -1297,7 +1297,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#role GkeHubFeatureIamMember#role}.
 
 ---
 
@@ -1311,7 +1311,7 @@ condition: GkeHubFeatureIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#condition GkeHubFeatureIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#condition GkeHubFeatureIamMember#condition}
 
 ---
 
@@ -1323,7 +1323,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#id GkeHubFeatureIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,7 +1338,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#location GkeHubFeatureIamMember#location}.
 
 ---
 
@@ -1350,7 +1350,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/gke_hub_feature_iam_member#project GkeHubFeatureIamMember#project}.
 
 ---
 

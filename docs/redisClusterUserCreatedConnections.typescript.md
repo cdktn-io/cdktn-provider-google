@@ -4,7 +4,7 @@
 
 ### RedisClusterUserCreatedConnections <a name="RedisClusterUserCreatedConnections" id="@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnections"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections google_redis_cluster_user_created_connections}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections google_redis_cluster_user_created_connections}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnections.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the RedisClusterUserCreatedCon
 
 The id of the existing RedisClusterUserCreatedConnections that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ public readonly connections: IResolvable | RedisClusterUserCreatedConnectionsClu
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#connections RedisClusterUserCreatedConnections#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#connections RedisClusterUserCreatedConnections#connections}
 
 ---
 
@@ -959,7 +959,7 @@ public readonly pscConnection: RedisClusterUserCreatedConnectionsClusterEndpoint
 
 psc_connection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#psc_connection RedisClusterUserCreatedConnections#psc_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#psc_connection RedisClusterUserCreatedConnections#psc_connection}
 
 ---
 
@@ -996,7 +996,7 @@ public readonly address: string;
 
 The IP allocated on the consumer network for the PSC forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#address RedisClusterUserCreatedConnections#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#address RedisClusterUserCreatedConnections#address}
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly forwardingRule: string;
 
 The URI of the consumer side forwarding rule. Format: projects/{project}/regions/{region}/forwardingRules/{forwarding_rule}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#forwarding_rule RedisClusterUserCreatedConnections#forwarding_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#forwarding_rule RedisClusterUserCreatedConnections#forwarding_rule}
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly network: string;
 
 The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#network RedisClusterUserCreatedConnections#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#network RedisClusterUserCreatedConnections#network}
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly pscConnectionId: string;
 
 The PSC connection id of the forwarding rule connected to the service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#psc_connection_id RedisClusterUserCreatedConnections#psc_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#psc_connection_id RedisClusterUserCreatedConnections#psc_connection_id}
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly serviceAttachment: string;
 
 The service attachment which is the target of the PSC connection, in the form of projects/{project-id}/regions/{region}/serviceAttachments/{service-attachment-id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#service_attachment RedisClusterUserCreatedConnections#service_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#service_attachment RedisClusterUserCreatedConnections#service_attachment}
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly projectId: string;
 
 The consumer project_id where the forwarding rule is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#project_id RedisClusterUserCreatedConnections#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#project_id RedisClusterUserCreatedConnections#project_id}
 
 ---
 
@@ -1095,8 +1095,8 @@ const redisClusterUserCreatedConnectionsConfig: redisClusterUserCreatedConnectio
 | <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.region">region</a></code> | <code>string</code> | The name of the region of the Redis cluster these endpoints should be added to. |
 | <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.clusterEndpoints">clusterEndpoints</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpoints">RedisClusterUserCreatedConnectionsClusterEndpoints</a>[]</code> | cluster_endpoints block. |
 | <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}. |
-| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#project RedisClusterUserCreatedConnections#project}. |
+| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}. |
+| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#project RedisClusterUserCreatedConnections#project}. |
 | <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts">RedisClusterUserCreatedConnectionsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1181,7 +1181,7 @@ public readonly name: string;
 
 The name of the Redis cluster these endpoints should be added to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#name RedisClusterUserCreatedConnections#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#name RedisClusterUserCreatedConnections#name}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly region: string;
 
 The name of the region of the Redis cluster these endpoints should be added to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#region RedisClusterUserCreatedConnections#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#region RedisClusterUserCreatedConnections#region}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly clusterEndpoints: IResolvable | RedisClusterUserCreatedConnectio
 
 cluster_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#cluster_endpoints RedisClusterUserCreatedConnections#cluster_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#cluster_endpoints RedisClusterUserCreatedConnections#cluster_endpoints}
 
 ---
 
@@ -1231,7 +1231,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#deletion_policy RedisClusterUserCreatedConnections#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#deletion_policy RedisClusterUserCreatedConnections#deletion_policy}
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1258,7 +1258,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#project RedisClusterUserCreatedConnections#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#project RedisClusterUserCreatedConnections#project}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly timeouts: RedisClusterUserCreatedConnectionsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#timeouts RedisClusterUserCreatedConnections#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#timeouts RedisClusterUserCreatedConnections#timeouts}
 
 ---
 
@@ -1290,9 +1290,9 @@ const redisClusterUserCreatedConnectionsTimeouts: redisClusterUserCreatedConnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#create RedisClusterUserCreatedConnections#create}. |
-| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#delete RedisClusterUserCreatedConnections#delete}. |
-| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#update RedisClusterUserCreatedConnections#update}. |
+| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#create RedisClusterUserCreatedConnections#create}. |
+| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#delete RedisClusterUserCreatedConnections#delete}. |
+| <code><a href="#@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#update RedisClusterUserCreatedConnections#update}. |
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#create RedisClusterUserCreatedConnections#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#create RedisClusterUserCreatedConnections#create}.
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#delete RedisClusterUserCreatedConnections#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#delete RedisClusterUserCreatedConnections#delete}.
 
 ---
 
@@ -1328,7 +1328,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/redis_cluster_user_created_connections#update RedisClusterUserCreatedConnections#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/redis_cluster_user_created_connections#update RedisClusterUserCreatedConnections#update}.
 
 ---
 

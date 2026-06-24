@@ -4,7 +4,7 @@
 
 ### IamWorkforcePoolProvider <a name="IamWorkforcePoolProvider" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer"></a>
 
@@ -62,7 +62,7 @@ IamWorkforcePoolProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | A user-specified display name for the provider. Cannot exceed 32 characters. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.extendedAttributesOauth2Client">extendedAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a></code> | extended_attributes_oauth2_client block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.extraAttributesOauth2Client">extraAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2Client">IamWorkforcePoolProviderExtraAttributesOauth2Client</a></code> | extra_attributes_oauth2_client block. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc">IamWorkforcePoolProviderOidc</a></code> | oidc block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.saml">saml</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml">IamWorkforcePoolProviderSaml</a></code> | saml block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer.parameter.scimUsage">scimUsage</a></code> | <code>java.lang.String</code> | Agentspace only. Specifies whether the workforce identity pool provider uses SCIM-managed groups instead of the 'google.groups' attribute mapping for authorization checks. |
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
 
 ---
 
@@ -149,7 +149,7 @@ The ID for the provider, which becomes the final component of the resource name.
 This value must be 4-32 characters, and may contain the characters [a-z0-9-].
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
 
 ---
 
@@ -163,7 +163,7 @@ The IDs must be a globally unique string of 6 to 63 lowercase letters, digits, o
 It must start with a letter, and cannot have a trailing hyphen.
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
 
 ---
 
@@ -191,7 +191,7 @@ The following example shows how to only allow credentials with a mapped 'google.
 "'admins' in google.groups"
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
 
 ---
 
@@ -253,7 +253,7 @@ on a Google token:
 An object containing a list of '"key": value' pairs.
 Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
 
 ---
 
@@ -270,7 +270,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#deletion_policy IamWorkforcePoolProvider#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#deletion_policy IamWorkforcePoolProvider#deletion_policy}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A user-specified description of the provider. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
 
 ---
 
@@ -292,7 +292,7 @@ If true, populates additional debug information in Cloud Audit Logs for this pro
 
 Logged attribute mappings and values can be found in 'sts.googleapis.com' data access logs. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#detailed_audit_logging IamWorkforcePoolProvider#detailed_audit_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#detailed_audit_logging IamWorkforcePoolProvider#detailed_audit_logging}
 
 ---
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the provider is disabled. You cannot use a disabled provider to exchange tokens. However, existing tokens still grant access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
 
 ---
 
@@ -312,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A user-specified display name for the provider. Cannot exceed 32 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
 
 ---
 
@@ -322,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 extended_attributes_oauth2_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#extended_attributes_oauth2_client IamWorkforcePoolProvider#extended_attributes_oauth2_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#extended_attributes_oauth2_client IamWorkforcePoolProvider#extended_attributes_oauth2_client}
 
 ---
 
@@ -332,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 extra_attributes_oauth2_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
 
 ---
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -353,7 +353,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
 
 ---
 
@@ -381,7 +381,7 @@ workforce identity pool provider will produce an error.
 * ENABLED_FOR_GROUPS: Use SCIM-managed groups instead of the 'google.groups'
   attribute mapping for authorization checks Possible values: ["SCIM_USAGE_UNSPECIFIED", "ENABLED_FOR_GROUPS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#scim_usage IamWorkforcePoolProvider#scim_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#scim_usage IamWorkforcePoolProvider#scim_usage}
 
 ---
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
 
 ---
 
@@ -1003,7 +1003,7 @@ The construct id used in the generated config for the IamWorkforcePoolProvider t
 
 The id of the existing IamWorkforcePoolProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1652,7 +1652,7 @@ IamWorkforcePoolProviderConfig.builder()
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | A user-specified display name for the provider. Cannot exceed 32 characters. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.extendedAttributesOauth2Client">extendedAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a></code> | extended_attributes_oauth2_client block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.extraAttributesOauth2Client">extraAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2Client">IamWorkforcePoolProviderExtraAttributesOauth2Client</a></code> | extra_attributes_oauth2_client block. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc">IamWorkforcePoolProviderOidc</a></code> | oidc block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml">IamWorkforcePoolProviderSaml</a></code> | saml block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.scimUsage">scimUsage</a></code> | <code>java.lang.String</code> | Agentspace only. Specifies whether the workforce identity pool provider uses SCIM-managed groups instead of the 'google.groups' attribute mapping for authorization checks. |
@@ -1740,7 +1740,7 @@ public java.lang.String getLocation();
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
 
 ---
 
@@ -1757,7 +1757,7 @@ The ID for the provider, which becomes the final component of the resource name.
 This value must be 4-32 characters, and may contain the characters [a-z0-9-].
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
 
 ---
 
@@ -1775,7 +1775,7 @@ The IDs must be a globally unique string of 6 to 63 lowercase letters, digits, o
 It must start with a letter, and cannot have a trailing hyphen.
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
 
 ---
 
@@ -1807,7 +1807,7 @@ The following example shows how to only allow credentials with a mapped 'google.
 "'admins' in google.groups"
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
 
 ---
 
@@ -1873,7 +1873,7 @@ on a Google token:
 An object containing a list of '"key": value' pairs.
 Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
 
 ---
 
@@ -1894,7 +1894,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#deletion_policy IamWorkforcePoolProvider#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#deletion_policy IamWorkforcePoolProvider#deletion_policy}
 
 ---
 
@@ -1908,7 +1908,7 @@ public java.lang.String getDescription();
 
 A user-specified description of the provider. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
 
 ---
 
@@ -1924,7 +1924,7 @@ If true, populates additional debug information in Cloud Audit Logs for this pro
 
 Logged attribute mappings and values can be found in 'sts.googleapis.com' data access logs. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#detailed_audit_logging IamWorkforcePoolProvider#detailed_audit_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#detailed_audit_logging IamWorkforcePoolProvider#detailed_audit_logging}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the provider is disabled. You cannot use a disabled provider to exchange tokens. However, existing tokens still grant access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.String getDisplayName();
 
 A user-specified display name for the provider. Cannot exceed 32 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
 
 ---
 
@@ -1966,7 +1966,7 @@ public IamWorkforcePoolProviderExtendedAttributesOauth2Client getExtendedAttribu
 
 extended_attributes_oauth2_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#extended_attributes_oauth2_client IamWorkforcePoolProvider#extended_attributes_oauth2_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#extended_attributes_oauth2_client IamWorkforcePoolProvider#extended_attributes_oauth2_client}
 
 ---
 
@@ -1980,7 +1980,7 @@ public IamWorkforcePoolProviderExtraAttributesOauth2Client getExtraAttributesOau
 
 extra_attributes_oauth2_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
 
 ---
 
@@ -1992,7 +1992,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2009,7 +2009,7 @@ public IamWorkforcePoolProviderOidc getOidc();
 
 oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
 
 ---
 
@@ -2023,7 +2023,7 @@ public IamWorkforcePoolProviderSaml getSaml();
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
 
 ---
 
@@ -2045,7 +2045,7 @@ workforce identity pool provider will produce an error.
 * ENABLED_FOR_GROUPS: Use SCIM-managed groups instead of the 'google.groups'
   attribute mapping for authorization checks Possible values: ["SCIM_USAGE_UNSPECIFIED", "ENABLED_FOR_GROUPS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#scim_usage IamWorkforcePoolProvider#scim_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#scim_usage IamWorkforcePoolProvider#scim_usage}
 
 ---
 
@@ -2059,7 +2059,7 @@ public IamWorkforcePoolProviderTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
 
 ---
 
@@ -2110,7 +2110,7 @@ Represents the IdP and type of claims that should be fetched.
   OIDC providers and 'assertion.attributes.groups' for SAML providers for
   attribute mapping. Possible values: ["AZURE_AD_GROUPS_ID"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
 
 ---
 
@@ -2124,7 +2124,7 @@ public java.lang.String getClientId();
 
 The OAuth 2.0 client ID for retrieving extended attributes from the identity provider. Required to get the Access Token using client credentials grant flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
 
 ---
 
@@ -2138,7 +2138,7 @@ public IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret getCli
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
 
 ---
 
@@ -2154,7 +2154,7 @@ The OIDC identity provider's issuer URI.
 
 Must be a valid URI using the 'https' scheme. Required to get the OIDC discovery document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
 
 ---
 
@@ -2168,7 +2168,7 @@ public IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters get
 
 query_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
 
 ---
 
@@ -2202,7 +2202,7 @@ public IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue g
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
 
 ---
 
@@ -2214,7 +2214,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.google.iam_workforce_pool_provider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue;
 
 IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.builder()
-    .plainText(java.lang.String)
+//  .plainText(java.lang.String)
+//  .plainTextWo(java.lang.String)
+//  .plainTextWoVersion(java.lang.String)
     .build();
 ```
 
@@ -2223,10 +2225,12 @@ IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.builder(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainText">plainText</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | Triggers update of 'plain_text_wo' write-only. |
 
 ---
 
-##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainText"></a>
+##### `plainText`<sup>Optional</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
@@ -2236,7 +2240,37 @@ public java.lang.String getPlainText();
 
 The plain text of the client secret value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+
+---
+
+##### `plainTextWo`<sup>Optional</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+The plain text of the client secret value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo IamWorkforcePoolProvider#plain_text_wo}
+
+---
+
+##### `plainTextWoVersion`<sup>Optional</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
+```
+
+- *Type:* java.lang.String
+
+Triggers update of 'plain_text_wo' write-only.
+
+Increment this value when an update to 'plain_text_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo_version IamWorkforcePoolProvider#plain_text_wo_version}
 
 ---
 
@@ -2274,7 +2308,7 @@ In case of attributes type as AZURE_AD_GROUPS_ID, it represents the
 filter used to request specific groups for users from IdP. By default, all of the groups associated with the user are fetched. The
 groups should be security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
 
 ---
 
@@ -2337,7 +2371,7 @@ Represents the IdP and type of claims that should be fetched.
   OIDC providers and 'assertion.attributes.groups' for SAML providers for
   attribute mapping. Possible values: ["AZURE_AD_GROUPS_MAIL", "AZURE_AD_GROUPS_ID", "AZURE_AD_GROUPS_DISPLAY_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
 
 ---
 
@@ -2351,7 +2385,7 @@ public java.lang.String getClientId();
 
 The OAuth 2.0 client ID for retrieving extra attributes from the identity provider. Required to get the Access Token using client credentials grant flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
 
 ---
 
@@ -2365,7 +2399,7 @@ public IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret getClient
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
 
 ---
 
@@ -2381,7 +2415,7 @@ The OIDC identity provider's issuer URI.
 
 Must be a valid URI using the 'https' scheme. Required to get the OIDC discovery document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
 
 ---
 
@@ -2395,7 +2429,7 @@ public IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters getQue
 
 query_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
 
 ---
 
@@ -2429,7 +2463,7 @@ public IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue getV
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
 
 ---
 
@@ -2441,7 +2475,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.google.iam_workforce_pool_provider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue;
 
 IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.builder()
-    .plainText(java.lang.String)
+//  .plainText(java.lang.String)
+//  .plainTextWo(java.lang.String)
+//  .plainTextWoVersion(java.lang.String)
     .build();
 ```
 
@@ -2450,10 +2486,12 @@ IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainText">plainText</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | Triggers update of 'plain_text_wo' write-only. |
 
 ---
 
-##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainText"></a>
+##### `plainText`<sup>Optional</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
@@ -2463,7 +2501,37 @@ public java.lang.String getPlainText();
 
 The plain text of the client secret value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+
+---
+
+##### `plainTextWo`<sup>Optional</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+The plain text of the client secret value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo IamWorkforcePoolProvider#plain_text_wo}
+
+---
+
+##### `plainTextWoVersion`<sup>Optional</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
+```
+
+- *Type:* java.lang.String
+
+Triggers update of 'plain_text_wo' write-only.
+
+Increment this value when an update to 'plain_text_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo_version IamWorkforcePoolProvider#plain_text_wo_version}
 
 ---
 
@@ -2503,7 +2571,7 @@ groups for users from IdP. By default, all of the groups associated with the use
 should be security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more
 details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
 
 ---
 
@@ -2545,7 +2613,7 @@ public java.lang.String getClientId();
 
 The client ID. Must match the audience claim of the JWT issued by the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
 
 ---
 
@@ -2559,7 +2627,7 @@ public java.lang.String getIssuerUri();
 
 The OIDC issuer URI. Must be a valid URI using the 'https' scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
 
 ---
 
@@ -2573,7 +2641,7 @@ public IamWorkforcePoolProviderOidcClientSecret getClientSecret();
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
 
 ---
 
@@ -2612,7 +2680,7 @@ the following fields:
 }
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#jwks_json IamWorkforcePoolProvider#jwks_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#jwks_json IamWorkforcePoolProvider#jwks_json}
 
 ---
 
@@ -2626,7 +2694,7 @@ public IamWorkforcePoolProviderOidcWebSsoConfig getWebSsoConfig();
 
 web_sso_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#web_sso_config IamWorkforcePoolProvider#web_sso_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#web_sso_config IamWorkforcePoolProvider#web_sso_config}
 
 ---
 
@@ -2660,7 +2728,7 @@ public IamWorkforcePoolProviderOidcClientSecretValue getValue();
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
 
 ---
 
@@ -2672,7 +2740,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.google.iam_workforce_pool_provider.IamWorkforcePoolProviderOidcClientSecretValue;
 
 IamWorkforcePoolProviderOidcClientSecretValue.builder()
-    .plainText(java.lang.String)
+//  .plainText(java.lang.String)
+//  .plainTextWo(java.lang.String)
+//  .plainTextWoVersion(java.lang.String)
     .build();
 ```
 
@@ -2681,10 +2751,12 @@ IamWorkforcePoolProviderOidcClientSecretValue.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainText">plainText</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | The plain text of the client secret value. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | Triggers update of 'plain_text_wo' write-only. |
 
 ---
 
-##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainText"></a>
+##### `plainText`<sup>Optional</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
@@ -2694,7 +2766,37 @@ public java.lang.String getPlainText();
 
 The plain text of the client secret value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+
+---
+
+##### `plainTextWo`<sup>Optional</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+The plain text of the client secret value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo IamWorkforcePoolProvider#plain_text_wo}
+
+---
+
+##### `plainTextWoVersion`<sup>Optional</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
+```
+
+- *Type:* java.lang.String
+
+Triggers update of 'plain_text_wo' write-only.
+
+Increment this value when an update to 'plain_text_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#plain_text_wo_version IamWorkforcePoolProvider#plain_text_wo_version}
 
 ---
 
@@ -2735,7 +2837,7 @@ The behavior for how OIDC Claims are included in the 'assertion' object used for
 * MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS: Merge the UserInfo Endpoint Claims with ID Token Claims, preferring UserInfo Claim Values for the same Claim Name. This option is available only for the Authorization Code Flow.
 * ONLY_ID_TOKEN_CLAIMS: Only include ID Token Claims. Possible values: ["MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS", "ONLY_ID_TOKEN_CLAIMS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#assertion_claims_behavior IamWorkforcePoolProvider#assertion_claims_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#assertion_claims_behavior IamWorkforcePoolProvider#assertion_claims_behavior}
 
 ---
 
@@ -2754,7 +2856,7 @@ The 'CODE' Response Type is recommended to avoid the Implicit Flow, for security
 * CODE: The 'response_type=code' selection uses the Authorization Code Flow for web sign-in. Requires a configured client secret.
 * ID_TOKEN: The 'response_type=id_token' selection uses the Implicit Flow for web sign-in. Possible values: ["CODE", "ID_TOKEN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#response_type IamWorkforcePoolProvider#response_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#response_type IamWorkforcePoolProvider#response_type}
 
 ---
 
@@ -2771,7 +2873,7 @@ Additional scopes to request for in the OIDC authentication request on top of sc
 By default, the 'openid', 'profile' and 'email' scopes that are supported by the identity provider are requested.
 Each additional scope may be at most 256 characters. A maximum of 10 additional scopes may be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#additional_scopes IamWorkforcePoolProvider#additional_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#additional_scopes IamWorkforcePoolProvider#additional_scopes}
 
 ---
 
@@ -2821,7 +2923,7 @@ When updating the provider's metadata xml, at least one non-expired signing key
 must overlap with the existing metadata. This requirement is skipped if there are
 no non-expired signing keys present in the existing metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
 
 ---
 
@@ -2843,9 +2945,9 @@ IamWorkforcePoolProviderTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}. |
 
 ---
 
@@ -2857,7 +2959,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}.
 
 ---
 
@@ -2869,7 +2971,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}.
 
 ---
 
@@ -2881,7 +2983,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}.
 
 ---
 
@@ -3228,6 +3330,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainText">resetPlainText</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWo">resetPlainTextWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWoVersion">resetPlainTextWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -3381,6 +3486,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetPlainText` <a name="resetPlainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainText"></a>
+
+```java
+public void resetPlainText()
+```
+
+##### `resetPlainTextWo` <a name="resetPlainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWo"></a>
+
+```java
+public void resetPlainTextWo()
+```
+
+##### `resetPlainTextWoVersion` <a name="resetPlainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWoVersion"></a>
+
+```java
+public void resetPlainTextWoVersion()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3390,7 +3513,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.thumbprint">thumbprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextInput">plainTextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoInput">plainTextWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersionInput">plainTextWoVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainText">plainText</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a></code> | *No description.* |
 
 ---
@@ -3439,10 +3566,50 @@ public java.lang.String getPlainTextInput();
 
 ---
 
+##### `plainTextWoInput`<sup>Optional</sup> <a name="plainTextWoInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoInput"></a>
+
+```java
+public java.lang.String getPlainTextWoInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersionInput`<sup>Optional</sup> <a name="plainTextWoVersionInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersionInput"></a>
+
+```java
+public java.lang.String getPlainTextWoVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWo`<sup>Required</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersion`<sup>Required</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
 ```
 
 - *Type:* java.lang.String
@@ -4471,6 +4638,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainText">resetPlainText</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWo">resetPlainTextWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWoVersion">resetPlainTextWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -4624,6 +4794,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetPlainText` <a name="resetPlainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainText"></a>
+
+```java
+public void resetPlainText()
+```
+
+##### `resetPlainTextWo` <a name="resetPlainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWo"></a>
+
+```java
+public void resetPlainTextWo()
+```
+
+##### `resetPlainTextWoVersion` <a name="resetPlainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.resetPlainTextWoVersion"></a>
+
+```java
+public void resetPlainTextWoVersion()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4633,7 +4821,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.thumbprint">thumbprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextInput">plainTextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoInput">plainTextWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersionInput">plainTextWoVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainText">plainText</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue</a></code> | *No description.* |
 
 ---
@@ -4682,10 +4874,50 @@ public java.lang.String getPlainTextInput();
 
 ---
 
+##### `plainTextWoInput`<sup>Optional</sup> <a name="plainTextWoInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoInput"></a>
+
+```java
+public java.lang.String getPlainTextWoInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersionInput`<sup>Optional</sup> <a name="plainTextWoVersionInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersionInput"></a>
+
+```java
+public java.lang.String getPlainTextWoVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWo`<sup>Required</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersion`<sup>Required</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
 ```
 
 - *Type:* java.lang.String
@@ -5714,6 +5946,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainText">resetPlainText</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainTextWo">resetPlainTextWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainTextWoVersion">resetPlainTextWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -5867,6 +6102,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetPlainText` <a name="resetPlainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainText"></a>
+
+```java
+public void resetPlainText()
+```
+
+##### `resetPlainTextWo` <a name="resetPlainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainTextWo"></a>
+
+```java
+public void resetPlainTextWo()
+```
+
+##### `resetPlainTextWoVersion` <a name="resetPlainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.resetPlainTextWoVersion"></a>
+
+```java
+public void resetPlainTextWoVersion()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5876,7 +6129,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.thumbprint">thumbprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextInput">plainTextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoInput">plainTextWoInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoVersionInput">plainTextWoVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainText">plainText</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWo">plainTextWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoVersion">plainTextWoVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValue">IamWorkforcePoolProviderOidcClientSecretValue</a></code> | *No description.* |
 
 ---
@@ -5925,10 +6182,50 @@ public java.lang.String getPlainTextInput();
 
 ---
 
+##### `plainTextWoInput`<sup>Optional</sup> <a name="plainTextWoInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoInput"></a>
+
+```java
+public java.lang.String getPlainTextWoInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersionInput`<sup>Optional</sup> <a name="plainTextWoVersionInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoVersionInput"></a>
+
+```java
+public java.lang.String getPlainTextWoVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainText"></a>
 
 ```java
 public java.lang.String getPlainText();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWo`<sup>Required</sup> <a name="plainTextWo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWo"></a>
+
+```java
+public java.lang.String getPlainTextWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plainTextWoVersion`<sup>Required</sup> <a name="plainTextWoVersion" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWoVersion"></a>
+
+```java
+public java.lang.String getPlainTextWoVersion();
 ```
 
 - *Type:* java.lang.String

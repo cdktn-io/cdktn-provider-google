@@ -4,7 +4,7 @@
 
 ### KmsKeyRingIamMember <a name="KmsKeyRingIamMember" id="@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member google_kms_key_ring_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member google_kms_key_ring_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer"></a>
 
@@ -38,11 +38,11 @@ KmsKeyRingIamMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.keyRingId">keyRingId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.keyRingId">keyRingId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition">KmsKeyRingIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#condition KmsKeyRingIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#condition KmsKeyRingIamMember#condition}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the KmsKeyRingIamMember to imp
 
 The id of the existing KmsKeyRingIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,9 +957,9 @@ KmsKeyRingIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#expression KmsKeyRingIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#title KmsKeyRingIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#description KmsKeyRingIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#expression KmsKeyRingIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#title KmsKeyRingIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#description KmsKeyRingIamMember#description}. |
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#expression KmsKeyRingIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#expression KmsKeyRingIamMember#expression}.
 
 ---
 
@@ -983,7 +983,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#title KmsKeyRingIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#title KmsKeyRingIamMember#title}.
 
 ---
 
@@ -995,7 +995,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#description KmsKeyRingIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#description KmsKeyRingIamMember#description}.
 
 ---
 
@@ -1033,11 +1033,11 @@ KmsKeyRingIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.keyRingId">keyRingId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.keyRingId">keyRingId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition">KmsKeyRingIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getKeyRingId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#key_ring_id KmsKeyRingIamMember#key_ring_id}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#member KmsKeyRingIamMember#member}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#role KmsKeyRingIamMember#role}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public KmsKeyRingIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#condition KmsKeyRingIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#condition KmsKeyRingIamMember#condition}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_key_ring_iam_member#id KmsKeyRingIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

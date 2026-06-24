@@ -4,7 +4,7 @@
 
 ### FolderIamMember <a name="FolderIamMember" id="@cdktn/provider-google.folderIamMember.FolderIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member google_folder_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member google_folder_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer"></a>
 
@@ -38,11 +38,11 @@ FolderIamMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#member FolderIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#role FolderIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#member FolderIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#role FolderIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition">FolderIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#id FolderIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#id FolderIamMember#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#member FolderIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#member FolderIamMember#member}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#role FolderIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#role FolderIamMember#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#condition FolderIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#condition FolderIamMember#condition}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#id FolderIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#id FolderIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the FolderIamMember to import.
 
 The id of the existing FolderIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,9 +957,9 @@ FolderIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#expression FolderIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#title FolderIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#description FolderIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#expression FolderIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#title FolderIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#description FolderIamMember#description}. |
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#expression FolderIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#expression FolderIamMember#expression}.
 
 ---
 
@@ -983,7 +983,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#title FolderIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#title FolderIamMember#title}.
 
 ---
 
@@ -995,7 +995,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#description FolderIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#description FolderIamMember#description}.
 
 ---
 
@@ -1033,11 +1033,11 @@ FolderIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#member FolderIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#role FolderIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#member FolderIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#role FolderIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberCondition">FolderIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#id FolderIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.folderIamMember.FolderIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#id FolderIamMember#id}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getFolder();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#folder FolderIamMember#folder}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#member FolderIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#member FolderIamMember#member}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#role FolderIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#role FolderIamMember#role}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public FolderIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#condition FolderIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#condition FolderIamMember#condition}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/folder_iam_member#id FolderIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/folder_iam_member#id FolderIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

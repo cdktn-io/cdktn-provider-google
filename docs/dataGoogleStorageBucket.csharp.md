@@ -4,7 +4,7 @@
 
 ### DataGoogleStorageBucket <a name="DataGoogleStorageBucket" id="@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket google_storage_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket google_storage_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucket.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleStorageBucket to
 
 The id of the existing DataGoogleStorageBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,7 +1016,7 @@ new DataGoogleStorageBucketConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.name">Name</a></code> | <code>string</code> | The name of the bucket. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketConfig.property.project">Project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 
 ---
@@ -1101,7 +1101,7 @@ public string Name { get; set; }
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket#name DataGoogleStorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket#name DataGoogleStorageBucket#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/storage_bucket#project DataGoogleStorageBucket#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/storage_bucket#project DataGoogleStorageBucket#project}
 
 ---
 
@@ -7063,6 +7063,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero">SendDaysSinceCustomTimeIfZero</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero">SendDaysSinceNoncurrentTimeIfZero</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero">SendNumNewerVersionsIfZero</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sizeAboveBytes">SizeAboveBytes</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sizeBelowBytes">SizeBelowBytes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.withState">WithState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleCondition">DataGoogleStorageBucketLifecycleRuleCondition</a></code> | *No description.* |
 
@@ -7229,6 +7231,26 @@ public IResolvable SendNumNewerVersionsIfZero { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable
+
+---
+
+##### `SizeAboveBytes`<sup>Required</sup> <a name="SizeAboveBytes" id="@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sizeAboveBytes"></a>
+
+```csharp
+public double SizeAboveBytes { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `SizeBelowBytes`<sup>Required</sup> <a name="SizeBelowBytes" id="@cdktn/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionOutputReference.property.sizeBelowBytes"></a>
+
+```csharp
+public double SizeBelowBytes { get; }
+```
+
+- *Type:* double
 
 ---
 
