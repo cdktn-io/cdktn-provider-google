@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface LoggingSavedQueryConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#deletion_policy LoggingSavedQuery#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#deletion_policy LoggingSavedQuery#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the saved query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#description LoggingSavedQuery#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#description LoggingSavedQuery#description}
   */
   readonly description?: string;
   /**
   * The user-visible display name of the saved query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#display_name LoggingSavedQuery#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#display_name LoggingSavedQuery#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#id LoggingSavedQuery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,43 +47,43 @@ export interface LoggingSavedQueryConfig extends cdktn.TerraformMetaArguments {
   * The location of the resource see
   * [supported regions](https://docs.cloud.google.com/logging/docs/region-support#bucket-regions).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#location LoggingSavedQuery#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#location LoggingSavedQuery#location}
   */
   readonly location: string;
   /**
   * The name of the saved query. For example: 'my-saved-query'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#name LoggingSavedQuery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#name LoggingSavedQuery#name}
   */
   readonly name: string;
   /**
   * The parent of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#parent LoggingSavedQuery#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#parent LoggingSavedQuery#parent}
   */
   readonly parent: string;
   /**
   * The visibility of the saved query. Possible values: ["SHARED", "PRIVATE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#visibility LoggingSavedQuery#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#visibility LoggingSavedQuery#visibility}
   */
   readonly visibility: string;
   /**
   * logging_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#logging_query LoggingSavedQuery#logging_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#logging_query LoggingSavedQuery#logging_query}
   */
   readonly loggingQuery?: LoggingSavedQueryLoggingQuery;
   /**
   * ops_analytics_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#ops_analytics_query LoggingSavedQuery#ops_analytics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#ops_analytics_query LoggingSavedQuery#ops_analytics_query}
   */
   readonly opsAnalyticsQuery?: LoggingSavedQueryOpsAnalyticsQuery;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#timeouts LoggingSavedQuery#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#timeouts LoggingSavedQuery#timeouts}
   */
   readonly timeouts?: LoggingSavedQueryTimeouts;
 }
@@ -91,7 +91,7 @@ export interface LoggingSavedQueryLoggingQuerySummaryFields {
   /**
   * The field from the LogEntry to include in the summary line.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#field LoggingSavedQuery#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#field LoggingSavedQuery#field}
   */
   readonly field?: string;
 }
@@ -210,25 +210,25 @@ export interface LoggingSavedQueryLoggingQuery {
   * An [advanced logs filter](https://cloud.google.com/logging/docs/view/advanced-filters) which
   * is used to match log entries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#filter LoggingSavedQuery#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#filter LoggingSavedQuery#filter}
   */
   readonly filter: string;
   /**
   * Characters will be counted from the end of the string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#summary_field_end LoggingSavedQuery#summary_field_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#summary_field_end LoggingSavedQuery#summary_field_end}
   */
   readonly summaryFieldEnd?: number;
   /**
   * Characters will be counted from the start of the string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#summary_field_start LoggingSavedQuery#summary_field_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#summary_field_start LoggingSavedQuery#summary_field_start}
   */
   readonly summaryFieldStart?: number;
   /**
   * summary_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#summary_fields LoggingSavedQuery#summary_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#summary_fields LoggingSavedQuery#summary_fields}
   */
   readonly summaryFields?: LoggingSavedQueryLoggingQuerySummaryFields[] | cdktn.IResolvable;
 }
@@ -398,7 +398,7 @@ export interface LoggingSavedQueryOpsAnalyticsQuery {
   /**
   * A logs analytics SQL query, which generally follows BigQuery format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#sql_query_text LoggingSavedQuery#sql_query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#sql_query_text LoggingSavedQuery#sql_query_text}
   */
   readonly sqlQueryText: string;
 }
@@ -479,15 +479,15 @@ export class LoggingSavedQueryOpsAnalyticsQueryOutputReference extends cdktn.Com
 }
 export interface LoggingSavedQueryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#create LoggingSavedQuery#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#delete LoggingSavedQuery#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#update LoggingSavedQuery#update}
   */
   readonly update?: string;
 }
@@ -639,7 +639,7 @@ export class LoggingSavedQueryTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query google_logging_saved_query}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query google_logging_saved_query}
 */
 export class LoggingSavedQuery extends cdktn.TerraformResource {
 
@@ -655,7 +655,7 @@ export class LoggingSavedQuery extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LoggingSavedQuery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingSavedQuery to import
-  * @param importFromId The id of the existing LoggingSavedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoggingSavedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingSavedQuery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -667,7 +667,7 @@ export class LoggingSavedQuery extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/logging_saved_query google_logging_saved_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/logging_saved_query google_logging_saved_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -678,7 +678,7 @@ export class LoggingSavedQuery extends cdktn.TerraformResource {
       terraformResourceType: 'google_logging_saved_query',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

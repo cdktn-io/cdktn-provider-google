@@ -1,3 +1,3 @@
 # `google_oracle_database_goldengate_deployment`
 
-Refer to the Terraform Registry for docs: [`google_oracle_database_goldengate_deployment`](https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/oracle_database_goldengate_deployment).
+Refer to the Terraform Registry for docs: [`google_oracle_database_goldengate_deployment`](https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/oracle_database_goldengate_deployment).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface BiglakeIcebergTableConfig extends cdktn.TerraformMetaArguments 
   /**
   * The name of the IcebergCatalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#catalog BiglakeIcebergTable#catalog}
   */
   readonly catalog: string;
   /**
@@ -27,11 +27,11 @@ export interface BiglakeIcebergTableConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#deletion_policy BiglakeIcebergTable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,47 +40,53 @@ export interface BiglakeIcebergTableConfig extends cdktn.TerraformMetaArguments 
   /**
   * The location of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#location BiglakeIcebergTable#location}
   */
   readonly location?: string;
   /**
   * The name of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * The parent namespace of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#namespace BiglakeIcebergTable#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#project BiglakeIcebergTable#project}
   */
   readonly project?: string;
   /**
   * User-defined properties for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#properties BiglakeIcebergTable#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
   * partition_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#partition_spec BiglakeIcebergTable#partition_spec}
   */
   readonly partitionSpec?: BiglakeIcebergTablePartitionSpec;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#schema BiglakeIcebergTable#schema}
   */
   readonly schema: BiglakeIcebergTableSchema;
   /**
+  * sort_order block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#sort_order BiglakeIcebergTable#sort_order}
+  */
+  readonly sortOrder?: BiglakeIcebergTableSortOrder;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#timeouts BiglakeIcebergTable#timeouts}
   */
   readonly timeouts?: BiglakeIcebergTableTimeouts;
 }
@@ -88,19 +94,19 @@ export interface BiglakeIcebergTablePartitionSpecFields {
   /**
   * The name of the partition field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * The source field ID for the partition field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
   */
   readonly sourceId: number;
   /**
   * The transform to apply to the source field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
   */
   readonly transform: string;
 }
@@ -272,7 +278,7 @@ export interface BiglakeIcebergTablePartitionSpec {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
   */
   readonly fields: BiglakeIcebergTablePartitionSpecFields[] | cdktn.IResolvable;
 }
@@ -360,13 +366,13 @@ export interface BiglakeIcebergTableSchemaFields {
   /**
   * A description of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
   */
   readonly doc?: string;
   /**
   * The unique identifier of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#id BiglakeIcebergTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -375,19 +381,19 @@ export interface BiglakeIcebergTableSchemaFields {
   /**
   * The name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#name BiglakeIcebergTable#name}
   */
   readonly name: string;
   /**
   * Whether the field is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
   */
   readonly required: boolean | cdktn.IResolvable;
   /**
   * The type of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
   */
   readonly type: string;
 }
@@ -609,19 +615,19 @@ export interface BiglakeIcebergTableSchema {
   /**
   * The field IDs that make up the identifier for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#identifier_field_ids BiglakeIcebergTable#identifier_field_ids}
   */
   readonly identifierFieldIds?: number[];
   /**
   * The type of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
   */
   readonly type?: string;
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
   */
   readonly fields: BiglakeIcebergTableSchemaFields[] | cdktn.IResolvable;
 }
@@ -763,17 +769,316 @@ export class BiglakeIcebergTableSchemaOutputReference extends cdktn.ComplexObjec
     return this._fields.internalValue;
   }
 }
+export interface BiglakeIcebergTableSortOrderFields {
+  /**
+  * The sort direction for the sort field. Possible values: "asc", "desc".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#direction BiglakeIcebergTable#direction}
+  */
+  readonly direction: string;
+  /**
+  * The null ordering for the sort field. Possible values: "nulls-first", "nulls-last".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#null_order BiglakeIcebergTable#null_order}
+  */
+  readonly nullOrder: string;
+  /**
+  * The source field ID for the sort field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#source_id BiglakeIcebergTable#source_id}
+  */
+  readonly sourceId: number;
+  /**
+  * The transform to apply to the source field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#transform BiglakeIcebergTable#transform}
+  */
+  readonly transform: string;
+}
+
+export function biglakeIcebergTableSortOrderFieldsToTerraform(struct?: BiglakeIcebergTableSortOrderFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    direction: cdktn.stringToTerraform(struct!.direction),
+    null_order: cdktn.stringToTerraform(struct!.nullOrder),
+    source_id: cdktn.numberToTerraform(struct!.sourceId),
+    transform: cdktn.stringToTerraform(struct!.transform),
+  }
+}
+
+
+export function biglakeIcebergTableSortOrderFieldsToHclTerraform(struct?: BiglakeIcebergTableSortOrderFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    direction: {
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    null_order: {
+      value: cdktn.stringToHclTerraform(struct!.nullOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_id: {
+      value: cdktn.numberToHclTerraform(struct!.sourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transform: {
+      value: cdktn.stringToHclTerraform(struct!.transform),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BiglakeIcebergTableSortOrderFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BiglakeIcebergTableSortOrderFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._nullOrder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nullOrder = this._nullOrder;
+    }
+    if (this._sourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceId = this._sourceId;
+    }
+    if (this._transform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transform = this._transform;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BiglakeIcebergTableSortOrderFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._direction = undefined;
+      this._nullOrder = undefined;
+      this._sourceId = undefined;
+      this._transform = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._direction = value.direction;
+      this._nullOrder = value.nullOrder;
+      this._sourceId = value.sourceId;
+      this._transform = value.transform;
+    }
+  }
+
+  // direction - computed: false, optional: false, required: true
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // null_order - computed: false, optional: false, required: true
+  private _nullOrder?: string; 
+  public get nullOrder() {
+    return this.getStringAttribute('null_order');
+  }
+  public set nullOrder(value: string) {
+    this._nullOrder = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nullOrderInput() {
+    return this._nullOrder;
+  }
+
+  // source_id - computed: false, optional: false, required: true
+  private _sourceId?: number; 
+  public get sourceId() {
+    return this.getNumberAttribute('source_id');
+  }
+  public set sourceId(value: number) {
+    this._sourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIdInput() {
+    return this._sourceId;
+  }
+
+  // transform - computed: false, optional: false, required: true
+  private _transform?: string; 
+  public get transform() {
+    return this.getStringAttribute('transform');
+  }
+  public set transform(value: string) {
+    this._transform = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformInput() {
+    return this._transform;
+  }
+}
+
+export class BiglakeIcebergTableSortOrderFieldsList extends cdktn.ComplexList {
+  public internalValue? : BiglakeIcebergTableSortOrderFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BiglakeIcebergTableSortOrderFieldsOutputReference {
+    return new BiglakeIcebergTableSortOrderFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BiglakeIcebergTableSortOrder {
+  /**
+  * fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#fields BiglakeIcebergTable#fields}
+  */
+  readonly fields: BiglakeIcebergTableSortOrderFields[] | cdktn.IResolvable;
+}
+
+export function biglakeIcebergTableSortOrderToTerraform(struct?: BiglakeIcebergTableSortOrderOutputReference | BiglakeIcebergTableSortOrder): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    fields: cdktn.listMapper(biglakeIcebergTableSortOrderFieldsToTerraform, true)(struct!.fields),
+  }
+}
+
+
+export function biglakeIcebergTableSortOrderToHclTerraform(struct?: BiglakeIcebergTableSortOrderOutputReference | BiglakeIcebergTableSortOrder): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    fields: {
+      value: cdktn.listMapperHcl(biglakeIcebergTableSortOrderFieldsToHclTerraform, true)(struct!.fields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BiglakeIcebergTableSortOrderFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BiglakeIcebergTableSortOrderOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BiglakeIcebergTableSortOrder | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BiglakeIcebergTableSortOrder | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fields.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fields.internalValue = value.fields;
+    }
+  }
+
+  // order_id - computed: true, optional: false, required: false
+  public get orderId() {
+    return this.getNumberAttribute('order_id');
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields = new BiglakeIcebergTableSortOrderFieldsList(this, "fields", false);
+  public get fields() {
+    return this._fields;
+  }
+  public putFields(value: BiglakeIcebergTableSortOrderFields[] | cdktn.IResolvable) {
+    this._fields.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields.internalValue;
+  }
+}
 export interface BiglakeIcebergTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#create BiglakeIcebergTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#delete BiglakeIcebergTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#update BiglakeIcebergTable#update}
   */
   readonly update?: string;
 }
@@ -925,7 +1230,7 @@ export class BiglakeIcebergTableTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table}
 */
 export class BiglakeIcebergTable extends cdktn.TerraformResource {
 
@@ -941,7 +1246,7 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeIcebergTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeIcebergTable to import
-  * @param importFromId The id of the existing BiglakeIcebergTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeIcebergTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeIcebergTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -953,7 +1258,7 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table google_biglake_iceberg_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -964,7 +1269,7 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_iceberg_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -985,6 +1290,7 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
     this._properties = config.properties;
     this._partitionSpec.internalValue = config.partitionSpec;
     this._schema.internalValue = config.schema;
+    this._sortOrder.internalValue = config.sortOrder;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1140,6 +1446,22 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
     return this._schema.internalValue;
   }
 
+  // sort_order - computed: false, optional: true, required: false
+  private _sortOrder = new BiglakeIcebergTableSortOrderOutputReference(this, "sort_order");
+  public get sortOrder() {
+    return this._sortOrder;
+  }
+  public putSortOrder(value: BiglakeIcebergTableSortOrder) {
+    this._sortOrder.internalValue = value;
+  }
+  public resetSortOrder() {
+    this._sortOrder.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortOrderInput() {
+    return this._sortOrder.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new BiglakeIcebergTableTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1172,6 +1494,7 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
       properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
       partition_spec: biglakeIcebergTablePartitionSpecToTerraform(this._partitionSpec.internalValue),
       schema: biglakeIcebergTableSchemaToTerraform(this._schema.internalValue),
+      sort_order: biglakeIcebergTableSortOrderToTerraform(this._sortOrder.internalValue),
       timeouts: biglakeIcebergTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1237,6 +1560,12 @@ export class BiglakeIcebergTable extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BiglakeIcebergTableSchemaList",
+      },
+      sort_order: {
+        value: biglakeIcebergTableSortOrderToHclTerraform(this._sortOrder.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BiglakeIcebergTableSortOrderList",
       },
       timeouts: {
         value: biglakeIcebergTableTimeoutsToHclTerraform(this._timeouts.internalValue),

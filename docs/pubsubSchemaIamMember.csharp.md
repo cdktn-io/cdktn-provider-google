@@ -4,7 +4,7 @@
 
 ### PubsubSchemaIamMember <a name="PubsubSchemaIamMember" id="@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the PubsubSchemaIamMember to i
 
 The id of the existing PubsubSchemaIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new PubsubSchemaIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}.
 
 ---
 
@@ -956,12 +956,12 @@ new PubsubSchemaIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#member PubsubSchemaIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#role PubsubSchemaIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#schema PubsubSchemaIamMember#schema}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#member PubsubSchemaIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#role PubsubSchemaIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.schema">Schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#schema PubsubSchemaIamMember#schema}. |
 | <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberCondition">PubsubSchemaIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#id PubsubSchemaIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#project PubsubSchemaIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#id PubsubSchemaIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchemaIamMember.PubsubSchemaIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#project PubsubSchemaIamMember#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#member PubsubSchemaIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#member PubsubSchemaIamMember#member}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#role PubsubSchemaIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#role PubsubSchemaIamMember#role}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Schema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#schema PubsubSchemaIamMember#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#schema PubsubSchemaIamMember#schema}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public PubsubSchemaIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#condition PubsubSchemaIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#condition PubsubSchemaIamMember#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#id PubsubSchemaIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#id PubsubSchemaIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_schema_iam_member#project PubsubSchemaIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_schema_iam_member#project PubsubSchemaIamMember#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleOrganizations <a name="DataGoogleOrganizations" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations google_organizations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations google_organizations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleOrganizations to
 
 The id of the existing DataGoogleOrganizations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,8 +660,8 @@ new DataGoogleOrganizationsConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.filter">Filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.filter">Filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}. |
 
 ---
 
@@ -743,7 +743,7 @@ public string Filter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}.
 
 ---
 
@@ -755,7 +755,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

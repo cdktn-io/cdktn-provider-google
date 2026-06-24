@@ -4,7 +4,7 @@
 
 ### IapWebForwardingRuleServiceIamMember <a name="IapWebForwardingRuleServiceIamMember" id="@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member google_iap_web_forwarding_rule_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member google_iap_web_forwarding_rule_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer"></a>
 
@@ -41,12 +41,12 @@ iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember(
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.forwardingRuleServiceName">forwarding_rule_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.forwardingRuleServiceName">forwarding_rule_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition">IapWebForwardingRuleServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#condition IapWebForwardingRuleServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#condition IapWebForwardingRuleServiceIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}.
 
 ---
 
@@ -560,7 +560,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}.
 
 ---
 
@@ -568,7 +568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}.
 
 ---
 
@@ -576,7 +576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}.
 
 ---
 
@@ -712,7 +712,7 @@ The construct id used in the generated config for the IapWebForwardingRuleServic
 
 The id of the existing IapWebForwardingRuleServiceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,9 +1068,9 @@ iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConditi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#expression IapWebForwardingRuleServiceIamMember#expression}.
 
 ---
 
@@ -1094,7 +1094,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#title IapWebForwardingRuleServiceIamMember#title}.
 
 ---
 
@@ -1106,7 +1106,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#description IapWebForwardingRuleServiceIamMember#description}.
 
 ---
 
@@ -1145,12 +1145,12 @@ iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig(
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.forwardingRuleServiceName">forwarding_rule_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.forwardingRuleServiceName">forwarding_rule_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition">IapWebForwardingRuleServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ forwarding_rule_service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#forwarding_rule_service_name IapWebForwardingRuleServiceIamMember#forwarding_rule_service_name}.
 
 ---
 
@@ -1244,7 +1244,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#member IapWebForwardingRuleServiceIamMember#member}.
 
 ---
 
@@ -1256,7 +1256,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#role IapWebForwardingRuleServiceIamMember#role}.
 
 ---
 
@@ -1270,7 +1270,7 @@ condition: IapWebForwardingRuleServiceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#condition IapWebForwardingRuleServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#condition IapWebForwardingRuleServiceIamMember#condition}
 
 ---
 
@@ -1282,7 +1282,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#id IapWebForwardingRuleServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1297,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iap_web_forwarding_rule_service_iam_member#project IapWebForwardingRuleServiceIamMember#project}.
 
 ---
 

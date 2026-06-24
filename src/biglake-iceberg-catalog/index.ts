@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * The catalog type of the IcebergCatalog. Currently only supports the type for Google Cloud Storage Buckets. Possible values: ["CATALOG_TYPE_GCS_BUCKET"]
+  * The catalog type of the IcebergCatalog. Possible values: ["CATALOG_TYPE_GCS_BUCKET", "CATALOG_TYPE_BIGLAKE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#catalog_type BiglakeIcebergCatalog#catalog_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#catalog_type BiglakeIcebergCatalog#catalog_type}
   */
   readonly catalogType: string;
   /**
   * The credential mode used for the catalog. CREDENTIAL_MODE_END_USER - End user credentials, default. The authenticating user must have access to the catalog resources and the corresponding Google Cloud Storage files. CREDENTIAL_MODE_VENDED_CREDENTIALS - Use credential vending. The authenticating user must have access to the catalog resources and the system will provide the caller with downscoped credentials to access the Google Cloud Storage files. All table operations in this mode would require 'X-Iceberg-Access-Delegation' header with 'vended-credentials' value included. System will generate a service account and the catalog administrator must grant the service account appropriate permissions. Possible values: ["CREDENTIAL_MODE_END_USER", "CREDENTIAL_MODE_VENDED_CREDENTIALS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#credential_mode BiglakeIcebergCatalog#credential_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#credential_mode BiglakeIcebergCatalog#credential_mode}
   */
   readonly credentialMode?: string;
+  /**
+  * The default storage location for the catalog, e.g., 'gs://my-bucket'.
+  * Output only when the catalog type is CATALOG_TYPE_GCS_BUCKET.
+  * Required when the catalog type is CATALOG_TYPE_BIGLAKE.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#default_location BiglakeIcebergCatalog#default_location}
+  */
+  readonly defaultLocation?: string;
   /**
   * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
   * When a 'terraform destroy' or 'terraform apply' would delete the instance,
@@ -33,11 +41,11 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#deletion_policy BiglakeIcebergCatalog#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#deletion_policy BiglakeIcebergCatalog#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#id BiglakeIcebergCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#id BiglakeIcebergCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,7 +57,7 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * exact same value of the GCS bucket's name. For example, for a bucket:
   * gs://bucket-name, the catalog name will be exactly "bucket-name".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#name BiglakeIcebergCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#name BiglakeIcebergCatalog#name}
   */
   readonly name: string;
   /**
@@ -57,17 +65,23 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * a BigLake-supported location, and it should be proximate to the remote
   * catalog's location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#primary_location BiglakeIcebergCatalog#primary_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#primary_location BiglakeIcebergCatalog#primary_location}
   */
   readonly primaryLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#project BiglakeIcebergCatalog#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#project BiglakeIcebergCatalog#project}
   */
   readonly project?: string;
   /**
+  * restricted_locations_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#restricted_locations_config BiglakeIcebergCatalog#restricted_locations_config}
+  */
+  readonly restrictedLocationsConfig?: BiglakeIcebergCatalogRestrictedLocationsConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#timeouts BiglakeIcebergCatalog#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#timeouts BiglakeIcebergCatalog#timeouts}
   */
   readonly timeouts?: BiglakeIcebergCatalogTimeouts;
 }
@@ -151,17 +165,105 @@ export class BiglakeIcebergCatalogReplicasList extends cdktn.ComplexList {
     return new BiglakeIcebergCatalogReplicasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BiglakeIcebergCatalogRestrictedLocationsConfig {
+  /**
+  * A list of GCS locations (e.g., 'gs://my-other-bucket/...') that are
+  * permitted for use by resources within this catalog. Each entry can be
+  * either a GCS bucket or a path within it.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#restricted_locations BiglakeIcebergCatalog#restricted_locations}
+  */
+  readonly restrictedLocations?: string[];
+}
+
+export function biglakeIcebergCatalogRestrictedLocationsConfigToTerraform(struct?: BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference | BiglakeIcebergCatalogRestrictedLocationsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    restricted_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.restrictedLocations),
+  }
+}
+
+
+export function biglakeIcebergCatalogRestrictedLocationsConfigToHclTerraform(struct?: BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference | BiglakeIcebergCatalogRestrictedLocationsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    restricted_locations: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.restrictedLocations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BiglakeIcebergCatalogRestrictedLocationsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._restrictedLocations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restrictedLocations = this._restrictedLocations;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BiglakeIcebergCatalogRestrictedLocationsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._restrictedLocations = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._restrictedLocations = value.restrictedLocations;
+    }
+  }
+
+  // restricted_locations - computed: false, optional: true, required: false
+  private _restrictedLocations?: string[]; 
+  public get restrictedLocations() {
+    return this.getListAttribute('restricted_locations');
+  }
+  public set restrictedLocations(value: string[]) {
+    this._restrictedLocations = value;
+  }
+  public resetRestrictedLocations() {
+    this._restrictedLocations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedLocationsInput() {
+    return this._restrictedLocations;
+  }
+}
 export interface BiglakeIcebergCatalogTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#create BiglakeIcebergCatalog#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#create BiglakeIcebergCatalog#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#delete BiglakeIcebergCatalog#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#delete BiglakeIcebergCatalog#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#update BiglakeIcebergCatalog#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#update BiglakeIcebergCatalog#update}
   */
   readonly update?: string;
 }
@@ -313,7 +415,7 @@ export class BiglakeIcebergCatalogTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog}
 */
 export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
 
@@ -329,7 +431,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeIcebergCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeIcebergCatalog to import
-  * @param importFromId The id of the existing BiglakeIcebergCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeIcebergCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeIcebergCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -341,7 +443,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -352,7 +454,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_iceberg_catalog',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -365,11 +467,13 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
     });
     this._catalogType = config.catalogType;
     this._credentialMode = config.credentialMode;
+    this._defaultLocation = config.defaultLocation;
     this._deletionPolicy = config.deletionPolicy;
     this._id = config.id;
     this._name = config.name;
     this._primaryLocation = config.primaryLocation;
     this._project = config.project;
+    this._restrictedLocationsConfig.internalValue = config.restrictedLocationsConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -416,9 +520,20 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
     return this._credentialMode;
   }
 
-  // default_location - computed: true, optional: false, required: false
+  // default_location - computed: true, optional: true, required: false
+  private _defaultLocation?: string; 
   public get defaultLocation() {
     return this.getStringAttribute('default_location');
+  }
+  public set defaultLocation(value: string) {
+    this._defaultLocation = value;
+  }
+  public resetDefaultLocation() {
+    this._defaultLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultLocationInput() {
+    return this._defaultLocation;
   }
 
   // deletion_policy - computed: true, optional: true, required: false
@@ -514,6 +629,22 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // restricted_locations_config - computed: false, optional: true, required: false
+  private _restrictedLocationsConfig = new BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference(this, "restricted_locations_config");
+  public get restrictedLocationsConfig() {
+    return this._restrictedLocationsConfig;
+  }
+  public putRestrictedLocationsConfig(value: BiglakeIcebergCatalogRestrictedLocationsConfig) {
+    this._restrictedLocationsConfig.internalValue = value;
+  }
+  public resetRestrictedLocationsConfig() {
+    this._restrictedLocationsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedLocationsConfigInput() {
+    return this._restrictedLocationsConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new BiglakeIcebergCatalogTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -538,11 +669,13 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
     return {
       catalog_type: cdktn.stringToTerraform(this._catalogType),
       credential_mode: cdktn.stringToTerraform(this._credentialMode),
+      default_location: cdktn.stringToTerraform(this._defaultLocation),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       primary_location: cdktn.stringToTerraform(this._primaryLocation),
       project: cdktn.stringToTerraform(this._project),
+      restricted_locations_config: biglakeIcebergCatalogRestrictedLocationsConfigToTerraform(this._restrictedLocationsConfig.internalValue),
       timeouts: biglakeIcebergCatalogTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -557,6 +690,12 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
       },
       credential_mode: {
         value: cdktn.stringToHclTerraform(this._credentialMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_location: {
+        value: cdktn.stringToHclTerraform(this._defaultLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -590,6 +729,12 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      restricted_locations_config: {
+        value: biglakeIcebergCatalogRestrictedLocationsConfigToHclTerraform(this._restrictedLocationsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BiglakeIcebergCatalogRestrictedLocationsConfigList",
       },
       timeouts: {
         value: biglakeIcebergCatalogTimeoutsToHclTerraform(this._timeouts.internalValue),

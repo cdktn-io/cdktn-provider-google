@@ -4,7 +4,7 @@
 
 ### ServiceAccountIamPolicy <a name="ServiceAccountIamPolicy" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy google_service_account_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy google_service_account_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServiceAccountIamPolicy to
 
 The id of the existing ServiceAccountIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,9 +789,9 @@ const serviceAccountIamPolicyConfig: serviceAccountIamPolicy.ServiceAccountIamPo
 | <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#policy_data ServiceAccountIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#service_account_id ServiceAccountIamPolicy#service_account_id}. |
-| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#id ServiceAccountIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#policy_data ServiceAccountIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#service_account_id ServiceAccountIamPolicy#service_account_id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#id ServiceAccountIamPolicy#id}. |
 
 ---
 
@@ -873,7 +873,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#policy_data ServiceAccountIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#policy_data ServiceAccountIamPolicy#policy_data}.
 
 ---
 
@@ -885,7 +885,7 @@ public readonly serviceAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#service_account_id ServiceAccountIamPolicy#service_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#service_account_id ServiceAccountIamPolicy#service_account_id}.
 
 ---
 
@@ -897,7 +897,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/service_account_iam_policy#id ServiceAccountIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_account_iam_policy#id ServiceAccountIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

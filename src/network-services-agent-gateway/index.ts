@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkServicesAgentGatewayConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#deletion_policy NetworkServicesAgentGateway#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#deletion_policy NetworkServicesAgentGateway#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#description NetworkServicesAgentGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#description NetworkServicesAgentGateway#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,29 +44,29 @@ export interface NetworkServicesAgentGatewayConfig extends cdktn.TerraformMetaAr
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#labels NetworkServicesAgentGateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#labels NetworkServicesAgentGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the agent gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#location NetworkServicesAgentGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#location NetworkServicesAgentGateway#location}
   */
   readonly location: string;
   /**
   * Name of the AgentGateway resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#name NetworkServicesAgentGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#name NetworkServicesAgentGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}
   */
   readonly project?: string;
   /**
   * List of protocols supported by an Agent Gateway. Possible values: ["MCP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#protocols NetworkServicesAgentGateway#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#protocols NetworkServicesAgentGateway#protocols}
   */
   readonly protocols?: string[];
   /**
@@ -74,31 +74,31 @@ export interface NetworkServicesAgentGatewayConfig extends cdktn.TerraformMetaAr
   * Note: Currently limited to project-scoped registries Must be of format
   * '//agentregistry.googleapis.com/{version}/projects/{{project}}/locations/{{location}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#registries NetworkServicesAgentGateway#registries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#registries NetworkServicesAgentGateway#registries}
   */
   readonly registries?: string[];
   /**
   * google_managed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#google_managed NetworkServicesAgentGateway#google_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#google_managed NetworkServicesAgentGateway#google_managed}
   */
   readonly googleManaged?: NetworkServicesAgentGatewayGoogleManaged;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#network_config NetworkServicesAgentGateway#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#network_config NetworkServicesAgentGateway#network_config}
   */
   readonly networkConfig?: NetworkServicesAgentGatewayNetworkConfig;
   /**
   * self_managed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#self_managed NetworkServicesAgentGateway#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#self_managed NetworkServicesAgentGateway#self_managed}
   */
   readonly selfManaged?: NetworkServicesAgentGatewaySelfManaged;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#timeouts NetworkServicesAgentGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#timeouts NetworkServicesAgentGateway#timeouts}
   */
   readonly timeouts?: NetworkServicesAgentGatewayTimeouts;
 }
@@ -191,7 +191,7 @@ export interface NetworkServicesAgentGatewayGoogleManaged {
   /**
   * Operating Mode of Agent Gateway. Possible values: ["AGENT_TO_ANYWHERE", "CLIENT_TO_AGENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#governed_access_path NetworkServicesAgentGateway#governed_access_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#governed_access_path NetworkServicesAgentGateway#governed_access_path}
   */
   readonly governedAccessPath: string;
 }
@@ -270,11 +270,162 @@ export class NetworkServicesAgentGatewayGoogleManagedOutputReference extends cdk
     return this._governedAccessPath;
   }
 }
+export interface NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig {
+  /**
+  * The list of domain names to peer for DNS resolution. Each entry
+  * must be a fully qualified domain name ending with a dot
+  * (for example, 'example.com.').
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#domains NetworkServicesAgentGateway#domains}
+  */
+  readonly domains: string[];
+  /**
+  * The URI of the target VPC network for DNS peering. Must be of the
+  * form 'projects/{project}/global/networks/{network}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#target_network NetworkServicesAgentGateway#target_network}
+  */
+  readonly targetNetwork: string;
+  /**
+  * The ID of the project that hosts the target VPC network for DNS
+  * peering.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#target_project NetworkServicesAgentGateway#target_project}
+  */
+  readonly targetProject: string;
+}
+
+export function networkServicesAgentGatewayNetworkConfigDnsPeeringConfigToTerraform(struct?: NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfigOutputReference | NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
+    target_network: cdktn.stringToTerraform(struct!.targetNetwork),
+    target_project: cdktn.stringToTerraform(struct!.targetProject),
+  }
+}
+
+
+export function networkServicesAgentGatewayNetworkConfigDnsPeeringConfigToHclTerraform(struct?: NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfigOutputReference | NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    domains: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target_network: {
+      value: cdktn.stringToHclTerraform(struct!.targetNetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_project: {
+      value: cdktn.stringToHclTerraform(struct!.targetProject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domains !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domains = this._domains;
+    }
+    if (this._targetNetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetNetwork = this._targetNetwork;
+    }
+    if (this._targetProject !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetProject = this._targetProject;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domains = undefined;
+      this._targetNetwork = undefined;
+      this._targetProject = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domains = value.domains;
+      this._targetNetwork = value.targetNetwork;
+      this._targetProject = value.targetProject;
+    }
+  }
+
+  // domains - computed: false, optional: false, required: true
+  private _domains?: string[]; 
+  public get domains() {
+    return this.getListAttribute('domains');
+  }
+  public set domains(value: string[]) {
+    this._domains = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainsInput() {
+    return this._domains;
+  }
+
+  // target_network - computed: false, optional: false, required: true
+  private _targetNetwork?: string; 
+  public get targetNetwork() {
+    return this.getStringAttribute('target_network');
+  }
+  public set targetNetwork(value: string) {
+    this._targetNetwork = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetNetworkInput() {
+    return this._targetNetwork;
+  }
+
+  // target_project - computed: false, optional: false, required: true
+  private _targetProject?: string; 
+  public get targetProject() {
+    return this.getStringAttribute('target_project');
+  }
+  public set targetProject(value: string) {
+    this._targetProject = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetProjectInput() {
+    return this._targetProject;
+  }
+}
 export interface NetworkServicesAgentGatewayNetworkConfigEgress {
   /**
   * The URI of the Network Attachment resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#network_attachment NetworkServicesAgentGateway#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#network_attachment NetworkServicesAgentGateway#network_attachment}
   */
   readonly networkAttachment: string;
 }
@@ -355,9 +506,15 @@ export class NetworkServicesAgentGatewayNetworkConfigEgressOutputReference exten
 }
 export interface NetworkServicesAgentGatewayNetworkConfig {
   /**
+  * dns_peering_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#dns_peering_config NetworkServicesAgentGateway#dns_peering_config}
+  */
+  readonly dnsPeeringConfig?: NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig;
+  /**
   * egress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#egress NetworkServicesAgentGateway#egress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#egress NetworkServicesAgentGateway#egress}
   */
   readonly egress: NetworkServicesAgentGatewayNetworkConfigEgress;
 }
@@ -368,6 +525,7 @@ export function networkServicesAgentGatewayNetworkConfigToTerraform(struct?: Net
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    dns_peering_config: networkServicesAgentGatewayNetworkConfigDnsPeeringConfigToTerraform(struct!.dnsPeeringConfig),
     egress: networkServicesAgentGatewayNetworkConfigEgressToTerraform(struct!.egress),
   }
 }
@@ -379,6 +537,12 @@ export function networkServicesAgentGatewayNetworkConfigToHclTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    dns_peering_config: {
+      value: networkServicesAgentGatewayNetworkConfigDnsPeeringConfigToHclTerraform(struct!.dnsPeeringConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfigList",
+    },
     egress: {
       value: networkServicesAgentGatewayNetworkConfigEgressToHclTerraform(struct!.egress),
       isBlock: true,
@@ -405,6 +569,10 @@ export class NetworkServicesAgentGatewayNetworkConfigOutputReference extends cdk
   public get internalValue(): NetworkServicesAgentGatewayNetworkConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._dnsPeeringConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dnsPeeringConfig = this._dnsPeeringConfig?.internalValue;
+    }
     if (this._egress?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.egress = this._egress?.internalValue;
@@ -415,12 +583,30 @@ export class NetworkServicesAgentGatewayNetworkConfigOutputReference extends cdk
   public set internalValue(value: NetworkServicesAgentGatewayNetworkConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._dnsPeeringConfig.internalValue = undefined;
       this._egress.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._dnsPeeringConfig.internalValue = value.dnsPeeringConfig;
       this._egress.internalValue = value.egress;
     }
+  }
+
+  // dns_peering_config - computed: false, optional: true, required: false
+  private _dnsPeeringConfig = new NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfigOutputReference(this, "dns_peering_config");
+  public get dnsPeeringConfig() {
+    return this._dnsPeeringConfig;
+  }
+  public putDnsPeeringConfig(value: NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig) {
+    this._dnsPeeringConfig.internalValue = value;
+  }
+  public resetDnsPeeringConfig() {
+    this._dnsPeeringConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsPeeringConfigInput() {
+    return this._dnsPeeringConfig.internalValue;
   }
 
   // egress - computed: false, optional: false, required: true
@@ -440,7 +626,7 @@ export interface NetworkServicesAgentGatewaySelfManaged {
   /**
   * A supported Google Cloud networking proxy in the Project and Location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#resource_uri NetworkServicesAgentGateway#resource_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#resource_uri NetworkServicesAgentGateway#resource_uri}
   */
   readonly resourceUri: string;
 }
@@ -521,15 +707,15 @@ export class NetworkServicesAgentGatewaySelfManagedOutputReference extends cdktn
 }
 export interface NetworkServicesAgentGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}
   */
   readonly update?: string;
 }
@@ -681,7 +867,7 @@ export class NetworkServicesAgentGatewayTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway google_network_services_agent_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway google_network_services_agent_gateway}
 */
 export class NetworkServicesAgentGateway extends cdktn.TerraformResource {
 
@@ -697,7 +883,7 @@ export class NetworkServicesAgentGateway extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesAgentGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesAgentGateway to import
-  * @param importFromId The id of the existing NetworkServicesAgentGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesAgentGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesAgentGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -709,7 +895,7 @@ export class NetworkServicesAgentGateway extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_services_agent_gateway google_network_services_agent_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_agent_gateway google_network_services_agent_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -720,7 +906,7 @@ export class NetworkServicesAgentGateway extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_agent_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

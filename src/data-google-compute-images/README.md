@@ -1,3 +1,3 @@
 # `data_google_compute_images`
 
-Refer to the Terraform Registry for docs: [`data_google_compute_images`](https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/compute_images).
+Refer to the Terraform Registry for docs: [`data_google_compute_images`](https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_images).

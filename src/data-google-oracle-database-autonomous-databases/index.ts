@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleOracleDatabaseAutonomousDatabasesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases#id DataGoogleOracleDatabaseAutonomousDatabases#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases#id DataGoogleOracleDatabaseAutonomousDatabases#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleOracleDatabaseAutonomousDatabasesConfig extends cdktn
   /**
   * location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases#location DataGoogleOracleDatabaseAutonomousDatabases#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases#location DataGoogleOracleDatabaseAutonomousDatabases#location}
   */
   readonly location: string;
   /**
   * The ID of the project in which the dataset is located. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases#project DataGoogleOracleDatabaseAutonomousDatabases#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases#project DataGoogleOracleDatabaseAutonomousDatabases#project}
   */
   readonly project?: string;
 }
@@ -1589,7 +1589,7 @@ export class DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases google_oracle_database_autonomous_databases}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases google_oracle_database_autonomous_databases}
 */
 export class DataGoogleOracleDatabaseAutonomousDatabases extends cdktn.TerraformDataSource {
 
@@ -1605,7 +1605,7 @@ export class DataGoogleOracleDatabaseAutonomousDatabases extends cdktn.Terraform
   * Generates CDKTN code for importing a DataGoogleOracleDatabaseAutonomousDatabases resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOracleDatabaseAutonomousDatabases to import
-  * @param importFromId The id of the existing DataGoogleOracleDatabaseAutonomousDatabases that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleOracleDatabaseAutonomousDatabases that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOracleDatabaseAutonomousDatabases to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1617,7 +1617,7 @@ export class DataGoogleOracleDatabaseAutonomousDatabases extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/oracle_database_autonomous_databases google_oracle_database_autonomous_databases} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/oracle_database_autonomous_databases google_oracle_database_autonomous_databases} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1628,7 +1628,7 @@ export class DataGoogleOracleDatabaseAutonomousDatabases extends cdktn.Terraform
       terraformResourceType: 'google_oracle_database_autonomous_databases',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

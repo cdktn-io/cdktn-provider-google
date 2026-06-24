@@ -4,7 +4,7 @@
 
 ### KmsCryptoKey <a name="KmsCryptoKey" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer"></a>
 
@@ -53,7 +53,7 @@ kmsCryptoKey.KmsCryptoKey(
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.cryptoKeyBackend">crypto_key_backend</a></code> | <code>str</code> | The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.destroyScheduledDuration">destroy_scheduled_duration</a></code> | <code>str</code> | The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.importOnly">import_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this key may contain imported versions only. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels with user-defined metadata to apply to this resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.purpose">purpose</a></code> | <code>str</code> | The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT". |
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name for the CryptoKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
 
 ---
 
@@ -152,7 +152,7 @@ The resource name of the backend environment associated with all CryptoKeyVersio
 
 The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -171,7 +171,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
 
 ---
 
@@ -183,7 +183,7 @@ The period of time that versions of this key spend in the DESTROY_SCHEDULED stat
 
 If not specified at creation time, the default duration is 30 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -204,7 +204,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether this key may contain imported versions only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
 
 ---
 
@@ -217,7 +217,7 @@ Labels with user-defined metadata to apply to this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
 
 ---
 
@@ -241,7 +241,7 @@ The first rotation will take place after the specified period. The rotation peri
 the format of a decimal number with up to 9 fractional digits, followed by the
 letter 's' (seconds). It must be greater than a day (ie, 86400).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
 
 ---
 
@@ -255,7 +255,7 @@ You must use the 'google_kms_crypto_key_version' resource to create a new Crypto
 or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
 This field is only applicable during initial CryptoKey creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 version_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
 
 ---
 
@@ -685,7 +685,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
 
 ---
 
@@ -693,7 +693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
 
 ---
 
@@ -701,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
 
 ---
 
@@ -720,7 +720,7 @@ def put_version_template(
 
 The algorithm to use when creating a version based on this template. See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
 
 ---
 
@@ -732,7 +732,7 @@ The protection level to use when creating a version based on this template.
 
 Possible values include "SOFTWARE", "HSM", "EXTERNAL", "EXTERNAL_VPC". Defaults to "SOFTWARE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
 
 ---
 
@@ -916,7 +916,7 @@ The construct id used in the generated config for the KmsCryptoKey to import.
 
 The id of the existing KmsCryptoKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1477,7 +1477,7 @@ kmsCryptoKey.KmsCryptoKeyConfig(
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.cryptoKeyBackend">crypto_key_backend</a></code> | <code>str</code> | The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.destroyScheduledDuration">destroy_scheduled_duration</a></code> | <code>str</code> | The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.importOnly">import_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this key may contain imported versions only. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels with user-defined metadata to apply to this resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.purpose">purpose</a></code> | <code>str</code> | The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT". |
@@ -1568,7 +1568,7 @@ key_ring: str
 
 The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
 
 ---
 
@@ -1582,7 +1582,7 @@ name: str
 
 The resource name for the CryptoKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
 
 ---
 
@@ -1598,7 +1598,7 @@ The resource name of the backend environment associated with all CryptoKeyVersio
 
 The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1621,7 +1621,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
 
 ---
 
@@ -1637,7 +1637,7 @@ The period of time that versions of this key spend in the DESTROY_SCHEDULED stat
 
 If not specified at creation time, the default duration is 30 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
 
 ---
 
@@ -1649,7 +1649,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1666,7 +1666,7 @@ import_only: bool | IResolvable
 
 Whether this key may contain imported versions only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
 
 ---
 
@@ -1683,7 +1683,7 @@ Labels with user-defined metadata to apply to this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
 
 ---
 
@@ -1697,7 +1697,7 @@ purpose: str
 
 The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
 
 ---
 
@@ -1715,7 +1715,7 @@ The first rotation will take place after the specified period. The rotation peri
 the format of a decimal number with up to 9 fractional digits, followed by the
 letter 's' (seconds). It must be greater than a day (ie, 86400).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
 
 ---
 
@@ -1733,7 +1733,7 @@ You must use the 'google_kms_crypto_key_version' resource to create a new Crypto
 or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
 This field is only applicable during initial CryptoKey creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
 
 ---
 
@@ -1747,7 +1747,7 @@ timeouts: KmsCryptoKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
 
 ---
 
@@ -1761,7 +1761,7 @@ version_template: KmsCryptoKeyVersionTemplate
 
 version_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
 
 ---
 
@@ -1794,9 +1794,9 @@ kmsCryptoKey.KmsCryptoKeyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}. |
 
 ---
 
@@ -1808,7 +1808,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
 
 ---
 
@@ -1820,7 +1820,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
 
 ---
 
@@ -1832,7 +1832,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
 
 ---
 
@@ -1868,7 +1868,7 @@ algorithm: str
 
 The algorithm to use when creating a version based on this template. See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
 
 ---
 
@@ -1884,7 +1884,7 @@ The protection level to use when creating a version based on this template.
 
 Possible values include "SOFTWARE", "HSM", "EXTERNAL", "EXTERNAL_VPC". Defaults to "SOFTWARE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
 
 ---
 

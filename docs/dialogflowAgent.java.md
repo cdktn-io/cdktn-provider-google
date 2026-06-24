@@ -4,7 +4,7 @@
 
 ### DialogflowAgent <a name="DialogflowAgent" id="@cdktn/provider-google.dialogflowAgent.DialogflowAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent google_dialogflow_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent google_dialogflow_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer"></a>
 
@@ -57,9 +57,9 @@ DialogflowAgent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.enableLogging">enableLogging</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.matchMode">matchMode</a></code> | <code>java.lang.String</code> | Determines how intents are detected from user queries. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.supportedLanguageCodes">supportedLanguageCodes</a></code> | <code>java.util.List<java.lang.String></code> | The list of all languages supported by this agent (except for the defaultLanguageCode). |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.tier">tier</a></code> | <code>java.lang.String</code> | The agent tier. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgent.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts">DialogflowAgentTimeouts</a></code> | timeouts block. |
@@ -135,7 +135,7 @@ The default language of the agent as a language tag.
 [See Language Support](https://cloud.google.com/dialogflow/docs/reference/language)
 for a list of the currently supported language codes. This field cannot be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of this agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
 
 ---
 
@@ -173,7 +173,7 @@ the specified API version.
 * API_VERSION_V2: V2 API.
 * API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
 
 ---
 
@@ -187,7 +187,7 @@ When an image URL is entered
 into this field, the Dialogflow will save the image in the backend. The address of the backend image returned
 from the API will be shown in the [avatarUriBackend] field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
 
 ---
 
@@ -202,7 +202,7 @@ value, then a fallback intent will be triggered or, if there are no fallback int
 triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the
 default of 0.3 is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
 
 ---
 
@@ -219,7 +219,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#deletion_policy DialogflowAgent#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#deletion_policy DialogflowAgent#deletion_policy}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Determines whether this agent should log conversation queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -271,7 +271,7 @@ Determines how intents are detected from user queries.
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of all languages supported by this agent (except for the defaultLanguageCode).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
 
 ---
 
@@ -299,7 +299,7 @@ If not specified, TIER_STANDARD is assumed.
   NOTE: Due to consistency issues, the provider will not read this field from the API. Drift is possible between
   the Terraform state and Dialogflow if the agent tier is changed outside of Terraform. Possible values: ["TIER_STANDARD", "TIER_ENTERPRISE", "TIER_ENTERPRISE_PLUS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
 
 ---
 
@@ -855,7 +855,7 @@ The construct id used in the generated config for the DialogflowAgent to import.
 
 The id of the existing DialogflowAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1444,9 +1444,9 @@ DialogflowAgentConfig.builder()
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.enableLogging">enableLogging</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.matchMode">matchMode</a></code> | <code>java.lang.String</code> | Determines how intents are detected from user queries. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.supportedLanguageCodes">supportedLanguageCodes</a></code> | <code>java.util.List<java.lang.String></code> | The list of all languages supported by this agent (except for the defaultLanguageCode). |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.tier">tier</a></code> | <code>java.lang.String</code> | The agent tier. |
 | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts">DialogflowAgentTimeouts</a></code> | timeouts block. |
@@ -1536,7 +1536,7 @@ The default language of the agent as a language tag.
 [See Language Support](https://cloud.google.com/dialogflow/docs/reference/language)
 for a list of the currently supported language codes. This field cannot be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
 
 ---
 
@@ -1550,7 +1550,7 @@ public java.lang.String getDisplayName();
 
 The name of this agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
 
 ---
 
@@ -1564,7 +1564,7 @@ public java.lang.String getTimeZone();
 
 The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
 
 ---
 
@@ -1586,7 +1586,7 @@ the specified API version.
 * API_VERSION_V2: V2 API.
 * API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
 
 ---
 
@@ -1604,7 +1604,7 @@ When an image URL is entered
 into this field, the Dialogflow will save the image in the backend. The address of the backend image returned
 from the API will be shown in the [avatarUriBackend] field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
 
 ---
 
@@ -1623,7 +1623,7 @@ value, then a fallback intent will be triggered or, if there are no fallback int
 triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the
 default of 0.3 is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
 
 ---
 
@@ -1644,7 +1644,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#deletion_policy DialogflowAgent#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#deletion_policy DialogflowAgent#deletion_policy}
 
 ---
 
@@ -1658,7 +1658,7 @@ public java.lang.String getDescription();
 
 The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
 
 ---
 
@@ -1672,7 +1672,7 @@ public java.lang.Boolean|IResolvable getEnableLogging();
 
 Determines whether this agent should log conversation queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
 
 ---
 
@@ -1684,7 +1684,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1716,7 +1716,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
 
 ---
 
@@ -1730,7 +1730,7 @@ public java.util.List<java.lang.String> getSupportedLanguageCodes();
 
 The list of all languages supported by this agent (except for the defaultLanguageCode).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
 
 ---
 
@@ -1752,7 +1752,7 @@ If not specified, TIER_STANDARD is assumed.
   NOTE: Due to consistency issues, the provider will not read this field from the API. Drift is possible between
   the Terraform state and Dialogflow if the agent tier is changed outside of Terraform. Possible values: ["TIER_STANDARD", "TIER_ENTERPRISE", "TIER_ENTERPRISE_PLUS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
 
 ---
 
@@ -1766,7 +1766,7 @@ public DialogflowAgentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
 
 ---
 
@@ -1788,9 +1788,9 @@ DialogflowAgentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#create DialogflowAgent#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#delete DialogflowAgent#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#update DialogflowAgent#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#create DialogflowAgent#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#delete DialogflowAgent#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowAgent.DialogflowAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#update DialogflowAgent#update}. |
 
 ---
 
@@ -1802,7 +1802,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#create DialogflowAgent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#create DialogflowAgent#create}.
 
 ---
 
@@ -1814,7 +1814,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#delete DialogflowAgent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#delete DialogflowAgent#delete}.
 
 ---
 
@@ -1826,7 +1826,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/dialogflow_agent#update DialogflowAgent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/dialogflow_agent#update DialogflowAgent#update}.
 
 ---
 

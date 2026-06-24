@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface PubsubTopicConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#deletion_policy PubsubTopic#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#deletion_policy PubsubTopic#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#id PubsubTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#id PubsubTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,7 +38,7 @@ export interface PubsubTopicConfig extends cdktn.TerraformMetaArguments {
   * 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
   * The expected format is 'projects/* /locations/* /keyRings/* /cryptoKeys/*'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#kms_key_name PubsubTopic#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#kms_key_name PubsubTopic#kms_key_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -50,7 +50,7 @@ export interface PubsubTopicConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#labels PubsubTopic#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#labels PubsubTopic#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -63,17 +63,17 @@ export interface PubsubTopicConfig extends cdktn.TerraformMetaArguments {
   * The rotation period has the format of a decimal number, followed by the
   * letter 's' (seconds). Cannot be more than 31 days or less than 10 minutes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#message_retention_duration PubsubTopic#message_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#message_retention_duration PubsubTopic#message_retention_duration}
   */
   readonly messageRetentionDuration?: string;
   /**
   * Name of the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#name PubsubTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#name PubsubTopic#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#project PubsubTopic#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#project PubsubTopic#project}
   */
   readonly project?: string;
   /**
@@ -86,37 +86,37 @@ export interface PubsubTopicConfig extends cdktn.TerraformMetaArguments {
   * apply tags to an existing resource, see the 'google_tags_tag_value'
   * resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#tags PubsubTopic#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#tags PubsubTopic#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * ingestion_data_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#ingestion_data_source_settings PubsubTopic#ingestion_data_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#ingestion_data_source_settings PubsubTopic#ingestion_data_source_settings}
   */
   readonly ingestionDataSourceSettings?: PubsubTopicIngestionDataSourceSettings;
   /**
   * message_storage_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#message_storage_policy PubsubTopic#message_storage_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#message_storage_policy PubsubTopic#message_storage_policy}
   */
   readonly messageStoragePolicy?: PubsubTopicMessageStoragePolicy;
   /**
   * message_transforms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#message_transforms PubsubTopic#message_transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#message_transforms PubsubTopic#message_transforms}
   */
   readonly messageTransforms?: PubsubTopicMessageTransforms[] | cdktn.IResolvable;
   /**
   * schema_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#schema_settings PubsubTopic#schema_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#schema_settings PubsubTopic#schema_settings}
   */
   readonly schemaSettings?: PubsubTopicSchemaSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#timeouts PubsubTopic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#timeouts PubsubTopic#timeouts}
   */
   readonly timeouts?: PubsubTopicTimeouts;
 }
@@ -126,7 +126,7 @@ export interface PubsubTopicIngestionDataSourceSettingsAwsKinesis {
   * Kinesis. Check the Pub/Sub docs for how to set up this role and the
   * required permissions that need to be attached to it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
   */
   readonly awsRoleArn: string;
   /**
@@ -134,7 +134,7 @@ export interface PubsubTopicIngestionDataSourceSettingsAwsKinesis {
   * Enhanced Fan-Out mode. The consumer must be already
   * created and ready to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#consumer_arn PubsubTopic#consumer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#consumer_arn PubsubTopic#consumer_arn}
   */
   readonly consumerArn: string;
   /**
@@ -143,13 +143,13 @@ export interface PubsubTopicIngestionDataSourceSettingsAwsKinesis {
   * role). The 'awsRoleArn' must be set up with 'accounts.google.com:sub'
   * equals to this service account number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
   */
   readonly gcpServiceAccount: string;
   /**
   * The Kinesis stream ARN to ingest data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#stream_arn PubsubTopic#stream_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#stream_arn PubsubTopic#stream_arn}
   */
   readonly streamArn: string;
 }
@@ -312,13 +312,13 @@ export interface PubsubTopicIngestionDataSourceSettingsAwsMsk {
   * MSK. Check the Pub/Sub docs for how to set up this role and the
   * required permissions that need to be attached to it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
   */
   readonly awsRoleArn: string;
   /**
   * ARN that uniquely identifies the MSK cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#cluster_arn PubsubTopic#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#cluster_arn PubsubTopic#cluster_arn}
   */
   readonly clusterArn: string;
   /**
@@ -327,13 +327,13 @@ export interface PubsubTopicIngestionDataSourceSettingsAwsMsk {
   * role). The 'awsRoleArn' must be set up with 'accounts.google.com:sub'
   * equals to this service account number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
   */
   readonly gcpServiceAccount: string;
   /**
   * The name of the MSK topic that Pub/Sub will import from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
   */
   readonly topic: string;
 }
@@ -494,13 +494,13 @@ export interface PubsubTopicIngestionDataSourceSettingsAzureEventHubs {
   /**
   * The Azure event hub client ID to use for ingestion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#client_id PubsubTopic#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#client_id PubsubTopic#client_id}
   */
   readonly clientId?: string;
   /**
   * The Azure event hub to ingest data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#event_hub PubsubTopic#event_hub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#event_hub PubsubTopic#event_hub}
   */
   readonly eventHub?: string;
   /**
@@ -508,31 +508,31 @@ export interface PubsubTopicIngestionDataSourceSettingsAzureEventHubs {
   * with Azure (via a 'AssumeRoleWithWebIdentity' call for the provided
   * role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
   */
   readonly gcpServiceAccount?: string;
   /**
   * The Azure event hub namespace to ingest data from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#namespace PubsubTopic#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#namespace PubsubTopic#namespace}
   */
   readonly namespace?: string;
   /**
   * The name of the resource group within an Azure subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#resource_group PubsubTopic#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#resource_group PubsubTopic#resource_group}
   */
   readonly resourceGroup?: string;
   /**
   * The Azure event hub subscription ID to use for ingestion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#subscription_id PubsubTopic#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#subscription_id PubsubTopic#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The Azure event hub tenant ID to use for ingestion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#tenant_id PubsubTopic#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#tenant_id PubsubTopic#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -892,7 +892,7 @@ export interface PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat {
   * specified by the delimiter will be set to the 'data' field of a Pub/Sub
   * message. When unset, '\n' is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#delimiter PubsubTopic#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#delimiter PubsubTopic#delimiter}
   */
   readonly delimiter?: string;
 }
@@ -980,7 +980,7 @@ export interface PubsubTopicIngestionDataSourceSettingsCloudStorage {
   * prefix like "gs://". See the bucket naming requirements:
   * https://cloud.google.com/storage/docs/buckets#naming.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#bucket PubsubTopic#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#bucket PubsubTopic#bucket}
   */
   readonly bucket: string;
   /**
@@ -988,7 +988,7 @@ export interface PubsubTopicIngestionDataSourceSettingsCloudStorage {
   * objects will be ingested. See the supported patterns:
   * https://cloud.google.com/storage/docs/json_api/v1/objects/list#list-objects-and-prefixes-using-glob
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#match_glob PubsubTopic#match_glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#match_glob PubsubTopic#match_glob}
   */
   readonly matchGlob?: string;
   /**
@@ -996,25 +996,25 @@ export interface PubsubTopicIngestionDataSourceSettingsCloudStorage {
   * larger or equal timestamp will be ingested. Unset by default, meaning
   * all objects will be ingested.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#minimum_object_create_time PubsubTopic#minimum_object_create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#minimum_object_create_time PubsubTopic#minimum_object_create_time}
   */
   readonly minimumObjectCreateTime?: string;
   /**
   * avro_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#avro_format PubsubTopic#avro_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#avro_format PubsubTopic#avro_format}
   */
   readonly avroFormat?: PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat;
   /**
   * pubsub_avro_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#pubsub_avro_format PubsubTopic#pubsub_avro_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#pubsub_avro_format PubsubTopic#pubsub_avro_format}
   */
   readonly pubsubAvroFormat?: PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat;
   /**
   * text_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#text_format PubsubTopic#text_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#text_format PubsubTopic#text_format}
   */
   readonly textFormat?: PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat;
 }
@@ -1242,32 +1242,32 @@ export interface PubsubTopicIngestionDataSourceSettingsConfluentCloud {
   /**
   * The Confluent Cloud bootstrap server. The format is url:port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#bootstrap_server PubsubTopic#bootstrap_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#bootstrap_server PubsubTopic#bootstrap_server}
   */
   readonly bootstrapServer: string;
   /**
   * The Confluent Cloud cluster ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#cluster_id PubsubTopic#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#cluster_id PubsubTopic#cluster_id}
   */
   readonly clusterId?: string;
   /**
   * The GCP service account to be used for Federated Identity authentication
   * with Confluent Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
   */
   readonly gcpServiceAccount: string;
   /**
   * Identity pool ID to be used for Federated Identity authentication with Confluent Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#identity_pool_id PubsubTopic#identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#identity_pool_id PubsubTopic#identity_pool_id}
   */
   readonly identityPoolId: string;
   /**
   * Name of the Confluent Cloud topic that Pub/Sub will import from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
   */
   readonly topic: string;
 }
@@ -1458,7 +1458,7 @@ export interface PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings {
   * The minimum severity level of Platform Logs that will be written. If unspecified,
   * no Platform Logs will be written. Default value: "SEVERITY_UNSPECIFIED" Possible values: ["SEVERITY_UNSPECIFIED", "DISABLED", "DEBUG", "INFO", "WARNING", "ERROR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#severity PubsubTopic#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#severity PubsubTopic#severity}
   */
   readonly severity?: string;
 }
@@ -1544,37 +1544,37 @@ export interface PubsubTopicIngestionDataSourceSettings {
   /**
   * aws_kinesis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
   */
   readonly awsKinesis?: PubsubTopicIngestionDataSourceSettingsAwsKinesis;
   /**
   * aws_msk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#aws_msk PubsubTopic#aws_msk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#aws_msk PubsubTopic#aws_msk}
   */
   readonly awsMsk?: PubsubTopicIngestionDataSourceSettingsAwsMsk;
   /**
   * azure_event_hubs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#azure_event_hubs PubsubTopic#azure_event_hubs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#azure_event_hubs PubsubTopic#azure_event_hubs}
   */
   readonly azureEventHubs?: PubsubTopicIngestionDataSourceSettingsAzureEventHubs;
   /**
   * cloud_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
   */
   readonly cloudStorage?: PubsubTopicIngestionDataSourceSettingsCloudStorage;
   /**
   * confluent_cloud block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#confluent_cloud PubsubTopic#confluent_cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#confluent_cloud PubsubTopic#confluent_cloud}
   */
   readonly confluentCloud?: PubsubTopicIngestionDataSourceSettingsConfluentCloud;
   /**
   * platform_logs_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
   */
   readonly platformLogsSettings?: PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings;
 }
@@ -1810,7 +1810,7 @@ export interface PubsubTopicMessageStoragePolicy {
   * allowed regions. An empty list means that no regions are allowed,
   * and is not a valid configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#allowed_persistence_regions PubsubTopic#allowed_persistence_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#allowed_persistence_regions PubsubTopic#allowed_persistence_regions}
   */
   readonly allowedPersistenceRegions: string[];
   /**
@@ -1819,7 +1819,7 @@ export interface PubsubTopicMessageStoragePolicy {
   * operations on this topic and subscribe operations on any subscription
   * attached to this topic in any region that is not in 'allowedPersistenceRegions'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#enforce_in_transit PubsubTopic#enforce_in_transit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#enforce_in_transit PubsubTopic#enforce_in_transit}
   */
   readonly enforceInTransit?: boolean | cdktn.IResolvable;
 }
@@ -1933,7 +1933,7 @@ export interface PubsubTopicMessageTransformsAiInferenceUnstructuredInference {
   * The parameters object is combined with the data field of the Pub/Sub
   * message to form the inference request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#parameters PubsubTopic#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#parameters PubsubTopic#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -2022,20 +2022,20 @@ export interface PubsubTopicMessageTransformsAiInference {
   * 'projects/{project}/locations/{location}/publishers/{publisher}/models/{model}'.
   * Vertex AI API requests will be sent to this endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#endpoint PubsubTopic#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#endpoint PubsubTopic#endpoint}
   */
   readonly endpoint: string;
   /**
   * The service account to use to make prediction requests against
   * endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#service_account_email PubsubTopic#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#service_account_email PubsubTopic#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
   * unstructured_inference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#unstructured_inference PubsubTopic#unstructured_inference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#unstructured_inference PubsubTopic#unstructured_inference}
   */
   readonly unstructuredInference?: PubsubTopicMessageTransformsAiInferenceUnstructuredInference;
 }
@@ -2203,7 +2203,7 @@ export interface PubsubTopicMessageTransformsJavascriptUdf {
   *   }
   * ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#code PubsubTopic#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#code PubsubTopic#code}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -2211,7 +2211,7 @@ export interface PubsubTopicMessageTransformsJavascriptUdf {
   /**
   * Name of the JavaScript function that should be applied to Pub/Sub messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#function_name PubsubTopic#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#function_name PubsubTopic#function_name}
   */
   readonly functionName: string;
 }
@@ -2321,19 +2321,19 @@ export interface PubsubTopicMessageTransforms {
   * Controls whether or not to use this transform. If not set or 'false',
   * the transform will be applied to messages. Default: 'true'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#disabled PubsubTopic#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#disabled PubsubTopic#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * ai_inference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#ai_inference PubsubTopic#ai_inference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#ai_inference PubsubTopic#ai_inference}
   */
   readonly aiInference?: PubsubTopicMessageTransformsAiInference;
   /**
   * javascript_udf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#javascript_udf PubsubTopic#javascript_udf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#javascript_udf PubsubTopic#javascript_udf}
   */
   readonly javascriptUdf?: PubsubTopicMessageTransformsJavascriptUdf;
 }
@@ -2509,19 +2509,19 @@ export interface PubsubTopicSchemaSettings {
   /**
   * The encoding of messages validated against schema. Default value: "ENCODING_UNSPECIFIED" Possible values: ["ENCODING_UNSPECIFIED", "JSON", "BINARY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#encoding PubsubTopic#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#encoding PubsubTopic#encoding}
   */
   readonly encoding?: string;
   /**
   * The minimum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against last_revision or any revision created before.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#first_revision_id PubsubTopic#first_revision_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#first_revision_id PubsubTopic#first_revision_id}
   */
   readonly firstRevisionId?: string;
   /**
   * The maximum (inclusive) revision allowed for validating messages. If empty or not present, allow any revision to be validated against first_revision or any revision created after.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#last_revision_id PubsubTopic#last_revision_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#last_revision_id PubsubTopic#last_revision_id}
   */
   readonly lastRevisionId?: string;
   /**
@@ -2530,7 +2530,7 @@ export interface PubsubTopicSchemaSettings {
   * The value of this field will be _deleted-schema_
   * if the schema has been deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#schema PubsubTopic#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#schema PubsubTopic#schema}
   */
   readonly schema: string;
 }
@@ -2698,15 +2698,15 @@ export class PubsubTopicSchemaSettingsOutputReference extends cdktn.ComplexObjec
 }
 export interface PubsubTopicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#create PubsubTopic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#create PubsubTopic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#update PubsubTopic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#update PubsubTopic#update}
   */
   readonly update?: string;
 }
@@ -2858,7 +2858,7 @@ export class PubsubTopicTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic google_pubsub_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic google_pubsub_topic}
 */
 export class PubsubTopic extends cdktn.TerraformResource {
 
@@ -2874,7 +2874,7 @@ export class PubsubTopic extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PubsubTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PubsubTopic to import
-  * @param importFromId The id of the existing PubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PubsubTopic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2886,7 +2886,7 @@ export class PubsubTopic extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/pubsub_topic google_pubsub_topic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/pubsub_topic google_pubsub_topic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2897,7 +2897,7 @@ export class PubsubTopic extends cdktn.TerraformResource {
       terraformResourceType: 'google_pubsub_topic',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

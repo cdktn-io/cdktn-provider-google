@@ -4,7 +4,7 @@
 
 ### ApigeeDeveloper <a name="ApigeeDeveloper" id="@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer google_apigee_developer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer google_apigee_developer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer"></a>
 
@@ -51,7 +51,7 @@ apigeeDeveloper.ApigeeDeveloper(
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.userName">user_name</a></code> | <code>str</code> | User name of the developer. Not used by Apigee hybrid. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.attributes">attributes</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperAttributes">ApigeeDeveloperAttributes</a>]</code> | attributes block. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloper.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts">ApigeeDeveloperTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ Email address of the developer.
 
 This value is used to uniquely identify the developer in Apigee hybrid. Note that the email address has to be in lowercase only..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 First name of the developer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Last name of the developer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User name of the developer. Not used by Apigee hybrid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
 
 ---
 
@@ -191,7 +191,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -212,7 +212,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
 
 ---
 
@@ -629,7 +629,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}.
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}.
 
 ---
 
@@ -645,7 +645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}.
 
 ---
 
@@ -787,7 +787,7 @@ The construct id used in the generated config for the ApigeeDeveloper to import.
 
 The id of the existing ApigeeDeveloper that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1256,7 +1256,7 @@ name: str
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#name ApigeeDeveloper#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#name ApigeeDeveloper#name}
 
 ---
 
@@ -1270,7 +1270,7 @@ value: str
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#value ApigeeDeveloper#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#value ApigeeDeveloper#value}
 
 ---
 
@@ -1319,7 +1319,7 @@ apigeeDeveloper.ApigeeDeveloperConfig(
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.userName">user_name</a></code> | <code>str</code> | User name of the developer. Not used by Apigee hybrid. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.attributes">attributes</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperAttributes">ApigeeDeveloperAttributes</a>]</code> | attributes block. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts">ApigeeDeveloperTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1406,7 +1406,7 @@ Email address of the developer.
 
 This value is used to uniquely identify the developer in Apigee hybrid. Note that the email address has to be in lowercase only..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#email ApigeeDeveloper#email}
 
 ---
 
@@ -1420,7 +1420,7 @@ first_name: str
 
 First name of the developer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#first_name ApigeeDeveloper#first_name}
 
 ---
 
@@ -1434,7 +1434,7 @@ last_name: str
 
 Last name of the developer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#last_name ApigeeDeveloper#last_name}
 
 ---
 
@@ -1448,7 +1448,7 @@ org_id: str
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#org_id ApigeeDeveloper#org_id}
 
 ---
 
@@ -1462,7 +1462,7 @@ user_name: str
 
 User name of the developer. Not used by Apigee hybrid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#user_name ApigeeDeveloper#user_name}
 
 ---
 
@@ -1476,7 +1476,7 @@ attributes: IResolvable | typing.List[ApigeeDeveloperAttributes]
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
 
 ---
 
@@ -1497,7 +1497,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#deletion_policy ApigeeDeveloper#deletion_policy}
 
 ---
 
@@ -1509,7 +1509,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1526,7 +1526,7 @@ timeouts: ApigeeDeveloperTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
 
 ---
 
@@ -1548,9 +1548,9 @@ apigeeDeveloper.ApigeeDeveloperTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloper.ApigeeDeveloperTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}. |
 
 ---
 
@@ -1562,7 +1562,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#create ApigeeDeveloper#create}.
 
 ---
 
@@ -1574,7 +1574,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#delete ApigeeDeveloper#delete}.
 
 ---
 
@@ -1586,7 +1586,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_developer#update ApigeeDeveloper#update}.
 
 ---
 
