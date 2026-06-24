@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface ComputePublicAdvertisedPrefixConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#deletion_policy ComputePublicAdvertisedPrefix#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#deletion_policy ComputePublicAdvertisedPrefix#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#description ComputePublicAdvertisedPrefix#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#description ComputePublicAdvertisedPrefix#description}
   */
   readonly description?: string;
   /**
   * The IPv4 address to be used for reverse DNS verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#dns_verification_ip ComputePublicAdvertisedPrefix#dns_verification_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#dns_verification_ip ComputePublicAdvertisedPrefix#dns_verification_ip}
   */
   readonly dnsVerificationIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,7 +46,7 @@ export interface ComputePublicAdvertisedPrefixConfig extends cdktn.TerraformMeta
   /**
   * The address range, in CIDR format, represented by this public advertised prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#ip_cidr_range ComputePublicAdvertisedPrefix#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#ip_cidr_range ComputePublicAdvertisedPrefix#ip_cidr_range}
   */
   readonly ipCidrRange: string;
   /**
@@ -58,7 +58,7 @@ export interface ComputePublicAdvertisedPrefixConfig extends cdktn.TerraformMeta
   *   be used privately within Google Cloud. All children PDPs will have
   *   access type as INTERNAL. Possible values: ["EXTERNAL", "INTERNAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#ipv6_access_type ComputePublicAdvertisedPrefix#ipv6_access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#ipv6_access_type ComputePublicAdvertisedPrefix#ipv6_access_type}
   */
   readonly ipv6AccessType?: string;
   /**
@@ -69,7 +69,7 @@ export interface ComputePublicAdvertisedPrefixConfig extends cdktn.TerraformMeta
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#name ComputePublicAdvertisedPrefix#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#name ComputePublicAdvertisedPrefix#name}
   */
   readonly name: string;
   /**
@@ -80,27 +80,27 @@ export interface ComputePublicAdvertisedPrefixConfig extends cdktn.TerraformMeta
   * * GLOBAL: The public delegated prefix is global only. The provisioning
   * will take ~4 weeks. Possible values: ["GLOBAL", "REGIONAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#pdp_scope ComputePublicAdvertisedPrefix#pdp_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#pdp_scope ComputePublicAdvertisedPrefix#pdp_scope}
   */
   readonly pdpScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#timeouts ComputePublicAdvertisedPrefix#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#timeouts ComputePublicAdvertisedPrefix#timeouts}
   */
   readonly timeouts?: ComputePublicAdvertisedPrefixTimeouts;
 }
 export interface ComputePublicAdvertisedPrefixTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}
   */
   readonly delete?: string;
 }
@@ -223,7 +223,7 @@ export class ComputePublicAdvertisedPrefixTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}
 */
 export class ComputePublicAdvertisedPrefix extends cdktn.TerraformResource {
 
@@ -239,7 +239,7 @@ export class ComputePublicAdvertisedPrefix extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputePublicAdvertisedPrefix resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePublicAdvertisedPrefix to import
-  * @param importFromId The id of the existing ComputePublicAdvertisedPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePublicAdvertisedPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePublicAdvertisedPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -251,7 +251,7 @@ export class ComputePublicAdvertisedPrefix extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +262,7 @@ export class ComputePublicAdvertisedPrefix extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_public_advertised_prefix',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

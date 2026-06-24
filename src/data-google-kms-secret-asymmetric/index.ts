@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataGoogleKmsSecretAsymmetricConfig extends cdktn.TerraformMeta
   /**
   * The public key encrypted ciphertext in base64 encoding
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric#ciphertext DataGoogleKmsSecretAsymmetric#ciphertext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric#ciphertext DataGoogleKmsSecretAsymmetric#ciphertext}
   */
   readonly ciphertext: string;
   /**
   * The crc32 checksum of the ciphertext, hexadecimal encoding. If not specified, it will be computed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric#crc32 DataGoogleKmsSecretAsymmetric#crc32}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric#crc32 DataGoogleKmsSecretAsymmetric#crc32}
   */
   readonly crc32?: string;
   /**
   * The fully qualified KMS crypto key version name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric#crypto_key_version DataGoogleKmsSecretAsymmetric#crypto_key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric#crypto_key_version DataGoogleKmsSecretAsymmetric#crypto_key_version}
   */
   readonly cryptoKeyVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric#id DataGoogleKmsSecretAsymmetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric#id DataGoogleKmsSecretAsymmetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +40,7 @@ export interface DataGoogleKmsSecretAsymmetricConfig extends cdktn.TerraformMeta
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric google_kms_secret_asymmetric}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric google_kms_secret_asymmetric}
 */
 export class DataGoogleKmsSecretAsymmetric extends cdktn.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataGoogleKmsSecretAsymmetric extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleKmsSecretAsymmetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleKmsSecretAsymmetric to import
-  * @param importFromId The id of the existing DataGoogleKmsSecretAsymmetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleKmsSecretAsymmetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleKmsSecretAsymmetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataGoogleKmsSecretAsymmetric extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_secret_asymmetric google_kms_secret_asymmetric} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_secret_asymmetric google_kms_secret_asymmetric} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataGoogleKmsSecretAsymmetric extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_kms_secret_asymmetric',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

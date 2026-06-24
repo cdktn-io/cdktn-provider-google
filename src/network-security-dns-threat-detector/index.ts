@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkSecurityDnsThreatDetectorConfig extends cdktn.TerraformM
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#deletion_policy NetworkSecurityDnsThreatDetector#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#deletion_policy NetworkSecurityDnsThreatDetector#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * List of networks that are excluded from detection. Format: projects/{project}/global/networks/{name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#excluded_networks NetworkSecurityDnsThreatDetector#excluded_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#excluded_networks NetworkSecurityDnsThreatDetector#excluded_networks}
   */
   readonly excludedNetworks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#id NetworkSecurityDnsThreatDetector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#id NetworkSecurityDnsThreatDetector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,49 +45,49 @@ export interface NetworkSecurityDnsThreatDetectorConfig extends cdktn.TerraformM
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#labels NetworkSecurityDnsThreatDetector#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#labels NetworkSecurityDnsThreatDetector#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the DNS Threat Detector. The only supported value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#location NetworkSecurityDnsThreatDetector#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#location NetworkSecurityDnsThreatDetector#location}
   */
   readonly location?: string;
   /**
   * Name of the DnsThreatDetector resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#name NetworkSecurityDnsThreatDetector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#name NetworkSecurityDnsThreatDetector#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#project NetworkSecurityDnsThreatDetector#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#project NetworkSecurityDnsThreatDetector#project}
   */
   readonly project?: string;
   /**
   * DNS Threat Detection provider. The only supported value is 'INFOBLOX'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#threat_detector_provider NetworkSecurityDnsThreatDetector#threat_detector_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#threat_detector_provider NetworkSecurityDnsThreatDetector#threat_detector_provider}
   */
   readonly threatDetectorProvider?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#timeouts NetworkSecurityDnsThreatDetector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#timeouts NetworkSecurityDnsThreatDetector#timeouts}
   */
   readonly timeouts?: NetworkSecurityDnsThreatDetectorTimeouts;
 }
 export interface NetworkSecurityDnsThreatDetectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#create NetworkSecurityDnsThreatDetector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#create NetworkSecurityDnsThreatDetector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#delete NetworkSecurityDnsThreatDetector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#delete NetworkSecurityDnsThreatDetector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#update NetworkSecurityDnsThreatDetector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#update NetworkSecurityDnsThreatDetector#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class NetworkSecurityDnsThreatDetectorTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector}
 */
 export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
 
@@ -255,7 +255,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityDnsThreatDetector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityDnsThreatDetector to import
-  * @param importFromId The id of the existing NetworkSecurityDnsThreatDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityDnsThreatDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityDnsThreatDetector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -267,7 +267,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_dns_threat_detector google_network_security_dns_threat_detector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class NetworkSecurityDnsThreatDetector extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_dns_threat_detector',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

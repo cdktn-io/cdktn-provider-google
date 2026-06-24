@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleKmsKeyHandlesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles#id DataGoogleKmsKeyHandles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles#id DataGoogleKmsKeyHandles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleKmsKeyHandlesConfig extends cdktn.TerraformMetaArgume
   /**
   * The canonical id for the location. For example: "us-east1".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles#location DataGoogleKmsKeyHandles#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles#location DataGoogleKmsKeyHandles#location}
   */
   readonly location: string;
   /**
   * Project ID of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles#project DataGoogleKmsKeyHandles#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles#project DataGoogleKmsKeyHandles#project}
   */
   readonly project?: string;
   /**
@@ -39,7 +39,7 @@ export interface DataGoogleKmsKeyHandlesConfig extends cdktn.TerraformMetaArgume
   * 					[See the documentation about using filters](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyHandles/list)
   * 				
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles#resource_type_selector DataGoogleKmsKeyHandles#resource_type_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles#resource_type_selector DataGoogleKmsKeyHandles#resource_type_selector}
   */
   readonly resourceTypeSelector: string;
 }
@@ -130,7 +130,7 @@ export class DataGoogleKmsKeyHandlesKeyHandlesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles google_kms_key_handles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles google_kms_key_handles}
 */
 export class DataGoogleKmsKeyHandles extends cdktn.TerraformDataSource {
 
@@ -146,7 +146,7 @@ export class DataGoogleKmsKeyHandles extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleKmsKeyHandles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleKmsKeyHandles to import
-  * @param importFromId The id of the existing DataGoogleKmsKeyHandles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleKmsKeyHandles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleKmsKeyHandles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -158,7 +158,7 @@ export class DataGoogleKmsKeyHandles extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/kms_key_handles google_kms_key_handles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/kms_key_handles google_kms_key_handles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +169,7 @@ export class DataGoogleKmsKeyHandles extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_kms_key_handles',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,18 +21,18 @@ export interface BeyondcorpSecurityGatewayConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#deletion_policy BeyondcorpSecurityGateway#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#deletion_policy BeyondcorpSecurityGateway#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. An arbitrary user-provided name for the SecurityGateway.
   * Cannot exceed 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#display_name BeyondcorpSecurityGateway#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#display_name BeyondcorpSecurityGateway#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,11 +41,11 @@ export interface BeyondcorpSecurityGatewayConfig extends cdktn.TerraformMetaArgu
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. Must be omitted or set to 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#location BeyondcorpSecurityGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#location BeyondcorpSecurityGateway#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}
   */
   readonly project?: string;
   /**
@@ -54,37 +54,37 @@ export interface BeyondcorpSecurityGatewayConfig extends cdktn.TerraformMetaArgu
   * * Must contain between 4-63 characters from '/a-z-/'.
   * * Must end with a number or letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#security_gateway_id BeyondcorpSecurityGateway#security_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#security_gateway_id BeyondcorpSecurityGateway#security_gateway_id}
   */
   readonly securityGatewayId: string;
   /**
   * hubs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#hubs BeyondcorpSecurityGateway#hubs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#hubs BeyondcorpSecurityGateway#hubs}
   */
   readonly hubs?: BeyondcorpSecurityGatewayHubs[] | cdktn.IResolvable;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#logging BeyondcorpSecurityGateway#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#logging BeyondcorpSecurityGateway#logging}
   */
   readonly logging?: BeyondcorpSecurityGatewayLogging;
   /**
   * proxy_protocol_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#proxy_protocol_config BeyondcorpSecurityGateway#proxy_protocol_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#proxy_protocol_config BeyondcorpSecurityGateway#proxy_protocol_config}
   */
   readonly proxyProtocolConfig?: BeyondcorpSecurityGatewayProxyProtocolConfig;
   /**
   * service_discovery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#service_discovery BeyondcorpSecurityGateway#service_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#service_discovery BeyondcorpSecurityGateway#service_discovery}
   */
   readonly serviceDiscovery?: BeyondcorpSecurityGatewayServiceDiscovery;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#timeouts BeyondcorpSecurityGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#timeouts BeyondcorpSecurityGateway#timeouts}
   */
   readonly timeouts?: BeyondcorpSecurityGatewayTimeouts;
 }
@@ -144,13 +144,13 @@ export class BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference extends
 }
 export interface BeyondcorpSecurityGatewayHubs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}
   */
   readonly region: string;
   /**
   * internet_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#internet_gateway BeyondcorpSecurityGateway#internet_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#internet_gateway BeyondcorpSecurityGateway#internet_gateway}
   */
   readonly internetGateway?: BeyondcorpSecurityGatewayHubsInternetGateway;
 }
@@ -343,7 +343,7 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDe
   /**
   * The output type of the delegated device info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
   */
   readonly outputType?: string;
 }
@@ -429,7 +429,7 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGr
   /**
   * The output type of the delegated group info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
   */
   readonly outputType?: string;
 }
@@ -515,7 +515,7 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUs
   /**
   * The output type of the delegated user info. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
   */
   readonly outputType?: string;
 }
@@ -601,25 +601,25 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders {
   /**
   * Default output type for all enabled headers. Possible values: ["PROTOBUF", "JSON", "NONE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
   */
   readonly outputType?: string;
   /**
   * device_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#device_info BeyondcorpSecurityGateway#device_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#device_info BeyondcorpSecurityGateway#device_info}
   */
   readonly deviceInfo?: BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo;
   /**
   * group_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#group_info BeyondcorpSecurityGateway#group_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#group_info BeyondcorpSecurityGateway#group_info}
   */
   readonly groupInfo?: BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo;
   /**
   * user_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#user_info BeyondcorpSecurityGateway#user_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#user_info BeyondcorpSecurityGateway#user_info}
   */
   readonly userInfo?: BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo;
 }
@@ -792,19 +792,19 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfig {
   /**
   * The configuration for the proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#allowed_client_headers BeyondcorpSecurityGateway#allowed_client_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#allowed_client_headers BeyondcorpSecurityGateway#allowed_client_headers}
   */
   readonly allowedClientHeaders?: string[];
   /**
   * Client IP configuration. The client IP address is included if true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#client_ip BeyondcorpSecurityGateway#client_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#client_ip BeyondcorpSecurityGateway#client_ip}
   */
   readonly clientIp?: boolean | cdktn.IResolvable;
   /**
   * Gateway identity configuration. Possible values: ["RESOURCE_NAME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#gateway_identity BeyondcorpSecurityGateway#gateway_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#gateway_identity BeyondcorpSecurityGateway#gateway_identity}
   */
   readonly gatewayIdentity?: string;
   /**
@@ -814,13 +814,13 @@ export interface BeyondcorpSecurityGatewayProxyProtocolConfig {
   *   and ".", and SHOULD begin with a letter.
   * > Field values SHOULD contain only ASCII printable characters and tab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#metadata_headers BeyondcorpSecurityGateway#metadata_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#metadata_headers BeyondcorpSecurityGateway#metadata_headers}
   */
   readonly metadataHeaders?: { [key: string]: string };
   /**
   * contextual_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#contextual_headers BeyondcorpSecurityGateway#contextual_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#contextual_headers BeyondcorpSecurityGateway#contextual_headers}
   */
   readonly contextualHeaders?: BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders;
 }
@@ -1022,7 +1022,7 @@ export interface BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOver
   /**
   * Contains uri path fragment where HTTP request is sent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#path BeyondcorpSecurityGateway#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#path BeyondcorpSecurityGateway#path}
   */
   readonly path?: string;
 }
@@ -1108,7 +1108,7 @@ export interface BeyondcorpSecurityGatewayServiceDiscoveryApiGateway {
   /**
   * resource_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#resource_override BeyondcorpSecurityGateway#resource_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#resource_override BeyondcorpSecurityGateway#resource_override}
   */
   readonly resourceOverride?: BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride;
 }
@@ -1194,7 +1194,7 @@ export interface BeyondcorpSecurityGatewayServiceDiscovery {
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#api_gateway BeyondcorpSecurityGateway#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#api_gateway BeyondcorpSecurityGateway#api_gateway}
   */
   readonly apiGateway?: BeyondcorpSecurityGatewayServiceDiscoveryApiGateway;
 }
@@ -1278,15 +1278,15 @@ export class BeyondcorpSecurityGatewayServiceDiscoveryOutputReference extends cd
 }
 export interface BeyondcorpSecurityGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}
   */
   readonly update?: string;
 }
@@ -1438,7 +1438,7 @@ export class BeyondcorpSecurityGatewayTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}
 */
 export class BeyondcorpSecurityGateway extends cdktn.TerraformResource {
 
@@ -1454,7 +1454,7 @@ export class BeyondcorpSecurityGateway extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BeyondcorpSecurityGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BeyondcorpSecurityGateway to import
-  * @param importFromId The id of the existing BeyondcorpSecurityGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BeyondcorpSecurityGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BeyondcorpSecurityGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1466,7 +1466,7 @@ export class BeyondcorpSecurityGateway extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1477,7 +1477,7 @@ export class BeyondcorpSecurityGateway extends cdktn.TerraformResource {
       terraformResourceType: 'google_beyondcorp_security_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

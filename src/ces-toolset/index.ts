@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#app CesToolset#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#app CesToolset#app}
   */
   readonly app: string;
   /**
@@ -27,19 +27,19 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#description CesToolset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#description CesToolset#description}
   */
   readonly description?: string;
   /**
   * The display name of the toolset. Must be unique within the same app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName?: string;
   /**
@@ -47,11 +47,11 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * SYNCHRONOUS
   * ASYNCHRONOUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
   */
   readonly executionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#id CesToolset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#id CesToolset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,11 +60,11 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#location CesToolset#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#location CesToolset#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#project CesToolset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#project CesToolset#project}
   */
   readonly project?: string;
   /**
@@ -72,27 +72,33 @@ export interface CesToolsetConfig extends cdktn.TerraformMetaArguments {
   * the toolset's resource name. If not provided, a unique ID will be
   * automatically assigned for the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
   */
   readonly toolsetId: string;
   /**
   * mcp_toolset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
   */
   readonly mcpToolset?: CesToolsetMcpToolset;
   /**
   * open_api_toolset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
   */
   readonly openApiToolset?: CesToolsetOpenApiToolset;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
   */
   readonly timeouts?: CesToolsetTimeouts;
+  /**
+  * tool_fake_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#tool_fake_config CesToolset#tool_fake_config}
+  */
+  readonly toolFakeConfig?: CesToolsetToolFakeConfig;
 }
 export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
   /**
@@ -102,14 +108,14 @@ export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
   */
   readonly apiKeySecretVersion: string;
   /**
   * The parameter name or the header name of the API key.
   * E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
   */
   readonly keyName: string;
   /**
@@ -118,7 +124,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationApiKeyConfig {
   * Possible values:
   * HEADER
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
   */
   readonly requestLocation: string;
 }
@@ -251,7 +257,7 @@ export class CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference ex
 }
 export interface CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#token CesToolset#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#token CesToolset#token}
   */
   readonly token?: string;
 }
@@ -337,7 +343,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   /**
   * The client ID from the OAuth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
   */
   readonly clientId: string;
   /**
@@ -349,7 +355,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
   */
   readonly clientSecretVersion: string;
   /**
@@ -357,19 +363,19 @@ export interface CesToolsetMcpToolsetApiAuthenticationOauthConfig {
   * Possible values:
   * CLIENT_CREDENTIAL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
   */
   readonly oauthGrantType: string;
   /**
   * The OAuth scopes to grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
   * The token endpoint in the OAuth provider to exchange for an access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
   */
   readonly tokenEndpoint: string;
 }
@@ -560,7 +566,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig {
   * The OAuth scopes to grant. If not specified, the default scope
   * 'https://www.googleapis.com/auth/cloud-platform' is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
@@ -573,7 +579,7 @@ export interface CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig {
   * CES service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -734,31 +740,31 @@ export interface CesToolsetMcpToolsetApiAuthentication {
   /**
   * api_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
   */
   readonly apiKeyConfig?: CesToolsetMcpToolsetApiAuthenticationApiKeyConfig;
   /**
   * bearer_token_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
   */
   readonly bearerTokenConfig?: CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig;
   /**
   * oauth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
   */
   readonly oauthConfig?: CesToolsetMcpToolsetApiAuthenticationOauthConfig;
   /**
   * service_account_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
   */
   readonly serviceAccountAuthConfig?: CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig;
   /**
   * service_agent_id_token_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
   */
   readonly serviceAgentIdTokenAuthConfig?: CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfig;
 }
@@ -965,7 +971,7 @@ export interface CesToolsetMcpToolsetServiceDirectoryConfig {
   * Location of the service directory must be the same as the location of the
   * app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service CesToolset#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service CesToolset#service}
   */
   readonly service: string;
 }
@@ -1057,14 +1063,14 @@ export interface CesToolsetMcpToolsetTlsConfigCaCerts {
   * -out example.com.crt \
   * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#cert CesToolset#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#cert CesToolset#cert}
   */
   readonly cert: string;
   /**
   * The name of the allowed custom CA certificates. This
   * can be used to disambiguate the custom CA certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName: string;
 }
@@ -1205,7 +1211,7 @@ export interface CesToolsetMcpToolsetTlsConfig {
   /**
   * ca_certs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
   */
   readonly caCerts: CesToolsetMcpToolsetTlsConfigCaCerts[] | cdktn.IResolvable;
 }
@@ -1292,7 +1298,7 @@ export interface CesToolsetMcpToolset {
   * https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/tool/open-api#openapi-injection
   * for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
   */
   readonly customHeaders?: { [key: string]: string };
   /**
@@ -1302,25 +1308,25 @@ export interface CesToolsetMcpToolset {
   * https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http
   * for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
   */
   readonly serverAddress: string;
   /**
   * api_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
   */
   readonly apiAuthentication?: CesToolsetMcpToolsetApiAuthentication;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
   */
   readonly serviceDirectoryConfig?: CesToolsetMcpToolsetServiceDirectoryConfig;
   /**
   * tls_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
   */
   readonly tlsConfig?: CesToolsetMcpToolsetTlsConfig;
 }
@@ -1523,14 +1529,14 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
   */
   readonly apiKeySecretVersion: string;
   /**
   * The parameter name or the header name of the API key.
   * E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
   */
   readonly keyName: string;
   /**
@@ -1539,7 +1545,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig {
   * HEADER
   * QUERY_STRING
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
   */
   readonly requestLocation: string;
 }
@@ -1672,7 +1678,7 @@ export class CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReferenc
 }
 export interface CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#token CesToolset#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#token CesToolset#token}
   */
   readonly token?: string;
 }
@@ -1758,7 +1764,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   /**
   * The client ID from the OAuth provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
   */
   readonly clientId: string;
   /**
@@ -1770,7 +1776,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   * service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
   */
   readonly clientSecretVersion: string;
   /**
@@ -1778,19 +1784,19 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationOauthConfig {
   * Possible values:
   * CLIENT_CREDENTIAL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
   */
   readonly oauthGrantType: string;
   /**
   * The OAuth scopes to grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
   * The token endpoint in the OAuth provider to exchange for an access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
   */
   readonly tokenEndpoint: string;
 }
@@ -1981,7 +1987,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConf
   * The OAuth scopes to grant. If not specified, the default scope
   * 'https://www.googleapis.com/auth/cloud-platform' is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
   */
   readonly scopes?: string[];
   /**
@@ -1994,7 +2000,7 @@ export interface CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConf
   * CES service agent
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
   */
   readonly serviceAccount: string;
 }
@@ -2155,31 +2161,31 @@ export interface CesToolsetOpenApiToolsetApiAuthentication {
   /**
   * api_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
   */
   readonly apiKeyConfig?: CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig;
   /**
   * bearer_token_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
   */
   readonly bearerTokenConfig?: CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig;
   /**
   * oauth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
   */
   readonly oauthConfig?: CesToolsetOpenApiToolsetApiAuthenticationOauthConfig;
   /**
   * service_account_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
   */
   readonly serviceAccountAuthConfig?: CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfig;
   /**
   * service_agent_id_token_auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
   */
   readonly serviceAgentIdTokenAuthConfig?: CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig;
 }
@@ -2386,7 +2392,7 @@ export interface CesToolsetOpenApiToolsetServiceDirectoryConfig {
   * Location of the service directory must be the same as the location of the
   * app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service CesToolset#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service CesToolset#service}
   */
   readonly service: string;
 }
@@ -2478,14 +2484,14 @@ export interface CesToolsetOpenApiToolsetTlsConfigCaCerts {
   * -out example.com.crt \
   * -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#cert CesToolset#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#cert CesToolset#cert}
   */
   readonly cert: string;
   /**
   * The name of the allowed custom CA certificates. This
   * can be used to disambiguate the custom CA certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
   */
   readonly displayName: string;
 }
@@ -2626,7 +2632,7 @@ export interface CesToolsetOpenApiToolsetTlsConfig {
   /**
   * ca_certs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
   */
   readonly caCerts: CesToolsetOpenApiToolsetTlsConfigCaCerts[] | cdktn.IResolvable;
 }
@@ -2710,31 +2716,31 @@ export interface CesToolsetOpenApiToolset {
   * If true, the agent will ignore unknown fields in the API response for all
   * operations defined in the OpenAPI schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
   */
   readonly ignoreUnknownFields?: boolean | cdktn.IResolvable;
   /**
   * The OpenAPI schema of the toolset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
   */
   readonly openApiSchema: string;
   /**
   * api_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
   */
   readonly apiAuthentication?: CesToolsetOpenApiToolsetApiAuthentication;
   /**
   * service_directory_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
   */
   readonly serviceDirectoryConfig?: CesToolsetOpenApiToolsetServiceDirectoryConfig;
   /**
   * tls_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
   */
   readonly tlsConfig?: CesToolsetOpenApiToolsetTlsConfig;
 }
@@ -2936,15 +2942,15 @@ export class CesToolsetOpenApiToolsetOutputReference extends cdktn.ComplexObject
 }
 export interface CesToolsetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#create CesToolset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#create CesToolset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#delete CesToolset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#delete CesToolset#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#update CesToolset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#update CesToolset#update}
   */
   readonly update?: string;
 }
@@ -3094,9 +3100,213 @@ export class CesToolsetTimeoutsOutputReference extends cdktn.ComplexObject {
     return this._update;
   }
 }
+export interface CesToolsetToolFakeConfigCodeBlock {
+  /**
+  * Python code which will be invoked in tool fake mode.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#python_code CesToolset#python_code}
+  */
+  readonly pythonCode: string;
+}
+
+export function cesToolsetToolFakeConfigCodeBlockToTerraform(struct?: CesToolsetToolFakeConfigCodeBlockOutputReference | CesToolsetToolFakeConfigCodeBlock): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    python_code: cdktn.stringToTerraform(struct!.pythonCode),
+  }
+}
+
+
+export function cesToolsetToolFakeConfigCodeBlockToHclTerraform(struct?: CesToolsetToolFakeConfigCodeBlockOutputReference | CesToolsetToolFakeConfigCodeBlock): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    python_code: {
+      value: cdktn.stringToHclTerraform(struct!.pythonCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesToolsetToolFakeConfigCodeBlockOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesToolsetToolFakeConfigCodeBlock | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pythonCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pythonCode = this._pythonCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesToolsetToolFakeConfigCodeBlock | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._pythonCode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._pythonCode = value.pythonCode;
+    }
+  }
+
+  // python_code - computed: false, optional: false, required: true
+  private _pythonCode?: string; 
+  public get pythonCode() {
+    return this.getStringAttribute('python_code');
+  }
+  public set pythonCode(value: string) {
+    this._pythonCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonCodeInput() {
+    return this._pythonCode;
+  }
+}
+export interface CesToolsetToolFakeConfig {
+  /**
+  * Whether the tool is using fake mode.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#enable_fake_mode CesToolset#enable_fake_mode}
+  */
+  readonly enableFakeMode?: boolean | cdktn.IResolvable;
+  /**
+  * code_block block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#code_block CesToolset#code_block}
+  */
+  readonly codeBlock?: CesToolsetToolFakeConfigCodeBlock;
+}
+
+export function cesToolsetToolFakeConfigToTerraform(struct?: CesToolsetToolFakeConfigOutputReference | CesToolsetToolFakeConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enable_fake_mode: cdktn.booleanToTerraform(struct!.enableFakeMode),
+    code_block: cesToolsetToolFakeConfigCodeBlockToTerraform(struct!.codeBlock),
+  }
+}
+
+
+export function cesToolsetToolFakeConfigToHclTerraform(struct?: CesToolsetToolFakeConfigOutputReference | CesToolsetToolFakeConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enable_fake_mode: {
+      value: cdktn.booleanToHclTerraform(struct!.enableFakeMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    code_block: {
+      value: cesToolsetToolFakeConfigCodeBlockToHclTerraform(struct!.codeBlock),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesToolsetToolFakeConfigCodeBlockList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesToolsetToolFakeConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesToolsetToolFakeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableFakeMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableFakeMode = this._enableFakeMode;
+    }
+    if (this._codeBlock?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeBlock = this._codeBlock?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesToolsetToolFakeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableFakeMode = undefined;
+      this._codeBlock.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableFakeMode = value.enableFakeMode;
+      this._codeBlock.internalValue = value.codeBlock;
+    }
+  }
+
+  // enable_fake_mode - computed: false, optional: true, required: false
+  private _enableFakeMode?: boolean | cdktn.IResolvable; 
+  public get enableFakeMode() {
+    return this.getBooleanAttribute('enable_fake_mode');
+  }
+  public set enableFakeMode(value: boolean | cdktn.IResolvable) {
+    this._enableFakeMode = value;
+  }
+  public resetEnableFakeMode() {
+    this._enableFakeMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableFakeModeInput() {
+    return this._enableFakeMode;
+  }
+
+  // code_block - computed: false, optional: true, required: false
+  private _codeBlock = new CesToolsetToolFakeConfigCodeBlockOutputReference(this, "code_block");
+  public get codeBlock() {
+    return this._codeBlock;
+  }
+  public putCodeBlock(value: CesToolsetToolFakeConfigCodeBlock) {
+    this._codeBlock.internalValue = value;
+  }
+  public resetCodeBlock() {
+    this._codeBlock.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeBlockInput() {
+    return this._codeBlock.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset google_ces_toolset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset google_ces_toolset}
 */
 export class CesToolset extends cdktn.TerraformResource {
 
@@ -3112,7 +3322,7 @@ export class CesToolset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesToolset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesToolset to import
-  * @param importFromId The id of the existing CesToolset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesToolset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesToolset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3124,7 +3334,7 @@ export class CesToolset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_toolset google_ces_toolset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_toolset google_ces_toolset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3135,7 +3345,7 @@ export class CesToolset extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_toolset',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -3158,6 +3368,7 @@ export class CesToolset extends cdktn.TerraformResource {
     this._mcpToolset.internalValue = config.mcpToolset;
     this._openApiToolset.internalValue = config.openApiToolset;
     this._timeouts.internalValue = config.timeouts;
+    this._toolFakeConfig.internalValue = config.toolFakeConfig;
   }
 
   // ==========
@@ -3367,6 +3578,22 @@ export class CesToolset extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // tool_fake_config - computed: false, optional: true, required: false
+  private _toolFakeConfig = new CesToolsetToolFakeConfigOutputReference(this, "tool_fake_config");
+  public get toolFakeConfig() {
+    return this._toolFakeConfig;
+  }
+  public putToolFakeConfig(value: CesToolsetToolFakeConfig) {
+    this._toolFakeConfig.internalValue = value;
+  }
+  public resetToolFakeConfig() {
+    this._toolFakeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toolFakeConfigInput() {
+    return this._toolFakeConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -3385,6 +3612,7 @@ export class CesToolset extends cdktn.TerraformResource {
       mcp_toolset: cesToolsetMcpToolsetToTerraform(this._mcpToolset.internalValue),
       open_api_toolset: cesToolsetOpenApiToolsetToTerraform(this._openApiToolset.internalValue),
       timeouts: cesToolsetTimeoutsToTerraform(this._timeouts.internalValue),
+      tool_fake_config: cesToolsetToolFakeConfigToTerraform(this._toolFakeConfig.internalValue),
     };
   }
 
@@ -3461,6 +3689,12 @@ export class CesToolset extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "CesToolsetTimeouts",
+      },
+      tool_fake_config: {
+        value: cesToolsetToolFakeConfigToHclTerraform(this._toolFakeConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesToolsetToolFakeConfigList",
       },
     };
 

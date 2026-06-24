@@ -1,3 +1,3 @@
 # `google_ces_tool`
 
-Refer to the Terraform Registry for docs: [`google_ces_tool`](https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/resources/ces_tool).
+Refer to the Terraform Registry for docs: [`google_ces_tool`](https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool).

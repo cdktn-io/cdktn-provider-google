@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value
+// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleTagsTagValueConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}
   */
   readonly shortName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value google_tags_tag_value}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value google_tags_tag_value}
 */
 export class DataGoogleTagsTagValue extends cdktn.TerraformDataSource {
 
@@ -39,7 +39,7 @@ export class DataGoogleTagsTagValue extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleTagsTagValue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleTagsTagValue to import
-  * @param importFromId The id of the existing DataGoogleTagsTagValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleTagsTagValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleTagsTagValue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class DataGoogleTagsTagValue extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.37.0/docs/data-sources/tags_tag_value google_tags_tag_value} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/tags_tag_value google_tags_tag_value} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class DataGoogleTagsTagValue extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_tags_tag_value',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.37.0',
+        providerVersion: '7.38.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
