@@ -4,7 +4,7 @@
 
 ### ResourceManagerCapability <a name="ResourceManagerCapability" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability google_resource_manager_capability}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability google_resource_manager_capability}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ResourceManagerCapability 
 
 The id of the existing ResourceManagerCapability that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ const resourceManagerCapabilityConfig: resourceManagerCapability.ResourceManager
 | <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.capabilityName">capabilityName</a></code> | <code>string</code> | Capability name that should be updated on the folder. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.parent">parent</a></code> | <code>string</code> | Folder on which Capability needs to be updated in the format folders/folder_id. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Capability Value. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts">ResourceManagerCapabilityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +930,7 @@ public readonly capabilityName: string;
 
 Capability name that should be updated on the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#capability_name ResourceManagerCapability#capability_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#capability_name ResourceManagerCapability#capability_name}
 
 ---
 
@@ -944,7 +944,7 @@ public readonly parent: string;
 
 Folder on which Capability needs to be updated in the format folders/folder_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#parent ResourceManagerCapability#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#parent ResourceManagerCapability#parent}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly value: boolean | IResolvable;
 
 Capability Value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#value ResourceManagerCapability#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#value ResourceManagerCapability#value}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#id ResourceManagerCapability#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ public readonly timeouts: ResourceManagerCapabilityTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#timeouts ResourceManagerCapability#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#timeouts ResourceManagerCapability#timeouts}
 
 ---
 
@@ -1005,9 +1005,9 @@ const resourceManagerCapabilityTimeouts: resourceManagerCapability.ResourceManag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#create ResourceManagerCapability#create}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#delete ResourceManagerCapability#delete}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/resource_manager_capability#update ResourceManagerCapability#update}.
 
 ---
 

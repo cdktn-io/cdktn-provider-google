@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ApigeeDatastoreConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#deletion_policy ApigeeDatastore#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#deletion_policy ApigeeDatastore#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The display name for the datastore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#display_name ApigeeDatastore#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#display_name ApigeeDatastore#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#id ApigeeDatastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#id ApigeeDatastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,26 +41,26 @@ export interface ApigeeDatastoreConfig extends cdktn.TerraformMetaArguments {
   * The Apigee Organization associated with the Apigee datastore,
   * in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#org_id ApigeeDatastore#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#org_id ApigeeDatastore#org_id}
   */
   readonly orgId: string;
   /**
   * The type of target for the datastore. Must be 'gcs' for Google
   * Cloud Storage or 'bigquery' for BigQuery.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#target_type ApigeeDatastore#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#target_type ApigeeDatastore#target_type}
   */
   readonly targetType: string;
   /**
   * datastore_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#datastore_config ApigeeDatastore#datastore_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#datastore_config ApigeeDatastore#datastore_config}
   */
   readonly datastoreConfig: ApigeeDatastoreDatastoreConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#timeouts ApigeeDatastore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#timeouts ApigeeDatastore#timeouts}
   */
   readonly timeouts?: ApigeeDatastoreTimeouts;
 }
@@ -68,31 +68,31 @@ export interface ApigeeDatastoreDatastoreConfig {
   /**
   * The name of the Cloud Storage bucket. Required for 'gcs' target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#bucket_name ApigeeDatastore#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#bucket_name ApigeeDatastore#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * The name of the BigQuery dataset. Required for 'bigquery' target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#dataset_name ApigeeDatastore#dataset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#dataset_name ApigeeDatastore#dataset_name}
   */
   readonly datasetName?: string;
   /**
   * The path within the Cloud Storage bucket. Used for 'gcs' target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#path ApigeeDatastore#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#path ApigeeDatastore#path}
   */
   readonly path?: string;
   /**
   * The GCP project ID that the datastore target resides in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#project_id ApigeeDatastore#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#project_id ApigeeDatastore#project_id}
   */
   readonly projectId: string;
   /**
   * The prefix for BigQuery table names. Used for 'bigquery' target type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#table_prefix ApigeeDatastore#table_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#table_prefix ApigeeDatastore#table_prefix}
   */
   readonly tablePrefix?: string;
 }
@@ -289,15 +289,15 @@ export class ApigeeDatastoreDatastoreConfigOutputReference extends cdktn.Complex
 }
 export interface ApigeeDatastoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#create ApigeeDatastore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#create ApigeeDatastore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#delete ApigeeDatastore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#delete ApigeeDatastore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#update ApigeeDatastore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#update ApigeeDatastore#update}
   */
   readonly update?: string;
 }
@@ -449,7 +449,7 @@ export class ApigeeDatastoreTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore google_apigee_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore google_apigee_datastore}
 */
 export class ApigeeDatastore extends cdktn.TerraformResource {
 
@@ -465,7 +465,7 @@ export class ApigeeDatastore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeDatastore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeDatastore to import
-  * @param importFromId The id of the existing ApigeeDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeDatastore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -477,7 +477,7 @@ export class ApigeeDatastore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apigee_datastore google_apigee_datastore} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apigee_datastore google_apigee_datastore} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -488,7 +488,7 @@ export class ApigeeDatastore extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_datastore',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

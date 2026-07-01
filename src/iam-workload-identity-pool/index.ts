@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,13 @@ export interface IamWorkloadIdentityPoolConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#deletion_policy IamWorkloadIdentityPool#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#deletion_policy IamWorkloadIdentityPool#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the pool. Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#description IamWorkloadIdentityPool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#description IamWorkloadIdentityPool#description}
   */
   readonly description?: string;
   /**
@@ -35,17 +35,17 @@ export interface IamWorkloadIdentityPoolConfig extends cdktn.TerraformMetaArgume
   * existing tokens to access resources. If the pool is re-enabled, existing tokens grant
   * access again.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#disabled IamWorkloadIdentityPool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#disabled IamWorkloadIdentityPool#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * A display name for the pool. Cannot exceed 32 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#display_name IamWorkloadIdentityPool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#display_name IamWorkloadIdentityPool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#id IamWorkloadIdentityPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#id IamWorkloadIdentityPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,7 +54,6 @@ export interface IamWorkloadIdentityPoolConfig extends cdktn.TerraformMetaArgume
   /**
   * The mode for the pool is operating in. Pools with an unspecified mode will operate as if they
   * are in 'FEDERATION_ONLY' mode.
-  * 
   * 
   * ~> **Note** This field cannot be changed after the Workload Identity Pool is created. While
   * 'terraform plan' may show an update if you change this field's value, 'terraform apply'
@@ -79,11 +78,11 @@ export interface IamWorkloadIdentityPoolConfig extends cdktn.TerraformMetaArgume
   *     * 'spiffe://<trust-domain>/ns/<kubernetes-namespace>/sa/<kubernetes-service-account>'
   *     * 'spiffe://<trust-domain>/resources/<resource-scope>/<resource-name>' Possible values: ["FEDERATION_ONLY", "TRUST_DOMAIN", "SYSTEM_TRUST_DOMAIN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#mode IamWorkloadIdentityPool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#mode IamWorkloadIdentityPool#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#project IamWorkloadIdentityPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#project IamWorkloadIdentityPool#project}
   */
   readonly project?: string;
   /**
@@ -91,31 +90,31 @@ export interface IamWorkloadIdentityPoolConfig extends cdktn.TerraformMetaArgume
   * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#workload_identity_pool_id IamWorkloadIdentityPool#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#workload_identity_pool_id IamWorkloadIdentityPool#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
   * attestation_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#attestation_rules IamWorkloadIdentityPool#attestation_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#attestation_rules IamWorkloadIdentityPool#attestation_rules}
   */
   readonly attestationRules?: IamWorkloadIdentityPoolAttestationRules[] | cdktn.IResolvable;
   /**
   * inline_certificate_issuance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#inline_certificate_issuance_config IamWorkloadIdentityPool#inline_certificate_issuance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#inline_certificate_issuance_config IamWorkloadIdentityPool#inline_certificate_issuance_config}
   */
   readonly inlineCertificateIssuanceConfig?: IamWorkloadIdentityPoolInlineCertificateIssuanceConfig;
   /**
   * inline_trust_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#inline_trust_config IamWorkloadIdentityPool#inline_trust_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#inline_trust_config IamWorkloadIdentityPool#inline_trust_config}
   */
   readonly inlineTrustConfig?: IamWorkloadIdentityPoolInlineTrustConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#timeouts IamWorkloadIdentityPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#timeouts IamWorkloadIdentityPool#timeouts}
   */
   readonly timeouts?: IamWorkloadIdentityPoolTimeouts;
 }
@@ -124,7 +123,7 @@ export interface IamWorkloadIdentityPoolAttestationRules {
   * A single workload operating on Google Cloud. For example:
   * '//run.googleapis.com/projects/123/type/Service/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#google_cloud_resource IamWorkloadIdentityPool#google_cloud_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#google_cloud_resource IamWorkloadIdentityPool#google_cloud_resource}
   */
   readonly googleCloudResource: string;
 }
@@ -247,7 +246,7 @@ export interface IamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
   * * **Region Matching:** Workloads are ONLY issued certificates from CA pools within the
   * same region. Also the CA pool region (in value) must match the workload's region (key).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#ca_pools IamWorkloadIdentityPool#ca_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#ca_pools IamWorkloadIdentityPool#ca_pools}
   */
   readonly caPools?: { [key: string]: string };
   /**
@@ -260,7 +259,7 @@ export interface IamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
   * * 'ECDSA_P256': Specifies ECDSA with curve P256.
   * * 'ECDSA_P384': Specifies ECDSA with curve P384. Possible values: ["RSA_2048", "RSA_3072", "RSA_4096", "ECDSA_P256", "ECDSA_P384"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#key_algorithm IamWorkloadIdentityPool#key_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#key_algorithm IamWorkloadIdentityPool#key_algorithm}
   */
   readonly keyAlgorithm?: string;
   /**
@@ -269,7 +268,7 @@ export interface IamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
   * and is preceded by the number of seconds. If unspecified, this will be defaulted to
   * '86400s' (24 hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#lifetime IamWorkloadIdentityPool#lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#lifetime IamWorkloadIdentityPool#lifetime}
   */
   readonly lifetime?: string;
   /**
@@ -277,7 +276,7 @@ export interface IamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
   * on remaining lifetime. Must be between '50' - '80'. If unspecified, this will be defaulted
   * to '50'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#rotation_window_percentage IamWorkloadIdentityPool#rotation_window_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#rotation_window_percentage IamWorkloadIdentityPool#rotation_window_percentage}
   */
   readonly rotationWindowPercentage?: number;
   /**
@@ -285,12 +284,11 @@ export interface IamWorkloadIdentityPoolInlineCertificateIssuanceConfig {
   * CA in the same region as the workload will be selected to issue the certificate. Enabling
   * this will clear any existing 'ca_pools' configuration to provision the certificates.
   * 
-  * 
   * ~> **Note** This field is mutually exclusive with 'ca_pools'. If this flag is enabled,
   * certificates will be automatically provisioned from the default shared CAs. This flag should
   * not be set if you want to use your own CA pools to provision the certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#use_default_shared_ca IamWorkloadIdentityPool#use_default_shared_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#use_default_shared_ca IamWorkloadIdentityPool#use_default_shared_ca}
   */
   readonly useDefaultSharedCa?: boolean | cdktn.IResolvable;
 }
@@ -493,7 +491,7 @@ export interface IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesT
   * PEM certificate of the PKI used for validation. Must only contain one ca
   * certificate(either root or intermediate cert).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#pem_certificate IamWorkloadIdentityPool#pem_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#pem_certificate IamWorkloadIdentityPool#pem_certificate}
   */
   readonly pemCertificate: string;
 }
@@ -609,21 +607,20 @@ export interface IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles 
   * If set to True, the trust bundle will include the private ca managed identity regional root
   * public certificates.
   * 
-  * 
   * ~> **Note** 'trust_default_shared_ca' is only supported for managed identity trust domain
   * resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#trust_default_shared_ca IamWorkloadIdentityPool#trust_default_shared_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#trust_default_shared_ca IamWorkloadIdentityPool#trust_default_shared_ca}
   */
   readonly trustDefaultSharedCa?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#trust_domain IamWorkloadIdentityPool#trust_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#trust_domain IamWorkloadIdentityPool#trust_domain}
   */
   readonly trustDomain: string;
   /**
   * trust_anchors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#trust_anchors IamWorkloadIdentityPool#trust_anchors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#trust_anchors IamWorkloadIdentityPool#trust_anchors}
   */
   readonly trustAnchors: IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchors[] | cdktn.IResolvable;
 }
@@ -793,7 +790,7 @@ export interface IamWorkloadIdentityPoolInlineTrustConfig {
   /**
   * additional_trust_bundles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#additional_trust_bundles IamWorkloadIdentityPool#additional_trust_bundles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#additional_trust_bundles IamWorkloadIdentityPool#additional_trust_bundles}
   */
   readonly additionalTrustBundles?: IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundles[] | cdktn.IResolvable;
 }
@@ -877,15 +874,15 @@ export class IamWorkloadIdentityPoolInlineTrustConfigOutputReference extends cdk
 }
 export interface IamWorkloadIdentityPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#create IamWorkloadIdentityPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#create IamWorkloadIdentityPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#delete IamWorkloadIdentityPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#delete IamWorkloadIdentityPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#update IamWorkloadIdentityPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#update IamWorkloadIdentityPool#update}
   */
   readonly update?: string;
 }
@@ -1037,7 +1034,7 @@ export class IamWorkloadIdentityPoolTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool}
 */
 export class IamWorkloadIdentityPool extends cdktn.TerraformResource {
 
@@ -1053,7 +1050,7 @@ export class IamWorkloadIdentityPool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IamWorkloadIdentityPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamWorkloadIdentityPool to import
-  * @param importFromId The id of the existing IamWorkloadIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamWorkloadIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamWorkloadIdentityPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1065,7 +1062,7 @@ export class IamWorkloadIdentityPool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1076,7 +1073,7 @@ export class IamWorkloadIdentityPool extends cdktn.TerraformResource {
       terraformResourceType: 'google_iam_workload_identity_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

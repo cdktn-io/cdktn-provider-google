@@ -4,7 +4,7 @@
 
 ### DataGoogleBeyondcorpSecurityGatewayIamPolicy <a name="DataGoogleBeyondcorpSecurityGatewayIamPolicy" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleBeyondcorpSecuri
 
 The id of the existing DataGoogleBeyondcorpSecurityGatewayIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,10 +712,10 @@ const dataGoogleBeyondcorpSecurityGatewayIamPolicyConfig: dataGoogleBeyondcorpSe
 | <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.securityGatewayId">securityGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#security_gateway_id DataGoogleBeyondcorpSecurityGatewayIamPolicy#security_gateway_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#id DataGoogleBeyondcorpSecurityGatewayIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#location DataGoogleBeyondcorpSecurityGatewayIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#project DataGoogleBeyondcorpSecurityGatewayIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.securityGatewayId">securityGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#security_gateway_id DataGoogleBeyondcorpSecurityGatewayIamPolicy#security_gateway_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#id DataGoogleBeyondcorpSecurityGatewayIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#location DataGoogleBeyondcorpSecurityGatewayIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBeyondcorpSecurityGatewayIamPolicy.DataGoogleBeyondcorpSecurityGatewayIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#project DataGoogleBeyondcorpSecurityGatewayIamPolicy#project}. |
 
 ---
 
@@ -797,7 +797,7 @@ public readonly securityGatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#security_gateway_id DataGoogleBeyondcorpSecurityGatewayIamPolicy#security_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#security_gateway_id DataGoogleBeyondcorpSecurityGatewayIamPolicy#security_gateway_id}.
 
 ---
 
@@ -809,7 +809,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#id DataGoogleBeyondcorpSecurityGatewayIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#id DataGoogleBeyondcorpSecurityGatewayIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#location DataGoogleBeyondcorpSecurityGatewayIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#location DataGoogleBeyondcorpSecurityGatewayIamPolicy#location}.
 
 ---
 
@@ -836,7 +836,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#project DataGoogleBeyondcorpSecurityGatewayIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/beyondcorp_security_gateway_iam_policy#project DataGoogleBeyondcorpSecurityGatewayIamPolicy#project}.
 
 ---
 

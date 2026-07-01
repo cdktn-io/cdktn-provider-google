@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesToolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#app CesTool#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#app CesTool#app}
   */
   readonly app: string;
   /**
@@ -27,7 +27,7 @@ export interface CesToolConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -35,11 +35,11 @@ export interface CesToolConfig extends cdktn.TerraformMetaArguments {
   * SYNCHRONOUS
   * ASYNCHRONOUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#execution_type CesTool#execution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#execution_type CesTool#execution_type}
   */
   readonly executionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#id CesTool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#id CesTool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,18 +48,18 @@ export interface CesToolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#location CesTool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#location CesTool#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#project CesTool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#project CesTool#project}
   */
   readonly project?: string;
   /**
   * The timeout for the tool execution. If not set, the default timeout is 30
   * seconds for SYNCHRONOUS tools and 60 seconds for ASYNCHRONOUS tools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#timeout CesTool#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#timeout CesTool#timeout}
   */
   readonly timeout?: string;
   /**
@@ -67,61 +67,61 @@ export interface CesToolConfig extends cdktn.TerraformMetaArguments {
   * the tool's resource name. If not provided, a unique ID will be
   * automatically assigned for the tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#tool_id CesTool#tool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#tool_id CesTool#tool_id}
   */
   readonly toolId: string;
   /**
   * agent_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
   */
   readonly agentTool?: CesToolAgentTool;
   /**
   * client_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#client_function CesTool#client_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#client_function CesTool#client_function}
   */
   readonly clientFunction?: CesToolClientFunction;
   /**
   * data_store_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
   */
   readonly dataStoreTool?: CesToolDataStoreTool;
   /**
   * file_search_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
   */
   readonly fileSearchTool?: CesToolFileSearchTool;
   /**
   * google_search_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
   */
   readonly googleSearchTool?: CesToolGoogleSearchTool;
   /**
   * python_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#python_function CesTool#python_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#python_function CesTool#python_function}
   */
   readonly pythonFunction?: CesToolPythonFunction;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#timeouts CesTool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#timeouts CesTool#timeouts}
   */
   readonly timeouts?: CesToolTimeouts;
   /**
   * tool_fake_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
   */
   readonly toolFakeConfig?: CesToolToolFakeConfig;
   /**
   * widget_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
   */
   readonly widgetTool?: CesToolWidgetTool;
 }
@@ -2559,19 +2559,19 @@ export interface CesToolAgentTool {
   * Optional. The resource name of the agent that is the entry point of the tool.
   * Format: projects/{project}/locations/{location}/agents/{agent}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#agent CesTool#agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#agent CesTool#agent}
   */
   readonly agent?: string;
   /**
   * Optional. Description of the tool's purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
   * Required. The name of the agent tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
 }
@@ -2714,13 +2714,13 @@ export interface CesToolClientFunctionParameters {
   * The value must be a valid JSON string representing the Schema object.
   * (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
   */
   readonly additionalProperties?: string;
   /**
   * The instance value should be valid against at least one of the schemas in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#any_of CesTool#any_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#any_of CesTool#any_of}
   */
   readonly anyOf?: string;
   /**
@@ -2729,19 +2729,19 @@ export interface CesToolClientFunctionParameters {
   * or a list of values. The provided default value must be compatible
   * with the defined 'type' and other schema constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#default CesTool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#default CesTool#default}
   */
   readonly default?: string;
   /**
   * A map of definitions for use by ref. Only allowed at the root of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#defs CesTool#defs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#defs CesTool#defs}
   */
   readonly defs?: string;
   /**
   * The description of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
@@ -2752,55 +2752,55 @@ export interface CesToolClientFunctionParameters {
   * 2. We can define apartment number as :
   * {type:INTEGER, format:enum, enum:["101", "201", "301"]}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#enum CesTool#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#enum CesTool#enum}
   */
   readonly enum?: string[];
   /**
   * Schema of the elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#items CesTool#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#items CesTool#items}
   */
   readonly items?: string;
   /**
   * Maximum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#max_items CesTool#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#max_items CesTool#max_items}
   */
   readonly maxItems?: number;
   /**
   * Maximum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#maximum CesTool#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#maximum CesTool#maximum}
   */
   readonly maximum?: number;
   /**
   * Minimum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#min_items CesTool#min_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#min_items CesTool#min_items}
   */
   readonly minItems?: number;
   /**
   * Minimum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#minimum CesTool#minimum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#minimum CesTool#minimum}
   */
   readonly minimum?: number;
   /**
   * Indicates if the value may be null.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#nullable CesTool#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#nullable CesTool#nullable}
   */
   readonly nullable?: boolean | cdktn.IResolvable;
   /**
   * Schemas of initial elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
   */
   readonly prefixItems?: string;
   /**
   * Properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#properties CesTool#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#properties CesTool#properties}
   */
   readonly properties?: string;
   /**
@@ -2823,19 +2823,19 @@ export interface CesToolClientFunctionParameters {
   * See details in
   * https://json-schema.org/understanding-json-schema/structuring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#ref CesTool#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#ref CesTool#ref}
   */
   readonly ref?: string;
   /**
   * Required properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#required CesTool#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#required CesTool#required}
   */
   readonly required?: string[];
   /**
   * The title of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#title CesTool#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#title CesTool#title}
   */
   readonly title?: string;
   /**
@@ -2848,13 +2848,13 @@ export interface CesToolClientFunctionParameters {
   * OBJECT
   * ARRAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#type CesTool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#type CesTool#type}
   */
   readonly type: string;
   /**
   * Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
   */
   readonly uniqueItems?: boolean | cdktn.IResolvable;
 }
@@ -3461,13 +3461,13 @@ export interface CesToolClientFunctionResponse {
   * The value must be a valid JSON string representing the Schema object.
   * (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
   */
   readonly additionalProperties?: string;
   /**
   * The instance value should be valid against at least one of the schemas in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#any_of CesTool#any_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#any_of CesTool#any_of}
   */
   readonly anyOf?: string;
   /**
@@ -3476,19 +3476,19 @@ export interface CesToolClientFunctionResponse {
   * or a list of values. The provided default value must be compatible
   * with the defined 'type' and other schema constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#default CesTool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#default CesTool#default}
   */
   readonly default?: string;
   /**
   * A map of definitions for use by ref. Only allowed at the root of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#defs CesTool#defs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#defs CesTool#defs}
   */
   readonly defs?: string;
   /**
   * The description of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
@@ -3499,55 +3499,55 @@ export interface CesToolClientFunctionResponse {
   * 2. We can define apartment number as :
   * {type:INTEGER, format:enum, enum:["101", "201", "301"]}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#enum CesTool#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#enum CesTool#enum}
   */
   readonly enum?: string[];
   /**
   * Schema of the elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#items CesTool#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#items CesTool#items}
   */
   readonly items?: string;
   /**
   * Maximum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#max_items CesTool#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#max_items CesTool#max_items}
   */
   readonly maxItems?: number;
   /**
   * Maximum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#maximum CesTool#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#maximum CesTool#maximum}
   */
   readonly maximum?: number;
   /**
   * Minimum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#min_items CesTool#min_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#min_items CesTool#min_items}
   */
   readonly minItems?: number;
   /**
   * Minimum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#minimum CesTool#minimum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#minimum CesTool#minimum}
   */
   readonly minimum?: number;
   /**
   * Indicates if the value may be null.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#nullable CesTool#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#nullable CesTool#nullable}
   */
   readonly nullable?: boolean | cdktn.IResolvable;
   /**
   * Schemas of initial elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
   */
   readonly prefixItems?: string;
   /**
   * Properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#properties CesTool#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#properties CesTool#properties}
   */
   readonly properties?: string;
   /**
@@ -3570,19 +3570,19 @@ export interface CesToolClientFunctionResponse {
   * See details in
   * https://json-schema.org/understanding-json-schema/structuring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#ref CesTool#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#ref CesTool#ref}
   */
   readonly ref?: string;
   /**
   * Required properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#required CesTool#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#required CesTool#required}
   */
   readonly required?: string[];
   /**
   * The title of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#title CesTool#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#title CesTool#title}
   */
   readonly title?: string;
   /**
@@ -3595,13 +3595,13 @@ export interface CesToolClientFunctionResponse {
   * OBJECT
   * ARRAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#type CesTool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#type CesTool#type}
   */
   readonly type: string;
   /**
   * Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
   */
   readonly uniqueItems?: boolean | cdktn.IResolvable;
 }
@@ -4206,25 +4206,25 @@ export interface CesToolClientFunction {
   /**
   * The function description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
   * The function name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#parameters CesTool#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#parameters CesTool#parameters}
   */
   readonly parameters?: CesToolClientFunctionParameters;
   /**
   * response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#response CesTool#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#response CesTool#response}
   */
   readonly response?: CesToolClientFunctionResponse;
 }
@@ -4399,14 +4399,14 @@ export interface CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostContr
   * restricted subset of an ISO 8601 duration value). The pattern for
   * this is: 'nDnM]'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
   */
   readonly attributeValue?: string;
   /**
   * The value between -1 to 1 by which to boost the score if the
   * attribute_value evaluates to the value specified above.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
   */
   readonly boostAmount?: number;
 }
@@ -4560,14 +4560,14 @@ export interface CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostContr
   * NUMERICAL
   * FRESHNESS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
   */
   readonly attributeType?: string;
   /**
   * The name of the field whose value will be used to determine the
   * boost amount.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#field_name CesTool#field_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#field_name CesTool#field_name}
   */
   readonly fieldName?: string;
   /**
@@ -4576,13 +4576,13 @@ export interface CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostContr
   * Possible values:
   * LINEAR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
   */
   readonly interpolationType?: string;
   /**
   * control_points block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#control_points CesTool#control_points}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#control_points CesTool#control_points}
   */
   readonly controlPoints?: CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints[] | cdktn.IResolvable;
 }
@@ -4762,7 +4762,7 @@ export interface CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs {
   * Setting to 0.0 means no boost applied. The boosting condition is
   * ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#boost CesTool#boost}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#boost CesTool#boost}
   */
   readonly boost?: number;
   /**
@@ -4772,13 +4772,13 @@ export interface CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs {
   * Example: To boost suggestions in languages en or fr:
   * (lang_code: ANY("en", "fr"))
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#condition CesTool#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#condition CesTool#condition}
   */
   readonly condition: string;
   /**
   * boost_control_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
   */
   readonly boostControlSpec?: CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec;
 }
@@ -4951,7 +4951,7 @@ export interface CesToolDataStoreToolBoostSpecsSpec {
   /**
   * condition_boost_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
   */
   readonly conditionBoostSpecs: CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs[] | cdktn.IResolvable;
 }
@@ -5068,13 +5068,13 @@ export interface CesToolDataStoreToolBoostSpecs {
   * name of DataStore, such as
   * projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_stores CesTool#data_stores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_stores CesTool#data_stores}
   */
   readonly dataStores: string[];
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#spec CesTool#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#spec CesTool#spec}
   */
   readonly spec: CesToolDataStoreToolBoostSpecsSpec[] | cdktn.IResolvable;
 }
@@ -5301,7 +5301,7 @@ export interface CesToolDataStoreToolDataStoreSourceDataStore {
   * Full resource name of the DataStore.
   * Format: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
 }
@@ -5411,13 +5411,13 @@ export interface CesToolDataStoreToolDataStoreSource {
   * Optional. Filter specification for the DataStore.
   * See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#filter CesTool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#filter CesTool#filter}
   */
   readonly filter?: string;
   /**
   * data_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_store CesTool#data_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_store CesTool#data_store}
   */
   readonly dataStore?: CesToolDataStoreToolDataStoreSourceDataStore;
 }
@@ -5619,7 +5619,7 @@ export interface CesToolDataStoreToolEngineSourceDataStoreSourcesDataStore {
   * Format:
   * 'projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
 }
@@ -5730,13 +5730,13 @@ export interface CesToolDataStoreToolEngineSourceDataStoreSources {
   * See:
   * https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#filter CesTool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#filter CesTool#filter}
   */
   readonly filter?: string;
   /**
   * data_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_store CesTool#data_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_store CesTool#data_store}
   */
   readonly dataStore?: CesToolDataStoreToolEngineSourceDataStoreSourcesDataStore;
 }
@@ -5885,7 +5885,7 @@ export interface CesToolDataStoreToolEngineSource {
   * Format:
   * 'projects/{project}/locations/{location}/collections/{collection}/engines/{engine}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#engine CesTool#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#engine CesTool#engine}
   */
   readonly engine: string;
   /**
@@ -5894,13 +5894,13 @@ export interface CesToolDataStoreToolEngineSource {
   * See:
   * https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#filter CesTool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#filter CesTool#filter}
   */
   readonly filter?: string;
   /**
   * data_store_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
   */
   readonly dataStoreSources?: CesToolDataStoreToolEngineSourceDataStoreSources[] | cdktn.IResolvable;
 }
@@ -6041,7 +6041,7 @@ export interface CesToolDataStoreToolModalityConfigsGroundingConfig {
   /**
   * Whether grounding is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#disabled CesTool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#disabled CesTool#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
@@ -6053,7 +6053,7 @@ export interface CesToolDataStoreToolModalityConfigsGroundingConfig {
   * For example, a level of 3 means that the groundedness score must be
   * 3 or higher for the response to be returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
   */
   readonly groundingLevel?: number;
 }
@@ -6169,7 +6169,7 @@ export interface CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings 
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#model CesTool#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#model CesTool#model}
   */
   readonly model?: string;
   /**
@@ -6178,7 +6178,7 @@ export interface CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings 
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#temperature CesTool#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#temperature CesTool#temperature}
   */
   readonly temperature?: number;
 }
@@ -6293,19 +6293,19 @@ export interface CesToolDataStoreToolModalityConfigsRewriterConfig {
   /**
   * Whether the rewriter is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#disabled CesTool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#disabled CesTool#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The prompt definition. If not set, default prompt will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prompt CesTool#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prompt CesTool#prompt}
   */
   readonly prompt?: string;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
   */
   readonly modelSettings: CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings;
 }
@@ -6447,7 +6447,7 @@ export interface CesToolDataStoreToolModalityConfigsSummarizationConfigModelSett
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#model CesTool#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#model CesTool#model}
   */
   readonly model?: string;
   /**
@@ -6456,7 +6456,7 @@ export interface CesToolDataStoreToolModalityConfigsSummarizationConfigModelSett
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#temperature CesTool#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#temperature CesTool#temperature}
   */
   readonly temperature?: number;
 }
@@ -6571,19 +6571,19 @@ export interface CesToolDataStoreToolModalityConfigsSummarizationConfig {
   /**
   * Whether summarization is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#disabled CesTool#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#disabled CesTool#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The prompt definition. If not set, default prompt will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prompt CesTool#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prompt CesTool#prompt}
   */
   readonly prompt?: string;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
   */
   readonly modelSettings?: CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettings;
 }
@@ -6730,25 +6730,25 @@ export interface CesToolDataStoreToolModalityConfigs {
   * TEXT
   * AUDIO
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#modality_type CesTool#modality_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#modality_type CesTool#modality_type}
   */
   readonly modalityType: string;
   /**
   * grounding_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
   */
   readonly groundingConfig?: CesToolDataStoreToolModalityConfigsGroundingConfig;
   /**
   * rewriter_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
   */
   readonly rewriterConfig?: CesToolDataStoreToolModalityConfigsRewriterConfig;
   /**
   * summarization_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
   */
   readonly summarizationConfig?: CesToolDataStoreToolModalityConfigsSummarizationConfig;
 }
@@ -6950,7 +6950,7 @@ export interface CesToolDataStoreTool {
   /**
   * The tool description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
@@ -6960,44 +6960,44 @@ export interface CesToolDataStoreTool {
   * ALWAYS_INCLUDE
   * NEVER_INCLUDE Possible values: ["FILTER_PARAMETER_BEHAVIOR_UNSPECIFIED", "ALWAYS_INCLUDE", "NEVER_INCLUDE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
   */
   readonly filterParameterBehavior?: string;
   /**
   * Number of search results to return per query.
   * The default value is 10. The maximum allowed value is 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#max_results CesTool#max_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#max_results CesTool#max_results}
   */
   readonly maxResults?: number;
   /**
   * The data store tool name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
   /**
   * boost_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
   */
   readonly boostSpecs?: CesToolDataStoreToolBoostSpecs[] | cdktn.IResolvable;
   /**
   * data_store_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
   */
   readonly dataStoreSource?: CesToolDataStoreToolDataStoreSource;
   /**
   * engine_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#engine_source CesTool#engine_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#engine_source CesTool#engine_source}
   */
   readonly engineSource?: CesToolDataStoreToolEngineSource;
   /**
   * modality_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
   */
   readonly modalityConfigs?: CesToolDataStoreToolModalityConfigs[] | cdktn.IResolvable;
 }
@@ -7287,26 +7287,26 @@ export interface CesToolFileSearchTool {
   * USER_OWNED
   * FULLY_MANAGED Possible values: ["CORPUS_TYPE_UNSPECIFIED", "USER_OWNED", "FULLY_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
   */
   readonly corpusType?: string;
   /**
   * Optional. The tool description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
   * Optional. The corpus where files are stored.
   * Format: projects/{project}/locations/{location}/ragCorpora/{rag_corpus}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
   */
   readonly fileCorpus?: string;
   /**
   * Required. The tool name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
 }
@@ -7477,14 +7477,14 @@ export interface CesToolGoogleSearchToolPromptConfig {
   * Optional. Defines the prompt used for the system instructions when interacting with the
   * agent in chat conversations. If not set, default prompt will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
   */
   readonly textPrompt?: string;
   /**
   * Optional. Defines the prompt used for the system instructions when interacting with the
   * agent in voice conversations. If not set, default prompt will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
   */
   readonly voicePrompt?: string;
 }
@@ -7601,13 +7601,13 @@ export interface CesToolGoogleSearchTool {
   * More details: https://cloud.google.com/vertex-ai/generative-ai/docs/url-context.
   * Example: "https://example.com/path.html". A maximum of 20 URLs are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#context_urls CesTool#context_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#context_urls CesTool#context_urls}
   */
   readonly contextUrls?: string[];
   /**
   * Description of the tool's purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
@@ -7615,13 +7615,13 @@ export interface CesToolGoogleSearchTool {
   * Example: "example.com".
   * A maximum of 2000 domains can be excluded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
   */
   readonly excludeDomains?: string[];
   /**
   * The name of the tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
   /**
@@ -7633,13 +7633,13 @@ export interface CesToolGoogleSearchTool {
   * Example: "example.com", "another.site".
   * A maximum of 20 domains can be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
   */
   readonly preferredDomains?: string[];
   /**
   * prompt_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
   */
   readonly promptConfig?: CesToolGoogleSearchToolPromptConfig;
 }
@@ -7869,13 +7869,13 @@ export interface CesToolPythonFunction {
   * name defined in the python code. Case sensitive. If the name is not
   * provided, the first function defined in the python code will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name?: string;
   /**
   * The Python code to execute for the tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#python_code CesTool#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#python_code CesTool#python_code}
   */
   readonly pythonCode?: string;
 }
@@ -7993,15 +7993,15 @@ export class CesToolPythonFunctionOutputReference extends cdktn.ComplexObject {
 }
 export interface CesToolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#create CesTool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#create CesTool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#delete CesTool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#delete CesTool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#update CesTool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#update CesTool#update}
   */
   readonly update?: string;
 }
@@ -8155,7 +8155,7 @@ export interface CesToolToolFakeConfigCodeBlock {
   /**
   * Python code which will be invoked in tool fake mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#python_code CesTool#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#python_code CesTool#python_code}
   */
   readonly pythonCode: string;
 }
@@ -8238,13 +8238,13 @@ export interface CesToolToolFakeConfig {
   /**
   * Whether the tool is using fake mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
   */
   readonly enableFakeMode?: boolean | cdktn.IResolvable;
   /**
   * code_block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#code_block CesTool#code_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#code_block CesTool#code_block}
   */
   readonly codeBlock?: CesToolToolFakeConfigCodeBlock;
 }
@@ -8361,13 +8361,13 @@ export interface CesToolWidgetToolDataMappingPythonFunction {
   * name defined in the python code. Case sensitive. If the name is not
   * provided, the first function defined in the python code will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name?: string;
   /**
   * Optional. The Python code to execute for the tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#python_code CesTool#python_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#python_code CesTool#python_code}
   */
   readonly pythonCode?: string;
 }
@@ -8488,7 +8488,7 @@ export interface CesToolWidgetToolDataMapping {
   * Optional. A map of widget input parameter fields to the corresponding output fields of the source tool.
   * An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
   */
   readonly fieldMappings?: { [key: string]: string };
   /**
@@ -8498,20 +8498,20 @@ export interface CesToolWidgetToolDataMapping {
   * FIELD_MAPPING
   * PYTHON_SCRIPT Possible values: ["MODE_UNSPECIFIED", "FIELD_MAPPING", "PYTHON_SCRIPT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#mode CesTool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#mode CesTool#mode}
   */
   readonly mode?: string;
   /**
   * Optional. The resource name of the tool that provides the data for the widget (e.g., a search tool or a custom function).
   * Format: projects/{project}/locations/{location}/agents/{agent}/tools/{tool}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
   */
   readonly sourceToolName?: string;
   /**
   * python_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#python_function CesTool#python_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#python_function CesTool#python_function}
   */
   readonly pythonFunction?: CesToolWidgetToolDataMappingPythonFunction;
 }
@@ -8686,13 +8686,13 @@ export interface CesToolWidgetToolParameters {
   * The value must be a valid JSON string representing the Schema object.
   * (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
   */
   readonly additionalProperties?: string;
   /**
   * The instance value should be valid against at least one of the schemas in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#any_of CesTool#any_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#any_of CesTool#any_of}
   */
   readonly anyOf?: string;
   /**
@@ -8701,19 +8701,19 @@ export interface CesToolWidgetToolParameters {
   * or a list of values. The provided default value must be compatible
   * with the defined 'type' and other schema constraints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#default CesTool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#default CesTool#default}
   */
   readonly default?: string;
   /**
   * A map of definitions for use by ref. Only allowed at the root of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#defs CesTool#defs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#defs CesTool#defs}
   */
   readonly defs?: string;
   /**
   * The description of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
@@ -8724,55 +8724,55 @@ export interface CesToolWidgetToolParameters {
   * 2. We can define apartment number as :
   * {type:INTEGER, format:enum, enum:["101", "201", "301"]}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#enum CesTool#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#enum CesTool#enum}
   */
   readonly enum?: string[];
   /**
   * Schema of the elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#items CesTool#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#items CesTool#items}
   */
   readonly items?: string;
   /**
   * Maximum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#max_items CesTool#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#max_items CesTool#max_items}
   */
   readonly maxItems?: number;
   /**
   * Maximum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#maximum CesTool#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#maximum CesTool#maximum}
   */
   readonly maximum?: number;
   /**
   * Minimum number of the elements for Type.ARRAY. (int64 format)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#min_items CesTool#min_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#min_items CesTool#min_items}
   */
   readonly minItems?: number;
   /**
   * Minimum value for Type.INTEGER and Type.NUMBER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#minimum CesTool#minimum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#minimum CesTool#minimum}
   */
   readonly minimum?: number;
   /**
   * Indicates if the value may be null.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#nullable CesTool#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#nullable CesTool#nullable}
   */
   readonly nullable?: boolean | cdktn.IResolvable;
   /**
   * Schemas of initial elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
   */
   readonly prefixItems?: string;
   /**
   * Properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#properties CesTool#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#properties CesTool#properties}
   */
   readonly properties?: string;
   /**
@@ -8795,19 +8795,19 @@ export interface CesToolWidgetToolParameters {
   * See details in
   * https://json-schema.org/understanding-json-schema/structuring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#ref CesTool#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#ref CesTool#ref}
   */
   readonly ref?: string;
   /**
   * Required properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#required CesTool#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#required CesTool#required}
   */
   readonly required?: string[];
   /**
   * The title of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#title CesTool#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#title CesTool#title}
   */
   readonly title?: string;
   /**
@@ -8820,13 +8820,13 @@ export interface CesToolWidgetToolParameters {
   * OBJECT
   * ARRAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#type CesTool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#type CesTool#type}
   */
   readonly type: string;
   /**
   * Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
   */
   readonly uniqueItems?: boolean | cdktn.IResolvable;
 }
@@ -9431,14 +9431,14 @@ export interface CesToolWidgetToolTextResponseConfig {
   /**
   * Optional. The static text response to return when type is STATIC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#static_text CesTool#static_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#static_text CesTool#static_text}
   */
   readonly staticText?: string;
   /**
   * Optional. Instruction for the LLM on how to generate the text response. Used as
   * the description for the text response parameter if type is LLM_GENERATED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
   */
   readonly textResponseInstruction?: string;
   /**
@@ -9449,7 +9449,7 @@ export interface CesToolWidgetToolTextResponseConfig {
   * LLM_GENERATED
   * STATIC Possible values: ["TYPE_UNSPECIFIED", "NONE", "LLM_GENERATED", "STATIC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#type CesTool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#type CesTool#type}
   */
   readonly type?: string;
 }
@@ -9593,19 +9593,19 @@ export interface CesToolWidgetTool {
   /**
   * Optional. The description of the widget tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#description CesTool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#description CesTool#description}
   */
   readonly description?: string;
   /**
   * Required. The display name of the widget tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#name CesTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#name CesTool#name}
   */
   readonly name: string;
   /**
   * Optional. Configuration for rendering the widget. Represents a JSON object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#ui_config CesTool#ui_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#ui_config CesTool#ui_config}
   */
   readonly uiConfig?: string;
   /**
@@ -9625,25 +9625,25 @@ export interface CesToolWidgetTool {
   * APPOINTMENT_SCHEDULER
   * CONTACT_FORM Possible values: ["WIDGET_TYPE_UNSPECIFIED", "CUSTOM", "PRODUCT_CAROUSEL", "PRODUCT_DETAILS", "QUICK_ACTIONS", "PRODUCT_COMPARISON", "ADVANCED_PRODUCT_DETAILS", "SHORT_FORM", "OVERALL_SATISFACTION", "ORDER_SUMMARY", "APPOINTMENT_DETAILS", "APPOINTMENT_SCHEDULER", "CONTACT_FORM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#widget_type CesTool#widget_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#widget_type CesTool#widget_type}
   */
   readonly widgetType?: string;
   /**
   * data_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
   */
   readonly dataMapping?: CesToolWidgetToolDataMapping;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#parameters CesTool#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#parameters CesTool#parameters}
   */
   readonly parameters?: CesToolWidgetToolParameters;
   /**
   * text_response_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
   */
   readonly textResponseConfig?: CesToolWidgetToolTextResponseConfig;
 }
@@ -9898,7 +9898,7 @@ export class CesToolWidgetToolOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool google_ces_tool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool google_ces_tool}
 */
 export class CesTool extends cdktn.TerraformResource {
 
@@ -9914,7 +9914,7 @@ export class CesTool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesTool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesTool to import
-  * @param importFromId The id of the existing CesTool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesTool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesTool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -9926,7 +9926,7 @@ export class CesTool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/ces_tool google_ces_tool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_tool google_ces_tool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9937,7 +9937,7 @@ export class CesTool extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_tool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### BiglakeIcebergTableIamMember <a name="BiglakeIcebergTableIamMember" id="@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member google_biglake_iceberg_table_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member google_biglake_iceberg_table_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BiglakeIcebergTableIamMemb
 
 The id of the existing BiglakeIcebergTableIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,9 +923,9 @@ new BiglakeIcebergTableIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#expression BiglakeIcebergTableIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#title BiglakeIcebergTableIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#description BiglakeIcebergTableIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#expression BiglakeIcebergTableIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#title BiglakeIcebergTableIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#description BiglakeIcebergTableIamMember#description}. |
 
 ---
 
@@ -937,7 +937,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#expression BiglakeIcebergTableIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#expression BiglakeIcebergTableIamMember#expression}.
 
 ---
 
@@ -949,7 +949,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#title BiglakeIcebergTableIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#title BiglakeIcebergTableIamMember#title}.
 
 ---
 
@@ -961,7 +961,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#description BiglakeIcebergTableIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#description BiglakeIcebergTableIamMember#description}.
 
 ---
 
@@ -1002,14 +1002,14 @@ new BiglakeIcebergTableIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#catalog BiglakeIcebergTableIamMember#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#member BiglakeIcebergTableIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#name BiglakeIcebergTableIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#namespace BiglakeIcebergTableIamMember#namespace}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#role BiglakeIcebergTableIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#catalog BiglakeIcebergTableIamMember#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#member BiglakeIcebergTableIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#name BiglakeIcebergTableIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#namespace BiglakeIcebergTableIamMember#namespace}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#role BiglakeIcebergTableIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition">BiglakeIcebergTableIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#id BiglakeIcebergTableIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#project BiglakeIcebergTableIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#id BiglakeIcebergTableIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#project BiglakeIcebergTableIamMember#project}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Catalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#catalog BiglakeIcebergTableIamMember#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#catalog BiglakeIcebergTableIamMember#catalog}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#member BiglakeIcebergTableIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#member BiglakeIcebergTableIamMember#member}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#name BiglakeIcebergTableIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#name BiglakeIcebergTableIamMember#name}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#namespace BiglakeIcebergTableIamMember#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#namespace BiglakeIcebergTableIamMember#namespace}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#role BiglakeIcebergTableIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#role BiglakeIcebergTableIamMember#role}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public BiglakeIcebergTableIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#condition BiglakeIcebergTableIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#condition BiglakeIcebergTableIamMember#condition}
 
 ---
 
@@ -1165,7 +1165,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#id BiglakeIcebergTableIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#id BiglakeIcebergTableIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/biglake_iceberg_table_iam_member#project BiglakeIcebergTableIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/biglake_iceberg_table_iam_member#project BiglakeIcebergTableIamMember#project}.
 
 ---
 

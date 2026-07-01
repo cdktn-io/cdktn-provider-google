@@ -4,7 +4,7 @@
 
 ### TagsTagBinding <a name="TagsTagBinding" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding google_tags_tag_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding google_tags_tag_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the TagsTagBinding to import.
 
 The id of the existing TagsTagBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagbinding"
 | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.parent">Parent</a></code> | <code>*string</code> | The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123. |
 | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.tagValue">TagValue</a></code> | <code>*string</code> | The TagValue of the TagBinding. Must be either in id format 'tagValues/{tag-value-id}', or namespaced format '{parent-id}/{tag-key-short-name}/{tag-value-short-name}'. |
 | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}. |
 | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -961,7 +961,7 @@ Parent *string
 
 The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#parent TagsTagBinding#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#parent TagsTagBinding#parent}
 
 ---
 
@@ -975,7 +975,7 @@ TagValue *string
 
 The TagValue of the TagBinding. Must be either in id format 'tagValues/{tag-value-id}', or namespaced format '{parent-id}/{tag-key-short-name}/{tag-value-short-name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#tag_value TagsTagBinding#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#tag_value TagsTagBinding#tag_value}
 
 ---
 
@@ -996,7 +996,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#deletion_policy TagsTagBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#deletion_policy TagsTagBinding#deletion_policy}
 
 ---
 
@@ -1008,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,7 +1025,7 @@ Timeouts TagsTagBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#timeouts TagsTagBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#timeouts TagsTagBinding#timeouts}
 
 ---
 
@@ -1046,8 +1046,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagbinding"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}. |
-| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}. |
 
 ---
 
@@ -1059,7 +1059,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}.
 
 ---
 

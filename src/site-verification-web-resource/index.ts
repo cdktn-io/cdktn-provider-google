@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface SiteVerificationWebResourceConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,19 +35,19 @@ export interface SiteVerificationWebResourceConfig extends cdktn.TerraformMetaAr
   * The verification method for the Site Verification system to use to verify
   * this site or domain. Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
   */
   readonly verificationMethod: string;
   /**
   * site block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
   */
   readonly site: SiteVerificationWebResourceSite;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
   */
   readonly timeouts?: SiteVerificationWebResourceTimeouts;
 }
@@ -56,13 +56,13 @@ export interface SiteVerificationWebResourceSite {
   * The site identifier. If the type is set to SITE, the identifier is a URL. If the type is
   * set to INET_DOMAIN, the identifier is a domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
   */
   readonly identifier: string;
   /**
   * The type of resource to be verified. Possible values: ["INET_DOMAIN", "SITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
   */
   readonly type: string;
 }
@@ -169,11 +169,11 @@ export class SiteVerificationWebResourceSiteOutputReference extends cdktn.Comple
 }
 export interface SiteVerificationWebResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}
   */
   readonly delete?: string;
 }
@@ -296,7 +296,7 @@ export class SiteVerificationWebResourceTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}
 */
 export class SiteVerificationWebResource extends cdktn.TerraformResource {
 
@@ -312,7 +312,7 @@ export class SiteVerificationWebResource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SiteVerificationWebResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteVerificationWebResource to import
-  * @param importFromId The id of the existing SiteVerificationWebResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SiteVerificationWebResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteVerificationWebResource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -324,7 +324,7 @@ export class SiteVerificationWebResource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/site_verification_web_resource google_site_verification_web_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/site_verification_web_resource google_site_verification_web_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -335,7 +335,7 @@ export class SiteVerificationWebResource extends cdktn.TerraformResource {
       terraformResourceType: 'google_site_verification_web_resource',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

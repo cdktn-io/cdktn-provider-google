@@ -4,7 +4,7 @@
 
 ### ComputeVpnGateway <a name="ComputeVpnGateway" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway google_compute_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway google_compute_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the ComputeVpnGateway to impor
 
 The id of the existing ComputeVpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,9 +1032,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngatewa
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.network">Network</a></code> | <code>*string</code> | The network this VPN gateway is accepting traffic for. |
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#id ComputeVpnGateway#id}. |
+| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#id ComputeVpnGateway#id}. |
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayParams">ComputeVpnGatewayParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#project ComputeVpnGateway#project}. |
+| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#project ComputeVpnGateway#project}. |
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.region">Region</a></code> | <code>*string</code> | The region this gateway should sit in. |
 | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts">ComputeVpnGatewayTimeouts</a></code> | timeouts block. |
 
@@ -1128,7 +1128,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#name ComputeVpnGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#name ComputeVpnGateway#name}
 
 ---
 
@@ -1142,7 +1142,7 @@ Network *string
 
 The network this VPN gateway is accepting traffic for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#network ComputeVpnGateway#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#network ComputeVpnGateway#network}
 
 ---
 
@@ -1163,7 +1163,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#deletion_policy ComputeVpnGateway#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#deletion_policy ComputeVpnGateway#deletion_policy}
 
 ---
 
@@ -1177,7 +1177,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#description ComputeVpnGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#description ComputeVpnGateway#description}
 
 ---
 
@@ -1189,7 +1189,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#id ComputeVpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#id ComputeVpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1206,7 +1206,7 @@ Params ComputeVpnGatewayParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#params ComputeVpnGateway#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#params ComputeVpnGateway#params}
 
 ---
 
@@ -1218,7 +1218,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#project ComputeVpnGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#project ComputeVpnGateway#project}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Region *string
 
 The region this gateway should sit in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#region ComputeVpnGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#region ComputeVpnGateway#region}
 
 ---
 
@@ -1246,7 +1246,7 @@ Timeouts ComputeVpnGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#timeouts ComputeVpnGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#timeouts ComputeVpnGateway#timeouts}
 
 ---
 
@@ -1284,7 +1284,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#resource_manager_tags ComputeVpnGateway#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#resource_manager_tags ComputeVpnGateway#resource_manager_tags}
 
 ---
 
@@ -1305,8 +1305,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngatewa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#create ComputeVpnGateway#create}. |
-| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#delete ComputeVpnGateway#delete}. |
+| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#create ComputeVpnGateway#create}. |
+| <code><a href="#@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#delete ComputeVpnGateway#delete}. |
 
 ---
 
@@ -1318,7 +1318,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#create ComputeVpnGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#create ComputeVpnGateway#create}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_vpn_gateway#delete ComputeVpnGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_vpn_gateway#delete ComputeVpnGateway#delete}.
 
 ---
 

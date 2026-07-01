@@ -8,7 +8,6 @@ import { DataGoogleContainerClusterNodeConfigKubeletConfigCrashLoopBackOffList,
 DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList,
 DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList,
 DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList,
-DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerList,
 DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList,
 DataGoogleContainerClusterNodeConfigBootDiskList,
 DataGoogleContainerClusterNodeConfigConfidentialNodesList,
@@ -20,6 +19,81 @@ DataGoogleContainerClusterNodeConfigGcfsConfigList,
 DataGoogleContainerClusterNodeConfigGuestAcceleratorList,
 DataGoogleContainerClusterNodeConfigGvnicList,
 DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList } from './structs0';
+export interface DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManager {
+}
+
+export function dataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerToTerraform(struct?: DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManager): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerToHclTerraform(struct?: DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManager): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManager | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManager | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // policy - computed: true, optional: false, required: false
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+}
+
+export class DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference {
+    return new DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleContainerClusterNodeConfigKubeletConfigTopologyManager {
 }
 
@@ -249,6 +323,16 @@ export class DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference ex
   // pod_pids_limit - computed: true, optional: false, required: false
   public get podPidsLimit() {
     return this.getNumberAttribute('pod_pids_limit');
+  }
+
+  // shutdown_grace_period_critical_pods_seconds - computed: true, optional: false, required: false
+  public get shutdownGracePeriodCriticalPodsSeconds() {
+    return this.getNumberAttribute('shutdown_grace_period_critical_pods_seconds');
+  }
+
+  // shutdown_grace_period_seconds - computed: true, optional: false, required: false
+  public get shutdownGracePeriodSeconds() {
+    return this.getNumberAttribute('shutdown_grace_period_seconds');
   }
 
   // single_process_oom_kill - computed: true, optional: false, required: false
@@ -5642,6 +5726,16 @@ export class DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputRefe
     return this.getNumberAttribute('pod_pids_limit');
   }
 
+  // shutdown_grace_period_critical_pods_seconds - computed: true, optional: false, required: false
+  public get shutdownGracePeriodCriticalPodsSeconds() {
+    return this.getNumberAttribute('shutdown_grace_period_critical_pods_seconds');
+  }
+
+  // shutdown_grace_period_seconds - computed: true, optional: false, required: false
+  public get shutdownGracePeriodSeconds() {
+    return this.getNumberAttribute('shutdown_grace_period_seconds');
+  }
+
   // single_process_oom_kill - computed: true, optional: false, required: false
   public get singleProcessOomKill() {
     return this.getBooleanAttribute('single_process_oom_kill');
@@ -8939,86 +9033,5 @@ export class DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContain
   */
   public get(index: number): DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference {
     return new DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig {
-}
-
-export function dataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigToTerraform(struct?: DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigToHclTerraform(struct?: DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // certificate_authority_domain_config - computed: true, optional: false, required: false
-  private _certificateAuthorityDomainConfig = new DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList(this, "certificate_authority_domain_config", false);
-  public get certificateAuthorityDomainConfig() {
-    return this._certificateAuthorityDomainConfig;
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-}
-
-export class DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference {
-    return new DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
