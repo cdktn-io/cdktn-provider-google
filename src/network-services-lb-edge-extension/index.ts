@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,24 +21,24 @@ export interface NetworkServicesLbEdgeExtensionConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#deletion_policy NetworkServicesLbEdgeExtension#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#deletion_policy NetworkServicesLbEdgeExtension#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human-readable description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#description NetworkServicesLbEdgeExtension#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#description NetworkServicesLbEdgeExtension#description}
   */
   readonly description?: string;
   /**
   * A list of references to the forwarding rules to which this service extension is attached.
   * At least one forwarding rule is required. Only one LbEdgeExtension resource can be associated with a forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#forwarding_rules NetworkServicesLbEdgeExtension#forwarding_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#forwarding_rules NetworkServicesLbEdgeExtension#forwarding_rules}
   */
   readonly forwardingRules: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#id NetworkServicesLbEdgeExtension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#id NetworkServicesLbEdgeExtension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,41 +50,41 @@ export interface NetworkServicesLbEdgeExtensionConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#labels NetworkServicesLbEdgeExtension#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#labels NetworkServicesLbEdgeExtension#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * All forwarding rules referenced by this extension must share the same load balancing scheme. Possible values: ["EXTERNAL_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#load_balancing_scheme NetworkServicesLbEdgeExtension#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#load_balancing_scheme NetworkServicesLbEdgeExtension#load_balancing_scheme}
   */
   readonly loadBalancingScheme: string;
   /**
   * The location of the edge extension
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#location NetworkServicesLbEdgeExtension#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#location NetworkServicesLbEdgeExtension#location}
   */
   readonly location: string;
   /**
   * Name of the LbEdgeExtension resource in the following format: projects/{project}/locations/{location}/lbEdgeExtensions/{lbEdgeExtensions}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#project NetworkServicesLbEdgeExtension#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#project NetworkServicesLbEdgeExtension#project}
   */
   readonly project?: string;
   /**
   * extension_chains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#extension_chains NetworkServicesLbEdgeExtension#extension_chains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#extension_chains NetworkServicesLbEdgeExtension#extension_chains}
   */
   readonly extensionChains: NetworkServicesLbEdgeExtensionExtensionChains[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#timeouts NetworkServicesLbEdgeExtension#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#timeouts NetworkServicesLbEdgeExtension#timeouts}
   */
   readonly timeouts?: NetworkServicesLbEdgeExtensionTimeouts;
 }
@@ -97,14 +97,25 @@ export interface NetworkServicesLbEdgeExtensionExtensionChainsExtensions {
   * a generic 500 error is returned to the client. The error response can be tailored by
   * configuring a custom error response in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#fail_open NetworkServicesLbEdgeExtension#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#fail_open NetworkServicesLbEdgeExtension#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
+  /**
+  * List of the Envoy attributes to forward to the extension server. The attributes
+  * provided here are included as part of the 'ProcessingRequest.attributes' field
+  * (of type 'map'), where the keys are the attribute names. Refer to the
+  * [documentation](https://docs.cloud.google.com/service-extensions/docs/attributes)
+  * for the names of attributes that can be forwarded. If omitted, no attributes
+  * are sent. Each element is a string indicating the attribute name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#forward_attributes NetworkServicesLbEdgeExtension#forward_attributes}
+  */
+  readonly forwardAttributes?: string[];
   /**
   * List of the HTTP headers to forward to the extension (from the client or backend).
   * If omitted, all headers are sent. Each element is a string indicating the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#forward_headers NetworkServicesLbEdgeExtension#forward_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#forward_headers NetworkServicesLbEdgeExtension#forward_headers}
   */
   readonly forwardHeaders?: string[];
   /**
@@ -113,7 +124,7 @@ export interface NetworkServicesLbEdgeExtensionExtensionChainsExtensions {
   * and can have a maximum length of 63 characters. Additionally, the first character must be a letter
   * and the last a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
   */
   readonly name: string;
   /**
@@ -122,14 +133,14 @@ export interface NetworkServicesLbEdgeExtensionExtensionChainsExtensions {
   * * To configure a callout extension, service must be a fully-qualified reference to a backend service.
   * * To configure a plugin extension, service must be a reference to a WasmPlugin resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#service NetworkServicesLbEdgeExtension#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#service NetworkServicesLbEdgeExtension#service}
   */
   readonly service: string;
   /**
   * A set of events during request or response processing for which this extension is called.
   * This field is required for the LbEdgeExtension resource and only supports the value 'REQUEST_HEADERS'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#supported_events NetworkServicesLbEdgeExtension#supported_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#supported_events NetworkServicesLbEdgeExtension#supported_events}
   */
   readonly supportedEvents?: string[];
 }
@@ -141,6 +152,7 @@ export function networkServicesLbEdgeExtensionExtensionChainsExtensionsToTerrafo
   }
   return {
     fail_open: cdktn.booleanToTerraform(struct!.failOpen),
+    forward_attributes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.forwardAttributes),
     forward_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.forwardHeaders),
     name: cdktn.stringToTerraform(struct!.name),
     service: cdktn.stringToTerraform(struct!.service),
@@ -160,6 +172,12 @@ export function networkServicesLbEdgeExtensionExtensionChainsExtensionsToHclTerr
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    forward_attributes: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.forwardAttributes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
     forward_headers: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.forwardHeaders),
@@ -215,6 +233,10 @@ export class NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputRefere
       hasAnyValues = true;
       internalValueResult.failOpen = this._failOpen;
     }
+    if (this._forwardAttributes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardAttributes = this._forwardAttributes;
+    }
     if (this._forwardHeaders !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardHeaders = this._forwardHeaders;
@@ -239,6 +261,7 @@ export class NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputRefere
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._failOpen = undefined;
+      this._forwardAttributes = undefined;
       this._forwardHeaders = undefined;
       this._name = undefined;
       this._service = undefined;
@@ -252,6 +275,7 @@ export class NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputRefere
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._failOpen = value.failOpen;
+      this._forwardAttributes = value.forwardAttributes;
       this._forwardHeaders = value.forwardHeaders;
       this._name = value.name;
       this._service = value.service;
@@ -273,6 +297,22 @@ export class NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputRefere
   // Temporarily expose input value. Use with caution.
   public get failOpenInput() {
     return this._failOpen;
+  }
+
+  // forward_attributes - computed: false, optional: true, required: false
+  private _forwardAttributes?: string[]; 
+  public get forwardAttributes() {
+    return this.getListAttribute('forward_attributes');
+  }
+  public set forwardAttributes(value: string[]) {
+    this._forwardAttributes = value;
+  }
+  public resetForwardAttributes() {
+    this._forwardAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardAttributesInput() {
+    return this._forwardAttributes;
   }
 
   // forward_headers - computed: false, optional: true, required: false
@@ -357,7 +397,7 @@ export interface NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition {
   /**
   * A Common Expression Language (CEL) expression that is used to match requests for which the extension chain is executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#cel_expression NetworkServicesLbEdgeExtension#cel_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#cel_expression NetworkServicesLbEdgeExtension#cel_expression}
   */
   readonly celExpression: string;
 }
@@ -443,19 +483,19 @@ export interface NetworkServicesLbEdgeExtensionExtensionChains {
   * and can have a maximum length of 63 characters. Additionally, the first character must be a letter
   * and the last character must be a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#name NetworkServicesLbEdgeExtension#name}
   */
   readonly name: string;
   /**
   * extensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#extensions NetworkServicesLbEdgeExtension#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#extensions NetworkServicesLbEdgeExtension#extensions}
   */
   readonly extensions: NetworkServicesLbEdgeExtensionExtensionChainsExtensions[] | cdktn.IResolvable;
   /**
   * match_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#match_condition NetworkServicesLbEdgeExtension#match_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#match_condition NetworkServicesLbEdgeExtension#match_condition}
   */
   readonly matchCondition: NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition;
 }
@@ -620,15 +660,15 @@ export class NetworkServicesLbEdgeExtensionExtensionChainsList extends cdktn.Com
 }
 export interface NetworkServicesLbEdgeExtensionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#create NetworkServicesLbEdgeExtension#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#create NetworkServicesLbEdgeExtension#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#delete NetworkServicesLbEdgeExtension#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#delete NetworkServicesLbEdgeExtension#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#update NetworkServicesLbEdgeExtension#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#update NetworkServicesLbEdgeExtension#update}
   */
   readonly update?: string;
 }
@@ -780,7 +820,7 @@ export class NetworkServicesLbEdgeExtensionTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension google_network_services_lb_edge_extension}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension google_network_services_lb_edge_extension}
 */
 export class NetworkServicesLbEdgeExtension extends cdktn.TerraformResource {
 
@@ -796,7 +836,7 @@ export class NetworkServicesLbEdgeExtension extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesLbEdgeExtension resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesLbEdgeExtension to import
-  * @param importFromId The id of the existing NetworkServicesLbEdgeExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesLbEdgeExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesLbEdgeExtension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -808,7 +848,7 @@ export class NetworkServicesLbEdgeExtension extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_services_lb_edge_extension google_network_services_lb_edge_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_services_lb_edge_extension google_network_services_lb_edge_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -819,7 +859,7 @@ export class NetworkServicesLbEdgeExtension extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_lb_edge_extension',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

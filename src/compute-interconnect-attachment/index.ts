@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * Whether the VLAN attachment is enabled or disabled.  When using
   * PARTNER type this will Pre-Activate the interconnect attachment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#admin_enabled ComputeInterconnectAttachment#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#admin_enabled ComputeInterconnectAttachment#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -26,35 +26,35 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED,
   * Defaults to BPS_10G Possible values: ["BPS_50M", "BPS_100M", "BPS_200M", "BPS_300M", "BPS_400M", "BPS_500M", "BPS_1G", "BPS_2G", "BPS_5G", "BPS_10G", "BPS_20G", "BPS_50G", "BPS_100G", "BPS_400G"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#bandwidth ComputeInterconnectAttachment#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#bandwidth ComputeInterconnectAttachment#bandwidth}
   */
   readonly bandwidth?: string;
   /**
   * Single IPv4 address + prefix length to be configured on the cloud router interface for this
   * interconnect attachment. Example: 203.0.113.1/29
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#candidate_cloud_router_ip_address ComputeInterconnectAttachment#candidate_cloud_router_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#candidate_cloud_router_ip_address ComputeInterconnectAttachment#candidate_cloud_router_ip_address}
   */
   readonly candidateCloudRouterIpAddress?: string;
   /**
   * Single IPv6 address + prefix length to be configured on the cloud router interface for this
   * interconnect attachment. Example: 2001:db8::1/125
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#candidate_cloud_router_ipv6_address ComputeInterconnectAttachment#candidate_cloud_router_ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#candidate_cloud_router_ipv6_address ComputeInterconnectAttachment#candidate_cloud_router_ipv6_address}
   */
   readonly candidateCloudRouterIpv6Address?: string;
   /**
   * Single IPv4 address + prefix length to be configured on the customer router interface for this
   * interconnect attachment. Example: 203.0.113.2/29
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#candidate_customer_router_ip_address ComputeInterconnectAttachment#candidate_customer_router_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#candidate_customer_router_ip_address ComputeInterconnectAttachment#candidate_customer_router_ip_address}
   */
   readonly candidateCustomerRouterIpAddress?: string;
   /**
   * Single IPv6 address + prefix length to be configured on the customer router interface for this
   * interconnect attachment. Example: 2001:db8::2/125
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#candidate_customer_router_ipv6_address ComputeInterconnectAttachment#candidate_customer_router_ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#candidate_customer_router_ipv6_address ComputeInterconnectAttachment#candidate_customer_router_ipv6_address}
   */
   readonly candidateCustomerRouterIpv6Address?: string;
   /**
@@ -66,7 +66,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * fail if all possible /29s are in use on Google's edge. If not supplied,
   * Google will randomly select an unused /29 from all of link-local space.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#candidate_subnets ComputeInterconnectAttachment#candidate_subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#candidate_subnets ComputeInterconnectAttachment#candidate_subnets}
   */
   readonly candidateSubnets?: string[];
   /**
@@ -78,13 +78,13 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#deletion_policy ComputeInterconnectAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#deletion_policy ComputeInterconnectAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#description ComputeInterconnectAttachment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#description ComputeInterconnectAttachment#description}
   */
   readonly description?: string;
   /**
@@ -95,7 +95,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * pairing key so that the provisioned circuit will lie in the specified
   * domain. If not specified, the value will default to AVAILABILITY_DOMAIN_ANY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#edge_availability_domain ComputeInterconnectAttachment#edge_availability_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#edge_availability_domain ComputeInterconnectAttachment#edge_availability_domain}
   */
   readonly edgeAvailabilityDomain?: string;
   /**
@@ -111,11 +111,11 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * such a VLAN attachment. To use HA VPN over Cloud Interconnect, the VLAN
   * attachment must be created with this option. Default value: "NONE" Possible values: ["NONE", "IPSEC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#encryption ComputeInterconnectAttachment#encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#encryption ComputeInterconnectAttachment#encryption}
   */
   readonly encryption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#id ComputeInterconnectAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#id ComputeInterconnectAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -126,7 +126,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * traffic will traverse through. Required if type is DEDICATED, must not
   * be set if type is PARTNER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#interconnect ComputeInterconnectAttachment#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#interconnect ComputeInterconnectAttachment#interconnect}
   */
   readonly interconnect?: string;
   /**
@@ -146,7 +146,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * interconnect attachment, the HA VPN gateway's IP address will be
   * allocated from regional external IP address pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#ipsec_internal_addresses ComputeInterconnectAttachment#ipsec_internal_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#ipsec_internal_addresses ComputeInterconnectAttachment#ipsec_internal_addresses}
   */
   readonly ipsecInternalAddresses?: string[];
   /**
@@ -157,14 +157,14 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#labels ComputeInterconnectAttachment#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#labels ComputeInterconnectAttachment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Maximum Transmission Unit (MTU), in bytes, of packets passing through this interconnect attachment.
   * Valid values are 1440, 1460, 1500, and 8896. If not specified, the value will default to 1440.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#mtu ComputeInterconnectAttachment#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#mtu ComputeInterconnectAttachment#mtu}
   */
   readonly mtu?: string;
   /**
@@ -175,17 +175,17 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * lowercase letter, and all following characters must be a dash, lowercase
   * letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#name ComputeInterconnectAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#name ComputeInterconnectAttachment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#project ComputeInterconnectAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#project ComputeInterconnectAttachment#project}
   */
   readonly project?: string;
   /**
   * Region where the regional interconnect attachment resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#region ComputeInterconnectAttachment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#region ComputeInterconnectAttachment#region}
   */
   readonly region?: string;
   /**
@@ -194,7 +194,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * automatically connect the Interconnect to the network & region within which the
   * Cloud Router is configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#router ComputeInterconnectAttachment#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#router ComputeInterconnectAttachment#router}
   */
   readonly router?: string;
   /**
@@ -203,7 +203,7 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * This field can be both set at interconnect attachments creation and update
   * interconnect attachment operations. Possible values: ["IPV4_IPV6", "IPV4_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#stack_type ComputeInterconnectAttachment#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#stack_type ComputeInterconnectAttachment#stack_type}
   */
   readonly stackType?: string;
   /**
@@ -214,39 +214,39 @@ export interface ComputeInterconnectAttachmentConfig extends cdktn.TerraformMeta
   * requesting 29 returns an error. Where both 29 and 30 are allowed, 29 is preferred, because it
   * gives Google Cloud Support more debugging visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#subnet_length ComputeInterconnectAttachment#subnet_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#subnet_length ComputeInterconnectAttachment#subnet_length}
   */
   readonly subnetLength?: number;
   /**
   * The type of InterconnectAttachment you wish to create. Defaults to
   * DEDICATED. Possible values: ["DEDICATED", "PARTNER", "PARTNER_PROVIDER", "L2_DEDICATED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#type ComputeInterconnectAttachment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#type ComputeInterconnectAttachment#type}
   */
   readonly type?: string;
   /**
   * The IEEE 802.1Q VLAN tag for this attachment, in the range 2-4094. When
   * using PARTNER type this will be managed upstream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#vlan_tag8021q ComputeInterconnectAttachment#vlan_tag8021q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#vlan_tag8021q ComputeInterconnectAttachment#vlan_tag8021q}
   */
   readonly vlanTag8021Q?: number;
   /**
   * l2_forwarding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#l2_forwarding ComputeInterconnectAttachment#l2_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#l2_forwarding ComputeInterconnectAttachment#l2_forwarding}
   */
   readonly l2Forwarding?: ComputeInterconnectAttachmentL2Forwarding;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#params ComputeInterconnectAttachment#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#params ComputeInterconnectAttachment#params}
   */
   readonly params?: ComputeInterconnectAttachmentParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#timeouts ComputeInterconnectAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#timeouts ComputeInterconnectAttachment#timeouts}
   */
   readonly timeouts?: ComputeInterconnectAttachmentTimeouts;
 }
@@ -329,13 +329,13 @@ export interface ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInner
   /**
   * The inner appliance IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#inner_appliance_ip_address ComputeInterconnectAttachment#inner_appliance_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#inner_appliance_ip_address ComputeInterconnectAttachment#inner_appliance_ip_address}
   */
   readonly innerApplianceIpAddress?: string;
   /**
   * List of inner VLAN tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#inner_vlan_tags ComputeInterconnectAttachment#inner_vlan_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#inner_vlan_tags ComputeInterconnectAttachment#inner_vlan_tags}
   */
   readonly innerVlanTags?: string[];
 }
@@ -482,25 +482,25 @@ export interface ComputeInterconnectAttachmentL2ForwardingApplianceMappings {
   /**
   * The appliance IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#appliance_ip_address ComputeInterconnectAttachment#appliance_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#appliance_ip_address ComputeInterconnectAttachment#appliance_ip_address}
   */
   readonly applianceIpAddress?: string;
   /**
   * The name of this appliance mapping rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#name ComputeInterconnectAttachment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#name ComputeInterconnectAttachment#name}
   */
   readonly name?: string;
   /**
   * The VLAN tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#vlan_id ComputeInterconnectAttachment#vlan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#vlan_id ComputeInterconnectAttachment#vlan_id}
   */
   readonly vlanId?: string;
   /**
   * inner_vlan_to_appliance_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#inner_vlan_to_appliance_mappings ComputeInterconnectAttachment#inner_vlan_to_appliance_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#inner_vlan_to_appliance_mappings ComputeInterconnectAttachment#inner_vlan_to_appliance_mappings}
   */
   readonly innerVlanToApplianceMappings?: ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappings[] | cdktn.IResolvable;
 }
@@ -705,7 +705,7 @@ export interface ComputeInterconnectAttachmentL2ForwardingGeneveHeader {
   /**
   * VNI is a 24-bit unique virtual network identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#vni ComputeInterconnectAttachment#vni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#vni ComputeInterconnectAttachment#vni}
   */
   readonly vni?: number;
 }
@@ -791,31 +791,31 @@ export interface ComputeInterconnectAttachmentL2Forwarding {
   /**
   * The default appliance IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#default_appliance_ip_address ComputeInterconnectAttachment#default_appliance_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#default_appliance_ip_address ComputeInterconnectAttachment#default_appliance_ip_address}
   */
   readonly defaultApplianceIpAddress?: string;
   /**
   * URL of the network to which this attachment belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#network ComputeInterconnectAttachment#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#network ComputeInterconnectAttachment#network}
   */
   readonly network?: string;
   /**
   * The tunnel endpoint IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#tunnel_endpoint_ip_address ComputeInterconnectAttachment#tunnel_endpoint_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#tunnel_endpoint_ip_address ComputeInterconnectAttachment#tunnel_endpoint_ip_address}
   */
   readonly tunnelEndpointIpAddress?: string;
   /**
   * appliance_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#appliance_mappings ComputeInterconnectAttachment#appliance_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#appliance_mappings ComputeInterconnectAttachment#appliance_mappings}
   */
   readonly applianceMappings?: ComputeInterconnectAttachmentL2ForwardingApplianceMappings[] | cdktn.IResolvable;
   /**
   * geneve_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#geneve_header ComputeInterconnectAttachment#geneve_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#geneve_header ComputeInterconnectAttachment#geneve_header}
   */
   readonly geneveHeader?: ComputeInterconnectAttachmentL2ForwardingGeneveHeader;
 }
@@ -1019,7 +1019,7 @@ export interface ComputeInterconnectAttachmentParams {
   * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
   * and values are in the format tagValues/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#resource_manager_tags ComputeInterconnectAttachment#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#resource_manager_tags ComputeInterconnectAttachment#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -1103,15 +1103,15 @@ export class ComputeInterconnectAttachmentParamsOutputReference extends cdktn.Co
 }
 export interface ComputeInterconnectAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#create ComputeInterconnectAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#create ComputeInterconnectAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#delete ComputeInterconnectAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#delete ComputeInterconnectAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#update ComputeInterconnectAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#update ComputeInterconnectAttachment#update}
   */
   readonly update?: string;
 }
@@ -1263,7 +1263,7 @@ export class ComputeInterconnectAttachmentTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}
 */
 export class ComputeInterconnectAttachment extends cdktn.TerraformResource {
 
@@ -1279,7 +1279,7 @@ export class ComputeInterconnectAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeInterconnectAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInterconnectAttachment to import
-  * @param importFromId The id of the existing ComputeInterconnectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInterconnectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInterconnectAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1291,7 +1291,7 @@ export class ComputeInterconnectAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1302,7 +1302,7 @@ export class ComputeInterconnectAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_interconnect_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

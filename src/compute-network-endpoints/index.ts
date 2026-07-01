@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints
+// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ComputeNetworkEndpointsConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,29 +34,29 @@ export interface ComputeNetworkEndpointsConfig extends cdktn.TerraformMetaArgume
   /**
   * The network endpoint group these endpoints are part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
   */
   readonly networkEndpointGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}
   */
   readonly project?: string;
   /**
   * Zone where the containing network endpoint group is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
   */
   readonly zone?: string;
   /**
   * network_endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
   */
   readonly networkEndpoints?: ComputeNetworkEndpointsNetworkEndpoints[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
   */
   readonly timeouts?: ComputeNetworkEndpointsTimeouts;
 }
@@ -66,7 +66,7 @@ export interface ComputeNetworkEndpointsNetworkEndpoints {
   * This is required for network endpoints of type GCE_VM_IP_PORT.
   * The instance must be in the same zone as the network endpoint group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
   */
   readonly instance?: string;
   /**
@@ -75,7 +75,7 @@ export interface ComputeNetworkEndpointsNetworkEndpoints {
   * range).
   * **Note** 'ip_address' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP_DEDICATED_BACKEND'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
   */
   readonly ipAddress?: string;
   /**
@@ -83,7 +83,7 @@ export interface ComputeNetworkEndpointsNetworkEndpoints {
   * **Note** 'port' is required unless the Network Endpoint Group is created
   * with the type of 'GCE_VM_IP'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
   */
   readonly port?: number;
 }
@@ -257,15 +257,15 @@ export class ComputeNetworkEndpointsNetworkEndpointsList extends cdktn.ComplexLi
 }
 export interface ComputeNetworkEndpointsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}
   */
   readonly update?: string;
 }
@@ -417,7 +417,7 @@ export class ComputeNetworkEndpointsTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}
 */
 export class ComputeNetworkEndpoints extends cdktn.TerraformResource {
 
@@ -433,7 +433,7 @@ export class ComputeNetworkEndpoints extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeNetworkEndpoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeNetworkEndpoints to import
-  * @param importFromId The id of the existing ComputeNetworkEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeNetworkEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeNetworkEndpoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -445,7 +445,7 @@ export class ComputeNetworkEndpoints extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -456,7 +456,7 @@ export class ComputeNetworkEndpoints extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_network_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.38.0',
+        providerVersion: '7.39.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `google_apihub_plugin`
 
-Refer to the Terraform Registry for docs: [`google_apihub_plugin`](https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/apihub_plugin).
+Refer to the Terraform Registry for docs: [`google_apihub_plugin`](https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apihub_plugin).
