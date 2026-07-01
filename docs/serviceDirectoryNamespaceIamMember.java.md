@@ -4,7 +4,7 @@
 
 ### ServiceDirectoryNamespaceIamMember <a name="ServiceDirectoryNamespaceIamMember" id="@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member google_service_directory_namespace_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member google_service_directory_namespace_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer"></a>
 
@@ -38,11 +38,11 @@ ServiceDirectoryNamespaceIamMember.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition">ServiceDirectoryNamespaceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#condition ServiceDirectoryNamespaceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#condition ServiceDirectoryNamespaceIamMember#condition}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the ServiceDirectoryNamespaceI
 
 The id of the existing ServiceDirectoryNamespaceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,9 +957,9 @@ ServiceDirectoryNamespaceIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#expression ServiceDirectoryNamespaceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#title ServiceDirectoryNamespaceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#description ServiceDirectoryNamespaceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#expression ServiceDirectoryNamespaceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#title ServiceDirectoryNamespaceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#description ServiceDirectoryNamespaceIamMember#description}. |
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#expression ServiceDirectoryNamespaceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#expression ServiceDirectoryNamespaceIamMember#expression}.
 
 ---
 
@@ -983,7 +983,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#title ServiceDirectoryNamespaceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#title ServiceDirectoryNamespaceIamMember#title}.
 
 ---
 
@@ -995,7 +995,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#description ServiceDirectoryNamespaceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#description ServiceDirectoryNamespaceIamMember#description}.
 
 ---
 
@@ -1033,11 +1033,11 @@ ServiceDirectoryNamespaceIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberCondition">ServiceDirectoryNamespaceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamMember.ServiceDirectoryNamespaceIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#member ServiceDirectoryNamespaceIamMember#member}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#name ServiceDirectoryNamespaceIamMember#name}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#role ServiceDirectoryNamespaceIamMember#role}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public ServiceDirectoryNamespaceIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#condition ServiceDirectoryNamespaceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#condition ServiceDirectoryNamespaceIamMember#condition}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/service_directory_namespace_iam_member#id ServiceDirectoryNamespaceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

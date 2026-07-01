@@ -4,7 +4,7 @@
 
 ### AccessContextManagerServicePerimeterDryRunResource <a name="AccessContextManagerServicePerimeterDryRunResource" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer"></a>
 
@@ -41,7 +41,7 @@ AccessContextManagerServicePerimeterDryRunResource.Builder.create(Construct scop
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.perimeterName">perimeterName</a></code> | <code>java.lang.String</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.resource">resource</a></code> | <code>java.lang.String</code> | A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts">AccessContextManagerServicePerimeterDryRunResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#perimeter_name AccessContextManagerServicePerimeterDryRunResource#perimeter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#perimeter_name AccessContextManagerServicePerimeterDryRunResource#perimeter_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#resource AccessContextManagerServicePerimeterDryRunResource#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#resource AccessContextManagerServicePerimeterDryRunResource#resource}
 
 ---
 
@@ -139,7 +139,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#deletion_policy AccessContextManagerServicePerimeterDryRunResource#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#deletion_policy AccessContextManagerServicePerimeterDryRunResource#deletion_policy}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +160,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#timeouts AccessContextManagerServicePerimeterDryRunResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#timeouts AccessContextManagerServicePerimeterDryRunResource#timeouts}
 
 ---
 
@@ -643,7 +643,7 @@ The construct id used in the generated config for the AccessContextManagerServic
 
 The id of the existing AccessContextManagerServicePerimeterDryRunResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1007,7 +1007,7 @@ AccessContextManagerServicePerimeterDryRunResourceConfig.builder()
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.perimeterName">perimeterName</a></code> | <code>java.lang.String</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.resource">resource</a></code> | <code>java.lang.String</code> | A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts">AccessContextManagerServicePerimeterDryRunResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1092,7 +1092,7 @@ public java.lang.String getPerimeterName();
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#perimeter_name AccessContextManagerServicePerimeterDryRunResource#perimeter_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#perimeter_name AccessContextManagerServicePerimeterDryRunResource#perimeter_name}
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getResource();
 
 A GCP resource that is inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#resource AccessContextManagerServicePerimeterDryRunResource#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#resource AccessContextManagerServicePerimeterDryRunResource#resource}
 
 ---
 
@@ -1127,7 +1127,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#deletion_policy AccessContextManagerServicePerimeterDryRunResource#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#deletion_policy AccessContextManagerServicePerimeterDryRunResource#deletion_policy}
 
 ---
 
@@ -1139,7 +1139,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#id AccessContextManagerServicePerimeterDryRunResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ public AccessContextManagerServicePerimeterDryRunResourceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#timeouts AccessContextManagerServicePerimeterDryRunResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#timeouts AccessContextManagerServicePerimeterDryRunResource#timeouts}
 
 ---
 
@@ -1177,8 +1177,8 @@ AccessContextManagerServicePerimeterDryRunResourceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#create AccessContextManagerServicePerimeterDryRunResource#create}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#delete AccessContextManagerServicePerimeterDryRunResource#delete}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#create AccessContextManagerServicePerimeterDryRunResource#create}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#delete AccessContextManagerServicePerimeterDryRunResource#delete}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#create AccessContextManagerServicePerimeterDryRunResource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#create AccessContextManagerServicePerimeterDryRunResource#create}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#delete AccessContextManagerServicePerimeterDryRunResource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource#delete AccessContextManagerServicePerimeterDryRunResource#delete}.
 
 ---
 

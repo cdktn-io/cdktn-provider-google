@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeRegionTargetHttpProxy <a name="DataGoogleComputeRegionTargetHttpProxy" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer"></a>
 
@@ -40,8 +40,8 @@ dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy(
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer.parameter.region">region</a></code> | <code>str</code> | The Region in which the created target https proxy should reside. |
 
 ---
@@ -120,7 +120,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}.
 
 ---
 
@@ -151,7 +151,7 @@ The Region in which the created target https proxy should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
 
 ---
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the DataGoogleComputeRegionTar
 
 The id of the existing DataGoogleComputeRegionTargetHttpProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,8 +927,8 @@ dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyCon
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.property.region">region</a></code> | <code>str</code> | The Region in which the created target https proxy should reside. |
 
 ---
@@ -1021,7 +1021,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
 
 ---
 
@@ -1033,7 +1033,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1048,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}.
 
 ---
 
@@ -1064,7 +1064,7 @@ The Region in which the created target https proxy should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
 
 ---
 

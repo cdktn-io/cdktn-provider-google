@@ -4,7 +4,7 @@
 
 ### CloudIdsEndpoint <a name="CloudIdsEndpoint" id="@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpoint.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the CloudIdsEndpoint to import
 
 The id of the existing CloudIdsEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,8 +1030,8 @@ const cloudIdsEndpointConfig: cloudIdsEndpoint.CloudIdsEndpointConfig = { ... }
 | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.severity">severity</a></code> | <code>string</code> | The minimum alert severity level that is reported by the endpoint. Possible values: ["INFORMATIONAL", "LOW", "MEDIUM", "HIGH", "CRITICAL"]. |
 | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.description">description</a></code> | <code>string</code> | An optional description of the endpoint. |
-| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#id CloudIdsEndpoint#id}. |
-| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#project CloudIdsEndpoint#project}. |
+| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#id CloudIdsEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#project CloudIdsEndpoint#project}. |
 | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.threatExceptions">threatExceptions</a></code> | <code>string[]</code> | Configuration for threat IDs excluded from generating alerts. Limit: 99 IDs. |
 | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts">CloudIdsEndpointTimeouts</a></code> | timeouts block. |
 
@@ -1117,7 +1117,7 @@ public readonly location: string;
 
 The location for the endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#location CloudIdsEndpoint#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#location CloudIdsEndpoint#location}
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly name: string;
 
 Name of the endpoint in the format projects/{project_id}/locations/{locationId}/endpoints/{endpointId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#name CloudIdsEndpoint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#name CloudIdsEndpoint#name}
 
 ---
 
@@ -1147,7 +1147,7 @@ Name of the VPC network that is connected to the IDS endpoint.
 
 This can either contain the VPC network name itself (like "src-net") or the full URL to the network (like "projects/{project_id}/global/networks/src-net").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#network CloudIdsEndpoint#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#network CloudIdsEndpoint#network}
 
 ---
 
@@ -1161,7 +1161,7 @@ public readonly severity: string;
 
 The minimum alert severity level that is reported by the endpoint. Possible values: ["INFORMATIONAL", "LOW", "MEDIUM", "HIGH", "CRITICAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#severity CloudIdsEndpoint#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#severity CloudIdsEndpoint#severity}
 
 ---
 
@@ -1183,7 +1183,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#deletion_policy CloudIdsEndpoint#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#deletion_policy CloudIdsEndpoint#deletion_policy}
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly description: string;
 
 An optional description of the endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#description CloudIdsEndpoint#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#description CloudIdsEndpoint#description}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#id CloudIdsEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#id CloudIdsEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1224,7 +1224,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#project CloudIdsEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#project CloudIdsEndpoint#project}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly threatExceptions: string[];
 
 Configuration for threat IDs excluded from generating alerts. Limit: 99 IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#threat_exceptions CloudIdsEndpoint#threat_exceptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#threat_exceptions CloudIdsEndpoint#threat_exceptions}
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly timeouts: CloudIdsEndpointTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#timeouts CloudIdsEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#timeouts CloudIdsEndpoint#timeouts}
 
 ---
 
@@ -1270,9 +1270,9 @@ const cloudIdsEndpointTimeouts: cloudIdsEndpoint.CloudIdsEndpointTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#create CloudIdsEndpoint#create}. |
-| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#delete CloudIdsEndpoint#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#update CloudIdsEndpoint#update}. |
+| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#create CloudIdsEndpoint#create}. |
+| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#delete CloudIdsEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#update CloudIdsEndpoint#update}. |
 
 ---
 
@@ -1284,7 +1284,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#create CloudIdsEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#create CloudIdsEndpoint#create}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#delete CloudIdsEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#delete CloudIdsEndpoint#delete}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/cloud_ids_endpoint#update CloudIdsEndpoint#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_ids_endpoint#update CloudIdsEndpoint#update}.
 
 ---
 

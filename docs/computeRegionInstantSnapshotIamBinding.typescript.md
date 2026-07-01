@@ -4,7 +4,7 @@
 
 ### ComputeRegionInstantSnapshotIamBinding <a name="ComputeRegionInstantSnapshotIamBinding" id="@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding google_compute_region_instant_snapshot_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding google_compute_region_instant_snapshot_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeRegionInstantSnapsh
 
 The id of the existing ComputeRegionInstantSnapshotIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const computeRegionInstantSnapshotIamBindingCondition: computeRegionInstantSnaps
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#expression ComputeRegionInstantSnapshotIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#title ComputeRegionInstantSnapshotIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#description ComputeRegionInstantSnapshotIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#expression ComputeRegionInstantSnapshotIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#title ComputeRegionInstantSnapshotIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#description ComputeRegionInstantSnapshotIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#expression ComputeRegionInstantSnapshotIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#expression ComputeRegionInstantSnapshotIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#title ComputeRegionInstantSnapshotIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#title ComputeRegionInstantSnapshotIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#description ComputeRegionInstantSnapshotIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#description ComputeRegionInstantSnapshotIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const computeRegionInstantSnapshotIamBindingConfig: computeRegionInstantSnapshot
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#members ComputeRegionInstantSnapshotIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#name ComputeRegionInstantSnapshotIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#role ComputeRegionInstantSnapshotIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#members ComputeRegionInstantSnapshotIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#name ComputeRegionInstantSnapshotIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#role ComputeRegionInstantSnapshotIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingCondition">ComputeRegionInstantSnapshotIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#id ComputeRegionInstantSnapshotIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#project ComputeRegionInstantSnapshotIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#region ComputeRegionInstantSnapshotIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#id ComputeRegionInstantSnapshotIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#project ComputeRegionInstantSnapshotIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamBinding.ComputeRegionInstantSnapshotIamBindingConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#region ComputeRegionInstantSnapshotIamBinding#region}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#members ComputeRegionInstantSnapshotIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#members ComputeRegionInstantSnapshotIamBinding#members}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#name ComputeRegionInstantSnapshotIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#name ComputeRegionInstantSnapshotIamBinding#name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#role ComputeRegionInstantSnapshotIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#role ComputeRegionInstantSnapshotIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: ComputeRegionInstantSnapshotIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#condition ComputeRegionInstantSnapshotIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#condition ComputeRegionInstantSnapshotIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#id ComputeRegionInstantSnapshotIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#id ComputeRegionInstantSnapshotIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#project ComputeRegionInstantSnapshotIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#project ComputeRegionInstantSnapshotIamBinding#project}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/compute_region_instant_snapshot_iam_binding#region ComputeRegionInstantSnapshotIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_binding#region ComputeRegionInstantSnapshotIamBinding#region}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkSecurityAddressGroupIamPolicy <a name="NetworkSecurityAddressGroupIamPolicy" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the NetworkSecurityAddressGrou
 
 The id of the existing NetworkSecurityAddressGroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,11 +860,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritya
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}. |
 
 ---
 
@@ -946,7 +946,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}.
 
 ---
 
@@ -958,7 +958,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}.
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}.
 
 ---
 
@@ -997,7 +997,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.38.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}.
 
 ---
 
