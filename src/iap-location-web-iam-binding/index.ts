@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface IapLocationWebIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#id IapLocationWebIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#id IapLocationWebIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#location IapLocationWebIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#location IapLocationWebIamBinding#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#members IapLocationWebIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#members IapLocationWebIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#project IapLocationWebIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#project IapLocationWebIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#role IapLocationWebIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#role IapLocationWebIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#condition IapLocationWebIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#condition IapLocationWebIamBinding#condition}
   */
   readonly condition?: IapLocationWebIamBindingCondition;
 }
 export interface IapLocationWebIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#description IapLocationWebIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#description IapLocationWebIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#expression IapLocationWebIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#expression IapLocationWebIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#title IapLocationWebIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#title IapLocationWebIamBinding#title}
   */
   readonly title: string;
 }
@@ -188,7 +188,7 @@ export class IapLocationWebIamBindingConditionOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding google_iap_location_web_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding google_iap_location_web_iam_binding}
 */
 export class IapLocationWebIamBinding extends cdktn.TerraformResource {
 
@@ -204,7 +204,7 @@ export class IapLocationWebIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IapLocationWebIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IapLocationWebIamBinding to import
-  * @param importFromId The id of the existing IapLocationWebIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IapLocationWebIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IapLocationWebIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -216,7 +216,7 @@ export class IapLocationWebIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/iap_location_web_iam_binding google_iap_location_web_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/iap_location_web_iam_binding google_iap_location_web_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class IapLocationWebIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_iap_location_web_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

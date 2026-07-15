@@ -4,7 +4,7 @@
 
 ### ApphubBoundary <a name="ApphubBoundary" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary google_apphub_boundary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary google_apphub_boundary}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer"></a>
 
@@ -40,8 +40,8 @@ ApphubBoundary.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location for the Boundary resource. Must be global. |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.crmNode">crmNode</a></code> | <code>java.lang.String</code> | Optional. The resource name of the CRM node being attached to the boundary. Format: 'projects/{project-number}'. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#id ApphubBoundary#id}. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#project ApphubBoundary#project}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#id ApphubBoundary#id}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#project ApphubBoundary#project}. |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts">ApphubBoundaryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The location for the Boundary resource. Must be global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#location ApphubBoundary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#location ApphubBoundary#location}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The resource name of the CRM node being attached to the boundary. Format: 'projects/{project-number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#crm_node ApphubBoundary#crm_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#crm_node ApphubBoundary#crm_node}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#id ApphubBoundary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#id ApphubBoundary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#project ApphubBoundary#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#project ApphubBoundary#project}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#timeouts ApphubBoundary#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#timeouts ApphubBoundary#timeouts}
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the ApphubBoundary to import.
 
 The id of the existing ApphubBoundary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,8 +1026,8 @@ ApphubBoundaryConfig.builder()
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location for the Boundary resource. Must be global. |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.crmNode">crmNode</a></code> | <code>java.lang.String</code> | Optional. The resource name of the CRM node being attached to the boundary. Format: 'projects/{project-number}'. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#id ApphubBoundary#id}. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#project ApphubBoundary#project}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#id ApphubBoundary#id}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#project ApphubBoundary#project}. |
 | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts">ApphubBoundaryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1112,7 +1112,7 @@ public java.lang.String getLocation();
 
 The location for the Boundary resource. Must be global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#location ApphubBoundary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#location ApphubBoundary#location}
 
 ---
 
@@ -1126,7 +1126,7 @@ public java.lang.String getCrmNode();
 
 Optional. The resource name of the CRM node being attached to the boundary. Format: 'projects/{project-number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#crm_node ApphubBoundary#crm_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#crm_node ApphubBoundary#crm_node}
 
 ---
 
@@ -1138,7 +1138,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#id ApphubBoundary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#id ApphubBoundary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1153,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#project ApphubBoundary#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#project ApphubBoundary#project}.
 
 ---
 
@@ -1167,7 +1167,7 @@ public ApphubBoundaryTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#timeouts ApphubBoundary#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#timeouts ApphubBoundary#timeouts}
 
 ---
 
@@ -1189,9 +1189,9 @@ ApphubBoundaryTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#create ApphubBoundary#create}. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#delete ApphubBoundary#delete}. |
-| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#update ApphubBoundary#update}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#create ApphubBoundary#create}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#delete ApphubBoundary#delete}. |
+| <code><a href="#@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#update ApphubBoundary#update}. |
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#create ApphubBoundary#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#create ApphubBoundary#create}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#delete ApphubBoundary#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#delete ApphubBoundary#delete}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/apphub_boundary#update ApphubBoundary#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apphub_boundary#update ApphubBoundary#update}.
 
 ---
 

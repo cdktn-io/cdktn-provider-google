@@ -4,7 +4,7 @@
 
 ### ComputeRegionInstantSnapshotIamPolicy <a name="ComputeRegionInstantSnapshotIamPolicy" id="@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ComputeRegionInstantSnapsh
 
 The id of the existing ComputeRegionInstantSnapshotIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,11 +860,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionins
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}. |
 
 ---
 
@@ -946,7 +946,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#name ComputeRegionInstantSnapshotIamPolicy#name}.
 
 ---
 
@@ -958,7 +958,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#policy_data ComputeRegionInstantSnapshotIamPolicy#policy_data}.
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#id ComputeRegionInstantSnapshotIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#project ComputeRegionInstantSnapshotIamPolicy#project}.
 
 ---
 
@@ -997,7 +997,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_instant_snapshot_iam_policy#region ComputeRegionInstantSnapshotIamPolicy#region}.
 
 ---
 

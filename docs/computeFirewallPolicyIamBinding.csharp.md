@@ -4,7 +4,7 @@
 
 ### ComputeFirewallPolicyIamBinding <a name="ComputeFirewallPolicyIamBinding" id="@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding google_compute_firewall_policy_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding google_compute_firewall_policy_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBinding.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ComputeFirewallPolicyIamBi
 
 The id of the existing ComputeFirewallPolicyIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ new ComputeFirewallPolicyIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#expression ComputeFirewallPolicyIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#title ComputeFirewallPolicyIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#description ComputeFirewallPolicyIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#expression ComputeFirewallPolicyIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#title ComputeFirewallPolicyIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#description ComputeFirewallPolicyIamBinding#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#expression ComputeFirewallPolicyIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#expression ComputeFirewallPolicyIamBinding#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#title ComputeFirewallPolicyIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#title ComputeFirewallPolicyIamBinding#title}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#description ComputeFirewallPolicyIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#description ComputeFirewallPolicyIamBinding#description}.
 
 ---
 
@@ -926,11 +926,11 @@ new ComputeFirewallPolicyIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#members ComputeFirewallPolicyIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#name ComputeFirewallPolicyIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#role ComputeFirewallPolicyIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#members ComputeFirewallPolicyIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#name ComputeFirewallPolicyIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#role ComputeFirewallPolicyIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingCondition">ComputeFirewallPolicyIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#id ComputeFirewallPolicyIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyIamBinding.ComputeFirewallPolicyIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#id ComputeFirewallPolicyIamBinding#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#members ComputeFirewallPolicyIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#members ComputeFirewallPolicyIamBinding#members}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#name ComputeFirewallPolicyIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#name ComputeFirewallPolicyIamBinding#name}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#role ComputeFirewallPolicyIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#role ComputeFirewallPolicyIamBinding#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public ComputeFirewallPolicyIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#condition ComputeFirewallPolicyIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#condition ComputeFirewallPolicyIamBinding#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_firewall_policy_iam_binding#id ComputeFirewallPolicyIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_firewall_policy_iam_binding#id ComputeFirewallPolicyIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

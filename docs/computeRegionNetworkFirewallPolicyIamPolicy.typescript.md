@@ -4,7 +4,7 @@
 
 ### ComputeRegionNetworkFirewallPolicyIamPolicy <a name="ComputeRegionNetworkFirewallPolicyIamPolicy" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy google_compute_region_network_firewall_policy_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy google_compute_region_network_firewall_policy_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicy.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ComputeRegionNetworkFirewa
 
 The id of the existing ComputeRegionNetworkFirewallPolicyIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,11 +847,11 @@ const computeRegionNetworkFirewallPolicyIamPolicyConfig: computeRegionNetworkFir
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#name ComputeRegionNetworkFirewallPolicyIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#policy_data ComputeRegionNetworkFirewallPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#id ComputeRegionNetworkFirewallPolicyIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#project ComputeRegionNetworkFirewallPolicyIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#region ComputeRegionNetworkFirewallPolicyIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#name ComputeRegionNetworkFirewallPolicyIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#policy_data ComputeRegionNetworkFirewallPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#id ComputeRegionNetworkFirewallPolicyIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#project ComputeRegionNetworkFirewallPolicyIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamPolicy.ComputeRegionNetworkFirewallPolicyIamPolicyConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#region ComputeRegionNetworkFirewallPolicyIamPolicy#region}. |
 
 ---
 
@@ -933,7 +933,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#name ComputeRegionNetworkFirewallPolicyIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#name ComputeRegionNetworkFirewallPolicyIamPolicy#name}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#policy_data ComputeRegionNetworkFirewallPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#policy_data ComputeRegionNetworkFirewallPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#id ComputeRegionNetworkFirewallPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#id ComputeRegionNetworkFirewallPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +972,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#project ComputeRegionNetworkFirewallPolicyIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#project ComputeRegionNetworkFirewallPolicyIamPolicy#project}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_region_network_firewall_policy_iam_policy#region ComputeRegionNetworkFirewallPolicyIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_region_network_firewall_policy_iam_policy#region ComputeRegionNetworkFirewallPolicyIamPolicy#region}.
 
 ---
 

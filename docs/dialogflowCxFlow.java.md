@@ -4,7 +4,7 @@
 
 ### DialogflowCxFlow <a name="DialogflowCxFlow" id="@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer"></a>
 
@@ -52,7 +52,7 @@ DialogflowCxFlow.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.eventHandlers">eventHandlers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlers">DialogflowCxFlowEventHandlers</a>></code> | event_handlers block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.isDefaultStartFlow">isDefaultStartFlow</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Marks this as the [Default Start Flow](https://cloud.google.com/dialogflow/cx/docs/concept/flow#start) for an agent. When you create an agent, the Default Start Flow is created automatically. The Default Start Flow cannot be deleted; deleting the 'google_dialogflow_cx_flow' resource does nothing to the underlying GCP resources. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.knowledgeConnectorSettings">knowledgeConnectorSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowKnowledgeConnectorSettings">DialogflowCxFlowKnowledgeConnectorSettings</a></code> | knowledge_connector_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlow.Initializer.parameter.languageCode">languageCode</a></code> | <code>java.lang.String</code> | The language of the following fields in flow: Flow.event_handlers.trigger_fulfillment.messages Flow.event_handlers.trigger_fulfillment.conditional_cases Flow.transition_routes.trigger_fulfillment.messages Flow.transition_routes.trigger_fulfillment.conditional_cases If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used. |
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The human-readable name of the flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#display_name DialogflowCxFlow#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#display_name DialogflowCxFlow#display_name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
 
 ---
 
@@ -157,7 +157,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#deletion_policy DialogflowCxFlow#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#deletion_policy DialogflowCxFlow#deletion_policy}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#description DialogflowCxFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#description DialogflowCxFlow#description}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 event_handlers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -200,7 +200,7 @@ Marks this as the [Default Start Flow](https://cloud.google.com/dialogflow/cx/do
 
 ~> Avoid having multiple 'google_dialogflow_cx_flow' resources linked to the same agent with 'is_default_start_flow = true' because they will compete to control a single Default Start Flow resource in GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 knowledge_connector_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#knowledge_connector_settings DialogflowCxFlow#knowledge_connector_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#knowledge_connector_settings DialogflowCxFlow#knowledge_connector_settings}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The language of the following fields in flow: Flow.event_handlers.trigger_fulfillment.messages Flow.event_handlers.trigger_fulfillment.conditional_cases Flow.transition_routes.trigger_fulfillment.messages Flow.transition_routes.trigger_fulfillment.conditional_cases If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#language_code DialogflowCxFlow#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#language_code DialogflowCxFlow#language_code}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 nlu_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#nlu_settings DialogflowCxFlow#nlu_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#nlu_settings DialogflowCxFlow#nlu_settings}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The agent to create a flow for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#parent DialogflowCxFlow#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#parent DialogflowCxFlow#parent}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#timeouts DialogflowCxFlow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#timeouts DialogflowCxFlow#timeouts}
 
 ---
 
@@ -263,7 +263,7 @@ A flow's transition route group serve two purposes: They are responsible for mat
 They are inherited by every page's [transition route groups][Page.transition_route_groups]. Transition route groups defined in the page have higher priority than those defined in the flow.
 Format:projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/transitionRouteGroups/<TransitionRouteGroup ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#transition_route_groups DialogflowCxFlow#transition_route_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#transition_route_groups DialogflowCxFlow#transition_route_groups}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 transition_routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
 
 ---
 
@@ -891,7 +891,7 @@ The construct id used in the generated config for the DialogflowCxFlow to import
 
 The id of the existing DialogflowCxFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1441,7 +1441,7 @@ public DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination getAudioExportG
 
 audio_export_gcs_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#audio_export_gcs_destination DialogflowCxFlow#audio_export_gcs_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#audio_export_gcs_destination DialogflowCxFlow#audio_export_gcs_destination}
 
 ---
 
@@ -1455,7 +1455,7 @@ public DialogflowCxFlowAdvancedSettingsDtmfSettings getDtmfSettings();
 
 dtmf_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#dtmf_settings DialogflowCxFlow#dtmf_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#dtmf_settings DialogflowCxFlow#dtmf_settings}
 
 ---
 
@@ -1469,7 +1469,7 @@ public DialogflowCxFlowAdvancedSettingsLoggingSettings getLoggingSettings();
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#logging_settings DialogflowCxFlow#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#logging_settings DialogflowCxFlow#logging_settings}
 
 ---
 
@@ -1483,7 +1483,7 @@ public DialogflowCxFlowAdvancedSettingsSpeechSettings getSpeechSettings();
 
 speech_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#speech_settings DialogflowCxFlow#speech_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#speech_settings DialogflowCxFlow#speech_settings}
 
 ---
 
@@ -1520,7 +1520,7 @@ The Google Cloud Storage URI for the exported objects.
 Whether a full object name, or just a prefix, its usage depends on the Dialogflow operation.
 Format: gs://bucket/object-name-or-prefix
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#uri DialogflowCxFlow#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#uri DialogflowCxFlow#uri}
 
 ---
 
@@ -1560,7 +1560,7 @@ If true, incoming audio is processed for DTMF (dual tone multi frequency) events
 
 For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will detect the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
 
 ---
 
@@ -1574,7 +1574,7 @@ public java.lang.String getFinishDigit();
 
 The digit that terminates a DTMF digit sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#finish_digit DialogflowCxFlow#finish_digit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#finish_digit DialogflowCxFlow#finish_digit}
 
 ---
 
@@ -1588,7 +1588,7 @@ public java.lang.Number getMaxDigits();
 
 Max length of DTMF digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#max_digits DialogflowCxFlow#max_digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#max_digits DialogflowCxFlow#max_digits}
 
 ---
 
@@ -1626,7 +1626,7 @@ public java.lang.Boolean|IResolvable getEnableConsentBasedRedaction();
 
 Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
 
 ---
 
@@ -1640,7 +1640,7 @@ public java.lang.Boolean|IResolvable getEnableInteractionLogging();
 
 Enables DF Interaction logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
 
 ---
 
@@ -1654,7 +1654,7 @@ public java.lang.Boolean|IResolvable getEnableStackdriverLogging();
 
 Enables Google Cloud Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
 
 ---
 
@@ -1694,7 +1694,7 @@ public java.lang.Number getEndpointerSensitivity();
 
 Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#endpointer_sensitivity DialogflowCxFlow#endpointer_sensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#endpointer_sensitivity DialogflowCxFlow#endpointer_sensitivity}
 
 ---
 
@@ -1711,7 +1711,7 @@ Mapping from language to Speech-to-Text model.
 The mapped Speech-to-Text model will be selected for requests from its corresponding language. For more information, see [Speech models](https://cloud.google.com/dialogflow/cx/docs/concept/speech-models).
 An object containing a list of **"key": value** pairs. Example: **{ "name": "wrench", "mass": "1.3kg", "count": "3" }**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#models DialogflowCxFlow#models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#models DialogflowCxFlow#models}
 
 ---
 
@@ -1725,7 +1725,7 @@ public java.lang.String getNoSpeechTimeout();
 
 Timeout before detecting no speech. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#no_speech_timeout DialogflowCxFlow#no_speech_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#no_speech_timeout DialogflowCxFlow#no_speech_timeout}
 
 ---
 
@@ -1739,7 +1739,7 @@ public java.lang.Boolean|IResolvable getUseTimeoutBasedEndpointing();
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
 
 ---
 
@@ -1791,7 +1791,7 @@ DialogflowCxFlowConfig.builder()
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.eventHandlers">eventHandlers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlers">DialogflowCxFlowEventHandlers</a>></code> | event_handlers block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.isDefaultStartFlow">isDefaultStartFlow</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Marks this as the [Default Start Flow](https://cloud.google.com/dialogflow/cx/docs/concept/flow#start) for an agent. When you create an agent, the Default Start Flow is created automatically. The Default Start Flow cannot be deleted; deleting the 'google_dialogflow_cx_flow' resource does nothing to the underlying GCP resources. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.knowledgeConnectorSettings">knowledgeConnectorSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowKnowledgeConnectorSettings">DialogflowCxFlowKnowledgeConnectorSettings</a></code> | knowledge_connector_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | The language of the following fields in flow: Flow.event_handlers.trigger_fulfillment.messages Flow.event_handlers.trigger_fulfillment.conditional_cases Flow.transition_routes.trigger_fulfillment.messages Flow.transition_routes.trigger_fulfillment.conditional_cases If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used. |
@@ -1883,7 +1883,7 @@ public java.lang.String getDisplayName();
 
 The human-readable name of the flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#display_name DialogflowCxFlow#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#display_name DialogflowCxFlow#display_name}
 
 ---
 
@@ -1897,7 +1897,7 @@ public DialogflowCxFlowAdvancedSettings getAdvancedSettings();
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
 
 ---
 
@@ -1918,7 +1918,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#deletion_policy DialogflowCxFlow#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#deletion_policy DialogflowCxFlow#deletion_policy}
 
 ---
 
@@ -1932,7 +1932,7 @@ public java.lang.String getDescription();
 
 The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#description DialogflowCxFlow#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#description DialogflowCxFlow#description}
 
 ---
 
@@ -1946,7 +1946,7 @@ public IResolvable|java.util.List<DialogflowCxFlowEventHandlers> getEventHandler
 
 event_handlers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
 
 ---
 
@@ -1958,7 +1958,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1977,7 +1977,7 @@ Marks this as the [Default Start Flow](https://cloud.google.com/dialogflow/cx/do
 
 ~> Avoid having multiple 'google_dialogflow_cx_flow' resources linked to the same agent with 'is_default_start_flow = true' because they will compete to control a single Default Start Flow resource in GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
 
 ---
 
@@ -1991,7 +1991,7 @@ public DialogflowCxFlowKnowledgeConnectorSettings getKnowledgeConnectorSettings(
 
 knowledge_connector_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#knowledge_connector_settings DialogflowCxFlow#knowledge_connector_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#knowledge_connector_settings DialogflowCxFlow#knowledge_connector_settings}
 
 ---
 
@@ -2005,7 +2005,7 @@ public java.lang.String getLanguageCode();
 
 The language of the following fields in flow: Flow.event_handlers.trigger_fulfillment.messages Flow.event_handlers.trigger_fulfillment.conditional_cases Flow.transition_routes.trigger_fulfillment.messages Flow.transition_routes.trigger_fulfillment.conditional_cases If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#language_code DialogflowCxFlow#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#language_code DialogflowCxFlow#language_code}
 
 ---
 
@@ -2019,7 +2019,7 @@ public DialogflowCxFlowNluSettings getNluSettings();
 
 nlu_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#nlu_settings DialogflowCxFlow#nlu_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#nlu_settings DialogflowCxFlow#nlu_settings}
 
 ---
 
@@ -2033,7 +2033,7 @@ public java.lang.String getParent();
 
 The agent to create a flow for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#parent DialogflowCxFlow#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#parent DialogflowCxFlow#parent}
 
 ---
 
@@ -2047,7 +2047,7 @@ public DialogflowCxFlowTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#timeouts DialogflowCxFlow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#timeouts DialogflowCxFlow#timeouts}
 
 ---
 
@@ -2064,7 +2064,7 @@ A flow's transition route group serve two purposes: They are responsible for mat
 They are inherited by every page's [transition route groups][Page.transition_route_groups]. Transition route groups defined in the page have higher priority than those defined in the flow.
 Format:projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/transitionRouteGroups/<TransitionRouteGroup ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#transition_route_groups DialogflowCxFlow#transition_route_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#transition_route_groups DialogflowCxFlow#transition_route_groups}
 
 ---
 
@@ -2078,7 +2078,7 @@ public IResolvable|java.util.List<DialogflowCxFlowTransitionRoutes> getTransitio
 
 transition_routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
 
 ---
 
@@ -2118,7 +2118,7 @@ public java.lang.String getEvent();
 
 The name of the event to handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#event DialogflowCxFlow#event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#event DialogflowCxFlow#event}
 
 ---
 
@@ -2132,7 +2132,7 @@ public java.lang.String getTargetFlow();
 
 The target flow to transition to. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
 
 ---
 
@@ -2146,7 +2146,7 @@ public java.lang.String getTargetPage();
 
 The target page to transition to. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
 
 ---
 
@@ -2160,7 +2160,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillment getTriggerFulfillment();
 
 trigger_fulfillment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
 
 ---
 
@@ -2206,7 +2206,7 @@ public IResolvable|java.util.List<DialogflowCxFlowEventHandlersTriggerFulfillmen
 
 conditional_cases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
 
 ---
 
@@ -2223,7 +2223,7 @@ If the flag is true, the agent will utilize LLM to generate a text response.
 If LLM generation fails, the defined responses in the fulfillment will be respected.
 This flag is only useful for fulfillments associated with no-match event handlers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
 
 ---
 
@@ -2237,7 +2237,7 @@ public IResolvable|java.util.List<DialogflowCxFlowEventHandlersTriggerFulfillmen
 
 messages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
 
 ---
 
@@ -2253,7 +2253,7 @@ Whether Dialogflow should return currently queued fulfillment response messages 
 
 If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
 
 ---
 
@@ -2267,7 +2267,7 @@ public IResolvable|java.util.List<DialogflowCxFlowEventHandlersTriggerFulfillmen
 
 set_parameter_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
 
 ---
 
@@ -2283,7 +2283,7 @@ The tag used by the webhook to identify which fulfillment is being called.
 
 This field is required if webhook is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
 
 ---
 
@@ -2297,7 +2297,7 @@ public java.lang.String getWebhook();
 
 The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
 
 ---
 
@@ -2334,7 +2334,7 @@ A JSON encoded list of cascading if-else conditions.
 Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
 See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
 
 ---
 
@@ -2384,7 +2384,7 @@ The channel which the response is associated with.
 
 Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
 
 ---
 
@@ -2398,7 +2398,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSucces
 
 conversation_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
 
 ---
 
@@ -2412,7 +2412,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff g
 
 live_agent_handoff block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
 
 ---
 
@@ -2426,7 +2426,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText ge
 
 output_audio_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
 
 ---
 
@@ -2440,7 +2440,7 @@ public java.lang.String getPayload();
 
 A custom, platform-specific payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
 
 ---
 
@@ -2454,7 +2454,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio getPlayA
 
 play_audio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
 
 ---
 
@@ -2468,7 +2468,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferC
 
 telephony_transfer_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
 
 ---
 
@@ -2482,7 +2482,7 @@ public DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText getText();
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -2516,7 +2516,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -2550,7 +2550,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -2586,7 +2586,7 @@ public java.lang.String getSsml();
 
 The SSML text to be synthesized. For more information, see SSML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
 
 ---
 
@@ -2600,7 +2600,7 @@ public java.lang.String getText();
 
 The raw text to be synthesized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -2636,7 +2636,7 @@ URI of the audio clip.
 
 Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
 
 ---
 
@@ -2670,7 +2670,7 @@ public java.lang.String getPhoneNumber();
 
 Transfer the call to a phone number in E.164 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
 
 ---
 
@@ -2704,7 +2704,7 @@ public java.util.List<java.lang.String> getText();
 
 A collection of text responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -2740,7 +2740,7 @@ public java.lang.String getParameter();
 
 Display name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
 
 ---
 
@@ -2754,7 +2754,7 @@ public java.lang.String getValue();
 
 The new JSON-encoded value of the parameter. A null value clears the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
 
 ---
 
@@ -2796,7 +2796,7 @@ public IResolvable|java.util.List<DialogflowCxFlowKnowledgeConnectorSettingsData
 
 data_store_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#data_store_connections DialogflowCxFlow#data_store_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#data_store_connections DialogflowCxFlow#data_store_connections}
 
 ---
 
@@ -2810,7 +2810,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether Knowledge Connector is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
 
 ---
 
@@ -2827,7 +2827,7 @@ The target flow to transition to.
 Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<FlowID>.
 This field is part of a union field 'target': Only one of 'targetPage' or 'targetFlow' may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
 
 ---
 
@@ -2845,7 +2845,7 @@ Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<Flow
 The page must be in the same host flow (the flow that owns this 'KnowledgeConnectorSettings').
 This field is part of a union field 'target': Only one of 'targetPage' or 'targetFlow' may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
 
 ---
 
@@ -2859,7 +2859,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillment getTriggerFu
 
 trigger_fulfillment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
 
 ---
 
@@ -2897,7 +2897,7 @@ public java.lang.String getDataStore();
 
 The full name of the referenced data store. Formats: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore} projects/{project}/locations/{location}/dataStores/{dataStore}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#data_store DialogflowCxFlow#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#data_store DialogflowCxFlow#data_store}
 
 ---
 
@@ -2915,7 +2915,7 @@ The type of the connected data store.
 * UNSTRUCTURED: A data store that contains unstructured private data.
 * STRUCTURED: A data store that contains structured data (for example FAQ). Possible values: ["PUBLIC_WEB", "UNSTRUCTURED", "STRUCTURED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#data_store_type DialogflowCxFlow#data_store_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#data_store_type DialogflowCxFlow#data_store_type}
 
 ---
 
@@ -2934,7 +2934,7 @@ Should only be set for PUBLIC_WEB and UNSTRUCTURED data stores. If not set it is
 * DOCUMENTS: Documents are processed as documents.
 * CHUNKS: Documents are converted to chunks. Possible values: ["DOCUMENTS", "CHUNKS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#document_processing_mode DialogflowCxFlow#document_processing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#document_processing_mode DialogflowCxFlow#document_processing_mode}
 
 ---
 
@@ -2982,7 +2982,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSetti
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#advanced_settings DialogflowCxFlow#advanced_settings}
 
 ---
 
@@ -2996,7 +2996,7 @@ public IResolvable|java.util.List<DialogflowCxFlowKnowledgeConnectorSettingsTrig
 
 conditional_cases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
 
 ---
 
@@ -3012,7 +3012,7 @@ If the flag is true, the agent will utilize LLM to generate a text response.
 
 If LLM generation fails, the defined responses in the fulfillment will be respected. This flag is only useful for fulfillments associated with no-match event handlers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
 
 ---
 
@@ -3026,7 +3026,7 @@ public IResolvable|java.util.List<DialogflowCxFlowKnowledgeConnectorSettingsTrig
 
 messages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
 
 ---
 
@@ -3042,7 +3042,7 @@ Whether Dialogflow should return currently queued fulfillment response messages 
 
 If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
 
 ---
 
@@ -3056,7 +3056,7 @@ public IResolvable|java.util.List<DialogflowCxFlowKnowledgeConnectorSettingsTrig
 
 set_parameter_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
 
 ---
 
@@ -3072,7 +3072,7 @@ The tag used by the webhook to identify which fulfillment is being called.
 
 This field is required if webhook is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
 
 ---
 
@@ -3086,7 +3086,7 @@ public java.lang.String getWebhook();
 
 The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
 
 ---
 
@@ -3124,7 +3124,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSetti
 
 dtmf_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#dtmf_settings DialogflowCxFlow#dtmf_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#dtmf_settings DialogflowCxFlow#dtmf_settings}
 
 ---
 
@@ -3138,7 +3138,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSetti
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#logging_settings DialogflowCxFlow#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#logging_settings DialogflowCxFlow#logging_settings}
 
 ---
 
@@ -3152,7 +3152,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSetti
 
 speech_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#speech_settings DialogflowCxFlow#speech_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#speech_settings DialogflowCxFlow#speech_settings}
 
 ---
 
@@ -3196,7 +3196,7 @@ If true, incoming audio is processed for DTMF (dual tone multi frequtectency) ev
 
 For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will de the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
 
 ---
 
@@ -3212,7 +3212,7 @@ Endpoint timeout setting for matching dtmf input to regex.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#endpointing_timeout_duration DialogflowCxFlow#endpointing_timeout_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#endpointing_timeout_duration DialogflowCxFlow#endpointing_timeout_duration}
 
 ---
 
@@ -3226,7 +3226,7 @@ public java.lang.String getFinishDigit();
 
 The digit that terminates a DTMF digit sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#finish_digit DialogflowCxFlow#finish_digit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#finish_digit DialogflowCxFlow#finish_digit}
 
 ---
 
@@ -3242,7 +3242,7 @@ Interdigit timeout setting for matching dtmf input to regex.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#interdigit_timeout_duration DialogflowCxFlow#interdigit_timeout_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#interdigit_timeout_duration DialogflowCxFlow#interdigit_timeout_duration}
 
 ---
 
@@ -3256,7 +3256,7 @@ public java.lang.Number getMaxDigits();
 
 Max length of DTMF digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#max_digits DialogflowCxFlow#max_digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#max_digits DialogflowCxFlow#max_digits}
 
 ---
 
@@ -3294,7 +3294,7 @@ public java.lang.Boolean|IResolvable getEnableConsentBasedRedaction();
 
 Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
 
 ---
 
@@ -3308,7 +3308,7 @@ public java.lang.Boolean|IResolvable getEnableInteractionLogging();
 
 Enables DF Interaction logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
 
 ---
 
@@ -3322,7 +3322,7 @@ public java.lang.Boolean|IResolvable getEnableStackdriverLogging();
 
 Enables Google Cloud Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
 
 ---
 
@@ -3362,7 +3362,7 @@ public java.lang.Number getEndpointerSensitivity();
 
 Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#endpointer_sensitivity DialogflowCxFlow#endpointer_sensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#endpointer_sensitivity DialogflowCxFlow#endpointer_sensitivity}
 
 ---
 
@@ -3379,7 +3379,7 @@ Mapping from language to Speech-to-Text model.
 The mapped Speech-to-Text model will be selected for requests from its corresponding language. For more information, see [Speech models](https://cloud.google.com/dialogflow/cx/docs/concept/speech-models).
 An object containing a list of **"key": value** pairs. Example: **{ "name": "wrench", "mass": "1.3kg", "count": "3" }**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#models DialogflowCxFlow#models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#models DialogflowCxFlow#models}
 
 ---
 
@@ -3393,7 +3393,7 @@ public java.lang.String getNoSpeechTimeout();
 
 Timeout before detecting no speech. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#no_speech_timeout DialogflowCxFlow#no_speech_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#no_speech_timeout DialogflowCxFlow#no_speech_timeout}
 
 ---
 
@@ -3407,7 +3407,7 @@ public java.lang.Boolean|IResolvable getUseTimeoutBasedEndpointing();
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
 
 ---
 
@@ -3444,7 +3444,7 @@ A JSON encoded list of cascading if-else conditions.
 Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
 See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
 
 ---
 
@@ -3496,7 +3496,7 @@ The channel which the response is associated with.
 
 Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
 
 ---
 
@@ -3510,7 +3510,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConve
 
 conversation_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
 
 ---
 
@@ -3524,7 +3524,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowl
 
 knowledge_info_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#knowledge_info_card DialogflowCxFlow#knowledge_info_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#knowledge_info_card DialogflowCxFlow#knowledge_info_card}
 
 ---
 
@@ -3538,7 +3538,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveA
 
 live_agent_handoff block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
 
 ---
 
@@ -3552,7 +3552,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutpu
 
 output_audio_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
 
 ---
 
@@ -3568,7 +3568,7 @@ Returns a response containing a custom, platform-specific payload.
 
 This field is part of a union field 'message': Only one of 'text', 'payload', 'conversationSuccess', 'outputAudioText', 'liveAgentHandoff', 'endInteraction', 'playAudio', 'mixedAudio', 'telephonyTransferCall', or 'knowledgeInfoCard' may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
 
 ---
 
@@ -3582,7 +3582,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayA
 
 play_audio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
 
 ---
 
@@ -3596,7 +3596,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelep
 
 telephony_transfer_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
 
 ---
 
@@ -3610,7 +3610,7 @@ public DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesText 
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -3644,7 +3644,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -3702,7 +3702,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -3765,7 +3765,7 @@ The SSML text to be synthesized.
 For more information, see SSML.
 This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
 
 ---
 
@@ -3781,7 +3781,7 @@ The raw text to be synthesized.
 
 This field is part of a union field 'source': Only one of 'text' or 'ssml' may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -3817,7 +3817,7 @@ URI of the audio clip.
 
 Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
 
 ---
 
@@ -3851,7 +3851,7 @@ public java.lang.String getPhoneNumber();
 
 Transfer the call to a phone number in E.164 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
 
 ---
 
@@ -3888,7 +3888,7 @@ A collection of text response variants.
 If multiple variants are defined, only one text response variant is returned at runtime.
 required: true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -3924,7 +3924,7 @@ public java.lang.String getParameter();
 
 Display name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
 
 ---
 
@@ -3938,7 +3938,7 @@ public java.lang.String getValue();
 
 The new JSON-encoded value of the parameter. A null value clears the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
 
 ---
 
@@ -3978,7 +3978,7 @@ To filter out false positive results and still get variety in matched natural la
 
 If the returned score value is less than the threshold value, then a no-match event will be triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#classification_threshold DialogflowCxFlow#classification_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#classification_threshold DialogflowCxFlow#classification_threshold}
 
 ---
 
@@ -3995,7 +3995,7 @@ Indicates NLU model training mode.
 * MODEL_TRAINING_MODE_AUTOMATIC: NLU model training is automatically triggered when a flow gets modified. User can also manually trigger model training in this mode.
 * MODEL_TRAINING_MODE_MANUAL: User needs to manually trigger NLU model training. Best for large flows whose models take long time to train. Possible values: ["MODEL_TRAINING_MODE_AUTOMATIC", "MODEL_TRAINING_MODE_MANUAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#model_training_mode DialogflowCxFlow#model_training_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#model_training_mode DialogflowCxFlow#model_training_mode}
 
 ---
 
@@ -4012,7 +4012,7 @@ Indicates the type of NLU model.
 * MODEL_TYPE_STANDARD: Use standard NLU model.
 * MODEL_TYPE_ADVANCED: Use advanced NLU model. Possible values: ["MODEL_TYPE_STANDARD", "MODEL_TYPE_ADVANCED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#model_type DialogflowCxFlow#model_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#model_type DialogflowCxFlow#model_type}
 
 ---
 
@@ -4034,9 +4034,9 @@ DialogflowCxFlowTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#create DialogflowCxFlow#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#delete DialogflowCxFlow#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#update DialogflowCxFlow#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#create DialogflowCxFlow#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#delete DialogflowCxFlow#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#update DialogflowCxFlow#update}. |
 
 ---
 
@@ -4048,7 +4048,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#create DialogflowCxFlow#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#create DialogflowCxFlow#create}.
 
 ---
 
@@ -4060,7 +4060,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#delete DialogflowCxFlow#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#delete DialogflowCxFlow#delete}.
 
 ---
 
@@ -4072,7 +4072,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#update DialogflowCxFlow#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#update DialogflowCxFlow#update}.
 
 ---
 
@@ -4116,7 +4116,7 @@ The condition to evaluate against form parameters or session parameters.
 
 At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#condition DialogflowCxFlow#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#condition DialogflowCxFlow#condition}
 
 ---
 
@@ -4132,7 +4132,7 @@ The unique identifier of an Intent.
 
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>. Indicates that the transition can only happen when the given intent is matched. At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#intent DialogflowCxFlow#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#intent DialogflowCxFlow#intent}
 
 ---
 
@@ -4146,7 +4146,7 @@ public java.lang.String getTargetFlow();
 
 The target flow to transition to. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_flow DialogflowCxFlow#target_flow}
 
 ---
 
@@ -4160,7 +4160,7 @@ public java.lang.String getTargetPage();
 
 The target page to transition to. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#target_page DialogflowCxFlow#target_page}
 
 ---
 
@@ -4174,7 +4174,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillment getTriggerFulfillment(
 
 trigger_fulfillment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#trigger_fulfillment DialogflowCxFlow#trigger_fulfillment}
 
 ---
 
@@ -4218,7 +4218,7 @@ public IResolvable|java.util.List<DialogflowCxFlowTransitionRoutesTriggerFulfill
 
 conditional_cases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
 
 ---
 
@@ -4232,7 +4232,7 @@ public IResolvable|java.util.List<DialogflowCxFlowTransitionRoutesTriggerFulfill
 
 messages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
 
 ---
 
@@ -4248,7 +4248,7 @@ Whether Dialogflow should return currently queued fulfillment response messages 
 
 If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
 
 ---
 
@@ -4262,7 +4262,7 @@ public IResolvable|java.util.List<DialogflowCxFlowTransitionRoutesTriggerFulfill
 
 set_parameter_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
 
 ---
 
@@ -4278,7 +4278,7 @@ The tag used by the webhook to identify which fulfillment is being called.
 
 This field is required if webhook is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#tag DialogflowCxFlow#tag}
 
 ---
 
@@ -4292,7 +4292,7 @@ public java.lang.String getWebhook();
 
 The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#webhook DialogflowCxFlow#webhook}
 
 ---
 
@@ -4329,7 +4329,7 @@ A JSON encoded list of cascading if-else conditions.
 Cases are mutually exclusive. The first one with a matching condition is selected, all the rest ignored.
 See [Case](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/Fulfillment#case) for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#cases DialogflowCxFlow#cases}
 
 ---
 
@@ -4379,7 +4379,7 @@ The channel which the response is associated with.
 
 Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#channel DialogflowCxFlow#channel}
 
 ---
 
@@ -4393,7 +4393,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuc
 
 conversation_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#conversation_success DialogflowCxFlow#conversation_success}
 
 ---
 
@@ -4407,7 +4407,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandof
 
 live_agent_handoff block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#live_agent_handoff DialogflowCxFlow#live_agent_handoff}
 
 ---
 
@@ -4421,7 +4421,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 
 output_audio_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#output_audio_text DialogflowCxFlow#output_audio_text}
 
 ---
 
@@ -4435,7 +4435,7 @@ public java.lang.String getPayload();
 
 A custom, platform-specific payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#payload DialogflowCxFlow#payload}
 
 ---
 
@@ -4449,7 +4449,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio getPl
 
 play_audio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#play_audio DialogflowCxFlow#play_audio}
 
 ---
 
@@ -4463,7 +4463,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransf
 
 telephony_transfer_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#telephony_transfer_call DialogflowCxFlow#telephony_transfer_call}
 
 ---
 
@@ -4477,7 +4477,7 @@ public DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText getText();
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -4511,7 +4511,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -4545,7 +4545,7 @@ public java.lang.String getMetadata();
 
 Custom metadata. Dialogflow doesn't impose any structure on this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 
 ---
 
@@ -4581,7 +4581,7 @@ public java.lang.String getSsml();
 
 The SSML text to be synthesized. For more information, see SSML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#ssml DialogflowCxFlow#ssml}
 
 ---
 
@@ -4595,7 +4595,7 @@ public java.lang.String getText();
 
 The raw text to be synthesized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -4631,7 +4631,7 @@ URI of the audio clip.
 
 Dialogflow does not impose any validation on this value. It is specific to the client that reads it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#audio_uri DialogflowCxFlow#audio_uri}
 
 ---
 
@@ -4665,7 +4665,7 @@ public java.lang.String getPhoneNumber();
 
 Transfer the call to a phone number in E.164 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#phone_number DialogflowCxFlow#phone_number}
 
 ---
 
@@ -4699,7 +4699,7 @@ public java.util.List<java.lang.String> getText();
 
 A collection of text responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#text DialogflowCxFlow#text}
 
 ---
 
@@ -4735,7 +4735,7 @@ public java.lang.String getParameter();
 
 Display name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#parameter DialogflowCxFlow#parameter}
 
 ---
 
@@ -4749,7 +4749,7 @@ public java.lang.String getValue();
 
 The new JSON-encoded value of the parameter. A null value clears the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_flow#value DialogflowCxFlow#value}
 
 ---
 

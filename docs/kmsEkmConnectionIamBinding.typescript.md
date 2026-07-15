@@ -4,7 +4,7 @@
 
 ### KmsEkmConnectionIamBinding <a name="KmsEkmConnectionIamBinding" id="@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding google_kms_ekm_connection_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding google_kms_ekm_connection_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the KmsEkmConnectionIamBinding
 
 The id of the existing KmsEkmConnectionIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const kmsEkmConnectionIamBindingCondition: kmsEkmConnectionIamBinding.KmsEkmConn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#expression KmsEkmConnectionIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#title KmsEkmConnectionIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#description KmsEkmConnectionIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#expression KmsEkmConnectionIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#title KmsEkmConnectionIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#description KmsEkmConnectionIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#expression KmsEkmConnectionIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#expression KmsEkmConnectionIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#title KmsEkmConnectionIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#title KmsEkmConnectionIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#description KmsEkmConnectionIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#description KmsEkmConnectionIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const kmsEkmConnectionIamBindingConfig: kmsEkmConnectionIamBinding.KmsEkmConnect
 | <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#members KmsEkmConnectionIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#name KmsEkmConnectionIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#role KmsEkmConnectionIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#members KmsEkmConnectionIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#name KmsEkmConnectionIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#role KmsEkmConnectionIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingCondition">KmsEkmConnectionIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#id KmsEkmConnectionIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#location KmsEkmConnectionIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#project KmsEkmConnectionIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#id KmsEkmConnectionIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#location KmsEkmConnectionIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#project KmsEkmConnectionIamBinding#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#members KmsEkmConnectionIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#members KmsEkmConnectionIamBinding#members}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#name KmsEkmConnectionIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#name KmsEkmConnectionIamBinding#name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#role KmsEkmConnectionIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#role KmsEkmConnectionIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: KmsEkmConnectionIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#condition KmsEkmConnectionIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#condition KmsEkmConnectionIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#id KmsEkmConnectionIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#id KmsEkmConnectionIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#location KmsEkmConnectionIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#location KmsEkmConnectionIamBinding#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/kms_ekm_connection_iam_binding#project KmsEkmConnectionIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/kms_ekm_connection_iam_binding#project KmsEkmConnectionIamBinding#project}.
 
 ---
 

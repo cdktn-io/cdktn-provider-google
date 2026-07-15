@@ -4,7 +4,7 @@
 
 ### ComputeWireGroup <a name="ComputeWireGroup" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group google_compute_wire_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group google_compute_wire_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.Initializer"></a>
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the ComputeWireGroup to import
 
 The id of the existing ComputeWireGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1077,8 +1077,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.endpoints">Endpoints</a></code> | <code>interface{}</code> | endpoints block. |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}. |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts">ComputeWireGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.property.wireProperties">WireProperties</a></code> | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupWireProperties">ComputeWireGroupWireProperties</a></code> | wire_properties block. |
 
@@ -1164,7 +1164,7 @@ CrossSiteNetwork *string
 
 Required cross site network to which wire group belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
 
 ---
 
@@ -1184,7 +1184,7 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#name ComputeWireGroup#name}
 
 ---
 
@@ -1198,7 +1198,7 @@ AdminEnabled interface{}
 
 Indicates whether the wire group is administratively enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
 
 ---
 
@@ -1219,7 +1219,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#deletion_policy ComputeWireGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#deletion_policy ComputeWireGroup#deletion_policy}
 
 ---
 
@@ -1233,7 +1233,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
 
 ---
 
@@ -1247,7 +1247,7 @@ Endpoints interface{}
 
 endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
 
 ---
 
@@ -1259,7 +1259,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1274,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#project ComputeWireGroup#project}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Timeouts ComputeWireGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#timeouts ComputeWireGroup#timeouts}
 
 ---
 
@@ -1302,7 +1302,7 @@ WireProperties ComputeWireGroupWireProperties
 
 wire_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
 
 ---
 
@@ -1323,7 +1323,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpoints.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpoints.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpoints.property.interconnects">Interconnects</a></code> | <code>interface{}</code> | interconnects block. |
 
 ---
@@ -1336,7 +1336,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#endpoint ComputeWireGroup#endpoint}.
 
 ---
 
@@ -1350,7 +1350,7 @@ Interconnects interface{}
 
 interconnects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#interconnects ComputeWireGroup#interconnects}
 
 ---
 
@@ -1372,8 +1372,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.property.interconnectName">InterconnectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}. |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.property.interconnect">Interconnect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.property.interconnectName">InterconnectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.property.interconnect">Interconnect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}. |
 | <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.property.vlanTags">VlanTags</a></code> | <code>*[]*f64</code> | VLAN tags for the interconnect. |
 
 ---
@@ -1386,7 +1386,7 @@ InterconnectName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#interconnect_name ComputeWireGroup#interconnect_name}.
 
 ---
 
@@ -1398,7 +1398,7 @@ Interconnect *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#interconnect ComputeWireGroup#interconnect}.
 
 ---
 
@@ -1412,7 +1412,7 @@ VlanTags *[]*f64
 
 VLAN tags for the interconnect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#vlan_tags ComputeWireGroup#vlan_tags}
 
 ---
 
@@ -1434,9 +1434,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}. |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}. |
 
 ---
 
@@ -1448,7 +1448,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#create ComputeWireGroup#create}.
 
 ---
 
@@ -1460,7 +1460,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#delete ComputeWireGroup#delete}.
 
 ---
 
@@ -1472,7 +1472,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#update ComputeWireGroup#update}.
 
 ---
 
@@ -1540,7 +1540,7 @@ ALLOCATE_PER_WIRE: configures a separate unmetered bandwidth allocation (and ass
 SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures one unmetered bandwidth allocation for the wire group. The unmetered bandwidth is divided equally across each wire in the group, but dynamic
 throttling reallocates unused unmetered bandwidth from unused or underused wires to other wires in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#bandwidth_allocation ComputeWireGroup#bandwidth_allocation}
 
 ---
 
@@ -1554,7 +1554,7 @@ BandwidthUnmetered *f64
 
 The unmetered bandwidth setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#bandwidth_unmetered ComputeWireGroup#bandwidth_unmetered}
 
 ---
 
@@ -1570,7 +1570,7 @@ Response when a fault is detected in a pseudowire: NONE: default.
 
 DISABLE_PORT: set the port line protocol down when inline probes detect a fault. This setting is only permitted on port mode pseudowires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_wire_group#fault_response ComputeWireGroup#fault_response}
 
 ---
 

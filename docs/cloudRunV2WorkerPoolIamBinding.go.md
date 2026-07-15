@@ -4,7 +4,7 @@
 
 ### CloudRunV2WorkerPoolIamBinding <a name="CloudRunV2WorkerPoolIamBinding" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding google_cloud_run_v2_worker_pool_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding google_cloud_run_v2_worker_pool_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the CloudRunV2WorkerPoolIamBin
 
 The id of the existing CloudRunV2WorkerPoolIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2worker
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#expression CloudRunV2WorkerPoolIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#title CloudRunV2WorkerPoolIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#description CloudRunV2WorkerPoolIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#expression CloudRunV2WorkerPoolIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#title CloudRunV2WorkerPoolIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#description CloudRunV2WorkerPoolIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#expression CloudRunV2WorkerPoolIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#expression CloudRunV2WorkerPoolIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#title CloudRunV2WorkerPoolIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#title CloudRunV2WorkerPoolIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#description CloudRunV2WorkerPoolIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#description CloudRunV2WorkerPoolIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2worker
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#members CloudRunV2WorkerPoolIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#name CloudRunV2WorkerPoolIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#role CloudRunV2WorkerPoolIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#members CloudRunV2WorkerPoolIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#name CloudRunV2WorkerPoolIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#role CloudRunV2WorkerPoolIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingCondition">CloudRunV2WorkerPoolIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#id CloudRunV2WorkerPoolIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#location CloudRunV2WorkerPoolIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#project CloudRunV2WorkerPoolIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#id CloudRunV2WorkerPoolIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#location CloudRunV2WorkerPoolIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPoolIamBinding.CloudRunV2WorkerPoolIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#project CloudRunV2WorkerPoolIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#members CloudRunV2WorkerPoolIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#members CloudRunV2WorkerPoolIamBinding#members}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#name CloudRunV2WorkerPoolIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#name CloudRunV2WorkerPoolIamBinding#name}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#role CloudRunV2WorkerPoolIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#role CloudRunV2WorkerPoolIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition CloudRunV2WorkerPoolIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#condition CloudRunV2WorkerPoolIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#condition CloudRunV2WorkerPoolIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#id CloudRunV2WorkerPoolIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#id CloudRunV2WorkerPoolIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#location CloudRunV2WorkerPoolIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#location CloudRunV2WorkerPoolIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#project CloudRunV2WorkerPoolIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_run_v2_worker_pool_iam_binding#project CloudRunV2WorkerPoolIamBinding#project}.
 
 ---
 

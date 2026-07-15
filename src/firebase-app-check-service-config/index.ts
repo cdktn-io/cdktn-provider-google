@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface FirebaseAppCheckServiceConfigConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#deletion_policy FirebaseAppCheckServiceConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#deletion_policy FirebaseAppCheckServiceConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -56,18 +56,18 @@ export interface FirebaseAppCheckServiceConfigConfig extends cdktn.TerraformMeta
   * If your app has not launched yet, you should enable enforcement immediately, since there are no outdated
   * clients in use. Possible values: ["UNENFORCED", "ENFORCED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
   */
   readonly enforcementMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}
   */
   readonly project?: string;
   /**
@@ -77,27 +77,27 @@ export interface FirebaseAppCheckServiceConfigConfig extends cdktn.TerraformMeta
   *   firestore.googleapis.com (Cloud Firestore)
   *   identitytoolkit.googleapis.com (Authentication)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
   */
   readonly serviceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
   */
   readonly timeouts?: FirebaseAppCheckServiceConfigTimeouts;
 }
 export interface FirebaseAppCheckServiceConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}
   */
   readonly update?: string;
 }
@@ -249,7 +249,7 @@ export class FirebaseAppCheckServiceConfigTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}
 */
 export class FirebaseAppCheckServiceConfig extends cdktn.TerraformResource {
 
@@ -265,7 +265,7 @@ export class FirebaseAppCheckServiceConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FirebaseAppCheckServiceConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirebaseAppCheckServiceConfig to import
-  * @param importFromId The id of the existing FirebaseAppCheckServiceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirebaseAppCheckServiceConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirebaseAppCheckServiceConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -277,7 +277,7 @@ export class FirebaseAppCheckServiceConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +288,7 @@ export class FirebaseAppCheckServiceConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_firebase_app_check_service_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

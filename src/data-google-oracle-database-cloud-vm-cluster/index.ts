@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,11 +18,11 @@ export interface DataGoogleOracleDatabaseCloudVmClusterConfig extends cdktn.Terr
   * characters in length. The value must start with a letter and end with
   * a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster#cloud_vm_cluster_id DataGoogleOracleDatabaseCloudVmCluster#cloud_vm_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster#cloud_vm_cluster_id DataGoogleOracleDatabaseCloudVmCluster#cloud_vm_cluster_id}
   */
   readonly cloudVmClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster#id DataGoogleOracleDatabaseCloudVmCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster#id DataGoogleOracleDatabaseCloudVmCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,11 +31,11 @@ export interface DataGoogleOracleDatabaseCloudVmClusterConfig extends cdktn.Terr
   /**
   * Resource ID segment making up resource 'name'. See documentation for resource type 'oracledatabase.googleapis.com/DbNode'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster#location DataGoogleOracleDatabaseCloudVmCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster#location DataGoogleOracleDatabaseCloudVmCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster#project DataGoogleOracleDatabaseCloudVmCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster#project DataGoogleOracleDatabaseCloudVmCluster#project}
   */
   readonly project?: string;
 }
@@ -481,6 +481,11 @@ export class DataGoogleOracleDatabaseCloudVmClusterPropertiesOutputReference ext
     return this.getStringAttribute('state');
   }
 
+  // storage_management_type - computed: true, optional: false, required: false
+  public get storageManagementType() {
+    return this.getStringAttribute('storage_management_type');
+  }
+
   // storage_size_gb - computed: true, optional: false, required: false
   public get storageSizeGb() {
     return this.getNumberAttribute('storage_size_gb');
@@ -518,7 +523,7 @@ export class DataGoogleOracleDatabaseCloudVmClusterPropertiesList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}
 */
 export class DataGoogleOracleDatabaseCloudVmCluster extends cdktn.TerraformDataSource {
 
@@ -534,7 +539,7 @@ export class DataGoogleOracleDatabaseCloudVmCluster extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataGoogleOracleDatabaseCloudVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOracleDatabaseCloudVmCluster to import
-  * @param importFromId The id of the existing DataGoogleOracleDatabaseCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleOracleDatabaseCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOracleDatabaseCloudVmCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -546,7 +551,7 @@ export class DataGoogleOracleDatabaseCloudVmCluster extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -557,7 +562,7 @@ export class DataGoogleOracleDatabaseCloudVmCluster extends cdktn.TerraformDataS
       terraformResourceType: 'google_oracle_database_cloud_vm_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -635,6 +640,11 @@ export class DataGoogleOracleDatabaseCloudVmCluster extends cdktn.TerraformDataS
   // exadata_infrastructure - computed: true, optional: false, required: false
   public get exadataInfrastructure() {
     return this.getStringAttribute('exadata_infrastructure');
+  }
+
+  // exascale_db_storage_vault - computed: true, optional: false, required: false
+  public get exascaleDbStorageVault() {
+    return this.getStringAttribute('exascale_db_storage_vault');
   }
 
   // gcp_oracle_zone - computed: true, optional: false, required: false

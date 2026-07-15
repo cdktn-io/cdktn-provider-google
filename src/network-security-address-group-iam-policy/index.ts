@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkSecurityAddressGroupIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#id NetworkSecurityAddressGroupIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#location NetworkSecurityAddressGroupIamPolicy#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#name NetworkSecurityAddressGroupIamPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#policy_data NetworkSecurityAddressGroupIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#project NetworkSecurityAddressGroupIamPolicy#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy}
 */
 export class NetworkSecurityAddressGroupIamPolicy extends cdktn.TerraformResource {
 
@@ -54,7 +54,7 @@ export class NetworkSecurityAddressGroupIamPolicy extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a NetworkSecurityAddressGroupIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityAddressGroupIamPolicy to import
-  * @param importFromId The id of the existing NetworkSecurityAddressGroupIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityAddressGroupIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityAddressGroupIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -66,7 +66,7 @@ export class NetworkSecurityAddressGroupIamPolicy extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_address_group_iam_policy google_network_security_address_group_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class NetworkSecurityAddressGroupIamPolicy extends cdktn.TerraformResourc
       terraformResourceType: 'google_network_security_address_group_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

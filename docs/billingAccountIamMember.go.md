@@ -4,7 +4,7 @@
 
 ### BillingAccountIamMember <a name="BillingAccountIamMember" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member google_billing_account_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member google_billing_account_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the BillingAccountIamMember to
 
 The id of the existing BillingAccountIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#expression BillingAccountIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#title BillingAccountIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#description BillingAccountIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#expression BillingAccountIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#title BillingAccountIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#description BillingAccountIamMember#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#expression BillingAccountIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#expression BillingAccountIamMember#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#title BillingAccountIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#title BillingAccountIamMember#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#description BillingAccountIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#description BillingAccountIamMember#description}.
 
 ---
 
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountia
 | <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.billingAccountId">BillingAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#billing_account_id BillingAccountIamMember#billing_account_id}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#member BillingAccountIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#role BillingAccountIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.billingAccountId">BillingAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#billing_account_id BillingAccountIamMember#billing_account_id}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#member BillingAccountIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#role BillingAccountIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition">BillingAccountIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#id BillingAccountIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#id BillingAccountIamMember#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ BillingAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#billing_account_id BillingAccountIamMember#billing_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#billing_account_id BillingAccountIamMember#billing_account_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#member BillingAccountIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#member BillingAccountIamMember#member}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#role BillingAccountIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#role BillingAccountIamMember#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Condition BillingAccountIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#condition BillingAccountIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#condition BillingAccountIamMember#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/billing_account_iam_member#id BillingAccountIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/billing_account_iam_member#id BillingAccountIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

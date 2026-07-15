@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ComputeInterconnectGroupConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#deletion_policy ComputeInterconnectGroup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#deletion_policy ComputeInterconnectGroup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,29 +44,29 @@ export interface ComputeInterconnectGroupConfig extends cdktn.TerraformMetaArgum
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}
   */
   readonly project?: string;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
   */
   readonly intent: ComputeInterconnectGroupIntent;
   /**
   * interconnects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
   */
   readonly interconnects?: ComputeInterconnectGroupInterconnects[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
   */
   readonly timeouts?: ComputeInterconnectGroupTimeouts;
 }
@@ -655,7 +655,7 @@ export interface ComputeInterconnectGroupIntent {
   * The reliability the user intends this group to be capable of, in terms
   * of the Interconnect product SLAs. Possible values: ["PRODUCTION_NON_CRITICAL", "PRODUCTION_CRITICAL", "NO_SLA", "AVAILABILITY_SLA_UNSPECIFIED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
   */
   readonly topologyCapability?: string;
 }
@@ -741,11 +741,11 @@ export interface ComputeInterconnectGroupInterconnects {
   /**
   * The URL of an Interconnect in this group. All Interconnects in the group are unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
   */
   readonly interconnect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
   */
   readonly name: string;
 }
@@ -887,15 +887,15 @@ export class ComputeInterconnectGroupInterconnectsList extends cdktn.ComplexList
 }
 export interface ComputeInterconnectGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}
   */
   readonly update?: string;
 }
@@ -1047,7 +1047,7 @@ export class ComputeInterconnectGroupTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}
 */
 export class ComputeInterconnectGroup extends cdktn.TerraformResource {
 
@@ -1063,7 +1063,7 @@ export class ComputeInterconnectGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeInterconnectGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInterconnectGroup to import
-  * @param importFromId The id of the existing ComputeInterconnectGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInterconnectGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInterconnectGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1075,7 +1075,7 @@ export class ComputeInterconnectGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1086,7 +1086,7 @@ export class ComputeInterconnectGroup extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_interconnect_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

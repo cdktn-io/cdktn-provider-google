@@ -4,7 +4,7 @@
 
 ### CloudSecurityComplianceFramework <a name="CloudSecurityComplianceFramework" id="@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework google_cloud_security_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework google_cloud_security_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the CloudSecurityComplianceFra
 
 The id of the existing CloudSecurityComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly majorRevisionId: string;
 
 Major revision of cloudcontrol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#major_revision_id CloudSecurityComplianceFramework#major_revision_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#major_revision_id CloudSecurityComplianceFramework#major_revision_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly name: string;
 
 The name of the CloudControl in the format: "{parent}/locations/{location}/cloudControls/{cloud-control}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly parameters: IResolvable | CloudSecurityComplianceFrameworkCloudC
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#parameters CloudSecurityComplianceFramework#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#parameters CloudSecurityComplianceFramework#parameters}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly name: string;
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly parameterValue: CloudSecurityComplianceFrameworkCloudControlDeta
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#parameter_value CloudSecurityComplianceFramework#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#parameter_value CloudSecurityComplianceFramework#parameter_value}
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly boolValue: boolean | IResolvable;
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#bool_value CloudSecurityComplianceFramework#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#bool_value CloudSecurityComplianceFramework#bool_value}
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly numberValue: number;
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#number_value CloudSecurityComplianceFramework#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#number_value CloudSecurityComplianceFramework#number_value}
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly oneofValue: CloudSecurityComplianceFrameworkCloudControlDetailsP
 
 oneof_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#oneof_value CloudSecurityComplianceFramework#oneof_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#oneof_value CloudSecurityComplianceFramework#oneof_value}
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly stringListValue: CloudSecurityComplianceFrameworkCloudControlDet
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#string_list_value CloudSecurityComplianceFramework#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#string_list_value CloudSecurityComplianceFramework#string_list_value}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly stringValue: string;
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#string_value CloudSecurityComplianceFramework#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#string_value CloudSecurityComplianceFramework#string_value}
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly name: string;
 
 The name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#name CloudSecurityComplianceFramework#name}
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly parameterValue: CloudSecurityComplianceFrameworkCloudControlDeta
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#parameter_value CloudSecurityComplianceFramework#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#parameter_value CloudSecurityComplianceFramework#parameter_value}
 
 ---
 
@@ -1342,7 +1342,7 @@ public readonly boolValue: boolean | IResolvable;
 
 Represents a boolean value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#bool_value CloudSecurityComplianceFramework#bool_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#bool_value CloudSecurityComplianceFramework#bool_value}
 
 ---
 
@@ -1356,7 +1356,7 @@ public readonly numberValue: number;
 
 Represents a double value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#number_value CloudSecurityComplianceFramework#number_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#number_value CloudSecurityComplianceFramework#number_value}
 
 ---
 
@@ -1370,7 +1370,7 @@ public readonly stringListValue: CloudSecurityComplianceFrameworkCloudControlDet
 
 string_list_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#string_list_value CloudSecurityComplianceFramework#string_list_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#string_list_value CloudSecurityComplianceFramework#string_list_value}
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly stringValue: string;
 
 Represents a string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#string_value CloudSecurityComplianceFramework#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#string_value CloudSecurityComplianceFramework#string_value}
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly values: string[];
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#values CloudSecurityComplianceFramework#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#values CloudSecurityComplianceFramework#values}
 
 ---
 
@@ -1448,7 +1448,7 @@ public readonly values: string[];
 
 The strings in the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#values CloudSecurityComplianceFramework#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#values CloudSecurityComplianceFramework#values}
 
 ---
 
@@ -1479,7 +1479,7 @@ const cloudSecurityComplianceFrameworkConfig: cloudSecurityComplianceFramework.C
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.description">description</a></code> | <code>string</code> | The description of the framework. The maximum length is 2000 characters. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name of the framework. The maximum length is 200 characters. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#id CloudSecurityComplianceFramework#id}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#id CloudSecurityComplianceFramework#id}. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.organization">organization</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.parent">parent</a></code> | <code>string</code> | The parent resource in which to create the resource. Must be in one of the following formats: * 'projects/{{project}}' * 'organizations/{{organization}}'. |
 | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts">CloudSecurityComplianceFrameworkTimeouts</a></code> | timeouts block. |
@@ -1569,7 +1569,7 @@ ID of the framework.
 This is not the full name of the framework.
 This is the last part of the full name of the framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#framework_id CloudSecurityComplianceFramework#framework_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#framework_id CloudSecurityComplianceFramework#framework_id}
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#location CloudSecurityComplianceFramework#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#location CloudSecurityComplianceFramework#location}
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly cloudControlDetails: IResolvable | CloudSecurityComplianceFramew
 
 cloud_control_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#cloud_control_details CloudSecurityComplianceFramework#cloud_control_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#cloud_control_details CloudSecurityComplianceFramework#cloud_control_details}
 
 ---
 
@@ -1619,7 +1619,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#deletion_policy CloudSecurityComplianceFramework#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#deletion_policy CloudSecurityComplianceFramework#deletion_policy}
 
 ---
 
@@ -1633,7 +1633,7 @@ public readonly description: string;
 
 The description of the framework. The maximum length is 2000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#description CloudSecurityComplianceFramework#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#description CloudSecurityComplianceFramework#description}
 
 ---
 
@@ -1647,7 +1647,7 @@ public readonly displayName: string;
 
 Display name of the framework. The maximum length is 200 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#display_name CloudSecurityComplianceFramework#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#display_name CloudSecurityComplianceFramework#display_name}
 
 ---
 
@@ -1659,7 +1659,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#id CloudSecurityComplianceFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#id CloudSecurityComplianceFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1676,7 +1676,7 @@ public readonly organization: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#organization CloudSecurityComplianceFramework#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#organization CloudSecurityComplianceFramework#organization}
 
 ---
 
@@ -1690,7 +1690,7 @@ public readonly parent: string;
 
 The parent resource in which to create the resource. Must be in one of the following formats: * 'projects/{{project}}' * 'organizations/{{organization}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#parent CloudSecurityComplianceFramework#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#parent CloudSecurityComplianceFramework#parent}
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly timeouts: CloudSecurityComplianceFrameworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#timeouts CloudSecurityComplianceFramework#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#timeouts CloudSecurityComplianceFramework#timeouts}
 
 ---
 
@@ -1722,9 +1722,9 @@ const cloudSecurityComplianceFrameworkTimeouts: cloudSecurityComplianceFramework
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#create CloudSecurityComplianceFramework#create}. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#delete CloudSecurityComplianceFramework#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#update CloudSecurityComplianceFramework#update}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#create CloudSecurityComplianceFramework#create}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#delete CloudSecurityComplianceFramework#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#update CloudSecurityComplianceFramework#update}. |
 
 ---
 
@@ -1736,7 +1736,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#create CloudSecurityComplianceFramework#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#create CloudSecurityComplianceFramework#create}.
 
 ---
 
@@ -1748,7 +1748,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#delete CloudSecurityComplianceFramework#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#delete CloudSecurityComplianceFramework#delete}.
 
 ---
 
@@ -1760,7 +1760,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/cloud_security_compliance_framework#update CloudSecurityComplianceFramework#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/cloud_security_compliance_framework#update CloudSecurityComplianceFramework#update}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `google_database_migration_service_connection_profile`
 
-Refer to the Terraform Registry for docs: [`google_database_migration_service_connection_profile`](https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/database_migration_service_connection_profile).
+Refer to the Terraform Registry for docs: [`google_database_migration_service_connection_profile`](https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/database_migration_service_connection_profile).
