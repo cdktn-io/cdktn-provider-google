@@ -4,7 +4,7 @@
 
 ### DataprocClusterIamMember <a name="DataprocClusterIamMember" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member google_dataproc_cluster_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member google_dataproc_cluster_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer"></a>
 
@@ -42,13 +42,13 @@ dataprocClusterIamMember.DataprocClusterIamMember(
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition">DataprocClusterIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMember.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#condition DataprocClusterIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#condition DataprocClusterIamMember#condition}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}.
 
 ---
 
@@ -571,7 +571,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}.
 
 ---
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}.
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}.
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the DataprocClusterIamMember t
 
 The id of the existing DataprocClusterIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,9 +1107,9 @@ dataprocClusterIamMember.DataprocClusterIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}. |
 
 ---
 
@@ -1121,7 +1121,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#expression DataprocClusterIamMember#expression}.
 
 ---
 
@@ -1133,7 +1133,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#title DataprocClusterIamMember#title}.
 
 ---
 
@@ -1145,7 +1145,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#description DataprocClusterIamMember#description}.
 
 ---
 
@@ -1185,13 +1185,13 @@ dataprocClusterIamMember.DataprocClusterIamMemberConfig(
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.cluster">cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberCondition">DataprocClusterIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocClusterIamMember.DataprocClusterIamMemberConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}. |
 
 ---
 
@@ -1273,7 +1273,7 @@ cluster: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#cluster DataprocClusterIamMember#cluster}.
 
 ---
 
@@ -1285,7 +1285,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#member DataprocClusterIamMember#member}.
 
 ---
 
@@ -1297,7 +1297,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#role DataprocClusterIamMember#role}.
 
 ---
 
@@ -1311,7 +1311,7 @@ condition: DataprocClusterIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#condition DataprocClusterIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#condition DataprocClusterIamMember#condition}
 
 ---
 
@@ -1323,7 +1323,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#id DataprocClusterIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,7 +1338,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#project DataprocClusterIamMember#project}.
 
 ---
 
@@ -1350,7 +1350,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster_iam_member#region DataprocClusterIamMember#region}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MigrationCenterSettings <a name="MigrationCenterSettings" id="@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings google_migration_center_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings google_migration_center_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettings.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the MigrationCenterSettings to
 
 The id of the existing MigrationCenterSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,9 +943,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenters
 | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.disableCloudLogging">DisableCloudLogging</a></code> | <code>interface{}</code> | Disable Cloud Logging for the Migration Center API. Users are billed for the logs. |
-| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#id MigrationCenterSettings#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#id MigrationCenterSettings#id}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.preferenceSet">PreferenceSet</a></code> | <code>*string</code> | The preference set used by default for a project. |
-| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#project MigrationCenterSettings#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#project MigrationCenterSettings#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts">MigrationCenterSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1030,7 +1030,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#location MigrationCenterSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#location MigrationCenterSettings#location}
 
 ---
 
@@ -1051,7 +1051,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#deletion_policy MigrationCenterSettings#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#deletion_policy MigrationCenterSettings#deletion_policy}
 
 ---
 
@@ -1065,7 +1065,7 @@ DisableCloudLogging interface{}
 
 Disable Cloud Logging for the Migration Center API. Users are billed for the logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#disable_cloud_logging MigrationCenterSettings#disable_cloud_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#disable_cloud_logging MigrationCenterSettings#disable_cloud_logging}
 
 ---
 
@@ -1077,7 +1077,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#id MigrationCenterSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#id MigrationCenterSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1094,7 @@ PreferenceSet *string
 
 The preference set used by default for a project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#preference_set MigrationCenterSettings#preference_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#preference_set MigrationCenterSettings#preference_set}
 
 ---
 
@@ -1106,7 +1106,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#project MigrationCenterSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#project MigrationCenterSettings#project}.
 
 ---
 
@@ -1120,7 +1120,7 @@ Timeouts MigrationCenterSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#timeouts MigrationCenterSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#timeouts MigrationCenterSettings#timeouts}
 
 ---
 
@@ -1142,9 +1142,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenters
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#create MigrationCenterSettings#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#delete MigrationCenterSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#update MigrationCenterSettings#update}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#create MigrationCenterSettings#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#delete MigrationCenterSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterSettings.MigrationCenterSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#update MigrationCenterSettings#update}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#create MigrationCenterSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#create MigrationCenterSettings#create}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#delete MigrationCenterSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#delete MigrationCenterSettings#delete}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/migration_center_settings#update MigrationCenterSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/migration_center_settings#update MigrationCenterSettings#update}.
 
 ---
 

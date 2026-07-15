@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineSearchEngineIamMember <a name="DiscoveryEngineSearchEngineIamMember" id="@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member google_discovery_engine_search_engine_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer"></a>
 
@@ -41,14 +41,14 @@ DiscoveryEngineSearchEngineIamMember.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.collectionId">collectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.engineId">engineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.collectionId">collectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.engineId">engineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition">DiscoveryEngineSearchEngineIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#condition DiscoveryEngineSearchEngineIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#condition DiscoveryEngineSearchEngineIamMember#condition}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}.
 
 ---
 
@@ -667,7 +667,7 @@ The construct id used in the generated config for the DiscoveryEngineSearchEngin
 
 The id of the existing DiscoveryEngineSearchEngineIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,9 +1067,9 @@ DiscoveryEngineSearchEngineIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#expression DiscoveryEngineSearchEngineIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#title DiscoveryEngineSearchEngineIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#description DiscoveryEngineSearchEngineIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#expression DiscoveryEngineSearchEngineIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#title DiscoveryEngineSearchEngineIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#description DiscoveryEngineSearchEngineIamMember#description}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#expression DiscoveryEngineSearchEngineIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#expression DiscoveryEngineSearchEngineIamMember#expression}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#title DiscoveryEngineSearchEngineIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#title DiscoveryEngineSearchEngineIamMember#title}.
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#description DiscoveryEngineSearchEngineIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#description DiscoveryEngineSearchEngineIamMember#description}.
 
 ---
 
@@ -1146,14 +1146,14 @@ DiscoveryEngineSearchEngineIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.collectionId">collectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.engineId">engineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.collectionId">collectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.engineId">engineId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberCondition">DiscoveryEngineSearchEngineIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamMember.DiscoveryEngineSearchEngineIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ public java.lang.String getCollectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#collection_id DiscoveryEngineSearchEngineIamMember#collection_id}.
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.String getEngineId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#engine_id DiscoveryEngineSearchEngineIamMember#engine_id}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#member DiscoveryEngineSearchEngineIamMember#member}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#role DiscoveryEngineSearchEngineIamMember#role}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public DiscoveryEngineSearchEngineIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#condition DiscoveryEngineSearchEngineIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#condition DiscoveryEngineSearchEngineIamMember#condition}
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#id DiscoveryEngineSearchEngineIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1312,7 +1312,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#location DiscoveryEngineSearchEngineIamMember#location}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/discovery_engine_search_engine_iam_member#project DiscoveryEngineSearchEngineIamMember#project}.
 
 ---
 
