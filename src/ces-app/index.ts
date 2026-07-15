@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * the app's resource name. If not provided, a unique ID will be
   * automatically assigned for the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#app_id CesApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#app_id CesApp#app_id}
   */
   readonly appId: string;
   /**
@@ -29,19 +29,19 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable description of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description?: string;
   /**
   * Display name of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#display_name CesApp#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#display_name CesApp#display_name}
   */
   readonly displayName: string;
   /**
@@ -49,7 +49,7 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * You can use this instruction to set up a stable identity or personality
   * across all the agents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
   */
   readonly globalInstruction?: string;
   /**
@@ -57,11 +57,11 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#guardrails CesApp#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#guardrails CesApp#guardrails}
   */
   readonly guardrails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#id CesApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#id CesApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,104 +70,104 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#location CesApp#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#location CesApp#location}
   */
   readonly location: string;
   /**
   * Metadata about the app. This field can be used to store additional
   * information relevant to the app's details or intended usages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#metadata CesApp#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#metadata CesApp#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Whether the app is pinned in the app list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#pinned CesApp#pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#pinned CesApp#pinned}
   */
   readonly pinned?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#project CesApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#project CesApp#project}
   */
   readonly project?: string;
   /**
   * The root agent is the entry point of the app.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#root_agent CesApp#root_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#root_agent CesApp#root_agent}
   */
   readonly rootAgent?: string;
   /**
   * The tool execution mode for the app.
   * See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
   */
   readonly toolExecutionMode?: string;
   /**
   * audio_processing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
   */
   readonly audioProcessingConfig?: CesAppAudioProcessingConfig;
   /**
   * client_certificate_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
   */
   readonly clientCertificateSettings?: CesAppClientCertificateSettings;
   /**
   * data_store_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
   */
   readonly dataStoreSettings?: CesAppDataStoreSettings;
   /**
   * default_channel_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
   */
   readonly defaultChannelProfile?: CesAppDefaultChannelProfile;
   /**
   * evaluation_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
   */
   readonly evaluationMetricsThresholds?: CesAppEvaluationMetricsThresholds;
   /**
   * language_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#language_settings CesApp#language_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#language_settings CesApp#language_settings}
   */
   readonly languageSettings?: CesAppLanguageSettings;
   /**
   * logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
   */
   readonly loggingSettings?: CesAppLoggingSettings;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#model_settings CesApp#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#model_settings CesApp#model_settings}
   */
   readonly modelSettings?: CesAppModelSettings;
   /**
   * time_zone_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
   */
   readonly timeZoneSettings?: CesAppTimeZoneSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#timeouts CesApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#timeouts CesApp#timeouts}
   */
   readonly timeouts?: CesAppTimeouts;
   /**
   * variable_declarations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
   */
   readonly variableDeclarations?: CesAppVariableDeclarations[] | cdktn.IResolvable;
 }
@@ -179,7 +179,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com' has
   * 'storage.objects.get' permission to the Cloud Storage object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
   */
   readonly gcsUri?: string;
   /**
@@ -189,7 +189,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * -"room_1" - "room_2" - "room_3"
   * -"room_4" - "room_5" - "air_conditioner"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
   */
   readonly prebuiltAmbientSound?: string;
   /**
@@ -202,7 +202,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * to exceed +10 (dB) as there's usually no effective increase in loudness for
   * any value greater than that.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
   */
   readonly volumeGainDb?: number;
 }
@@ -349,7 +349,7 @@ export interface CesAppAudioProcessingConfigBargeInConfig {
   * This should not be used in scenarios where agent responses are displayed
   * visually.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
   */
   readonly bargeInAwareness?: boolean | cdktn.IResolvable;
 }
@@ -433,7 +433,7 @@ export class CesAppAudioProcessingConfigBargeInConfigOutputReference extends cdk
 }
 export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#language_code CesApp#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#language_code CesApp#language_code}
   */
   readonly languageCode: string;
   /**
@@ -441,7 +441,7 @@ export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   * speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is
   * half as fast. Values outside of the range [0.25, 2.0] will return an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
   */
   readonly speakingRate?: number;
   /**
@@ -450,7 +450,7 @@ export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   * For the list of available voices, please refer to Supported voices and
   * languages from Cloud Text-to-Speech.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#voice CesApp#voice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#voice CesApp#voice}
   */
   readonly voice?: string;
 }
@@ -625,25 +625,25 @@ export interface CesAppAudioProcessingConfig {
   * prompts the user for reengagement. If not set, the agent will not prompt
   * the user for reengagement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
   */
   readonly inactivityTimeout?: string;
   /**
   * ambient_sound_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
   */
   readonly ambientSoundConfig?: CesAppAudioProcessingConfigAmbientSoundConfig;
   /**
   * barge_in_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
   */
   readonly bargeInConfig?: CesAppAudioProcessingConfigBargeInConfig;
   /**
   * synthesize_speech_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
   */
   readonly synthesizeSpeechConfigs?: CesAppAudioProcessingConfigSynthesizeSpeechConfigs[] | cdktn.IResolvable;
 }
@@ -817,7 +817,7 @@ export interface CesAppClientCertificateSettings {
   * The passphrase to decrypt the private key.
   * Should be left unset if the private key is not encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#passphrase CesApp#passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#passphrase CesApp#passphrase}
   */
   readonly passphrase?: string;
   /**
@@ -825,14 +825,14 @@ export interface CesAppClientCertificateSettings {
   * storing the private key encoded in PEM format.
   * Format: projects/{project}/secrets/{secret}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#private_key CesApp#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#private_key CesApp#private_key}
   */
   readonly privateKey: string;
   /**
   * The TLS certificate encoded in PEM format.
   * This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
   */
   readonly tlsCertificate: string;
 }
@@ -1109,7 +1109,7 @@ export interface CesAppDefaultChannelProfilePersonaProperty {
   * CONCISE
   * CHATTY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#persona CesApp#persona}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#persona CesApp#persona}
   */
   readonly persona?: string;
 }
@@ -1200,7 +1200,7 @@ export interface CesAppDefaultChannelProfileWebWidgetConfig {
   * VOICE_ONLY
   * CHAT_ONLY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#modality CesApp#modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#modality CesApp#modality}
   */
   readonly modality?: string;
   /**
@@ -1210,13 +1210,13 @@ export interface CesAppDefaultChannelProfileWebWidgetConfig {
   * LIGHT
   * DARK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#theme CesApp#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#theme CesApp#theme}
   */
   readonly theme?: string;
   /**
   * The title of the web widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
   */
   readonly webWidgetTitle?: string;
 }
@@ -1367,7 +1367,7 @@ export interface CesAppDefaultChannelProfile {
   * GOOGLE_TELEPHONY_PLATFORM
   * CONTACT_CENTER_AS_A_SERVICE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#channel_type CesApp#channel_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#channel_type CesApp#channel_type}
   */
   readonly channelType?: string;
   /**
@@ -1375,31 +1375,31 @@ export interface CesAppDefaultChannelProfile {
   * - true: User interruptions are disabled while the agent is speaking.
   * - false: The agent retains automatic control over when the user can interrupt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
   */
   readonly disableBargeInControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable DTMF (dual-tone multi-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
   */
   readonly disableDtmf?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the channel profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#profile_id CesApp#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#profile_id CesApp#profile_id}
   */
   readonly profileId?: string;
   /**
   * persona_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#persona_property CesApp#persona_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#persona_property CesApp#persona_property}
   */
   readonly personaProperty?: CesAppDefaultChannelProfilePersonaProperty;
   /**
   * web_widget_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
   */
   readonly webWidgetConfig?: CesAppDefaultChannelProfileWebWidgetConfig;
 }
@@ -1631,7 +1631,7 @@ export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresho
   * The success threshold for individual tool invocation parameter
   * correctness. Must be a float between 0 and 1. Default is 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
   */
   readonly toolInvocationParameterCorrectnessThreshold?: number;
 }
@@ -1718,14 +1718,14 @@ export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresho
   * The success threshold for overall tool invocation correctness. Must be
   * a float between 0 and 1. Default is 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
   */
   readonly overallToolInvocationCorrectnessThreshold?: number;
   /**
   * The success threshold for semantic similarity. Must be an integer
   * between 0 and 4. Default is >= 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
   */
   readonly semanticSimilaritySuccessThreshold?: number;
 }
@@ -1840,13 +1840,13 @@ export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresho
   /**
   * expectation_level_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
   */
   readonly expectationLevelMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds;
   /**
   * turn_level_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
   */
   readonly turnLevelMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds;
 }
@@ -1961,7 +1961,7 @@ export interface CesAppEvaluationMetricsThresholds {
   /**
   * golden_evaluation_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
   */
   readonly goldenEvaluationMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds;
 }
@@ -2047,14 +2047,14 @@ export interface CesAppLanguageSettings {
   /**
   * The default language code of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
   */
   readonly defaultLanguageCode?: string;
   /**
   * Enables multilingual support. If true, agents in the app will use pre-built
   * instructions to improve handling of multilingual input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
   */
   readonly enableMultilingualSupport?: boolean | cdktn.IResolvable;
   /**
@@ -2067,14 +2067,14 @@ export interface CesAppLanguageSettings {
   * an EndSession signal with corresponding metadata
   * to terminate the conversation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
   */
   readonly fallbackAction?: string;
   /**
   * List of languages codes supported by the app, in addition to the
   * 'default_language_code'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
   */
   readonly supportedLanguageCodes?: string[];
 }
@@ -2251,7 +2251,7 @@ export interface CesAppLoggingSettingsAudioRecordingConfig {
   * you should grant 'storage.objects.create' permission to the CES service
   * agent 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
   */
   readonly gcsBucket?: string;
   /**
@@ -2266,7 +2266,7 @@ export interface CesAppLoggingSettingsAudioRecordingConfig {
   * If the path prefix is not specified, the default prefix
   * '$project/$location/$app/$date/$session/' will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
   */
   readonly gcsPathPrefix?: string;
 }
@@ -2381,13 +2381,13 @@ export interface CesAppLoggingSettingsBigqueryExportSettings {
   /**
   * The BigQuery dataset to export the data to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#dataset CesApp#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#dataset CesApp#dataset}
   */
   readonly dataset?: string;
   /**
   * Indicates whether the BigQuery export is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#enabled CesApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#enabled CesApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
@@ -2396,7 +2396,7 @@ export interface CesAppLoggingSettingsBigqueryExportSettings {
   * roles/bigquery.admin role to the CES service agent service-<PROJECT-
   * NUMBER>@gcp-sa-ces.iam.gserviceaccount.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#project CesApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#project CesApp#project}
   */
   readonly project?: string;
 }
@@ -2540,7 +2540,7 @@ export interface CesAppLoggingSettingsCloudLoggingSettings {
   /**
   * Whether to enable Cloud Logging for the sessions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
   */
   readonly enableCloudLogging?: boolean | cdktn.IResolvable;
 }
@@ -2626,7 +2626,7 @@ export interface CesAppLoggingSettingsConversationLoggingSettings {
   /**
   * Whether to disable conversation logging for the sessions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
   */
   readonly disableConversationLogging?: boolean | cdktn.IResolvable;
 }
@@ -2715,14 +2715,14 @@ export interface CesAppLoggingSettingsRedactionConfig {
   * Format:
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
   * If true, redaction will be applied in various logging scenarios, including
   * conversation history, Cloud Logging and audio recording.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
   */
   readonly enableRedaction?: boolean | cdktn.IResolvable;
   /**
@@ -2731,7 +2731,7 @@ export interface CesAppLoggingSettingsRedactionConfig {
   * Format:
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -2875,31 +2875,31 @@ export interface CesAppLoggingSettings {
   /**
   * audio_recording_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
   */
   readonly audioRecordingConfig?: CesAppLoggingSettingsAudioRecordingConfig;
   /**
   * bigquery_export_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
   */
   readonly bigqueryExportSettings?: CesAppLoggingSettingsBigqueryExportSettings;
   /**
   * cloud_logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
   */
   readonly cloudLoggingSettings?: CesAppLoggingSettingsCloudLoggingSettings;
   /**
   * conversation_logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
   */
   readonly conversationLoggingSettings?: CesAppLoggingSettingsConversationLoggingSettings;
   /**
   * redaction_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
   */
   readonly redactionConfig?: CesAppLoggingSettingsRedactionConfig;
 }
@@ -3102,7 +3102,7 @@ export interface CesAppModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#model CesApp#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#model CesApp#model}
   */
   readonly model?: string;
   /**
@@ -3111,7 +3111,7 @@ export interface CesAppModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#temperature CesApp#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#temperature CesApp#temperature}
   */
   readonly temperature?: number;
 }
@@ -3226,7 +3226,7 @@ export interface CesAppTimeZoneSettings {
   /**
   * The time zone of the app from the time zone database, e.g., America/Los_Angeles, Europe/Paris.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#time_zone CesApp#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#time_zone CesApp#time_zone}
   */
   readonly timeZone?: string;
 }
@@ -3310,15 +3310,15 @@ export class CesAppTimeZoneSettingsOutputReference extends cdktn.ComplexObject {
 }
 export interface CesAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#create CesApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#create CesApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#delete CesApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#delete CesApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#update CesApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#update CesApp#update}
   */
   readonly update?: string;
 }
@@ -3474,13 +3474,13 @@ export interface CesAppVariableDeclarationsSchema {
   * The value must be a valid JSON string representing the Schema object.
   * (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
   */
   readonly additionalProperties?: string;
   /**
   * Optional. The instance value should be valid against at least one of the schemas in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#any_of CesApp#any_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#any_of CesApp#any_of}
   */
   readonly anyOf?: string;
   /**
@@ -3489,19 +3489,19 @@ export interface CesAppVariableDeclarationsSchema {
   * or a list of values. The provided default value must be encoded as a JSON string.
   * Use 'jsonencode' in Terraform HCL to encode the default value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#default CesApp#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#default CesApp#default}
   */
   readonly default?: string;
   /**
   * A map of definitions for use by ref. Only allowed at the root of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#defs CesApp#defs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#defs CesApp#defs}
   */
   readonly defs?: string;
   /**
   * The description of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description?: string;
   /**
@@ -3512,31 +3512,31 @@ export interface CesAppVariableDeclarationsSchema {
   * 2. We can define apartment number as :
   * {type:INTEGER, format:enum, enum:["101", "201", "301"]}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#enum CesApp#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#enum CesApp#enum}
   */
   readonly enum?: string[];
   /**
   * Schema of the elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#items CesApp#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#items CesApp#items}
   */
   readonly items?: string;
   /**
   * Indicates if the value may be null.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#nullable CesApp#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#nullable CesApp#nullable}
   */
   readonly nullable?: boolean | cdktn.IResolvable;
   /**
   * Optional. Schemas of initial elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
   */
   readonly prefixItems?: string;
   /**
   * Properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#properties CesApp#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#properties CesApp#properties}
   */
   readonly properties?: string;
   /**
@@ -3559,19 +3559,19 @@ export interface CesAppVariableDeclarationsSchema {
   * See details in
   * https://json-schema.org/understanding-json-schema/structuring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#ref CesApp#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#ref CesApp#ref}
   */
   readonly ref?: string;
   /**
   * Required properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#required CesApp#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#required CesApp#required}
   */
   readonly required?: string[];
   /**
   * The title of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#title CesApp#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#title CesApp#title}
   */
   readonly title?: string;
   /**
@@ -3584,13 +3584,13 @@ export interface CesAppVariableDeclarationsSchema {
   * OBJECT
   * ARRAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#type CesApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#type CesApp#type}
   */
   readonly type: string;
   /**
   * Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#unique_items CesApp#unique_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#unique_items CesApp#unique_items}
   */
   readonly uniqueItems?: boolean | cdktn.IResolvable;
 }
@@ -4079,20 +4079,20 @@ export interface CesAppVariableDeclarations {
   /**
   * The description of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description: string;
   /**
   * The name of the variable. The name must start with a letter or underscore
   * and contain only letters, numbers, or underscores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#name CesApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#name CesApp#name}
   */
   readonly name: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#schema CesApp#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#schema CesApp#schema}
   */
   readonly schema: CesAppVariableDeclarationsSchema;
 }
@@ -4257,7 +4257,7 @@ export class CesAppVariableDeclarationsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app google_ces_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app google_ces_app}
 */
 export class CesApp extends cdktn.TerraformResource {
 
@@ -4273,7 +4273,7 @@ export class CesApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesApp to import
-  * @param importFromId The id of the existing CesApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4285,7 +4285,7 @@ export class CesApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/ces_app google_ces_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/ces_app google_ces_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4296,7 +4296,7 @@ export class CesApp extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_app',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

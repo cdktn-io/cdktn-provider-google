@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface VertexAiReasoningEngineConfig extends cdktn.TerraformMetaArgume
   /**
   * This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/vertex_ai_reasoning_engine.html.markdown for specifics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#deletion_policy VertexAiReasoningEngine#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#deletion_policy VertexAiReasoningEngine#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the ReasoningEngine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
   */
   readonly description?: string;
   /**
   * The display name of the ReasoningEngine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#display_name VertexAiReasoningEngine#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#display_name VertexAiReasoningEngine#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,35 +45,35 @@ export interface VertexAiReasoningEngineConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#labels VertexAiReasoningEngine#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#labels VertexAiReasoningEngine#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}
   */
   readonly project?: string;
   /**
   * The region of the reasoning engine. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#region VertexAiReasoningEngine#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#region VertexAiReasoningEngine#region}
   */
   readonly region?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#encryption_spec VertexAiReasoningEngine#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#encryption_spec VertexAiReasoningEngine#encryption_spec}
   */
   readonly encryptionSpec?: VertexAiReasoningEngineEncryptionSpec;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#spec VertexAiReasoningEngine#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#spec VertexAiReasoningEngine#spec}
   */
   readonly spec?: VertexAiReasoningEngineSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#timeouts VertexAiReasoningEngine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#timeouts VertexAiReasoningEngine#timeouts}
   */
   readonly timeouts?: VertexAiReasoningEngineTimeouts;
 }
@@ -85,7 +85,7 @@ export interface VertexAiReasoningEngineEncryptionSpec {
   * The key needs to be in the same region as where the compute resource
   * is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#kms_key_name VertexAiReasoningEngine#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#kms_key_name VertexAiReasoningEngine#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -170,7 +170,7 @@ export interface VertexAiReasoningEngineSpecContainerSpec {
   * 'us-central1-docker.pkg.dev/my-project/my-repo/my-image:tag') of the
   * container image that is to be run on each worker replica.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#image_uri VertexAiReasoningEngine#image_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#image_uri VertexAiReasoningEngine#image_uri}
   */
   readonly imageUri: string;
 }
@@ -254,7 +254,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecEnv {
   * The name of the environment variable. Must be a valid
   * C identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
   */
   readonly name: string;
   /**
@@ -267,7 +267,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecEnv {
   * be expanded, regardless of whether the variable exists
   * or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#value VertexAiReasoningEngine#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#value VertexAiReasoningEngine#value}
   */
   readonly value: string;
 }
@@ -410,14 +410,14 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsP
   * to, e.g., "my-internal-domain.corp.".
   * Must end with a dot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#domain VertexAiReasoningEngine#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#domain VertexAiReasoningEngine#domain}
   */
   readonly domain: string;
   /**
   * Required. The VPC network name in the targetProject
   * where the DNS zone specified by 'domain' is visible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#target_network VertexAiReasoningEngine#target_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#target_network VertexAiReasoningEngine#target_network}
   */
   readonly targetNetwork: string;
   /**
@@ -426,7 +426,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsP
   * The Vertex AI service Agent requires the dns.peer role
   * on this project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#target_project VertexAiReasoningEngine#target_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#target_project VertexAiReasoningEngine#target_project}
   */
   readonly targetProject: string;
 }
@@ -596,13 +596,13 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig {
   * To specify this field, you must have already created a network attachment.
   * This field is only used for resources using PSC-Interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#network_attachment VertexAiReasoningEngine#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#network_attachment VertexAiReasoningEngine#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
   * dns_peering_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#dns_peering_configs VertexAiReasoningEngine#dns_peering_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#dns_peering_configs VertexAiReasoningEngine#dns_peering_configs}
   */
   readonly dnsPeeringConfigs?: VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs[] | cdktn.IResolvable;
 }
@@ -718,7 +718,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef {
   * The name of the secret in Cloud Secret Manager.
   * Format: {secret_name}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#secret VertexAiReasoningEngine#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#secret VertexAiReasoningEngine#secret}
   */
   readonly secret: string;
   /**
@@ -726,7 +726,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef {
   * for the latest version, an integer for a specific
   * version, or a version alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
   */
   readonly version?: string;
 }
@@ -839,13 +839,13 @@ export interface VertexAiReasoningEngineSpecDeploymentSpecSecretEnv {
   * The name of the environment variable. Must be a valid C
   * identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
   */
   readonly name: string;
   /**
   * secret_ref block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#secret_ref VertexAiReasoningEngine#secret_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#secret_ref VertexAiReasoningEngine#secret_ref}
   */
   readonly secretRef: VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef;
 }
@@ -987,7 +987,7 @@ export interface VertexAiReasoningEngineSpecDeploymentSpec {
   * Optional. Concurrency for each container and agent server.
   * Recommended value: 2 * cpu + 1. Defaults to 9.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#container_concurrency VertexAiReasoningEngine#container_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#container_concurrency VertexAiReasoningEngine#container_concurrency}
   */
   readonly containerConcurrency?: number;
   /**
@@ -996,14 +996,14 @@ export interface VertexAiReasoningEngineSpecDeploymentSpec {
   * Range: [1, 1000]. If VPC-SC or PSC-I is enabled, the acceptable
   * range is [1, 100].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#max_instances VertexAiReasoningEngine#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#max_instances VertexAiReasoningEngine#max_instances}
   */
   readonly maxInstances?: number;
   /**
   * Optional. The minimum number of application instances that will be
   * kept running at all times. Defaults to 1. Range: [0, 10].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#min_instances VertexAiReasoningEngine#min_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#min_instances VertexAiReasoningEngine#min_instances}
   */
   readonly minInstances?: number;
   /**
@@ -1020,25 +1020,25 @@ export interface VertexAiReasoningEngineSpecDeploymentSpec {
   * For more information, go to
   * https://cloud.google.com/run/docs/configuring/memory-limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#resource_limits VertexAiReasoningEngine#resource_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#resource_limits VertexAiReasoningEngine#resource_limits}
   */
   readonly resourceLimits?: { [key: string]: string };
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#env VertexAiReasoningEngine#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#env VertexAiReasoningEngine#env}
   */
   readonly env?: VertexAiReasoningEngineSpecDeploymentSpecEnv[] | cdktn.IResolvable;
   /**
   * psc_interface_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#psc_interface_config VertexAiReasoningEngine#psc_interface_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#psc_interface_config VertexAiReasoningEngine#psc_interface_config}
   */
   readonly pscInterfaceConfig?: VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig;
   /**
   * secret_env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#secret_env VertexAiReasoningEngine#secret_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#secret_env VertexAiReasoningEngine#secret_env}
   */
   readonly secretEnv?: VertexAiReasoningEngineSpecDeploymentSpecSecretEnv[] | cdktn.IResolvable;
 }
@@ -1299,26 +1299,26 @@ export interface VertexAiReasoningEngineSpecPackageSpec {
   * Optional. The Cloud Storage URI of the dependency files in tar.gz
   * format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#dependency_files_gcs_uri VertexAiReasoningEngine#dependency_files_gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#dependency_files_gcs_uri VertexAiReasoningEngine#dependency_files_gcs_uri}
   */
   readonly dependencyFilesGcsUri?: string;
   /**
   * Optional. The Cloud Storage URI of the pickled python object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#pickle_object_gcs_uri VertexAiReasoningEngine#pickle_object_gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#pickle_object_gcs_uri VertexAiReasoningEngine#pickle_object_gcs_uri}
   */
   readonly pickleObjectGcsUri?: string;
   /**
   * Optional. The Python version. Currently support 3.8, 3.9, 3.10,
   * 3.11, 3.12, 3.13. If not specified, default value is 3.10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#python_version VertexAiReasoningEngine#python_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#python_version VertexAiReasoningEngine#python_version}
   */
   readonly pythonVersion?: string;
   /**
   * Optional. The Cloud Storage URI of the requirements.txtfile
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#requirements_gcs_uri VertexAiReasoningEngine#requirements_gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#requirements_gcs_uri VertexAiReasoningEngine#requirements_gcs_uri}
   */
   readonly requirementsGcsUri?: string;
 }
@@ -1491,13 +1491,13 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource
   /**
   * Directory, relative to the source root, in which to run the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#dir VertexAiReasoningEngine#dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#dir VertexAiReasoningEngine#dir}
   */
   readonly dir: string;
   /**
   * The Developer Connect Git repository link, formatted as projects/* /locations/* /connections/* /gitRepositoryLink/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#git_repository_link VertexAiReasoningEngine#git_repository_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#git_repository_link VertexAiReasoningEngine#git_repository_link}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -1505,7 +1505,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource
   /**
   * The revision to fetch from the Git repository such as a branch, a tag, a commit SHA, or any Git ref.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#revision VertexAiReasoningEngine#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#revision VertexAiReasoningEngine#revision}
   */
   readonly revision: string;
 }
@@ -1640,7 +1640,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#config VertexAiReasoningEngine#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#config VertexAiReasoningEngine#config}
   */
   readonly config: VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig;
 }
@@ -1723,7 +1723,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecImageSpec {
   /**
   * Build arguments to be used. They will be passed through --build-arg flags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#build_args VertexAiReasoningEngine#build_args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#build_args VertexAiReasoningEngine#build_args}
   */
   readonly buildArgs?: { [key: string]: string };
 }
@@ -1811,7 +1811,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecInlineSource {
   * The application source code archive, provided as a compressed
   * tarball (.tar.gz) file. A base64-encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
   */
   readonly sourceArchive?: string;
 }
@@ -1901,7 +1901,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec {
   * The project root will be added to Python sys.path, allowing
   * imports to be specified relative to the root.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_module VertexAiReasoningEngine#entrypoint_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_module VertexAiReasoningEngine#entrypoint_module}
   */
   readonly entrypointModule?: string;
   /**
@@ -1909,14 +1909,14 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec {
   * entrypointModule to use as the application If not specified,
   * defaults to "root_agent".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_object VertexAiReasoningEngine#entrypoint_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_object VertexAiReasoningEngine#entrypoint_object}
   */
   readonly entrypointObject?: string;
   /**
   * Optional. The path to the requirements file, relative to the
   * source root. If not specified, defaults to "requirements.txt".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#requirements_file VertexAiReasoningEngine#requirements_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#requirements_file VertexAiReasoningEngine#requirements_file}
   */
   readonly requirementsFile?: string;
   /**
@@ -1924,7 +1924,7 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec {
   * includes 3.9, 3.10, 3.11, 3.12, 3.13. If not specified,
   * default value is 3.10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
   */
   readonly version?: string;
 }
@@ -2097,25 +2097,25 @@ export interface VertexAiReasoningEngineSpecSourceCodeSpec {
   /**
   * developer_connect_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#developer_connect_source VertexAiReasoningEngine#developer_connect_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#developer_connect_source VertexAiReasoningEngine#developer_connect_source}
   */
   readonly developerConnectSource?: VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource;
   /**
   * image_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#image_spec VertexAiReasoningEngine#image_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#image_spec VertexAiReasoningEngine#image_spec}
   */
   readonly imageSpec?: VertexAiReasoningEngineSpecSourceCodeSpecImageSpec;
   /**
   * inline_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
   */
   readonly inlineSource?: VertexAiReasoningEngineSpecSourceCodeSpecInlineSource;
   /**
   * python_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#python_spec VertexAiReasoningEngine#python_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#python_spec VertexAiReasoningEngine#python_spec}
   */
   readonly pythonSpec?: VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec;
 }
@@ -2288,14 +2288,260 @@ export interface VertexAiReasoningEngineSpec {
   /**
   * Optional. The OSS agent framework used to develop the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#agent_framework VertexAiReasoningEngine#agent_framework}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#agent_framework VertexAiReasoningEngine#agent_framework}
   */
   readonly agentFramework?: string;
   /**
   * Optional. Declarations for object class methods in OpenAPI
   * specification format.
+  * 
+  * **Note**: When deploying via Terraform, this field must be populated manually.
+  * Otherwise, client SDKs (like 'agent_engines.get()') will not be able to discover the methods, and calls to the engine (or A2A integrations) will fail.
+  * 
+  * Depending on the template/framework used ('agent_framework'), the required class methods and their parameters differ:
+  * 
+  * **Warning**: The configuration snippets below are illustrative, may not be exhaustive, and could stop working over time. For the most up-to-date method lists and schemas, please consult the respective SDK source code:
+  * * For Google ADK: See [ADK Python SDK cli_deploy.py](https://github.com/google/adk-python/blob/68a780306e3bdd648a882ef34c0abf8e5148353e/src/google/adk/cli/cli_deploy.py#L109).
+  * * For Langchain: See [Vertex AI Python SDK langchain.py](https://github.com/googleapis/python-aiplatform/blob/c8a38a085931b01f4d6071f0ab7a64cb42851829/agentplatform/agent_engines/templates/langchain.py#L642-L717).
+  * 
+  * ### 1. Langchain Template
+  * * 'query' (api_mode = "sync" or empty)
+  * * 'stream_query' (api_mode = "stream")
+  * 
+  * Example for Langchain:
+  * ```hcl
+  * class_methods = jsonencode([
+  *   {
+  *     name        = "query"
+  *     api_mode    = "sync"
+  *     description = "Queries the reasoning engine"
+  *     parameters  = {
+  *       type       = "object"
+  *       required   = ["input"]
+  *       properties = {
+  *         input = {
+  *           type        = "string"
+  *           description = "The input prompt"
+  *         }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "stream_query"
+  *     api_mode    = "stream"
+  *     description = "Streams queries from the reasoning engine"
+  *     parameters  = {
+  *       type       = "object"
+  *       required   = ["input"]
+  *       properties = {
+  *         input = {
+  *           type        = "string"
+  *           description = "The input prompt"
+  *         }
+  *       }
+  *     }
+  *   }
+  * ])
+  * ```
+  * 
+  * ### 2. Google ADK Template (Standard - No A2A)
+  * For standard Google ADK (Agent Development Kit) deployments, you must define the following 11 methods:
+  * 
+  * Example for Standard ADK:
+  * ```hcl
+  * class_methods = jsonencode([
+  *   {
+  *     name        = "get_session"
+  *     api_mode    = ""
+  *     description = "Retrieve session by ID"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id", "session_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "async_get_session"
+  *     api_mode    = "async"
+  *     description = "Retrieve session asynchronously by ID"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id", "session_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "list_sessions"
+  *     api_mode    = ""
+  *     description = "List all sessions for a user"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id"]
+  *       properties = {
+  *         user_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "async_list_sessions"
+  *     api_mode    = "async"
+  *     description = "List all sessions for a user asynchronously"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id"]
+  *       properties = {
+  *         user_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "create_session"
+  *     api_mode    = ""
+  *     description = "Create a new session"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *         state      = { type = "object" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "async_create_session"
+  *     api_mode    = "async"
+  *     description = "Create a new session asynchronously"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *         state      = { type = "object" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "delete_session"
+  *     api_mode    = ""
+  *     description = "Delete session by ID"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id", "session_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "async_delete_session"
+  *     api_mode    = "async"
+  *     description = "Delete session asynchronously by ID"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id", "session_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "stream_query"
+  *     api_mode    = "stream"
+  *     description = "Stream queries from the agent"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["message", "user_id"]
+  *       properties = {
+  *         message    = { description = "Message string or object" }
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *         run_config = { type = "object" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "async_stream_query"
+  *     api_mode    = "async_stream"
+  *     description = "Stream queries asynchronously from the agent"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["message", "user_id"]
+  *       properties = {
+  *         message        = { description = "Message string or object" }
+  *         user_id        = { type = "string" }
+  *         session_id     = { type = "string" }
+  *         session_events = { type = "array", items = { type = "object" } }
+  *         run_config     = { type = "object" }
+  *       }
+  *     }
+  *   },
+  *   {
+  *     name        = "streaming_agent_run_with_events"
+  *     api_mode    = "async_stream"
+  *     description = "Stream agent run with events asynchronously"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["request_json"]
+  *       properties = {
+  *         request_json = { type = "string" }
+  *       }
+  *     }
+  *   }
+  * ])
+  * ```
+  * 
+  * ### 3. Google ADK Template (A2A-Enabled)
+  * If the agent integrates with the Gemini Enterprise Agent Registry (A2A), you must inject the 'a2a_agent_card' JSON metadata as a string **specifically inside the 'async_create_session' method definition**:
+  * 
+  * Example for A2A-Enabled ADK:
+  * ```hcl
+  * locals {
+  *   # Construct the A2A endpoint URL
+  *   a2a_url = "https://us-central1-aiplatform.googleapis.com/v1/projects/my-project/locations/us-central1/reasoningEngines/my-agent/a2a"
+  * 
+  *   agent_card = {
+  *     name                 = "my-agent"
+  *     description          = "A2A Agent"
+  *     version              = "1.0.0"
+  *     preferred_transport  = "HTTP_JSON"
+  *     supported_interfaces = [{ url = local.a2a_url, protocol_binding = "HTTP_JSON" }]
+  *     capabilities         = { streaming = true }
+  *   }
+  * }
+  * 
+  * # In class_methods, append "a2a_agent_card" key ONLY to the "async_create_session" method:
+  * class_methods = jsonencode([
+  *   # ... other 10 standard methods (same as Standard ADK) ...
+  *   {
+  *     name        = "async_create_session"
+  *     api_mode    = "async"
+  *     description = "Create a new session asynchronously"
+  *     parameters  = {
+  *       type     = "object"
+  *       required = ["user_id"]
+  *       properties = {
+  *         user_id    = { type = "string" }
+  *         session_id = { type = "string" }
+  *         state      = { type = "object" }
+  *       }
+  *     }
+  *     # Inject the serialized Agent Card here
+  *     a2a_agent_card = jsonencode(local.agent_card)
+  *   }
+  * ])
+  * ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#class_methods VertexAiReasoningEngine#class_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#class_methods VertexAiReasoningEngine#class_methods}
   */
   readonly classMethods?: string;
   /**
@@ -2306,7 +2552,7 @@ export interface VertexAiReasoningEngineSpec {
   * * 'SERVICE_ACCOUNT': Use a custom service account if the 'service_account' field is set, otherwise use the default Vertex AI Reasoning Engine Service Agent in the project.
   * * 'AGENT_IDENTITY': Use Agent Identity. The 'service_account' field must not be set. Possible values: ["SERVICE_ACCOUNT", "AGENT_IDENTITY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#identity_type VertexAiReasoningEngine#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#identity_type VertexAiReasoningEngine#identity_type}
   */
   readonly identityType?: string;
   /**
@@ -2316,31 +2562,31 @@ export interface VertexAiReasoningEngineSpec {
   * extensions. If not specified, the Vertex AI Reasoning Engine service
   * Agent in the project will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * container_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#container_spec VertexAiReasoningEngine#container_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#container_spec VertexAiReasoningEngine#container_spec}
   */
   readonly containerSpec?: VertexAiReasoningEngineSpecContainerSpec;
   /**
   * deployment_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#deployment_spec VertexAiReasoningEngine#deployment_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#deployment_spec VertexAiReasoningEngine#deployment_spec}
   */
   readonly deploymentSpec?: VertexAiReasoningEngineSpecDeploymentSpec;
   /**
   * package_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#package_spec VertexAiReasoningEngine#package_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#package_spec VertexAiReasoningEngine#package_spec}
   */
   readonly packageSpec?: VertexAiReasoningEngineSpecPackageSpec;
   /**
   * source_code_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#source_code_spec VertexAiReasoningEngine#source_code_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#source_code_spec VertexAiReasoningEngine#source_code_spec}
   */
   readonly sourceCodeSpec?: VertexAiReasoningEngineSpecSourceCodeSpec;
 }
@@ -2632,15 +2878,15 @@ export class VertexAiReasoningEngineSpecOutputReference extends cdktn.ComplexObj
 }
 export interface VertexAiReasoningEngineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}
   */
   readonly update?: string;
 }
@@ -2792,7 +3038,7 @@ export class VertexAiReasoningEngineTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine}
 */
 export class VertexAiReasoningEngine extends cdktn.TerraformResource {
 
@@ -2808,7 +3054,7 @@ export class VertexAiReasoningEngine extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiReasoningEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiReasoningEngine to import
-  * @param importFromId The id of the existing VertexAiReasoningEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiReasoningEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiReasoningEngine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2820,7 +3066,7 @@ export class VertexAiReasoningEngine extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2831,7 +3077,7 @@ export class VertexAiReasoningEngine extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_reasoning_engine',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

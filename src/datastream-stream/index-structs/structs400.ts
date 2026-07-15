@@ -40,13 +40,13 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#table DatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#table DatastreamStream#table}
   */
   readonly table: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#columns DatastreamStream#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#columns DatastreamStream#columns}
   */
   readonly columns?: DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[] | cdktn.IResolvable;
 }
@@ -190,13 +190,13 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects
   /**
   * Schema name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#schema DatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#schema DatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#tables DatastreamStream#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#tables DatastreamStream#tables}
   */
   readonly tables?: DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[] | cdktn.IResolvable;
 }
@@ -340,7 +340,7 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects
   /**
   * schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#schemas DatastreamStream#schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#schemas DatastreamStream#schemas}
   */
   readonly schemas: DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[] | cdktn.IResolvable;
 }
@@ -423,14 +423,14 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects
   /**
   * Column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#column DatastreamStream#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#column DatastreamStream#column}
   */
   readonly column?: string;
   /**
   * The SQL Server data type. Full data types list can be found here:
   * https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver16
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#data_type DatastreamStream#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#data_type DatastreamStream#data_type}
   */
   readonly dataType?: string;
 }
@@ -607,13 +607,13 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects
   /**
   * Table name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#table DatastreamStream#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#table DatastreamStream#table}
   */
   readonly table: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#columns DatastreamStream#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#columns DatastreamStream#columns}
   */
   readonly columns?: DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[] | cdktn.IResolvable;
 }
@@ -757,13 +757,13 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects
   /**
   * Schema name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#schema DatastreamStream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#schema DatastreamStream#schema}
   */
   readonly schema: string;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#tables DatastreamStream#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#tables DatastreamStream#tables}
   */
   readonly tables?: DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[] | cdktn.IResolvable;
 }
@@ -907,7 +907,7 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects
   /**
   * schemas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#schemas DatastreamStream#schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#schemas DatastreamStream#schemas}
   */
   readonly schemas: DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[] | cdktn.IResolvable;
 }
@@ -1039,37 +1039,37 @@ export interface DatastreamStreamSourceConfigSqlServerSourceConfig {
   /**
   * Max concurrent backfill tasks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#max_concurrent_backfill_tasks DatastreamStream#max_concurrent_backfill_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#max_concurrent_backfill_tasks DatastreamStream#max_concurrent_backfill_tasks}
   */
   readonly maxConcurrentBackfillTasks?: number;
   /**
   * Max concurrent CDC tasks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#max_concurrent_cdc_tasks DatastreamStream#max_concurrent_cdc_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#max_concurrent_cdc_tasks DatastreamStream#max_concurrent_cdc_tasks}
   */
   readonly maxConcurrentCdcTasks?: number;
   /**
   * change_tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#change_tables DatastreamStream#change_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#change_tables DatastreamStream#change_tables}
   */
   readonly changeTables?: DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables;
   /**
   * exclude_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#exclude_objects DatastreamStream#exclude_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#exclude_objects DatastreamStream#exclude_objects}
   */
   readonly excludeObjects?: DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects;
   /**
   * include_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#include_objects DatastreamStream#include_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#include_objects DatastreamStream#include_objects}
   */
   readonly includeObjects?: DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects;
   /**
   * transaction_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#transaction_logs DatastreamStream#transaction_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#transaction_logs DatastreamStream#transaction_logs}
   */
   readonly transactionLogs?: DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs;
 }
@@ -1300,49 +1300,49 @@ export interface DatastreamStreamSourceConfig {
   /**
   * Source connection profile resource. Format: projects/{project}/locations/{location}/connectionProfiles/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#source_connection_profile DatastreamStream#source_connection_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#source_connection_profile DatastreamStream#source_connection_profile}
   */
   readonly sourceConnectionProfile: string;
   /**
   * mongodb_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#mongodb_source_config DatastreamStream#mongodb_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#mongodb_source_config DatastreamStream#mongodb_source_config}
   */
   readonly mongodbSourceConfig?: DatastreamStreamSourceConfigMongodbSourceConfig;
   /**
   * mysql_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#mysql_source_config DatastreamStream#mysql_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#mysql_source_config DatastreamStream#mysql_source_config}
   */
   readonly mysqlSourceConfig?: DatastreamStreamSourceConfigMysqlSourceConfig;
   /**
   * oracle_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#oracle_source_config DatastreamStream#oracle_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#oracle_source_config DatastreamStream#oracle_source_config}
   */
   readonly oracleSourceConfig?: DatastreamStreamSourceConfigOracleSourceConfig;
   /**
   * postgresql_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#postgresql_source_config DatastreamStream#postgresql_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#postgresql_source_config DatastreamStream#postgresql_source_config}
   */
   readonly postgresqlSourceConfig?: DatastreamStreamSourceConfigPostgresqlSourceConfig;
   /**
   * salesforce_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#salesforce_source_config DatastreamStream#salesforce_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#salesforce_source_config DatastreamStream#salesforce_source_config}
   */
   readonly salesforceSourceConfig?: DatastreamStreamSourceConfigSalesforceSourceConfig;
   /**
   * spanner_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#spanner_source_config DatastreamStream#spanner_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#spanner_source_config DatastreamStream#spanner_source_config}
   */
   readonly spannerSourceConfig?: DatastreamStreamSourceConfigSpannerSourceConfig;
   /**
   * sql_server_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#sql_server_source_config DatastreamStream#sql_server_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#sql_server_source_config DatastreamStream#sql_server_source_config}
   */
   readonly sqlServerSourceConfig?: DatastreamStreamSourceConfigSqlServerSourceConfig;
 }
@@ -1626,15 +1626,15 @@ export class DatastreamStreamSourceConfigOutputReference extends cdktn.ComplexOb
 }
 export interface DatastreamStreamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#create DatastreamStream#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#create DatastreamStream#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#delete DatastreamStream#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#delete DatastreamStream#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/datastream_stream#update DatastreamStream#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/datastream_stream#update DatastreamStream#update}
   */
   readonly update?: string;
 }

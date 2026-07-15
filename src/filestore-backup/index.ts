@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface FilestoreBackupConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#deletion_policy FilestoreBackup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#deletion_policy FilestoreBackup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#description FilestoreBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#description FilestoreBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#id FilestoreBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#id FilestoreBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,13 +44,13 @@ export interface FilestoreBackupConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#labels FilestoreBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#labels FilestoreBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#location FilestoreBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#location FilestoreBackup#location}
   */
   readonly location: string;
   /**
@@ -63,23 +63,23 @@ export interface FilestoreBackupConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#name FilestoreBackup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#name FilestoreBackup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#project FilestoreBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#project FilestoreBackup#project}
   */
   readonly project?: string;
   /**
   * Name of the file share in the source Cloud Filestore instance that the backup is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#source_file_share FilestoreBackup#source_file_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#source_file_share FilestoreBackup#source_file_share}
   */
   readonly sourceFileShare: string;
   /**
   * The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#source_instance FilestoreBackup#source_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#source_instance FilestoreBackup#source_instance}
   */
   readonly sourceInstance: string;
   /**
@@ -88,27 +88,27 @@ export interface FilestoreBackupConfig extends cdktn.TerraformMetaArguments {
   * Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
   * The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#tags FilestoreBackup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#tags FilestoreBackup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#timeouts FilestoreBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#timeouts FilestoreBackup#timeouts}
   */
   readonly timeouts?: FilestoreBackupTimeouts;
 }
 export interface FilestoreBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#create FilestoreBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#create FilestoreBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#delete FilestoreBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#update FilestoreBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#update FilestoreBackup#update}
   */
   readonly update?: string;
 }
@@ -260,7 +260,7 @@ export class FilestoreBackupTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup google_filestore_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup google_filestore_backup}
 */
 export class FilestoreBackup extends cdktn.TerraformResource {
 
@@ -276,7 +276,7 @@ export class FilestoreBackup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FilestoreBackup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FilestoreBackup to import
-  * @param importFromId The id of the existing FilestoreBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FilestoreBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FilestoreBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -288,7 +288,7 @@ export class FilestoreBackup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/filestore_backup google_filestore_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/filestore_backup google_filestore_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +299,7 @@ export class FilestoreBackup extends cdktn.TerraformResource {
       terraformResourceType: 'google_filestore_backup',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

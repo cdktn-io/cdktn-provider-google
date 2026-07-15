@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleSqlDatabaseInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance#id DataGoogleSqlDatabaseInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance#id DataGoogleSqlDatabaseInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleSqlDatabaseInstanceConfig extends cdktn.TerraformMeta
   /**
   * The name of the instance. If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance#name DataGoogleSqlDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance#name DataGoogleSqlDatabaseInstance#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance#project DataGoogleSqlDatabaseInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance#project DataGoogleSqlDatabaseInstance#project}
   */
   readonly project?: string;
 }
@@ -1980,6 +1980,16 @@ export class DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAut
     return this.getStringAttribute('ip_address');
   }
 
+  // service_connection_policy - computed: true, optional: false, required: false
+  public get serviceConnectionPolicy() {
+    return this.getStringAttribute('service_connection_policy');
+  }
+
+  // service_connection_policy_creation_result - computed: true, optional: false, required: false
+  public get serviceConnectionPolicyCreationResult() {
+    return this.getStringAttribute('service_connection_policy_creation_result');
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -2063,6 +2073,11 @@ export class DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutput
   // network_attachment_uri - computed: true, optional: false, required: false
   public get networkAttachmentUri() {
     return this.getStringAttribute('network_attachment_uri');
+  }
+
+  // psc_auto_connection_policy_enabled - computed: true, optional: false, required: false
+  public get pscAutoConnectionPolicyEnabled() {
+    return this.getBooleanAttribute('psc_auto_connection_policy_enabled');
   }
 
   // psc_auto_connections - computed: true, optional: false, required: false
@@ -3057,7 +3072,7 @@ export class DataGoogleSqlDatabaseInstanceSettingsList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance google_sql_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance google_sql_database_instance}
 */
 export class DataGoogleSqlDatabaseInstance extends cdktn.TerraformDataSource {
 
@@ -3073,7 +3088,7 @@ export class DataGoogleSqlDatabaseInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleSqlDatabaseInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSqlDatabaseInstance to import
-  * @param importFromId The id of the existing DataGoogleSqlDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleSqlDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSqlDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3085,7 +3100,7 @@ export class DataGoogleSqlDatabaseInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3096,7 +3111,7 @@ export class DataGoogleSqlDatabaseInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -3166,6 +3181,11 @@ export class DataGoogleSqlDatabaseInstance extends cdktn.TerraformDataSource {
   // encryption_key_name - computed: true, optional: false, required: false
   public get encryptionKeyName() {
     return this.getStringAttribute('encryption_key_name');
+  }
+
+  // enforce_new_sql_network_architecture - computed: true, optional: false, required: false
+  public get enforceNewSqlNetworkArchitecture() {
+    return this.getBooleanAttribute('enforce_new_sql_network_architecture');
   }
 
   // final_backup_description - computed: true, optional: false, required: false

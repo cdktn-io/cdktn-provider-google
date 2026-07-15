@@ -1,3 +1,3 @@
 # `google_container_cluster`
 
-Refer to the Terraform Registry for docs: [`google_container_cluster`](https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/container_cluster).
+Refer to the Terraform Registry for docs: [`google_container_cluster`](https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/container_cluster).

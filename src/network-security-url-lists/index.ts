@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists
+// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkSecurityUrlListsConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#deletion_policy NetworkSecurityUrlLists#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#deletion_policy NetworkSecurityUrlLists#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Free-text description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#description NetworkSecurityUrlLists#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#id NetworkSecurityUrlLists#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,44 +40,44 @@ export interface NetworkSecurityUrlListsConfig extends cdktn.TerraformMetaArgume
   /**
   * The location of the url lists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#location NetworkSecurityUrlLists#location}
   */
   readonly location: string;
   /**
   * Short name of the UrlList resource to be created.
   * This value should be 1-63 characters long, containing only letters, numbers, hyphens, and underscores, and should not start with a number. E.g. 'urlList'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#name NetworkSecurityUrlLists#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#project NetworkSecurityUrlLists#project}
   */
   readonly project?: string;
   /**
   * FQDNs and URLs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#values NetworkSecurityUrlLists#values}
   */
   readonly values: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#timeouts NetworkSecurityUrlLists#timeouts}
   */
   readonly timeouts?: NetworkSecurityUrlListsTimeouts;
 }
 export interface NetworkSecurityUrlListsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#create NetworkSecurityUrlLists#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#delete NetworkSecurityUrlLists#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#update NetworkSecurityUrlLists#update}
   */
   readonly update?: string;
 }
@@ -229,7 +229,7 @@ export class NetworkSecurityUrlListsTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists google_network_security_url_lists}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists google_network_security_url_lists}
 */
 export class NetworkSecurityUrlLists extends cdktn.TerraformResource {
 
@@ -245,7 +245,7 @@ export class NetworkSecurityUrlLists extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityUrlLists resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityUrlLists to import
-  * @param importFromId The id of the existing NetworkSecurityUrlLists that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityUrlLists that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityUrlLists to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -257,7 +257,7 @@ export class NetworkSecurityUrlLists extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.39.0/docs/resources/network_security_url_lists google_network_security_url_lists} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_security_url_lists google_network_security_url_lists} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -268,7 +268,7 @@ export class NetworkSecurityUrlLists extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_url_lists',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.39.0',
+        providerVersion: '7.40.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
