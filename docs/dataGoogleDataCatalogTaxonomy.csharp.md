@@ -4,7 +4,7 @@
 
 ### DataGoogleDataCatalogTaxonomy <a name="DataGoogleDataCatalogTaxonomy" id="@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy google_data_catalog_taxonomy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy google_data_catalog_taxonomy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomy.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleDataCatalogTaxon
 
 The id of the existing DataGoogleDataCatalogTaxonomy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,10 +728,10 @@ new DataGoogleDataCatalogTaxonomyConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#display_name DataGoogleDataCatalogTaxonomy#display_name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#region DataGoogleDataCatalogTaxonomy#region}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#id DataGoogleDataCatalogTaxonomy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#project DataGoogleDataCatalogTaxonomy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#display_name DataGoogleDataCatalogTaxonomy#display_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#region DataGoogleDataCatalogTaxonomy#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#id DataGoogleDataCatalogTaxonomy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataCatalogTaxonomy.DataGoogleDataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#project DataGoogleDataCatalogTaxonomy#project}. |
 
 ---
 
@@ -813,7 +813,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#display_name DataGoogleDataCatalogTaxonomy#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#display_name DataGoogleDataCatalogTaxonomy#display_name}.
 
 ---
 
@@ -825,7 +825,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#region DataGoogleDataCatalogTaxonomy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#region DataGoogleDataCatalogTaxonomy#region}.
 
 ---
 
@@ -837,7 +837,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#id DataGoogleDataCatalogTaxonomy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#id DataGoogleDataCatalogTaxonomy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -852,7 +852,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_catalog_taxonomy#project DataGoogleDataCatalogTaxonomy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_catalog_taxonomy#project DataGoogleDataCatalogTaxonomy#project}.
 
 ---
 

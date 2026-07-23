@@ -4,7 +4,7 @@
 
 ### VertexAiReasoningEngineIamPolicy <a name="VertexAiReasoningEngineIamPolicy" id="@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy google_vertex_ai_reasoning_engine_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy google_vertex_ai_reasoning_engine_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer"></a>
 
@@ -38,11 +38,11 @@ VertexAiReasoningEngineIamPolicy.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.reasoningEngine">reasoningEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.reasoningEngine">reasoningEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}.
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the VertexAiReasoningEngineIam
 
 The id of the existing VertexAiReasoningEngineIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,11 +965,11 @@ VertexAiReasoningEngineIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.reasoningEngine">reasoningEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.reasoningEngine">reasoningEngine</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamPolicy.VertexAiReasoningEngineIamPolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#policy_data VertexAiReasoningEngineIamPolicy#policy_data}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public java.lang.String getReasoningEngine();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#reasoning_engine VertexAiReasoningEngineIamPolicy#reasoning_engine}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#id VertexAiReasoningEngineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#project VertexAiReasoningEngineIamPolicy#project}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_reasoning_engine_iam_policy#region VertexAiReasoningEngineIamPolicy#region}.
 
 ---
 

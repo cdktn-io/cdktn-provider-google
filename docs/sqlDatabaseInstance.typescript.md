@@ -4,7 +4,7 @@
 
 ### SqlDatabaseInstance <a name="SqlDatabaseInstance" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance google_sql_database_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance google_sql_database_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.Initializer"></a>
 
@@ -89,6 +89,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetEnforceNewSqlNetworkArchitecture">resetEnforceNewSqlNetworkArchitecture</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetFinalBackupDescription">resetFinalBackupDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetIncludeReplicasForMajorVersionUpgrade">resetIncludeReplicasForMajorVersionUpgrade</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetInstanceType">resetInstanceType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetMaintenanceVersion">resetMaintenanceVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetMasterInstanceName">resetMasterInstanceName</a></code> | *No description.* |
@@ -105,6 +106,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWo">resetRootPasswordWo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWoVersion">resetRootPasswordWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetSettings">resetSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetSwitchTransactionLogsToCloudStorageEnabled">resetSwitchTransactionLogsToCloudStorageEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -550,6 +552,12 @@ public resetFinalBackupDescription(): void
 public resetId(): void
 ```
 
+##### `resetIncludeReplicasForMajorVersionUpgrade` <a name="resetIncludeReplicasForMajorVersionUpgrade" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetIncludeReplicasForMajorVersionUpgrade"></a>
+
+```typescript
+public resetIncludeReplicasForMajorVersionUpgrade(): void
+```
+
 ##### `resetInstanceType` <a name="resetInstanceType" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetInstanceType"></a>
 
 ```typescript
@@ -644,6 +652,12 @@ public resetRootPasswordWoVersion(): void
 
 ```typescript
 public resetSettings(): void
+```
+
+##### `resetSwitchTransactionLogsToCloudStorageEnabled` <a name="resetSwitchTransactionLogsToCloudStorageEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetSwitchTransactionLogsToCloudStorageEnabled"></a>
+
+```typescript
+public resetSwitchTransactionLogsToCloudStorageEnabled(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetTimeouts"></a>
@@ -755,7 +769,7 @@ The construct id used in the generated config for the SqlDatabaseInstance to imp
 
 The id of the existing SqlDatabaseInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.enforceNewSqlNetworkArchitectureInput">enforceNewSqlNetworkArchitectureInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescriptionInput">finalBackupDescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.includeReplicasForMajorVersionUpgradeInput">includeReplicasForMajorVersionUpgradeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceTypeInput">instanceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.maintenanceVersionInput">maintenanceVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.masterInstanceNameInput">masterInstanceNameInput</a></code> | <code>string</code> | *No description.* |
@@ -829,6 +844,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoInput">rootPasswordWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersionInput">rootPasswordWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.settingsInput">settingsInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings">SqlDatabaseInstanceSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.switchTransactionLogsToCloudStorageEnabledInput">switchTransactionLogsToCloudStorageEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.backupdrBackup">backupdrBackup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | *No description.* |
@@ -838,6 +854,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.enforceNewSqlNetworkArchitecture">enforceNewSqlNetworkArchitecture</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescription">finalBackupDescription</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.includeReplicasForMajorVersionUpgrade">includeReplicasForMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceType">instanceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.maintenanceVersion">maintenanceVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.masterInstanceName">masterInstanceName</a></code> | <code>string</code> | *No description.* |
@@ -849,6 +866,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPassword">rootPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWo">rootPasswordWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersion">rootPasswordWoVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.switchTransactionLogsToCloudStorageEnabled">switchTransactionLogsToCloudStorageEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1274,6 +1292,16 @@ public readonly idInput: string;
 
 ---
 
+##### `includeReplicasForMajorVersionUpgradeInput`<sup>Optional</sup> <a name="includeReplicasForMajorVersionUpgradeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.includeReplicasForMajorVersionUpgradeInput"></a>
+
+```typescript
+public readonly includeReplicasForMajorVersionUpgradeInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `instanceTypeInput`<sup>Optional</sup> <a name="instanceTypeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceTypeInput"></a>
 
 ```typescript
@@ -1434,6 +1462,16 @@ public readonly settingsInput: SqlDatabaseInstanceSettings;
 
 ---
 
+##### `switchTransactionLogsToCloudStorageEnabledInput`<sup>Optional</sup> <a name="switchTransactionLogsToCloudStorageEnabledInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.switchTransactionLogsToCloudStorageEnabledInput"></a>
+
+```typescript
+public readonly switchTransactionLogsToCloudStorageEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeoutsInput"></a>
 
 ```typescript
@@ -1521,6 +1559,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `includeReplicasForMajorVersionUpgrade`<sup>Required</sup> <a name="includeReplicasForMajorVersionUpgrade" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.includeReplicasForMajorVersionUpgrade"></a>
+
+```typescript
+public readonly includeReplicasForMajorVersionUpgrade: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1634,6 +1682,16 @@ public readonly rootPasswordWoVersion: string;
 
 ---
 
+##### `switchTransactionLogsToCloudStorageEnabled`<sup>Required</sup> <a name="switchTransactionLogsToCloudStorageEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.switchTransactionLogsToCloudStorageEnabled"></a>
+
+```typescript
+public readonly switchTransactionLogsToCloudStorageEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1688,7 +1746,7 @@ public readonly sourceInstanceName: string;
 
 The name of the instance from which the point in time should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#source_instance_name SqlDatabaseInstance#source_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#source_instance_name SqlDatabaseInstance#source_instance_name}
 
 ---
 
@@ -1704,7 +1762,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the cloned instance ip will be created in the allocated range. The range name must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035). Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -1720,7 +1778,7 @@ public readonly databaseNames: string[];
 
 Clone all databases if empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#database_names SqlDatabaseInstance#database_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#database_names SqlDatabaseInstance#database_names}
 
 ---
 
@@ -1734,7 +1792,7 @@ public readonly pointInTime: string;
 
 The timestamp of the point in time that should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
 
 ---
 
@@ -1750,7 +1808,7 @@ public readonly preferredZone: string;
 
 If no zone is specified, clone to the same zone as the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
 
 ---
 
@@ -1764,7 +1822,7 @@ public readonly sourceInstanceDeletionTime: string;
 
 The timestamp of when the source instance was deleted for a clone from a deleted instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#source_instance_deletion_time SqlDatabaseInstance#source_instance_deletion_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#source_instance_deletion_time SqlDatabaseInstance#source_instance_deletion_time}
 
 ---
 
@@ -1778,7 +1836,7 @@ public readonly sourceProject: string;
 
 The project ID of the source project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#source_project SqlDatabaseInstance#source_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#source_project SqlDatabaseInstance#source_project}
 
 ---
 
@@ -1808,10 +1866,11 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.clone">clone</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | clone block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Used to block Terraform from deleting a SQL Instance. Defaults to true. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.enforceNewSqlNetworkArchitecture">enforceNewSqlNetworkArchitecture</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enforce the new SQL network architecture. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.finalBackupDescription">finalBackupDescription</a></code> | <code>string</code> | The description of final backup if instance enable create final backup during instance deletion. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.includeReplicasForMajorVersionUpgrade">includeReplicasForMajorVersionUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when 'database_version' is updated. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.instanceType">instanceType</a></code> | <code>string</code> | The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.maintenanceVersion">maintenanceVersion</a></code> | <code>string</code> | Maintenance version. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.masterInstanceName">masterInstanceName</a></code> | <code>string</code> | The name of the instance that will act as the master in the replication setup. |
@@ -1828,6 +1887,7 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWo">rootPasswordWo</a></code> | <code>string</code> | Initial root password. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWoVersion">rootPasswordWoVersion</a></code> | <code>string</code> | Triggers update of root_password_wo write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments). |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings">SqlDatabaseInstanceSettings</a></code> | settings block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.switchTransactionLogsToCloudStorageEnabled">switchTransactionLogsToCloudStorageEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1914,7 +1974,7 @@ The MySQL, PostgreSQL or SQL Server version to use.
 
 Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18, SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS, SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE, SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB. Database Version Policies includes an up-to-date reference of supported versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#database_version SqlDatabaseInstance#database_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#database_version SqlDatabaseInstance#database_version}
 
 ---
 
@@ -1928,7 +1988,7 @@ public readonly backupdrBackup: string;
 
 The name of the BackupDR backup to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#backupdr_backup SqlDatabaseInstance#backupdr_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#backupdr_backup SqlDatabaseInstance#backupdr_backup}
 
 ---
 
@@ -1942,7 +2002,7 @@ public readonly clone: SqlDatabaseInstanceClone;
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#clone SqlDatabaseInstance#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#clone SqlDatabaseInstance#clone}
 
 ---
 
@@ -1964,7 +2024,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#deletion_policy SqlDatabaseInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#deletion_policy SqlDatabaseInstance#deletion_policy}
 
 ---
 
@@ -1978,7 +2038,7 @@ public readonly deletionProtection: boolean | IResolvable;
 
 Used to block Terraform from deleting a SQL Instance. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#deletion_protection SqlDatabaseInstance#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#deletion_protection SqlDatabaseInstance#deletion_protection}
 
 ---
 
@@ -1990,7 +2050,7 @@ public readonly encryptionKeyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}.
 
 ---
 
@@ -2004,7 +2064,7 @@ public readonly enforceNewSqlNetworkArchitecture: boolean | IResolvable;
 
 Whether to enforce the new SQL network architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enforce_new_sql_network_architecture SqlDatabaseInstance#enforce_new_sql_network_architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enforce_new_sql_network_architecture SqlDatabaseInstance#enforce_new_sql_network_architecture}
 
 ---
 
@@ -2018,7 +2078,7 @@ public readonly finalBackupDescription: string;
 
 The description of final backup if instance enable create final backup during instance deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#final_backup_description SqlDatabaseInstance#final_backup_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#final_backup_description SqlDatabaseInstance#final_backup_description}
 
 ---
 
@@ -2030,10 +2090,26 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `includeReplicasForMajorVersionUpgrade`<sup>Optional</sup> <a name="includeReplicasForMajorVersionUpgrade" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.includeReplicasForMajorVersionUpgrade"></a>
+
+```typescript
+public readonly includeReplicasForMajorVersionUpgrade: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when 'database_version' is updated.
+
+This is an input-only field that is not persisted in the API and only takes effect during a major version upgrade.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#include_replicas_for_major_version_upgrade SqlDatabaseInstance#include_replicas_for_major_version_upgrade}
 
 ---
 
@@ -2047,7 +2123,7 @@ public readonly instanceType: string;
 
 The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#instance_type SqlDatabaseInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#instance_type SqlDatabaseInstance#instance_type}
 
 ---
 
@@ -2061,7 +2137,7 @@ public readonly maintenanceVersion: string;
 
 Maintenance version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#maintenance_version SqlDatabaseInstance#maintenance_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#maintenance_version SqlDatabaseInstance#maintenance_version}
 
 ---
 
@@ -2077,7 +2153,7 @@ The name of the instance that will act as the master in the replication setup.
 
 Note, this requires the master to have binary_log_enabled set, as well as existing backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#master_instance_name SqlDatabaseInstance#master_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#master_instance_name SqlDatabaseInstance#master_instance_name}
 
 ---
 
@@ -2093,7 +2169,7 @@ The name of the instance.
 
 If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -2109,7 +2185,7 @@ For a read pool instance, the number of nodes in the read pool.
 
 For read pools with auto scaling enabled, this field is read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#node_count SqlDatabaseInstance#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#node_count SqlDatabaseInstance#node_count}
 
 ---
 
@@ -2123,7 +2199,7 @@ public readonly pointInTimeRestoreContext: SqlDatabaseInstancePointInTimeRestore
 
 point_in_time_restore_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#point_in_time_restore_context SqlDatabaseInstance#point_in_time_restore_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#point_in_time_restore_context SqlDatabaseInstance#point_in_time_restore_context}
 
 ---
 
@@ -2139,7 +2215,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
 
 ---
 
@@ -2155,7 +2231,7 @@ The region the instance will sit in.
 
 Note, Cloud SQL is not available in all regions. A valid region must be provided to use this resource. If a region is not provided in the resource definition, the provider region will be used instead, but this will be an apply-time error for instances if the provider region is not supported with Cloud SQL. If you choose not to provide the region argument for this resource, make sure you understand this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
 
 ---
 
@@ -2169,7 +2245,7 @@ public readonly replicaConfiguration: SqlDatabaseInstanceReplicaConfiguration;
 
 replica_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#replica_configuration SqlDatabaseInstance#replica_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#replica_configuration SqlDatabaseInstance#replica_configuration}
 
 ---
 
@@ -2183,7 +2259,7 @@ public readonly replicaNames: string[];
 
 The replicas of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#replica_names SqlDatabaseInstance#replica_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#replica_names SqlDatabaseInstance#replica_names}
 
 ---
 
@@ -2197,7 +2273,7 @@ public readonly replicationCluster: SqlDatabaseInstanceReplicationCluster;
 
 replication_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#replication_cluster SqlDatabaseInstance#replication_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#replication_cluster SqlDatabaseInstance#replication_cluster}
 
 ---
 
@@ -2211,7 +2287,7 @@ public readonly restoreBackupContext: SqlDatabaseInstanceRestoreBackupContext;
 
 restore_backup_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#restore_backup_context SqlDatabaseInstance#restore_backup_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#restore_backup_context SqlDatabaseInstance#restore_backup_context}
 
 ---
 
@@ -2225,7 +2301,7 @@ public readonly rootPassword: string;
 
 Initial root password. Required for MS SQL Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#root_password SqlDatabaseInstance#root_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#root_password SqlDatabaseInstance#root_password}
 
 ---
 
@@ -2242,7 +2318,7 @@ Initial root password.
 Required for MS SQL Server.
 				Note: This property is write-only and will not be read from the API. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#root_password_wo SqlDatabaseInstance#root_password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#root_password_wo SqlDatabaseInstance#root_password_wo}
 
 ---
 
@@ -2256,7 +2332,7 @@ public readonly rootPasswordWoVersion: string;
 
 Triggers update of root_password_wo write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#root_password_wo_version SqlDatabaseInstance#root_password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#root_password_wo_version SqlDatabaseInstance#root_password_wo_version}
 
 ---
 
@@ -2270,7 +2346,23 @@ public readonly settings: SqlDatabaseInstanceSettings;
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#settings SqlDatabaseInstance#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#settings SqlDatabaseInstance#settings}
+
+---
+
+##### `switchTransactionLogsToCloudStorageEnabled`<sup>Optional</sup> <a name="switchTransactionLogsToCloudStorageEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.switchTransactionLogsToCloudStorageEnabled"></a>
+
+```typescript
+public readonly switchTransactionLogsToCloudStorageEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows.
+
+This is an input-only field that is not persisted in the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#switch_transaction_logs_to_cloud_storage_enabled SqlDatabaseInstance#switch_transaction_logs_to_cloud_storage_enabled}
 
 ---
 
@@ -2284,7 +2376,7 @@ public readonly timeouts: SqlDatabaseInstanceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#timeouts SqlDatabaseInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#timeouts SqlDatabaseInstance#timeouts}
 
 ---
 
@@ -2343,7 +2435,7 @@ public readonly datasource: string;
 
 The Google Cloud Backup and Disaster Recovery Datasource URI. For example: "projects/my-project/locations/us-central1/datasources/my-datasource".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#datasource SqlDatabaseInstance#datasource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#datasource SqlDatabaseInstance#datasource}
 
 ---
 
@@ -2359,7 +2451,7 @@ The name of the allocated IP range for the internal IP Cloud SQL instance.
 
 For example: "google-managed-services-default". If you set this, then Cloud SQL creates the IP address for the cloned instance in the allocated range. This range must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035) standards. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -2373,7 +2465,7 @@ public readonly pointInTime: string;
 
 The date and time to which you want to restore the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
 
 ---
 
@@ -2389,7 +2481,7 @@ Point-in-time recovery of an instance to the specified zone.
 
 If no zone is specified, then clone to the same primary zone as the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
 
 ---
 
@@ -2403,7 +2495,7 @@ public readonly region: string;
 
 The region of the target instance to restore to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
 
 ---
 
@@ -2417,7 +2509,7 @@ public readonly targetInstance: string;
 
 The name of the target instance to restore to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#target_instance SqlDatabaseInstance#target_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#target_instance SqlDatabaseInstance#target_instance}
 
 ---
 
@@ -2460,7 +2552,7 @@ public readonly caCertificate: string;
 
 PEM representation of the trusted CA's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#ca_certificate SqlDatabaseInstance#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#ca_certificate SqlDatabaseInstance#ca_certificate}
 
 ---
 
@@ -2476,7 +2568,7 @@ Specifies if a SQL Server replica is a cascadable replica.
 
 A cascadable replica is a SQL Server cross region replica that supports replica(s) under it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#cascadable_replica SqlDatabaseInstance#cascadable_replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#cascadable_replica SqlDatabaseInstance#cascadable_replica}
 
 ---
 
@@ -2490,7 +2582,7 @@ public readonly clientCertificate: string;
 
 PEM representation of the replica's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#client_certificate SqlDatabaseInstance#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#client_certificate SqlDatabaseInstance#client_certificate}
 
 ---
 
@@ -2504,7 +2596,7 @@ public readonly clientKey: string;
 
 PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#client_key SqlDatabaseInstance#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#client_key SqlDatabaseInstance#client_key}
 
 ---
 
@@ -2518,7 +2610,7 @@ public readonly connectRetryInterval: number;
 
 The number of seconds between connect retries. MySQL's default is 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#connect_retry_interval SqlDatabaseInstance#connect_retry_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#connect_retry_interval SqlDatabaseInstance#connect_retry_interval}
 
 ---
 
@@ -2532,7 +2624,7 @@ public readonly dumpFilePath: string;
 
 Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#dump_file_path SqlDatabaseInstance#dump_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#dump_file_path SqlDatabaseInstance#dump_file_path}
 
 ---
 
@@ -2548,7 +2640,7 @@ Specifies if the replica is the failover target.
 
 If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance. Not supported for Postgres
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#failover_target SqlDatabaseInstance#failover_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#failover_target SqlDatabaseInstance#failover_target}
 
 ---
 
@@ -2562,7 +2654,7 @@ public readonly masterHeartbeatPeriod: number;
 
 Time in ms between replication heartbeats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#master_heartbeat_period SqlDatabaseInstance#master_heartbeat_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#master_heartbeat_period SqlDatabaseInstance#master_heartbeat_period}
 
 ---
 
@@ -2576,7 +2668,7 @@ public readonly password: string;
 
 Password for the replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#password SqlDatabaseInstance#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#password SqlDatabaseInstance#password}
 
 ---
 
@@ -2590,7 +2682,7 @@ public readonly sslCipher: string;
 
 Permissible ciphers for use in SSL encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#ssl_cipher SqlDatabaseInstance#ssl_cipher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#ssl_cipher SqlDatabaseInstance#ssl_cipher}
 
 ---
 
@@ -2604,7 +2696,7 @@ public readonly username: string;
 
 Username for replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#username SqlDatabaseInstance#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#username SqlDatabaseInstance#username}
 
 ---
 
@@ -2618,7 +2710,7 @@ public readonly verifyServerCertificate: boolean | IResolvable;
 
 True if the master's common name value is checked during the SSL handshake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#verify_server_certificate SqlDatabaseInstance#verify_server_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#verify_server_certificate SqlDatabaseInstance#verify_server_certificate}
 
 ---
 
@@ -2653,7 +2745,7 @@ If the instance is a primary instance, then this field identifies the disaster r
 
 The standard format of this field is "your-project:your-instance". You can also set this field to "your-instance", but cloud SQL backend will convert it to the aforementioned standard format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#failover_dr_replica_name SqlDatabaseInstance#failover_dr_replica_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#failover_dr_replica_name SqlDatabaseInstance#failover_dr_replica_name}
 
 ---
 
@@ -2669,7 +2761,7 @@ If set, this field indicates this instance has a private service access (PSA) DN
 
 If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn't have a DR replica yet or the DR replica is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psa_write_endpoint SqlDatabaseInstance#psa_write_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psa_write_endpoint SqlDatabaseInstance#psa_write_endpoint}
 
 ---
 
@@ -2703,7 +2795,7 @@ public readonly backupRunId: number;
 
 The ID of the backup run to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#backup_run_id SqlDatabaseInstance#backup_run_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#backup_run_id SqlDatabaseInstance#backup_run_id}
 
 ---
 
@@ -2717,7 +2809,7 @@ public readonly instanceId: string;
 
 The ID of the instance that the backup was taken from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#instance_id SqlDatabaseInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#instance_id SqlDatabaseInstance#instance_id}
 
 ---
 
@@ -2731,7 +2823,7 @@ public readonly project: string;
 
 The full project ID of the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
 
 ---
 
@@ -2812,7 +2904,7 @@ The machine type to use.
 
 See tiers for more details and supported versions. Postgres supports only shared-core machine types, and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#tier SqlDatabaseInstance#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#tier SqlDatabaseInstance#tier}
 
 ---
 
@@ -2826,7 +2918,7 @@ public readonly activationPolicy: string;
 
 This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#activation_policy SqlDatabaseInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#activation_policy SqlDatabaseInstance#activation_policy}
 
 ---
 
@@ -2840,7 +2932,7 @@ public readonly activeDirectoryConfig: SqlDatabaseInstanceSettingsActiveDirector
 
 active_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#active_directory_config SqlDatabaseInstance#active_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#active_directory_config SqlDatabaseInstance#active_directory_config}
 
 ---
 
@@ -2854,7 +2946,7 @@ public readonly advancedMachineFeatures: SqlDatabaseInstanceSettingsAdvancedMach
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#advanced_machine_features SqlDatabaseInstance#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#advanced_machine_features SqlDatabaseInstance#advanced_machine_features}
 
 ---
 
@@ -2868,7 +2960,7 @@ public readonly autoUpgradeEnabled: boolean | IResolvable;
 
 Enables Automatic Version Upgrade feature. Can be used with MySQL only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#auto_upgrade_enabled SqlDatabaseInstance#auto_upgrade_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#auto_upgrade_enabled SqlDatabaseInstance#auto_upgrade_enabled}
 
 ---
 
@@ -2890,7 +2982,7 @@ is set to true. Defaults to ZONAL.
 For read pool instances, this field is read-only. The availability type is changed by specifying
 the number of nodes (node_count).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#availability_type SqlDatabaseInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#availability_type SqlDatabaseInstance#availability_type}
 
 ---
 
@@ -2904,7 +2996,7 @@ public readonly backupConfiguration: SqlDatabaseInstanceSettingsBackupConfigurat
 
 backup_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#backup_configuration SqlDatabaseInstance#backup_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#backup_configuration SqlDatabaseInstance#backup_configuration}
 
 ---
 
@@ -2918,7 +3010,7 @@ public readonly collation: string;
 
 The name of server instance collation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#collation SqlDatabaseInstance#collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#collation SqlDatabaseInstance#collation}
 
 ---
 
@@ -2932,7 +3024,7 @@ public readonly connectionPoolConfig: IResolvable | SqlDatabaseInstanceSettingsC
 
 connection_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#connection_pool_config SqlDatabaseInstance#connection_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#connection_pool_config SqlDatabaseInstance#connection_pool_config}
 
 ---
 
@@ -2948,7 +3040,7 @@ Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all 
 
 If enabled, all the direct connections are rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#connector_enforcement SqlDatabaseInstance#connector_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#connector_enforcement SqlDatabaseInstance#connector_enforcement}
 
 ---
 
@@ -2962,7 +3054,7 @@ public readonly dataApiAccess: string;
 
 Allows using ExecuteSql API to connect to the instance. Disallowed when unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#data_api_access SqlDatabaseInstance#data_api_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#data_api_access SqlDatabaseInstance#data_api_access}
 
 ---
 
@@ -2976,7 +3068,7 @@ public readonly databaseFlags: IResolvable | SqlDatabaseInstanceSettingsDatabase
 
 database_flags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
 
 ---
 
@@ -2990,7 +3082,7 @@ public readonly dataCacheConfig: SqlDatabaseInstanceSettingsDataCacheConfig;
 
 data_cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#data_cache_config SqlDatabaseInstance#data_cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#data_cache_config SqlDatabaseInstance#data_cache_config}
 
 ---
 
@@ -3006,7 +3098,7 @@ Provisioned number of I/O operations per second for the data disk.
 
 This field is only used for HYPERDISK_BALANCED disk types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#data_disk_provisioned_iops SqlDatabaseInstance#data_disk_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#data_disk_provisioned_iops SqlDatabaseInstance#data_disk_provisioned_iops}
 
 ---
 
@@ -3022,7 +3114,7 @@ Provisioned throughput measured in MiB per second for the data disk.
 
 This field is only used for HYPERDISK_BALANCED disk types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#data_disk_provisioned_throughput SqlDatabaseInstance#data_disk_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#data_disk_provisioned_throughput SqlDatabaseInstance#data_disk_provisioned_throughput}
 
 ---
 
@@ -3036,7 +3128,7 @@ public readonly deletionProtectionEnabled: boolean | IResolvable;
 
 Configuration to protect against accidental instance deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
 
 ---
 
@@ -3050,7 +3142,7 @@ public readonly denyMaintenancePeriod: SqlDatabaseInstanceSettingsDenyMaintenanc
 
 deny_maintenance_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
 
 ---
 
@@ -3064,7 +3156,7 @@ public readonly diskAutoresize: boolean | IResolvable;
 
 Enables auto-resizing of the storage size. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}
 
 ---
 
@@ -3080,7 +3172,7 @@ The maximum size, in GB, to which storage capacity can be automatically increase
 
 The default value is 0, which specifies that there is no limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disk_autoresize_limit SqlDatabaseInstance#disk_autoresize_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disk_autoresize_limit SqlDatabaseInstance#disk_autoresize_limit}
 
 ---
 
@@ -3096,7 +3188,7 @@ The size of data disk, in GB.
 
 Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB for PD_SSD, PD_HDD and 20GB for HYPERDISK_BALANCED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disk_size SqlDatabaseInstance#disk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disk_size SqlDatabaseInstance#disk_size}
 
 ---
 
@@ -3110,7 +3202,7 @@ public readonly diskType: string;
 
 The type of supported data disk is tier dependent and can be PD_SSD or PD_HDD or HYPERDISK_BALANCED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disk_type SqlDatabaseInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disk_type SqlDatabaseInstance#disk_type}
 
 ---
 
@@ -3124,7 +3216,7 @@ public readonly edition: string;
 
 The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#edition SqlDatabaseInstance#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#edition SqlDatabaseInstance#edition}
 
 ---
 
@@ -3138,7 +3230,7 @@ public readonly enableDataplexIntegration: boolean | IResolvable;
 
 Enables Dataplex Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enable_dataplex_integration SqlDatabaseInstance#enable_dataplex_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enable_dataplex_integration SqlDatabaseInstance#enable_dataplex_integration}
 
 ---
 
@@ -3152,7 +3244,7 @@ public readonly enableGoogleMlIntegration: boolean | IResolvable;
 
 Enables Vertex AI Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enable_google_ml_integration SqlDatabaseInstance#enable_google_ml_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enable_google_ml_integration SqlDatabaseInstance#enable_google_ml_integration}
 
 ---
 
@@ -3166,7 +3258,7 @@ public readonly entraidConfig: SqlDatabaseInstanceSettingsEntraidConfig;
 
 entraid_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#entraid_config SqlDatabaseInstance#entraid_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#entraid_config SqlDatabaseInstance#entraid_config}
 
 ---
 
@@ -3180,7 +3272,7 @@ public readonly finalBackupConfig: SqlDatabaseInstanceSettingsFinalBackupConfig;
 
 final_backup_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#final_backup_config SqlDatabaseInstance#final_backup_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#final_backup_config SqlDatabaseInstance#final_backup_config}
 
 ---
 
@@ -3194,7 +3286,7 @@ public readonly insightsConfig: SqlDatabaseInstanceSettingsInsightsConfig;
 
 insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#insights_config SqlDatabaseInstance#insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#insights_config SqlDatabaseInstance#insights_config}
 
 ---
 
@@ -3208,7 +3300,7 @@ public readonly ipConfiguration: SqlDatabaseInstanceSettingsIpConfiguration;
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#ip_configuration SqlDatabaseInstance#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#ip_configuration SqlDatabaseInstance#ip_configuration}
 
 ---
 
@@ -3222,7 +3314,7 @@ public readonly locationPreference: SqlDatabaseInstanceSettingsLocationPreferenc
 
 location_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#location_preference SqlDatabaseInstance#location_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#location_preference SqlDatabaseInstance#location_preference}
 
 ---
 
@@ -3236,7 +3328,7 @@ public readonly maintenanceWindow: SqlDatabaseInstanceSettingsMaintenanceWindow;
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#maintenance_window SqlDatabaseInstance#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#maintenance_window SqlDatabaseInstance#maintenance_window}
 
 ---
 
@@ -3250,7 +3342,7 @@ public readonly passwordValidationPolicy: SqlDatabaseInstanceSettingsPasswordVal
 
 password_validation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#password_validation_policy SqlDatabaseInstance#password_validation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#password_validation_policy SqlDatabaseInstance#password_validation_policy}
 
 ---
 
@@ -3264,7 +3356,7 @@ public readonly pricingPlan: string;
 
 Pricing plan for this instance, can only be PER_USE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#pricing_plan SqlDatabaseInstance#pricing_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#pricing_plan SqlDatabaseInstance#pricing_plan}
 
 ---
 
@@ -3278,7 +3370,7 @@ public readonly readPoolAutoScaleConfig: SqlDatabaseInstanceSettingsReadPoolAuto
 
 read_pool_auto_scale_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#read_pool_auto_scale_config SqlDatabaseInstance#read_pool_auto_scale_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#read_pool_auto_scale_config SqlDatabaseInstance#read_pool_auto_scale_config}
 
 ---
 
@@ -3294,7 +3386,7 @@ When this parameter is set to true, Cloud SQL retains backups of the instance ev
 
 The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#retain_backups_on_delete SqlDatabaseInstance#retain_backups_on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#retain_backups_on_delete SqlDatabaseInstance#retain_backups_on_delete}
 
 ---
 
@@ -3308,7 +3400,7 @@ public readonly sqlServerAuditConfig: SqlDatabaseInstanceSettingsSqlServerAuditC
 
 sql_server_audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
 
 ---
 
@@ -3322,7 +3414,7 @@ public readonly timeZone: string;
 
 The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#time_zone SqlDatabaseInstance#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#time_zone SqlDatabaseInstance#time_zone}
 
 ---
 
@@ -3336,7 +3428,7 @@ public readonly userLabels: {[ key: string ]: string};
 
 A set of key/value user label pairs to assign to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}
 
 ---
 
@@ -3372,7 +3464,7 @@ public readonly domain: string;
 
 Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#domain SqlDatabaseInstance#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#domain SqlDatabaseInstance#domain}
 
 ---
 
@@ -3386,7 +3478,7 @@ public readonly adminCredentialSecretName: string;
 
 The secret manager key storing the administrator credential. (e.g., projects/{project}/secrets/{secret}).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#admin_credential_secret_name SqlDatabaseInstance#admin_credential_secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#admin_credential_secret_name SqlDatabaseInstance#admin_credential_secret_name}
 
 ---
 
@@ -3400,7 +3492,7 @@ public readonly dnsServers: string[];
 
 Domain controller IPv4 addresses used to bootstrap Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#dns_servers SqlDatabaseInstance#dns_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#dns_servers SqlDatabaseInstance#dns_servers}
 
 ---
 
@@ -3414,7 +3506,7 @@ public readonly mode: string;
 
 The mode of the Active Directory configuration. Can be MANAGED_ACTIVE_DIRECTORY or CUSTOMER_MANAGED_ACTIVE_DIRECTORY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#mode SqlDatabaseInstance#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#mode SqlDatabaseInstance#mode}
 
 ---
 
@@ -3428,7 +3520,7 @@ public readonly organizationalUnit: string;
 
 The organizational unit distinguished name. This is the full hierarchical path to the organizational unit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#organizational_unit SqlDatabaseInstance#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#organizational_unit SqlDatabaseInstance#organizational_unit}
 
 ---
 
@@ -3460,7 +3552,7 @@ public readonly threadsPerCore: number;
 
 The number of threads per physical core. Can be 1 or 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#threads_per_core SqlDatabaseInstance#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#threads_per_core SqlDatabaseInstance#threads_per_core}
 
 ---
 
@@ -3498,7 +3590,7 @@ public readonly backupRetentionSettings: SqlDatabaseInstanceSettingsBackupConfig
 
 backup_retention_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#backup_retention_settings SqlDatabaseInstance#backup_retention_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#backup_retention_settings SqlDatabaseInstance#backup_retention_settings}
 
 ---
 
@@ -3514,7 +3606,7 @@ True if binary logging is enabled.
 
 If settings.backup_configuration.enabled is false, this must be as well. Can only be used with MySQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#binary_log_enabled SqlDatabaseInstance#binary_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#binary_log_enabled SqlDatabaseInstance#binary_log_enabled}
 
 ---
 
@@ -3528,7 +3620,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if backup configuration is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
 
 ---
 
@@ -3542,7 +3634,7 @@ public readonly location: string;
 
 Location of the backup configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#location SqlDatabaseInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#location SqlDatabaseInstance#location}
 
 ---
 
@@ -3556,7 +3648,7 @@ public readonly pointInTimeRecoveryEnabled: boolean | IResolvable;
 
 True if Point-in-time recovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#point_in_time_recovery_enabled SqlDatabaseInstance#point_in_time_recovery_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#point_in_time_recovery_enabled SqlDatabaseInstance#point_in_time_recovery_enabled}
 
 ---
 
@@ -3570,7 +3662,7 @@ public readonly startTime: string;
 
 HH:MM format time indicating when backup configuration starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#start_time SqlDatabaseInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#start_time SqlDatabaseInstance#start_time}
 
 ---
 
@@ -3586,7 +3678,7 @@ The number of days of transaction logs we retain for point in time restore, from
 
 (For PostgreSQL Enterprise Plus instances, from 1 to 35.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#transaction_log_retention_days SqlDatabaseInstance#transaction_log_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#transaction_log_retention_days SqlDatabaseInstance#transaction_log_retention_days}
 
 ---
 
@@ -3619,7 +3711,7 @@ public readonly retainedBackups: number;
 
 Number of backups to retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#retained_backups SqlDatabaseInstance#retained_backups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#retained_backups SqlDatabaseInstance#retained_backups}
 
 ---
 
@@ -3633,7 +3725,7 @@ public readonly retentionUnit: string;
 
 The unit that 'retainedBackups' represents. Defaults to COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#retention_unit SqlDatabaseInstance#retention_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#retention_unit SqlDatabaseInstance#retention_unit}
 
 ---
 
@@ -3666,7 +3758,7 @@ public readonly connectionPoolingEnabled: boolean | IResolvable;
 
 Whether Managed Connection Pool is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
 
 ---
 
@@ -3680,7 +3772,7 @@ public readonly flags: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolCo
 
 flags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
 
 ---
 
@@ -3713,7 +3805,7 @@ public readonly name: string;
 
 Name of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -3727,7 +3819,7 @@ public readonly value: string;
 
 Value of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
 
 ---
 
@@ -3760,7 +3852,7 @@ public readonly name: string;
 
 Name of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -3774,7 +3866,7 @@ public readonly value: string;
 
 Value of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
 
 ---
 
@@ -3806,7 +3898,7 @@ public readonly dataCacheEnabled: boolean | IResolvable;
 
 Whether data cache is enabled for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#data_cache_enabled SqlDatabaseInstance#data_cache_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#data_cache_enabled SqlDatabaseInstance#data_cache_enabled}
 
 ---
 
@@ -3842,7 +3934,7 @@ End date before which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#end_date SqlDatabaseInstance#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#end_date SqlDatabaseInstance#end_date}
 
 ---
 
@@ -3858,7 +3950,7 @@ Start date after which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#start_date SqlDatabaseInstance#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#start_date SqlDatabaseInstance#start_date}
 
 ---
 
@@ -3874,7 +3966,7 @@ Time in UTC when the "deny maintenance period" starts on start_date and ends on 
 
 The time is in format: HH:mm:SS, i.e., 00:00:00
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#time SqlDatabaseInstance#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#time SqlDatabaseInstance#time}
 
 ---
 
@@ -3907,7 +3999,7 @@ public readonly applicationId: string;
 
 The application ID for the Entra ID configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#application_id SqlDatabaseInstance#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#application_id SqlDatabaseInstance#application_id}
 
 ---
 
@@ -3921,7 +4013,7 @@ public readonly tenantId: string;
 
 The tenant ID for the Entra ID configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#tenant_id SqlDatabaseInstance#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#tenant_id SqlDatabaseInstance#tenant_id}
 
 ---
 
@@ -3954,7 +4046,7 @@ public readonly enabled: boolean | IResolvable;
 
 When this parameter is set to true, the final backup is enabled for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
 
 ---
 
@@ -3970,7 +4062,7 @@ The number of days to retain the final backup after the instance deletion.
 
 The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years. The final backup will be purged at (time_of_instance_deletion + retention_days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#retention_days SqlDatabaseInstance#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#retention_days SqlDatabaseInstance#retention_days}
 
 ---
 
@@ -4007,7 +4099,7 @@ public readonly enhancedQueryInsightsEnabled: boolean | IResolvable;
 
 True if Enhanced Query Insights feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enhanced_query_insights_enabled SqlDatabaseInstance#enhanced_query_insights_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enhanced_query_insights_enabled SqlDatabaseInstance#enhanced_query_insights_enabled}
 
 ---
 
@@ -4021,7 +4113,7 @@ public readonly queryInsightsEnabled: boolean | IResolvable;
 
 True if Query Insights feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
 
 ---
 
@@ -4037,7 +4129,7 @@ Number of query execution plans captured by Insights per minute for all queries 
 
 Between 0 and 20. Default to 5. For Enterprise Plus instances, from 0 to 200.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#query_plans_per_minute SqlDatabaseInstance#query_plans_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#query_plans_per_minute SqlDatabaseInstance#query_plans_per_minute}
 
 ---
 
@@ -4053,7 +4145,7 @@ Maximum query length stored in bytes.
 
 Between 256 and 4500. Default to 1024. For Enterprise Plus instances, from 1024 to 100000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#query_string_length SqlDatabaseInstance#query_string_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#query_string_length SqlDatabaseInstance#query_string_length}
 
 ---
 
@@ -4067,7 +4159,7 @@ public readonly recordApplicationTags: boolean | IResolvable;
 
 True if Query Insights will record application tags from query when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#record_application_tags SqlDatabaseInstance#record_application_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#record_application_tags SqlDatabaseInstance#record_application_tags}
 
 ---
 
@@ -4081,7 +4173,7 @@ public readonly recordClientAddress: boolean | IResolvable;
 
 True if Query Insights will record client address when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#record_client_address SqlDatabaseInstance#record_client_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#record_client_address SqlDatabaseInstance#record_client_address}
 
 ---
 
@@ -4125,7 +4217,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -4139,7 +4231,7 @@ public readonly authorizedNetworks: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 authorized_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
 
 ---
 
@@ -4153,7 +4245,7 @@ public readonly customSubjectAlternativeNames: string[];
 
 The custom subject alternative names for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#custom_subject_alternative_names SqlDatabaseInstance#custom_subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#custom_subject_alternative_names SqlDatabaseInstance#custom_subject_alternative_names}
 
 ---
 
@@ -4169,7 +4261,7 @@ Whether Google Cloud services such as BigQuery are allowed to access data in thi
 
 SQLSERVER database type is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
 
 ---
 
@@ -4185,7 +4277,7 @@ Whether this Cloud SQL instance should be assigned a public IPV4 address.
 
 At least ipv4_enabled must be enabled or a private_network must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#ipv4_enabled SqlDatabaseInstance#ipv4_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#ipv4_enabled SqlDatabaseInstance#ipv4_enabled}
 
 ---
 
@@ -4201,7 +4293,7 @@ The VPC network from which the Cloud SQL instance is accessible for private IP.
 
 For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#private_network SqlDatabaseInstance#private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#private_network SqlDatabaseInstance#private_network}
 
 ---
 
@@ -4215,7 +4307,7 @@ public readonly pscConfig: IResolvable | SqlDatabaseInstanceSettingsIpConfigurat
 
 psc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_config SqlDatabaseInstance#psc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_config SqlDatabaseInstance#psc_config}
 
 ---
 
@@ -4229,7 +4321,7 @@ public readonly serverCaMode: string;
 
 Specify how the server certificate's Certificate Authority is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#server_ca_mode SqlDatabaseInstance#server_ca_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#server_ca_mode SqlDatabaseInstance#server_ca_mode}
 
 ---
 
@@ -4243,7 +4335,7 @@ public readonly serverCaPool: string;
 
 The resource name of the server CA pool for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#server_ca_pool SqlDatabaseInstance#server_ca_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#server_ca_pool SqlDatabaseInstance#server_ca_pool}
 
 ---
 
@@ -4257,7 +4349,7 @@ public readonly serverCertificateRotationMode: string;
 
 Settings for how the server certificate gets rotated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#server_certificate_rotation_mode SqlDatabaseInstance#server_certificate_rotation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#server_certificate_rotation_mode SqlDatabaseInstance#server_certificate_rotation_mode}
 
 ---
 
@@ -4271,7 +4363,7 @@ public readonly sslMode: string;
 
 Specify how SSL connection should be enforced in DB connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#ssl_mode SqlDatabaseInstance#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#ssl_mode SqlDatabaseInstance#ssl_mode}
 
 ---
 
@@ -4289,9 +4381,9 @@ const sqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks: sqlDatabaseI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">expirationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">expirationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}. |
 
 ---
 
@@ -4303,7 +4395,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}.
 
 ---
 
@@ -4315,7 +4407,7 @@ public readonly expirationTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}.
 
 ---
 
@@ -4327,7 +4419,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}.
 
 ---
 
@@ -4367,7 +4459,7 @@ List of consumer projects that are allow-listed for PSC connections to this inst
 
 This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#allowed_consumer_projects SqlDatabaseInstance#allowed_consumer_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#allowed_consumer_projects SqlDatabaseInstance#allowed_consumer_projects}
 
 ---
 
@@ -4383,7 +4475,7 @@ Name of network attachment resource used to authorize a producer service to conn
 
 For example: "projects/myProject/regions/myRegion/networkAttachments/myNetworkAttachment". This is required to enable outbound connection on a PSC instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#network_attachment_uri SqlDatabaseInstance#network_attachment_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#network_attachment_uri SqlDatabaseInstance#network_attachment_uri}
 
 ---
 
@@ -4397,7 +4489,7 @@ public readonly pscAutoConnectionPolicyEnabled: boolean | IResolvable;
 
 Whether a service connection policy is created for the auto connections configured for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_auto_connection_policy_enabled SqlDatabaseInstance#psc_auto_connection_policy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_auto_connection_policy_enabled SqlDatabaseInstance#psc_auto_connection_policy_enabled}
 
 ---
 
@@ -4411,7 +4503,7 @@ public readonly pscAutoConnections: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 psc_auto_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_auto_connections SqlDatabaseInstance#psc_auto_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_auto_connections SqlDatabaseInstance#psc_auto_connections}
 
 ---
 
@@ -4425,7 +4517,7 @@ public readonly pscAutoDnsEnabled: boolean | IResolvable;
 
 Whether PSC auto DNS is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_auto_dns_enabled SqlDatabaseInstance#psc_auto_dns_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_auto_dns_enabled SqlDatabaseInstance#psc_auto_dns_enabled}
 
 ---
 
@@ -4439,7 +4531,7 @@ public readonly pscEnabled: boolean | IResolvable;
 
 Whether PSC connectivity is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_enabled SqlDatabaseInstance#psc_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_enabled SqlDatabaseInstance#psc_enabled}
 
 ---
 
@@ -4453,7 +4545,7 @@ public readonly pscWriteEndpointDnsEnabled: boolean | IResolvable;
 
 Whether PSC write endpoint DNS is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#psc_write_endpoint_dns_enabled SqlDatabaseInstance#psc_write_endpoint_dns_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#psc_write_endpoint_dns_enabled SqlDatabaseInstance#psc_write_endpoint_dns_enabled}
 
 ---
 
@@ -4488,7 +4580,7 @@ The consumer network of this consumer endpoint.
 
 This must be a resource path that includes both the host project and the network name. The consumer host project of this network might be different from the consumer service project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#consumer_network SqlDatabaseInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#consumer_network SqlDatabaseInstance#consumer_network}
 
 ---
 
@@ -4502,7 +4594,7 @@ public readonly consumerServiceProjectId: string;
 
 The project ID of consumer service project of this consumer endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#consumer_service_project_id SqlDatabaseInstance#consumer_service_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#consumer_service_project_id SqlDatabaseInstance#consumer_service_project_id}
 
 ---
 
@@ -4536,7 +4628,7 @@ public readonly followGaeApplication: string;
 
 A Google App Engine application whose zone to remain in. Must be in the same region as this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#follow_gae_application SqlDatabaseInstance#follow_gae_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#follow_gae_application SqlDatabaseInstance#follow_gae_application}
 
 ---
 
@@ -4550,7 +4642,7 @@ public readonly secondaryZone: string;
 
 The preferred Compute Engine zone for the secondary/failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#secondary_zone SqlDatabaseInstance#secondary_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#secondary_zone SqlDatabaseInstance#secondary_zone}
 
 ---
 
@@ -4564,7 +4656,7 @@ public readonly zone: string;
 
 The preferred compute engine zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#zone SqlDatabaseInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#zone SqlDatabaseInstance#zone}
 
 ---
 
@@ -4598,7 +4690,7 @@ public readonly day: number;
 
 Day of week (1-7), starting on Monday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#day SqlDatabaseInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#day SqlDatabaseInstance#day}
 
 ---
 
@@ -4612,7 +4704,7 @@ public readonly hour: number;
 
 Hour of day (0-23), ignored if day not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#hour SqlDatabaseInstance#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#hour SqlDatabaseInstance#hour}
 
 ---
 
@@ -4626,7 +4718,7 @@ public readonly updateTrack: string;
 
 Receive updates after one week (canary) or after two weeks (stable) or after five weeks (week5) of notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#update_track SqlDatabaseInstance#update_track}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#update_track SqlDatabaseInstance#update_track}
 
 ---
 
@@ -4663,7 +4755,7 @@ public readonly enablePasswordPolicy: boolean | IResolvable;
 
 Whether the password policy is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enable_password_policy SqlDatabaseInstance#enable_password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enable_password_policy SqlDatabaseInstance#enable_password_policy}
 
 ---
 
@@ -4677,7 +4769,7 @@ public readonly complexity: string;
 
 Password complexity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#complexity SqlDatabaseInstance#complexity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#complexity SqlDatabaseInstance#complexity}
 
 ---
 
@@ -4691,7 +4783,7 @@ public readonly disallowUsernameSubstring: boolean | IResolvable;
 
 Disallow username as a part of the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disallow_username_substring SqlDatabaseInstance#disallow_username_substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disallow_username_substring SqlDatabaseInstance#disallow_username_substring}
 
 ---
 
@@ -4705,7 +4797,7 @@ public readonly minLength: number;
 
 Minimum number of characters allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#min_length SqlDatabaseInstance#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#min_length SqlDatabaseInstance#min_length}
 
 ---
 
@@ -4719,7 +4811,7 @@ public readonly passwordChangeInterval: string;
 
 Minimum interval after which the password can be changed. This flag is only supported for PostgresSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#password_change_interval SqlDatabaseInstance#password_change_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#password_change_interval SqlDatabaseInstance#password_change_interval}
 
 ---
 
@@ -4733,7 +4825,7 @@ public readonly reuseInterval: number;
 
 Number of previous passwords that cannot be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#reuse_interval SqlDatabaseInstance#reuse_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#reuse_interval SqlDatabaseInstance#reuse_interval}
 
 ---
 
@@ -4771,7 +4863,7 @@ public readonly disableScaleIn: boolean | IResolvable;
 
 True if auto scale in is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#disable_scale_in SqlDatabaseInstance#disable_scale_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#disable_scale_in SqlDatabaseInstance#disable_scale_in}
 
 ---
 
@@ -4785,7 +4877,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if Read Pool Auto Scale is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
 
 ---
 
@@ -4801,7 +4893,7 @@ Maximum number of nodes in the read pool.
 
 If set to lower than current node count, node count will be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#max_node_count SqlDatabaseInstance#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#max_node_count SqlDatabaseInstance#max_node_count}
 
 ---
 
@@ -4817,7 +4909,7 @@ Minimum number of nodes in the read pool.
 
 If set to higher than current node count, node count will be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#min_node_count SqlDatabaseInstance#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#min_node_count SqlDatabaseInstance#min_node_count}
 
 ---
 
@@ -4831,7 +4923,7 @@ public readonly scaleInCooldownSeconds: number;
 
 The cooldown period for scale in operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#scale_in_cooldown_seconds SqlDatabaseInstance#scale_in_cooldown_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#scale_in_cooldown_seconds SqlDatabaseInstance#scale_in_cooldown_seconds}
 
 ---
 
@@ -4845,7 +4937,7 @@ public readonly scaleOutCooldownSeconds: number;
 
 The cooldown period for scale out operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#scale_out_cooldown_seconds SqlDatabaseInstance#scale_out_cooldown_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#scale_out_cooldown_seconds SqlDatabaseInstance#scale_out_cooldown_seconds}
 
 ---
 
@@ -4859,7 +4951,7 @@ public readonly targetMetrics: IResolvable | SqlDatabaseInstanceSettingsReadPool
 
 target_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#target_metrics SqlDatabaseInstance#target_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#target_metrics SqlDatabaseInstance#target_metrics}
 
 ---
 
@@ -4892,7 +4984,7 @@ public readonly metric: string;
 
 Metric name for Read Pool Auto Scale.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#metric SqlDatabaseInstance#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#metric SqlDatabaseInstance#metric}
 
 ---
 
@@ -4906,7 +4998,7 @@ public readonly targetValue: number;
 
 Target value for Read Pool Auto Scale.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#target_value SqlDatabaseInstance#target_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#target_value SqlDatabaseInstance#target_value}
 
 ---
 
@@ -4940,7 +5032,7 @@ public readonly bucket: string;
 
 The name of the destination bucket (e.g., gs://mybucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#bucket SqlDatabaseInstance#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#bucket SqlDatabaseInstance#bucket}
 
 ---
 
@@ -4956,7 +5048,7 @@ How long to keep generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#retention_interval SqlDatabaseInstance#retention_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#retention_interval SqlDatabaseInstance#retention_interval}
 
 ---
 
@@ -4972,7 +5064,7 @@ How often to upload generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#upload_interval SqlDatabaseInstance#upload_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#upload_interval SqlDatabaseInstance#upload_interval}
 
 ---
 
@@ -4990,9 +5082,9 @@ const sqlDatabaseInstanceTimeouts: sqlDatabaseInstance.SqlDatabaseInstanceTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}. |
 
 ---
 
@@ -5004,7 +5096,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}.
 
 ---
 
@@ -5016,7 +5108,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}.
 
 ---
 
@@ -5028,7 +5120,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}.
 
 ---
 
@@ -15159,10 +15251,12 @@ public resetConsumerServiceProjectId(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetworkStatus">consumerNetworkStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.instanceAutoDnsStatus">instanceAutoDnsStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.serviceConnectionPolicy">serviceConnectionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.serviceConnectionPolicyCreationResult">serviceConnectionPolicyCreationResult</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.writeEndpointAutoDnsStatus">writeEndpointAutoDnsStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetworkInput">consumerNetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerServiceProjectIdInput">consumerServiceProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetwork">consumerNetwork</a></code> | <code>string</code> | *No description.* |
@@ -15205,6 +15299,16 @@ public readonly consumerNetworkStatus: string;
 
 ---
 
+##### `instanceAutoDnsStatus`<sup>Required</sup> <a name="instanceAutoDnsStatus" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.instanceAutoDnsStatus"></a>
+
+```typescript
+public readonly instanceAutoDnsStatus: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.ipAddress"></a>
 
 ```typescript
@@ -15239,6 +15343,16 @@ public readonly serviceConnectionPolicyCreationResult: string;
 
 ```typescript
 public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `writeEndpointAutoDnsStatus`<sup>Required</sup> <a name="writeEndpointAutoDnsStatus" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.writeEndpointAutoDnsStatus"></a>
+
+```typescript
+public readonly writeEndpointAutoDnsStatus: string;
 ```
 
 - *Type:* string

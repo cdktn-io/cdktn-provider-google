@@ -4,7 +4,7 @@
 
 ### ApigeeDataCollector <a name="ApigeeDataCollector" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector google_apigee_data_collector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector google_apigee_data_collector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer"></a>
 
@@ -45,7 +45,7 @@ ApigeeDataCollector.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of data this data collector will collect. Possible values: ["BOOLEAN", "DATETIME", "FLOAT", "INTEGER", "STRING"]. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the data collector. |
-| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts">ApigeeDataCollectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The ID for the data collector. Must begin with 'dc_'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#data_collector_id ApigeeDataCollector#data_collector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#data_collector_id ApigeeDataCollector#data_collector_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee data collector, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#org_id ApigeeDataCollector#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#org_id ApigeeDataCollector#org_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of data this data collector will collect. Possible values: ["BOOLEAN", "DATETIME", "FLOAT", "INTEGER", "STRING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#type ApigeeDataCollector#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#type ApigeeDataCollector#type}
 
 ---
 
@@ -153,7 +153,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#deletion_policy ApigeeDataCollector#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#deletion_policy ApigeeDataCollector#deletion_policy}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the data collector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#description ApigeeDataCollector#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#description ApigeeDataCollector#description}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -184,7 +184,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#timeouts ApigeeDataCollector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#timeouts ApigeeDataCollector#timeouts}
 
 ---
 
@@ -674,7 +674,7 @@ The construct id used in the generated config for the ApigeeDataCollector to imp
 
 The id of the existing ApigeeDataCollector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,7 +1097,7 @@ ApigeeDataCollectorConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of data this data collector will collect. Possible values: ["BOOLEAN", "DATETIME", "FLOAT", "INTEGER", "STRING"]. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the data collector. |
-| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts">ApigeeDataCollectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1182,7 +1182,7 @@ public java.lang.String getDataCollectorId();
 
 The ID for the data collector. Must begin with 'dc_'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#data_collector_id ApigeeDataCollector#data_collector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#data_collector_id ApigeeDataCollector#data_collector_id}
 
 ---
 
@@ -1196,7 +1196,7 @@ public java.lang.String getOrgId();
 
 The Apigee Organization associated with the Apigee data collector, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#org_id ApigeeDataCollector#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#org_id ApigeeDataCollector#org_id}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getType();
 
 The type of data this data collector will collect. Possible values: ["BOOLEAN", "DATETIME", "FLOAT", "INTEGER", "STRING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#type ApigeeDataCollector#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#type ApigeeDataCollector#type}
 
 ---
 
@@ -1231,7 +1231,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#deletion_policy ApigeeDataCollector#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#deletion_policy ApigeeDataCollector#deletion_policy}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.String getDescription();
 
 A description of the data collector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#description ApigeeDataCollector#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#description ApigeeDataCollector#description}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#id ApigeeDataCollector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1274,7 @@ public ApigeeDataCollectorTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#timeouts ApigeeDataCollector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#timeouts ApigeeDataCollector#timeouts}
 
 ---
 
@@ -1296,9 +1296,9 @@ ApigeeDataCollectorTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#create ApigeeDataCollector#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#delete ApigeeDataCollector#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#update ApigeeDataCollector#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#create ApigeeDataCollector#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#delete ApigeeDataCollector#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#update ApigeeDataCollector#update}. |
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#create ApigeeDataCollector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#create ApigeeDataCollector#create}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#delete ApigeeDataCollector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#delete ApigeeDataCollector#delete}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apigee_data_collector#update ApigeeDataCollector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_data_collector#update ApigeeDataCollector#update}.
 
 ---
 

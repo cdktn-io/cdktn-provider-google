@@ -4,7 +4,7 @@
 
 ### VertexAiTensorboardRun <a name="VertexAiTensorboardRun" id="@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRun"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run google_vertex_ai_tensorboard_run}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run google_vertex_ai_tensorboard_run}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRun.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the VertexAiTensorboardRun to 
 
 The id of the existing VertexAiTensorboardRun that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1083,9 +1083,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaitensorbo
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.tensorboardRunId">TensorboardRunId</a></code> | <code>*string</code> | The ID to use for the Tensorboard run, which becomes the final component of the Tensorboard run's resource name. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.description">Description</a></code> | <code>*string</code> | Description of this TensorboardRun. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#id VertexAiTensorboardRun#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#id VertexAiTensorboardRun#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels with user-defined metadata to organize your TensorboardRuns. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#project VertexAiTensorboardRun#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#project VertexAiTensorboardRun#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts">VertexAiTensorboardRunTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1170,7 +1170,7 @@ DisplayName *string
 
 User provided name of this TensorboardRun. This value must be unique among all TensorboardRuns belonging to the same parent TensorboardExperiment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#display_name VertexAiTensorboardRun#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#display_name VertexAiTensorboardRun#display_name}
 
 ---
 
@@ -1184,7 +1184,7 @@ Experiment *string
 
 The Tensorboard Experiment ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#experiment VertexAiTensorboardRun#experiment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#experiment VertexAiTensorboardRun#experiment}
 
 ---
 
@@ -1198,7 +1198,7 @@ Location *string
 
 The location of the Tensorboard Run. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#location VertexAiTensorboardRun#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#location VertexAiTensorboardRun#location}
 
 ---
 
@@ -1212,7 +1212,7 @@ Tensorboard *string
 
 The Tensorboard instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#tensorboard VertexAiTensorboardRun#tensorboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#tensorboard VertexAiTensorboardRun#tensorboard}
 
 ---
 
@@ -1229,7 +1229,7 @@ The ID to use for the Tensorboard run, which becomes the final component of the 
 This value should be 1-128 characters, and valid characters
 are '/a-z-/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#tensorboard_run_id VertexAiTensorboardRun#tensorboard_run_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#tensorboard_run_id VertexAiTensorboardRun#tensorboard_run_id}
 
 ---
 
@@ -1250,7 +1250,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#deletion_policy VertexAiTensorboardRun#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#deletion_policy VertexAiTensorboardRun#deletion_policy}
 
 ---
 
@@ -1264,7 +1264,7 @@ Description *string
 
 Description of this TensorboardRun.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#description VertexAiTensorboardRun#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#description VertexAiTensorboardRun#description}
 
 ---
 
@@ -1276,7 +1276,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#id VertexAiTensorboardRun#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#id VertexAiTensorboardRun#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1313,7 +1313,7 @@ and are immutable.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#labels VertexAiTensorboardRun#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#labels VertexAiTensorboardRun#labels}
 
 ---
 
@@ -1325,7 +1325,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#project VertexAiTensorboardRun#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#project VertexAiTensorboardRun#project}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Timeouts VertexAiTensorboardRunTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#timeouts VertexAiTensorboardRun#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#timeouts VertexAiTensorboardRun#timeouts}
 
 ---
 
@@ -1361,9 +1361,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaitensorbo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#create VertexAiTensorboardRun#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#delete VertexAiTensorboardRun#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#update VertexAiTensorboardRun#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#create VertexAiTensorboardRun#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#delete VertexAiTensorboardRun#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardRun.VertexAiTensorboardRunTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#update VertexAiTensorboardRun#update}. |
 
 ---
 
@@ -1375,7 +1375,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#create VertexAiTensorboardRun#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#create VertexAiTensorboardRun#create}.
 
 ---
 
@@ -1387,7 +1387,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#delete VertexAiTensorboardRun#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#delete VertexAiTensorboardRun#delete}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_tensorboard_run#update VertexAiTensorboardRun#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_tensorboard_run#update VertexAiTensorboardRun#update}.
 
 ---
 
