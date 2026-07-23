@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface VmwareengineClusterConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#deletion_policy VmwareengineCluster#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#deletion_policy VmwareengineCluster#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#id VmwareengineCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#id VmwareengineCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface VmwareengineClusterConfig extends cdktn.TerraformMetaArguments 
   /**
   * The ID of the Cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#name VmwareengineCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#name VmwareengineCluster#name}
   */
   readonly name: string;
   /**
@@ -42,31 +42,31 @@ export interface VmwareengineClusterConfig extends cdktn.TerraformMetaArguments 
   * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
   * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#parent VmwareengineCluster#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#parent VmwareengineCluster#parent}
   */
   readonly parent: string;
   /**
   * autoscaling_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#autoscaling_settings VmwareengineCluster#autoscaling_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#autoscaling_settings VmwareengineCluster#autoscaling_settings}
   */
   readonly autoscalingSettings?: VmwareengineClusterAutoscalingSettings;
   /**
   * datastore_mount_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#datastore_mount_config VmwareengineCluster#datastore_mount_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#datastore_mount_config VmwareengineCluster#datastore_mount_config}
   */
   readonly datastoreMountConfig?: VmwareengineClusterDatastoreMountConfig[] | cdktn.IResolvable;
   /**
   * node_type_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#node_type_configs VmwareengineCluster#node_type_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#node_type_configs VmwareengineCluster#node_type_configs}
   */
   readonly nodeTypeConfigs?: VmwareengineClusterNodeTypeConfigs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#timeouts VmwareengineCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#timeouts VmwareengineCluster#timeouts}
   */
   readonly timeouts?: VmwareengineClusterTimeouts;
 }
@@ -74,13 +74,13 @@ export interface VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsum
   /**
   * The utilization triggering the scale-in operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
   */
   readonly scaleIn: number;
   /**
   * The utilization triggering the scale-out operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
   */
   readonly scaleOut: number;
 }
@@ -189,13 +189,13 @@ export interface VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThr
   /**
   * The utilization triggering the scale-in operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
   */
   readonly scaleIn: number;
   /**
   * The utilization triggering the scale-out operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
   */
   readonly scaleOut: number;
 }
@@ -304,13 +304,13 @@ export interface VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorag
   /**
   * The utilization triggering the scale-in operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_in VmwareengineCluster#scale_in}
   */
   readonly scaleIn: number;
   /**
   * The utilization triggering the scale-out operation in percent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_out VmwareengineCluster#scale_out}
   */
   readonly scaleOut: number;
 }
@@ -417,38 +417,38 @@ export class VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThr
 }
 export interface VmwareengineClusterAutoscalingSettingsAutoscalingPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#autoscale_policy_id VmwareengineCluster#autoscale_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#autoscale_policy_id VmwareengineCluster#autoscale_policy_id}
   */
   readonly autoscalePolicyId: string;
   /**
   * The canonical identifier of the node type to add or remove.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#node_type_id VmwareengineCluster#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#node_type_id VmwareengineCluster#node_type_id}
   */
   readonly nodeTypeId: string;
   /**
   * Number of nodes to add to a cluster during a scale-out operation.
   * Must be divisible by 2 for stretched clusters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#scale_out_size VmwareengineCluster#scale_out_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#scale_out_size VmwareengineCluster#scale_out_size}
   */
   readonly scaleOutSize: number;
   /**
   * consumed_memory_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#consumed_memory_thresholds VmwareengineCluster#consumed_memory_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#consumed_memory_thresholds VmwareengineCluster#consumed_memory_thresholds}
   */
   readonly consumedMemoryThresholds?: VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds;
   /**
   * cpu_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#cpu_thresholds VmwareengineCluster#cpu_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#cpu_thresholds VmwareengineCluster#cpu_thresholds}
   */
   readonly cpuThresholds?: VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds;
   /**
   * storage_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#storage_thresholds VmwareengineCluster#storage_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#storage_thresholds VmwareengineCluster#storage_thresholds}
   */
   readonly storageThresholds?: VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds;
 }
@@ -706,27 +706,27 @@ export interface VmwareengineClusterAutoscalingSettings {
   * Cool down period must be in whole minutes (for example, 30m, 31m, 50m).
   * Mandatory for successful addition of autoscaling settings in cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#cool_down_period VmwareengineCluster#cool_down_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#cool_down_period VmwareengineCluster#cool_down_period}
   */
   readonly coolDownPeriod?: string;
   /**
   * Maximum number of nodes of any type in a cluster.
   * Mandatory for successful addition of autoscaling settings in cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#max_cluster_node_count VmwareengineCluster#max_cluster_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#max_cluster_node_count VmwareengineCluster#max_cluster_node_count}
   */
   readonly maxClusterNodeCount?: number;
   /**
   * Minimum number of nodes of any type in a cluster.
   * Mandatory for successful addition of autoscaling settings in cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#min_cluster_node_count VmwareengineCluster#min_cluster_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#min_cluster_node_count VmwareengineCluster#min_cluster_node_count}
   */
   readonly minClusterNodeCount?: number;
   /**
   * autoscaling_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#autoscaling_policies VmwareengineCluster#autoscaling_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#autoscaling_policies VmwareengineCluster#autoscaling_policies}
   */
   readonly autoscalingPolicies: VmwareengineClusterAutoscalingSettingsAutoscalingPolicies[] | cdktn.IResolvable;
 }
@@ -898,7 +898,7 @@ export interface VmwareengineClusterDatastoreMountConfigDatastoreNetwork {
   * Supported from vsphere 8.0u1. Possible values are 1-4.
   * Default value is 4.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#connection_count VmwareengineCluster#connection_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#connection_count VmwareengineCluster#connection_count}
   */
   readonly connectionCount?: number;
   /**
@@ -906,7 +906,7 @@ export interface VmwareengineClusterDatastoreMountConfigDatastoreNetwork {
   * MTU value can range from 1330-9000. If not set, system sets
   * default MTU size to 1500.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#mtu VmwareengineCluster#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#mtu VmwareengineCluster#mtu}
   */
   readonly mtu?: number;
   /**
@@ -915,7 +915,7 @@ export interface VmwareengineClusterDatastoreMountConfigDatastoreNetwork {
   * https://cloud.google.com/apis/design/resource_names.
   * e.g. projects/my-project/locations/us-central1/subnets/my-subnet
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#subnet VmwareengineCluster#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#subnet VmwareengineCluster#subnet}
   */
   readonly subnet: string;
 }
@@ -1065,7 +1065,7 @@ export interface VmwareengineClusterDatastoreMountConfig {
   * READ_ONLY
   * READ_WRITE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#access_mode VmwareengineCluster#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#access_mode VmwareengineCluster#access_mode}
   */
   readonly accessMode?: string;
   /**
@@ -1077,7 +1077,7 @@ export interface VmwareengineClusterDatastoreMountConfig {
   * For example:
   * 'projects/my-project/locations/us-central1/datastores/my-datastore'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#datastore VmwareengineCluster#datastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#datastore VmwareengineCluster#datastore}
   */
   readonly datastore: string;
   /**
@@ -1086,7 +1086,7 @@ export interface VmwareengineClusterDatastoreMountConfig {
   * Colocation requirement is the requirement that the cluster must be in the
   * same region/zone of datastore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#ignore_colocation VmwareengineCluster#ignore_colocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#ignore_colocation VmwareengineCluster#ignore_colocation}
   */
   readonly ignoreColocation?: boolean | cdktn.IResolvable;
   /**
@@ -1095,13 +1095,13 @@ export interface VmwareengineClusterDatastoreMountConfig {
   * Possible values:
   * NFS_V3
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#nfs_version VmwareengineCluster#nfs_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#nfs_version VmwareengineCluster#nfs_version}
   */
   readonly nfsVersion?: string;
   /**
   * datastore_network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#datastore_network VmwareengineCluster#datastore_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#datastore_network VmwareengineCluster#datastore_network}
   */
   readonly datastoreNetwork: VmwareengineClusterDatastoreMountConfigDatastoreNetwork;
 }
@@ -1342,17 +1342,17 @@ export interface VmwareengineClusterNodeTypeConfigs {
   * If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
   * Once the customer is created then corecount cannot be changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#custom_core_count VmwareengineCluster#custom_core_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#custom_core_count VmwareengineCluster#custom_core_count}
   */
   readonly customCoreCount?: number;
   /**
   * The number of nodes of this type in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#node_count VmwareengineCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#node_count VmwareengineCluster#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#node_type_id VmwareengineCluster#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#node_type_id VmwareengineCluster#node_type_id}
   */
   readonly nodeTypeId: string;
 }
@@ -1520,15 +1520,15 @@ export class VmwareengineClusterNodeTypeConfigsList extends cdktn.ComplexList {
 }
 export interface VmwareengineClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#create VmwareengineCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#create VmwareengineCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#delete VmwareengineCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#delete VmwareengineCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#update VmwareengineCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#update VmwareengineCluster#update}
   */
   readonly update?: string;
 }
@@ -1680,7 +1680,7 @@ export class VmwareengineClusterTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster}
 */
 export class VmwareengineCluster extends cdktn.TerraformResource {
 
@@ -1696,7 +1696,7 @@ export class VmwareengineCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VmwareengineCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmwareengineCluster to import
-  * @param importFromId The id of the existing VmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmwareengineCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1708,7 +1708,7 @@ export class VmwareengineCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1719,7 +1719,7 @@ export class VmwareengineCluster extends cdktn.TerraformResource {
       terraformResourceType: 'google_vmwareengine_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

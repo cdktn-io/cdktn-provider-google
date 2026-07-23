@@ -4,7 +4,7 @@
 
 ### NetappVolumeQuotaRule <a name="NetappVolumeQuotaRule" id="@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule google_netapp_volume_quota_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer"></a>
 
@@ -51,10 +51,10 @@ NetappVolumeQuotaRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.volumeName">volumeName</a></code> | <code>java.lang.String</code> | Name of the volume to create the quotaRule in. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for the quota rule. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels as key value pairs of the quota rule. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.target">target</a></code> | <code>java.lang.String</code> | The quota rule applies to the specified user or group. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts">NetappVolumeQuotaRuleTimeouts</a></code> | timeouts block. |
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The maximum allowed capacity in MiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the quotaRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Types of Quota Rule. Possible values: ["INDIVIDUAL_USER_QUOTA", "INDIVIDUAL_GROUP_QUOTA", "DEFAULT_USER_QUOTA", "DEFAULT_GROUP_QUOTA"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the volume to create the quotaRule in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
 
 ---
 
@@ -173,7 +173,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for the quota rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +207,7 @@ Labels as key value pairs of the quota rule. Example: '{ "owner": "Bob", "depart
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
 
 ---
 
@@ -243,7 +243,7 @@ Valid targets for volumes with NFS protocol enabled:
 * Windows SID for individual user quota
   Leave empty for default quotas
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
 
 ---
 
@@ -771,7 +771,7 @@ The construct id used in the generated config for the NetappVolumeQuotaRule to i
 
 The id of the existing NetappVolumeQuotaRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1332,10 +1332,10 @@ NetappVolumeQuotaRuleConfig.builder()
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.volumeName">volumeName</a></code> | <code>java.lang.String</code> | Name of the volume to create the quotaRule in. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for the quota rule. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels as key value pairs of the quota rule. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.location">location</a></code> | <code>java.lang.String</code> | Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.target">target</a></code> | <code>java.lang.String</code> | The quota rule applies to the specified user or group. |
 | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts">NetappVolumeQuotaRuleTimeouts</a></code> | timeouts block. |
 
@@ -1421,7 +1421,7 @@ public java.lang.Number getDiskLimitMib();
 
 The maximum allowed capacity in MiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
 
 ---
 
@@ -1435,7 +1435,7 @@ public java.lang.String getName();
 
 The resource name of the quotaRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
 
 ---
 
@@ -1449,7 +1449,7 @@ public java.lang.String getType();
 
 Types of Quota Rule. Possible values: ["INDIVIDUAL_USER_QUOTA", "INDIVIDUAL_GROUP_QUOTA", "DEFAULT_USER_QUOTA", "DEFAULT_GROUP_QUOTA"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
 
 ---
 
@@ -1463,7 +1463,7 @@ public java.lang.String getVolumeName();
 
 Name of the volume to create the quotaRule in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
 
 ---
 
@@ -1484,7 +1484,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#deletion_policy NetappVolumeQuotaRule#deletion_policy}
 
 ---
 
@@ -1498,7 +1498,7 @@ public java.lang.String getDescription();
 
 Description for the quota rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
 
 ---
 
@@ -1510,7 +1510,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1530,7 +1530,7 @@ Labels as key value pairs of the quota rule. Example: '{ "owner": "Bob", "depart
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getLocation();
 
 Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
 
 ---
 
@@ -1556,7 +1556,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
 
 ---
 
@@ -1578,7 +1578,7 @@ Valid targets for volumes with NFS protocol enabled:
 * Windows SID for individual user quota
   Leave empty for default quotas
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
 
 ---
 
@@ -1592,7 +1592,7 @@ public NetappVolumeQuotaRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
 
 ---
 
@@ -1614,9 +1614,9 @@ NetappVolumeQuotaRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}. |
-| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}. |
+| <code><a href="#@cdktn/provider-google.netappVolumeQuotaRule.NetappVolumeQuotaRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}. |
 
 ---
 
@@ -1628,7 +1628,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#create NetappVolumeQuotaRule#create}.
 
 ---
 
@@ -1640,7 +1640,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#delete NetappVolumeQuotaRule#delete}.
 
 ---
 
@@ -1652,7 +1652,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/netapp_volume_quota_rule#update NetappVolumeQuotaRule#update}.
 
 ---
 

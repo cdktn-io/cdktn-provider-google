@@ -4,7 +4,7 @@
 
 ### DataGoogleDataLineageConfig <a name="DataGoogleDataLineageConfig" id="@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config google_data_lineage_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config google_data_lineage_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataGoogleDataLineageConfig.DataGoogleDataLineageConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | The region of the data lineage configuration for integration. |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Parent scope for the config. Format: projects/{project-id\|project-number} or folders/{folder-number} or organizations/{organization-number}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The region of the data lineage configuration for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Parent scope for the config. Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataGoogleDataLineageConfi
 
 The id of the existing DataGoogleDataLineageConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig.property.location">location</a></code> | <code>str</code> | The region of the data lineage configuration for integration. |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig.property.parent">parent</a></code> | <code>str</code> | Parent scope for the config. Format: projects/{project-id\|project-number} or folders/{folder-number} or organizations/{organization-number}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}. |
 
 ---
 
@@ -922,7 +922,7 @@ location: str
 
 The region of the data lineage configuration for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#location DataGoogleDataLineageConfig#location}
 
 ---
 
@@ -936,7 +936,7 @@ parent: str
 
 Parent scope for the config. Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#parent DataGoogleDataLineageConfig#parent}
 
 ---
 
@@ -948,7 +948,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/data_lineage_config#id DataGoogleDataLineageConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

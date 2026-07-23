@@ -30,29 +30,29 @@ export interface ChronicleFeedConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#deletion_policy ChronicleFeed#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#deletion_policy ChronicleFeed#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Customer-provided feed name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#display_name ChronicleFeed#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#display_name ChronicleFeed#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether the feed is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#enabled ChronicleFeed#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#enabled ChronicleFeed#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#feed ChronicleFeed#feed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#feed ChronicleFeed#feed}
   */
   readonly feed?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#id ChronicleFeed#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#id ChronicleFeed#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,41 +61,41 @@ export interface ChronicleFeedConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#instance ChronicleFeed#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#instance ChronicleFeed#instance}
   */
   readonly instance: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#location ChronicleFeed#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#location ChronicleFeed#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#project ChronicleFeed#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#project ChronicleFeed#project}
   */
   readonly project?: string;
   /**
   * details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#details ChronicleFeed#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#details ChronicleFeed#details}
   */
   readonly details?: ChronicleFeedDetails;
   /**
   * failure_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#failure_details ChronicleFeed#failure_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#failure_details ChronicleFeed#failure_details}
   */
   readonly failureDetails?: ChronicleFeedFailureDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#timeouts ChronicleFeed#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#timeouts ChronicleFeed#timeouts}
   */
   readonly timeouts?: ChronicleFeedTimeouts;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed google_chronicle_feed}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed google_chronicle_feed}
 */
 export class ChronicleFeed extends cdktn.TerraformResource {
 
@@ -111,7 +111,7 @@ export class ChronicleFeed extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleFeed resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleFeed to import
-  * @param importFromId The id of the existing ChronicleFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleFeed to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -123,7 +123,7 @@ export class ChronicleFeed extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_feed google_chronicle_feed} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_feed google_chronicle_feed} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -134,7 +134,7 @@ export class ChronicleFeed extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_feed',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### OrganizationIamPolicy <a name="OrganizationIamPolicy" id="@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy google_organization_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy google_organization_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer"></a>
 
@@ -37,8 +37,8 @@ OrganizationIamPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.orgId">orgId</a></code> | <code>java.lang.String</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#org_id OrganizationIamPolicy#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#org_id OrganizationIamPolicy#org_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -583,7 +583,7 @@ The construct id used in the generated config for the OrganizationIamPolicy to i
 
 The id of the existing OrganizationIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,8 +888,8 @@ OrganizationIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.orgId">orgId</a></code> | <code>java.lang.String</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.organizationIamPolicy.OrganizationIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}. |
 
 ---
 
@@ -973,7 +973,7 @@ public java.lang.String getOrgId();
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#org_id OrganizationIamPolicy#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#org_id OrganizationIamPolicy#org_id}
 
 ---
 
@@ -985,7 +985,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}.
 
 ---
 
@@ -997,7 +997,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/organization_iam_policy#id OrganizationIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

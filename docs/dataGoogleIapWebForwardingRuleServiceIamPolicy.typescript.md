@@ -4,7 +4,7 @@
 
 ### DataGoogleIapWebForwardingRuleServiceIamPolicy <a name="DataGoogleIapWebForwardingRuleServiceIamPolicy" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy google_iap_web_forwarding_rule_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy google_iap_web_forwarding_rule_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleIapWebForwarding
 
 The id of the existing DataGoogleIapWebForwardingRuleServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,9 +683,9 @@ const dataGoogleIapWebForwardingRuleServiceIamPolicyConfig: dataGoogleIapWebForw
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.forwardingRuleServiceName">forwardingRuleServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#forwarding_rule_service_name DataGoogleIapWebForwardingRuleServiceIamPolicy#forwarding_rule_service_name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#id DataGoogleIapWebForwardingRuleServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#project DataGoogleIapWebForwardingRuleServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.forwardingRuleServiceName">forwardingRuleServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#forwarding_rule_service_name DataGoogleIapWebForwardingRuleServiceIamPolicy#forwarding_rule_service_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#id DataGoogleIapWebForwardingRuleServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#project DataGoogleIapWebForwardingRuleServiceIamPolicy#project}. |
 
 ---
 
@@ -767,7 +767,7 @@ public readonly forwardingRuleServiceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#forwarding_rule_service_name DataGoogleIapWebForwardingRuleServiceIamPolicy#forwarding_rule_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#forwarding_rule_service_name DataGoogleIapWebForwardingRuleServiceIamPolicy#forwarding_rule_service_name}.
 
 ---
 
@@ -779,7 +779,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#id DataGoogleIapWebForwardingRuleServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#id DataGoogleIapWebForwardingRuleServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -794,7 +794,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#project DataGoogleIapWebForwardingRuleServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/iap_web_forwarding_rule_service_iam_policy#project DataGoogleIapWebForwardingRuleServiceIamPolicy#project}.
 
 ---
 

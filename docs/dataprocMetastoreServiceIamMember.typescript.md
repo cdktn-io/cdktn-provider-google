@@ -4,7 +4,7 @@
 
 ### DataprocMetastoreServiceIamMember <a name="DataprocMetastoreServiceIamMember" id="@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member google_dataproc_metastore_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataprocMetastoreServiceIa
 
 The id of the existing DataprocMetastoreServiceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const dataprocMetastoreServiceIamMemberCondition: dataprocMetastoreServiceIamMem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#expression DataprocMetastoreServiceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#title DataprocMetastoreServiceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#description DataprocMetastoreServiceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#expression DataprocMetastoreServiceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#title DataprocMetastoreServiceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#description DataprocMetastoreServiceIamMember#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#expression DataprocMetastoreServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#expression DataprocMetastoreServiceIamMember#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#title DataprocMetastoreServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#title DataprocMetastoreServiceIamMember#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#description DataprocMetastoreServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#description DataprocMetastoreServiceIamMember#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const dataprocMetastoreServiceIamMemberConfig: dataprocMetastoreServiceIamMember
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#member DataprocMetastoreServiceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#role DataprocMetastoreServiceIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#service_id DataprocMetastoreServiceIamMember#service_id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#member DataprocMetastoreServiceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#role DataprocMetastoreServiceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#service_id DataprocMetastoreServiceIamMember#service_id}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberCondition">DataprocMetastoreServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#id DataprocMetastoreServiceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#location DataprocMetastoreServiceIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#project DataprocMetastoreServiceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#id DataprocMetastoreServiceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#location DataprocMetastoreServiceIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreServiceIamMember.DataprocMetastoreServiceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#project DataprocMetastoreServiceIamMember#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#member DataprocMetastoreServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#member DataprocMetastoreServiceIamMember#member}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#role DataprocMetastoreServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#role DataprocMetastoreServiceIamMember#role}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly serviceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#service_id DataprocMetastoreServiceIamMember#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#service_id DataprocMetastoreServiceIamMember#service_id}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: DataprocMetastoreServiceIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#condition DataprocMetastoreServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#condition DataprocMetastoreServiceIamMember#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#id DataprocMetastoreServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#id DataprocMetastoreServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#location DataprocMetastoreServiceIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#location DataprocMetastoreServiceIamMember#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_metastore_service_iam_member#project DataprocMetastoreServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_service_iam_member#project DataprocMetastoreServiceIamMember#project}.
 
 ---
 

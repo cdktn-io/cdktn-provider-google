@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ComputeOrganizationSecurityPolicyAssociationConfig extends cdkt
   /**
   * The resource that the security policy is attached to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#attachment_id ComputeOrganizationSecurityPolicyAssociation#attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#attachment_id ComputeOrganizationSecurityPolicyAssociation#attachment_id}
   */
   readonly attachmentId: string;
   /**
@@ -27,23 +27,23 @@ export interface ComputeOrganizationSecurityPolicyAssociationConfig extends cdkt
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#deletion_policy ComputeOrganizationSecurityPolicyAssociation#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#deletion_policy ComputeOrganizationSecurityPolicyAssociation#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A list of folders to exclude from the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#excluded_folders ComputeOrganizationSecurityPolicyAssociation#excluded_folders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#excluded_folders ComputeOrganizationSecurityPolicyAssociation#excluded_folders}
   */
   readonly excludedFolders?: string[];
   /**
   * A list of projects to exclude from the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#excluded_projects ComputeOrganizationSecurityPolicyAssociation#excluded_projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#excluded_projects ComputeOrganizationSecurityPolicyAssociation#excluded_projects}
   */
   readonly excludedProjects?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,29 +52,29 @@ export interface ComputeOrganizationSecurityPolicyAssociationConfig extends cdkt
   /**
   * The name for an association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#name ComputeOrganizationSecurityPolicyAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#name ComputeOrganizationSecurityPolicyAssociation#name}
   */
   readonly name: string;
   /**
   * The security policy ID of the association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#policy_id ComputeOrganizationSecurityPolicyAssociation#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#policy_id ComputeOrganizationSecurityPolicyAssociation#policy_id}
   */
   readonly policyId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#timeouts ComputeOrganizationSecurityPolicyAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#timeouts ComputeOrganizationSecurityPolicyAssociation#timeouts}
   */
   readonly timeouts?: ComputeOrganizationSecurityPolicyAssociationTimeouts;
 }
 export interface ComputeOrganizationSecurityPolicyAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -197,7 +197,7 @@ export class ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association}
 */
 export class ComputeOrganizationSecurityPolicyAssociation extends cdktn.TerraformResource {
 
@@ -213,7 +213,7 @@ export class ComputeOrganizationSecurityPolicyAssociation extends cdktn.Terrafor
   * Generates CDKTN code for importing a ComputeOrganizationSecurityPolicyAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeOrganizationSecurityPolicyAssociation to import
-  * @param importFromId The id of the existing ComputeOrganizationSecurityPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeOrganizationSecurityPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeOrganizationSecurityPolicyAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -225,7 +225,7 @@ export class ComputeOrganizationSecurityPolicyAssociation extends cdktn.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,7 +236,7 @@ export class ComputeOrganizationSecurityPolicyAssociation extends cdktn.Terrafor
       terraformResourceType: 'google_compute_organization_security_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

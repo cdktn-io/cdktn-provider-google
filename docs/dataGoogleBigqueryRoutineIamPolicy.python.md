@@ -4,7 +4,7 @@
 
 ### DataGoogleBigqueryRoutineIamPolicy <a name="DataGoogleBigqueryRoutineIamPolicy" id="@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy google_bigquery_routine_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy google_bigquery_routine_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy(
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}.
 
 ---
 
@@ -534,7 +534,7 @@ The construct id used in the generated config for the DataGoogleBigqueryRoutineI
 
 The id of the existing DataGoogleBigqueryRoutineIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,10 +850,10 @@ dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryRoutineIamPolicy.DataGoogleBigqueryRoutineIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}. |
 
 ---
 
@@ -935,7 +935,7 @@ dataset_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#dataset_id DataGoogleBigqueryRoutineIamPolicy#dataset_id}.
 
 ---
 
@@ -947,7 +947,7 @@ routine_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#routine_id DataGoogleBigqueryRoutineIamPolicy#routine_id}.
 
 ---
 
@@ -959,7 +959,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#id DataGoogleBigqueryRoutineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -974,7 +974,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/bigquery_routine_iam_policy#project DataGoogleBigqueryRoutineIamPolicy#project}.
 
 ---
 

@@ -222,6 +222,7 @@ export * as chronicleDataExport from './chronicle-data-export/index';
 export * as chronicleDataTable from './chronicle-data-table/index';
 export * as chronicleDataTableRow from './chronicle-data-table-row/index';
 export * as chronicleEnvironment from './chronicle-environment/index';
+export * as chronicleEnvironmentGroup from './chronicle-environment-group/index';
 export * as chronicleFeed from './chronicle-feed/index';
 export * as chronicleFindingsRefinement from './chronicle-findings-refinement/index';
 export * as chronicleFindingsRefinementDeployment from './chronicle-findings-refinement-deployment/index';
@@ -438,6 +439,7 @@ export * as computeResourcePolicyAttachment from './compute-resource-policy-atta
 export * as computeRoute from './compute-route/index';
 export * as computeRouter from './compute-router/index';
 export * as computeRouterInterface from './compute-router-interface/index';
+export * as computeRouterNamedSet from './compute-router-named-set/index';
 export * as computeRouterNat from './compute-router-nat/index';
 export * as computeRouterNatAddress from './compute-router-nat-address/index';
 export * as computeRouterPeer from './compute-router-peer/index';
@@ -1295,6 +1297,7 @@ export * as vertexAiReasoningEngineIamBinding from './vertex-ai-reasoning-engine
 export * as vertexAiReasoningEngineIamMember from './vertex-ai-reasoning-engine-iam-member/index';
 export * as vertexAiReasoningEngineIamPolicy from './vertex-ai-reasoning-engine-iam-policy/index';
 export * as vertexAiSchedule from './vertex-ai-schedule/index';
+export * as vertexAiSemanticGovernancePolicyEngine from './vertex-ai-semantic-governance-policy-engine/index';
 export * as vertexAiTensorboard from './vertex-ai-tensorboard/index';
 export * as vertexAiTensorboardExperiment from './vertex-ai-tensorboard-experiment/index';
 export * as vertexAiTensorboardRun from './vertex-ai-tensorboard-run/index';

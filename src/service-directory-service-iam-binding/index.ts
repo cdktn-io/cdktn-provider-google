@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktn from 'cdktn';
 
 export interface ServiceDirectoryServiceIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#id ServiceDirectoryServiceIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#members ServiceDirectoryServiceIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#name ServiceDirectoryServiceIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#role ServiceDirectoryServiceIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#condition ServiceDirectoryServiceIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#condition ServiceDirectoryServiceIamBinding#condition}
   */
   readonly condition?: ServiceDirectoryServiceIamBindingCondition;
 }
 export interface ServiceDirectoryServiceIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#description ServiceDirectoryServiceIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#expression ServiceDirectoryServiceIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#title ServiceDirectoryServiceIamBinding#title}
   */
   readonly title: string;
 }
@@ -184,7 +184,7 @@ export class ServiceDirectoryServiceIamBindingConditionOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding}
 */
 export class ServiceDirectoryServiceIamBinding extends cdktn.TerraformResource {
 
@@ -200,7 +200,7 @@ export class ServiceDirectoryServiceIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceDirectoryServiceIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDirectoryServiceIamBinding to import
-  * @param importFromId The id of the existing ServiceDirectoryServiceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDirectoryServiceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDirectoryServiceIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -212,7 +212,7 @@ export class ServiceDirectoryServiceIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +223,7 @@ export class ServiceDirectoryServiceIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_service_directory_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

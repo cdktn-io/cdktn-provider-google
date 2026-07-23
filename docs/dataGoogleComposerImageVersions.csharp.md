@@ -4,7 +4,7 @@
 
 ### DataGoogleComposerImageVersions <a name="DataGoogleComposerImageVersions" id="@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions google_composer_image_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions google_composer_image_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComposerImageVer
 
 The id of the existing DataGoogleComposerImageVersions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,9 +690,9 @@ new DataGoogleComposerImageVersionsConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#id DataGoogleComposerImageVersions#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#project DataGoogleComposerImageVersions#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#region DataGoogleComposerImageVersions#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#id DataGoogleComposerImageVersions#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#project DataGoogleComposerImageVersions#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#region DataGoogleComposerImageVersions#region}. |
 
 ---
 
@@ -774,7 +774,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#id DataGoogleComposerImageVersions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#id DataGoogleComposerImageVersions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -789,7 +789,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#project DataGoogleComposerImageVersions#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#project DataGoogleComposerImageVersions#project}.
 
 ---
 
@@ -801,7 +801,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/composer_image_versions#region DataGoogleComposerImageVersions#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/composer_image_versions#region DataGoogleComposerImageVersions#region}.
 
 ---
 

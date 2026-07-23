@@ -4,7 +4,7 @@
 
 ### DataprocCluster <a name="DataprocCluster" id="@cdktn/provider-google.dataprocCluster.DataprocCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the DataprocCluster to import.
 
 The id of the existing DataprocCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1094,7 +1094,7 @@ public DataprocClusterClusterConfigAutoscalingConfig AutoscalingConfig { get; se
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#autoscaling_config DataprocCluster#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#autoscaling_config DataprocCluster#autoscaling_config}
 
 ---
 
@@ -1108,7 +1108,7 @@ public IResolvable|DataprocClusterClusterConfigAuxiliaryNodeGroups[] AuxiliaryNo
 
 auxiliary_node_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#auxiliary_node_groups DataprocCluster#auxiliary_node_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#auxiliary_node_groups DataprocCluster#auxiliary_node_groups}
 
 ---
 
@@ -1122,7 +1122,7 @@ public string ClusterTier { get; set; }
 
 Specifies the tier of the cluster created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cluster_tier DataprocCluster#cluster_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cluster_tier DataprocCluster#cluster_tier}
 
 ---
 
@@ -1136,7 +1136,7 @@ public string ClusterType { get; set; }
 
 The type of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cluster_type DataprocCluster#cluster_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cluster_type DataprocCluster#cluster_type}
 
 ---
 
@@ -1150,7 +1150,7 @@ public DataprocClusterClusterConfigDataprocMetricConfig DataprocMetricConfig { g
 
 dataproc_metric_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#dataproc_metric_config DataprocCluster#dataproc_metric_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#dataproc_metric_config DataprocCluster#dataproc_metric_config}
 
 ---
 
@@ -1164,7 +1164,7 @@ public DataprocClusterClusterConfigEncryptionConfig EncryptionConfig { get; set;
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#encryption_config DataprocCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#encryption_config DataprocCluster#encryption_config}
 
 ---
 
@@ -1178,7 +1178,7 @@ public DataprocClusterClusterConfigEndpointConfig EndpointConfig { get; set; }
 
 endpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#endpoint_config DataprocCluster#endpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#endpoint_config DataprocCluster#endpoint_config}
 
 ---
 
@@ -1192,7 +1192,7 @@ public string Engine { get; set; }
 
 Specifies the engine of the cluster created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#engine DataprocCluster#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#engine DataprocCluster#engine}
 
 ---
 
@@ -1206,7 +1206,7 @@ public DataprocClusterClusterConfigGceClusterConfig GceClusterConfig { get; set;
 
 gce_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#gce_cluster_config DataprocCluster#gce_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#gce_cluster_config DataprocCluster#gce_cluster_config}
 
 ---
 
@@ -1220,7 +1220,7 @@ public IResolvable|DataprocClusterClusterConfigInitializationAction[] Initializa
 
 initialization_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#initialization_action DataprocCluster#initialization_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#initialization_action DataprocCluster#initialization_action}
 
 ---
 
@@ -1234,7 +1234,7 @@ public DataprocClusterClusterConfigLifecycleConfig LifecycleConfig { get; set; }
 
 lifecycle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#lifecycle_config DataprocCluster#lifecycle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#lifecycle_config DataprocCluster#lifecycle_config}
 
 ---
 
@@ -1248,7 +1248,7 @@ public DataprocClusterClusterConfigMasterConfig MasterConfig { get; set; }
 
 master_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#master_config DataprocCluster#master_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#master_config DataprocCluster#master_config}
 
 ---
 
@@ -1262,7 +1262,7 @@ public DataprocClusterClusterConfigMetastoreConfig MetastoreConfig { get; set; }
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metastore_config DataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metastore_config DataprocCluster#metastore_config}
 
 ---
 
@@ -1276,7 +1276,7 @@ public DataprocClusterClusterConfigPreemptibleWorkerConfig PreemptibleWorkerConf
 
 preemptible_worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#preemptible_worker_config DataprocCluster#preemptible_worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#preemptible_worker_config DataprocCluster#preemptible_worker_config}
 
 ---
 
@@ -1290,7 +1290,7 @@ public DataprocClusterClusterConfigSecurityConfig SecurityConfig { get; set; }
 
 security_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#security_config DataprocCluster#security_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#security_config DataprocCluster#security_config}
 
 ---
 
@@ -1304,7 +1304,7 @@ public DataprocClusterClusterConfigSoftwareConfig SoftwareConfig { get; set; }
 
 software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#software_config DataprocCluster#software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#software_config DataprocCluster#software_config}
 
 ---
 
@@ -1320,7 +1320,7 @@ The Cloud Storage staging bucket used to stage files, such as Hadoop jars, betwe
 
 Note: If you don't explicitly specify a staging_bucket then GCP will auto create / assign one for you. However, you are not guaranteed an auto generated bucket which is solely dedicated to your cluster; it may be shared with other clusters in the same region/zone also choosing to use the auto generation option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#staging_bucket DataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#staging_bucket DataprocCluster#staging_bucket}
 
 ---
 
@@ -1336,7 +1336,7 @@ The Cloud Storage temp bucket used to store ephemeral cluster and jobs data, suc
 
 Note: If you don't explicitly specify a temp_bucket then GCP will auto create / assign one for you.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#temp_bucket DataprocCluster#temp_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#temp_bucket DataprocCluster#temp_bucket}
 
 ---
 
@@ -1350,7 +1350,7 @@ public DataprocClusterClusterConfigWorkerConfig WorkerConfig { get; set; }
 
 worker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#worker_config DataprocCluster#worker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#worker_config DataprocCluster#worker_config}
 
 ---
 
@@ -1384,7 +1384,7 @@ public string PolicyUri { get; set; }
 
 The autoscaling policy used by the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#policy_uri DataprocCluster#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#policy_uri DataprocCluster#policy_uri}
 
 ---
 
@@ -1420,7 +1420,7 @@ public IResolvable|DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup[] No
 
 node_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_group DataprocCluster#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_group DataprocCluster#node_group}
 
 ---
 
@@ -1436,7 +1436,7 @@ A node group ID.
 
 Generated if not specified. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of from 3 to 33 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_group_id DataprocCluster#node_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_group_id DataprocCluster#node_group_id}
 
 ---
 
@@ -1472,7 +1472,7 @@ public string[] Roles { get; set; }
 
 Node group roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#roles DataprocCluster#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#roles DataprocCluster#roles}
 
 ---
 
@@ -1486,7 +1486,7 @@ public DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig N
 
 node_group_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_group_config DataprocCluster#node_group_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_group_config DataprocCluster#node_group_config}
 
 ---
 
@@ -1528,7 +1528,7 @@ public IResolvable|DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeG
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
 
 ---
 
@@ -1542,7 +1542,7 @@ public DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDi
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -1556,7 +1556,7 @@ public string MachineType { get; set; }
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
 
 ---
 
@@ -1572,7 +1572,7 @@ The name of a minimum generation of CPU family for the auxiliary node group.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
 
 ---
 
@@ -1586,7 +1586,7 @@ public double NumInstances { get; set; }
 
 Specifies the number of auxiliary nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
 
 ---
 
@@ -1624,7 +1624,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
 
 ---
 
@@ -1638,7 +1638,7 @@ public string AcceleratorType { get; set; }
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
 
 ---
 
@@ -1684,7 +1684,7 @@ Indicates how many IOPS to provision for the disk.
 
 This sets the number of I/O operations per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
 
 ---
 
@@ -1700,7 +1700,7 @@ Indicates how much throughput to provision for the disk.
 
 This sets the number of throughput mb per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
 
 ---
 
@@ -1716,7 +1716,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -1730,7 +1730,7 @@ public string BootDiskType { get; set; }
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
 
 ---
 
@@ -1744,7 +1744,7 @@ public string LocalSsdInterface { get; set; }
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
 
 ---
 
@@ -1758,7 +1758,7 @@ public double NumLocalSsds { get; set; }
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -1792,7 +1792,7 @@ public IResolvable|DataprocClusterClusterConfigDataprocMetricConfigMetrics[] Met
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metrics DataprocCluster#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metrics DataprocCluster#metrics}
 
 ---
 
@@ -1828,7 +1828,7 @@ public string MetricSource { get; set; }
 
 A source for the collection of Dataproc OSS metrics (see [available OSS metrics] (https://cloud.google.com//dataproc/docs/guides/monitoring#available_oss_metrics)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metric_source DataprocCluster#metric_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metric_source DataprocCluster#metric_source}
 
 ---
 
@@ -1842,7 +1842,7 @@ public string[] MetricOverrides { get; set; }
 
 Specify one or more [available OSS metrics] (https://cloud.google.com/dataproc/docs/guides/monitoring#available_oss_metrics) to collect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metric_overrides DataprocCluster#metric_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metric_overrides DataprocCluster#metric_overrides}
 
 ---
 
@@ -1876,7 +1876,7 @@ public string KmsKeyName { get; set; }
 
 The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kms_key_name DataprocCluster#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kms_key_name DataprocCluster#kms_key_name}
 
 ---
 
@@ -1912,7 +1912,7 @@ The flag to enable http access to specific ports on the cluster from external so
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_http_port_access DataprocCluster#enable_http_port_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_http_port_access DataprocCluster#enable_http_port_access}
 
 ---
 
@@ -1970,7 +1970,7 @@ public DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig Co
 
 confidential_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#confidential_instance_config DataprocCluster#confidential_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#confidential_instance_config DataprocCluster#confidential_instance_config}
 
 ---
 
@@ -1986,7 +1986,7 @@ By default, clusters are not restricted to internal IP addresses, and will have 
 
 If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#internal_ip_only DataprocCluster#internal_ip_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#internal_ip_only DataprocCluster#internal_ip_only}
 
 ---
 
@@ -2000,7 +2000,7 @@ public System.Collections.Generic.IDictionary<string, string> Metadata { get; se
 
 A map of the Compute Engine metadata entries to add to all instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metadata DataprocCluster#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metadata DataprocCluster#metadata}
 
 ---
 
@@ -2016,7 +2016,7 @@ The name or self_link of the Google Compute Engine network to the cluster will b
 
 Conflicts with subnetwork. If neither is specified, this defaults to the "default" network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#network DataprocCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#network DataprocCluster#network}
 
 ---
 
@@ -2030,7 +2030,7 @@ public DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity NodeGroupAf
 
 node_group_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_group_affinity DataprocCluster#node_group_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_group_affinity DataprocCluster#node_group_affinity}
 
 ---
 
@@ -2044,7 +2044,7 @@ public DataprocClusterClusterConfigGceClusterConfigReservationAffinity Reservati
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#reservation_affinity DataprocCluster#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#reservation_affinity DataprocCluster#reservation_affinity}
 
 ---
 
@@ -2060,7 +2060,7 @@ A map of resource manager tags to add to all instances.
 
 Keys must be in the format tagKeys/{tag_key_id} and values in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#resource_manager_tags DataprocCluster#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#resource_manager_tags DataprocCluster#resource_manager_tags}
 
 ---
 
@@ -2074,7 +2074,7 @@ public string ServiceAccount { get; set; }
 
 The service account to be used by the Node VMs. If not specified, the "default" service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#service_account DataprocCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#service_account DataprocCluster#service_account}
 
 ---
 
@@ -2090,7 +2090,7 @@ The set of Google API scopes to be made available on all of the node VMs under t
 
 These can be either FQDNs, or scope aliases.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#service_account_scopes DataprocCluster#service_account_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#service_account_scopes DataprocCluster#service_account_scopes}
 
 ---
 
@@ -2104,7 +2104,7 @@ public DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig Shield
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#shielded_instance_config DataprocCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#shielded_instance_config DataprocCluster#shielded_instance_config}
 
 ---
 
@@ -2118,7 +2118,7 @@ public string Subnetwork { get; set; }
 
 The name or self_link of the Google Compute Engine subnetwork the cluster will be part of. Conflicts with network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#subnetwork DataprocCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#subnetwork DataprocCluster#subnetwork}
 
 ---
 
@@ -2134,7 +2134,7 @@ The list of instance tags applied to instances in the cluster.
 
 Tags are used to identify valid sources or targets for network firewalls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#tags DataprocCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#tags DataprocCluster#tags}
 
 ---
 
@@ -2148,7 +2148,7 @@ public string Zone { get; set; }
 
 The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#zone DataprocCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#zone DataprocCluster#zone}
 
 ---
 
@@ -2160,6 +2160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig {
+    string ConfidentialInstanceType = null,
     bool|IResolvable EnableConfidentialCompute = null
 };
 ```
@@ -2168,7 +2169,22 @@ new DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig.property.confidentialInstanceType">ConfidentialInstanceType</a></code> | <code>string</code> | Defines the type of Confidential Compute technology to use. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig.property.enableConfidentialCompute">EnableConfidentialCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Defines whether the instance should have confidential compute enabled. |
+
+---
+
+##### `ConfidentialInstanceType`<sup>Optional</sup> <a name="ConfidentialInstanceType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig.property.confidentialInstanceType"></a>
+
+```csharp
+public string ConfidentialInstanceType { get; set; }
+```
+
+- *Type:* string
+
+Defines the type of Confidential Compute technology to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#confidential_instance_type DataprocCluster#confidential_instance_type}
 
 ---
 
@@ -2182,7 +2198,7 @@ public bool|IResolvable EnableConfidentialCompute { get; set; }
 
 Defines whether the instance should have confidential compute enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_confidential_compute DataprocCluster#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_confidential_compute DataprocCluster#enable_confidential_compute}
 
 ---
 
@@ -2216,7 +2232,7 @@ public string NodeGroupUri { get; set; }
 
 The URI of a sole-tenant that the cluster will be created on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_group_uri DataprocCluster#node_group_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_group_uri DataprocCluster#node_group_uri}
 
 ---
 
@@ -2254,7 +2270,7 @@ public string ConsumeReservationType { get; set; }
 
 Type of reservation to consume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#consume_reservation_type DataprocCluster#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#consume_reservation_type DataprocCluster#consume_reservation_type}
 
 ---
 
@@ -2268,7 +2284,7 @@ public string Key { get; set; }
 
 Corresponds to the label key of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#key DataprocCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#key DataprocCluster#key}
 
 ---
 
@@ -2282,7 +2298,7 @@ public string[] Values { get; set; }
 
 Corresponds to the label values of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#values DataprocCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#values DataprocCluster#values}
 
 ---
 
@@ -2320,7 +2336,7 @@ public bool|IResolvable EnableIntegrityMonitoring { get; set; }
 
 Defines whether instances have integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_integrity_monitoring DataprocCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_integrity_monitoring DataprocCluster#enable_integrity_monitoring}
 
 ---
 
@@ -2334,7 +2350,7 @@ public bool|IResolvable EnableSecureBoot { get; set; }
 
 Defines whether instances have Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_secure_boot DataprocCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_secure_boot DataprocCluster#enable_secure_boot}
 
 ---
 
@@ -2348,7 +2364,7 @@ public bool|IResolvable EnableVtpm { get; set; }
 
 Defines whether instances have the vTPM enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_vtpm DataprocCluster#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_vtpm DataprocCluster#enable_vtpm}
 
 ---
 
@@ -2386,7 +2402,7 @@ The script to be executed during initialization of the cluster.
 
 The script must be a GCS file with a gs:// prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#script DataprocCluster#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#script DataprocCluster#script}
 
 ---
 
@@ -2402,7 +2418,7 @@ The maximum duration (in seconds) which script is allowed to take to execute its
 
 GCP will default to a predetermined computed value if not set (currently 300).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#timeout_sec DataprocCluster#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#timeout_sec DataprocCluster#timeout_sec}
 
 ---
 
@@ -2442,7 +2458,7 @@ public string AutoDeleteTime { get; set; }
 
 The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#auto_delete_time DataprocCluster#auto_delete_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#auto_delete_time DataprocCluster#auto_delete_time}
 
 ---
 
@@ -2456,7 +2472,7 @@ public string AutoStopTime { get; set; }
 
 The time when cluster will be auto-stopped. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#auto_stop_time DataprocCluster#auto_stop_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#auto_stop_time DataprocCluster#auto_stop_time}
 
 ---
 
@@ -2472,7 +2488,7 @@ The duration to keep the cluster alive while idling (no jobs running).
 
 After this TTL, the cluster will be deleted. Valid range: [300s, 1209600s].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#idle_delete_ttl DataprocCluster#idle_delete_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#idle_delete_ttl DataprocCluster#idle_delete_ttl}
 
 ---
 
@@ -2488,7 +2504,7 @@ The duration to keep the cluster started while idling (no jobs running).
 
 After this TTL, the cluster will be stopped. Valid range: [10m, 14d].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#idle_stop_ttl DataprocCluster#idle_stop_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#idle_stop_ttl DataprocCluster#idle_stop_ttl}
 
 ---
 
@@ -2534,7 +2550,7 @@ public IResolvable|DataprocClusterClusterConfigMasterConfigAccelerators[] Accele
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
 
 ---
 
@@ -2548,7 +2564,7 @@ public DataprocClusterClusterConfigMasterConfigDiskConfig DiskConfig { get; set;
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -2562,7 +2578,7 @@ public string ImageUri { get; set; }
 
 The URI for the image to use for this master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#image_uri DataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#image_uri DataprocCluster#image_uri}
 
 ---
 
@@ -2576,7 +2592,7 @@ public DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicy Instanc
 
 instance_flexibility_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
 
 ---
 
@@ -2590,7 +2606,7 @@ public string MachineType { get; set; }
 
 The name of a Google Compute Engine machine type to create for the master.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
 
 ---
 
@@ -2606,7 +2622,7 @@ The name of a minimum generation of CPU family for the master.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
 
 ---
 
@@ -2620,7 +2636,7 @@ public double NumInstances { get; set; }
 
 Specifies the number of master nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
 
 ---
 
@@ -2658,7 +2674,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
 
 ---
 
@@ -2672,7 +2688,7 @@ public string AcceleratorType { get; set; }
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
 
 ---
 
@@ -2718,7 +2734,7 @@ Indicates how many IOPS to provision for the disk.
 
 This sets the number of I/O operations per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
 
 ---
 
@@ -2734,7 +2750,7 @@ Indicates how much throughput to provision for the disk.
 
 This sets the number of throughput mb per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
 
 ---
 
@@ -2750,7 +2766,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -2764,7 +2780,7 @@ public string BootDiskType { get; set; }
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
 
 ---
 
@@ -2778,7 +2794,7 @@ public string LocalSsdInterface { get; set; }
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
 
 ---
 
@@ -2792,7 +2808,7 @@ public double NumLocalSsds { get; set; }
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -2826,7 +2842,127 @@ public IResolvable|DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 
 instance_selection_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
+
+---
+
+### DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig <a name="DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig {
+    double BootDiskProvisionedIops = null,
+    double BootDiskProvisionedThroughput = null,
+    double BootDiskSizeGb = null,
+    string BootDiskType = null,
+    string LocalSsdInterface = null,
+    double NumLocalSsds = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | Indicates how many IOPS to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | Indicates how much throughput to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | Interface type of local SSDs (no Local SSDs or NVMe). |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | The amount of local SSD disks that will be attached to each cluster node. Defaults to 0. |
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Optional</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; set; }
+```
+
+- *Type:* double
+
+Indicates how many IOPS to provision for the disk.
+
+This sets the number of I/O operations per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; set; }
+```
+
+- *Type:* double
+
+Indicates how much throughput to provision for the disk.
+
+This sets the number of throughput mb per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+
+---
+
+##### `BootDiskSizeGb`<sup>Optional</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; set; }
+```
+
+- *Type:* double
+
+Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `BootDiskType`<sup>Optional</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; set; }
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+
+---
+
+##### `LocalSsdInterface`<sup>Optional</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; set; }
+```
+
+- *Type:* string
+
+Interface type of local SSDs (no Local SSDs or NVMe).
+
+Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+
+---
+
+##### `NumLocalSsds`<sup>Optional</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; set; }
+```
+
+- *Type:* double
+
+The amount of local SSD disks that will be attached to each cluster node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -2838,6 +2974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStruct {
+    DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig = null,
     string[] MachineTypes = null,
     double Rank = null
 };
@@ -2847,8 +2984,23 @@ new DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | Full machine-type names, e.g. "n1-standard-16". |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.rank">Rank</a></code> | <code>double</code> | Preference of this instance selection. |
+
+---
+
+##### `DiskConfig`<sup>Optional</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -2862,7 +3014,7 @@ public string[] MachineTypes { get; set; }
 
 Full machine-type names, e.g. "n1-standard-16".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
 
 ---
 
@@ -2878,7 +3030,7 @@ Preference of this instance selection.
 
 Lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
 
 ---
 
@@ -2925,7 +3077,7 @@ public string DataprocMetastoreService { get; set; }
 
 Resource name of an existing Dataproc Metastore service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#dataproc_metastore_service DataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#dataproc_metastore_service DataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -2965,7 +3117,7 @@ public DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig DiskConfig 
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -2979,7 +3131,7 @@ public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPol
 
 instance_flexibility_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
 
 ---
 
@@ -2993,7 +3145,7 @@ public double NumInstances { get; set; }
 
 Specifies the number of preemptible nodes to create. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
 
 ---
 
@@ -3007,7 +3159,7 @@ public string Preemptibility { get; set; }
 
 Specifies the preemptibility of the secondary nodes. Defaults to PREEMPTIBLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#preemptibility DataprocCluster#preemptibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#preemptibility DataprocCluster#preemptibility}
 
 ---
 
@@ -3053,7 +3205,7 @@ Indicates how many IOPS to provision for the disk.
 
 This sets the number of I/O operations per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
 
 ---
 
@@ -3069,7 +3221,7 @@ Indicates how much throughput to provision for the disk.
 
 This sets the number of throughput mb per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
 
 ---
 
@@ -3085,7 +3237,7 @@ Size of the primary disk attached to each preemptible worker node, specified in 
 
 The smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -3101,7 +3253,7 @@ The disk type of the primary disk attached to each preemptible worker node.
 
 Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
 
 ---
 
@@ -3115,7 +3267,7 @@ public string LocalSsdInterface { get; set; }
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
 
 ---
 
@@ -3129,7 +3281,7 @@ public double NumLocalSsds { get; set; }
 
 The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -3165,7 +3317,7 @@ public IResolvable|DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFl
 
 instance_selection_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
 
 ---
 
@@ -3179,7 +3331,127 @@ public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPol
 
 provisioning_model_mix block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#provisioning_model_mix DataprocCluster#provisioning_model_mix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#provisioning_model_mix DataprocCluster#provisioning_model_mix}
+
+---
+
+### DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig <a name="DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig {
+    double BootDiskProvisionedIops = null,
+    double BootDiskProvisionedThroughput = null,
+    double BootDiskSizeGb = null,
+    string BootDiskType = null,
+    string LocalSsdInterface = null,
+    double NumLocalSsds = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | Indicates how many IOPS to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | Indicates how much throughput to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | Interface type of local SSDs (no Local SSDs or NVMe). |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | The amount of local SSD disks that will be attached to each cluster node. Defaults to 0. |
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Optional</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; set; }
+```
+
+- *Type:* double
+
+Indicates how many IOPS to provision for the disk.
+
+This sets the number of I/O operations per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; set; }
+```
+
+- *Type:* double
+
+Indicates how much throughput to provision for the disk.
+
+This sets the number of throughput mb per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+
+---
+
+##### `BootDiskSizeGb`<sup>Optional</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; set; }
+```
+
+- *Type:* double
+
+Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `BootDiskType`<sup>Optional</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; set; }
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+
+---
+
+##### `LocalSsdInterface`<sup>Optional</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; set; }
+```
+
+- *Type:* string
+
+Interface type of local SSDs (no Local SSDs or NVMe).
+
+Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+
+---
+
+##### `NumLocalSsds`<sup>Optional</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; set; }
+```
+
+- *Type:* double
+
+The amount of local SSD disks that will be attached to each cluster node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -3191,6 +3463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct {
+    DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig = null,
     string[] MachineTypes = null,
     double Rank = null
 };
@@ -3200,8 +3473,23 @@ new DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | Full machine-type names, e.g. "n1-standard-16". |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.rank">Rank</a></code> | <code>double</code> | Preference of this instance selection. |
+
+---
+
+##### `DiskConfig`<sup>Optional</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -3215,7 +3503,7 @@ public string[] MachineTypes { get; set; }
 
 Full machine-type names, e.g. "n1-standard-16".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
 
 ---
 
@@ -3231,7 +3519,7 @@ Preference of this instance selection.
 
 Lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
 
 ---
 
@@ -3280,7 +3568,7 @@ public double StandardCapacityBase { get; set; }
 
 The base capacity that will always use Standard VMs to avoid risk of more preemption than the minimum capacity you need.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#standard_capacity_base DataprocCluster#standard_capacity_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#standard_capacity_base DataprocCluster#standard_capacity_base}
 
 ---
 
@@ -3294,7 +3582,7 @@ public double StandardCapacityPercentAboveBase { get; set; }
 
 The percentage of target capacity that should use Standard VM. The remaining percentage will use Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#standard_capacity_percent_above_base DataprocCluster#standard_capacity_percent_above_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#standard_capacity_percent_above_base DataprocCluster#standard_capacity_percent_above_base}
 
 ---
 
@@ -3330,7 +3618,7 @@ public DataprocClusterClusterConfigSecurityConfigIdentityConfig IdentityConfig {
 
 identity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#identity_config DataprocCluster#identity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#identity_config DataprocCluster#identity_config}
 
 ---
 
@@ -3344,7 +3632,7 @@ public DataprocClusterClusterConfigSecurityConfigKerberosConfig KerberosConfig {
 
 kerberos_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kerberos_config DataprocCluster#kerberos_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kerberos_config DataprocCluster#kerberos_config}
 
 ---
 
@@ -3378,7 +3666,7 @@ public System.Collections.Generic.IDictionary<string, string> UserServiceAccount
 
 User to service account mappings for multi-tenancy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#user_service_account_mapping DataprocCluster#user_service_account_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#user_service_account_mapping DataprocCluster#user_service_account_mapping}
 
 ---
 
@@ -3440,7 +3728,7 @@ public string KmsKeyUri { get; set; }
 
 The uri of the KMS key used to encrypt various sensitive files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kms_key_uri DataprocCluster#kms_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kms_key_uri DataprocCluster#kms_key_uri}
 
 ---
 
@@ -3454,7 +3742,7 @@ public string RootPrincipalPasswordUri { get; set; }
 
 The cloud Storage URI of a KMS encrypted file containing the root principal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#root_principal_password_uri DataprocCluster#root_principal_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#root_principal_password_uri DataprocCluster#root_principal_password_uri}
 
 ---
 
@@ -3468,7 +3756,7 @@ public string CrossRealmTrustAdminServer { get; set; }
 
 The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cross_realm_trust_admin_server DataprocCluster#cross_realm_trust_admin_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cross_realm_trust_admin_server DataprocCluster#cross_realm_trust_admin_server}
 
 ---
 
@@ -3482,7 +3770,7 @@ public string CrossRealmTrustKdc { get; set; }
 
 The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cross_realm_trust_kdc DataprocCluster#cross_realm_trust_kdc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cross_realm_trust_kdc DataprocCluster#cross_realm_trust_kdc}
 
 ---
 
@@ -3496,7 +3784,7 @@ public string CrossRealmTrustRealm { get; set; }
 
 The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cross_realm_trust_realm DataprocCluster#cross_realm_trust_realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cross_realm_trust_realm DataprocCluster#cross_realm_trust_realm}
 
 ---
 
@@ -3510,7 +3798,7 @@ public string CrossRealmTrustSharedPasswordUri { get; set; }
 
 The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cross_realm_trust_shared_password_uri DataprocCluster#cross_realm_trust_shared_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cross_realm_trust_shared_password_uri DataprocCluster#cross_realm_trust_shared_password_uri}
 
 ---
 
@@ -3524,7 +3812,7 @@ public bool|IResolvable EnableKerberos { get; set; }
 
 Flag to indicate whether to Kerberize the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#enable_kerberos DataprocCluster#enable_kerberos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#enable_kerberos DataprocCluster#enable_kerberos}
 
 ---
 
@@ -3538,7 +3826,7 @@ public string KdcDbKeyUri { get; set; }
 
 The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kdc_db_key_uri DataprocCluster#kdc_db_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kdc_db_key_uri DataprocCluster#kdc_db_key_uri}
 
 ---
 
@@ -3554,7 +3842,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#key_password_uri DataprocCluster#key_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#key_password_uri DataprocCluster#key_password_uri}
 
 ---
 
@@ -3571,7 +3859,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 For the self-signed certificate, this password is generated
 by Dataproc
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#keystore_password_uri DataprocCluster#keystore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#keystore_password_uri DataprocCluster#keystore_password_uri}
 
 ---
 
@@ -3587,7 +3875,7 @@ The Cloud Storage URI of the keystore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#keystore_uri DataprocCluster#keystore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#keystore_uri DataprocCluster#keystore_uri}
 
 ---
 
@@ -3601,7 +3889,7 @@ public string Realm { get; set; }
 
 The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#realm DataprocCluster#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#realm DataprocCluster#realm}
 
 ---
 
@@ -3615,7 +3903,7 @@ public double TgtLifetimeHours { get; set; }
 
 The lifetime of the ticket granting ticket, in hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#tgt_lifetime_hours DataprocCluster#tgt_lifetime_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#tgt_lifetime_hours DataprocCluster#tgt_lifetime_hours}
 
 ---
 
@@ -3631,7 +3919,7 @@ The Cloud Storage URI of a KMS encrypted file containing the password to the use
 
 For the self-signed certificate, this password is generated by Dataproc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#truststore_password_uri DataprocCluster#truststore_password_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#truststore_password_uri DataprocCluster#truststore_password_uri}
 
 ---
 
@@ -3647,7 +3935,7 @@ The Cloud Storage URI of the truststore file used for SSL encryption.
 
 If not provided, Dataproc will provide a self-signed certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#truststore_uri DataprocCluster#truststore_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#truststore_uri DataprocCluster#truststore_uri}
 
 ---
 
@@ -3687,7 +3975,7 @@ The Cloud Dataproc image version to use for the cluster - this controls the sets
 
 If not specified, defaults to the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#image_version DataprocCluster#image_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#image_version DataprocCluster#image_version}
 
 ---
 
@@ -3701,7 +3989,7 @@ public string[] OptionalComponents { get; set; }
 
 The set of optional components to activate on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#optional_components DataprocCluster#optional_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#optional_components DataprocCluster#optional_components}
 
 ---
 
@@ -3715,7 +4003,7 @@ public System.Collections.Generic.IDictionary<string, string> OverrideProperties
 
 A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#override_properties DataprocCluster#override_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#override_properties DataprocCluster#override_properties}
 
 ---
 
@@ -3763,7 +4051,7 @@ public IResolvable|DataprocClusterClusterConfigWorkerConfigAccelerators[] Accele
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
 
 ---
 
@@ -3777,7 +4065,7 @@ public DataprocClusterClusterConfigWorkerConfigDiskConfig DiskConfig { get; set;
 
 disk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -3791,7 +4079,7 @@ public string ImageUri { get; set; }
 
 The URI for the image to use for this master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#image_uri DataprocCluster#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#image_uri DataprocCluster#image_uri}
 
 ---
 
@@ -3805,7 +4093,7 @@ public DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicy Instanc
 
 instance_flexibility_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_flexibility_policy DataprocCluster#instance_flexibility_policy}
 
 ---
 
@@ -3819,7 +4107,7 @@ public string MachineType { get; set; }
 
 The name of a Google Compute Engine machine type to create for the master/worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
 
 ---
 
@@ -3835,7 +4123,7 @@ The name of a minimum generation of CPU family for the master/worker.
 
 If not specified, GCP will default to a predetermined computed value for each zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
 
 ---
 
@@ -3849,7 +4137,7 @@ public double MinNumInstances { get; set; }
 
 The minimum number of primary worker instances to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_num_instances DataprocCluster#min_num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_num_instances DataprocCluster#min_num_instances}
 
 ---
 
@@ -3863,7 +4151,7 @@ public double NumInstances { get; set; }
 
 Specifies the number of worker nodes to create. If not specified, GCP will default to a predetermined computed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
 
 ---
 
@@ -3901,7 +4189,7 @@ The number of the accelerator cards of this type exposed to this instance.
 
 Often restricted to one of 1, 2, 4, or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_count DataprocCluster#accelerator_count}
 
 ---
 
@@ -3915,7 +4203,7 @@ public string AcceleratorType { get; set; }
 
 The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#accelerator_type DataprocCluster#accelerator_type}
 
 ---
 
@@ -3961,7 +4249,7 @@ Indicates how many IOPS to provision for the disk.
 
 This sets the number of I/O operations per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
 
 ---
 
@@ -3977,7 +4265,7 @@ Indicates how much throughput to provision for the disk.
 
 This sets the number of throughput mb per second that the disk can handle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
 
 ---
 
@@ -3993,7 +4281,7 @@ Size of the primary disk attached to each node, specified in GB.
 
 The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
 
 ---
 
@@ -4007,7 +4295,7 @@ public string BootDiskType { get; set; }
 
 The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
 
 ---
 
@@ -4021,7 +4309,7 @@ public string LocalSsdInterface { get; set; }
 
 Interface type of local SSDs (default is "scsi"). Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
 
 ---
 
@@ -4035,7 +4323,7 @@ public double NumLocalSsds { get; set; }
 
 The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -4069,7 +4357,127 @@ public IResolvable|DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPo
 
 instance_selection_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#instance_selection_list DataprocCluster#instance_selection_list}
+
+---
+
+### DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig <a name="DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig {
+    double BootDiskProvisionedIops = null,
+    double BootDiskProvisionedThroughput = null,
+    double BootDiskSizeGb = null,
+    string BootDiskType = null,
+    string LocalSsdInterface = null,
+    double NumLocalSsds = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | Indicates how many IOPS to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | Indicates how much throughput to provision for the disk. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | Interface type of local SSDs (no Local SSDs or NVMe). |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | The amount of local SSD disks that will be attached to each cluster node. Defaults to 0. |
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Optional</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; set; }
+```
+
+- *Type:* double
+
+Indicates how many IOPS to provision for the disk.
+
+This sets the number of I/O operations per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_iops DataprocCluster#boot_disk_provisioned_iops}
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; set; }
+```
+
+- *Type:* double
+
+Indicates how much throughput to provision for the disk.
+
+This sets the number of throughput mb per second that the disk can handle.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_provisioned_throughput DataprocCluster#boot_disk_provisioned_throughput}
+
+---
+
+##### `BootDiskSizeGb`<sup>Optional</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; set; }
+```
+
+- *Type:* double
+
+Size of the primary disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_size_gb DataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `BootDiskType`<sup>Optional</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; set; }
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#boot_disk_type DataprocCluster#boot_disk_type}
+
+---
+
+##### `LocalSsdInterface`<sup>Optional</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; set; }
+```
+
+- *Type:* string
+
+Interface type of local SSDs (no Local SSDs or NVMe).
+
+Valid values: "scsi" (Small Computer System Interface), "nvme" (Non-Volatile Memory Express).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_interface DataprocCluster#local_ssd_interface}
+
+---
+
+##### `NumLocalSsds`<sup>Optional</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; set; }
+```
+
+- *Type:* double
+
+The amount of local SSD disks that will be attached to each cluster node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#num_local_ssds DataprocCluster#num_local_ssds}
 
 ---
 
@@ -4081,6 +4489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct {
+    DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig = null,
     string[] MachineTypes = null,
     double Rank = null
 };
@@ -4090,8 +4499,23 @@ new DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | Full machine-type names, e.g. "n1-standard-16". |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.rank">Rank</a></code> | <code>double</code> | Preference of this instance selection. |
+
+---
+
+##### `DiskConfig`<sup>Optional</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
 
 ---
 
@@ -4105,7 +4529,7 @@ public string[] MachineTypes { get; set; }
 
 Full machine-type names, e.g. "n1-standard-16".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_types DataprocCluster#machine_types}
 
 ---
 
@@ -4121,7 +4545,7 @@ Preference of this instance selection.
 
 Lower number means higher preference. Dataproc will first try to create a VM based on the machine-type with priority rank and fallback to next rank based on availability. Machine types and instance selections with the same priority have the same preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#rank DataprocCluster#rank}
 
 ---
 
@@ -4181,7 +4605,7 @@ new DataprocClusterConfig {
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.clusterConfig">ClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig">DataprocClusterClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.gracefulDecommissionTimeout">GracefulDecommissionTimeout</a></code> | <code>string</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#id DataprocCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#id DataprocCluster#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The list of the labels (key/value pairs) configured on the resource and to be applied to instances in the cluster. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.project">Project</a></code> | <code>string</code> | The ID of the project in which the cluster will exist. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.region">Region</a></code> | <code>string</code> | The region in which the cluster and associated nodes will be created in. Defaults to global. |
@@ -4270,7 +4694,7 @@ public string Name { get; set; }
 
 The name of the cluster, unique within the project and zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#name DataprocCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#name DataprocCluster#name}
 
 ---
 
@@ -4284,7 +4708,7 @@ public DataprocClusterClusterConfig ClusterConfig { get; set; }
 
 cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#cluster_config DataprocCluster#cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#cluster_config DataprocCluster#cluster_config}
 
 ---
 
@@ -4305,7 +4729,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#deletion_policy DataprocCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#deletion_policy DataprocCluster#deletion_policy}
 
 ---
 
@@ -4319,7 +4743,7 @@ public string GracefulDecommissionTimeout { get; set; }
 
 The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#graceful_decommission_timeout DataprocCluster#graceful_decommission_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#graceful_decommission_timeout DataprocCluster#graceful_decommission_timeout}
 
 ---
 
@@ -4331,7 +4755,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#id DataprocCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#id DataprocCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4351,7 +4775,7 @@ The list of the labels (key/value pairs) configured on the resource and to be ap
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#labels DataprocCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#labels DataprocCluster#labels}
 
 ---
 
@@ -4367,7 +4791,7 @@ The ID of the project in which the cluster will exist.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#project DataprocCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#project DataprocCluster#project}
 
 ---
 
@@ -4381,7 +4805,7 @@ public string Region { get; set; }
 
 The region in which the cluster and associated nodes will be created in. Defaults to global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#region DataprocCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#region DataprocCluster#region}
 
 ---
 
@@ -4395,7 +4819,7 @@ public DataprocClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#timeouts DataprocCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#timeouts DataprocCluster#timeouts}
 
 ---
 
@@ -4409,7 +4833,7 @@ public DataprocClusterVirtualClusterConfig VirtualClusterConfig { get; set; }
 
 virtual_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#virtual_cluster_config DataprocCluster#virtual_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#virtual_cluster_config DataprocCluster#virtual_cluster_config}
 
 ---
 
@@ -4431,9 +4855,9 @@ new DataprocClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#create DataprocCluster#create}. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#delete DataprocCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#update DataprocCluster#update}. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#create DataprocCluster#create}. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#delete DataprocCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#update DataprocCluster#update}. |
 
 ---
 
@@ -4445,7 +4869,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#create DataprocCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#create DataprocCluster#create}.
 
 ---
 
@@ -4457,7 +4881,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#delete DataprocCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#delete DataprocCluster#delete}.
 
 ---
 
@@ -4469,7 +4893,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#update DataprocCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#update DataprocCluster#update}.
 
 ---
 
@@ -4507,7 +4931,7 @@ public DataprocClusterVirtualClusterConfigAuxiliaryServicesConfig AuxiliaryServi
 
 auxiliary_services_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#auxiliary_services_config DataprocCluster#auxiliary_services_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#auxiliary_services_config DataprocCluster#auxiliary_services_config}
 
 ---
 
@@ -4521,7 +4945,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfig KubernetesClus
 
 kubernetes_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kubernetes_cluster_config DataprocCluster#kubernetes_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kubernetes_cluster_config DataprocCluster#kubernetes_cluster_config}
 
 ---
 
@@ -4537,7 +4961,7 @@ A Cloud Storage bucket used to stage job dependencies, config files, and job dri
 
 If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#staging_bucket DataprocCluster#staging_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#staging_bucket DataprocCluster#staging_bucket}
 
 ---
 
@@ -4573,7 +4997,7 @@ public DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig
 
 metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#metastore_config DataprocCluster#metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#metastore_config DataprocCluster#metastore_config}
 
 ---
 
@@ -4587,7 +5011,7 @@ public DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistorySer
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#spark_history_server_config DataprocCluster#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#spark_history_server_config DataprocCluster#spark_history_server_config}
 
 ---
 
@@ -4621,7 +5045,7 @@ public string DataprocMetastoreService { get; set; }
 
 The Hive Metastore configuration for this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#dataproc_metastore_service DataprocCluster#dataproc_metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#dataproc_metastore_service DataprocCluster#dataproc_metastore_service}
 
 ---
 
@@ -4655,7 +5079,7 @@ public string DataprocCluster { get; set; }
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#dataproc_cluster DataprocCluster#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#dataproc_cluster DataprocCluster#dataproc_cluster}
 
 ---
 
@@ -4693,7 +5117,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfi
 
 gke_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#gke_cluster_config DataprocCluster#gke_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#gke_cluster_config DataprocCluster#gke_cluster_config}
 
 ---
 
@@ -4707,7 +5131,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftw
 
 kubernetes_software_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kubernetes_software_config DataprocCluster#kubernetes_software_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kubernetes_software_config DataprocCluster#kubernetes_software_config}
 
 ---
 
@@ -4723,7 +5147,7 @@ A namespace within the Kubernetes cluster to deploy into.
 
 If this namespace does not exist, it is created. If it exists, Dataproc verifies that another Dataproc VirtualCluster is not installed into it. If not specified, the name of the Dataproc Cluster is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#kubernetes_namespace DataprocCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#kubernetes_namespace DataprocCluster#kubernetes_namespace}
 
 ---
 
@@ -4761,7 +5185,7 @@ A target GKE cluster to deploy to.
 
 It must be in the same project and region as the Dataproc cluster (the GKE cluster can be zonal or regional). Format: 'projects/{project}/locations/{location}/clusters/{cluster_id}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#gke_cluster_target DataprocCluster#gke_cluster_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#gke_cluster_target DataprocCluster#gke_cluster_target}
 
 ---
 
@@ -4775,7 +5199,7 @@ public IResolvable|DataprocClusterVirtualClusterConfigKubernetesClusterConfigGke
 
 node_pool_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_pool_target DataprocCluster#node_pool_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_pool_target DataprocCluster#node_pool_target}
 
 ---
 
@@ -4813,7 +5237,7 @@ public string NodePool { get; set; }
 
 The target GKE node pool. Format: 'projects/{project}/locations/{location}/clusters/{cluster}/nodePools/{nodePool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_pool DataprocCluster#node_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_pool DataprocCluster#node_pool}
 
 ---
 
@@ -4827,7 +5251,7 @@ public string[] Roles { get; set; }
 
 The roles associated with the GKE node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#roles DataprocCluster#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#roles DataprocCluster#roles}
 
 ---
 
@@ -4841,7 +5265,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfi
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#node_pool_config DataprocCluster#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#node_pool_config DataprocCluster#node_pool_config}
 
 ---
 
@@ -4879,7 +5303,7 @@ public string[] Locations { get; set; }
 
 The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#locations DataprocCluster#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#locations DataprocCluster#locations}
 
 ---
 
@@ -4893,7 +5317,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfi
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#autoscaling DataprocCluster#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#autoscaling DataprocCluster#autoscaling}
 
 ---
 
@@ -4907,7 +5331,7 @@ public DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfi
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#config DataprocCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#config DataprocCluster#config}
 
 ---
 
@@ -4943,7 +5367,7 @@ public double MaxNodeCount { get; set; }
 
 The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#max_node_count DataprocCluster#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#max_node_count DataprocCluster#max_node_count}
 
 ---
 
@@ -4957,7 +5381,7 @@ public double MinNodeCount { get; set; }
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_node_count DataprocCluster#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_node_count DataprocCluster#min_node_count}
 
 ---
 
@@ -4999,7 +5423,7 @@ public double LocalSsdCount { get; set; }
 
 The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#local_ssd_count DataprocCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#local_ssd_count DataprocCluster#local_ssd_count}
 
 ---
 
@@ -5013,7 +5437,7 @@ public string MachineType { get; set; }
 
 The name of a Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#machine_type DataprocCluster#machine_type}
 
 ---
 
@@ -5029,7 +5453,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or a newer CPU platform. Specify the friendly names of CPU platforms, such as "Intel Haswell" or "Intel Sandy Bridge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#min_cpu_platform DataprocCluster#min_cpu_platform}
 
 ---
 
@@ -5045,7 +5469,7 @@ Whether the nodes are created as preemptible VM instances.
 
 Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#preemptible DataprocCluster#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#preemptible DataprocCluster#preemptible}
 
 ---
 
@@ -5059,7 +5483,7 @@ public bool|IResolvable Spot { get; set; }
 
 Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#spot DataprocCluster#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#spot DataprocCluster#spot}
 
 ---
 
@@ -5097,7 +5521,7 @@ The components that should be installed in this Dataproc cluster.
 
 The key must be a string from the KubernetesComponent enumeration. The value is the version of the software to be installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#component_version DataprocCluster#component_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#component_version DataprocCluster#component_version}
 
 ---
 
@@ -5111,7 +5535,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dataproc_cluster#properties DataprocCluster#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_cluster#properties DataprocCluster#properties}
 
 ---
 
@@ -9071,6 +9495,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resetConfidentialInstanceType">ResetConfidentialInstanceType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resetEnableConfidentialCompute">ResetEnableConfidentialCompute</a></code> | *No description.* |
 
 ---
@@ -9225,6 +9650,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetConfidentialInstanceType` <a name="ResetConfidentialInstanceType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resetConfidentialInstanceType"></a>
+
+```csharp
+private void ResetConfidentialInstanceType()
+```
+
 ##### `ResetEnableConfidentialCompute` <a name="ResetEnableConfidentialCompute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resetEnableConfidentialCompute"></a>
 
 ```csharp
@@ -9238,7 +9669,9 @@ private void ResetEnableConfidentialCompute()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.confidentialInstanceTypeInput">ConfidentialInstanceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialComputeInput">EnableConfidentialComputeInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.confidentialInstanceType">ConfidentialInstanceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialCompute">EnableConfidentialCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig">DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig</a></code> | *No description.* |
 
@@ -9268,6 +9701,16 @@ public string Fqn { get; }
 
 ---
 
+##### `ConfidentialInstanceTypeInput`<sup>Optional</sup> <a name="ConfidentialInstanceTypeInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.confidentialInstanceTypeInput"></a>
+
+```csharp
+public string ConfidentialInstanceTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `EnableConfidentialComputeInput`<sup>Optional</sup> <a name="EnableConfidentialComputeInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialComputeInput"></a>
 
 ```csharp
@@ -9275,6 +9718,16 @@ public bool|IResolvable EnableConfidentialComputeInput { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `ConfidentialInstanceType`<sup>Required</sup> <a name="ConfidentialInstanceType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.confidentialInstanceType"></a>
+
+```csharp
+public string ConfidentialInstanceType { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -12668,6 +13121,429 @@ public DataprocClusterClusterConfigMasterConfigDiskConfig InternalValue { get; }
 ---
 
 
+### DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference <a name="DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops">ResetBootDiskProvisionedIops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput">ResetBootDiskProvisionedThroughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb">ResetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType">ResetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface">ResetLocalSsdInterface</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds">ResetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBootDiskProvisionedIops` <a name="ResetBootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops"></a>
+
+```csharp
+private void ResetBootDiskProvisionedIops()
+```
+
+##### `ResetBootDiskProvisionedThroughput` <a name="ResetBootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput"></a>
+
+```csharp
+private void ResetBootDiskProvisionedThroughput()
+```
+
+##### `ResetBootDiskSizeGb` <a name="ResetBootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```csharp
+private void ResetBootDiskSizeGb()
+```
+
+##### `ResetBootDiskType` <a name="ResetBootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType"></a>
+
+```csharp
+private void ResetBootDiskType()
+```
+
+##### `ResetLocalSsdInterface` <a name="ResetLocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface"></a>
+
+```csharp
+private void ResetLocalSsdInterface()
+```
+
+##### `ResetNumLocalSsds` <a name="ResetNumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```csharp
+private void ResetNumLocalSsds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput">BootDiskProvisionedIopsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput">BootDiskProvisionedThroughputInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput">BootDiskSizeGbInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput">BootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput">LocalSsdInterfaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput">NumLocalSsdsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BootDiskProvisionedIopsInput`<sup>Optional</sup> <a name="BootDiskProvisionedIopsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput"></a>
+
+```csharp
+public double BootDiskProvisionedIopsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughputInput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughputInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughputInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGbInput`<sup>Optional</sup> <a name="BootDiskSizeGbInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```csharp
+public double BootDiskSizeGbInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskTypeInput`<sup>Optional</sup> <a name="BootDiskTypeInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```csharp
+public string BootDiskTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterfaceInput`<sup>Optional</sup> <a name="LocalSsdInterfaceInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput"></a>
+
+```csharp
+public string LocalSsdInterfaceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsdsInput`<sup>Optional</sup> <a name="NumLocalSsdsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```csharp
+public double NumLocalSsdsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Required</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Required</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGb`<sup>Required</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskType`<sup>Required</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterface`<sup>Required</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsds`<sup>Required</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+
 ### DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList <a name="DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer"></a>
@@ -12896,6 +13772,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig">PutDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig">ResetDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes">ResetMachineTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetRank">ResetRank</a></code> | *No description.* |
 
@@ -13051,6 +13929,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDiskConfig` <a name="PutDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig"></a>
+
+```csharp
+private void PutDiskConfig(DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+##### `ResetDiskConfig` <a name="ResetDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig"></a>
+
+```csharp
+private void ResetDiskConfig()
+```
+
 ##### `ResetMachineTypes` <a name="ResetMachineTypes" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes"></a>
 
 ```csharp
@@ -13070,6 +13966,8 @@ private void ResetRank()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput">DiskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypesInput">MachineTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.rankInput">RankInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | *No description.* |
@@ -13099,6 +13997,26 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `DiskConfig`<sup>Required</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference DiskConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a>
+
+---
+
+##### `DiskConfigInput`<sup>Optional</sup> <a name="DiskConfigInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput"></a>
+
+```csharp
+public DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
 
 ---
 
@@ -16082,6 +17000,429 @@ public DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig InternalVal
 ---
 
 
+### DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference <a name="DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops">ResetBootDiskProvisionedIops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput">ResetBootDiskProvisionedThroughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb">ResetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType">ResetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface">ResetLocalSsdInterface</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds">ResetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBootDiskProvisionedIops` <a name="ResetBootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops"></a>
+
+```csharp
+private void ResetBootDiskProvisionedIops()
+```
+
+##### `ResetBootDiskProvisionedThroughput` <a name="ResetBootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput"></a>
+
+```csharp
+private void ResetBootDiskProvisionedThroughput()
+```
+
+##### `ResetBootDiskSizeGb` <a name="ResetBootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```csharp
+private void ResetBootDiskSizeGb()
+```
+
+##### `ResetBootDiskType` <a name="ResetBootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType"></a>
+
+```csharp
+private void ResetBootDiskType()
+```
+
+##### `ResetLocalSsdInterface` <a name="ResetLocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface"></a>
+
+```csharp
+private void ResetLocalSsdInterface()
+```
+
+##### `ResetNumLocalSsds` <a name="ResetNumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```csharp
+private void ResetNumLocalSsds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput">BootDiskProvisionedIopsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput">BootDiskProvisionedThroughputInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput">BootDiskSizeGbInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput">BootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput">LocalSsdInterfaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput">NumLocalSsdsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BootDiskProvisionedIopsInput`<sup>Optional</sup> <a name="BootDiskProvisionedIopsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput"></a>
+
+```csharp
+public double BootDiskProvisionedIopsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughputInput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughputInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughputInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGbInput`<sup>Optional</sup> <a name="BootDiskSizeGbInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```csharp
+public double BootDiskSizeGbInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskTypeInput`<sup>Optional</sup> <a name="BootDiskTypeInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```csharp
+public string BootDiskTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterfaceInput`<sup>Optional</sup> <a name="LocalSsdInterfaceInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput"></a>
+
+```csharp
+public string LocalSsdInterfaceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsdsInput`<sup>Optional</sup> <a name="NumLocalSsdsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```csharp
+public double NumLocalSsdsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Required</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Required</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGb`<sup>Required</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskType`<sup>Required</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterface`<sup>Required</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsds`<sup>Required</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+
 ### DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList <a name="DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer"></a>
@@ -16310,6 +17651,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig">PutDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig">ResetDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes">ResetMachineTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetRank">ResetRank</a></code> | *No description.* |
 
@@ -16465,6 +17808,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDiskConfig` <a name="PutDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig"></a>
+
+```csharp
+private void PutDiskConfig(DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+##### `ResetDiskConfig` <a name="ResetDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig"></a>
+
+```csharp
+private void ResetDiskConfig()
+```
+
 ##### `ResetMachineTypes` <a name="ResetMachineTypes" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes"></a>
 
 ```csharp
@@ -16484,6 +17845,8 @@ private void ResetRank()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput">DiskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypesInput">MachineTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.rankInput">RankInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | *No description.* |
@@ -16513,6 +17876,26 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `DiskConfig`<sup>Required</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference DiskConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a>
+
+---
+
+##### `DiskConfigInput`<sup>Optional</sup> <a name="DiskConfigInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput"></a>
+
+```csharp
+public DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
 
 ---
 
@@ -20573,6 +21956,429 @@ public DataprocClusterClusterConfigWorkerConfigDiskConfig InternalValue { get; }
 ---
 
 
+### DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference <a name="DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops">ResetBootDiskProvisionedIops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput">ResetBootDiskProvisionedThroughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb">ResetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType">ResetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface">ResetLocalSsdInterface</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds">ResetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBootDiskProvisionedIops` <a name="ResetBootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedIops"></a>
+
+```csharp
+private void ResetBootDiskProvisionedIops()
+```
+
+##### `ResetBootDiskProvisionedThroughput` <a name="ResetBootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskProvisionedThroughput"></a>
+
+```csharp
+private void ResetBootDiskProvisionedThroughput()
+```
+
+##### `ResetBootDiskSizeGb` <a name="ResetBootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```csharp
+private void ResetBootDiskSizeGb()
+```
+
+##### `ResetBootDiskType` <a name="ResetBootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetBootDiskType"></a>
+
+```csharp
+private void ResetBootDiskType()
+```
+
+##### `ResetLocalSsdInterface` <a name="ResetLocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetLocalSsdInterface"></a>
+
+```csharp
+private void ResetLocalSsdInterface()
+```
+
+##### `ResetNumLocalSsds` <a name="ResetNumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```csharp
+private void ResetNumLocalSsds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput">BootDiskProvisionedIopsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput">BootDiskProvisionedThroughputInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput">BootDiskSizeGbInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput">BootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput">LocalSsdInterfaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput">NumLocalSsdsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops">BootDiskProvisionedIops</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput">BootDiskProvisionedThroughput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb">BootDiskSizeGb</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType">BootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface">LocalSsdInterface</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds">NumLocalSsds</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BootDiskProvisionedIopsInput`<sup>Optional</sup> <a name="BootDiskProvisionedIopsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIopsInput"></a>
+
+```csharp
+public double BootDiskProvisionedIopsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughputInput`<sup>Optional</sup> <a name="BootDiskProvisionedThroughputInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughputInput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughputInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGbInput`<sup>Optional</sup> <a name="BootDiskSizeGbInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```csharp
+public double BootDiskSizeGbInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskTypeInput`<sup>Optional</sup> <a name="BootDiskTypeInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```csharp
+public string BootDiskTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterfaceInput`<sup>Optional</sup> <a name="LocalSsdInterfaceInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterfaceInput"></a>
+
+```csharp
+public string LocalSsdInterfaceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsdsInput`<sup>Optional</sup> <a name="NumLocalSsdsInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```csharp
+public double NumLocalSsdsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedIops`<sup>Required</sup> <a name="BootDiskProvisionedIops" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedIops"></a>
+
+```csharp
+public double BootDiskProvisionedIops { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskProvisionedThroughput`<sup>Required</sup> <a name="BootDiskProvisionedThroughput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskProvisionedThroughput"></a>
+
+```csharp
+public double BootDiskProvisionedThroughput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskSizeGb`<sup>Required</sup> <a name="BootDiskSizeGb" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```csharp
+public double BootDiskSizeGb { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BootDiskType`<sup>Required</sup> <a name="BootDiskType" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.bootDiskType"></a>
+
+```csharp
+public string BootDiskType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocalSsdInterface`<sup>Required</sup> <a name="LocalSsdInterface" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.localSsdInterface"></a>
+
+```csharp
+public string LocalSsdInterface { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NumLocalSsds`<sup>Required</sup> <a name="NumLocalSsds" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```csharp
+public double NumLocalSsds { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+
 ### DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList <a name="DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer"></a>
@@ -20801,6 +22607,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig">PutDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig">ResetDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes">ResetMachineTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetRank">ResetRank</a></code> | *No description.* |
 
@@ -20956,6 +22764,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDiskConfig` <a name="PutDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig"></a>
+
+```csharp
+private void PutDiskConfig(DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
+
+---
+
+##### `ResetDiskConfig` <a name="ResetDiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetDiskConfig"></a>
+
+```csharp
+private void ResetDiskConfig()
+```
+
 ##### `ResetMachineTypes` <a name="ResetMachineTypes" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resetMachineTypes"></a>
 
 ```csharp
@@ -20975,6 +22801,8 @@ private void ResetRank()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig">DiskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput">DiskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypesInput">MachineTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.rankInput">RankInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypes">MachineTypes</a></code> | <code>string[]</code> | *No description.* |
@@ -21004,6 +22832,26 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `DiskConfig`<sup>Required</sup> <a name="DiskConfig" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfig"></a>
+
+```csharp
+public DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference DiskConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigOutputReference</a>
+
+---
+
+##### `DiskConfigInput`<sup>Optional</sup> <a name="DiskConfigInput" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.diskConfigInput"></a>
+
+```csharp
+public DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig DiskConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig">DataprocClusterClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleLoggingLogView <a name="DataGoogleLoggingLogView" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view google_logging_log_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view google_logging_log_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataGoogleLoggingLogView.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataGoogleLoggingLogView t
 
 The id of the existing DataGoogleLoggingLogView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,7 +881,7 @@ DataGoogleLoggingLogViewConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.name">name</a></code> | <code>java.lang.String</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | The parent of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
 
 ---
 
@@ -965,7 +965,7 @@ public java.lang.String getBucket();
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getLocation();
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.String getName();
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.lang.String getParent();
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

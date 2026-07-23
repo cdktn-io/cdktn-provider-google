@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface ChronicleNativeDashboardConfig extends cdktn.TerraformMetaArgum
   * DASHBOARD_PRIVATE
   * DASHBOARD_PUBLIC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#access ChronicleNativeDashboard#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#access ChronicleNativeDashboard#access}
   */
   readonly access?: string;
   /**
@@ -30,23 +30,23 @@ export interface ChronicleNativeDashboardConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#deletion_policy ChronicleNativeDashboard#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#deletion_policy ChronicleNativeDashboard#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#description ChronicleNativeDashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#description ChronicleNativeDashboard#description}
   */
   readonly description?: string;
   /**
   * The display name/title of the dashboard visible to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#display_name ChronicleNativeDashboard#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#display_name ChronicleNativeDashboard#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#id ChronicleNativeDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#id ChronicleNativeDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,23 +55,23 @@ export interface ChronicleNativeDashboardConfig extends cdktn.TerraformMetaArgum
   /**
   * The ID of the Chronicle instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#instance ChronicleNativeDashboard#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#instance ChronicleNativeDashboard#instance}
   */
   readonly instance: string;
   /**
   * Whether the dashboard is pinned by the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#is_pinned ChronicleNativeDashboard#is_pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#is_pinned ChronicleNativeDashboard#is_pinned}
   */
   readonly isPinned?: boolean | cdktn.IResolvable;
   /**
   * The location of the Chronicle instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#location ChronicleNativeDashboard#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#location ChronicleNativeDashboard#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#project ChronicleNativeDashboard#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#project ChronicleNativeDashboard#project}
   */
   readonly project?: string;
   /**
@@ -79,25 +79,25 @@ export interface ChronicleNativeDashboardConfig extends cdktn.TerraformMetaArgum
   * Possible values:
   * CURATED, PRIVATE, PUBLIC, CUSTOM, MARKETPLACE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#type ChronicleNativeDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#type ChronicleNativeDashboard#type}
   */
   readonly type?: string;
   /**
   * charts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#charts ChronicleNativeDashboard#charts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#charts ChronicleNativeDashboard#charts}
   */
   readonly charts?: ChronicleNativeDashboardCharts[] | cdktn.IResolvable;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#filters ChronicleNativeDashboard#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#filters ChronicleNativeDashboard#filters}
   */
   readonly filters?: ChronicleNativeDashboardFilters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#timeouts ChronicleNativeDashboard#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#timeouts ChronicleNativeDashboard#timeouts}
   */
   readonly timeouts?: ChronicleNativeDashboardTimeouts;
 }
@@ -105,25 +105,25 @@ export interface ChronicleNativeDashboardChartsChartLayout {
   /**
   * The number of columns the chart spans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#span_x ChronicleNativeDashboard#span_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#span_x ChronicleNativeDashboard#span_x}
   */
   readonly spanX: number;
   /**
   * The number of rows the chart spans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#span_y ChronicleNativeDashboard#span_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#span_y ChronicleNativeDashboard#span_y}
   */
   readonly spanY: number;
   /**
   * The starting X coordinate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#start_x ChronicleNativeDashboard#start_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#start_x ChronicleNativeDashboard#start_x}
   */
   readonly startX?: number;
   /**
   * The starting Y coordinate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#start_y ChronicleNativeDashboard#start_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#start_y ChronicleNativeDashboard#start_y}
   */
   readonly startY?: number;
 }
@@ -290,19 +290,19 @@ export interface ChronicleNativeDashboardCharts {
   /**
   * The resource name of the associated DashboardChart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#dashboard_chart ChronicleNativeDashboard#dashboard_chart}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#dashboard_chart ChronicleNativeDashboard#dashboard_chart}
   */
   readonly dashboardChart?: string;
   /**
   * List of dashboard filter IDs applied to this chart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#filters_ids ChronicleNativeDashboard#filters_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#filters_ids ChronicleNativeDashboard#filters_ids}
   */
   readonly filtersIds?: string[];
   /**
   * chart_layout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#chart_layout ChronicleNativeDashboard#chart_layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#chart_layout ChronicleNativeDashboard#chart_layout}
   */
   readonly chartLayout?: ChronicleNativeDashboardChartsChartLayout;
 }
@@ -479,13 +479,13 @@ export interface ChronicleNativeDashboardFiltersFilterOperatorAndFieldValues {
   * The values for the modifier. All operators should have a single
   * value other than 'IN' and 'BETWEEN'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#field_values ChronicleNativeDashboard#field_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#field_values ChronicleNativeDashboard#field_values}
   */
   readonly fieldValues?: string[];
   /**
   * The operator to apply to the field. Possible values: ["EQUAL", "NOT_EQUAL", "IN", "GREATER_THAN", "GREATER_THAN_OR_EQUAL_TO", "LESS_THAN", "LESS_THAN_OR_EQUAL_TO", "BETWEEN", "PAST", "IS_NULL", "IS_NOT_NULL", "STARTS_WITH", "ENDS_WITH", "DOES_NOT_STARTS_WITH", "DOES_NOT_ENDS_WITH", "NOT_IN", "CONTAINS", "DOES_NOT_CONTAIN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#filter_operator ChronicleNativeDashboard#filter_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#filter_operator ChronicleNativeDashboard#filter_operator}
   */
   readonly filterOperator?: string;
 }
@@ -632,7 +632,7 @@ export interface ChronicleNativeDashboardFilters {
   /**
   * The IDs of charts that this filter applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#chart_ids ChronicleNativeDashboard#chart_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#chart_ids ChronicleNativeDashboard#chart_ids}
   */
   readonly chartIds?: string[];
   /**
@@ -642,25 +642,25 @@ export interface ChronicleNativeDashboardFilters {
   * IOC_MATCHES, RULES, SOAR_CASES, SOAR_PLAYBOOKS, SOAR_CASE_HISTORY,
   * DATA_TABLE, INVESTIGATION, INVESTIGATION_FEEDBACK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#data_source ChronicleNativeDashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#data_source ChronicleNativeDashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The display name of the filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#display_name ChronicleNativeDashboard#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#display_name ChronicleNativeDashboard#display_name}
   */
   readonly displayName?: string;
   /**
   * The UDM field path being filtered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#field_path ChronicleNativeDashboard#field_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#field_path ChronicleNativeDashboard#field_path}
   */
   readonly fieldPath?: string;
   /**
   * The unique ID of the filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#id ChronicleNativeDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#id ChronicleNativeDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -669,25 +669,25 @@ export interface ChronicleNativeDashboardFilters {
   /**
   * Whether the filter is mandatory for the dashboard consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#is_mandatory ChronicleNativeDashboard#is_mandatory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#is_mandatory ChronicleNativeDashboard#is_mandatory}
   */
   readonly isMandatory?: boolean | cdktn.IResolvable;
   /**
   * Whether the filter is a standard time range filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#is_standard_time_range_filter ChronicleNativeDashboard#is_standard_time_range_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#is_standard_time_range_filter ChronicleNativeDashboard#is_standard_time_range_filter}
   */
   readonly isStandardTimeRangeFilter?: boolean | cdktn.IResolvable;
   /**
   * Whether the standard time range filter is currently enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#is_standard_time_range_filter_enabled ChronicleNativeDashboard#is_standard_time_range_filter_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#is_standard_time_range_filter_enabled ChronicleNativeDashboard#is_standard_time_range_filter_enabled}
   */
   readonly isStandardTimeRangeFilterEnabled?: boolean | cdktn.IResolvable;
   /**
   * filter_operator_and_field_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#filter_operator_and_field_values ChronicleNativeDashboard#filter_operator_and_field_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#filter_operator_and_field_values ChronicleNativeDashboard#filter_operator_and_field_values}
   */
   readonly filterOperatorAndFieldValues?: ChronicleNativeDashboardFiltersFilterOperatorAndFieldValues[] | cdktn.IResolvable;
 }
@@ -1035,15 +1035,15 @@ export class ChronicleNativeDashboardFiltersList extends cdktn.ComplexList {
 }
 export interface ChronicleNativeDashboardTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#create ChronicleNativeDashboard#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#create ChronicleNativeDashboard#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#delete ChronicleNativeDashboard#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#delete ChronicleNativeDashboard#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#update ChronicleNativeDashboard#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#update ChronicleNativeDashboard#update}
   */
   readonly update?: string;
 }
@@ -1195,7 +1195,7 @@ export class ChronicleNativeDashboardTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard google_chronicle_native_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard google_chronicle_native_dashboard}
 */
 export class ChronicleNativeDashboard extends cdktn.TerraformResource {
 
@@ -1211,7 +1211,7 @@ export class ChronicleNativeDashboard extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleNativeDashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleNativeDashboard to import
-  * @param importFromId The id of the existing ChronicleNativeDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleNativeDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleNativeDashboard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1223,7 +1223,7 @@ export class ChronicleNativeDashboard extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_native_dashboard google_chronicle_native_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_native_dashboard google_chronicle_native_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1234,7 +1234,7 @@ export class ChronicleNativeDashboard extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_native_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

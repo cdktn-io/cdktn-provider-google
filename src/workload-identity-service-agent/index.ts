@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface WorkloadIdentityServiceAgentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface WorkloadIdentityServiceAgentConfig extends cdktn.TerraformMetaA
   /**
   * The parent resource path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#parent WorkloadIdentityServiceAgent#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#parent WorkloadIdentityServiceAgent#parent}
   */
   readonly parent: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#timeouts WorkloadIdentityServiceAgent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#timeouts WorkloadIdentityServiceAgent#timeouts}
   */
   readonly timeouts?: WorkloadIdentityServiceAgentTimeouts;
 }
@@ -134,11 +134,11 @@ export class WorkloadIdentityServiceAgentServiceAgentsList extends cdktn.Complex
 }
 export interface WorkloadIdentityServiceAgentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}
   */
   readonly delete?: string;
 }
@@ -261,7 +261,7 @@ export class WorkloadIdentityServiceAgentTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent}
 */
 export class WorkloadIdentityServiceAgent extends cdktn.TerraformResource {
 
@@ -277,7 +277,7 @@ export class WorkloadIdentityServiceAgent extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkloadIdentityServiceAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkloadIdentityServiceAgent to import
-  * @param importFromId The id of the existing WorkloadIdentityServiceAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkloadIdentityServiceAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkloadIdentityServiceAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -289,7 +289,7 @@ export class WorkloadIdentityServiceAgent extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -300,7 +300,7 @@ export class WorkloadIdentityServiceAgent extends cdktn.TerraformResource {
       terraformResourceType: 'google_workload_identity_service_agent',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

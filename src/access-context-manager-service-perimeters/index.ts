@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface AccessContextManagerServicePerimetersConfig extends cdktn.Terra
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#deletion_policy AccessContextManagerServicePerimeters#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#deletion_policy AccessContextManagerServicePerimeters#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#id AccessContextManagerServicePerimeters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#id AccessContextManagerServicePerimeters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,27 +35,114 @@ export interface AccessContextManagerServicePerimetersConfig extends cdktn.Terra
   * The AccessPolicy this ServicePerimeter lives in.
   * Format: accessPolicies/{policy_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#parent AccessContextManagerServicePerimeters#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#parent AccessContextManagerServicePerimeters#parent}
   */
   readonly parent: string;
   /**
   * service_perimeters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#service_perimeters AccessContextManagerServicePerimeters#service_perimeters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_perimeters AccessContextManagerServicePerimeters#service_perimeters}
   */
   readonly servicePerimeters?: AccessContextManagerServicePerimetersServicePerimeters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#timeouts AccessContextManagerServicePerimeters#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#timeouts AccessContextManagerServicePerimeters#timeouts}
   */
   readonly timeouts?: AccessContextManagerServicePerimetersTimeouts;
+}
+export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint {
+  /**
+  * The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+  * Forwarding rule format: '//compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#forwarding_rule AccessContextManagerServicePerimeters#forwarding_rule}
+  */
+  readonly forwardingRule?: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    forwarding_rule: cdktn.stringToTerraform(struct!.forwardingRule),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    forwarding_rule: {
+      value: cdktn.stringToHclTerraform(struct!.forwardingRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forwardingRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardingRule = this._forwardingRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forwardingRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forwardingRule = value.forwardingRule;
+    }
+  }
+
+  // forwarding_rule - computed: false, optional: true, required: false
+  private _forwardingRule?: string; 
+  public get forwardingRule() {
+    return this.getStringAttribute('forwarding_rule');
+  }
+  public set forwardingRule(value: string) {
+    this._forwardingRule = value;
+  }
+  public resetForwardingRule() {
+    this._forwardingRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardingRuleInput() {
+    return this._forwardingRule;
+  }
 }
 export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources {
   /**
   * An AccessLevel resource name that allows resources outside the ServicePerimeter to be accessed from the inside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
   */
   readonly accessLevel?: string;
   /**
@@ -66,9 +153,15 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * organization that the perimeter is defined in. '*' is not allowed, the
   * case of allowing all Google Cloud resources only is not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
   */
   readonly resource?: string;
+  /**
+  * psc_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#psc_endpoint AccessContextManagerServicePerimeters#psc_endpoint}
+  */
+  readonly pscEndpoint?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
@@ -79,6 +172,7 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return {
     access_level: cdktn.stringToTerraform(struct!.accessLevel),
     resource: cdktn.stringToTerraform(struct!.resource),
+    psc_endpoint: accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointToTerraform(struct!.pscEndpoint),
   }
 }
 
@@ -100,6 +194,12 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    psc_endpoint: {
+      value: accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointToHclTerraform(struct!.pscEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointList",
     },
   };
 
@@ -135,6 +235,10 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
       hasAnyValues = true;
       internalValueResult.resource = this._resource;
     }
+    if (this._pscEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscEndpoint = this._pscEndpoint?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -144,6 +248,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
+      this._pscEndpoint.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -154,6 +259,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._resource = value.resource;
+      this._pscEndpoint.internalValue = value.pscEndpoint;
     }
   }
 
@@ -188,6 +294,22 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   public get resourceInput() {
     return this._resource;
   }
+
+  // psc_endpoint - computed: false, optional: true, required: false
+  private _pscEndpoint = new AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference(this, "psc_endpoint");
+  public get pscEndpoint() {
+    return this._pscEndpoint;
+  }
+  public putPscEndpoint(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesPscEndpoint) {
+    this._pscEndpoint.internalValue = value;
+  }
+  public resetPscEndpoint() {
+    this._pscEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscEndpointInput() {
+    return this._pscEndpoint.internalValue;
+  }
 }
 
 export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesList extends cdktn.ComplexList {
@@ -217,7 +339,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * that have the prefix user, group and serviceAccount in
   * https://cloud.google.com/iam/docs/principal-identifiers#v1 are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
   */
   readonly identities?: string[];
   /**
@@ -225,19 +347,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * perimeter. If left unspecified, then members of 'identities' field will
   * be allowed access. Possible values: ["IDENTITY_TYPE_UNSPECIFIED", "ANY_IDENTITY", "ANY_USER_ACCOUNT", "ANY_SERVICE_ACCOUNT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
   */
   readonly identityType?: string;
   /**
   * Whether to enforce traffic restrictions based on 'sources' field. If the 'sources' field is non-empty, then this field must be set to 'SOURCE_RESTRICTION_ENABLED'. Possible values: ["SOURCE_RESTRICTION_UNSPECIFIED", "SOURCE_RESTRICTION_ENABLED", "SOURCE_RESTRICTION_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#source_restriction AccessContextManagerServicePerimeters#source_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#source_restriction AccessContextManagerServicePerimeters#source_restriction}
   */
   readonly sourceRestriction?: string;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
   readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktn.IResolvable;
 }
@@ -412,14 +534,14 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * 'serviceName' in 'ApiOperation'. If '*' used as value for method,
   * then ALL methods and permissions are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
   */
   readonly method?: string;
   /**
   * Value for permission should be a valid Cloud IAM permission for the
   * corresponding 'serviceName' in 'ApiOperation'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
   */
   readonly permission?: string;
 }
@@ -568,13 +690,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * 'EgressPolicy' want to allow. A single 'ApiOperation' with serviceName
   * field set to '*' will allow all methods AND permissions for all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
   */
   readonly serviceName?: string;
   /**
   * method_selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
   readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
@@ -723,7 +845,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * matches if it contains an external resource in this list (Example:
   * s3://bucket/path). Currently '*' is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#external_resources AccessContextManagerServicePerimeters#external_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#external_resources AccessContextManagerServicePerimeters#external_resources}
   */
   readonly externalResources?: string[];
   /**
@@ -733,7 +855,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * then this 'EgressTo' rule will authorize access to all resources outside
   * the perimeter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -741,13 +863,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   * specified in the corresponding 'EgressFrom'
   * are allowed to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
   */
   readonly roles?: string[];
   /**
   * operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
   readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktn.IResolvable;
 }
@@ -920,19 +1042,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   /**
   * Human readable title. Must be unique within the perimeter. Does not affect behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
   */
   readonly title?: string;
   /**
   * egress_from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_from AccessContextManagerServicePerimeters#egress_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_from AccessContextManagerServicePerimeters#egress_from}
   */
   readonly egressFrom?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFrom;
   /**
   * egress_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_to AccessContextManagerServicePerimeters#egress_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_to AccessContextManagerServicePerimeters#egress_to}
   */
   readonly egressTo?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressTo;
 }
@@ -1104,6 +1226,93 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
     return new AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint {
+  /**
+  * The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+  * Forwarding rule format: '//compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#forwarding_rule AccessContextManagerServicePerimeters#forwarding_rule}
+  */
+  readonly forwardingRule?: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    forwarding_rule: cdktn.stringToTerraform(struct!.forwardingRule),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    forwarding_rule: {
+      value: cdktn.stringToHclTerraform(struct!.forwardingRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forwardingRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardingRule = this._forwardingRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forwardingRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forwardingRule = value.forwardingRule;
+    }
+  }
+
+  // forwarding_rule - computed: false, optional: true, required: false
+  private _forwardingRule?: string; 
+  public get forwardingRule() {
+    return this.getStringAttribute('forwarding_rule');
+  }
+  public set forwardingRule(value: string) {
+    this._forwardingRule = value;
+  }
+  public resetForwardingRule() {
+    this._forwardingRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardingRuleInput() {
+    return this._forwardingRule;
+  }
+}
 export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources {
   /**
   * An 'AccessLevel' resource name that allow resources within the
@@ -1115,7 +1324,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * Example 'accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.'
   * If * is specified, then all IngressSources will be allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
   */
   readonly accessLevel?: string;
   /**
@@ -1126,9 +1335,15 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * organization that the perimeter is defined in. '*' is not allowed, the case
   * of allowing all Google Cloud resources only is not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
   */
   readonly resource?: string;
+  /**
+  * psc_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#psc_endpoint AccessContextManagerServicePerimeters#psc_endpoint}
+  */
+  readonly pscEndpoint?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
@@ -1139,6 +1354,7 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return {
     access_level: cdktn.stringToTerraform(struct!.accessLevel),
     resource: cdktn.stringToTerraform(struct!.resource),
+    psc_endpoint: accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointToTerraform(struct!.pscEndpoint),
   }
 }
 
@@ -1160,6 +1376,12 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    psc_endpoint: {
+      value: accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointToHclTerraform(struct!.pscEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointList",
     },
   };
 
@@ -1195,6 +1417,10 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
       hasAnyValues = true;
       internalValueResult.resource = this._resource;
     }
+    if (this._pscEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscEndpoint = this._pscEndpoint?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1204,6 +1430,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
+      this._pscEndpoint.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1214,6 +1441,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._resource = value.resource;
+      this._pscEndpoint.internalValue = value.pscEndpoint;
     }
   }
 
@@ -1248,6 +1476,22 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   public get resourceInput() {
     return this._resource;
   }
+
+  // psc_endpoint - computed: false, optional: true, required: false
+  private _pscEndpoint = new AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference(this, "psc_endpoint");
+  public get pscEndpoint() {
+    return this._pscEndpoint;
+  }
+  public putPscEndpoint(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesPscEndpoint) {
+    this._pscEndpoint.internalValue = value;
+  }
+  public resetPscEndpoint() {
+    this._pscEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscEndpointInput() {
+    return this._pscEndpoint.internalValue;
+  }
 }
 
 export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesList extends cdktn.ComplexList {
@@ -1275,7 +1519,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * Should be in the format of email address. The email address should represent
   * individual user or service account only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
   */
   readonly identities?: string[];
   /**
@@ -1283,13 +1527,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * perimeter. If left unspecified, then members of 'identities' field will be
   * allowed access. Possible values: ["IDENTITY_TYPE_UNSPECIFIED", "ANY_IDENTITY", "ANY_USER_ACCOUNT", "ANY_SERVICE_ACCOUNT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
   */
   readonly identityType?: string;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
   readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktn.IResolvable;
 }
@@ -1435,14 +1679,14 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * serviceName in 'ApiOperation'. If '*' used as value for 'method', then
   * ALL methods and permissions are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
   */
   readonly method?: string;
   /**
   * Value for permission should be a valid Cloud IAM permission for the
   * corresponding 'serviceName' in 'ApiOperation'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
   */
   readonly permission?: string;
 }
@@ -1591,13 +1835,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * 'EgressPolicy' want to allow. A single 'ApiOperation' with 'serviceName'
   * field set to '*' will allow all methods AND permissions for all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
   */
   readonly serviceName?: string;
   /**
   * method_selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
   readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
@@ -1751,7 +1995,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * resources inside the perimeter, provided that the request
   * also matches the 'operations' field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -1759,13 +2003,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   * specified in the corresponding 'IngressFrom'
   * are allowed to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
   */
   readonly roles?: string[];
   /**
   * operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
   readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktn.IResolvable;
 }
@@ -1909,19 +2153,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   /**
   * Human readable title. Must be unique within the perimeter. Does not affect behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
   */
   readonly title?: string;
   /**
   * ingress_from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_from AccessContextManagerServicePerimeters#ingress_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_from AccessContextManagerServicePerimeters#ingress_from}
   */
   readonly ingressFrom?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFrom;
   /**
   * ingress_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_to AccessContextManagerServicePerimeters#ingress_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_to AccessContextManagerServicePerimeters#ingress_to}
   */
   readonly ingressTo?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressTo;
 }
@@ -2093,21 +2337,454 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
     return new AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader {
+  /**
+  * HTTP header key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#key AccessContextManagerServicePerimeters#key}
+  */
+  readonly key: string;
+  /**
+  * HTTP header value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#value AccessContextManagerServicePerimeters#value}
+  */
+  readonly value: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers {
+  /**
+  * add_request_header block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#add_request_header AccessContextManagerServicePerimeters#add_request_header}
+  */
+  readonly addRequestHeader?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    add_request_header: accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToTerraform(struct!.addRequestHeader),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    add_request_header: {
+      value: accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToHclTerraform(struct!.addRequestHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._addRequestHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addRequestHeader = this._addRequestHeader?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._addRequestHeader.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._addRequestHeader.internalValue = value.addRequestHeader;
+    }
+  }
+
+  // add_request_header - computed: false, optional: true, required: false
+  private _addRequestHeader = new AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference(this, "add_request_header");
+  public get addRequestHeader() {
+    return this._addRequestHeader;
+  }
+  public putAddRequestHeader(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader) {
+    this._addRequestHeader.internalValue = value;
+  }
+  public resetAddRequestHeader() {
+    this._addRequestHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addRequestHeaderInput() {
+    return this._addRequestHeader.internalValue;
+  }
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference {
+    return new AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns {
+  /**
+  * URL pattern to allow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#pattern AccessContextManagerServicePerimeters#pattern}
+  */
+  readonly pattern?: string;
+  /**
+  * Supported service to allow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service AccessContextManagerServicePerimeters#service}
+  */
+  readonly service?: string;
+  /**
+  * modifiers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#modifiers AccessContextManagerServicePerimeters#modifiers}
+  */
+  readonly modifiers?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    pattern: cdktn.stringToTerraform(struct!.pattern),
+    service: cdktn.stringToTerraform(struct!.service),
+    modifiers: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersToTerraform, true)(struct!.modifiers),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktn.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktn.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modifiers: {
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersToHclTerraform, true)(struct!.modifiers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pattern = this._pattern;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    if (this._modifiers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiers = this._modifiers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._pattern = undefined;
+      this._service = undefined;
+      this._modifiers.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._pattern = value.pattern;
+      this._service = value.service;
+      this._modifiers.internalValue = value.modifiers;
+    }
+  }
+
+  // pattern - computed: false, optional: true, required: false
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  public resetPattern() {
+    this._pattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+
+  // modifiers - computed: false, optional: true, required: false
+  private _modifiers = new AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiersList(this, "modifiers", false);
+  public get modifiers() {
+    return this._modifiers;
+  }
+  public putModifiers(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable) {
+    this._modifiers.internalValue = value;
+  }
+  public resetModifiers() {
+    this._modifiers.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiersInput() {
+    return this._modifiers.internalValue;
+  }
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsOutputReference {
+    return new AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices {
   /**
   * The list of APIs usable within the Service Perimeter.
   * Must be empty unless 'enableRestriction' is True.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#allowed_services AccessContextManagerServicePerimeters#allowed_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#allowed_services AccessContextManagerServicePerimeters#allowed_services}
   */
   readonly allowedServices?: string[];
   /**
   * Whether to restrict API calls within the Service Perimeter to the
   * list of APIs specified in 'allowedServices'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
   */
   readonly enableRestriction?: boolean | cdktn.IResolvable;
+  /**
+  * Defines the enforcement scopes of service patterns. Possible values: ["GOOGLE_APIS_VIA_PRIVATE_PATH"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_patterns_enforcement_scopes AccessContextManagerServicePerimeters#service_patterns_enforcement_scopes}
+  */
+  readonly servicePatternsEnforcementScopes?: string[];
+  /**
+  * allowed_service_patterns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#allowed_service_patterns AccessContextManagerServicePerimeters#allowed_service_patterns}
+  */
+  readonly allowedServicePatterns?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices): any {
@@ -2118,6 +2795,8 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAcc
   return {
     allowed_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedServices),
     enable_restriction: cdktn.booleanToTerraform(struct!.enableRestriction),
+    service_patterns_enforcement_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.servicePatternsEnforcementScopes),
+    allowed_service_patterns: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsToTerraform, true)(struct!.allowedServicePatterns),
   }
 }
 
@@ -2139,6 +2818,18 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAcc
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    service_patterns_enforcement_scopes: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.servicePatternsEnforcementScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_service_patterns: {
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsToHclTerraform, true)(struct!.allowedServicePatterns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsList",
     },
   };
 
@@ -2168,6 +2859,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccess
       hasAnyValues = true;
       internalValueResult.enableRestriction = this._enableRestriction;
     }
+    if (this._servicePatternsEnforcementScopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicePatternsEnforcementScopes = this._servicePatternsEnforcementScopes;
+    }
+    if (this._allowedServicePatterns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedServicePatterns = this._allowedServicePatterns?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2176,11 +2875,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccess
       this.isEmptyObject = false;
       this._allowedServices = undefined;
       this._enableRestriction = undefined;
+      this._servicePatternsEnforcementScopes = undefined;
+      this._allowedServicePatterns.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedServices = value.allowedServices;
       this._enableRestriction = value.enableRestriction;
+      this._servicePatternsEnforcementScopes = value.servicePatternsEnforcementScopes;
+      this._allowedServicePatterns.internalValue = value.allowedServicePatterns;
     }
   }
 
@@ -2215,6 +2918,38 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccess
   public get enableRestrictionInput() {
     return this._enableRestriction;
   }
+
+  // service_patterns_enforcement_scopes - computed: false, optional: true, required: false
+  private _servicePatternsEnforcementScopes?: string[]; 
+  public get servicePatternsEnforcementScopes() {
+    return this.getListAttribute('service_patterns_enforcement_scopes');
+  }
+  public set servicePatternsEnforcementScopes(value: string[]) {
+    this._servicePatternsEnforcementScopes = value;
+  }
+  public resetServicePatternsEnforcementScopes() {
+    this._servicePatternsEnforcementScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePatternsEnforcementScopesInput() {
+    return this._servicePatternsEnforcementScopes;
+  }
+
+  // allowed_service_patterns - computed: false, optional: true, required: false
+  private _allowedServicePatterns = new AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatternsList(this, "allowed_service_patterns", false);
+  public get allowedServicePatterns() {
+    return this._allowedServicePatterns;
+  }
+  public putAllowedServicePatterns(value: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable) {
+    this._allowedServicePatterns.internalValue = value;
+  }
+  public resetAllowedServicePatterns() {
+    this._allowedServicePatterns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedServicePatternsInput() {
+    return this._allowedServicePatterns.internalValue;
+  }
 }
 export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
   /**
@@ -2229,7 +2964,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
   * 
   * Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_levels AccessContextManagerServicePerimeters#access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_levels AccessContextManagerServicePerimeters#access_levels}
   */
   readonly accessLevels?: string[];
   /**
@@ -2237,7 +2972,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
   * Currently only projects are allowed.
   * Format: projects/{project_number}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -2247,25 +2982,25 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
   * buckets inside the perimeter must meet the perimeter's access
   * restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#restricted_services AccessContextManagerServicePerimeters#restricted_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#restricted_services AccessContextManagerServicePerimeters#restricted_services}
   */
   readonly restrictedServices?: string[];
   /**
   * egress_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
   */
   readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktn.IResolvable;
   /**
   * ingress_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
   */
   readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktn.IResolvable;
   /**
   * vpc_accessible_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#vpc_accessible_services AccessContextManagerServicePerimeters#vpc_accessible_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#vpc_accessible_services AccessContextManagerServicePerimeters#vpc_accessible_services}
   */
   readonly vpcAccessibleServices?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices;
 }
@@ -2492,11 +3227,98 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
     return this._vpcAccessibleServices.internalValue;
   }
 }
+export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint {
+  /**
+  * The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+  * Forwarding rule format: '//compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#forwarding_rule AccessContextManagerServicePerimeters#forwarding_rule}
+  */
+  readonly forwardingRule?: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    forwarding_rule: cdktn.stringToTerraform(struct!.forwardingRule),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    forwarding_rule: {
+      value: cdktn.stringToHclTerraform(struct!.forwardingRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forwardingRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardingRule = this._forwardingRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forwardingRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forwardingRule = value.forwardingRule;
+    }
+  }
+
+  // forwarding_rule - computed: false, optional: true, required: false
+  private _forwardingRule?: string; 
+  public get forwardingRule() {
+    return this.getStringAttribute('forwarding_rule');
+  }
+  public set forwardingRule(value: string) {
+    this._forwardingRule = value;
+  }
+  public resetForwardingRule() {
+    this._forwardingRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardingRuleInput() {
+    return this._forwardingRule;
+  }
+}
 export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources {
   /**
   * An AccessLevel resource name that allows resources outside the ServicePerimeter to be accessed from the inside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
   */
   readonly accessLevel?: string;
   /**
@@ -2507,9 +3329,15 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * organization that the perimeter is defined in. '*' is not allowed, the
   * case of allowing all Google Cloud resources only is not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
   */
   readonly resource?: string;
+  /**
+  * psc_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#psc_endpoint AccessContextManagerServicePerimeters#psc_endpoint}
+  */
+  readonly pscEndpoint?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
@@ -2520,6 +3348,7 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return {
     access_level: cdktn.stringToTerraform(struct!.accessLevel),
     resource: cdktn.stringToTerraform(struct!.resource),
+    psc_endpoint: accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointToTerraform(struct!.pscEndpoint),
   }
 }
 
@@ -2541,6 +3370,12 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    psc_endpoint: {
+      value: accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointToHclTerraform(struct!.pscEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointList",
     },
   };
 
@@ -2576,6 +3411,10 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
       hasAnyValues = true;
       internalValueResult.resource = this._resource;
     }
+    if (this._pscEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscEndpoint = this._pscEndpoint?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2585,6 +3424,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
+      this._pscEndpoint.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2595,6 +3435,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._resource = value.resource;
+      this._pscEndpoint.internalValue = value.pscEndpoint;
     }
   }
 
@@ -2629,6 +3470,22 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   public get resourceInput() {
     return this._resource;
   }
+
+  // psc_endpoint - computed: false, optional: true, required: false
+  private _pscEndpoint = new AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference(this, "psc_endpoint");
+  public get pscEndpoint() {
+    return this._pscEndpoint;
+  }
+  public putPscEndpoint(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesPscEndpoint) {
+    this._pscEndpoint.internalValue = value;
+  }
+  public resetPscEndpoint() {
+    this._pscEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscEndpointInput() {
+    return this._pscEndpoint.internalValue;
+  }
 }
 
 export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList extends cdktn.ComplexList {
@@ -2656,7 +3513,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * Should be in the format of email address. The email address should
   * represent individual user or service account only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
   */
   readonly identities?: string[];
   /**
@@ -2664,19 +3521,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * perimeter. If left unspecified, then members of 'identities' field will
   * be allowed access. Possible values: ["IDENTITY_TYPE_UNSPECIFIED", "ANY_IDENTITY", "ANY_USER_ACCOUNT", "ANY_SERVICE_ACCOUNT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
   */
   readonly identityType?: string;
   /**
   * Whether to enforce traffic restrictions based on 'sources' field. If the 'sources' field is non-empty, then this field must be set to 'SOURCE_RESTRICTION_ENABLED'. Possible values: ["SOURCE_RESTRICTION_UNSPECIFIED", "SOURCE_RESTRICTION_ENABLED", "SOURCE_RESTRICTION_DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#source_restriction AccessContextManagerServicePerimeters#source_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#source_restriction AccessContextManagerServicePerimeters#source_restriction}
   */
   readonly sourceRestriction?: string;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
   readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktn.IResolvable;
 }
@@ -2851,14 +3708,14 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * 'serviceName' in 'ApiOperation'. If '*' used as value for method,
   * then ALL methods and permissions are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
   */
   readonly method?: string;
   /**
   * Value for permission should be a valid Cloud IAM permission for the
   * corresponding 'serviceName' in 'ApiOperation'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
   */
   readonly permission?: string;
 }
@@ -3007,13 +3864,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * 'EgressPolicy' want to allow. A single 'ApiOperation' with serviceName
   * field set to '*' will allow all methods AND permissions for all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
   */
   readonly serviceName?: string;
   /**
   * method_selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
   readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
@@ -3162,7 +4019,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * matches if it contains an external resource in this list (Example:
   * s3://bucket/path). Currently '*' is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#external_resources AccessContextManagerServicePerimeters#external_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#external_resources AccessContextManagerServicePerimeters#external_resources}
   */
   readonly externalResources?: string[];
   /**
@@ -3172,7 +4029,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * then this 'EgressTo' rule will authorize access to all resources outside
   * the perimeter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -3180,13 +4037,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   * specified in the corresponding 'EgressFrom'
   * are allowed to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
   */
   readonly roles?: string[];
   /**
   * operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
   readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktn.IResolvable;
 }
@@ -3359,19 +4216,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   /**
   * Human readable title. Must be unique within the perimeter. Does not affect behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
   */
   readonly title?: string;
   /**
   * egress_from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_from AccessContextManagerServicePerimeters#egress_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_from AccessContextManagerServicePerimeters#egress_from}
   */
   readonly egressFrom?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFrom;
   /**
   * egress_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_to AccessContextManagerServicePerimeters#egress_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_to AccessContextManagerServicePerimeters#egress_to}
   */
   readonly egressTo?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressTo;
 }
@@ -3543,6 +4400,93 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
     return new AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint {
+  /**
+  * The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+  * Forwarding rule format: '//compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#forwarding_rule AccessContextManagerServicePerimeters#forwarding_rule}
+  */
+  readonly forwardingRule?: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    forwarding_rule: cdktn.stringToTerraform(struct!.forwardingRule),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    forwarding_rule: {
+      value: cdktn.stringToHclTerraform(struct!.forwardingRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forwardingRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardingRule = this._forwardingRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forwardingRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forwardingRule = value.forwardingRule;
+    }
+  }
+
+  // forwarding_rule - computed: false, optional: true, required: false
+  private _forwardingRule?: string; 
+  public get forwardingRule() {
+    return this.getStringAttribute('forwarding_rule');
+  }
+  public set forwardingRule(value: string) {
+    this._forwardingRule = value;
+  }
+  public resetForwardingRule() {
+    this._forwardingRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardingRuleInput() {
+    return this._forwardingRule;
+  }
+}
 export interface AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources {
   /**
   * An 'AccessLevel' resource name that allow resources within the
@@ -3554,7 +4498,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * Example 'accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.'
   * If * is specified, then all IngressSources will be allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_level AccessContextManagerServicePerimeters#access_level}
   */
   readonly accessLevel?: string;
   /**
@@ -3565,9 +4509,15 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * organization that the perimeter is defined in. '*' is not allowed, the case
   * of allowing all Google Cloud resources only is not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resource AccessContextManagerServicePerimeters#resource}
   */
   readonly resource?: string;
+  /**
+  * psc_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#psc_endpoint AccessContextManagerServicePerimeters#psc_endpoint}
+  */
+  readonly pscEndpoint?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
@@ -3578,6 +4528,7 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return {
     access_level: cdktn.stringToTerraform(struct!.accessLevel),
     resource: cdktn.stringToTerraform(struct!.resource),
+    psc_endpoint: accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointToTerraform(struct!.pscEndpoint),
   }
 }
 
@@ -3599,6 +4550,12 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    psc_endpoint: {
+      value: accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointToHclTerraform(struct!.pscEndpoint),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointList",
     },
   };
 
@@ -3634,6 +4591,10 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
       hasAnyValues = true;
       internalValueResult.resource = this._resource;
     }
+    if (this._pscEndpoint?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscEndpoint = this._pscEndpoint?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3643,6 +4604,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
+      this._pscEndpoint.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3653,6 +4615,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._resource = value.resource;
+      this._pscEndpoint.internalValue = value.pscEndpoint;
     }
   }
 
@@ -3687,6 +4650,22 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   public get resourceInput() {
     return this._resource;
   }
+
+  // psc_endpoint - computed: false, optional: true, required: false
+  private _pscEndpoint = new AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference(this, "psc_endpoint");
+  public get pscEndpoint() {
+    return this._pscEndpoint;
+  }
+  public putPscEndpoint(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesPscEndpoint) {
+    this._pscEndpoint.internalValue = value;
+  }
+  public resetPscEndpoint() {
+    this._pscEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscEndpointInput() {
+    return this._pscEndpoint.internalValue;
+  }
 }
 
 export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesList extends cdktn.ComplexList {
@@ -3714,7 +4693,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * Should be in the format of email address. The email address should represent
   * individual user or service account only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identities AccessContextManagerServicePerimeters#identities}
   */
   readonly identities?: string[];
   /**
@@ -3722,13 +4701,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * perimeter. If left unspecified, then members of 'identities' field will be
   * allowed access. Possible values: ["IDENTITY_TYPE_UNSPECIFIED", "ANY_IDENTITY", "ANY_USER_ACCOUNT", "ANY_SERVICE_ACCOUNT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#identity_type AccessContextManagerServicePerimeters#identity_type}
   */
   readonly identityType?: string;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
   readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktn.IResolvable;
 }
@@ -3874,14 +4853,14 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * serviceName in 'ApiOperation'. If '*' used as value for 'method', then
   * ALL methods and permissions are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method AccessContextManagerServicePerimeters#method}
   */
   readonly method?: string;
   /**
   * Value for permission should be a valid Cloud IAM permission for the
   * corresponding 'serviceName' in 'ApiOperation'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#permission AccessContextManagerServicePerimeters#permission}
   */
   readonly permission?: string;
 }
@@ -4030,13 +5009,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * 'EgressPolicy' want to allow. A single 'ApiOperation' with 'serviceName'
   * field set to '*' will allow all methods AND permissions for all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_name AccessContextManagerServicePerimeters#service_name}
   */
   readonly serviceName?: string;
   /**
   * method_selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
   readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
@@ -4190,7 +5169,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * resources inside the perimeter, provided that the request
   * also matches the 'operations' field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -4198,13 +5177,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   * specified in the corresponding 'IngressFrom'
   * are allowed to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#roles AccessContextManagerServicePerimeters#roles}
   */
   readonly roles?: string[];
   /**
   * operations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
   readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktn.IResolvable;
 }
@@ -4348,19 +5327,19 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   /**
   * Human readable title. Must be unique within the perimeter. Does not affect behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
   */
   readonly title?: string;
   /**
   * ingress_from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_from AccessContextManagerServicePerimeters#ingress_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_from AccessContextManagerServicePerimeters#ingress_from}
   */
   readonly ingressFrom?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFrom;
   /**
   * ingress_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_to AccessContextManagerServicePerimeters#ingress_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_to AccessContextManagerServicePerimeters#ingress_to}
   */
   readonly ingressTo?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressTo;
 }
@@ -4532,21 +5511,454 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
     return new AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader {
+  /**
+  * HTTP header key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#key AccessContextManagerServicePerimeters#key}
+  */
+  readonly key: string;
+  /**
+  * HTTP header value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#value AccessContextManagerServicePerimeters#value}
+  */
+  readonly value: string;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers {
+  /**
+  * add_request_header block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#add_request_header AccessContextManagerServicePerimeters#add_request_header}
+  */
+  readonly addRequestHeader?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    add_request_header: accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToTerraform(struct!.addRequestHeader),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    add_request_header: {
+      value: accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderToHclTerraform(struct!.addRequestHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._addRequestHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addRequestHeader = this._addRequestHeader?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._addRequestHeader.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._addRequestHeader.internalValue = value.addRequestHeader;
+    }
+  }
+
+  // add_request_header - computed: false, optional: true, required: false
+  private _addRequestHeader = new AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference(this, "add_request_header");
+  public get addRequestHeader() {
+    return this._addRequestHeader;
+  }
+  public putAddRequestHeader(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader) {
+    this._addRequestHeader.internalValue = value;
+  }
+  public resetAddRequestHeader() {
+    this._addRequestHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addRequestHeaderInput() {
+    return this._addRequestHeader.internalValue;
+  }
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference {
+    return new AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns {
+  /**
+  * URL pattern to allow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#pattern AccessContextManagerServicePerimeters#pattern}
+  */
+  readonly pattern?: string;
+  /**
+  * Supported service to allow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service AccessContextManagerServicePerimeters#service}
+  */
+  readonly service?: string;
+  /**
+  * modifiers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#modifiers AccessContextManagerServicePerimeters#modifiers}
+  */
+  readonly modifiers?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable;
+}
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    pattern: cdktn.stringToTerraform(struct!.pattern),
+    service: cdktn.stringToTerraform(struct!.service),
+    modifiers: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersToTerraform, true)(struct!.modifiers),
+  }
+}
+
+
+export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktn.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktn.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modifiers: {
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersToHclTerraform, true)(struct!.modifiers),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pattern = this._pattern;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    if (this._modifiers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiers = this._modifiers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._pattern = undefined;
+      this._service = undefined;
+      this._modifiers.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._pattern = value.pattern;
+      this._service = value.service;
+      this._modifiers.internalValue = value.modifiers;
+    }
+  }
+
+  // pattern - computed: false, optional: true, required: false
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  public resetPattern() {
+    this._pattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+
+  // modifiers - computed: false, optional: true, required: false
+  private _modifiers = new AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiersList(this, "modifiers", false);
+  public get modifiers() {
+    return this._modifiers;
+  }
+  public putModifiers(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsModifiers[] | cdktn.IResolvable) {
+    this._modifiers.internalValue = value;
+  }
+  public resetModifiers() {
+    this._modifiers.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiersInput() {
+    return this._modifiers.internalValue;
+  }
+}
+
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsOutputReference {
+    return new AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices {
   /**
   * The list of APIs usable within the Service Perimeter.
   * Must be empty unless 'enableRestriction' is True.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#allowed_services AccessContextManagerServicePerimeters#allowed_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#allowed_services AccessContextManagerServicePerimeters#allowed_services}
   */
   readonly allowedServices?: string[];
   /**
   * Whether to restrict API calls within the Service Perimeter to the
   * list of APIs specified in 'allowedServices'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
   */
   readonly enableRestriction?: boolean | cdktn.IResolvable;
+  /**
+  * Defines the enforcement scopes of service patterns. Possible values: ["GOOGLE_APIS_VIA_PRIVATE_PATH"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#service_patterns_enforcement_scopes AccessContextManagerServicePerimeters#service_patterns_enforcement_scopes}
+  */
+  readonly servicePatternsEnforcementScopes?: string[];
+  /**
+  * allowed_service_patterns block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#allowed_service_patterns AccessContextManagerServicePerimeters#allowed_service_patterns}
+  */
+  readonly allowedServicePatterns?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices): any {
@@ -4557,6 +5969,8 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusVpcA
   return {
     allowed_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedServices),
     enable_restriction: cdktn.booleanToTerraform(struct!.enableRestriction),
+    service_patterns_enforcement_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.servicePatternsEnforcementScopes),
+    allowed_service_patterns: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsToTerraform, true)(struct!.allowedServicePatterns),
   }
 }
 
@@ -4578,6 +5992,18 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusVpcA
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    service_patterns_enforcement_scopes: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.servicePatternsEnforcementScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_service_patterns: {
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsToHclTerraform, true)(struct!.allowedServicePatterns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsList",
     },
   };
 
@@ -4607,6 +6033,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAcce
       hasAnyValues = true;
       internalValueResult.enableRestriction = this._enableRestriction;
     }
+    if (this._servicePatternsEnforcementScopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicePatternsEnforcementScopes = this._servicePatternsEnforcementScopes;
+    }
+    if (this._allowedServicePatterns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedServicePatterns = this._allowedServicePatterns?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4615,11 +6049,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAcce
       this.isEmptyObject = false;
       this._allowedServices = undefined;
       this._enableRestriction = undefined;
+      this._servicePatternsEnforcementScopes = undefined;
+      this._allowedServicePatterns.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedServices = value.allowedServices;
       this._enableRestriction = value.enableRestriction;
+      this._servicePatternsEnforcementScopes = value.servicePatternsEnforcementScopes;
+      this._allowedServicePatterns.internalValue = value.allowedServicePatterns;
     }
   }
 
@@ -4654,6 +6092,38 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAcce
   public get enableRestrictionInput() {
     return this._enableRestriction;
   }
+
+  // service_patterns_enforcement_scopes - computed: false, optional: true, required: false
+  private _servicePatternsEnforcementScopes?: string[]; 
+  public get servicePatternsEnforcementScopes() {
+    return this.getListAttribute('service_patterns_enforcement_scopes');
+  }
+  public set servicePatternsEnforcementScopes(value: string[]) {
+    this._servicePatternsEnforcementScopes = value;
+  }
+  public resetServicePatternsEnforcementScopes() {
+    this._servicePatternsEnforcementScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePatternsEnforcementScopesInput() {
+    return this._servicePatternsEnforcementScopes;
+  }
+
+  // allowed_service_patterns - computed: false, optional: true, required: false
+  private _allowedServicePatterns = new AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatternsList(this, "allowed_service_patterns", false);
+  public get allowedServicePatterns() {
+    return this._allowedServicePatterns;
+  }
+  public putAllowedServicePatterns(value: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesAllowedServicePatterns[] | cdktn.IResolvable) {
+    this._allowedServicePatterns.internalValue = value;
+  }
+  public resetAllowedServicePatterns() {
+    this._allowedServicePatterns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedServicePatternsInput() {
+    return this._allowedServicePatterns.internalValue;
+  }
 }
 export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
   /**
@@ -4668,7 +6138,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
   * 
   * Format: accessPolicies/{policy_id}/accessLevels/{access_level_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#access_levels AccessContextManagerServicePerimeters#access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#access_levels AccessContextManagerServicePerimeters#access_levels}
   */
   readonly accessLevels?: string[];
   /**
@@ -4676,7 +6146,7 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
   * Currently only projects are allowed.
   * Format: projects/{project_number}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#resources AccessContextManagerServicePerimeters#resources}
   */
   readonly resources?: string[];
   /**
@@ -4686,25 +6156,25 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
   * buckets inside the perimeter must meet the perimeter's access
   * restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#restricted_services AccessContextManagerServicePerimeters#restricted_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#restricted_services AccessContextManagerServicePerimeters#restricted_services}
   */
   readonly restrictedServices?: string[];
   /**
   * egress_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
   */
   readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktn.IResolvable;
   /**
   * ingress_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
   */
   readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktn.IResolvable;
   /**
   * vpc_accessible_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#vpc_accessible_services AccessContextManagerServicePerimeters#vpc_accessible_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#vpc_accessible_services AccessContextManagerServicePerimeters#vpc_accessible_services}
   */
   readonly vpcAccessibleServices?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices;
 }
@@ -4936,7 +6406,7 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   * Description of the ServicePerimeter and its use. Does not affect
   * behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#description AccessContextManagerServicePerimeters#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#description AccessContextManagerServicePerimeters#description}
   */
   readonly description?: string;
   /**
@@ -4944,7 +6414,7 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   * begin with a letter and only include alphanumeric and '_'.
   * Format: accessPolicies/{policy_id}/servicePerimeters/{short_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#name AccessContextManagerServicePerimeters#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#name AccessContextManagerServicePerimeters#name}
   */
   readonly name: string;
   /**
@@ -4965,13 +6435,13 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   * with a common perimeter, but should not be able to share data among
   * themselves. Default value: "PERIMETER_TYPE_REGULAR" Possible values: ["PERIMETER_TYPE_REGULAR", "PERIMETER_TYPE_BRIDGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#perimeter_type AccessContextManagerServicePerimeters#perimeter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#perimeter_type AccessContextManagerServicePerimeters#perimeter_type}
   */
   readonly perimeterType?: string;
   /**
   * Human readable title. Must be unique within the Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#title AccessContextManagerServicePerimeters#title}
   */
   readonly title: string;
   /**
@@ -4985,19 +6455,19 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   * between currently enforced and suggested restrictions. useExplicitDryRunSpec must
   * bet set to True if any of the fields in the spec are set to non-default values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#use_explicit_dry_run_spec AccessContextManagerServicePerimeters#use_explicit_dry_run_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#use_explicit_dry_run_spec AccessContextManagerServicePerimeters#use_explicit_dry_run_spec}
   */
   readonly useExplicitDryRunSpec?: boolean | cdktn.IResolvable;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#spec AccessContextManagerServicePerimeters#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#spec AccessContextManagerServicePerimeters#spec}
   */
   readonly spec?: AccessContextManagerServicePerimetersServicePerimetersSpec;
   /**
   * status block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#status AccessContextManagerServicePerimeters#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#status AccessContextManagerServicePerimeters#status}
   */
   readonly status?: AccessContextManagerServicePerimetersServicePerimetersStatus;
 }
@@ -5291,15 +6761,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersList extends 
 }
 export interface AccessContextManagerServicePerimetersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#create AccessContextManagerServicePerimeters#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#create AccessContextManagerServicePerimeters#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#delete AccessContextManagerServicePerimeters#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#delete AccessContextManagerServicePerimeters#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#update AccessContextManagerServicePerimeters#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#update AccessContextManagerServicePerimeters#update}
   */
   readonly update?: string;
 }
@@ -5451,7 +6921,7 @@ export class AccessContextManagerServicePerimetersTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters google_access_context_manager_service_perimeters}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters google_access_context_manager_service_perimeters}
 */
 export class AccessContextManagerServicePerimeters extends cdktn.TerraformResource {
 
@@ -5467,7 +6937,7 @@ export class AccessContextManagerServicePerimeters extends cdktn.TerraformResour
   * Generates CDKTN code for importing a AccessContextManagerServicePerimeters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerServicePerimeters to import
-  * @param importFromId The id of the existing AccessContextManagerServicePerimeters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessContextManagerServicePerimeters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerServicePerimeters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5479,7 +6949,7 @@ export class AccessContextManagerServicePerimeters extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5490,7 +6960,7 @@ export class AccessContextManagerServicePerimeters extends cdktn.TerraformResour
       terraformResourceType: 'google_access_context_manager_service_perimeters',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

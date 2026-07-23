@@ -4,7 +4,7 @@
 
 ### ChronicleParser <a name="ChronicleParser" id="@cdktn/provider-google.chronicleParser.ChronicleParser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser google_chronicle_parser}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser google_chronicle_parser}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer"></a>
 
@@ -50,9 +50,9 @@ ChronicleParser.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.logtype">logtype</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.cbn">cbn</a></code> | <code>java.lang.String</code> | if the parser is built using config documentation: https://cloud.google.com/chronicle/docs/preview/parser-extensions/parsing-overview. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#id ChronicleParser#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#id ChronicleParser#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.lowCode">lowCode</a></code> | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserLowCode">ChronicleParserLowCode</a></code> | low_code block. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#project ChronicleParser#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#project ChronicleParser#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts">ChronicleParserTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.validatedOnEmptyLogs">validatedOnEmptyLogs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to bypass parser validation when no logs are found. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer.parameter.validationSkipped">validationSkipped</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, bypasses parser validation. If enabled, the parser won't be rejected during the validation phase and validation will be skipped. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#instance ChronicleParser#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#instance ChronicleParser#instance}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#location ChronicleParser#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#location ChronicleParser#location}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#logtype ChronicleParser#logtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#logtype ChronicleParser#logtype}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 if the parser is built using config documentation: https://cloud.google.com/chronicle/docs/preview/parser-extensions/parsing-overview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#cbn ChronicleParser#cbn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#cbn ChronicleParser#cbn}
 
 ---
 
@@ -173,7 +173,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#deletion_policy ChronicleParser#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#deletion_policy ChronicleParser#deletion_policy}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#id ChronicleParser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#id ChronicleParser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -194,7 +194,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 low_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#low_code ChronicleParser#low_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#low_code ChronicleParser#low_code}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#project ChronicleParser#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#project ChronicleParser#project}.
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#timeouts ChronicleParser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#timeouts ChronicleParser#timeouts}
 
 ---
 
@@ -225,7 +225,7 @@ Flag to bypass parser validation when no logs are found.
 If enabled, the parser won't be be rejected during the validation
 phase when no logs are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#validated_on_empty_logs ChronicleParser#validated_on_empty_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#validated_on_empty_logs ChronicleParser#validated_on_empty_logs}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, bypasses parser validation. If enabled, the parser won't be rejected during the validation phase and validation will be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#validation_skipped ChronicleParser#validation_skipped}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#validation_skipped ChronicleParser#validation_skipped}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 version_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#version_info ChronicleParser#version_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#version_info ChronicleParser#version_info}
 
 ---
 
@@ -796,7 +796,7 @@ The construct id used in the generated config for the ChronicleParser to import.
 
 The id of the existing ChronicleParser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1457,9 +1457,9 @@ ChronicleParserConfig.builder()
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.logtype">logtype</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.cbn">cbn</a></code> | <code>java.lang.String</code> | if the parser is built using config documentation: https://cloud.google.com/chronicle/docs/preview/parser-extensions/parsing-overview. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#id ChronicleParser#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#id ChronicleParser#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.lowCode">lowCode</a></code> | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserLowCode">ChronicleParserLowCode</a></code> | low_code block. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#project ChronicleParser#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#project ChronicleParser#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts">ChronicleParserTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.validatedOnEmptyLogs">validatedOnEmptyLogs</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to bypass parser validation when no logs are found. |
 | <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserConfig.property.validationSkipped">validationSkipped</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, bypasses parser validation. If enabled, the parser won't be rejected during the validation phase and validation will be skipped. |
@@ -1547,7 +1547,7 @@ public java.lang.String getInstance();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#instance ChronicleParser#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#instance ChronicleParser#instance}
 
 ---
 
@@ -1561,7 +1561,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#location ChronicleParser#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#location ChronicleParser#location}
 
 ---
 
@@ -1575,7 +1575,7 @@ public java.lang.String getLogtype();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#logtype ChronicleParser#logtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#logtype ChronicleParser#logtype}
 
 ---
 
@@ -1589,7 +1589,7 @@ public java.lang.String getCbn();
 
 if the parser is built using config documentation: https://cloud.google.com/chronicle/docs/preview/parser-extensions/parsing-overview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#cbn ChronicleParser#cbn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#cbn ChronicleParser#cbn}
 
 ---
 
@@ -1610,7 +1610,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#deletion_policy ChronicleParser#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#deletion_policy ChronicleParser#deletion_policy}
 
 ---
 
@@ -1622,7 +1622,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#id ChronicleParser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#id ChronicleParser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1639,7 +1639,7 @@ public ChronicleParserLowCode getLowCode();
 
 low_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#low_code ChronicleParser#low_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#low_code ChronicleParser#low_code}
 
 ---
 
@@ -1651,7 +1651,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#project ChronicleParser#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#project ChronicleParser#project}.
 
 ---
 
@@ -1665,7 +1665,7 @@ public ChronicleParserTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#timeouts ChronicleParser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#timeouts ChronicleParser#timeouts}
 
 ---
 
@@ -1682,7 +1682,7 @@ Flag to bypass parser validation when no logs are found.
 If enabled, the parser won't be be rejected during the validation
 phase when no logs are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#validated_on_empty_logs ChronicleParser#validated_on_empty_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#validated_on_empty_logs ChronicleParser#validated_on_empty_logs}
 
 ---
 
@@ -1696,7 +1696,7 @@ public java.lang.Boolean|IResolvable getValidationSkipped();
 
 If true, bypasses parser validation. If enabled, the parser won't be rejected during the validation phase and validation will be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#validation_skipped ChronicleParser#validation_skipped}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#validation_skipped ChronicleParser#validation_skipped}
 
 ---
 
@@ -1710,7 +1710,7 @@ public ChronicleParserVersionInfo getVersionInfo();
 
 version_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#version_info ChronicleParser#version_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#version_info ChronicleParser#version_info}
 
 ---
 
@@ -1758,7 +1758,7 @@ public ChronicleParserLowCodeFieldExtractors getFieldExtractors();
 
 field_extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#field_extractors ChronicleParser#field_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#field_extractors ChronicleParser#field_extractors}
 
 ---
 
@@ -1772,7 +1772,7 @@ public java.lang.String getLog();
 
 The log used to create this low code parser in the UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#log ChronicleParser#log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#log ChronicleParser#log}
 
 ---
 
@@ -1812,7 +1812,7 @@ public java.lang.Boolean|IResolvable getAppendRepeatedFields();
 
 Whether to append repeated fields or not. When false, repeated fields will be replaced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#append_repeated_fields ChronicleParser#append_repeated_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#append_repeated_fields ChronicleParser#append_repeated_fields}
 
 ---
 
@@ -1826,7 +1826,7 @@ public IResolvable|java.util.List<ChronicleParserLowCodeFieldExtractorsExtractor
 
 extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#extractors ChronicleParser#extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#extractors ChronicleParser#extractors}
 
 ---
 
@@ -1840,7 +1840,7 @@ public java.lang.String getLogFormat();
 
 Possible values: JSON CSV XML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#log_format ChronicleParser#log_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#log_format ChronicleParser#log_format}
 
 ---
 
@@ -1854,7 +1854,7 @@ public ChronicleParserLowCodeFieldExtractorsPreprocessConfig getPreprocessConfig
 
 preprocess_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#preprocess_config ChronicleParser#preprocess_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#preprocess_config ChronicleParser#preprocess_config}
 
 ---
 
@@ -1901,7 +1901,7 @@ Path in generated event which is to be populated.
 This is required if the
 FieldExtractor is used to specify the parser extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#destination_path ChronicleParser#destination_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#destination_path ChronicleParser#destination_path}
 
 ---
 
@@ -1919,7 +1919,7 @@ It refers to a section or substring in raw log.
 This is required if the FieldExtractor is used to specify the parser
 extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#field_path ChronicleParser#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#field_path ChronicleParser#field_path}
 
 ---
 
@@ -1933,7 +1933,7 @@ public java.lang.String getPreconditionOp();
 
 Operator used for precondition. Possible values: EQUALS NOT_EQUALS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#precondition_op ChronicleParser#precondition_op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#precondition_op ChronicleParser#precondition_op}
 
 ---
 
@@ -1949,7 +1949,7 @@ Precondition path could be a json path, xml path or csv column name depending on
 
 It refers to a section or substring in raw log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#precondition_path ChronicleParser#precondition_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#precondition_path ChronicleParser#precondition_path}
 
 ---
 
@@ -1963,7 +1963,7 @@ public java.lang.String getPreconditionValue();
 
 Precondition value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#precondition_value ChronicleParser#precondition_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#precondition_value ChronicleParser#precondition_value}
 
 ---
 
@@ -1977,7 +1977,7 @@ public java.lang.String getValue();
 
 Value to be mapped to the destination path directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#value ChronicleParser#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#value ChronicleParser#value}
 
 ---
 
@@ -2013,7 +2013,7 @@ public java.lang.String getGrokRegex();
 
 GROK Regex to extract the structured part of the log. syntax documentation: www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#grok_regex ChronicleParser#grok_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#grok_regex ChronicleParser#grok_regex}
 
 ---
 
@@ -2027,7 +2027,7 @@ public java.lang.String getTarget();
 
 Target field name for the structured part of the log. This should match a SEMANTIC identifier from the grok expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#target ChronicleParser#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#target ChronicleParser#target}
 
 ---
 
@@ -2049,9 +2049,9 @@ ChronicleParserTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#create ChronicleParser#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#delete ChronicleParser#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#update ChronicleParser#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#create ChronicleParser#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#delete ChronicleParser#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#update ChronicleParser#update}. |
 
 ---
 
@@ -2063,7 +2063,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#create ChronicleParser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#create ChronicleParser#create}.
 
 ---
 
@@ -2075,7 +2075,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#delete ChronicleParser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#delete ChronicleParser#delete}.
 
 ---
 
@@ -2087,7 +2087,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#update ChronicleParser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#update ChronicleParser#update}.
 
 ---
 
@@ -2124,7 +2124,7 @@ Signifies if the parser is disabled for auto upgrade.
 If true, the parser
 will not be upgraded by the auto upgrade process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/chronicle_parser#auto_upgrade_disabled ChronicleParser#auto_upgrade_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser#auto_upgrade_disabled ChronicleParser#auto_upgrade_disabled}
 
 ---
 

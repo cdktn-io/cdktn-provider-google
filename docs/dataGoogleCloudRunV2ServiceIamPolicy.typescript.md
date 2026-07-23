@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2ServiceIamPolicy <a name="DataGoogleCloudRunV2ServiceIamPolicy" id="@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Servic
 
 The id of the existing DataGoogleCloudRunV2ServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,10 +712,10 @@ const dataGoogleCloudRunV2ServiceIamPolicyConfig: dataGoogleCloudRunV2ServiceIam
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#name DataGoogleCloudRunV2ServiceIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#id DataGoogleCloudRunV2ServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#location DataGoogleCloudRunV2ServiceIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#project DataGoogleCloudRunV2ServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#name DataGoogleCloudRunV2ServiceIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#id DataGoogleCloudRunV2ServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#location DataGoogleCloudRunV2ServiceIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2ServiceIamPolicy.DataGoogleCloudRunV2ServiceIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#project DataGoogleCloudRunV2ServiceIamPolicy#project}. |
 
 ---
 
@@ -797,7 +797,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#name DataGoogleCloudRunV2ServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#name DataGoogleCloudRunV2ServiceIamPolicy#name}.
 
 ---
 
@@ -809,7 +809,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#id DataGoogleCloudRunV2ServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#id DataGoogleCloudRunV2ServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#location DataGoogleCloudRunV2ServiceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#location DataGoogleCloudRunV2ServiceIamPolicy#location}.
 
 ---
 
@@ -836,7 +836,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service_iam_policy#project DataGoogleCloudRunV2ServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service_iam_policy#project DataGoogleCloudRunV2ServiceIamPolicy#project}.
 
 ---
 

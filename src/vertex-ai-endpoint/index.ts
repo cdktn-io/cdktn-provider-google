@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface VertexAiEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * If true, the endpoint will be exposed through a dedicated DNS [Endpoint.dedicated_endpoint_dns]. Your request to the dedicated DNS will be isolated from other users' traffic and will have better performance and reliability. Note: Once you enabled dedicated endpoint, you won't be able to send request to the shared DNS {region}-aiplatform.googleapis.com. The limitation will be removed soon.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#dedicated_endpoint_enabled VertexAiEndpoint#dedicated_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#dedicated_endpoint_enabled VertexAiEndpoint#dedicated_endpoint_enabled}
   */
   readonly dedicatedEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -27,23 +27,23 @@ export interface VertexAiEndpointConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#deletion_policy VertexAiEndpoint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#deletion_policy VertexAiEndpoint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the Endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#description VertexAiEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#description VertexAiEndpoint#description}
   */
   readonly description?: string;
   /**
   * Required. The display name of the Endpoint. The name can be up to 128 characters long and can consist of any UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#display_name VertexAiEndpoint#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#display_name VertexAiEndpoint#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#id VertexAiEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#id VertexAiEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,35 +55,35 @@ export interface VertexAiEndpointConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#labels VertexAiEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#labels VertexAiEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#location VertexAiEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#location VertexAiEndpoint#location}
   */
   readonly location: string;
   /**
   * The resource name of the Endpoint. The name must be numeric with no leading zeros and can be at most 10 digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#name VertexAiEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#name VertexAiEndpoint#name}
   */
   readonly name: string;
   /**
   * The full name of the Google Compute Engine [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks) to which the Endpoint should be peered. Private services access must already be configured for the network. If left unspecified, the Endpoint is not peered with any network. Only one of the fields, network or enable_private_service_connect, can be set. [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert): 'projects/{project}/global/networks/{network}'. Where '{project}' is a project number, as in '12345', and '{network}' is network name. Only one of the fields, 'network' or 'privateServiceConnectConfig', can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#network VertexAiEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#network VertexAiEndpoint#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#project VertexAiEndpoint#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#project VertexAiEndpoint#project}
   */
   readonly project?: string;
   /**
   * The region for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#region VertexAiEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#region VertexAiEndpoint#region}
   */
   readonly region?: string;
   /**
@@ -95,31 +95,31 @@ export interface VertexAiEndpointConfig extends cdktn.TerraformMetaArguments {
   * 
   * ~> **Note:** To set the map to empty, set '"{}"', apply, and then remove the field from your config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#traffic_split VertexAiEndpoint#traffic_split}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#traffic_split VertexAiEndpoint#traffic_split}
   */
   readonly trafficSplit?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#encryption_spec VertexAiEndpoint#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#encryption_spec VertexAiEndpoint#encryption_spec}
   */
   readonly encryptionSpec?: VertexAiEndpointEncryptionSpec;
   /**
   * predict_request_response_logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#predict_request_response_logging_config VertexAiEndpoint#predict_request_response_logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#predict_request_response_logging_config VertexAiEndpoint#predict_request_response_logging_config}
   */
   readonly predictRequestResponseLoggingConfig?: VertexAiEndpointPredictRequestResponseLoggingConfig;
   /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#private_service_connect_config VertexAiEndpoint#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#private_service_connect_config VertexAiEndpoint#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: VertexAiEndpointPrivateServiceConnectConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#timeouts VertexAiEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#timeouts VertexAiEndpoint#timeouts}
   */
   readonly timeouts?: VertexAiEndpointTimeouts;
 }
@@ -687,7 +687,7 @@ export interface VertexAiEndpointEncryptionSpec {
   /**
   * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'. The key needs to be in the same region as where the compute resource is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#kms_key_name VertexAiEndpoint#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#kms_key_name VertexAiEndpoint#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -770,7 +770,7 @@ export interface VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDest
   /**
   * BigQuery URI to a project or table, up to 2000 characters long. When only the project is specified, the Dataset and Table is created. When the full table reference is specified, the Dataset must exist and table must not exist. Accepted forms: - BigQuery path. For example: 'bq://projectId' or 'bq://projectId.bqDatasetId' or 'bq://projectId.bqDatasetId.bqTableId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#output_uri VertexAiEndpoint#output_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#output_uri VertexAiEndpoint#output_uri}
   */
   readonly outputUri?: string;
 }
@@ -856,19 +856,19 @@ export interface VertexAiEndpointPredictRequestResponseLoggingConfig {
   /**
   * If logging is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#enabled VertexAiEndpoint#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#enabled VertexAiEndpoint#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Percentage of requests to be logged, expressed as a fraction in range(0,1]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#sampling_rate VertexAiEndpoint#sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#sampling_rate VertexAiEndpoint#sampling_rate}
   */
   readonly samplingRate?: number;
   /**
   * bigquery_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#bigquery_destination VertexAiEndpoint#bigquery_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#bigquery_destination VertexAiEndpoint#bigquery_destination}
   */
   readonly bigqueryDestination?: VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination;
 }
@@ -1012,13 +1012,13 @@ export interface VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs
   /**
   * The full name of the Google Compute Engine [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks). [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/get): projects/{project}/global/networks/{network}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#network VertexAiEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#network VertexAiEndpoint#network}
   */
   readonly network: string;
   /**
   * Project id used to create forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#project_id VertexAiEndpoint#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#project_id VertexAiEndpoint#project_id}
   */
   readonly projectId: string;
 }
@@ -1179,19 +1179,19 @@ export interface VertexAiEndpointPrivateServiceConnectConfig {
   /**
   * Required. If true, expose the IndexEndpoint via private service connect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#enable_private_service_connect VertexAiEndpoint#enable_private_service_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#enable_private_service_connect VertexAiEndpoint#enable_private_service_connect}
   */
   readonly enablePrivateServiceConnect: boolean | cdktn.IResolvable;
   /**
   * A list of Projects from which the forwarding rule will target the service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#project_allowlist VertexAiEndpoint#project_allowlist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#project_allowlist VertexAiEndpoint#project_allowlist}
   */
   readonly projectAllowlist?: string[];
   /**
   * psc_automation_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#psc_automation_configs VertexAiEndpoint#psc_automation_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#psc_automation_configs VertexAiEndpoint#psc_automation_configs}
   */
   readonly pscAutomationConfigs?: VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs[] | cdktn.IResolvable;
 }
@@ -1330,15 +1330,15 @@ export class VertexAiEndpointPrivateServiceConnectConfigOutputReference extends 
 }
 export interface VertexAiEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#create VertexAiEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#create VertexAiEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#delete VertexAiEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#delete VertexAiEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#update VertexAiEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#update VertexAiEndpoint#update}
   */
   readonly update?: string;
 }
@@ -1490,7 +1490,7 @@ export class VertexAiEndpointTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint}
 */
 export class VertexAiEndpoint extends cdktn.TerraformResource {
 
@@ -1506,7 +1506,7 @@ export class VertexAiEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiEndpoint to import
-  * @param importFromId The id of the existing VertexAiEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1518,7 +1518,7 @@ export class VertexAiEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1529,7 +1529,7 @@ export class VertexAiEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

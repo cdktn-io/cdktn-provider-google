@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudAssetSearchAllResourcesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources#asset_types DataGoogleCloudAssetSearchAllResources#asset_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources#asset_types DataGoogleCloudAssetSearchAllResources#asset_types}
   */
   readonly assetTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources#id DataGoogleCloudAssetSearchAllResources#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources#id DataGoogleCloudAssetSearchAllResources#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources#query DataGoogleCloudAssetSearchAllResources#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources#query DataGoogleCloudAssetSearchAllResources#query}
   */
   readonly query?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources#scope DataGoogleCloudAssetSearchAllResources#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources#scope DataGoogleCloudAssetSearchAllResources#scope}
   */
   readonly scope: string;
 }
@@ -185,7 +185,7 @@ export class DataGoogleCloudAssetSearchAllResourcesResultsList extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources}
 */
 export class DataGoogleCloudAssetSearchAllResources extends cdktn.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataGoogleCloudAssetSearchAllResources extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataGoogleCloudAssetSearchAllResources resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudAssetSearchAllResources to import
-  * @param importFromId The id of the existing DataGoogleCloudAssetSearchAllResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudAssetSearchAllResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudAssetSearchAllResources to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,7 +213,7 @@ export class DataGoogleCloudAssetSearchAllResources extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class DataGoogleCloudAssetSearchAllResources extends cdktn.TerraformDataS
       terraformResourceType: 'google_cloud_asset_search_all_resources',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

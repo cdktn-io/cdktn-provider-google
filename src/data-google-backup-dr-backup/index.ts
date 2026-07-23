@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleBackupDrBackupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#backup_vault_id DataGoogleBackupDrBackup#backup_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#backup_vault_id DataGoogleBackupDrBackup#backup_vault_id}
   */
   readonly backupVaultId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#data_source_id DataGoogleBackupDrBackup#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#data_source_id DataGoogleBackupDrBackup#data_source_id}
   */
   readonly dataSourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#id DataGoogleBackupDrBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#id DataGoogleBackupDrBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#location DataGoogleBackupDrBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#location DataGoogleBackupDrBackup#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#project DataGoogleBackupDrBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#project DataGoogleBackupDrBackup#project}
   */
   readonly project: string;
 }
@@ -300,7 +300,7 @@ export class DataGoogleBackupDrBackupBackupsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup google_backup_dr_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup google_backup_dr_backup}
 */
 export class DataGoogleBackupDrBackup extends cdktn.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataGoogleBackupDrBackup extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleBackupDrBackup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrBackup to import
-  * @param importFromId The id of the existing DataGoogleBackupDrBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBackupDrBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrBackup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataGoogleBackupDrBackup extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataGoogleBackupDrBackup extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_backup_dr_backup',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

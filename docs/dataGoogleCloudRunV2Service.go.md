@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Service <a name="DataGoogleCloudRunV2Service" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Servic
 
 The id of the existing DataGoogleCloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -467,6 +467,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.observedGeneration">ObservedGeneration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.reconciling">Reconciling</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.scaling">Scaling</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceScalingList">DataGoogleCloudRunV2ServiceScalingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.tags">Tags</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.template">Template</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateList">DataGoogleCloudRunV2ServiceTemplateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.terminalCondition">TerminalCondition</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTerminalConditionList">DataGoogleCloudRunV2ServiceTerminalConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
@@ -919,6 +920,16 @@ func Scaling() DataGoogleCloudRunV2ServiceScalingList
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.tags"></a>
+
+```go
+func Tags() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
 ##### `Template`<sup>Required</sup> <a name="Template" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.property.template"></a>
 
 ```go
@@ -1182,9 +1193,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudr
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.location">Location</a></code> | <code>*string</code> | The location of the cloud run service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -1268,7 +1279,7 @@ Name *string
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -1280,7 +1291,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1308,7 @@ Location *string
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -1309,7 +1320,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 

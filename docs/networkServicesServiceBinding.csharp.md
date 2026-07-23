@@ -4,7 +4,7 @@
 
 ### NetworkServicesServiceBinding <a name="NetworkServicesServiceBinding" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding google_network_services_service_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding google_network_services_service_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NetworkServicesServiceBind
 
 The id of the existing NetworkServicesServiceBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,9 +1000,9 @@ new NetworkServicesServiceBindingConfig {
 | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.service">Service</a></code> | <code>string</code> | The full Service Directory Service name of the format projects/* /locations/* /namespaces/* /services/*. |
 | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.description">Description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#id NetworkServicesServiceBinding#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#id NetworkServicesServiceBinding#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of label tags associated with the ServiceBinding resource. |
-| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#project NetworkServicesServiceBinding#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#project NetworkServicesServiceBinding#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts">NetworkServicesServiceBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1087,7 +1087,7 @@ public string Name { get; set; }
 
 Name of the ServiceBinding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#name NetworkServicesServiceBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#name NetworkServicesServiceBinding#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string Service { get; set; }
 
 The full Service Directory Service name of the format projects/* /locations/* /namespaces/* /services/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#service NetworkServicesServiceBinding#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#service NetworkServicesServiceBinding#service}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1124,7 +1124,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#deletion_policy NetworkServicesServiceBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#deletion_policy NetworkServicesServiceBinding#deletion_policy}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Description { get; set; }
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#description NetworkServicesServiceBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#description NetworkServicesServiceBinding#description}
 
 ---
 
@@ -1150,7 +1150,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#id NetworkServicesServiceBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#id NetworkServicesServiceBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1170,7 +1170,7 @@ Set of label tags associated with the ServiceBinding resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#labels NetworkServicesServiceBinding#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#labels NetworkServicesServiceBinding#labels}
 
 ---
 
@@ -1182,7 +1182,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#project NetworkServicesServiceBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#project NetworkServicesServiceBinding#project}.
 
 ---
 
@@ -1196,7 +1196,7 @@ public NetworkServicesServiceBindingTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#timeouts NetworkServicesServiceBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#timeouts NetworkServicesServiceBinding#timeouts}
 
 ---
 
@@ -1218,9 +1218,9 @@ new NetworkServicesServiceBindingTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}.
 
 ---
 
@@ -1256,7 +1256,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}.
 
 ---
 

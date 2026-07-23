@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the parent Collection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
   */
   readonly collectionId: string;
   /**
@@ -27,36 +27,36 @@ export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-specified description of the index
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
   */
   readonly description?: string;
   /**
   * User-specified display name of the index
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
   */
   readonly displayName?: string;
   /**
   * Distance metric used for indexing. If not specified, will default to
   * 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
   */
   readonly distanceMetric?: string;
   /**
   * The fields to push into the index to enable fast ANN inline filtering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
   */
   readonly filterFields?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,7 +65,7 @@ export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * The collection schema field to index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
   */
   readonly indexField: string;
   /**
@@ -75,7 +75,7 @@ export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   * Specifically, it must be 1-63 characters long and match the regular
   * expression '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
   */
   readonly indexId: string;
   /**
@@ -84,41 +84,41 @@ export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#project VectorSearchIndex#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#project VectorSearchIndex#project}
   */
   readonly project?: string;
   /**
   * The fields to push into the index to enable inline data retrieval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
   */
   readonly storeFields?: string[];
   /**
   * dedicated_infrastructure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
   */
   readonly dedicatedInfrastructure?: VectorSearchIndexDedicatedInfrastructure;
   /**
   * dense_scann block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
   */
   readonly denseScann?: VectorSearchIndexDenseScann;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
   */
   readonly timeouts?: VectorSearchIndexTimeouts;
 }
@@ -128,14 +128,14 @@ export interface VectorSearchIndexDedicatedInfrastructureAutoscalingSpec {
   * and <= '1000'. If not set or set to '0', defaults to the greater
   * of 'min_replica_count' and '2' (or '5' for the v1beta version).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
   */
   readonly maxReplicaCount?: number;
   /**
   * The minimum number of replicas. If not set or set to '0', defaults
   * to '2'. Must be >= '1' and <= '1000'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
   */
   readonly minReplicaCount?: number;
 }
@@ -250,13 +250,13 @@ export interface VectorSearchIndexDedicatedInfrastructure {
   /**
   * Mode of the dedicated infrastructure. Defaults to 'PERFORMANCE_OPTIMIZED'. Possible values: ["MODE_UNSPECIFIED", "STORAGE_OPTIMIZED", "PERFORMANCE_OPTIMIZED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
   */
   readonly mode?: string;
   /**
   * autoscaling_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
   */
   readonly autoscalingSpec?: VectorSearchIndexDedicatedInfrastructureAutoscalingSpec;
 }
@@ -371,7 +371,7 @@ export interface VectorSearchIndexDenseScann {
   /**
   * Feature norm type for the ScaNN index. Possible values: ["FEATURE_NORM_TYPE_UNSPECIFIED", "NONE", "UNIT_L2_NORM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
   */
   readonly featureNormType?: string;
 }
@@ -455,15 +455,15 @@ export class VectorSearchIndexDenseScannOutputReference extends cdktn.ComplexObj
 }
 export interface VectorSearchIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#update VectorSearchIndex#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#update VectorSearchIndex#update}
   */
   readonly update?: string;
 }
@@ -615,7 +615,7 @@ export class VectorSearchIndexTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index google_vector_search_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index google_vector_search_index}
 */
 export class VectorSearchIndex extends cdktn.TerraformResource {
 
@@ -631,7 +631,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VectorSearchIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchIndex to import
-  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -643,7 +643,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vector_search_index google_vector_search_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vector_search_index google_vector_search_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -654,7 +654,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
       terraformResourceType: 'google_vector_search_index',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

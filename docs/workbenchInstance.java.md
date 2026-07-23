@@ -4,7 +4,7 @@
 
 ### WorkbenchInstance <a name="WorkbenchInstance" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance google_workbench_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance google_workbench_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer"></a>
 
@@ -24,6 +24,7 @@ WorkbenchInstance.Builder.create(Construct scope, java.lang.String id)
 //  .deletionPolicy(java.lang.String)
 //  .desiredState(java.lang.String)
 //  .disableProxyAccess(java.lang.Boolean|IResolvable)
+//  .enableDeletionProtection(java.lang.Boolean|IResolvable)
 //  .enableManagedEuc(java.lang.Boolean|IResolvable)
 //  .enableThirdPartyIdentity(java.lang.Boolean|IResolvable)
 //  .gceSetup(WorkbenchInstanceGceSetup)
@@ -52,14 +53,15 @@ WorkbenchInstance.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.desiredState">desiredState</a></code> | <code>java.lang.String</code> | Desired state of the Workbench Instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.disableProxyAccess">disableProxyAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Optional. If true, the workbench instance will not register with the proxy. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.enableDeletionProtection">enableDeletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Optional. If true, deletion protection will be enabled for this Workbench Instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.enableManagedEuc">enableManagedEuc</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to enable managed end user credentials for the instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.enableThirdPartyIdentity">enableThirdPartyIdentity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag that specifies that a notebook can be accessed with third party identity provider. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.gceSetup">gceSetup</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup">WorkbenchInstanceGceSetup</a></code> | gce_setup block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#id WorkbenchInstance#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#id WorkbenchInstance#id}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Required. User-defined unique ID of this instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.instanceOwners">instanceOwners</a></code> | <code>java.util.List<java.lang.String></code> | 'Optional. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Labels to apply to this instance. These can be later modified by the UpdateInstance method. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#project WorkbenchInstance#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#project WorkbenchInstance#project}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts">WorkbenchInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#location WorkbenchInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#location WorkbenchInstance#location}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of this workbench instance. Format: 'projects/{project_id}/locations/{location}/instances/{instance_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
 
 ---
 
@@ -157,7 +159,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#deletion_policy WorkbenchInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#deletion_policy WorkbenchInstance#deletion_policy}
 
 ---
 
@@ -169,7 +171,7 @@ Desired state of the Workbench Instance.
 
 Set this field to 'ACTIVE' to start the Instance, and 'STOPPED' to stop the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#desired_state WorkbenchInstance#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#desired_state WorkbenchInstance#desired_state}
 
 ---
 
@@ -179,7 +181,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. If true, the workbench instance will not register with the proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disable_proxy_access WorkbenchInstance#disable_proxy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disable_proxy_access WorkbenchInstance#disable_proxy_access}
+
+---
+
+##### `enableDeletionProtection`<sup>Optional</sup> <a name="enableDeletionProtection" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.Initializer.parameter.enableDeletionProtection"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Optional. If true, deletion protection will be enabled for this Workbench Instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_deletion_protection WorkbenchInstance#enable_deletion_protection}
 
 ---
 
@@ -189,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to enable managed end user credentials for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_managed_euc WorkbenchInstance#enable_managed_euc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_managed_euc WorkbenchInstance#enable_managed_euc}
 
 ---
 
@@ -199,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag that specifies that a notebook can be accessed with third party identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_third_party_identity WorkbenchInstance#enable_third_party_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_third_party_identity WorkbenchInstance#enable_third_party_identity}
 
 ---
 
@@ -209,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gce_setup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#gce_setup WorkbenchInstance#gce_setup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#gce_setup WorkbenchInstance#gce_setup}
 
 ---
 
@@ -217,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#id WorkbenchInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#id WorkbenchInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -230,7 +242,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Required. User-defined unique ID of this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#instance_id WorkbenchInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#instance_id WorkbenchInstance#instance_id}
 
 ---
 
@@ -246,7 +258,7 @@ the service account users of your VM instance''s service account can use the ins
 If specified, sets the access mode to 'Single user'. For more details, see
 https://cloud.google.com/vertex-ai/docs/workbench/instances/manage-access-jupyterlab'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#instance_owners WorkbenchInstance#instance_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#instance_owners WorkbenchInstance#instance_owners}
 
 ---
 
@@ -259,7 +271,7 @@ Optional. Labels to apply to this instance. These can be later modified by the U
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#labels WorkbenchInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#labels WorkbenchInstance#labels}
 
 ---
 
@@ -267,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#project WorkbenchInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#project WorkbenchInstance#project}.
 
 ---
 
@@ -277,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#timeouts WorkbenchInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#timeouts WorkbenchInstance#timeouts}
 
 ---
 
@@ -314,6 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetDesiredState">resetDesiredState</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetDisableProxyAccess">resetDisableProxyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetEnableDeletionProtection">resetEnableDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetEnableManagedEuc">resetEnableManagedEuc</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetEnableThirdPartyIdentity">resetEnableThirdPartyIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetGceSetup">resetGceSetup</a></code> | *No description.* |
@@ -679,6 +692,12 @@ public void resetDesiredState()
 public void resetDisableProxyAccess()
 ```
 
+##### `resetEnableDeletionProtection` <a name="resetEnableDeletionProtection" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetEnableDeletionProtection"></a>
+
+```java
+public void resetEnableDeletionProtection()
+```
+
 ##### `resetEnableManagedEuc` <a name="resetEnableManagedEuc" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.resetEnableManagedEuc"></a>
 
 ```java
@@ -836,7 +855,7 @@ The construct id used in the generated config for the WorkbenchInstance to impor
 
 The id of the existing WorkbenchInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,6 +900,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.desiredStateInput">desiredStateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.disableProxyAccessInput">disableProxyAccessInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableDeletionProtectionInput">enableDeletionProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableManagedEucInput">enableManagedEucInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableThirdPartyIdentityInput">enableThirdPartyIdentityInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.gceSetupInput">gceSetupInput</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup">WorkbenchInstanceGceSetup</a></code> | *No description.* |
@@ -895,6 +915,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.desiredState">desiredState</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.disableProxyAccess">disableProxyAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableDeletionProtection">enableDeletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableManagedEuc">enableManagedEuc</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableThirdPartyIdentity">enableThirdPartyIdentity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1199,6 +1220,16 @@ public java.lang.Boolean|IResolvable getDisableProxyAccessInput();
 
 ---
 
+##### `enableDeletionProtectionInput`<sup>Optional</sup> <a name="enableDeletionProtectionInput" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableDeletionProtectionInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableDeletionProtectionInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `enableManagedEucInput`<sup>Optional</sup> <a name="enableManagedEucInput" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableManagedEucInput"></a>
 
 ```java
@@ -1339,6 +1370,16 @@ public java.lang.Boolean|IResolvable getDisableProxyAccess();
 
 ---
 
+##### `enableDeletionProtection`<sup>Required</sup> <a name="enableDeletionProtection" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableDeletionProtection"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableDeletionProtection();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `enableManagedEuc`<sup>Required</sup> <a name="enableManagedEuc" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstance.property.enableManagedEuc"></a>
 
 ```java
@@ -1469,6 +1510,7 @@ WorkbenchInstanceConfig.builder()
 //  .deletionPolicy(java.lang.String)
 //  .desiredState(java.lang.String)
 //  .disableProxyAccess(java.lang.Boolean|IResolvable)
+//  .enableDeletionProtection(java.lang.Boolean|IResolvable)
 //  .enableManagedEuc(java.lang.Boolean|IResolvable)
 //  .enableThirdPartyIdentity(java.lang.Boolean|IResolvable)
 //  .gceSetup(WorkbenchInstanceGceSetup)
@@ -1497,14 +1539,15 @@ WorkbenchInstanceConfig.builder()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.desiredState">desiredState</a></code> | <code>java.lang.String</code> | Desired state of the Workbench Instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.disableProxyAccess">disableProxyAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Optional. If true, the workbench instance will not register with the proxy. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.enableDeletionProtection">enableDeletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Optional. If true, deletion protection will be enabled for this Workbench Instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.enableManagedEuc">enableManagedEuc</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to enable managed end user credentials for the instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.enableThirdPartyIdentity">enableThirdPartyIdentity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag that specifies that a notebook can be accessed with third party identity provider. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.gceSetup">gceSetup</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup">WorkbenchInstanceGceSetup</a></code> | gce_setup block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#id WorkbenchInstance#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#id WorkbenchInstance#id}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Required. User-defined unique ID of this instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.instanceOwners">instanceOwners</a></code> | <code>java.util.List<java.lang.String></code> | 'Optional. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Labels to apply to this instance. These can be later modified by the UpdateInstance method. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#project WorkbenchInstance#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#project WorkbenchInstance#project}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts">WorkbenchInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1589,7 +1632,7 @@ public java.lang.String getLocation();
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#location WorkbenchInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#location WorkbenchInstance#location}
 
 ---
 
@@ -1603,7 +1646,7 @@ public java.lang.String getName();
 
 The name of this workbench instance. Format: 'projects/{project_id}/locations/{location}/instances/{instance_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
 
 ---
 
@@ -1624,7 +1667,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#deletion_policy WorkbenchInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#deletion_policy WorkbenchInstance#deletion_policy}
 
 ---
 
@@ -1640,7 +1683,7 @@ Desired state of the Workbench Instance.
 
 Set this field to 'ACTIVE' to start the Instance, and 'STOPPED' to stop the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#desired_state WorkbenchInstance#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#desired_state WorkbenchInstance#desired_state}
 
 ---
 
@@ -1654,7 +1697,21 @@ public java.lang.Boolean|IResolvable getDisableProxyAccess();
 
 Optional. If true, the workbench instance will not register with the proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disable_proxy_access WorkbenchInstance#disable_proxy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disable_proxy_access WorkbenchInstance#disable_proxy_access}
+
+---
+
+##### `enableDeletionProtection`<sup>Optional</sup> <a name="enableDeletionProtection" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig.property.enableDeletionProtection"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableDeletionProtection();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Optional. If true, deletion protection will be enabled for this Workbench Instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_deletion_protection WorkbenchInstance#enable_deletion_protection}
 
 ---
 
@@ -1668,7 +1725,7 @@ public java.lang.Boolean|IResolvable getEnableManagedEuc();
 
 Flag to enable managed end user credentials for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_managed_euc WorkbenchInstance#enable_managed_euc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_managed_euc WorkbenchInstance#enable_managed_euc}
 
 ---
 
@@ -1682,7 +1739,7 @@ public java.lang.Boolean|IResolvable getEnableThirdPartyIdentity();
 
 Flag that specifies that a notebook can be accessed with third party identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_third_party_identity WorkbenchInstance#enable_third_party_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_third_party_identity WorkbenchInstance#enable_third_party_identity}
 
 ---
 
@@ -1696,7 +1753,7 @@ public WorkbenchInstanceGceSetup getGceSetup();
 
 gce_setup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#gce_setup WorkbenchInstance#gce_setup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#gce_setup WorkbenchInstance#gce_setup}
 
 ---
 
@@ -1708,7 +1765,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#id WorkbenchInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#id WorkbenchInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1725,7 +1782,7 @@ public java.lang.String getInstanceId();
 
 Required. User-defined unique ID of this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#instance_id WorkbenchInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#instance_id WorkbenchInstance#instance_id}
 
 ---
 
@@ -1745,7 +1802,7 @@ the service account users of your VM instance''s service account can use the ins
 If specified, sets the access mode to 'Single user'. For more details, see
 https://cloud.google.com/vertex-ai/docs/workbench/instances/manage-access-jupyterlab'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#instance_owners WorkbenchInstance#instance_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#instance_owners WorkbenchInstance#instance_owners}
 
 ---
 
@@ -1762,7 +1819,7 @@ Optional. Labels to apply to this instance. These can be later modified by the U
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#labels WorkbenchInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#labels WorkbenchInstance#labels}
 
 ---
 
@@ -1774,7 +1831,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#project WorkbenchInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#project WorkbenchInstance#project}.
 
 ---
 
@@ -1788,7 +1845,7 @@ public WorkbenchInstanceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#timeouts WorkbenchInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#timeouts WorkbenchInstance#timeouts}
 
 ---
 
@@ -1809,6 +1866,7 @@ WorkbenchInstanceGceSetup.builder()
 //  .enableIpForwarding(java.lang.Boolean|IResolvable)
 //  .machineType(java.lang.String)
 //  .metadata(java.util.Map<java.lang.String, java.lang.String>)
+//  .minCpuPlatform(java.lang.String)
 //  .networkInterfaces(IResolvable|java.util.List<WorkbenchInstanceGceSetupNetworkInterfaces>)
 //  .reservationAffinity(WorkbenchInstanceGceSetupReservationAffinity)
 //  .serviceAccounts(IResolvable|java.util.List<WorkbenchInstanceGceSetupServiceAccounts>)
@@ -1831,6 +1889,7 @@ WorkbenchInstanceGceSetup.builder()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.enableIpForwarding">enableIpForwarding</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Optional. Flag to enable ip forwarding or not, default false/off. https://cloud.google.com/vpc/docs/using-routes#canipforward. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.machineType">machineType</a></code> | <code>java.lang.String</code> | Optional. The machine type of the VM instance. https://cloud.google.com/compute/docs/machine-resource. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Custom metadata to apply to this instance. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.minCpuPlatform">minCpuPlatform</a></code> | <code>java.lang.String</code> | Optional. The minimum CPU platform to use for this instance. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.networkInterfaces">networkInterfaces</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfaces">WorkbenchInstanceGceSetupNetworkInterfaces</a>></code> | network_interfaces block. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinity">WorkbenchInstanceGceSetupReservationAffinity</a></code> | reservation_affinity block. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.serviceAccounts">serviceAccounts</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccounts">WorkbenchInstanceGceSetupServiceAccounts</a>></code> | service_accounts block. |
@@ -1850,7 +1909,7 @@ public IResolvable|java.util.List<WorkbenchInstanceGceSetupAcceleratorConfigs> g
 
 accelerator_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#accelerator_configs WorkbenchInstance#accelerator_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#accelerator_configs WorkbenchInstance#accelerator_configs}
 
 ---
 
@@ -1864,7 +1923,7 @@ public WorkbenchInstanceGceSetupBootDisk getBootDisk();
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#boot_disk WorkbenchInstance#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#boot_disk WorkbenchInstance#boot_disk}
 
 ---
 
@@ -1878,7 +1937,7 @@ public WorkbenchInstanceGceSetupConfidentialInstanceConfig getConfidentialInstan
 
 confidential_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#confidential_instance_config WorkbenchInstance#confidential_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#confidential_instance_config WorkbenchInstance#confidential_instance_config}
 
 ---
 
@@ -1892,7 +1951,7 @@ public WorkbenchInstanceGceSetupContainerImage getContainerImage();
 
 container_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#container_image WorkbenchInstance#container_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#container_image WorkbenchInstance#container_image}
 
 ---
 
@@ -1906,7 +1965,7 @@ public WorkbenchInstanceGceSetupDataDisks getDataDisks();
 
 data_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#data_disks WorkbenchInstance#data_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#data_disks WorkbenchInstance#data_disks}
 
 ---
 
@@ -1920,7 +1979,7 @@ public java.lang.Boolean|IResolvable getDisablePublicIp();
 
 Optional. If true, no external IP will be assigned to this VM instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disable_public_ip WorkbenchInstance#disable_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disable_public_ip WorkbenchInstance#disable_public_ip}
 
 ---
 
@@ -1934,7 +1993,7 @@ public java.lang.Boolean|IResolvable getEnableIpForwarding();
 
 Optional. Flag to enable ip forwarding or not, default false/off. https://cloud.google.com/vpc/docs/using-routes#canipforward.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_ip_forwarding WorkbenchInstance#enable_ip_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_ip_forwarding WorkbenchInstance#enable_ip_forwarding}
 
 ---
 
@@ -1948,7 +2007,7 @@ public java.lang.String getMachineType();
 
 Optional. The machine type of the VM instance. https://cloud.google.com/compute/docs/machine-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#machine_type WorkbenchInstance#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#machine_type WorkbenchInstance#machine_type}
 
 ---
 
@@ -1962,7 +2021,21 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 Optional. Custom metadata to apply to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#metadata WorkbenchInstance#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#metadata WorkbenchInstance#metadata}
+
+---
+
+##### `minCpuPlatform`<sup>Optional</sup> <a name="minCpuPlatform" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup.property.minCpuPlatform"></a>
+
+```java
+public java.lang.String getMinCpuPlatform();
+```
+
+- *Type:* java.lang.String
+
+Optional. The minimum CPU platform to use for this instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#min_cpu_platform WorkbenchInstance#min_cpu_platform}
 
 ---
 
@@ -1976,7 +2049,7 @@ public IResolvable|java.util.List<WorkbenchInstanceGceSetupNetworkInterfaces> ge
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#network_interfaces WorkbenchInstance#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#network_interfaces WorkbenchInstance#network_interfaces}
 
 ---
 
@@ -1990,7 +2063,7 @@ public WorkbenchInstanceGceSetupReservationAffinity getReservationAffinity();
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#reservation_affinity WorkbenchInstance#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#reservation_affinity WorkbenchInstance#reservation_affinity}
 
 ---
 
@@ -2004,7 +2077,7 @@ public IResolvable|java.util.List<WorkbenchInstanceGceSetupServiceAccounts> getS
 
 service_accounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#service_accounts WorkbenchInstance#service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#service_accounts WorkbenchInstance#service_accounts}
 
 ---
 
@@ -2018,7 +2091,7 @@ public WorkbenchInstanceGceSetupShieldedInstanceConfig getShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#shielded_instance_config WorkbenchInstance#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#shielded_instance_config WorkbenchInstance#shielded_instance_config}
 
 ---
 
@@ -2032,7 +2105,7 @@ public java.util.List<java.lang.String> getTags();
 
 Optional. The Compute Engine tags to add to instance (see [Tagging instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#tags WorkbenchInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#tags WorkbenchInstance#tags}
 
 ---
 
@@ -2046,7 +2119,7 @@ public WorkbenchInstanceGceSetupVmImage getVmImage();
 
 vm_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#vm_image WorkbenchInstance#vm_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#vm_image WorkbenchInstance#vm_image}
 
 ---
 
@@ -2082,7 +2155,7 @@ public java.lang.String getCoreCount();
 
 Optional. Count of cores of this accelerator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#core_count WorkbenchInstance#core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#core_count WorkbenchInstance#core_count}
 
 ---
 
@@ -2098,7 +2171,7 @@ Optional.
 
 Type of this accelerator. Possible values: ["NVIDIA_TESLA_P100", "NVIDIA_TESLA_V100", "NVIDIA_TESLA_P4", "NVIDIA_TESLA_T4", "NVIDIA_TESLA_A100", "NVIDIA_A100_80GB", "NVIDIA_L4", "NVIDIA_H100_80GB", "NVIDIA_H100_MEGA_80GB", "NVIDIA_H200_141GB", "NVIDIA_B200", "NVIDIA_RTX6000", "NVIDIA_TESLA_T4_VWS", "NVIDIA_TESLA_P100_VWS", "NVIDIA_TESLA_P4_VWS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#type WorkbenchInstance#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#type WorkbenchInstance#type}
 
 ---
 
@@ -2138,7 +2211,7 @@ public java.lang.String getDiskEncryption();
 
 Optional. Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_encryption WorkbenchInstance#disk_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_encryption WorkbenchInstance#disk_encryption}
 
 ---
 
@@ -2156,7 +2229,7 @@ The size of the boot disk in GB attached to this instance,
 up to a maximum of 64000 GB (64 TB). If not specified, this defaults to the
 recommended value of 150GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_size_gb WorkbenchInstance#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_size_gb WorkbenchInstance#disk_size_gb}
 
 ---
 
@@ -2170,7 +2243,7 @@ public java.lang.String getDiskType();
 
 Optional. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME", "HYPERDISK_BALANCED", "HYPERDISK_BALANCED_HIGH_AVAILABILITY", "HYPERDISK_ML"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_type WorkbenchInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_type WorkbenchInstance#disk_type}
 
 ---
 
@@ -2188,7 +2261,7 @@ The KMS key used to encrypt the disks, only
 applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
 Learn more about using your own encryption keys.'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#kms_key WorkbenchInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#kms_key WorkbenchInstance#kms_key}
 
 ---
 
@@ -2222,7 +2295,7 @@ public java.lang.String getConfidentialInstanceType();
 
 Defines the type of technology used by the confidential instance. Possible values: ["SEV"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#confidential_instance_type WorkbenchInstance#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#confidential_instance_type WorkbenchInstance#confidential_instance_type}
 
 ---
 
@@ -2258,7 +2331,7 @@ public java.lang.String getRepository();
 
 The path to the container image repository. For example: gcr.io/{project_id}/{imageName}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#repository WorkbenchInstance#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#repository WorkbenchInstance#repository}
 
 ---
 
@@ -2272,7 +2345,7 @@ public java.lang.String getTag();
 
 The tag of the container image. If not specified, this defaults to the latest tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#tag WorkbenchInstance#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#tag WorkbenchInstance#tag}
 
 ---
 
@@ -2288,6 +2361,7 @@ WorkbenchInstanceGceSetupDataDisks.builder()
 //  .diskSizeGb(java.lang.String)
 //  .diskType(java.lang.String)
 //  .kmsKey(java.lang.String)
+//  .resourcePolicies(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -2299,6 +2373,7 @@ WorkbenchInstanceGceSetupDataDisks.builder()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks.property.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.String</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks.property.diskType">diskType</a></code> | <code>java.lang.String</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | 'Optional. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks.property.resourcePolicies">resourcePolicies</a></code> | <code>java.util.List<java.lang.String></code> | Optional. Resource policies applied to this disk. |
 
 ---
 
@@ -2312,7 +2387,7 @@ public java.lang.String getDiskEncryption();
 
 Optional. Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["GMEK", "CMEK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_encryption WorkbenchInstance#disk_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_encryption WorkbenchInstance#disk_encryption}
 
 ---
 
@@ -2330,7 +2405,7 @@ The size of the disk in GB attached to this VM instance,
 up to a maximum of 64000 GB (64 TB). If not specified, this defaults to
 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_size_gb WorkbenchInstance#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_size_gb WorkbenchInstance#disk_size_gb}
 
 ---
 
@@ -2346,7 +2421,7 @@ Optional.
 
 Input only. Indicates the type of the disk. Possible values: ["PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME", "HYPERDISK_BALANCED", "HYPERDISK_EXTREME", "HYPERDISK_THROUGHPUT", "HYPERDISK_BALANCED_HIGH_AVAILABILITY", "HYPERDISK_ML"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#disk_type WorkbenchInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#disk_type WorkbenchInstance#disk_type}
 
 ---
 
@@ -2364,7 +2439,21 @@ The KMS key used to encrypt the disks,
 only applicable if disk_encryption is CMEK. Format: 'projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}'
 Learn more about using your own encryption keys.'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#kms_key WorkbenchInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#kms_key WorkbenchInstance#kms_key}
+
+---
+
+##### `resourcePolicies`<sup>Optional</sup> <a name="resourcePolicies" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks.property.resourcePolicies"></a>
+
+```java
+public java.util.List<java.lang.String> getResourcePolicies();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Optional. Resource policies applied to this disk.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#resource_policies WorkbenchInstance#resource_policies}
 
 ---
 
@@ -2404,7 +2493,7 @@ public IResolvable|java.util.List<WorkbenchInstanceGceSetupNetworkInterfacesAcce
 
 access_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#access_configs WorkbenchInstance#access_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#access_configs WorkbenchInstance#access_configs}
 
 ---
 
@@ -2418,7 +2507,7 @@ public java.lang.String getNetwork();
 
 Optional. The name of the VPC that this VM instance is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#network WorkbenchInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#network WorkbenchInstance#network}
 
 ---
 
@@ -2435,7 +2524,7 @@ Optional.
 The type of vNIC to be used on this interface. This
 may be gVNIC or VirtioNet. Possible values: ["VIRTIO_NET", "GVNIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#nic_type WorkbenchInstance#nic_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#nic_type WorkbenchInstance#nic_type}
 
 ---
 
@@ -2449,7 +2538,7 @@ public java.lang.String getSubnet();
 
 Optional. The name of the subnet that this VM instance is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#subnet WorkbenchInstance#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#subnet WorkbenchInstance#subnet}
 
 ---
 
@@ -2489,7 +2578,7 @@ undefined to use an IP from a shared ephemeral IP address pool. If you
 specify a static external IP address, it must live in the same region as
 the zone of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#external_ip WorkbenchInstance#external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#external_ip WorkbenchInstance#external_ip}
 
 ---
 
@@ -2529,7 +2618,7 @@ Specifies the type of reservation from which this instance can consume resources
 
 Possible values: ["RESERVATION_NONE", "RESERVATION_ANY", "RESERVATION_SPECIFIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#consume_reservation_type WorkbenchInstance#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#consume_reservation_type WorkbenchInstance#consume_reservation_type}
 
 ---
 
@@ -2547,7 +2636,7 @@ To target a
 RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
 as the key and specify the name of your reservation as its value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#key WorkbenchInstance#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#key WorkbenchInstance#key}
 
 ---
 
@@ -2566,7 +2655,7 @@ either a name to a reservation in the same project or
 "projects/different-project/reservations/some-reservation-name"
 to target a shared reservation in the same zone but in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#values WorkbenchInstance#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#values WorkbenchInstance#values}
 
 ---
 
@@ -2600,7 +2689,7 @@ public java.lang.String getEmail();
 
 Optional. Email address of the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#email WorkbenchInstance#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#email WorkbenchInstance#email}
 
 ---
 
@@ -2644,7 +2733,7 @@ instance. The attestation is performed against the integrity policy baseline.
 This baseline is initially derived from the implicitly trusted boot image
 when the VM instance is created. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_integrity_monitoring WorkbenchInstance#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_integrity_monitoring WorkbenchInstance#enable_integrity_monitoring}
 
 ---
 
@@ -2663,7 +2752,7 @@ Secure Boot helps ensure that the system only runs authentic software by verifyi
 the digital signature of all boot components, and halting the boot process
 if signature verification fails. Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_secure_boot WorkbenchInstance#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_secure_boot WorkbenchInstance#enable_secure_boot}
 
 ---
 
@@ -2677,7 +2766,7 @@ public java.lang.Boolean|IResolvable getEnableVtpm();
 
 Optional. Defines whether the VM instance has the vTPM enabled. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#enable_vtpm WorkbenchInstance#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#enable_vtpm WorkbenchInstance#enable_vtpm}
 
 ---
 
@@ -2715,7 +2804,7 @@ public java.lang.String getFamily();
 
 Optional. Use this VM image family to find the image; the newest image in this family will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#family WorkbenchInstance#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#family WorkbenchInstance#family}
 
 ---
 
@@ -2729,7 +2818,7 @@ public java.lang.String getName();
 
 Optional. Use VM image name to find the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#name WorkbenchInstance#name}
 
 ---
 
@@ -2743,7 +2832,7 @@ public java.lang.String getProject();
 
 The name of the Google Cloud project that this VM image belongs to. Format: {project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#project WorkbenchInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#project WorkbenchInstance#project}
 
 ---
 
@@ -2777,9 +2866,9 @@ WorkbenchInstanceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#create WorkbenchInstance#create}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#delete WorkbenchInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#update WorkbenchInstance#update}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#create WorkbenchInstance#create}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#delete WorkbenchInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#update WorkbenchInstance#update}. |
 
 ---
 
@@ -2791,7 +2880,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#create WorkbenchInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#create WorkbenchInstance#create}.
 
 ---
 
@@ -2803,7 +2892,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#delete WorkbenchInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#delete WorkbenchInstance#delete}.
 
 ---
 
@@ -2815,7 +2904,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/workbench_instance#update WorkbenchInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/workbench_instance#update WorkbenchInstance#update}.
 
 ---
 
@@ -4315,6 +4404,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.resetDiskSizeGb">resetDiskSizeGb</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.resetDiskType">resetDiskType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.resetKmsKey">resetKmsKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.resetResourcePolicies">resetResourcePolicies</a></code> | *No description.* |
 
 ---
 
@@ -4492,6 +4582,12 @@ public void resetDiskType()
 public void resetKmsKey()
 ```
 
+##### `resetResourcePolicies` <a name="resetResourcePolicies" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.resetResourcePolicies"></a>
+
+```java
+public void resetResourcePolicies()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4503,10 +4599,12 @@ public void resetKmsKey()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskSizeGbInput">diskSizeGbInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskTypeInput">diskTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.kmsKeyInput">kmsKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.resourcePoliciesInput">resourcePoliciesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskEncryption">diskEncryption</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskSizeGb">diskSizeGb</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskType">diskType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.resourcePolicies">resourcePolicies</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks">WorkbenchInstanceGceSetupDataDisks</a></code> | *No description.* |
 
 ---
@@ -4575,6 +4673,16 @@ public java.lang.String getKmsKeyInput();
 
 ---
 
+##### `resourcePoliciesInput`<sup>Optional</sup> <a name="resourcePoliciesInput" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.resourcePoliciesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getResourcePoliciesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `diskEncryption`<sup>Required</sup> <a name="diskEncryption" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.diskEncryption"></a>
 
 ```java
@@ -4612,6 +4720,16 @@ public java.lang.String getKmsKey();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `resourcePolicies`<sup>Required</sup> <a name="resourcePolicies" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference.property.resourcePolicies"></a>
+
+```java
+public java.util.List<java.lang.String> getResourcePolicies();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -5700,6 +5818,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetEnableIpForwarding">resetEnableIpForwarding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetMetadata">resetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetMinCpuPlatform">resetMinCpuPlatform</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetNetworkInterfaces">resetNetworkInterfaces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetReservationAffinity">resetReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetServiceAccounts">resetServiceAccounts</a></code> | *No description.* |
@@ -6033,6 +6152,12 @@ public void resetMachineType()
 public void resetMetadata()
 ```
 
+##### `resetMinCpuPlatform` <a name="resetMinCpuPlatform" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetMinCpuPlatform"></a>
+
+```java
+public void resetMinCpuPlatform()
+```
+
 ##### `resetNetworkInterfaces` <a name="resetNetworkInterfaces" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.resetNetworkInterfaces"></a>
 
 ```java
@@ -6095,6 +6220,7 @@ public void resetVmImage()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.enableIpForwardingInput">enableIpForwardingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.metadataInput">metadataInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.networkInterfacesInput">networkInterfacesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfaces">WorkbenchInstanceGceSetupNetworkInterfaces</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.reservationAffinityInput">reservationAffinityInput</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinity">WorkbenchInstanceGceSetupReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.serviceAccountsInput">serviceAccountsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccounts">WorkbenchInstanceGceSetupServiceAccounts</a>></code> | *No description.* |
@@ -6105,6 +6231,7 @@ public void resetVmImage()
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.enableIpForwarding">enableIpForwarding</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.machineType">machineType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup">WorkbenchInstanceGceSetup</a></code> | *No description.* |
 
@@ -6324,6 +6451,16 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadataInput();
 
 ---
 
+##### `minCpuPlatformInput`<sup>Optional</sup> <a name="minCpuPlatformInput" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.minCpuPlatformInput"></a>
+
+```java
+public java.lang.String getMinCpuPlatformInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `networkInterfacesInput`<sup>Optional</sup> <a name="networkInterfacesInput" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.networkInterfacesInput"></a>
 
 ```java
@@ -6421,6 +6558,16 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 ```
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `minCpuPlatform`<sup>Required</sup> <a name="minCpuPlatform" id="@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference.property.minCpuPlatform"></a>
+
+```java
+public java.lang.String getMinCpuPlatform();
+```
+
+- *Type:* java.lang.String
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### FirestoreField <a name="FirestoreField" id="@cdktn/provider-google.firestoreField.FirestoreField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field google_firestore_field}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field google_firestore_field}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreField.FirestoreField.Initializer"></a>
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the FirestoreField to import.
 
 The id of the existing FirestoreField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1053,9 +1053,9 @@ new FirestoreFieldConfig {
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.field">Field</a></code> | <code>string</code> | The id of the field to configure. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.database">Database</a></code> | <code>string</code> | The Firestore database id. Defaults to '"(default)"'. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#id FirestoreField#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#id FirestoreField#id}. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.indexConfig">IndexConfig</a></code> | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldIndexConfig">FirestoreFieldIndexConfig</a></code> | index_config block. |
-| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#project FirestoreField#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#project FirestoreField#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.skipWait">SkipWait</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether to skip waiting for the field operation to complete. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts">FirestoreFieldTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldConfig.property.ttlConfig">TtlConfig</a></code> | <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTtlConfig">FirestoreFieldTtlConfig</a></code> | ttl_config block. |
@@ -1142,7 +1142,7 @@ public string Collection { get; set; }
 
 The id of the collection group to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#collection FirestoreField#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#collection FirestoreField#collection}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string Field { get; set; }
 
 The id of the field to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#field FirestoreField#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#field FirestoreField#field}
 
 ---
 
@@ -1170,7 +1170,7 @@ public string Database { get; set; }
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#database FirestoreField#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#database FirestoreField#database}
 
 ---
 
@@ -1191,7 +1191,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#deletion_policy FirestoreField#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#deletion_policy FirestoreField#deletion_policy}
 
 ---
 
@@ -1203,7 +1203,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#id FirestoreField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#id FirestoreField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1220,7 @@ public FirestoreFieldIndexConfig IndexConfig { get; set; }
 
 index_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#index_config FirestoreField#index_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#index_config FirestoreField#index_config}
 
 ---
 
@@ -1232,7 +1232,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#project FirestoreField#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#project FirestoreField#project}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public bool|IResolvable SkipWait { get; set; }
 
 Whether to skip waiting for the field operation to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#skip_wait FirestoreField#skip_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#skip_wait FirestoreField#skip_wait}
 
 ---
 
@@ -1260,7 +1260,7 @@ public FirestoreFieldTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#timeouts FirestoreField#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#timeouts FirestoreField#timeouts}
 
 ---
 
@@ -1274,7 +1274,7 @@ public FirestoreFieldTtlConfig TtlConfig { get; set; }
 
 ttl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#ttl_config FirestoreField#ttl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#ttl_config FirestoreField#ttl_config}
 
 ---
 
@@ -1308,7 +1308,7 @@ public IResolvable|FirestoreFieldIndexConfigIndexes[] Indexes { get; set; }
 
 indexes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#indexes FirestoreField#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#indexes FirestoreField#indexes}
 
 ---
 
@@ -1346,7 +1346,7 @@ public string ArrayConfig { get; set; }
 
 Indicates that this field supports operations on arrayValues. Only one of 'order' and 'arrayConfig' can be specified. Possible values: ["CONTAINS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#array_config FirestoreField#array_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#array_config FirestoreField#array_config}
 
 ---
 
@@ -1360,7 +1360,7 @@ public string Order { get; set; }
 
 Indicates that this field supports ordering by the specified order or comparing using =, <, <=, >, >=, !=. Only one of 'order' and 'arrayConfig' can be specified. Possible values: ["ASCENDING", "DESCENDING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#order FirestoreField#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#order FirestoreField#order}
 
 ---
 
@@ -1378,7 +1378,7 @@ Collection scoped queries require you specify
 the collection at query time. Collection group scope allows queries across all
 collections with the same id. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#query_scope FirestoreField#query_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#query_scope FirestoreField#query_scope}
 
 ---
 
@@ -1400,9 +1400,9 @@ new FirestoreFieldTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#create FirestoreField#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#delete FirestoreField#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#update FirestoreField#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#create FirestoreField#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#delete FirestoreField#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreField.FirestoreFieldTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#update FirestoreField#update}. |
 
 ---
 
@@ -1414,7 +1414,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#create FirestoreField#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#create FirestoreField#create}.
 
 ---
 
@@ -1426,7 +1426,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#delete FirestoreField#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#delete FirestoreField#delete}.
 
 ---
 
@@ -1438,7 +1438,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#update FirestoreField#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#update FirestoreField#update}.
 
 ---
 
@@ -1474,7 +1474,7 @@ The offset, relative to the timestamp value from the field, used to determine th
 
 Formatted as the number of seconds followed by 's'. For example, "60s" represents an offset of one minute. The number of seconds must be between 1 and 2147483647 inclusive. To configure no offset, omit this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_field#expiration_offset FirestoreField#expiration_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_field#expiration_offset FirestoreField#expiration_offset}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VertexAiRagEngineConfig <a name="VertexAiRagEngineConfig" id="@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the VertexAiRagEngineConfig to
 
 The id of the existing VertexAiRagEngineConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,8 +925,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexairagengin
 | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.ragManagedDbConfig">RagManagedDbConfig</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfig">VertexAiRagEngineConfigRagManagedDbConfig</a></code> | rag_managed_db_config block. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#id VertexAiRagEngineConfig#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#project VertexAiRagEngineConfig#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#id VertexAiRagEngineConfig#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#project VertexAiRagEngineConfig#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.region">Region</a></code> | <code>*string</code> | The region of the RagEngineConfig. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts">VertexAiRagEngineConfigTimeouts</a></code> | timeouts block. |
 
@@ -1012,7 +1012,7 @@ RagManagedDbConfig VertexAiRagEngineConfigRagManagedDbConfig
 
 rag_managed_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#rag_managed_db_config VertexAiRagEngineConfig#rag_managed_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#rag_managed_db_config VertexAiRagEngineConfig#rag_managed_db_config}
 
 ---
 
@@ -1033,7 +1033,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#deletion_policy VertexAiRagEngineConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#deletion_policy VertexAiRagEngineConfig#deletion_policy}
 
 ---
 
@@ -1045,7 +1045,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#id VertexAiRagEngineConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#id VertexAiRagEngineConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#project VertexAiRagEngineConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#project VertexAiRagEngineConfig#project}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Region *string
 
 The region of the RagEngineConfig. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#region VertexAiRagEngineConfig#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#region VertexAiRagEngineConfig#region}
 
 ---
 
@@ -1088,7 +1088,7 @@ Timeouts VertexAiRagEngineConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#timeouts VertexAiRagEngineConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#timeouts VertexAiRagEngineConfig#timeouts}
 
 ---
 
@@ -1126,7 +1126,7 @@ Basic VertexAiRagEngineConfigRagManagedDbConfigBasic
 
 basic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#basic VertexAiRagEngineConfig#basic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#basic VertexAiRagEngineConfig#basic}
 
 ---
 
@@ -1140,7 +1140,7 @@ Scaled VertexAiRagEngineConfigRagManagedDbConfigScaled
 
 scaled block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#scaled VertexAiRagEngineConfig#scaled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#scaled VertexAiRagEngineConfig#scaled}
 
 ---
 
@@ -1154,7 +1154,7 @@ Unprovisioned VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned
 
 unprovisioned block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#unprovisioned VertexAiRagEngineConfig#unprovisioned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#unprovisioned VertexAiRagEngineConfig#unprovisioned}
 
 ---
 
@@ -1215,9 +1215,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexairagengin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#create VertexAiRagEngineConfig#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#delete VertexAiRagEngineConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#update VertexAiRagEngineConfig#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#create VertexAiRagEngineConfig#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#delete VertexAiRagEngineConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#update VertexAiRagEngineConfig#update}. |
 
 ---
 
@@ -1229,7 +1229,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#create VertexAiRagEngineConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#create VertexAiRagEngineConfig#create}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#delete VertexAiRagEngineConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#delete VertexAiRagEngineConfig#delete}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config#update VertexAiRagEngineConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config#update VertexAiRagEngineConfig#update}.
 
 ---
 

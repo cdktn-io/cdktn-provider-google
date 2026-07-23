@@ -4,7 +4,7 @@
 
 ### DialogflowEncryptionSpec <a name="DialogflowEncryptionSpec" id="@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec google_dialogflow_encryption_spec}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec google_dialogflow_encryption_spec}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer"></a>
 
@@ -40,8 +40,8 @@ DialogflowEncryptionSpec.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec">DialogflowEncryptionSpecEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location in which the encryptionSpec is to be initialized. |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts">DialogflowEncryptionSpecTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#encryption_spec DialogflowEncryptionSpec#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#encryption_spec DialogflowEncryptionSpec#encryption_spec}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location in which the encryptionSpec is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#location DialogflowEncryptionSpec#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#location DialogflowEncryptionSpec#location}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#timeouts DialogflowEncryptionSpec#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#timeouts DialogflowEncryptionSpec#timeouts}
 
 ---
 
@@ -647,7 +647,7 @@ The construct id used in the generated config for the DialogflowEncryptionSpec t
 
 The id of the existing DialogflowEncryptionSpec that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,8 +988,8 @@ DialogflowEncryptionSpecConfig.builder()
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec">DialogflowEncryptionSpecEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location in which the encryptionSpec is to be initialized. |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts">DialogflowEncryptionSpecTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1074,7 +1074,7 @@ public DialogflowEncryptionSpecEncryptionSpec getEncryptionSpec();
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#encryption_spec DialogflowEncryptionSpec#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#encryption_spec DialogflowEncryptionSpec#encryption_spec}
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getLocation();
 
 The location in which the encryptionSpec is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#location DialogflowEncryptionSpec#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#location DialogflowEncryptionSpec#location}
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#id DialogflowEncryptionSpec#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1115,7 +1115,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#project DialogflowEncryptionSpec#project}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public DialogflowEncryptionSpecTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#timeouts DialogflowEncryptionSpec#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#timeouts DialogflowEncryptionSpec#timeouts}
 
 ---
 
@@ -1167,7 +1167,7 @@ If empty, the resource is secured by the default Google encryption key.
 Only the key in the same location as this resource is allowed to be used for encryption.
 Format: projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#kms_key DialogflowEncryptionSpec#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#kms_key DialogflowEncryptionSpec#kms_key}
 
 ---
 
@@ -1188,8 +1188,8 @@ DialogflowEncryptionSpecTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#create DialogflowEncryptionSpec#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#delete DialogflowEncryptionSpec#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#create DialogflowEncryptionSpec#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#delete DialogflowEncryptionSpec#delete}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#create DialogflowEncryptionSpec#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#create DialogflowEncryptionSpec#create}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_encryption_spec#delete DialogflowEncryptionSpec#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_encryption_spec#delete DialogflowEncryptionSpec#delete}.
 
 ---
 

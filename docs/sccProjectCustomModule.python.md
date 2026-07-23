@@ -4,7 +4,7 @@
 
 ### SccProjectCustomModule <a name="SccProjectCustomModule" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module google_scc_project_custom_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module google_scc_project_custom_module}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer"></a>
 
@@ -46,8 +46,8 @@ sccProjectCustomModule.SccProjectCustomModule(
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name of the Security Health Analytics custom module. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.enablementState">enablement_state</a></code> | <code>str</code> | The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts">SccProjectCustomModuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 custom_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
 
 ---
 
@@ -134,7 +134,7 @@ returned by this custom module. The display name must be between 1 and
 128 characters, start with a lowercase letter, and contain alphanumeric
 characters or underscores only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
 
 ---
 
@@ -161,7 +161,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#deletion_policy SccProjectCustomModule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#deletion_policy SccProjectCustomModule#deletion_policy}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -180,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
 
 ---
 
@@ -598,7 +598,7 @@ def put_custom_config(
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
 
 ---
 
@@ -611,7 +611,7 @@ An explanation of the recommended steps that security teams can take to resolve 
 This explanation is returned with each finding generated by
 this module in the nextSteps property of the finding JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
 
 ---
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
 
 ---
 
@@ -631,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The severity to assign to findings generated by the module. Possible values: ["CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
 
 ---
 
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
 
 ---
 
@@ -654,7 +654,7 @@ Text that describes the vulnerability or misconfiguration that the custom module
 This explanation is returned with each finding instance to
 help investigators understand the detected issue. The text must be enclosed in quotation marks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -672,7 +672,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}.
 
 ---
 
@@ -680,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}.
 
 ---
 
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}.
 
 ---
 
@@ -830,7 +830,7 @@ The construct id used in the generated config for the SccProjectCustomModule to 
 
 The id of the existing SccProjectCustomModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1263,8 +1263,8 @@ sccProjectCustomModule.SccProjectCustomModuleConfig(
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name of the Security Health Analytics custom module. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.enablementState">enablement_state</a></code> | <code>str</code> | The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}. |
 | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts">SccProjectCustomModuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1349,7 +1349,7 @@ custom_config: SccProjectCustomModuleCustomConfig
 
 custom_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#custom_config SccProjectCustomModule#custom_config}
 
 ---
 
@@ -1369,7 +1369,7 @@ returned by this custom module. The display name must be between 1 and
 128 characters, start with a lowercase letter, and contain alphanumeric
 characters or underscores only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#display_name SccProjectCustomModule#display_name}
 
 ---
 
@@ -1383,7 +1383,7 @@ enablement_state: str
 
 The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#enablement_state SccProjectCustomModule#enablement_state}
 
 ---
 
@@ -1404,7 +1404,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#deletion_policy SccProjectCustomModule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#deletion_policy SccProjectCustomModule#deletion_policy}
 
 ---
 
@@ -1416,7 +1416,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#id SccProjectCustomModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1431,7 +1431,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#project SccProjectCustomModule#project}.
 
 ---
 
@@ -1445,7 +1445,7 @@ timeouts: SccProjectCustomModuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#timeouts SccProjectCustomModule#timeouts}
 
 ---
 
@@ -1489,7 +1489,7 @@ predicate: SccProjectCustomModuleCustomConfigPredicate
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#predicate SccProjectCustomModule#predicate}
 
 ---
 
@@ -1506,7 +1506,7 @@ An explanation of the recommended steps that security teams can take to resolve 
 This explanation is returned with each finding generated by
 this module in the nextSteps property of the finding JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#recommendation SccProjectCustomModule#recommendation}
 
 ---
 
@@ -1520,7 +1520,7 @@ resource_selector: SccProjectCustomModuleCustomConfigResourceSelector
 
 resource_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#resource_selector SccProjectCustomModule#resource_selector}
 
 ---
 
@@ -1534,7 +1534,7 @@ severity: str
 
 The severity to assign to findings generated by the module. Possible values: ["CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#severity SccProjectCustomModule#severity}
 
 ---
 
@@ -1548,7 +1548,7 @@ custom_output: SccProjectCustomModuleCustomConfigCustomOutput
 
 custom_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#custom_output SccProjectCustomModule#custom_output}
 
 ---
 
@@ -1565,7 +1565,7 @@ Text that describes the vulnerability or misconfiguration that the custom module
 This explanation is returned with each finding instance to
 help investigators understand the detected issue. The text must be enclosed in quotation marks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -1599,7 +1599,7 @@ properties: IResolvable | typing.List[SccProjectCustomModuleCustomConfigCustomOu
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
 
 ---
 
@@ -1635,7 +1635,7 @@ name: str
 
 Name of the property for the custom output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#name SccProjectCustomModule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#name SccProjectCustomModule#name}
 
 ---
 
@@ -1649,7 +1649,7 @@ value_expression: SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueE
 
 value_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#value_expression SccProjectCustomModule#value_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#value_expression SccProjectCustomModule#value_expression}
 
 ---
 
@@ -1689,7 +1689,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
 
 ---
 
@@ -1706,7 +1706,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -1720,7 +1720,7 @@ location: str
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
 
 ---
 
@@ -1734,7 +1734,7 @@ title: str
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
 
 ---
 
@@ -1774,7 +1774,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
 
 ---
 
@@ -1791,7 +1791,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -1805,7 +1805,7 @@ location: str
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
 
 ---
 
@@ -1819,7 +1819,7 @@ title: str
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
 
 ---
 
@@ -1853,7 +1853,7 @@ resource_types: typing.List[str]
 
 The resource types to run the detector on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
 
 ---
 
@@ -1875,9 +1875,9 @@ sccProjectCustomModule.SccProjectCustomModuleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}. |
-| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}. |
+| <code><a href="#@cdktn/provider-google.sccProjectCustomModule.SccProjectCustomModuleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}. |
 
 ---
 
@@ -1889,7 +1889,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#create SccProjectCustomModule#create}.
 
 ---
 
@@ -1901,7 +1901,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#delete SccProjectCustomModule#delete}.
 
 ---
 
@@ -1913,7 +1913,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#update SccProjectCustomModule#update}.
 
 ---
 
@@ -2675,7 +2675,7 @@ def put_value_expression(
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
 
 ---
 
@@ -2688,7 +2688,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -2698,7 +2698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
 
 ---
 
@@ -2708,7 +2708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
 
 ---
 
@@ -3444,7 +3444,7 @@ def put_custom_output(
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
 
 ---
 
@@ -3465,7 +3465,7 @@ def put_predicate(
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#expression SccProjectCustomModule#expression}
 
 ---
 
@@ -3478,7 +3478,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#description SccProjectCustomModule#description}
 
 ---
 
@@ -3488,7 +3488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#location SccProjectCustomModule#location}
 
 ---
 
@@ -3498,7 +3498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#title SccProjectCustomModule#title}
 
 ---
 
@@ -3516,7 +3516,7 @@ def put_resource_selector(
 
 The resource types to run the detector on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/scc_project_custom_module#resource_types SccProjectCustomModule#resource_types}
 
 ---
 
