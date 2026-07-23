@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVmwareengineDatastoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore#id DataGoogleVmwareengineDatastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore#id DataGoogleVmwareengineDatastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGoogleVmwareengineDatastoreConfig extends cdktn.TerraformMe
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore#location DataGoogleVmwareengineDatastore#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore#location DataGoogleVmwareengineDatastore#location}
   */
   readonly location: string;
   /**
@@ -38,11 +38,11 @@ export interface DataGoogleVmwareengineDatastoreConfig extends cdktn.TerraformMe
   * * Complies with [RFC 1034](https://datatracker.ietf.org/doc/html/rfc1034)
   * (section 3.5)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore#name DataGoogleVmwareengineDatastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore#name DataGoogleVmwareengineDatastore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore#project DataGoogleVmwareengineDatastore#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore#project DataGoogleVmwareengineDatastore#project}
   */
   readonly project?: string;
 }
@@ -295,7 +295,7 @@ export class DataGoogleVmwareengineDatastoreNfsDatastoreList extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore google_vmwareengine_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore google_vmwareengine_datastore}
 */
 export class DataGoogleVmwareengineDatastore extends cdktn.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataGoogleVmwareengineDatastore extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleVmwareengineDatastore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineDatastore to import
-  * @param importFromId The id of the existing DataGoogleVmwareengineDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVmwareengineDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineDatastore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataGoogleVmwareengineDatastore extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/vmwareengine_datastore google_vmwareengine_datastore} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/vmwareengine_datastore google_vmwareengine_datastore} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataGoogleVmwareengineDatastore extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_vmwareengine_datastore',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `google_vertex_ai_rag_engine_config`
 
-Refer to the Terraform Registry for docs: [`google_vertex_ai_rag_engine_config`](https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/vertex_ai_rag_engine_config).
+Refer to the Terraform Registry for docs: [`google_vertex_ai_rag_engine_config`](https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/vertex_ai_rag_engine_config).

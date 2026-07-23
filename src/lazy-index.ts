@@ -222,6 +222,7 @@ Object.defineProperty(exports, 'chronicleDataExport', { get: function () { retur
 Object.defineProperty(exports, 'chronicleDataTable', { get: function () { return require('./chronicle-data-table'); } });
 Object.defineProperty(exports, 'chronicleDataTableRow', { get: function () { return require('./chronicle-data-table-row'); } });
 Object.defineProperty(exports, 'chronicleEnvironment', { get: function () { return require('./chronicle-environment'); } });
+Object.defineProperty(exports, 'chronicleEnvironmentGroup', { get: function () { return require('./chronicle-environment-group'); } });
 Object.defineProperty(exports, 'chronicleFeed', { get: function () { return require('./chronicle-feed'); } });
 Object.defineProperty(exports, 'chronicleFindingsRefinement', { get: function () { return require('./chronicle-findings-refinement'); } });
 Object.defineProperty(exports, 'chronicleFindingsRefinementDeployment', { get: function () { return require('./chronicle-findings-refinement-deployment'); } });
@@ -438,6 +439,7 @@ Object.defineProperty(exports, 'computeResourcePolicyAttachment', { get: functio
 Object.defineProperty(exports, 'computeRoute', { get: function () { return require('./compute-route'); } });
 Object.defineProperty(exports, 'computeRouter', { get: function () { return require('./compute-router'); } });
 Object.defineProperty(exports, 'computeRouterInterface', { get: function () { return require('./compute-router-interface'); } });
+Object.defineProperty(exports, 'computeRouterNamedSet', { get: function () { return require('./compute-router-named-set'); } });
 Object.defineProperty(exports, 'computeRouterNat', { get: function () { return require('./compute-router-nat'); } });
 Object.defineProperty(exports, 'computeRouterNatAddress', { get: function () { return require('./compute-router-nat-address'); } });
 Object.defineProperty(exports, 'computeRouterPeer', { get: function () { return require('./compute-router-peer'); } });
@@ -1295,6 +1297,7 @@ Object.defineProperty(exports, 'vertexAiReasoningEngineIamBinding', { get: funct
 Object.defineProperty(exports, 'vertexAiReasoningEngineIamMember', { get: function () { return require('./vertex-ai-reasoning-engine-iam-member'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngineIamPolicy', { get: function () { return require('./vertex-ai-reasoning-engine-iam-policy'); } });
 Object.defineProperty(exports, 'vertexAiSchedule', { get: function () { return require('./vertex-ai-schedule'); } });
+Object.defineProperty(exports, 'vertexAiSemanticGovernancePolicyEngine', { get: function () { return require('./vertex-ai-semantic-governance-policy-engine'); } });
 Object.defineProperty(exports, 'vertexAiTensorboard', { get: function () { return require('./vertex-ai-tensorboard'); } });
 Object.defineProperty(exports, 'vertexAiTensorboardExperiment', { get: function () { return require('./vertex-ai-tensorboard-experiment'); } });
 Object.defineProperty(exports, 'vertexAiTensorboardRun', { get: function () { return require('./vertex-ai-tensorboard-run'); } });

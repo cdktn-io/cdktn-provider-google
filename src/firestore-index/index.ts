@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface FirestoreIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API", "MONGODB_COMPATIBLE_API"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
   */
   readonly apiScope?: string;
   /**
   * The collection being indexed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
   */
   readonly collection: string;
   /**
   * The Firestore database id. Defaults to '"(default)"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#database FirestoreIndex#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#database FirestoreIndex#database}
   */
   readonly database?: string;
   /**
@@ -39,17 +39,17 @@ export interface FirestoreIndexConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#density FirestoreIndex#density}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#density FirestoreIndex#density}
   */
   readonly density?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#id FirestoreIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#id FirestoreIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,41 +58,41 @@ export interface FirestoreIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Whether the index is multikey. By default, the index is not multikey. For non-multikey indexes, none of the paths in the index definition reach or traverse an array, except via an explicit array index. For multikey indexes, at most one of the paths in the index definition reach or traverse an array, except via an explicit array index. Violations will result in errors. Note this field only applies to indexes with MONGODB_COMPATIBLE_API ApiScope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
   */
   readonly multikey?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#project FirestoreIndex#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#project FirestoreIndex#project}
   */
   readonly project?: string;
   /**
   * The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
   */
   readonly queryScope?: string;
   /**
   * Whether to skip waiting for the index to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
   */
   readonly skipWait?: boolean | cdktn.IResolvable;
   /**
   * Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
   */
   readonly unique?: boolean | cdktn.IResolvable;
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
   */
   readonly fields: FirestoreIndexFields[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
   */
   readonly timeouts?: FirestoreIndexTimeouts;
 }
@@ -101,7 +101,7 @@ export interface FirestoreIndexFieldsSearchConfigGeoSpec {
   * If true, disables GeoJSON indexing for the field. By default, GeoJSON points are indexed.
   * Firestore GeoPoints are indexed regardless of the value of this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
   */
   readonly geoJsonIndexingDisabled: boolean | cdktn.IResolvable;
 }
@@ -184,13 +184,13 @@ export interface FirestoreIndexFieldsSearchConfigTextSpecIndexSpecs {
   /**
   * Ways to index the text field value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#index_type FirestoreIndex#index_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#index_type FirestoreIndex#index_type}
   */
   readonly indexType?: string;
   /**
   * How to match the text field value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#match_type FirestoreIndex#match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#match_type FirestoreIndex#match_type}
   */
   readonly matchType?: string;
 }
@@ -337,7 +337,7 @@ export interface FirestoreIndexFieldsSearchConfigTextSpec {
   /**
   * index_specs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
   */
   readonly indexSpecs: FirestoreIndexFieldsSearchConfigTextSpecIndexSpecs[] | cdktn.IResolvable;
 }
@@ -420,13 +420,13 @@ export interface FirestoreIndexFieldsSearchConfig {
   /**
   * geo_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
   */
   readonly geoSpec?: FirestoreIndexFieldsSearchConfigGeoSpec;
   /**
   * text_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
   */
   readonly textSpec?: FirestoreIndexFieldsSearchConfigTextSpec;
 }
@@ -591,13 +591,13 @@ export interface FirestoreIndexFieldsVectorConfig {
   * The resulting index will only include vectors of this dimension, and can be used for vector search
   * with the same dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
   */
   readonly dimension?: number;
   /**
   * flat block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
   */
   readonly flat?: FirestoreIndexFieldsVectorConfigFlat;
 }
@@ -713,32 +713,32 @@ export interface FirestoreIndexFields {
   * Indicates that this field supports operations on arrayValues. Only one of 'order', 'arrayConfig', 'searchConfig' and
   * 'vectorConfig' can be specified. Possible values: ["CONTAINS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#array_config FirestoreIndex#array_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#array_config FirestoreIndex#array_config}
   */
   readonly arrayConfig?: string;
   /**
   * Name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#field_path FirestoreIndex#field_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#field_path FirestoreIndex#field_path}
   */
   readonly fieldPath?: string;
   /**
   * Indicates that this field supports ordering by the specified order or comparing using =, <, <=, >, >=.
   * Only one of 'order', 'arrayConfig', 'searchConfig' and 'vectorConfig' can be specified. Possible values: ["ASCENDING", "DESCENDING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#order FirestoreIndex#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#order FirestoreIndex#order}
   */
   readonly order?: string;
   /**
   * search_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#search_config FirestoreIndex#search_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#search_config FirestoreIndex#search_config}
   */
   readonly searchConfig?: FirestoreIndexFieldsSearchConfig;
   /**
   * vector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#vector_config FirestoreIndex#vector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#vector_config FirestoreIndex#vector_config}
   */
   readonly vectorConfig?: FirestoreIndexFieldsVectorConfig;
 }
@@ -970,15 +970,15 @@ export class FirestoreIndexFieldsList extends cdktn.ComplexList {
 }
 export interface FirestoreIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#create FirestoreIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#create FirestoreIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#delete FirestoreIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#delete FirestoreIndex#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#update FirestoreIndex#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#update FirestoreIndex#update}
   */
   readonly update?: string;
 }
@@ -1130,7 +1130,7 @@ export class FirestoreIndexTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index google_firestore_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index google_firestore_index}
 */
 export class FirestoreIndex extends cdktn.TerraformResource {
 
@@ -1146,7 +1146,7 @@ export class FirestoreIndex extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FirestoreIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirestoreIndex to import
-  * @param importFromId The id of the existing FirestoreIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FirestoreIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirestoreIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1158,7 +1158,7 @@ export class FirestoreIndex extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/firestore_index google_firestore_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/firestore_index google_firestore_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1169,7 +1169,7 @@ export class FirestoreIndex extends cdktn.TerraformResource {
       terraformResourceType: 'google_firestore_index',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

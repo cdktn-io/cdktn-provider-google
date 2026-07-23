@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface DialogflowCxEnvironmentConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#deletion_policy DialogflowCxEnvironment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#deletion_policy DialogflowCxEnvironment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#description DialogflowCxEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#description DialogflowCxEnvironment#description}
   */
   readonly description?: string;
   /**
   * The human-readable name of the environment (unique in an agent). Limit of 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#display_name DialogflowCxEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#display_name DialogflowCxEnvironment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#id DialogflowCxEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#id DialogflowCxEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,33 +47,33 @@ export interface DialogflowCxEnvironmentConfig extends cdktn.TerraformMetaArgume
   * The Agent to create an Environment for.
   * Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#parent DialogflowCxEnvironment#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#parent DialogflowCxEnvironment#parent}
   */
   readonly parent?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#timeouts DialogflowCxEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#timeouts DialogflowCxEnvironment#timeouts}
   */
   readonly timeouts?: DialogflowCxEnvironmentTimeouts;
   /**
   * version_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#version_configs DialogflowCxEnvironment#version_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#version_configs DialogflowCxEnvironment#version_configs}
   */
   readonly versionConfigs: DialogflowCxEnvironmentVersionConfigs[] | cdktn.IResolvable;
 }
 export interface DialogflowCxEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#create DialogflowCxEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#create DialogflowCxEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#delete DialogflowCxEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#delete DialogflowCxEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#update DialogflowCxEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#update DialogflowCxEnvironment#update}
   */
   readonly update?: string;
 }
@@ -227,7 +227,7 @@ export interface DialogflowCxEnvironmentVersionConfigs {
   /**
   * Format: projects/{{project}}/locations/{{location}}/agents/{{agent}}/flows/{{flow}}/versions/{{version}}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#version DialogflowCxEnvironment#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#version DialogflowCxEnvironment#version}
   */
   readonly version: string;
 }
@@ -340,7 +340,7 @@ export class DialogflowCxEnvironmentVersionConfigsList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment}
 */
 export class DialogflowCxEnvironment extends cdktn.TerraformResource {
 
@@ -356,7 +356,7 @@ export class DialogflowCxEnvironment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowCxEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxEnvironment to import
-  * @param importFromId The id of the existing DialogflowCxEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowCxEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -368,7 +368,7 @@ export class DialogflowCxEnvironment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -379,7 +379,7 @@ export class DialogflowCxEnvironment extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_environment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

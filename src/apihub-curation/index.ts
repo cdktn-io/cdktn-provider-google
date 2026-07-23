@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -24,7 +24,7 @@ export interface ApihubCurationConfig extends cdktn.TerraformMetaArguments {
   * This value should be 4-500 characters, and valid characters
   * are /a-z[0-9]-_/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#curation_id ApihubCuration#curation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#curation_id ApihubCuration#curation_id}
   */
   readonly curationId: string;
   /**
@@ -36,23 +36,23 @@ export interface ApihubCurationConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#deletion_policy ApihubCuration#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#deletion_policy ApihubCuration#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the curation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#description ApihubCuration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#description ApihubCuration#description}
   */
   readonly description?: string;
   /**
   * The display name of the curation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#display_name ApihubCuration#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#display_name ApihubCuration#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#id ApihubCuration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#id ApihubCuration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,23 +61,23 @@ export interface ApihubCurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#location ApihubCuration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#location ApihubCuration#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#project ApihubCuration#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#project ApihubCuration#project}
   */
   readonly project?: string;
   /**
   * endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#endpoint ApihubCuration#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#endpoint ApihubCuration#endpoint}
   */
   readonly endpoint: ApihubCurationEndpoint;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#timeouts ApihubCuration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#timeouts ApihubCuration#timeouts}
   */
   readonly timeouts?: ApihubCurationTimeouts;
 }
@@ -165,7 +165,7 @@ export interface ApihubCurationEndpointApplicationIntegrationEndpointDetails {
   /**
   * The API trigger ID of the Application Integration workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#trigger_id ApihubCuration#trigger_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#trigger_id ApihubCuration#trigger_id}
   */
   readonly triggerId: string;
   /**
@@ -176,7 +176,7 @@ export interface ApihubCurationEndpointApplicationIntegrationEndpointDetails {
   * or
   * 'https://{location}-integrations.googleapis.com/v1/{name=projects/* /locations/* /integrations/*}:execute'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#uri ApihubCuration#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#uri ApihubCuration#uri}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -287,7 +287,7 @@ export interface ApihubCurationEndpoint {
   /**
   * application_integration_endpoint_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#application_integration_endpoint_details ApihubCuration#application_integration_endpoint_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#application_integration_endpoint_details ApihubCuration#application_integration_endpoint_details}
   */
   readonly applicationIntegrationEndpointDetails: ApihubCurationEndpointApplicationIntegrationEndpointDetails;
 }
@@ -368,15 +368,15 @@ export class ApihubCurationEndpointOutputReference extends cdktn.ComplexObject {
 }
 export interface ApihubCurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#create ApihubCuration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#create ApihubCuration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#delete ApihubCuration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#delete ApihubCuration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#update ApihubCuration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#update ApihubCuration#update}
   */
   readonly update?: string;
 }
@@ -528,7 +528,7 @@ export class ApihubCurationTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation google_apihub_curation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation google_apihub_curation}
 */
 export class ApihubCuration extends cdktn.TerraformResource {
 
@@ -544,7 +544,7 @@ export class ApihubCuration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApihubCuration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApihubCuration to import
-  * @param importFromId The id of the existing ApihubCuration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApihubCuration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApihubCuration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -556,7 +556,7 @@ export class ApihubCuration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/resources/apihub_curation google_apihub_curation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apihub_curation google_apihub_curation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -567,7 +567,7 @@ export class ApihubCuration extends cdktn.TerraformResource {
       terraformResourceType: 'google_apihub_curation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

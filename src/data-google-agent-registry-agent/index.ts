@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent
+// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataGoogleAgentRegistryAgentConfig extends cdktn.TerraformMetaA
   /**
   * The unique identifier for the Agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#agent_id DataGoogleAgentRegistryAgent#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#agent_id DataGoogleAgentRegistryAgent#agent_id}
   */
   readonly agentId?: string;
   /**
   * A filter string that identifies a unique Agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#filter DataGoogleAgentRegistryAgent#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#filter DataGoogleAgentRegistryAgent#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,11 +34,11 @@ export interface DataGoogleAgentRegistryAgentConfig extends cdktn.TerraformMetaA
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#location DataGoogleAgentRegistryAgent#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#location DataGoogleAgentRegistryAgent#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}
   */
   readonly project?: string;
 }
@@ -305,7 +305,7 @@ export class DataGoogleAgentRegistryAgentSkillsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent google_agent_registry_agent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent google_agent_registry_agent}
 */
 export class DataGoogleAgentRegistryAgent extends cdktn.TerraformDataSource {
 
@@ -321,7 +321,7 @@ export class DataGoogleAgentRegistryAgent extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleAgentRegistryAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleAgentRegistryAgent to import
-  * @param importFromId The id of the existing DataGoogleAgentRegistryAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleAgentRegistryAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleAgentRegistryAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -333,7 +333,7 @@ export class DataGoogleAgentRegistryAgent extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.40.0/docs/data-sources/agent_registry_agent google_agent_registry_agent} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/agent_registry_agent google_agent_registry_agent} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +344,7 @@ export class DataGoogleAgentRegistryAgent extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_agent_registry_agent',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.40.0',
+        providerVersion: '7.41.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
