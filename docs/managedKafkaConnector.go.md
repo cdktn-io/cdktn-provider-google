@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.NewManagedKafkaConnector(scope Construct, id *string, config ManagedKafkaConnectorConfig) ManagedKafkaConnector
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.ManagedKafkaConnector_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.ManagedKafkaConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ managedkafkaconnector.ManagedKafkaConnector_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.ManagedKafkaConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ managedkafkaconnector.ManagedKafkaConnector_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.ManagedKafkaConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 &managedkafkaconnector.ManagedKafkaConnectorConfig {
 	Connection: interface{},
@@ -994,8 +994,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconn
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	TaskRestartPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.managedKafkaConnector.ManagedKafkaConnectorTaskRestartPolicy,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.managedKafkaConnector.ManagedKafkaConnectorTimeouts,
+	TaskRestartPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.managedKafkaConnector.ManagedKafkaConnectorTaskRestartPolicy,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.managedKafkaConnector.ManagedKafkaConnectorTimeouts,
 }
 ```
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnectorTaskRestartPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 &managedkafkaconnector.ManagedKafkaConnectorTaskRestartPolicy {
 	MaximumBackoff: *string,
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 &managedkafkaconnector.ManagedKafkaConnectorTimeouts {
 	Create: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnectorTaskRestartPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.NewManagedKafkaConnectorTaskRestartPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaConnectorTaskRestartPolicyOutputReference
 ```
@@ -1656,7 +1656,7 @@ func InternalValue() ManagedKafkaConnectorTaskRestartPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaConnector.ManagedKafkaConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/managedkafkaconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/managedkafkaconnector"
 
 managedkafkaconnector.NewManagedKafkaConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedKafkaConnectorTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 datagooglefolder.NewDataGoogleFolder(scope Construct, id *string, config DataGoogleFolderConfig) DataGoogleFolder
 ```
@@ -312,7 +312,7 @@ func ResetLookupOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 datagooglefolder.DataGoogleFolder_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 datagooglefolder.DataGoogleFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglefolder.DataGoogleFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 datagooglefolder.DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglefolder.DataGoogleFolder_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 datagooglefolder.DataGoogleFolder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolder.DataGoogleFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolder"
 
 &datagooglefolder.DataGoogleFolderConfig {
 	Connection: interface{},

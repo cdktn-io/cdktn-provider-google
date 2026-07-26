@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.NewDataGooglePrivatecaCaPoolIamPolicy(scope Construct, id *string, config DataGooglePrivatecaCaPoolIamPolicyConfig) DataGooglePrivatecaCaPoolIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprivatecacapooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleprivatecacapooliampolicy"
 
 &datagoogleprivatecacapooliampolicy.DataGooglePrivatecaCaPoolIamPolicyConfig {
 	Connection: interface{},

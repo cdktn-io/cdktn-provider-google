@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicy(scope Construct, id *string, config NetworkConnectivityServiceConnectionPolicyConfig) NetworkConnectivityServiceConnectionPolicy
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,7 +1083,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyConfig {
 	Connection: interface{},
@@ -1102,8 +1102,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyTimeouts,
+	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyTimeouts,
 }
 ```
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyPscConfig {
 	Subnetworks: *[]*string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyPscConnections {
 
@@ -1482,7 +1482,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsError {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfo {
 
@@ -1508,7 +1508,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 &networkconnectivityserviceconnectionpolicy.NetworkConnectivityServiceConnectionPolicyTimeouts {
 	Create: *string,
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference
 ```
@@ -1928,7 +1928,7 @@ func InternalValue() NetworkConnectivityServiceConnectionPolicyPscConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoList
 ```
@@ -2077,7 +2077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoOutputReference
 ```
@@ -2377,7 +2377,7 @@ func InternalValue() NetworkConnectivityServiceConnectionPolicyPscConnectionsErr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorList
 ```
@@ -2526,7 +2526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference
 ```
@@ -2826,7 +2826,7 @@ func InternalValue() NetworkConnectivityServiceConnectionPolicyPscConnectionsErr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsList
 ```
@@ -2975,7 +2975,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference
 ```
@@ -3341,7 +3341,7 @@ func InternalValue() NetworkConnectivityServiceConnectionPolicyPscConnections
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityserviceconnectionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityserviceconnectionpolicy"
 
 networkconnectivityserviceconnectionpolicy.NewNetworkConnectivityServiceConnectionPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityServiceConnectionPolicyTimeoutsOutputReference
 ```

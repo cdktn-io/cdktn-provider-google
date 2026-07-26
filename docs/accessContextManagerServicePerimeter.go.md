@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeter(scope Construct, id *string, config AccessContextManagerServicePerimeterConfig) AccessContextManagerServicePerimeter
 ```
@@ -495,7 +495,7 @@ func ResetUseExplicitDryRunSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterConfig {
 	Connection: interface{},
@@ -1065,9 +1065,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 	Description: *string,
 	Id: *string,
 	PerimeterType: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpec,
-	Status: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatus,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeouts,
+	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpec,
+	Status: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatus,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeouts,
 	UseExplicitDryRunSpec: interface{},
 }
 ```
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpec {
 	AccessLevels: *[]*string,
@@ -1369,7 +1369,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 	IngressPolicies: interface{},
 	Resources: *[]*string,
 	RestrictedServices: *[]*string,
-	VpcAccessibleServices: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServices,
+	VpcAccessibleServices: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServices,
 }
 ```
 
@@ -1489,11 +1489,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPolicies {
-	EgressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFrom,
-	EgressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo,
+	EgressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFrom,
+	EgressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo,
 	Title: *string,
 }
 ```
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFrom {
 	Identities: *[]*string,
@@ -1645,11 +1645,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSources {
 	AccessLevel: *string,
-	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpoint,
+	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpoint,
 	Resource: *string,
 }
 ```
@@ -1717,7 +1717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpoint {
 	ForwardingRule: *string,
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo {
 	ExternalResources: *[]*string,
@@ -1842,7 +1842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperations {
 	MethodSelectors: interface{},
@@ -1895,7 +1895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectors {
 	Method: *string,
@@ -1948,11 +1948,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPolicies {
-	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom,
-	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressTo,
+	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom,
+	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressTo,
 	Title: *string,
 }
 ```
@@ -2014,7 +2014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom {
 	Identities: *[]*string,
@@ -2086,11 +2086,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSources {
 	AccessLevel: *string,
-	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpoint,
+	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpoint,
 	Resource: *string,
 }
 ```
@@ -2166,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpoint {
 	ForwardingRule: *string,
@@ -2200,7 +2200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressTo {
 	Operations: interface{},
@@ -2272,7 +2272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperations {
 	MethodSelectors: interface{},
@@ -2325,7 +2325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectors {
 	Method: *string,
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServices {
 	AllowedServicePatterns: interface{},
@@ -2460,7 +2460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatterns {
 	Modifiers: interface{},
@@ -2526,10 +2526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiers {
-	AddRequestHeader: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader,
+	AddRequestHeader: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader,
 }
 ```
 
@@ -2560,7 +2560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader {
 	Key: *string,
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatus {
 	AccessLevels: *[]*string,
@@ -2618,7 +2618,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 	IngressPolicies: interface{},
 	Resources: *[]*string,
 	RestrictedServices: *[]*string,
-	VpcAccessibleServices: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServices,
+	VpcAccessibleServices: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServices,
 }
 ```
 
@@ -2738,11 +2738,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPolicies {
-	EgressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom,
-	EgressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo,
+	EgressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom,
+	EgressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo,
 	Title: *string,
 }
 ```
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFrom {
 	Identities: *[]*string,
@@ -2896,11 +2896,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSources {
 	AccessLevel: *string,
-	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpoint,
+	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpoint,
 	Resource: *string,
 }
 ```
@@ -2968,7 +2968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpoint {
 	ForwardingRule: *string,
@@ -3002,7 +3002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo {
 	ExternalResources: *[]*string,
@@ -3093,7 +3093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperations {
 	MethodSelectors: interface{},
@@ -3146,7 +3146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectors {
 	Method: *string,
@@ -3199,11 +3199,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPolicies {
-	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFrom,
-	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressTo,
+	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFrom,
+	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressTo,
 	Title: *string,
 }
 ```
@@ -3265,7 +3265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFrom {
 	Identities: *[]*string,
@@ -3339,11 +3339,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSources {
 	AccessLevel: *string,
-	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpoint,
+	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpoint,
 	Resource: *string,
 }
 ```
@@ -3422,7 +3422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpoint {
 	ForwardingRule: *string,
@@ -3456,7 +3456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressTo {
 	Operations: interface{},
@@ -3528,7 +3528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperations {
 	MethodSelectors: interface{},
@@ -3581,7 +3581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectors {
 	Method: *string,
@@ -3634,7 +3634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServices {
 	AllowedServicePatterns: interface{},
@@ -3716,7 +3716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatterns {
 	Modifiers: interface{},
@@ -3782,10 +3782,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiers {
-	AddRequestHeader: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader,
+	AddRequestHeader: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader,
 }
 ```
 
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader {
 	Key: *string,
@@ -3866,7 +3866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 &accesscontextmanagerserviceperimeter.AccessContextManagerServicePerimeterTimeouts {
 	Create: *string,
@@ -3928,7 +3928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromOutputReference
 ```
@@ -4306,7 +4306,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecEgressPoliciesEgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesList
 ```
@@ -4466,7 +4466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesOutputReference
 ```
@@ -4833,7 +4833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressFromSourcesPscEndpointOutputReference
 ```
@@ -5111,7 +5111,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecEgressPoliciesEgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsList
 ```
@@ -5271,7 +5271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsList
 ```
@@ -5431,7 +5431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsMethodSelectorsOutputReference
 ```
@@ -5756,7 +5756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOperationsOutputReference
 ```
@@ -6094,7 +6094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecEgressPoliciesEgressToOutputReference
 ```
@@ -6472,7 +6472,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecEgressPoliciesEgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesList
 ```
@@ -6632,7 +6632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference
 ```
@@ -7012,7 +7012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference
 ```
@@ -7361,7 +7361,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecIngressPoliciesIngr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesList
 ```
@@ -7521,7 +7521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesOutputReference
 ```
@@ -7888,7 +7888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromSourcesPscEndpointOutputReference
 ```
@@ -8166,7 +8166,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecIngressPoliciesIngr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsList
 ```
@@ -8326,7 +8326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsList
 ```
@@ -8486,7 +8486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsMethodSelectorsOutputReference
 ```
@@ -8811,7 +8811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOperationsOutputReference
 ```
@@ -9149,7 +9149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecIngressPoliciesIngressToOutputReference
 ```
@@ -9498,7 +9498,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecIngressPoliciesIngr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesList
 ```
@@ -9658,7 +9658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference
 ```
@@ -10038,7 +10038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecOutputReference
 ```
@@ -10500,7 +10500,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsList
 ```
@@ -10660,7 +10660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference
 ```
@@ -10953,7 +10953,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecVpcAccessibleServic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersList
 ```
@@ -11113,7 +11113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference
 ```
@@ -11422,7 +11422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesAllowedServicePatternsOutputReference
 ```
@@ -11789,7 +11789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecVpcAccessibleServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterSpecVpcAccessibleServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterSpecVpcAccessibleServicesOutputReference
 ```
@@ -12167,7 +12167,7 @@ func InternalValue() AccessContextManagerServicePerimeterSpecVpcAccessibleServic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromOutputReference
 ```
@@ -12545,7 +12545,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusEgressPoliciesEgr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesList
 ```
@@ -12705,7 +12705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference
 ```
@@ -13072,7 +13072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesPscEndpointOutputReference
 ```
@@ -13350,7 +13350,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusEgressPoliciesEgr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsList
 ```
@@ -13510,7 +13510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsList
 ```
@@ -13670,7 +13670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsMethodSelectorsOutputReference
 ```
@@ -13995,7 +13995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOperationsOutputReference
 ```
@@ -14333,7 +14333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusEgressPoliciesEgressToOutputReference
 ```
@@ -14711,7 +14711,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusEgressPoliciesEgr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesList
 ```
@@ -14871,7 +14871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference
 ```
@@ -15251,7 +15251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference
 ```
@@ -15600,7 +15600,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusIngressPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesList
 ```
@@ -15760,7 +15760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesOutputReference
 ```
@@ -16127,7 +16127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromSourcesPscEndpointOutputReference
 ```
@@ -16405,7 +16405,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusIngressPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsList
 ```
@@ -16565,7 +16565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsList
 ```
@@ -16725,7 +16725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsMethodSelectorsOutputReference
 ```
@@ -17050,7 +17050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference
 ```
@@ -17388,7 +17388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOutputReference
 ```
@@ -17737,7 +17737,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusIngressPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesList
 ```
@@ -17897,7 +17897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference
 ```
@@ -18277,7 +18277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusOutputReference
 ```
@@ -18739,7 +18739,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsList
 ```
@@ -18899,7 +18899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeaderOutputReference
 ```
@@ -19192,7 +19192,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusVpcAccessibleServ
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersList
 ```
@@ -19352,7 +19352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsModifiersOutputReference
 ```
@@ -19661,7 +19661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesAllowedServicePatternsOutputReference
 ```
@@ -20028,7 +20028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference
 ```
@@ -20406,7 +20406,7 @@ func InternalValue() AccessContextManagerServicePerimeterStatusVpcAccessibleServ
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeter"
 
 accesscontextmanagerserviceperimeter.NewAccessContextManagerServicePerimeterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterTimeoutsOutputReference
 ```

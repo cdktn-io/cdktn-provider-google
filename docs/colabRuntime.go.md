@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntime.ColabRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.NewColabRuntime(scope Construct, id *string, config ColabRuntimeConfig) ColabRuntime
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.colabRuntime.ColabRuntime.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.ColabRuntime_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.colabRuntime.ColabRuntime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.ColabRuntime_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ colabruntime.ColabRuntime_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.colabRuntime.ColabRuntime.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.ColabRuntime_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ colabruntime.ColabRuntime_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.colabRuntime.ColabRuntime.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.ColabRuntime_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1086,7 +1086,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabRuntime.ColabRuntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 &colabruntime.ColabRuntimeConfig {
 	Connection: interface{},
@@ -1105,9 +1105,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
 	DesiredState: *string,
 	Id: *string,
 	Name: *string,
-	NotebookRuntimeTemplateRef: github.com/cdktn-io/cdktn-provider-google-go/google/v19.colabRuntime.ColabRuntimeNotebookRuntimeTemplateRef,
+	NotebookRuntimeTemplateRef: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabRuntime.ColabRuntimeNotebookRuntimeTemplateRef,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.colabRuntime.ColabRuntimeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabRuntime.ColabRuntimeTimeouts,
 }
 ```
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabRuntime.ColabRuntimeNotebookRuntimeTemplateRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 &colabruntime.ColabRuntimeNotebookRuntimeTemplateRef {
 	NotebookRuntimeTemplate: *string,
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabRuntime.ColabRuntimeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 &colabruntime.ColabRuntimeTimeouts {
 	Create: *string,
@@ -1484,7 +1484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntime.ColabRuntimeNotebookRuntimeTemplateRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.NewColabRuntimeNotebookRuntimeTemplateRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabRuntimeNotebookRuntimeTemplateRefOutputReference
 ```
@@ -1755,7 +1755,7 @@ func InternalValue() ColabRuntimeNotebookRuntimeTemplateRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntime.ColabRuntimeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/colabruntime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabruntime"
 
 colabruntime.NewColabRuntimeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabRuntimeTimeoutsOutputReference
 ```

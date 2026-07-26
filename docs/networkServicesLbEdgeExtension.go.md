@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtension(scope Construct, id *string, config NetworkServicesLbEdgeExtensionConfig) NetworkServicesLbEdgeExtension
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NetworkServicesLbEdgeExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 &networkserviceslbedgeextension.NetworkServicesLbEdgeExtensionConfig {
 	Connection: interface{},
@@ -1041,7 +1041,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesl
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeouts,
 }
 ```
 
@@ -1310,11 +1310,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 &networkserviceslbedgeextension.NetworkServicesLbEdgeExtensionExtensionChains {
 	Extensions: interface{},
-	MatchCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition,
+	MatchCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition,
 	Name: *string,
 }
 ```
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 &networkserviceslbedgeextension.NetworkServicesLbEdgeExtensionExtensionChainsExtensions {
 	Name: *string,
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 &networkserviceslbedgeextension.NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition {
 	CelExpression: *string,
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 &networkserviceslbedgeextension.NetworkServicesLbEdgeExtensionTimeouts {
 	Create: *string,
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionExtensionChainsExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList
 ```
@@ -1776,7 +1776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference
 ```
@@ -2203,7 +2203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionExtensionChainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesLbEdgeExtensionExtensionChainsList
 ```
@@ -2363,7 +2363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference
 ```
@@ -2634,7 +2634,7 @@ func InternalValue() NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionExtensionChainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesLbEdgeExtensionExtensionChainsOutputReference
 ```
@@ -2993,7 +2993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbedgeextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbedgeextension"
 
 networkserviceslbedgeextension.NewNetworkServicesLbEdgeExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesLbEdgeExtensionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.NewComputeVpnGateway(scope Construct, id *string, config ComputeVpnGatewayConfig) ComputeVpnGateway
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.ComputeVpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.ComputeVpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computevpngateway.ComputeVpnGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.ComputeVpnGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ computevpngateway.ComputeVpnGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.ComputeVpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 &computevpngateway.ComputeVpnGatewayConfig {
 	Connection: interface{},
@@ -1010,10 +1010,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngatewa
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnGateway.ComputeVpnGatewayParams,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnGateway.ComputeVpnGatewayParams,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnGateway.ComputeVpnGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnGateway.ComputeVpnGatewayTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 &computevpngateway.ComputeVpnGatewayParams {
 	ResourceManagerTags: *map[string]*string,
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 &computevpngateway.ComputeVpnGatewayTimeouts {
 	Create: *string,
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.NewComputeVpnGatewayParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnGatewayParamsOutputReference
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() ComputeVpnGatewayParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnGateway.ComputeVpnGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpngateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpngateway"
 
 computevpngateway.NewComputeVpnGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnGatewayTimeoutsOutputReference
 ```

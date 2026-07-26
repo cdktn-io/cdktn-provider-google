@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.NewSecureSourceManagerRepositoryIamBinding(scope Construct, id *string, config SecureSourceManagerRepositoryIamBindingConfig) SecureSourceManagerRepositoryIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 &securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 &securesourcemanagerrepositoryiambinding.SecureSourceManagerRepositoryIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemana
 	Members: *[]*string,
 	RepositoryId: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepositoryiambinding"
 
 securesourcemanagerrepositoryiambinding.NewSecureSourceManagerRepositoryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryIamBindingConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicy(scope Construct, id *string, config ClouddeployDeployPolicyConfig) ClouddeployDeployPolicy
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.ClouddeployDeployPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.ClouddeployDeployPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ clouddeploydeploypolicy.ClouddeployDeployPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.ClouddeployDeployPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ clouddeploydeploypolicy.ClouddeployDeployPolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.ClouddeployDeployPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyConfig {
 	Connection: interface{},
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeplo
 	Labels: *map[string]*string,
 	Project: *string,
 	Suspended: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts,
 }
 ```
 
@@ -1435,10 +1435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRules {
-	RolloutRestriction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestriction,
+	RolloutRestriction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestriction,
 }
 ```
 
@@ -1469,13 +1469,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestriction {
 	Id: *string,
 	Actions: *[]*string,
 	Invokers: *[]*string,
-	TimeWindows: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows,
+	TimeWindows: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows,
 }
 ```
 
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows {
 	TimeZone: *string,
@@ -1624,13 +1624,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindows {
-	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate,
-	EndTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime,
-	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime,
+	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate,
+	EndTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime,
+	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime,
 }
 ```
 
@@ -1706,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate {
 	Day: *f64,
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime {
 	Hours: *f64,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate {
 	Day: *f64,
@@ -1930,7 +1930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime {
 	Hours: *f64,
@@ -2018,12 +2018,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindows {
 	DaysOfWeek: *[]*string,
-	EndTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime,
+	EndTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime,
 }
 ```
 
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime {
 	Hours: *f64,
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime {
 	Hours: *f64,
@@ -2262,11 +2262,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicySelectors {
-	DeliveryPipeline: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsDeliveryPipeline,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsTarget,
+	DeliveryPipeline: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsDeliveryPipeline,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsTarget,
 }
 ```
 
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsDeliveryPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicySelectorsDeliveryPipeline {
 	Id: *string,
@@ -2370,7 +2370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicySelectorsTarget {
 	Id: *string,
@@ -2425,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 &clouddeploydeploypolicy.ClouddeployDeployPolicyTimeouts {
 	Create: *string,
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicyRulesList
 ```
@@ -2647,7 +2647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployDeployPolicyRulesOutputReference
 ```
@@ -2956,7 +2956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionOutputReference
 ```
@@ -3327,7 +3327,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestriction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDateOutputReference
 ```
@@ -3663,7 +3663,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTimeOutputReference
 ```
@@ -4028,7 +4028,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsList
 ```
@@ -4188,7 +4188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsOutputReference
 ```
@@ -4595,7 +4595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDateOutputReference
 ```
@@ -4931,7 +4931,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTimeOutputReference
 ```
@@ -5296,7 +5296,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsOutputReference
 ```
@@ -5651,7 +5651,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTimeOutputReference
 ```
@@ -6016,7 +6016,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsList
 ```
@@ -6176,7 +6176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference
 ```
@@ -6556,7 +6556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTimeOutputReference
 ```
@@ -6921,7 +6921,7 @@ func InternalValue() ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicySelectorsDeliveryPipelineOutputReference
 ```
@@ -7228,7 +7228,7 @@ func InternalValue() ClouddeployDeployPolicySelectorsDeliveryPipeline
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicySelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployDeployPolicySelectorsList
 ```
@@ -7388,7 +7388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicySelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployDeployPolicySelectorsOutputReference
 ```
@@ -7739,7 +7739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicySelectorsTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicySelectorsTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicySelectorsTargetOutputReference
 ```
@@ -8046,7 +8046,7 @@ func InternalValue() ClouddeployDeployPolicySelectorsTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeployPolicy.ClouddeployDeployPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeploypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeploypolicy"
 
 clouddeploydeploypolicy.NewClouddeployDeployPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeployPolicyTimeoutsOutputReference
 ```

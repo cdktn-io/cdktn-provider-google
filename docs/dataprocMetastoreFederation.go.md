@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederation(scope Construct, id *string, config DataprocMetastoreFederationConfig) DataprocMetastoreFederation
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1112,7 +1112,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationBackendMetastores {
 	MetastoreType: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationConfig {
 	Connection: interface{},
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastor
 	Location: *string,
 	Project: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts,
 }
 ```
 
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationTimeouts {
 	Create: *string,
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationBackendMetastoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataprocMetastoreFederationBackendMetastoresList
 ```
@@ -1698,7 +1698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationBackendMetastoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataprocMetastoreFederationBackendMetastoresOutputReference
 ```
@@ -2031,7 +2031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocMetastoreFederationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.NewOrganizationIamAuditConfig(scope Construct, id *string, config OrganizationIamAuditConfigConfig) OrganizationIamAuditConfig
 ```
@@ -420,7 +420,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.OrganizationIamAuditConfig_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.OrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ organizationiamauditconfig.OrganizationIamAuditConfig_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.OrganizationIamAuditConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ organizationiamauditconfig.OrganizationIamAuditConfig_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.OrganizationIamAuditConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 &organizationiamauditconfig.OrganizationIamAuditConfigAuditLogConfig {
 	LogType: *string,
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 &organizationiamauditconfig.OrganizationIamAuditConfigConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.NewOrganizationIamAuditConfigAuditLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationIamAuditConfigAuditLogConfigList
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/organizationiamauditconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/organizationiamauditconfig"
 
 organizationiamauditconfig.NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationIamAuditConfigAuditLogConfigOutputReference
 ```

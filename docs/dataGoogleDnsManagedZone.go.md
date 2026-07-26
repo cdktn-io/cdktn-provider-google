@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.NewDataGoogleDnsManagedZone(scope Construct, id *string, config DataGoogleDnsManagedZoneConfig) DataGoogleDnsManagedZone
 ```
@@ -305,7 +305,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsmanagedzone"
 
 &datagooglednsmanagedzone.DataGoogleDnsManagedZoneConfig {
 	Connection: interface{},

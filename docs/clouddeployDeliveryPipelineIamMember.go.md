@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.NewClouddeployDeliveryPipelineIamMember(scope Construct, id *string, config ClouddeployDeliveryPipelineIamMemberConfig) ClouddeployDeliveryPipelineIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 &clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 &clouddeploydeliverypipelineiammember.ClouddeployDeliveryPipelineIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliv
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployDeliveryPipelineIamMember.ClouddeployDeliveryPipelineIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploydeliverypipelineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploydeliverypipelineiammember"
 
 clouddeploydeliverypipelineiammember.NewClouddeployDeliveryPipelineIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployDeliveryPipelineIamMemberConditionOutputReference
 ```

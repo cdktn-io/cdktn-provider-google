@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.NewComputeInstantSnapshotIamMember(scope Construct, id *string, config ComputeInstantSnapshotIamMemberConfig) ComputeInstantSnapshotIamMember
 ```
@@ -441,7 +441,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.ComputeInstantSnapshotIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 &computeinstantsnapshotiammember.ComputeInstantSnapshotIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 &computeinstantsnapshotiammember.ComputeInstantSnapshotIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsn
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Zone: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiammember"
 
 computeinstantsnapshotiammember.NewComputeInstantSnapshotIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstantSnapshotIamMemberConditionOutputReference
 ```

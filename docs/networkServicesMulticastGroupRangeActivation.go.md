@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NewNetworkServicesMulticastGroupRangeActivation(scope Construct, id *string, config NetworkServicesMulticastGroupRangeActivationConfig) NetworkServicesMulticastGroupRangeActivation
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivation_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivation_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeA
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivation_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeA
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1105,7 +1105,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 &networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivationConfig {
 	Connection: interface{},
@@ -1123,9 +1123,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfig,
+	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeouts,
 }
 ```
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 &networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivationLogConfig {
 	Enabled: interface{},
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 &networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivationState {
 
@@ -1450,7 +1450,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 &networkservicesmulticastgrouprangeactivation.NetworkServicesMulticastGroupRangeActivationTimeouts {
 	Create: *string,
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference
 ```
@@ -1790,7 +1790,7 @@ func InternalValue() NetworkServicesMulticastGroupRangeActivationLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NewNetworkServicesMulticastGroupRangeActivationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastGroupRangeActivationStateList
 ```
@@ -1939,7 +1939,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NewNetworkServicesMulticastGroupRangeActivationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastGroupRangeActivationStateOutputReference
 ```
@@ -2217,7 +2217,7 @@ func InternalValue() NetworkServicesMulticastGroupRangeActivationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastgrouprangeactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgrouprangeactivation"
 
 networkservicesmulticastgrouprangeactivation.NewNetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference
 ```

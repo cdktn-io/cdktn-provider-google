@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.NewApigeeSharedflowDeployment(scope Construct, id *string, config ApigeeSharedflowDeploymentConfig) ApigeeSharedflowDeployment
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.ApigeeSharedflowDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.ApigeeSharedflowDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apigeesharedflowdeployment.ApigeeSharedflowDeployment_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.ApigeeSharedflowDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apigeesharedflowdeployment.ApigeeSharedflowDeployment_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.ApigeeSharedflowDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 &apigeesharedflowdeployment.ApigeeSharedflowDeploymentConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflow
 	DeletionPolicy: *string,
 	Id: *string,
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 &apigeesharedflowdeployment.ApigeeSharedflowDeploymentTimeouts {
 	Create: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesharedflowdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesharedflowdeployment"
 
 apigeesharedflowdeployment.NewApigeeSharedflowDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeSharedflowDeploymentTimeoutsOutputReference
 ```

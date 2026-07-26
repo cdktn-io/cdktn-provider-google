@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeployment(scope Construct, id *string, config CesDeploymentConfig) CesDeployment
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cesDeployment.CesDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.CesDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cesDeployment.CesDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.CesDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ cesdeployment.CesDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cesDeployment.CesDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.CesDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cesdeployment.CesDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cesDeployment.CesDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.CesDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,15 +985,15 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentChannelProfile {
 	ChannelType: *string,
 	DisableBargeInControl: interface{},
 	DisableDtmf: interface{},
-	PersonaProperty: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesDeployment.CesDeploymentChannelProfilePersonaProperty,
+	PersonaProperty: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesDeployment.CesDeploymentChannelProfilePersonaProperty,
 	ProfileId: *string,
-	WebWidgetConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig,
+	WebWidgetConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig,
 }
 ```
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentChannelProfilePersonaProperty {
 	Persona: *string,
@@ -1137,11 +1137,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentChannelProfileWebWidgetConfig {
 	Modality: *string,
-	SecuritySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigSecuritySettings,
+	SecuritySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigSecuritySettings,
 	Theme: *string,
 	WebWidgetTitle: *string,
 }
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigSecuritySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentChannelProfileWebWidgetConfigSecuritySettings {
 	AllowedOrigins: *[]*string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentConfig {
 	Connection: interface{},
@@ -1319,13 +1319,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
 	Provisioners: *[]interface{},
 	App: *string,
 	AppVersion: *string,
-	ChannelProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesDeployment.CesDeploymentChannelProfile,
+	ChannelProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesDeployment.CesDeploymentChannelProfile,
 	DisplayName: *string,
 	Location: *string,
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesDeployment.CesDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesDeployment.CesDeploymentTimeouts,
 }
 ```
 
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 &cesdeployment.CesDeploymentTimeouts {
 	Create: *string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeploymentChannelProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfileOutputReference
 ```
@@ -2070,7 +2070,7 @@ func InternalValue() CesDeploymentChannelProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeploymentChannelProfilePersonaPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfilePersonaPropertyOutputReference
 ```
@@ -2348,7 +2348,7 @@ func InternalValue() CesDeploymentChannelProfilePersonaProperty
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeploymentChannelProfileWebWidgetConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfileWebWidgetConfigOutputReference
 ```
@@ -2726,7 +2726,7 @@ func InternalValue() CesDeploymentChannelProfileWebWidgetConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesDeploymentChannelProfileWebWidgetConfigSecuritySettingsOutputReference
 ```
@@ -3091,7 +3091,7 @@ func InternalValue() CesDeploymentChannelProfileWebWidgetConfigSecuritySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesdeployment"
 
 cesdeployment.NewCesDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesDeploymentTimeoutsOutputReference
 ```

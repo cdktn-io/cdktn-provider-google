@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.NewCloudbuildv2ConnectionIamBinding(scope Construct, id *string, config Cloudbuildv2ConnectionIamBindingConfig) Cloudbuildv2ConnectionIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 &cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 &cloudbuildv2connectioniambinding.Cloudbuildv2ConnectionIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2conn
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildv2ConnectionIamBinding.Cloudbuildv2ConnectionIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniambinding"
 
 cloudbuildv2connectioniambinding.NewCloudbuildv2ConnectionIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Cloudbuildv2ConnectionIamBindingConditionOutputReference
 ```

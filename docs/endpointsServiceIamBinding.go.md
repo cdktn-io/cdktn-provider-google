@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.NewEndpointsServiceIamBinding(scope Construct, id *string, config EndpointsServiceIamBindingConfig) EndpointsServiceIamBinding
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.EndpointsServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.EndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ endpointsserviceiambinding.EndpointsServiceIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.EndpointsServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ endpointsserviceiambinding.EndpointsServiceIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.EndpointsServiceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 &endpointsserviceiambinding.EndpointsServiceIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 &endpointsserviceiambinding.EndpointsServiceIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsservice
 	Members: *[]*string,
 	Role: *string,
 	ServiceName: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.endpointsServiceIamBinding.EndpointsServiceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.endpointsServiceIamBinding.EndpointsServiceIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceiambinding"
 
 endpointsserviceiambinding.NewEndpointsServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EndpointsServiceIamBindingConditionOutputReference
 ```

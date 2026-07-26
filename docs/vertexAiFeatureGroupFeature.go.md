@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.NewVertexAiFeatureGroupFeature(scope Construct, id *string, config VertexAiFeatureGroupFeatureConfig) VertexAiFeatureGroupFeature
 ```
@@ -462,7 +462,7 @@ func ResetVersionColumnName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.VertexAiFeatureGroupFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1015,7 +1015,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 &vertexaifeaturegroupfeature.VertexAiFeatureGroupFeatureConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeatureg
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts,
 	VersionColumnName: *string,
 }
 ```
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 &vertexaifeaturegroupfeature.VertexAiFeatureGroupFeatureTimeouts {
 	Create: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiFeatureGroupFeature.VertexAiFeatureGroupFeatureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaifeaturegroupfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaifeaturegroupfeature"
 
 vertexaifeaturegroupfeature.NewVertexAiFeatureGroupFeatureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiFeatureGroupFeatureTimeoutsOutputReference
 ```

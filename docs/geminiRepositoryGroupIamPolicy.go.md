@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 geminirepositorygroupiampolicy.NewGeminiRepositoryGroupIamPolicy(scope Construct, id *string, config GeminiRepositoryGroupIamPolicyConfig) GeminiRepositoryGroupIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroupIamPolicy.GeminiRepositoryGroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiampolicy"
 
 &geminirepositorygroupiampolicy.GeminiRepositoryGroupIamPolicyConfig {
 	Connection: interface{},

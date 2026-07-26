@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.NewLoggingLogViewIamBinding(scope Construct, id *string, config LoggingLogViewIamBindingConfig) LoggingLogViewIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.LoggingLogViewIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.LoggingLogViewIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ logginglogviewiambinding.LoggingLogViewIamBinding_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.LoggingLogViewIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ logginglogviewiambinding.LoggingLogViewIamBinding_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.LoggingLogViewIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 &logginglogviewiambinding.LoggingLogViewIamBindingCondition {
 	Expression: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 &logginglogviewiambinding.LoggingLogViewIamBindingConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewia
 	Name: *string,
 	Parent: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition,
 	Id: *string,
 	Location: *string,
 }
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiambinding"
 
 logginglogviewiambinding.NewLoggingLogViewIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingLogViewIamBindingConditionOutputReference
 ```

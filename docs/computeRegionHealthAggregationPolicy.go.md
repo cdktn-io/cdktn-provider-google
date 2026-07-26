@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.NewComputeRegionHealthAggregationPolicy(scope Construct, id *string, config ComputeRegionHealthAggregationPolicyConfig) ComputeRegionHealthAggregationPolicy
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 &computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicyConfig {
 	Connection: interface{},
@@ -1011,7 +1011,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhea
 	MinHealthyThreshold: *f64,
 	PolicyType: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicyTimeouts,
 }
 ```
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 &computeregionhealthaggregationpolicy.ComputeRegionHealthAggregationPolicyTimeouts {
 	Create: *string,
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthAggregationPolicy.ComputeRegionHealthAggregationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthaggregationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthaggregationpolicy"
 
 computeregionhealthaggregationpolicy.NewComputeRegionHealthAggregationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthAggregationPolicyTimeoutsOutputReference
 ```

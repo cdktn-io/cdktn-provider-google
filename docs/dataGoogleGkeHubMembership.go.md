@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembership(scope Construct, id *string, config DataGoogleGkeHubMembershipConfig) DataGoogleGkeHubMembership
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.DataGoogleGkeHubMembership_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.DataGoogleGkeHubMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglegkehubmembership.DataGoogleGkeHubMembership_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.DataGoogleGkeHubMembership_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglegkehubmembership.DataGoogleGkeHubMembership_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.DataGoogleGkeHubMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 &datagooglegkehubmembership.DataGoogleGkeHubMembershipAuthority {
 
@@ -757,7 +757,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 &datagooglegkehubmembership.DataGoogleGkeHubMembershipConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 &datagooglegkehubmembership.DataGoogleGkeHubMembershipEndpoint {
 
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 &datagooglegkehubmembership.DataGoogleGkeHubMembershipEndpointGkeCluster {
 
@@ -950,7 +950,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipAuthorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipAuthorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipAuthorityList
 ```
@@ -1099,7 +1099,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubMembershipAuthorityOutputReference
 ```
@@ -1377,7 +1377,7 @@ func InternalValue() DataGoogleGkeHubMembershipAuthority
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipEndpointGkeClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipEndpointGkeClusterList
 ```
@@ -1526,7 +1526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipEndpointGkeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubMembershipEndpointGkeClusterOutputReference
 ```
@@ -1804,7 +1804,7 @@ func InternalValue() DataGoogleGkeHubMembershipEndpointGkeCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipEndpointList
 ```
@@ -1953,7 +1953,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembership"
 
 datagooglegkehubmembership.NewDataGoogleGkeHubMembershipEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubMembershipEndpointOutputReference
 ```

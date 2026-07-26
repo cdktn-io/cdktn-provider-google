@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.NewContactCenterInsightsAutoLabelingRule(scope Construct, id *string, config ContactCenterInsightsAutoLabelingRuleConfig) ContactCenterInsightsAutoLabelingRule
 ```
@@ -503,7 +503,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1089,7 +1089,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 &contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRuleConditions {
 	Condition: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 &contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRuleConfig {
 	Connection: interface{},
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 	LabelKey: *string,
 	LabelKeyType: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeouts,
 }
 ```
 
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 &contactcenterinsightsautolabelingrule.ContactCenterInsightsAutoLabelingRuleTimeouts {
 	Create: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.NewContactCenterInsightsAutoLabelingRuleConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContactCenterInsightsAutoLabelingRuleConditionsList
 ```
@@ -1671,7 +1671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.NewContactCenterInsightsAutoLabelingRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContactCenterInsightsAutoLabelingRuleConditionsOutputReference
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsautolabelingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsautolabelingrule"
 
 contactcenterinsightsautolabelingrule.NewContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference
 ```

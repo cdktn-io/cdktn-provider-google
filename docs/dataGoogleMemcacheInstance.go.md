@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstance(scope Construct, id *string, config DataGoogleMemcacheInstanceConfig) DataGoogleMemcacheInstance
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.DataGoogleMemcacheInstance_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.DataGoogleMemcacheInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglememcacheinstance.DataGoogleMemcacheInstance_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.DataGoogleMemcacheInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglememcacheinstance.DataGoogleMemcacheInstance_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.DataGoogleMemcacheInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -883,7 +883,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceConfig {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMaintenancePolicy {
 
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow {
 
@@ -1074,7 +1074,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime {
 
@@ -1087,7 +1087,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMaintenanceSchedule {
 
@@ -1100,7 +1100,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMemcacheNodes {
 
@@ -1113,7 +1113,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceMemcacheParameters {
 
@@ -1126,7 +1126,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 &datagooglememcacheinstance.DataGoogleMemcacheInstanceNodeConfig {
 
@@ -1141,7 +1141,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcac
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyList
 ```
@@ -1290,7 +1290,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyOutputReference
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() DataGoogleMemcacheInstanceMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList
 ```
@@ -1750,7 +1750,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference
 ```
@@ -2050,7 +2050,7 @@ func InternalValue() DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList
 ```
@@ -2199,7 +2199,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference
 ```
@@ -2510,7 +2510,7 @@ func InternalValue() DataGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMaintenanceScheduleList
 ```
@@ -2659,7 +2659,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference
 ```
@@ -2959,7 +2959,7 @@ func InternalValue() DataGoogleMemcacheInstanceMaintenanceSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMemcacheNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMemcacheNodesList
 ```
@@ -3108,7 +3108,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMemcacheNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMemcacheNodesOutputReference
 ```
@@ -3430,7 +3430,7 @@ func InternalValue() DataGoogleMemcacheInstanceMemcacheNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMemcacheParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceMemcacheParametersList
 ```
@@ -3579,7 +3579,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceMemcacheParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceMemcacheParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceMemcacheParametersOutputReference
 ```
@@ -3868,7 +3868,7 @@ func InternalValue() DataGoogleMemcacheInstanceMemcacheParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceNodeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceNodeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemcacheInstanceNodeConfigList
 ```
@@ -4017,7 +4017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemcacheInstance.DataGoogleMemcacheInstanceNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglememcacheinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememcacheinstance"
 
 datagooglememcacheinstance.NewDataGoogleMemcacheInstanceNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemcacheInstanceNodeConfigOutputReference
 ```

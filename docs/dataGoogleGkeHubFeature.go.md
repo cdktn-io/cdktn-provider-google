@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeature(scope Construct, id *string, config DataGoogleGkeHubFeatureConfig) DataGoogleGkeHubFeature
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.DataGoogleGkeHubFeature_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.DataGoogleGkeHubFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglegkehubfeature.DataGoogleGkeHubFeature_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeature.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.DataGoogleGkeHubFeature_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglegkehubfeature.DataGoogleGkeHubFeature_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.DataGoogleGkeHubFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureConfig {
 	Connection: interface{},
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfig {
 
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagement {
 
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync {
 
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigMesh {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroller {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfig {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources {
 
@@ -1083,7 +1083,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits {
 
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests {
 
@@ -1109,7 +1109,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodToleration {
 
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoring {
 
@@ -1135,7 +1135,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContent {
 
@@ -1148,7 +1148,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundles {
 
@@ -1161,7 +1161,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureResourceState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureResourceState {
 
@@ -1187,7 +1187,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpec {
 
@@ -1200,7 +1200,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgrade.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecClusterupgrade {
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverrides {
 
@@ -1226,7 +1226,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditions {
 
@@ -1239,7 +1239,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgrade.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgrade {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradePostConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecClusterupgradePostConditions {
 
@@ -1265,7 +1265,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecFleetobservability {
 
@@ -1278,7 +1278,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecMulticlusteringress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecMulticlusteringress {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecRbacrolebindingactuation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecRbacrolebindingactuation {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecWorkloadidentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureSpecWorkloadidentity {
 
@@ -1356,7 +1356,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureState {
 
@@ -1369,7 +1369,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureStateState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 &datagooglegkehubfeature.DataGoogleGkeHubFeatureStateState {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitList
 ```
@@ -1533,7 +1533,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncList
 ```
@@ -2037,7 +2037,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciList
 ```
@@ -2186,7 +2186,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference
 ```
@@ -2519,7 +2519,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference
 ```
@@ -2852,7 +2852,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList
 ```
@@ -3001,7 +3001,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference
 ```
@@ -3301,7 +3301,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigList
 ```
@@ -3450,7 +3450,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshList
 ```
@@ -3599,7 +3599,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigMeshOutputReference
 ```
@@ -3877,7 +3877,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigMesh
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference
 ```
@@ -4177,7 +4177,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerList
 ```
@@ -4326,7 +4326,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference
 ```
@@ -4615,7 +4615,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsList
 ```
@@ -4764,7 +4764,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference
 ```
@@ -5053,7 +5053,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesList
 ```
@@ -5202,7 +5202,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference
 ```
@@ -5491,7 +5491,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsList
 ```
@@ -5640,7 +5640,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference
 ```
@@ -5929,7 +5929,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList
 ```
@@ -6078,7 +6078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference
 ```
@@ -6400,7 +6400,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationList
 ```
@@ -6549,7 +6549,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationOutputReference
 ```
@@ -6860,7 +6860,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigList
 ```
@@ -7009,7 +7009,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringList
 ```
@@ -7158,7 +7158,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference
 ```
@@ -7436,7 +7436,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigOutputReference
 ```
@@ -7813,7 +7813,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList
 ```
@@ -7962,7 +7962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference
 ```
@@ -8251,7 +8251,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentList
 ```
@@ -8400,7 +8400,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference
 ```
@@ -8689,7 +8689,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryList
 ```
@@ -8838,7 +8838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference
 ```
@@ -9116,7 +9116,7 @@ func InternalValue() DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureResourceStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureResourceStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureResourceStateList
 ```
@@ -9265,7 +9265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureResourceStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureResourceStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureResourceStateOutputReference
 ```
@@ -9554,7 +9554,7 @@ func InternalValue() DataGoogleGkeHubFeatureResourceState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList
 ```
@@ -9703,7 +9703,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference
 ```
@@ -9992,7 +9992,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverride
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsList
 ```
@@ -10141,7 +10141,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsOutputReference
 ```
@@ -10419,7 +10419,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverride
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeList
 ```
@@ -10568,7 +10568,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference
 ```
@@ -10857,7 +10857,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverride
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeList
 ```
@@ -11006,7 +11006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference
 ```
@@ -11306,7 +11306,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecClusterupgrade
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradePostConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsList
 ```
@@ -11455,7 +11455,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputReference
 ```
@@ -11733,7 +11733,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecClusterupgradePostConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityList
 ```
@@ -11882,7 +11882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList
 ```
@@ -12031,7 +12031,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference
 ```
@@ -12309,7 +12309,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigList
 ```
@@ -12458,7 +12458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference
 ```
@@ -12736,7 +12736,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigList
 ```
@@ -12885,7 +12885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference
 ```
@@ -13174,7 +13174,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecFleetobservabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecFleetobservabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecFleetobservabilityOutputReference
 ```
@@ -13452,7 +13452,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecFleetobservability
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecList
 ```
@@ -13601,7 +13601,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecMulticlusteringressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecMulticlusteringressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecMulticlusteringressList
 ```
@@ -13750,7 +13750,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference
 ```
@@ -14028,7 +14028,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecMulticlusteringress
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecOutputReference
 ```
@@ -14350,7 +14350,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecRbacrolebindingactuationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecRbacrolebindingactuationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecRbacrolebindingactuationList
 ```
@@ -14499,7 +14499,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference
 ```
@@ -14777,7 +14777,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecRbacrolebindingactuation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecWorkloadidentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecWorkloadidentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureSpecWorkloadidentityList
 ```
@@ -14926,7 +14926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference
 ```
@@ -15204,7 +15204,7 @@ func InternalValue() DataGoogleGkeHubFeatureSpecWorkloadidentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureStateList
 ```
@@ -15353,7 +15353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureStateOutputReference
 ```
@@ -15631,7 +15631,7 @@ func InternalValue() DataGoogleGkeHubFeatureState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureStateStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureStateStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureStateStateList
 ```
@@ -15780,7 +15780,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureStateStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubfeature"
 
 datagooglegkehubfeature.NewDataGoogleGkeHubFeatureStateStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubFeatureStateStateOutputReference
 ```

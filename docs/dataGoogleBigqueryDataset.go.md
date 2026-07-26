@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDataset(scope Construct, id *string, config DataGoogleBigqueryDatasetConfig) DataGoogleBigqueryDataset
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDataset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.DataGoogleBigqueryDataset_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDataset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.DataGoogleBigqueryDataset_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglebigquerydataset.DataGoogleBigqueryDataset_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDataset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.DataGoogleBigqueryDataset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglebigquerydataset.DataGoogleBigqueryDataset_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDataset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.DataGoogleBigqueryDataset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccess {
 
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccessCondition {
 
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccessDataset {
 
@@ -937,7 +937,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDatasetDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccessDatasetDataset {
 
@@ -950,7 +950,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessRoutine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccessRoutine {
 
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetAccessView {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetConfig {
 	Connection: interface{},
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetDefaultEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetDefaultEncryptionConfiguration {
 
@@ -1142,7 +1142,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalCatalogDatasetOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetExternalCatalogDatasetOptions {
 
@@ -1155,7 +1155,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalDatasetReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 &datagooglebigquerydataset.DataGoogleBigqueryDatasetExternalDatasetReference {
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigque
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessConditionList
 ```
@@ -1319,7 +1319,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessConditionOutputReference
 ```
@@ -1630,7 +1630,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccessCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDatasetDatasetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessDatasetDatasetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessDatasetDatasetList
 ```
@@ -1779,7 +1779,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDatasetDatasetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessDatasetDatasetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessDatasetDatasetOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccessDatasetDataset
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDatasetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessDatasetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessDatasetList
 ```
@@ -2217,7 +2217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessDatasetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessDatasetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessDatasetOutputReference
 ```
@@ -2506,7 +2506,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccessDataset
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessList
 ```
@@ -2655,7 +2655,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessOutputReference
 ```
@@ -3032,7 +3032,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessRoutineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessRoutineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessRoutineList
 ```
@@ -3181,7 +3181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessRoutineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessRoutineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessRoutineOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccessRoutine
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessViewList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessViewList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetAccessViewList
 ```
@@ -3630,7 +3630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetAccessViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetAccessViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetAccessViewOutputReference
 ```
@@ -3930,7 +3930,7 @@ func InternalValue() DataGoogleBigqueryDatasetAccessView
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetDefaultEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetDefaultEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetDefaultEncryptionConfigurationList
 ```
@@ -4079,7 +4079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference
 ```
@@ -4357,7 +4357,7 @@ func InternalValue() DataGoogleBigqueryDatasetDefaultEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList
 ```
@@ -4506,7 +4506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference
 ```
@@ -4795,7 +4795,7 @@ func InternalValue() DataGoogleBigqueryDatasetExternalCatalogDatasetOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalDatasetReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetExternalDatasetReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetExternalDatasetReferenceList
 ```
@@ -4944,7 +4944,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDataset.DataGoogleBigqueryDatasetExternalDatasetReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydataset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydataset"
 
 datagooglebigquerydataset.NewDataGoogleBigqueryDatasetExternalDatasetReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetExternalDatasetReferenceOutputReference
 ```

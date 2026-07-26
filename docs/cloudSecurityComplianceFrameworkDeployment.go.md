@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeployment(scope Construct, id *string, config CloudSecurityComplianceFrameworkDeploymentConfig) CloudSecurityComplianceFrameworkDeployment
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeplo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeplo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferences {
 
@@ -1133,10 +1133,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycom
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadata {
-	CloudControlDetails: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetails,
+	CloudControlDetails: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetails,
 	EnforcementMode: *string,
 }
 ```
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetails {
 	MajorRevisionId: *string,
@@ -1249,11 +1249,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParameters {
 	Name: *string,
-	ParameterValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValue,
+	ParameterValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValue,
 }
 ```
 
@@ -1299,13 +1299,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValue {
 	BoolValue: interface{},
 	NumberValue: *f64,
-	OneofValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValue,
-	StringListValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValue,
+	OneofValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValue,
+	StringListValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValue,
 	StringValue: *string,
 }
 ```
@@ -1397,11 +1397,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValue {
 	Name: *string,
-	ParameterValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValue,
+	ParameterValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValue,
 }
 ```
 
@@ -1447,12 +1447,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValue {
 	BoolValue: interface{},
 	NumberValue: *f64,
-	StringListValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue,
+	StringListValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue,
 	StringValue: *string,
 }
 ```
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue {
 	Values: *[]*string,
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValue {
 	Values: *[]*string,
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentConfig {
 	Connection: interface{},
@@ -1608,16 +1608,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycom
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CloudControlMetadata: interface{},
-	Framework: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentFramework,
+	Framework: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentFramework,
 	FrameworkDeploymentId: *string,
-	TargetResourceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfig,
+	TargetResourceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfig,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Location: *string,
 	Organization: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTimeouts,
 }
 ```
 
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentFramework {
 	Framework: *string,
@@ -1936,11 +1936,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfig {
 	ExistingTargetResource: *string,
-	TargetResourceCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfig,
+	TargetResourceCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfig,
 }
 ```
 
@@ -1986,11 +1986,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfig {
-	FolderCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfig,
-	ProjectCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfig,
+	FolderCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfig,
+	ProjectCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfig,
 }
 ```
 
@@ -2036,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfig {
 	FolderDisplayName: *string,
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfig {
 	BillingAccountId: *string,
@@ -2152,7 +2152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 &cloudsecuritycomplianceframeworkdeployment.CloudSecurityComplianceFrameworkDeploymentTimeouts {
 	Create: *string,
@@ -2200,7 +2200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesList
 ```
@@ -2349,7 +2349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference
 ```
@@ -2627,7 +2627,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlDeplo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsOutputReference
 ```
@@ -2962,7 +2962,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersList
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersOutputReference
 ```
@@ -3446,7 +3446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueOutputReference
 ```
@@ -3766,7 +3766,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference
 ```
@@ -4144,7 +4144,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference
 ```
@@ -4415,7 +4415,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueOutputReference
 ```
@@ -4835,7 +4835,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataCloudControlDetailsParametersParameterValueStringListValueOutputReference
 ```
@@ -5106,7 +5106,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentCloudControlMetad
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataList
 ```
@@ -5266,7 +5266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentCloudControlMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudSecurityComplianceFrameworkDeploymentCloudControlMetadataOutputReference
 ```
@@ -5590,7 +5590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentFrameworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentFrameworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentFrameworkOutputReference
 ```
@@ -5883,7 +5883,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentFramework
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOutputReference
 ```
@@ -6203,7 +6203,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentTargetResourceCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigFolderCreationConfigOutputReference
 ```
@@ -6496,7 +6496,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentTargetResourceCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigOutputReference
 ```
@@ -6829,7 +6829,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentTargetResourceCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigProjectCreationConfigOutputReference
 ```
@@ -7144,7 +7144,7 @@ func InternalValue() CloudSecurityComplianceFrameworkDeploymentTargetResourceCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSecurityComplianceFrameworkDeployment.CloudSecurityComplianceFrameworkDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsecuritycomplianceframeworkdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsecuritycomplianceframeworkdeployment"
 
 cloudsecuritycomplianceframeworkdeployment.NewCloudSecurityComplianceFrameworkDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkDeploymentTimeoutsOutputReference
 ```

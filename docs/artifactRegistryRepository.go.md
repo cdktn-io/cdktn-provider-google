@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepository(scope Construct, id *string, config ArtifactRegistryRepositoryConfig) ArtifactRegistryRepository
 ```
@@ -603,7 +603,7 @@ func ResetVulnerabilityScanningConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.ArtifactRegistryRepository_IsConstruct(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.ArtifactRegistryRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ artifactregistryrepository.ArtifactRegistryRepository_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.ArtifactRegistryRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ artifactregistryrepository.ArtifactRegistryRepository_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.ArtifactRegistryRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1354,13 +1354,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryCleanupPolicies {
 	Id: *string,
 	Action: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesCondition,
-	MostRecentVersions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesCondition,
+	MostRecentVersions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions,
 }
 ```
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryCleanupPoliciesCondition {
 	NewerThan: *string,
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions {
 	KeepCount: *f64,
@@ -1601,7 +1601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryConfig {
 	Connection: interface{},
@@ -1617,18 +1617,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistry
 	CleanupPolicyDryRun: interface{},
 	DeletionPolicy: *string,
 	Description: *string,
-	DockerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig,
+	DockerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig,
 	Id: *string,
 	KmsKeyName: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	MavenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig,
+	MavenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig,
 	Mode: *string,
 	Project: *string,
-	RemoteRepositoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts,
-	VirtualRepositoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig,
-	VulnerabilityScanningConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfig,
+	RemoteRepositoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts,
+	VirtualRepositoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig,
+	VulnerabilityScanningConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfig,
 }
 ```
 
@@ -2021,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryDockerConfig {
 	ImmutableTags: interface{},
@@ -2057,7 +2057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryMavenConfig {
 	AllowSnapshotOverwrites: interface{},
@@ -2107,19 +2107,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfig {
-	AptRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository,
-	CommonRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository,
+	AptRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository,
+	CommonRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository,
 	Description: *string,
 	DisableUpstreamValidation: interface{},
-	DockerRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository,
-	MavenRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository,
-	NpmRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository,
-	PythonRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository,
-	UpstreamCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials,
-	YumRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository,
+	DockerRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository,
+	MavenRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository,
+	NpmRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository,
+	PythonRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository,
+	UpstreamCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials,
+	YumRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository,
 }
 ```
 
@@ -2285,10 +2285,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository {
-	PublicRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository,
+	PublicRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository,
 }
 ```
 
@@ -2319,7 +2319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository {
 	RepositoryBase: *string,
@@ -2369,7 +2369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository {
 	Uri: *string,
@@ -2407,10 +2407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository {
-	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository,
+	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository,
 	PublicRepository: *string,
 }
 ```
@@ -2457,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository {
 	Uri: *string,
@@ -2491,10 +2491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository {
-	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository,
+	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository,
 	PublicRepository: *string,
 }
 ```
@@ -2541,7 +2541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository {
 	Uri: *string,
@@ -2575,10 +2575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository {
-	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository,
+	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository,
 	PublicRepository: *string,
 }
 ```
@@ -2625,7 +2625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository {
 	Uri: *string,
@@ -2659,10 +2659,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository {
-	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository,
+	CustomRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository,
 	PublicRepository: *string,
 }
 ```
@@ -2709,7 +2709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository {
 	Uri: *string,
@@ -2743,10 +2743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials {
-	UsernamePasswordCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials,
+	UsernamePasswordCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials,
 }
 ```
 
@@ -2777,7 +2777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials {
 	PasswordSecretVersion: *string,
@@ -2827,10 +2827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository {
-	PublicRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository,
+	PublicRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository,
 }
 ```
 
@@ -2861,7 +2861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository {
 	RepositoryBase: *string,
@@ -2911,7 +2911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryTimeouts {
 	Create: *string,
@@ -2971,7 +2971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryVirtualRepositoryConfig {
 	UpstreamPolicies: interface{},
@@ -3005,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies {
 	Id: *string,
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 &artifactregistryrepository.ArtifactRegistryRepositoryVulnerabilityScanningConfig {
 	EnablementConfig: *string,
@@ -3110,7 +3110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference
 ```
@@ -3533,7 +3533,7 @@ func InternalValue() ArtifactRegistryRepositoryCleanupPoliciesCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryCleanupPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArtifactRegistryRepositoryCleanupPoliciesList
 ```
@@ -3693,7 +3693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference
 ```
@@ -4000,7 +4000,7 @@ func InternalValue() ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryCleanupPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArtifactRegistryRepositoryCleanupPoliciesOutputReference
 ```
@@ -4402,7 +4402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryDockerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryDockerConfigOutputReference
 ```
@@ -4680,7 +4680,7 @@ func InternalValue() ArtifactRegistryRepositoryDockerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryMavenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryMavenConfigOutputReference
 ```
@@ -4987,7 +4987,7 @@ func InternalValue() ArtifactRegistryRepositoryMavenConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
 ```
@@ -5278,7 +5278,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigAptReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference
 ```
@@ -5571,7 +5571,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigAptReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference
 ```
@@ -5842,7 +5842,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference
 ```
@@ -6120,7 +6120,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference
 ```
@@ -6440,7 +6440,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference
 ```
@@ -6718,7 +6718,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference
 ```
@@ -7038,7 +7038,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference
 ```
@@ -7316,7 +7316,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigNpmReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference
 ```
@@ -7636,7 +7636,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigNpmReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 ```
@@ -8279,7 +8279,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference
 ```
@@ -8557,7 +8557,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference
 ```
@@ -8877,7 +8877,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference
 ```
@@ -9168,7 +9168,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCre
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference
 ```
@@ -9475,7 +9475,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCre
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
 ```
@@ -9766,7 +9766,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigYumReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference
 ```
@@ -10059,7 +10059,7 @@ func InternalValue() ArtifactRegistryRepositoryRemoteRepositoryConfigYumReposito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryTimeoutsOutputReference
 ```
@@ -10395,7 +10395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
 ```
@@ -10686,7 +10686,7 @@ func InternalValue() ArtifactRegistryRepositoryVirtualRepositoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList
 ```
@@ -10846,7 +10846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference
 ```
@@ -11200,7 +11200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/artifactregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrepository"
 
 artifactregistryrepository.NewArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference
 ```

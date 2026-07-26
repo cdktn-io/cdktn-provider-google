@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.NewDataCatalogEntryGroup(scope Construct, id *string, config DataCatalogEntryGroupConfig) DataCatalogEntryGroup
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 &datacatalogentrygroup.DataCatalogEntryGroupConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentry
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts,
 }
 ```
 
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 &datacatalogentrygroup.DataCatalogEntryGroupTimeouts {
 	Create: *string,
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
 
 datacatalogentrygroup.NewDataCatalogEntryGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogEntryGroupTimeoutsOutputReference
 ```

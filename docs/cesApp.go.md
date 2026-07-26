@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesApp(scope Construct, id *string, config CesAppConfig) CesApp
 ```
@@ -690,7 +690,7 @@ func ResetVariableDeclarations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cesApp.CesApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.CesApp_IsConstruct(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cesApp.CesApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.CesApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ cesapp.CesApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cesApp.CesApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.CesApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ cesapp.CesApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cesApp.CesApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.CesApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1562,11 +1562,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppAudioProcessingConfig {
-	AmbientSoundConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig,
-	BargeInConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppAudioProcessingConfigBargeInConfig,
+	AmbientSoundConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig,
+	BargeInConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppAudioProcessingConfigBargeInConfig,
 	InactivityTimeout: *string,
 	SynthesizeSpeechConfigs: interface{},
 }
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppAudioProcessingConfigAmbientSoundConfig {
 	GcsUri: *string,
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppAudioProcessingConfigBargeInConfig {
 	BargeInAwareness: interface{},
@@ -1755,7 +1755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
 	LanguageCode: *string,
@@ -1824,7 +1824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppClientCertificateSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppClientCertificateSettings {
 	PrivateKey: *string,
@@ -1890,7 +1890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppConfig {
 	Connection: interface{},
@@ -1903,25 +1903,25 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
 	AppId: *string,
 	DisplayName: *string,
 	Location: *string,
-	AudioProcessingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppAudioProcessingConfig,
-	ClientCertificateSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppClientCertificateSettings,
-	DataStoreSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppDataStoreSettings,
-	DefaultChannelProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppDefaultChannelProfile,
+	AudioProcessingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppAudioProcessingConfig,
+	ClientCertificateSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppClientCertificateSettings,
+	DataStoreSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppDataStoreSettings,
+	DefaultChannelProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppDefaultChannelProfile,
 	DeletionPolicy: *string,
 	Description: *string,
-	EvaluationMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppEvaluationMetricsThresholds,
+	EvaluationMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppEvaluationMetricsThresholds,
 	GlobalInstruction: *string,
 	Guardrails: *[]*string,
 	Id: *string,
-	LanguageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLanguageSettings,
-	LoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettings,
+	LanguageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLanguageSettings,
+	LoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettings,
 	Metadata: *map[string]*string,
-	ModelSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppModelSettings,
+	ModelSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppModelSettings,
 	Pinned: interface{},
 	Project: *string,
 	RootAgent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppTimeouts,
-	TimeZoneSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppTimeZoneSettings,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppTimeouts,
+	TimeZoneSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppTimeZoneSettings,
 	ToolExecutionMode: *string,
 	VariableDeclarations: interface{},
 }
@@ -2391,7 +2391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDataStoreSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppDataStoreSettings {
 
@@ -2404,7 +2404,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEngines.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppDataStoreSettingsEngines {
 
@@ -2417,15 +2417,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppDefaultChannelProfile {
 	ChannelType: *string,
 	DisableBargeInControl: interface{},
 	DisableDtmf: interface{},
-	PersonaProperty: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppDefaultChannelProfilePersonaProperty,
+	PersonaProperty: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppDefaultChannelProfilePersonaProperty,
 	ProfileId: *string,
-	WebWidgetConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppDefaultChannelProfileWebWidgetConfig,
+	WebWidgetConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppDefaultChannelProfileWebWidgetConfig,
 }
 ```
 
@@ -2534,7 +2534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppDefaultChannelProfilePersonaProperty {
 	Persona: *string,
@@ -2568,7 +2568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppDefaultChannelProfileWebWidgetConfig {
 	Modality: *string,
@@ -2634,10 +2634,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppEvaluationMetricsThresholds {
-	GoldenEvaluationMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds,
+	GoldenEvaluationMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds,
 }
 ```
 
@@ -2668,11 +2668,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds {
-	ExpectationLevelMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds,
-	TurnLevelMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds,
+	ExpectationLevelMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds,
+	TurnLevelMetricsThresholds: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds,
 }
 ```
 
@@ -2718,7 +2718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds {
 	ToolInvocationParameterCorrectnessThreshold: *f64,
@@ -2752,7 +2752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds {
 	OverallToolInvocationCorrectnessThreshold: *f64,
@@ -2802,7 +2802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLanguageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLanguageSettings {
 	DefaultLanguageCode: *string,
@@ -2892,14 +2892,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettings {
-	AudioRecordingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettingsAudioRecordingConfig,
-	BigqueryExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettingsBigqueryExportSettings,
-	CloudLoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettingsCloudLoggingSettings,
-	ConversationLoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettingsConversationLoggingSettings,
-	RedactionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppLoggingSettingsRedactionConfig,
+	AudioRecordingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettingsAudioRecordingConfig,
+	BigqueryExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettingsBigqueryExportSettings,
+	CloudLoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettingsCloudLoggingSettings,
+	ConversationLoggingSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettingsConversationLoggingSettings,
+	RedactionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppLoggingSettingsRedactionConfig,
 }
 ```
 
@@ -2990,7 +2990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettingsAudioRecordingConfig {
 	GcsBucket: *string,
@@ -3051,7 +3051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettingsBigqueryExportSettings {
 	Dataset: *string,
@@ -3121,7 +3121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettingsCloudLoggingSettings {
 	EnableCloudLogging: interface{},
@@ -3155,7 +3155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettingsConversationLoggingSettings {
 	DisableConversationLogging: interface{},
@@ -3189,7 +3189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppLoggingSettingsRedactionConfig {
 	DeidentifyTemplate: *string,
@@ -3255,7 +3255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppModelSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppModelSettings {
 	Model: *string,
@@ -3312,7 +3312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppTimeouts {
 	Create: *string,
@@ -3372,7 +3372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppTimeZoneSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppTimeZoneSettings {
 	TimeZone: *string,
@@ -3406,12 +3406,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppVariableDeclarations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppVariableDeclarations {
 	Description: *string,
 	Name: *string,
-	Schema: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesApp.CesAppVariableDeclarationsSchema,
+	Schema: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesApp.CesAppVariableDeclarationsSchema,
 }
 ```
 
@@ -3475,7 +3475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppVariableDeclarationsSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 &cesapp.CesAppVariableDeclarationsSchema {
 	Type: *string,
@@ -3770,7 +3770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppAudioProcessingConfigAmbientSoundConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppAudioProcessingConfigAmbientSoundConfigOutputReference
 ```
@@ -4106,7 +4106,7 @@ func InternalValue() CesAppAudioProcessingConfigAmbientSoundConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppAudioProcessingConfigBargeInConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppAudioProcessingConfigBargeInConfigOutputReference
 ```
@@ -4384,7 +4384,7 @@ func InternalValue() CesAppAudioProcessingConfigBargeInConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppAudioProcessingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppAudioProcessingConfigOutputReference
 ```
@@ -4788,7 +4788,7 @@ func InternalValue() CesAppAudioProcessingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppAudioProcessingConfigSynthesizeSpeechConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAppAudioProcessingConfigSynthesizeSpeechConfigsList
 ```
@@ -4948,7 +4948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference
 ```
@@ -5295,7 +5295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppClientCertificateSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppClientCertificateSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppClientCertificateSettingsOutputReference
 ```
@@ -5617,7 +5617,7 @@ func InternalValue() CesAppClientCertificateSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEnginesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDataStoreSettingsEnginesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAppDataStoreSettingsEnginesList
 ```
@@ -5766,7 +5766,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEnginesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDataStoreSettingsEnginesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAppDataStoreSettingsEnginesOutputReference
 ```
@@ -6055,7 +6055,7 @@ func InternalValue() CesAppDataStoreSettingsEngines
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDataStoreSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDataStoreSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppDataStoreSettingsOutputReference
 ```
@@ -6315,7 +6315,7 @@ func InternalValue() CesAppDataStoreSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDefaultChannelProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppDefaultChannelProfileOutputReference
 ```
@@ -6764,7 +6764,7 @@ func InternalValue() CesAppDefaultChannelProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDefaultChannelProfilePersonaPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppDefaultChannelProfilePersonaPropertyOutputReference
 ```
@@ -7042,7 +7042,7 @@ func InternalValue() CesAppDefaultChannelProfilePersonaProperty
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppDefaultChannelProfileWebWidgetConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppDefaultChannelProfileWebWidgetConfigOutputReference
 ```
@@ -7378,7 +7378,7 @@ func InternalValue() CesAppDefaultChannelProfileWebWidgetConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference
 ```
@@ -7656,7 +7656,7 @@ func InternalValue() CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference
 ```
@@ -7989,7 +7989,7 @@ func InternalValue() CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference
 ```
@@ -8296,7 +8296,7 @@ func InternalValue() CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppEvaluationMetricsThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppEvaluationMetricsThresholdsOutputReference
 ```
@@ -8587,7 +8587,7 @@ func InternalValue() CesAppEvaluationMetricsThresholds
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLanguageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLanguageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLanguageSettingsOutputReference
 ```
@@ -8952,7 +8952,7 @@ func InternalValue() CesAppLanguageSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsAudioRecordingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsAudioRecordingConfigOutputReference
 ```
@@ -9259,7 +9259,7 @@ func InternalValue() CesAppLoggingSettingsAudioRecordingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsBigqueryExportSettingsOutputReference
 ```
@@ -9595,7 +9595,7 @@ func InternalValue() CesAppLoggingSettingsBigqueryExportSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsCloudLoggingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsCloudLoggingSettingsOutputReference
 ```
@@ -9873,7 +9873,7 @@ func InternalValue() CesAppLoggingSettingsCloudLoggingSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsConversationLoggingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsConversationLoggingSettingsOutputReference
 ```
@@ -10151,7 +10151,7 @@ func InternalValue() CesAppLoggingSettingsConversationLoggingSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsOutputReference
 ```
@@ -10610,7 +10610,7 @@ func InternalValue() CesAppLoggingSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppLoggingSettingsRedactionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsRedactionConfigOutputReference
 ```
@@ -10946,7 +10946,7 @@ func InternalValue() CesAppLoggingSettingsRedactionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppModelSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppModelSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppModelSettingsOutputReference
 ```
@@ -11253,7 +11253,7 @@ func InternalValue() CesAppModelSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppTimeoutsOutputReference
 ```
@@ -11589,7 +11589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppTimeZoneSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppTimeZoneSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppTimeZoneSettingsOutputReference
 ```
@@ -11867,7 +11867,7 @@ func InternalValue() CesAppTimeZoneSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppVariableDeclarationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppVariableDeclarationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAppVariableDeclarationsList
 ```
@@ -12027,7 +12027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppVariableDeclarationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppVariableDeclarationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAppVariableDeclarationsOutputReference
 ```
@@ -12373,7 +12373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesapp"
 
 cesapp.NewCesAppVariableDeclarationsSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAppVariableDeclarationsSchemaOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollection(scope Construct, id *string, config VectorSearchCollectionConfig) VectorSearchCollection
 ```
@@ -509,7 +509,7 @@ func ResetVectorSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.VectorSearchCollection_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.VectorSearchCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ vectorsearchcollection.VectorSearchCollection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.VectorSearchCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ vectorsearchcollection.VectorSearchCollection_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.VectorSearchCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1117,7 +1117,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionConfig {
 	Connection: interface{},
@@ -1133,11 +1133,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcoll
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchCollection.VectorSearchCollectionEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchCollection.VectorSearchCollectionEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchCollection.VectorSearchCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchCollection.VectorSearchCollectionTimeouts,
 	VectorSchema: interface{},
 }
 ```
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionEncryptionSpec {
 	CryptoKeyName: *string,
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionTimeouts {
 	Create: *string,
@@ -1523,12 +1523,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionVectorSchema {
 	FieldName: *string,
-	DenseVector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector,
-	SparseVector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector,
+	DenseVector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector,
+	SparseVector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector,
 }
 ```
 
@@ -1587,11 +1587,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionVectorSchemaDenseVector {
 	Dimensions: *f64,
-	VertexEmbeddingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig,
+	VertexEmbeddingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig,
 }
 ```
 
@@ -1637,7 +1637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig {
 	ModelId: *string,
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 &vectorsearchcollection.VectorSearchCollectionVectorSchemaSparseVector {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcoll
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionEncryptionSpecOutputReference
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() VectorSearchCollectionEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionTimeoutsOutputReference
 ```
@@ -2329,7 +2329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionVectorSchemaDenseVectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionVectorSchemaDenseVectorOutputReference
 ```
@@ -2649,7 +2649,7 @@ func InternalValue() VectorSearchCollectionVectorSchemaDenseVector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference
 ```
@@ -2964,7 +2964,7 @@ func InternalValue() VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionVectorSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchCollectionVectorSchemaList
 ```
@@ -3124,7 +3124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionVectorSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchCollectionVectorSchemaOutputReference
 ```
@@ -3497,7 +3497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchcollection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchcollection"
 
 vectorsearchcollection.NewVectorSearchCollectionVectorSchemaSparseVectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionVectorSchemaSparseVectorOutputReference
 ```

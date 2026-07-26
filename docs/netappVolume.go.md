@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolume(scope Construct, id *string, config NetappVolumeConfig) NetappVolume
 ```
@@ -705,7 +705,7 @@ func ResetUnixPermissions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappVolume.NetappVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NetappVolume_IsConstruct(x interface{}) *bool
 ```
@@ -737,7 +737,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappVolume.NetappVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NetappVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ netappvolume.NetappVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappVolume.NetappVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NetappVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -765,7 +765,7 @@ netappvolume.NetappVolume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappVolume.NetappVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NetappVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1863,7 +1863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeBackupConfig {
 	BackupPolicies: *[]*string,
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeBlockDevices {
 	OsType: *string,
@@ -2010,10 +2010,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeCacheParameters {
-	CacheConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeCacheParametersCacheConfig,
+	CacheConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeCacheParametersCacheConfig,
 	EnableGlobalFileLock: interface{},
 	PeerClusterName: *string,
 	PeeringCommandExpiryTime: *string,
@@ -2142,7 +2142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeCacheParametersCacheConfig {
 	CifsChangeNotifyEnabled: interface{},
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeConfig {
 	Connection: interface{},
@@ -2191,30 +2191,30 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
 	Name: *string,
 	Protocols: *[]*string,
 	StoragePool: *string,
-	BackupConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeBackupConfig,
+	BackupConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeBackupConfig,
 	BlockDevices: interface{},
-	CacheParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeCacheParameters,
+	CacheParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeCacheParameters,
 	DeletionPolicy: *string,
 	Description: *string,
-	ExportPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeExportPolicy,
-	HybridReplicationParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeHybridReplicationParameters,
+	ExportPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeExportPolicy,
+	HybridReplicationParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeHybridReplicationParameters,
 	Id: *string,
 	KerberosEnabled: interface{},
 	Labels: *map[string]*string,
 	LargeCapacity: interface{},
-	LargeCapacityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeLargeCapacityConfig,
+	LargeCapacityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeLargeCapacityConfig,
 	MultipleEndpoints: interface{},
 	Project: *string,
-	RestoreParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeRestoreParameters,
+	RestoreParameters: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeRestoreParameters,
 	RestrictedActions: *[]*string,
 	SecurityStyle: *string,
 	ShareName: *string,
 	SmbSettings: *[]*string,
 	SnapshotDirectory: interface{},
-	SnapshotPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeSnapshotPolicy,
+	SnapshotPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeSnapshotPolicy,
 	ThroughputMibps: *f64,
-	TieringPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeTieringPolicy,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeTimeouts,
+	TieringPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeTieringPolicy,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeTimeouts,
 	UnixPermissions: *string,
 }
 ```
@@ -2770,7 +2770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeExportPolicy {
 	Rules: interface{},
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeExportPolicyRules {
 	AccessType: *string,
@@ -3048,7 +3048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeHybridReplicationParameters {
 	ClusterLocation: *string,
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeLargeCapacityConfig {
 	ConstituentCount: *f64,
@@ -3286,7 +3286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeMountOptions {
 
@@ -3299,7 +3299,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeRestoreParameters {
 	SourceBackup: *string,
@@ -3349,14 +3349,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeSnapshotPolicy {
-	DailySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeSnapshotPolicyDailySchedule,
+	DailySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeSnapshotPolicyDailySchedule,
 	Enabled: interface{},
-	HourlySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule,
-	MonthlySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule,
-	WeeklySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule,
+	HourlySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule,
+	MonthlySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule,
+	WeeklySchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule,
 }
 ```
 
@@ -3450,7 +3450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeSnapshotPolicyDailySchedule {
 	SnapshotsToKeep: *f64,
@@ -3516,7 +3516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeSnapshotPolicyHourlySchedule {
 	SnapshotsToKeep: *f64,
@@ -3566,7 +3566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeSnapshotPolicyMonthlySchedule {
 	SnapshotsToKeep: *f64,
@@ -3650,7 +3650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeSnapshotPolicyWeeklySchedule {
 	SnapshotsToKeep: *f64,
@@ -3734,7 +3734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeTieringPolicy {
 	CoolingThresholdDays: *f64,
@@ -3805,7 +3805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 &netappvolume.NetappVolumeTimeouts {
 	Create: *string,
@@ -3867,7 +3867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeBackupConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeBackupConfigOutputReference
 ```
@@ -4203,7 +4203,7 @@ func InternalValue() NetappVolumeBackupConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeBlockDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetappVolumeBlockDevicesList
 ```
@@ -4363,7 +4363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeBlockDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetappVolumeBlockDevicesOutputReference
 ```
@@ -4732,7 +4732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeCacheParametersCacheConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeCacheParametersCacheConfigOutputReference
 ```
@@ -5010,7 +5010,7 @@ func InternalValue() NetappVolumeCacheParametersCacheConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeCacheParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeCacheParametersOutputReference
 ```
@@ -5519,7 +5519,7 @@ func InternalValue() NetappVolumeCacheParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeExportPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeExportPolicyOutputReference
 ```
@@ -5803,7 +5803,7 @@ func InternalValue() NetappVolumeExportPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeExportPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetappVolumeExportPolicyRulesList
 ```
@@ -5963,7 +5963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeExportPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetappVolumeExportPolicyRulesOutputReference
 ```
@@ -6607,7 +6607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeHybridReplicationParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeHybridReplicationParametersOutputReference
 ```
@@ -7175,7 +7175,7 @@ func InternalValue() NetappVolumeHybridReplicationParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeLargeCapacityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeLargeCapacityConfigOutputReference
 ```
@@ -7453,7 +7453,7 @@ func InternalValue() NetappVolumeLargeCapacityConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeMountOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetappVolumeMountOptionsList
 ```
@@ -7602,7 +7602,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetappVolumeMountOptionsOutputReference
 ```
@@ -7924,7 +7924,7 @@ func InternalValue() NetappVolumeMountOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeRestoreParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeRestoreParametersOutputReference
 ```
@@ -8231,7 +8231,7 @@ func InternalValue() NetappVolumeRestoreParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeSnapshotPolicyDailyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeSnapshotPolicyDailyScheduleOutputReference
 ```
@@ -8560,7 +8560,7 @@ func InternalValue() NetappVolumeSnapshotPolicyDailySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeSnapshotPolicyHourlyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeSnapshotPolicyHourlyScheduleOutputReference
 ```
@@ -8860,7 +8860,7 @@ func InternalValue() NetappVolumeSnapshotPolicyHourlySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeSnapshotPolicyMonthlyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference
 ```
@@ -9218,7 +9218,7 @@ func InternalValue() NetappVolumeSnapshotPolicyMonthlySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeSnapshotPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeSnapshotPolicyOutputReference
 ```
@@ -9664,7 +9664,7 @@ func InternalValue() NetappVolumeSnapshotPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference
 ```
@@ -10022,7 +10022,7 @@ func InternalValue() NetappVolumeSnapshotPolicyWeeklySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeTieringPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeTieringPolicyOutputReference
 ```
@@ -10358,7 +10358,7 @@ func InternalValue() NetappVolumeTieringPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappvolume"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappvolume"
 
 netappvolume.NewNetappVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeTimeoutsOutputReference
 ```

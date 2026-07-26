@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.NewLoggingLogViewIamMember(scope Construct, id *string, config LoggingLogViewIamMemberConfig) LoggingLogViewIamMember
 ```
@@ -434,7 +434,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.LoggingLogViewIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.LoggingLogViewIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ logginglogviewiammember.LoggingLogViewIamMember_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.LoggingLogViewIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ logginglogviewiammember.LoggingLogViewIamMember_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.LoggingLogViewIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 &logginglogviewiammember.LoggingLogViewIamMemberCondition {
 	Expression: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 &logginglogviewiammember.LoggingLogViewIamMemberConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewia
 	Name: *string,
 	Parent: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingLogViewIamMember.LoggingLogViewIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingLogViewIamMember.LoggingLogViewIamMemberCondition,
 	Id: *string,
 	Location: *string,
 }
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/logginglogviewiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/logginglogviewiammember"
 
 logginglogviewiammember.NewLoggingLogViewIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingLogViewIamMemberConditionOutputReference
 ```

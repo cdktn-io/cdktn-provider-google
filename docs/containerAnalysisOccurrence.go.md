@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.NewContainerAnalysisOccurrence(scope Construct, id *string, config ContainerAnalysisOccurrenceConfig) ContainerAnalysisOccurrence
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.ContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.ContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ containeranalysisoccurrence.ContainerAnalysisOccurrence_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.ContainerAnalysisOccurrence_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ containeranalysisoccurrence.ContainerAnalysisOccurrence_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.ContainerAnalysisOccurrence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 &containeranalysisoccurrence.ContainerAnalysisOccurrenceAttestation {
 	SerializedPayload: *string,
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 &containeranalysisoccurrence.ContainerAnalysisOccurrenceAttestationSignatures {
 	PublicKeyId: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 &containeranalysisoccurrence.ContainerAnalysisOccurrenceConfig {
 	Connection: interface{},
@@ -1100,14 +1100,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysi
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Attestation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation,
+	Attestation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation,
 	NoteName: *string,
 	ResourceUri: *string,
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
 	Remediation: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts,
 }
 ```
 
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 &containeranalysisoccurrence.ContainerAnalysisOccurrenceTimeouts {
 	Create: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.NewContainerAnalysisOccurrenceAttestationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAnalysisOccurrenceAttestationOutputReference
 ```
@@ -1697,7 +1697,7 @@ func InternalValue() ContainerAnalysisOccurrenceAttestation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.NewContainerAnalysisOccurrenceAttestationSignaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAnalysisOccurrenceAttestationSignaturesList
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.NewContainerAnalysisOccurrenceAttestationSignaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerAnalysisOccurrenceAttestationSignaturesOutputReference
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisoccurrence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisoccurrence"
 
 containeranalysisoccurrence.NewContainerAnalysisOccurrenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAnalysisOccurrenceTimeoutsOutputReference
 ```

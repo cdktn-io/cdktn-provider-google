@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 servicedirectorynamespaceiampolicy.NewServiceDirectoryNamespaceIamPolicy(scope Construct, id *string, config ServiceDirectoryNamespaceIamPolicyConfig) ServiceDirectoryNamespaceIamPolicy
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryNamespaceIamPolicy.ServiceDirectoryNamespaceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectorynamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiampolicy"
 
 &servicedirectorynamespaceiampolicy.ServiceDirectoryNamespaceIamPolicyConfig {
 	Connection: interface{},
