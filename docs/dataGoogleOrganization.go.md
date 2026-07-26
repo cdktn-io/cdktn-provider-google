@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 datagoogleorganization.NewDataGoogleOrganization(scope Construct, id *string, config DataGoogleOrganizationConfig) DataGoogleOrganization
 ```
@@ -319,7 +319,7 @@ func ResetOrganization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 datagoogleorganization.DataGoogleOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 datagoogleorganization.DataGoogleOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleorganization.DataGoogleOrganization_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 datagoogleorganization.DataGoogleOrganization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleorganization.DataGoogleOrganization_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 datagoogleorganization.DataGoogleOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOrganization.DataGoogleOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganization"
 
 &datagoogleorganization.DataGoogleOrganizationConfig {
 	Connection: interface{},

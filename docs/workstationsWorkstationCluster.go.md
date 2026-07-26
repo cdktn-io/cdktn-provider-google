@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationCluster(scope Construct, id *string, config WorkstationsWorkstationClusterConfig) WorkstationsWorkstationCluster
 ```
@@ -530,7 +530,7 @@ func ResetWorkstationLaunchUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.WorkstationsWorkstationCluster_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.WorkstationsWorkstationCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ workstationsworkstationcluster.WorkstationsWorkstationCluster_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.WorkstationsWorkstationCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ workstationsworkstationcluster.WorkstationsWorkstationCluster_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.WorkstationsWorkstationCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1281,7 +1281,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 &workstationsworkstationcluster.WorkstationsWorkstationClusterConditions {
 
@@ -1294,7 +1294,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 &workstationsworkstationcluster.WorkstationsWorkstationClusterConfig {
 	Connection: interface{},
@@ -1310,14 +1310,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 	Annotations: *map[string]*string,
 	DeletionPolicy: *string,
 	DisplayName: *string,
-	DomainConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfig,
+	DomainConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfig,
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	PrivateClusterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfig,
+	PrivateClusterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfig,
 	Project: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeouts,
 	WorkstationAuthorizationUrl: *string,
 	WorkstationLaunchUrl: *string,
 }
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 &workstationsworkstationcluster.WorkstationsWorkstationClusterDomainConfig {
 	Domain: *string,
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 &workstationsworkstationcluster.WorkstationsWorkstationClusterPrivateClusterConfig {
 	EnablePrivateEndpoint: interface{},
@@ -1759,7 +1759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 &workstationsworkstationcluster.WorkstationsWorkstationClusterTimeouts {
 	Create: *string,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationClusterConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationClusterConditionsList
 ```
@@ -1970,7 +1970,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationClusterConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationClusterConditionsOutputReference
 ```
@@ -2270,7 +2270,7 @@ func InternalValue() WorkstationsWorkstationClusterConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationClusterDomainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationClusterDomainConfigOutputReference
 ```
@@ -2541,7 +2541,7 @@ func InternalValue() WorkstationsWorkstationClusterDomainConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationClusterPrivateClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationClusterPrivateClusterConfigOutputReference
 ```
@@ -2863,7 +2863,7 @@ func InternalValue() WorkstationsWorkstationClusterPrivateClusterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationcluster"
 
 workstationsworkstationcluster.NewWorkstationsWorkstationClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.NewComputeRegionSslPolicy(scope Construct, id *string, config ComputeRegionSslPolicyConfig) ComputeRegionSslPolicy
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.ComputeRegionSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.ComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ computeregionsslpolicy.ComputeRegionSslPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.ComputeRegionSslPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ computeregionsslpolicy.ComputeRegionSslPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.ComputeRegionSslPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1058,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 &computeregionsslpolicy.ComputeRegionSslPolicyConfig {
 	Connection: interface{},
@@ -1078,7 +1078,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionssl
 	Profile: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts,
 }
 ```
 
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 &computeregionsslpolicy.ComputeRegionSslPolicyTimeouts {
 	Create: *string,
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslPolicy.ComputeRegionSslPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionsslpolicy"
 
 computeregionsslpolicy.NewComputeRegionSslPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSslPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePool(scope Construct, id *string, config ContainerNodePoolConfig) ContainerNodePool
 ```
@@ -684,7 +684,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.ContainerNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.ContainerNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ containernodepool.ContainerNodePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.ContainerNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ containernodepool.ContainerNodePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.ContainerNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1512,7 +1512,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolAutoscaling {
 	LocationPolicy: *string,
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolConfig {
 	Connection: interface{},
@@ -1631,27 +1631,27 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepoo
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Cluster: *string,
-	Autoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolAutoscaling,
+	Autoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolAutoscaling,
 	DeletionPolicy: *string,
 	Id: *string,
 	IgnoreNodeCountChanges: interface{},
 	InitialNodeCount: *f64,
 	Location: *string,
 	MaintenancePolicy: interface{},
-	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolManagement,
+	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolManagement,
 	MaxPodsPerNode: *f64,
 	Name: *string,
 	NamePrefix: *string,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNetworkConfig,
-	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfig,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNetworkConfig,
+	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfig,
 	NodeCount: *f64,
 	NodeDrainConfig: interface{},
 	NodeLocations: *[]*string,
-	PlacementPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolPlacementPolicy,
+	PlacementPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolPlacementPolicy,
 	Project: *string,
-	QueuedProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolQueuedProvisioning,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolTimeouts,
-	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolUpgradeSettings,
+	QueuedProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolQueuedProvisioning,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolTimeouts,
+	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolUpgradeSettings,
 	Version: *string,
 }
 ```
@@ -2112,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolMaintenancePolicy {
 	ExclusionUntilEndOfSupport: interface{},
@@ -2146,7 +2146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupport {
 	Enabled: interface{},
@@ -2180,7 +2180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolManagement {
 	AutoRepair: interface{},
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNetworkConfig {
 	AcceleratorNetworkProfile: *string,
@@ -2238,8 +2238,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepoo
 	AdditionalPodNetworkConfigs: interface{},
 	CreatePodRange: interface{},
 	EnablePrivateNodes: interface{},
-	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNetworkConfigNetworkPerformanceConfig,
-	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig,
+	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNetworkConfigNetworkPerformanceConfig,
+	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig,
 	PodIpv4CidrBlock: *string,
 	PodRange: *string,
 	Subnetwork: *string,
@@ -2416,7 +2416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs {
 	Network: *string,
@@ -2466,7 +2466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs {
 	MaxPodsPerNode: *f64,
@@ -2532,7 +2532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigNetworkPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNetworkConfigNetworkPerformanceConfig {
 	TotalEgressBandwidthTier: *string,
@@ -2566,7 +2566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig {
 	Disabled: interface{},
@@ -2598,30 +2598,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfig {
-	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeatures,
-	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigBootDisk,
+	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeatures,
+	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigBootDisk,
 	BootDiskKmsKey: *string,
-	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigConfidentialNodes,
-	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfig,
+	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigConfidentialNodes,
+	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfig,
 	DiskSizeGb: *f64,
 	DiskType: *string,
 	EnableConfidentialStorage: interface{},
-	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig,
-	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigFastSocket,
+	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig,
+	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigFastSocket,
 	FlexStart: interface{},
-	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigGcfsConfig,
+	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigGcfsConfig,
 	GpudirectStrategy: *string,
 	GuestAccelerator: interface{},
-	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigGvnic,
-	HostMaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigHostMaintenancePolicy,
+	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigGvnic,
+	HostMaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigHostMaintenancePolicy,
 	ImageType: *string,
-	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfig,
+	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfig,
 	Labels: *map[string]*string,
-	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfig,
-	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig,
+	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfig,
+	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig,
 	LocalSsdCount: *f64,
 	LocalSsdEncryptionMode: *string,
 	LoggingVariant: *string,
@@ -2633,21 +2633,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepoo
 	NodeImageConfig: interface{},
 	OauthScopes: *[]*string,
 	Preemptible: interface{},
-	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigReservationAffinity,
+	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigReservationAffinity,
 	ResourceLabels: *map[string]*string,
 	ResourceManagerTags: *map[string]*string,
-	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigSandboxConfig,
+	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigSandboxConfig,
 	SecondaryBootDisks: interface{},
 	ServiceAccount: *string,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfig,
-	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfig,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfig,
+	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfig,
 	Spot: interface{},
 	StoragePools: *[]*string,
 	Tags: *[]*string,
 	Taint: interface{},
-	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigTaintConfig,
-	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigWindowsNodeConfig,
-	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfig,
+	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigTaintConfig,
+	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigWindowsNodeConfig,
+	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfig,
 }
 ```
 
@@ -3380,7 +3380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigAdvancedMachineFeatures {
 	ThreadsPerCore: *f64,
@@ -3448,7 +3448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigBootDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigBootDisk {
 	DiskType: *string,
@@ -3530,7 +3530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigConfidentialNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigConfidentialNodes {
 	Enabled: interface{},
@@ -3580,12 +3580,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfig {
-	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig,
+	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig,
 	RegistryHosts: interface{},
-	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigWritableCgroups,
+	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigWritableCgroups,
 }
 ```
 
@@ -3646,7 +3646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig {
 	Enabled: interface{},
@@ -3696,11 +3696,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig {
 	Fqdns: *[]*string,
-	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
+	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
 }
 ```
 
@@ -3746,7 +3746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig {
 	SecretUri: *string,
@@ -3780,7 +3780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHosts {
 	Server: *string,
@@ -3830,7 +3830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHosts {
 	Host: *string,
@@ -3960,7 +3960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCa {
 	GcpSecretManagerSecretUri: *string,
@@ -3994,11 +3994,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClient {
-	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert,
-	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey,
+	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert,
+	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey,
 }
 ```
 
@@ -4044,7 +4044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert {
 	GcpSecretManagerSecretUri: *string,
@@ -4078,7 +4078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey {
 	GcpSecretManagerSecretUri: *string,
@@ -4112,7 +4112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeader {
 	Key: *string,
@@ -4162,7 +4162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigWritableCgroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigContainerdConfigWritableCgroups {
 	Enabled: interface{},
@@ -4196,7 +4196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigEffectiveTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigEffectiveTaints {
 
@@ -4209,7 +4209,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepoo
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig {
 	LocalSsdCount: *f64,
@@ -4261,7 +4261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigFastSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigFastSocket {
 	Enabled: interface{},
@@ -4295,7 +4295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGcfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigGcfsConfig {
 	Enabled: interface{},
@@ -4329,14 +4329,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigGuestAccelerator {
 	Count: *f64,
 	Type: *string,
-	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
+	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
 	GpuPartitionSize: *string,
-	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig,
+	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig,
 }
 ```
 
@@ -4427,7 +4427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig {
 	GpuDriverVersion: *string,
@@ -4461,7 +4461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig {
 	GpuSharingStrategy: *string,
@@ -4513,7 +4513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGvnic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigGvnic {
 	Enabled: interface{},
@@ -4547,7 +4547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigHostMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigHostMaintenancePolicy {
 	MaintenanceInterval: *string,
@@ -4581,7 +4581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfig {
 	AllowedUnsafeSysctls: *[]*string,
@@ -4590,23 +4590,23 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepoo
 	CpuCfsQuota: interface{},
 	CpuCfsQuotaPeriod: *string,
 	CpuManagerPolicy: *string,
-	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff,
+	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff,
 	EvictionMaxPodGracePeriodSeconds: *f64,
-	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim,
-	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoft,
-	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod,
+	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim,
+	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoft,
+	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod,
 	ImageGcHighThresholdPercent: *f64,
 	ImageGcLowThresholdPercent: *f64,
 	ImageMaximumGcAge: *string,
 	ImageMinimumGcAge: *string,
 	InsecureKubeletReadonlyPortEnabled: *string,
 	MaxParallelImagePulls: *f64,
-	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigMemoryManager,
+	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigMemoryManager,
 	PodPidsLimit: *f64,
 	ShutdownGracePeriodCriticalPodsSeconds: *f64,
 	ShutdownGracePeriodSeconds: *f64,
 	SingleProcessOomKill: interface{},
-	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigTopologyManager,
+	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigTopologyManager,
 }
 ```
 
@@ -4971,7 +4971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff {
 	MaxContainerRestartPeriod: *string,
@@ -5005,7 +5005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim {
 	ImagefsAvailable: *string,
@@ -5119,7 +5119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoft {
 	ImagefsAvailable: *string,
@@ -5233,7 +5233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod {
 	ImagefsAvailable: *string,
@@ -5347,7 +5347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigMemoryManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigMemoryManager {
 	Policy: *string,
@@ -5383,7 +5383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigTopologyManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigKubeletConfigTopologyManager {
 	Policy: *string,
@@ -5435,15 +5435,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfig {
-	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig,
+	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig,
 	CgroupMode: *string,
-	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit,
-	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig,
-	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
-	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig,
+	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit,
+	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig,
+	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
+	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig,
 	Sysctls: *map[string]*string,
 	TransparentHugepageDefrag: *string,
 	TransparentHugepageEnabled: *string,
@@ -5597,7 +5597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig {
 	EnablePtpKvmTimeSync: interface{},
@@ -5631,10 +5631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit {
-	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
+	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
 }
 ```
 
@@ -5665,7 +5665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript {
 	GcpSecretManagerSecretUri: *string,
@@ -5731,7 +5731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig {
 	HugepageSize1G: *f64,
@@ -5781,7 +5781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading {
 	Policy: *string,
@@ -5815,14 +5815,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig {
-	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
-	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
+	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
+	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
 	Enabled: interface{},
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
-	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
+	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
 }
 ```
 
@@ -5913,7 +5913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile {
 	SwapSizeGib: *f64,
@@ -5963,7 +5963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile {
 	DiskCount: *f64,
@@ -5997,7 +5997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig {
 	Disabled: interface{},
@@ -6031,7 +6031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile {
 	SwapSizeGib: *f64,
@@ -6081,7 +6081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig {
 	LocalSsdCount: *f64,
@@ -6117,7 +6117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigNodeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigNodeImageConfig {
 	Image: *string,
@@ -6171,7 +6171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigReservationAffinity {
 	ConsumeReservationType: *string,
@@ -6237,7 +6237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSandboxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigSandboxConfig {
 	Type: *string,
@@ -6271,7 +6271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSecondaryBootDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigSecondaryBootDisks {
 	DiskImage: *string,
@@ -6321,7 +6321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -6371,7 +6371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigSoleTenantConfig {
 	NodeAffinity: interface{},
@@ -6423,7 +6423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity {
 	Key: *string,
@@ -6489,7 +6489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigTaint {
 	Effect: *string,
@@ -6555,7 +6555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigTaintConfig {
 	ArchitectureTaintBehavior: *string,
@@ -6589,7 +6589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigWindowsNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigWindowsNodeConfig {
 	Osversion: *string,
@@ -6623,7 +6623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeConfigWorkloadMetadataConfig {
 	Mode: *string,
@@ -6657,7 +6657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeDrainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolNodeDrainConfig {
 	GraceTerminationDuration: *string,
@@ -6723,7 +6723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolPlacementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolPlacementPolicy {
 	Type: *string,
@@ -6791,7 +6791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolQueuedProvisioning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolQueuedProvisioning {
 	Enabled: interface{},
@@ -6825,7 +6825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolTimeouts {
 	Create: *string,
@@ -6885,10 +6885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolUpgradeSettings {
-	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettings,
+	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettings,
 	MaxSurge: *f64,
 	MaxUnavailable: *f64,
 	Strategy: *string,
@@ -6971,10 +6971,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolUpgradeSettingsBlueGreenSettings {
-	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
+	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
 	NodePoolSoakDuration: *string,
 }
 ```
@@ -7021,7 +7021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 &containernodepool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy {
 	BatchNodeCount: *f64,
@@ -7089,7 +7089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolAutoscalingOutputReference
 ```
@@ -7483,7 +7483,7 @@ func InternalValue() ContainerNodePoolAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportList
 ```
@@ -7643,7 +7643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference
 ```
@@ -7961,7 +7961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolMaintenancePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolMaintenancePolicyList
 ```
@@ -8121,7 +8121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolMaintenancePolicyOutputReference
 ```
@@ -8430,7 +8430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolManagementOutputReference
 ```
@@ -8737,7 +8737,7 @@ func InternalValue() ContainerNodePoolManagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
 ```
@@ -8897,7 +8897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference
 ```
@@ -9222,7 +9222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList
 ```
@@ -9382,7 +9382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference
 ```
@@ -9736,7 +9736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigNetworkPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNetworkConfigNetworkPerformanceConfigOutputReference
 ```
@@ -10007,7 +10007,7 @@ func InternalValue() ContainerNodePoolNetworkConfigNetworkPerformanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNetworkConfigOutputReference
 ```
@@ -10598,7 +10598,7 @@ func InternalValue() ContainerNodePoolNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference
 ```
@@ -10869,7 +10869,7 @@ func InternalValue() ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
 ```
@@ -11198,7 +11198,7 @@ func InternalValue() ContainerNodePoolNodeConfigAdvancedMachineFeatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigBootDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigBootDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigBootDiskOutputReference
 ```
@@ -11563,7 +11563,7 @@ func InternalValue() ContainerNodePoolNodeConfigBootDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigConfidentialNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigConfidentialNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigConfidentialNodesOutputReference
 ```
@@ -11863,7 +11863,7 @@ func InternalValue() ContainerNodePoolNodeConfigConfidentialNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigOutputReference
 ```
@@ -12238,7 +12238,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference
 ```
@@ -12509,7 +12509,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList
 ```
@@ -12669,7 +12669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference
 ```
@@ -12993,7 +12993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference
 ```
@@ -13306,7 +13306,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList
 ```
@@ -13466,7 +13466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference
 ```
@@ -13762,7 +13762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference
 ```
@@ -14040,7 +14040,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference
 ```
@@ -14318,7 +14318,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHos
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList
 ```
@@ -14478,7 +14478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference
 ```
@@ -14822,7 +14822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList
 ```
@@ -14982,7 +14982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference
 ```
@@ -15293,7 +15293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsList
 ```
@@ -15453,7 +15453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference
 ```
@@ -15955,7 +15955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsList
 ```
@@ -16115,7 +16115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference
 ```
@@ -16446,7 +16446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference
 ```
@@ -16717,7 +16717,7 @@ func InternalValue() ContainerNodePoolNodeConfigContainerdConfigWritableCgroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigEffectiveTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigEffectiveTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigEffectiveTaintsList
 ```
@@ -16866,7 +16866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigEffectiveTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigEffectiveTaintsOutputReference
 ```
@@ -17166,7 +17166,7 @@ func InternalValue() ContainerNodePoolNodeConfigEffectiveTaints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 ```
@@ -17466,7 +17466,7 @@ func InternalValue() ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigFastSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigFastSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigFastSocketOutputReference
 ```
@@ -17737,7 +17737,7 @@ func InternalValue() ContainerNodePoolNodeConfigFastSocket
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGcfsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGcfsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigGcfsConfigOutputReference
 ```
@@ -18008,7 +18008,7 @@ func InternalValue() ContainerNodePoolNodeConfigGcfsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference
 ```
@@ -18279,7 +18279,7 @@ func InternalValue() ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstall
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference
 ```
@@ -18572,7 +18572,7 @@ func InternalValue() ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGuestAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigGuestAcceleratorList
 ```
@@ -18732,7 +18732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGuestAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigGuestAcceleratorOutputReference
 ```
@@ -19156,7 +19156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigGvnicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigGvnicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigGvnicOutputReference
 ```
@@ -19427,7 +19427,7 @@ func InternalValue() ContainerNodePoolNodeConfigGvnic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference
 ```
@@ -19698,7 +19698,7 @@ func InternalValue() ContainerNodePoolNodeConfigHostMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference
 ```
@@ -19976,7 +19976,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
 ```
@@ -20399,7 +20399,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumRecl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
 ```
@@ -20822,7 +20822,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
 ```
@@ -21245,7 +21245,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigEvictionSoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference
 ```
@@ -21523,7 +21523,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigMemoryManager
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigOutputReference
 ```
@@ -22517,7 +22517,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference
 ```
@@ -22824,7 +22824,7 @@ func InternalValue() ContainerNodePoolNodeConfigKubeletConfigTopologyManager
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 ```
@@ -23102,7 +23102,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference
 ```
@@ -23438,7 +23438,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference
 ```
@@ -23729,7 +23729,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
 ```
@@ -24036,7 +24036,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
 ```
@@ -24314,7 +24314,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleL
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference
 ```
@@ -24889,7 +24889,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference
 ```
@@ -25196,7 +25196,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDis
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference
 ```
@@ -25474,7 +25474,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference
 ```
@@ -25752,7 +25752,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncrypt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference
 ```
@@ -26059,7 +26059,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference
 ```
@@ -26505,7 +26505,7 @@ func InternalValue() ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
 ```
@@ -26776,7 +26776,7 @@ func InternalValue() ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigNodeImageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigNodeImageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigNodeImageConfigList
 ```
@@ -26936,7 +26936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigNodeImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigNodeImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigNodeImageConfigOutputReference
 ```
@@ -27261,7 +27261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigOutputReference
 ```
@@ -29183,7 +29183,7 @@ func InternalValue() ContainerNodePoolNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigReservationAffinityOutputReference
 ```
@@ -29512,7 +29512,7 @@ func InternalValue() ContainerNodePoolNodeConfigReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSandboxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSandboxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigSandboxConfigOutputReference
 ```
@@ -29783,7 +29783,7 @@ func InternalValue() ContainerNodePoolNodeConfigSandboxConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSecondaryBootDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSecondaryBootDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigSecondaryBootDisksList
 ```
@@ -29943,7 +29943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSecondaryBootDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference
 ```
@@ -30261,7 +30261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference
 ```
@@ -30568,7 +30568,7 @@ func InternalValue() ContainerNodePoolNodeConfigShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList
 ```
@@ -30728,7 +30728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference
 ```
@@ -31061,7 +31061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigSoleTenantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigSoleTenantConfigOutputReference
 ```
@@ -31374,7 +31374,7 @@ func InternalValue() ContainerNodePoolNodeConfigSoleTenantConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigTaintConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigTaintConfigOutputReference
 ```
@@ -31645,7 +31645,7 @@ func InternalValue() ContainerNodePoolNodeConfigTaintConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeConfigTaintList
 ```
@@ -31805,7 +31805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeConfigTaintOutputReference
 ```
@@ -32138,7 +32138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigWindowsNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigWindowsNodeConfigOutputReference
 ```
@@ -32416,7 +32416,7 @@ func InternalValue() ContainerNodePoolNodeConfigWindowsNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 ```
@@ -32687,7 +32687,7 @@ func InternalValue() ContainerNodePoolNodeConfigWorkloadMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeDrainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeDrainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerNodePoolNodeDrainConfigList
 ```
@@ -32847,7 +32847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolNodeDrainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolNodeDrainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerNodePoolNodeDrainConfigOutputReference
 ```
@@ -33201,7 +33201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolPlacementPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolPlacementPolicyOutputReference
 ```
@@ -33530,7 +33530,7 @@ func InternalValue() ContainerNodePoolPlacementPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolQueuedProvisioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolQueuedProvisioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolQueuedProvisioningOutputReference
 ```
@@ -33801,7 +33801,7 @@ func InternalValue() ContainerNodePoolQueuedProvisioning
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolTimeoutsOutputReference
 ```
@@ -34137,7 +34137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
 ```
@@ -34450,7 +34450,7 @@ func InternalValue() ContainerNodePoolUpgradeSettingsBlueGreenSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference
 ```
@@ -34786,7 +34786,7 @@ func InternalValue() ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containernodepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containernodepool"
 
 containernodepool.NewContainerNodePoolUpgradeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerNodePoolUpgradeSettingsOutputReference
 ```

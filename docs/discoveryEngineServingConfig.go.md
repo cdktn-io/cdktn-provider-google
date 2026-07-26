@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.NewDiscoveryEngineServingConfig(scope Construct, id *string, config DiscoveryEngineServingConfigConfig) DiscoveryEngineServingConfig
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.DiscoveryEngineServingConfig_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.DiscoveryEngineServingConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ discoveryengineservingconfig.DiscoveryEngineServingConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.DiscoveryEngineServingConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ discoveryengineservingconfig.DiscoveryEngineServingConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.DiscoveryEngineServingConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1047,7 +1047,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 &discoveryengineservingconfig.DiscoveryEngineServingConfigConfig {
 	Connection: interface{},
@@ -1068,7 +1068,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengines
 	RedirectControlIds: *[]*string,
 	ServingConfigId: *string,
 	SynonymsControlIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeouts,
 }
 ```
 
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 &discoveryengineservingconfig.DiscoveryEngineServingConfigTimeouts {
 	Create: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineservingconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineservingconfig"
 
 discoveryengineservingconfig.NewDiscoveryEngineServingConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineServingConfigTimeoutsOutputReference
 ```

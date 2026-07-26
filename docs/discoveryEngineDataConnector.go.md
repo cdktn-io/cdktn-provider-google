@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnector(scope Construct, id *string, config DiscoveryEngineDataConnectorConfig) DiscoveryEngineDataConnector
 ```
@@ -591,7 +591,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.DiscoveryEngineDataConnector_IsConstruct(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.DiscoveryEngineDataConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ discoveryenginedataconnector.DiscoveryEngineDataConnector_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.DiscoveryEngineDataConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ discoveryenginedataconnector.DiscoveryEngineDataConnector_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.DiscoveryEngineDataConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1529,7 +1529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorActionConfig {
 	ActionParams: *map[string]*string,
@@ -1582,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorBapConfig {
 	EnabledActions: *[]*string,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorConfig {
 	Connection: interface{},
@@ -1647,9 +1647,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengined
 	DataSource: *string,
 	Location: *string,
 	RefreshInterval: *string,
-	ActionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig,
+	ActionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig,
 	AutoRunDisabled: interface{},
-	BapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig,
+	BapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig,
 	ConnectorModes: *[]*string,
 	DataSourceVersion: *f64,
 	DeletionPolicy: *string,
@@ -1664,7 +1664,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengined
 	Project: *string,
 	StaticIpEnabled: interface{},
 	SyncMode: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts,
 }
 ```
 
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorDestinationConfigs {
 	Destinations: interface{},
@@ -2255,7 +2255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorDestinationConfigsDestinations {
 	Host: *string,
@@ -2305,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorEntities {
 	EntityName: *string,
@@ -2386,7 +2386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorErrors {
 
@@ -2399,7 +2399,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengined
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 &discoveryenginedataconnector.DiscoveryEngineDataConnectorTimeouts {
 	Create: *string,
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorActionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataConnectorActionConfigOutputReference
 ```
@@ -2779,7 +2779,7 @@ func InternalValue() DiscoveryEngineDataConnectorActionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorBapConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataConnectorBapConfigOutputReference
 ```
@@ -3086,7 +3086,7 @@ func InternalValue() DiscoveryEngineDataConnectorBapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorDestinationConfigsDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineDataConnectorDestinationConfigsDestinationsList
 ```
@@ -3246,7 +3246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference
 ```
@@ -3571,7 +3571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorDestinationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineDataConnectorDestinationConfigsList
 ```
@@ -3731,7 +3731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorDestinationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineDataConnectorDestinationConfigsOutputReference
 ```
@@ -4098,7 +4098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineDataConnectorEntitiesList
 ```
@@ -4258,7 +4258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineDataConnectorEntitiesOutputReference
 ```
@@ -4623,7 +4623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineDataConnectorErrorsList
 ```
@@ -4772,7 +4772,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineDataConnectorErrorsOutputReference
 ```
@@ -5061,7 +5061,7 @@ func InternalValue() DiscoveryEngineDataConnectorErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginedataconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginedataconnector"
 
 discoveryenginedataconnector.NewDiscoveryEngineDataConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataConnectorTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVault(scope Construct, id *string, config DataGoogleOracleDatabaseExascaleDbStorageVaultConfig) DataGoogleOracleDatabaseExascaleDbStorageVault
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVault_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleD
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 &datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVaultConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 &datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVaultProperties {
 
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracle
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 &datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails {
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracle
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 &datagoogleoracledatabaseexascaledbstoragevault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZone {
 
@@ -1010,7 +1010,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracle
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsList
 ```
@@ -1159,7 +1159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesExa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesList
 ```
@@ -1597,7 +1597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() DataGoogleOracleDatabaseExascaleDbStorageVaultProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneList
 ```
@@ -2123,7 +2123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseExascaleDbStorageVault.DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabaseexascaledbstoragevault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseexascaledbstoragevault"
 
 datagoogleoracledatabaseexascaledbstoragevault.NewDataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.NewStorageBucketIamMember(scope Construct, id *string, config StorageBucketIamMemberConfig) StorageBucketIamMember
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.StorageBucketIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.StorageBucketIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ storagebucketiammember.StorageBucketIamMember_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.StorageBucketIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ storagebucketiammember.StorageBucketIamMember_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.StorageBucketIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 &storagebucketiammember.StorageBucketIamMemberCondition {
 	Expression: *string,
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 &storagebucketiammember.StorageBucketIamMemberConfig {
 	Connection: interface{},
@@ -952,9 +952,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiam
 	Bucket: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucketIamMember.StorageBucketIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucketIamMember.StorageBucketIamMemberCondition,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucketIamMember.StorageBucketIamMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucketIamMember.StorageBucketIamMemberTimeouts,
 }
 ```
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 &storagebucketiammember.StorageBucketIamMemberTimeouts {
 	Create: *string,
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.NewStorageBucketIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketIamMemberConditionOutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() StorageBucketIamMemberCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucketiammember"
 
 storagebucketiammember.NewStorageBucketIamMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketIamMemberTimeoutsOutputReference
 ```

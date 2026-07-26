@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 networkconnectivityhubiampolicy.NewNetworkConnectivityHubIamPolicy(scope Construct, id *string, config NetworkConnectivityHubIamPolicyConfig) NetworkConnectivityHubIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhubiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhubiampolicy"
 
 &networkconnectivityhubiampolicy.NetworkConnectivityHubIamPolicyConfig {
 	Connection: interface{},

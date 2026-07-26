@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManager(scope Construct, id *string, config DataGoogleComputeRegionInstanceGroupManagerConfig) DataGoogleComputeRegionInstanceGroupManager
 ```
@@ -333,7 +333,7 @@ func ResetSelfLink()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManager_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroup
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManager.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManager_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroup
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManager.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManager_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfig {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAutoHealingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerAutoHealingPolicies {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerConfig {
 	Connection: interface{},
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy {
 
@@ -1266,7 +1266,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelections {
 
@@ -1279,7 +1279,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy {
 
@@ -1292,7 +1292,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepair.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepair {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerNamedPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerNamedPort {
 
@@ -1318,7 +1318,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerResourcePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerResourcePolicies {
 
@@ -1331,7 +1331,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStandbyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStandbyPolicy {
 
@@ -1344,7 +1344,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatefulDisk {
 
@@ -1357,7 +1357,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIp {
 
@@ -1370,7 +1370,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIp {
 
@@ -1383,7 +1383,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatus {
 
@@ -1396,7 +1396,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig {
 
@@ -1409,7 +1409,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStateful.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatusStateful {
 
@@ -1422,7 +1422,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs {
 
@@ -1435,7 +1435,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusVersionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerStatusVersionTarget {
 
@@ -1448,7 +1448,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicy {
 
@@ -1461,7 +1461,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerUpdatePolicy {
 
@@ -1474,7 +1474,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerVersion {
 
@@ -1487,7 +1487,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersionTargetSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 &datagooglecomputeregioninstancegroupmanager.DataGoogleComputeRegionInstanceGroupManagerVersionTargetSize {
 
@@ -1502,7 +1502,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigList
 ```
@@ -1651,7 +1651,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerAllInstancesConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesList
 ```
@@ -2089,7 +2089,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerAutoHealingPolic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsList
 ```
@@ -2527,7 +2527,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyInstanceSelectionsOutputReference
 ```
@@ -2827,7 +2827,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibil
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyList
 ```
@@ -2976,7 +2976,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference
 ```
@@ -3254,7 +3254,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibil
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyList
 ```
@@ -3403,7 +3403,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairList
 ```
@@ -3552,7 +3552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOnRepairOutputReference
 ```
@@ -3830,7 +3830,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerInstanceLifecycl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 ```
@@ -4141,7 +4141,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerInstanceLifecycl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerNamedPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerNamedPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerNamedPortList
 ```
@@ -4290,7 +4290,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerNamedPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerNamedPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerNamedPortOutputReference
 ```
@@ -4579,7 +4579,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerNamedPort
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerResourcePoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerResourcePoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerResourcePoliciesList
 ```
@@ -4728,7 +4728,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerResourcePoliciesOutputReference
 ```
@@ -5006,7 +5006,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerResourcePolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyList
 ```
@@ -5155,7 +5155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStandbyPolicyOutputReference
 ```
@@ -5444,7 +5444,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStandbyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList
 ```
@@ -5593,7 +5593,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulDiskOutputReference
 ```
@@ -5882,7 +5882,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatefulDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
 ```
@@ -6031,7 +6031,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference
 ```
@@ -6320,7 +6320,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatefulExternal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
 ```
@@ -6469,7 +6469,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference
 ```
@@ -6758,7 +6758,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatefulInternal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList
 ```
@@ -6907,7 +6907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference
 ```
@@ -7196,7 +7196,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatusAllInstanc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusList
 ```
@@ -7345,7 +7345,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusOutputReference
 ```
@@ -7656,7 +7656,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusStatefulList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusStatefulList
 ```
@@ -7805,7 +7805,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference
 ```
@@ -8094,7 +8094,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatusStateful
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsList
 ```
@@ -8243,7 +8243,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference
 ```
@@ -8521,7 +8521,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatusStatefulPe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetList
 ```
@@ -8670,7 +8670,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerStatusVersionTargetOutputReference
 ```
@@ -8948,7 +8948,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerStatusVersionTar
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyList
 ```
@@ -9097,7 +9097,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference
 ```
@@ -9375,7 +9375,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerTargetSizePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerUpdatePolicyList
 ```
@@ -9524,7 +9524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerUpdatePolicyOutputReference
 ```
@@ -9890,7 +9890,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerVersionList
 ```
@@ -10039,7 +10039,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerVersionOutputReference
 ```
@@ -10339,7 +10339,7 @@ func InternalValue() DataGoogleComputeRegionInstanceGroupManagerVersion
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeList
 ```
@@ -10488,7 +10488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstanceGroupManager.DataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstancegroupmanager"
 
 datagooglecomputeregioninstancegroupmanager.NewDataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference
 ```

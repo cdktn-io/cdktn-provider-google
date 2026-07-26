@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParser(scope Construct, id *string, config ChronicleParserConfig) ChronicleParser
 ```
@@ -502,7 +502,7 @@ func ResetVersionInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleParser.ChronicleParser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.ChronicleParser_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleParser.ChronicleParser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.ChronicleParser_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ chronicleparser.ChronicleParser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleParser.ChronicleParser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.ChronicleParser_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ chronicleparser.ChronicleParser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleParser.ChronicleParser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.ChronicleParser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1187,7 +1187,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserChangelogs {
 
@@ -1200,7 +1200,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogsEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserChangelogsEntries {
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserConfig {
 	Connection: interface{},
@@ -1229,12 +1229,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
 	Cbn: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	LowCode: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleParser.ChronicleParserLowCode,
+	LowCode: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParser.ChronicleParserLowCode,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleParser.ChronicleParserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParser.ChronicleParserTimeouts,
 	ValidatedOnEmptyLogs: interface{},
 	ValidationSkipped: interface{},
-	VersionInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleParser.ChronicleParserVersionInfo,
+	VersionInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParser.ChronicleParserVersionInfo,
 }
 ```
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserCreator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserCreator {
 
@@ -1529,10 +1529,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserLowCode {
-	FieldExtractors: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleParser.ChronicleParserLowCodeFieldExtractors,
+	FieldExtractors: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParser.ChronicleParserLowCodeFieldExtractors,
 	Log: *string,
 }
 ```
@@ -1579,13 +1579,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserLowCodeFieldExtractors {
 	AppendRepeatedFields: interface{},
 	Extractors: interface{},
 	LogFormat: *string,
-	PreprocessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleParser.ChronicleParserLowCodeFieldExtractorsPreprocessConfig,
+	PreprocessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParser.ChronicleParserLowCodeFieldExtractorsPreprocessConfig,
 }
 ```
 
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsExtractors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserLowCodeFieldExtractorsExtractors {
 	DestinationPath: *string,
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsPreprocessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserLowCodeFieldExtractorsPreprocessConfig {
 	GrokRegex: *string,
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserTimeouts {
 	Create: *string,
@@ -1894,7 +1894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParser.ChronicleParserVersionInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 &chronicleparser.ChronicleParserVersionInfo {
 	AutoUpgradeDisabled: interface{},
@@ -1933,7 +1933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogsEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserChangelogsEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserChangelogsEntriesList
 ```
@@ -2082,7 +2082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogsEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserChangelogsEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserChangelogsEntriesOutputReference
 ```
@@ -2393,7 +2393,7 @@ func InternalValue() ChronicleParserChangelogsEntries
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserChangelogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserChangelogsList
 ```
@@ -2542,7 +2542,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserChangelogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserChangelogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserChangelogsOutputReference
 ```
@@ -2820,7 +2820,7 @@ func InternalValue() ChronicleParserChangelogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserCreatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserCreatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserCreatorList
 ```
@@ -2969,7 +2969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserCreatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserCreatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserCreatorOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() ChronicleParserCreator
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsExtractorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserLowCodeFieldExtractorsExtractorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserLowCodeFieldExtractorsExtractorsList
 ```
@@ -3429,7 +3429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsExtractorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserLowCodeFieldExtractorsExtractorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserLowCodeFieldExtractorsExtractorsOutputReference
 ```
@@ -3870,7 +3870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserLowCodeFieldExtractorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserLowCodeFieldExtractorsOutputReference
 ```
@@ -4272,7 +4272,7 @@ func InternalValue() ChronicleParserLowCodeFieldExtractors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeFieldExtractorsPreprocessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserLowCodeFieldExtractorsPreprocessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserLowCodeFieldExtractorsPreprocessConfigOutputReference
 ```
@@ -4579,7 +4579,7 @@ func InternalValue() ChronicleParserLowCodeFieldExtractorsPreprocessConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserLowCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserLowCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserLowCodeOutputReference
 ```
@@ -4899,7 +4899,7 @@ func InternalValue() ChronicleParserLowCode
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserTimeoutsOutputReference
 ```
@@ -5235,7 +5235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParser.ChronicleParserVersionInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleparser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparser"
 
 chronicleparser.NewChronicleParserVersionInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserVersionInfoOutputReference
 ```

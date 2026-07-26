@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.NewSecretManagerSecretIamMember(scope Construct, id *string, config SecretManagerSecretIamMemberConfig) SecretManagerSecretIamMember
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.SecretManagerSecretIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.SecretManagerSecretIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ secretmanagersecretiammember.SecretManagerSecretIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.SecretManagerSecretIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ secretmanagersecretiammember.SecretManagerSecretIamMember_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.SecretManagerSecretIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 &secretmanagersecretiammember.SecretManagerSecretIamMemberCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 &secretmanagersecretiammember.SecretManagerSecretIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersec
 	Member: *string,
 	Role: *string,
 	SecretId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretiammember"
 
 secretmanagersecretiammember.NewSecretManagerSecretIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerSecretIamMemberConditionOutputReference
 ```

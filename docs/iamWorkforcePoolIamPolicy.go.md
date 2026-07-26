@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 iamworkforcepooliampolicy.NewIamWorkforcePoolIamPolicy(scope Construct, id *string, config IamWorkforcePoolIamPolicyConfig) IamWorkforcePoolIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 iamworkforcepooliampolicy.IamWorkforcePoolIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolIamPolicy.IamWorkforcePoolIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliampolicy"
 
 &iamworkforcepooliampolicy.IamWorkforcePoolIamPolicyConfig {
 	Connection: interface{},

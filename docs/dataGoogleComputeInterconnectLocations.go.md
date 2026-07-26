@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.NewDataGoogleComputeInterconnectLocations(scope Construct, id *string, config DataGoogleComputeInterconnectLocationsConfig) DataGoogleComputeInterconnectLocations
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 &datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocationsConfig {
 	Connection: interface{},
@@ -767,7 +767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocationsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 &datagooglecomputeinterconnectlocations.DataGoogleComputeInterconnectLocationsLocations {
 
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocationsLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.NewDataGoogleComputeInterconnectLocationsLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInterconnectLocationsLocationsList
 ```
@@ -931,7 +931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocations.DataGoogleComputeInterconnectLocationsLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinterconnectlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinterconnectlocations"
 
 datagooglecomputeinterconnectlocations.NewDataGoogleComputeInterconnectLocationsLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInterconnectLocationsLocationsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 datagooglecloudtasksqueueiampolicy.NewDataGoogleCloudTasksQueueIamPolicy(scope Construct, id *string, config DataGoogleCloudTasksQueueIamPolicyConfig) DataGoogleCloudTasksQueueIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudtasksqueueiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudtasksqueueiampolicy"
 
 &datagooglecloudtasksqueueiampolicy.DataGoogleCloudTasksQueueIamPolicyConfig {
 	Connection: interface{},

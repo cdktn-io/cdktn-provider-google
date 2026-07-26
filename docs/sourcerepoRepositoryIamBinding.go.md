@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.NewSourcerepoRepositoryIamBinding(scope Construct, id *string, config SourcerepoRepositoryIamBindingConfig) SourcerepoRepositoryIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.SourcerepoRepositoryIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 &sourcereporepositoryiambinding.SourcerepoRepositoryIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 &sourcereporepositoryiambinding.SourcerepoRepositoryIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporeposi
 	Members: *[]*string,
 	Repository: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sourcereporepositoryiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sourcereporepositoryiambinding"
 
 sourcereporepositoryiambinding.NewSourcerepoRepositoryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SourcerepoRepositoryIamBindingConditionOutputReference
 ```

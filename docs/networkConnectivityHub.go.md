@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NewNetworkConnectivityHub(scope Construct, id *string, config NetworkConnectivityHubConfig) NetworkConnectivityHub
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NetworkConnectivityHub_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NetworkConnectivityHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ networkconnectivityhub.NetworkConnectivityHub_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NetworkConnectivityHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ networkconnectivityhub.NetworkConnectivityHub_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NetworkConnectivityHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 &networkconnectivityhub.NetworkConnectivityHubConfig {
 	Connection: interface{},
@@ -1088,7 +1088,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 	PolicyMode: *string,
 	PresetTopology: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityHub.NetworkConnectivityHubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityHub.NetworkConnectivityHubTimeouts,
 }
 ```
 
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 &networkconnectivityhub.NetworkConnectivityHubRoutingVpcs {
 
@@ -1359,7 +1359,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 &networkconnectivityhub.NetworkConnectivityHubTimeouts {
 	Create: *string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NewNetworkConnectivityHubRoutingVpcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityHubRoutingVpcsList
 ```
@@ -1570,7 +1570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NewNetworkConnectivityHubRoutingVpcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityHubRoutingVpcsOutputReference
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() NetworkConnectivityHubRoutingVpcs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivityhub"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivityhub"
 
 networkconnectivityhub.NewNetworkConnectivityHubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityHubTimeoutsOutputReference
 ```

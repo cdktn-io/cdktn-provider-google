@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 datagoogleserviceaccountidtoken.NewDataGoogleServiceAccountIdToken(scope Construct, id *string, config DataGoogleServiceAccountIdTokenConfig) DataGoogleServiceAccountIdToken
 ```
@@ -326,7 +326,7 @@ func ResetTargetServiceAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccountidtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleserviceaccountidtoken"
 
 &datagoogleserviceaccountidtoken.DataGoogleServiceAccountIdTokenConfig {
 	Connection: interface{},

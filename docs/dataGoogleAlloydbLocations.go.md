@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocations(scope Construct, id *string, config DataGoogleAlloydbLocationsConfig) DataGoogleAlloydbLocations
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglealloydblocations.DataGoogleAlloydbLocations_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.DataGoogleAlloydbLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 &datagooglealloydblocations.DataGoogleAlloydbLocationsConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 &datagooglealloydblocations.DataGoogleAlloydbLocationsLocations {
 
@@ -784,7 +784,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloyd
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocationsLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAlloydbLocationsLocationsList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglealloydblocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglealloydblocations"
 
 datagooglealloydblocations.NewDataGoogleAlloydbLocationsLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAlloydbLocationsLocationsOutputReference
 ```

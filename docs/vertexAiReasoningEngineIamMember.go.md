@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.NewVertexAiReasoningEngineIamMember(scope Construct, id *string, config VertexAiReasoningEngineIamMemberConfig) VertexAiReasoningEngineIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 &vertexaireasoningengineiammember.VertexAiReasoningEngineIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 &vertexaireasoningengineiammember.VertexAiReasoningEngineIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasonin
 	Member: *string,
 	ReasoningEngine: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.NewVertexAiReasoningEngineIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineIamMemberConditionOutputReference
 ```

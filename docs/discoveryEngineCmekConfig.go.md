@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfig(scope Construct, id *string, config DiscoveryEngineCmekConfigConfig) DiscoveryEngineCmekConfig
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigConfig {
 	Connection: interface{},
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginec
 	Project: *string,
 	SetDefault: interface{},
 	SingleRegionKeys: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts,
 }
 ```
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigSingleRegionKeys {
 	KmsKey: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigTimeouts {
 	Create: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigSingleRegionKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineCmekConfigSingleRegionKeysList
 ```
@@ -1531,7 +1531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigSingleRegionKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineCmekConfigSingleRegionKeysOutputReference
 ```
@@ -1820,7 +1820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineCmekConfigTimeoutsOutputReference
 ```

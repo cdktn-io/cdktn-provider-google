@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.NewGkeHubScopeIamBinding(scope Construct, id *string, config GkeHubScopeIamBindingConfig) GkeHubScopeIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.GkeHubScopeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.GkeHubScopeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ gkehubscopeiambinding.GkeHubScopeIamBinding_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.GkeHubScopeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ gkehubscopeiambinding.GkeHubScopeIamBinding_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.GkeHubScopeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 &gkehubscopeiambinding.GkeHubScopeIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 &gkehubscopeiambinding.GkeHubScopeIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambi
 	Members: *[]*string,
 	Role: *string,
 	ScopeId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubScopeIamBinding.GkeHubScopeIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubScopeIamBinding.GkeHubScopeIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubscopeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubscopeiambinding"
 
 gkehubscopeiambinding.NewGkeHubScopeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubScopeIamBindingConditionOutputReference
 ```

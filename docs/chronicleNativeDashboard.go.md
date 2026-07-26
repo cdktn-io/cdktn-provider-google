@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboard(scope Construct, id *string, config ChronicleNativeDashboardConfig) ChronicleNativeDashboard
 ```
@@ -509,7 +509,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.ChronicleNativeDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.ChronicleNativeDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ chroniclenativedashboard.ChronicleNativeDashboard_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.ChronicleNativeDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ chroniclenativedashboard.ChronicleNativeDashboard_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.ChronicleNativeDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1183,10 +1183,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardCharts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardCharts {
-	ChartLayout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleNativeDashboard.ChronicleNativeDashboardChartsChartLayout,
+	ChartLayout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleNativeDashboard.ChronicleNativeDashboardChartsChartLayout,
 	DashboardChart: *string,
 	FiltersIds: *[]*string,
 }
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardChartsChartLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardChartsChartLayout {
 	SpanX: *f64,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardConfig {
 	Connection: interface{},
@@ -1352,7 +1352,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenatived
 	Id: *string,
 	IsPinned: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleNativeDashboard.ChronicleNativeDashboardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleNativeDashboard.ChronicleNativeDashboardTimeouts,
 	Type: *string,
 }
 ```
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardFilters {
 	ChartIds: *[]*string,
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFiltersFilterOperatorAndFieldValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardFiltersFilterOperatorAndFieldValues {
 	FieldValues: *[]*string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 &chroniclenativedashboard.ChronicleNativeDashboardTimeouts {
 	Create: *string,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardChartsChartLayoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardChartsChartLayoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleNativeDashboardChartsChartLayoutOutputReference
 ```
@@ -2277,7 +2277,7 @@ func InternalValue() ChronicleNativeDashboardChartsChartLayout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardChartsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardChartsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleNativeDashboardChartsList
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardChartsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardChartsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleNativeDashboardChartsOutputReference
 ```
@@ -2804,7 +2804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesList
 ```
@@ -2964,7 +2964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleNativeDashboardFiltersFilterOperatorAndFieldValuesOutputReference
 ```
@@ -3289,7 +3289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleNativeDashboardFiltersList
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleNativeDashboardFiltersOutputReference
 ```
@@ -3990,7 +3990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleNativeDashboard.ChronicleNativeDashboardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclenativedashboard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclenativedashboard"
 
 chroniclenativedashboard.NewChronicleNativeDashboardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleNativeDashboardTimeoutsOutputReference
 ```

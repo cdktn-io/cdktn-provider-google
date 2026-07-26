@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestion(scope Construct, id *string, config ContactCenterInsightsQaQuestionConfig) ContactCenterInsightsQaQuestion
 ```
@@ -583,7 +583,7 @@ func ResetTuningMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_IsConstruct(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -629,7 +629,7 @@ contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1301,7 +1301,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionAnswerChoices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionAnswerChoices {
 	BoolValue: interface{},
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionConfig {
 	Connection: interface{},
@@ -1439,16 +1439,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 	AnswerInstructions: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Metrics: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionMetrics,
+	Metrics: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionMetrics,
 	Order: *f64,
-	PredefinedQuestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfig,
+	PredefinedQuestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfig,
 	Project: *string,
-	QaQuestionDataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptions,
+	QaQuestionDataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptions,
 	QuestionBody: *string,
 	QuestionType: *string,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTimeouts,
-	TuningMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadata,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTimeouts,
+	TuningMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadata,
 }
 ```
 
@@ -1827,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionMetrics {
 
@@ -1840,7 +1840,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfig {
 	Type: *string,
@@ -1874,10 +1874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionQaQuestionDataOptions {
-	ConversationDataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptions,
+	ConversationDataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptions,
 }
 ```
 
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptions {
 	IncludeDialogflowInteractionData: interface{},
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionTimeouts {
 	Create: *string,
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 &contactcenterinsightsqaquestion.ContactCenterInsightsQaQuestionTuningMetadata {
 	DatasetValidationWarnings: *[]*string,
@@ -2070,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionAnswerChoicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionAnswerChoicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContactCenterInsightsQaQuestionAnswerChoicesList
 ```
@@ -2230,7 +2230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionAnswerChoicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionAnswerChoicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContactCenterInsightsQaQuestionAnswerChoicesOutputReference
 ```
@@ -2671,7 +2671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionMetricsOutputReference
 ```
@@ -2931,7 +2931,7 @@ func InternalValue() ContactCenterInsightsQaQuestionMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionPredefinedQuestionConfigOutputReference
 ```
@@ -3209,7 +3209,7 @@ func InternalValue() ContactCenterInsightsQaQuestionPredefinedQuestionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptionsOutputReference
 ```
@@ -3487,7 +3487,7 @@ func InternalValue() ContactCenterInsightsQaQuestionQaQuestionDataOptionsConvers
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference
 ```
@@ -3778,7 +3778,7 @@ func InternalValue() ContactCenterInsightsQaQuestionQaQuestionDataOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionTimeoutsOutputReference
 ```
@@ -4114,7 +4114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaQuestion.ContactCenterInsightsQaQuestionTuningMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqaquestion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqaquestion"
 
 contactcenterinsightsqaquestion.NewContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaQuestionTuningMetadataOutputReference
 ```

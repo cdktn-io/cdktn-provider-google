@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 datagooglecomputeregiontargethttpproxy.NewDataGoogleComputeRegionTargetHttpProxy(scope Construct, id *string, config DataGoogleComputeRegionTargetHttpProxyConfig) DataGoogleComputeRegionTargetHttpProxy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpProxy.DataGoogleComputeRegionTargetHttpProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregiontargethttpproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpproxy"
 
 &datagooglecomputeregiontargethttpproxy.DataGoogleComputeRegionTargetHttpProxyConfig {
 	Connection: interface{},

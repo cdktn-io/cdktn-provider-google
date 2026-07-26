@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstance(scope Construct, id *string, config DataFusionInstanceConfig) DataFusionInstance
 ```
@@ -639,7 +639,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsConstruct(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -685,7 +685,7 @@ datafusioninstance.DataFusionInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -699,7 +699,7 @@ datafusioninstance.DataFusionInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1610,7 +1610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceAccelerators {
 	AcceleratorType: *string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceConfig {
 	Connection: interface{},
@@ -1673,7 +1673,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstan
 	Name: *string,
 	Type: *string,
 	Accelerators: interface{},
-	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceCryptoKeyConfig,
+	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceCryptoKeyConfig,
 	DataprocServiceAccount: *string,
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1681,18 +1681,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstan
 	EnableRbac: interface{},
 	EnableStackdriverLogging: interface{},
 	EnableStackdriverMonitoring: interface{},
-	EventPublishConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceEventPublishConfig,
+	EventPublishConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceEventPublishConfig,
 	Id: *string,
 	Labels: *map[string]*string,
-	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceMaintenancePolicy,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceNetworkConfig,
+	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicy,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceNetworkConfig,
 	Options: *map[string]*string,
 	PatchRevision: *string,
 	PrivateInstance: interface{},
 	Project: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceTimeouts,
 	Version: *string,
 	Zone: *string,
 }
@@ -2191,7 +2191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceCryptoKeyConfig {
 	KeyReference: *string,
@@ -2229,7 +2229,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceEventPublishConfig {
 	Enabled: interface{},
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenanceEvents {
 
@@ -2292,10 +2292,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstan
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicy {
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow,
 }
 ```
 
@@ -2326,10 +2326,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow {
-	RecurringTimeWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow,
+	RecurringTimeWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow,
 }
 ```
 
@@ -2360,11 +2360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow {
 	Recurrence: *string,
-	Window: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow,
+	Window: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow,
 }
 ```
 
@@ -2412,7 +2412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow {
 	EndTime: *string,
@@ -2462,13 +2462,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceNetworkConfig {
 	ConnectionType: *string,
 	IpAllocation: *string,
 	Network: *string,
-	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig,
+	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig,
 }
 ```
 
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
 	NetworkAttachment: *string,
@@ -2612,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceTimeouts {
 	Create: *string,
@@ -2674,7 +2674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFusionInstanceAcceleratorsList
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFusionInstanceAcceleratorsOutputReference
 ```
@@ -3145,7 +3145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceCryptoKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceCryptoKeyConfigOutputReference
 ```
@@ -3416,7 +3416,7 @@ func InternalValue() DataFusionInstanceCryptoKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceEventPublishConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceEventPublishConfigOutputReference
 ```
@@ -3709,7 +3709,7 @@ func InternalValue() DataFusionInstanceEventPublishConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenanceEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFusionInstanceMaintenanceEventsList
 ```
@@ -3858,7 +3858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenanceEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFusionInstanceMaintenanceEventsOutputReference
 ```
@@ -4158,7 +4158,7 @@ func InternalValue() DataFusionInstanceMaintenanceEvents
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference
 ```
@@ -4748,7 +4748,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference
 ```
@@ -5041,7 +5041,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyOutputReference
 ```
@@ -5332,7 +5332,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigOutputReference
 ```
@@ -5710,7 +5710,7 @@ func InternalValue() DataFusionInstanceNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
 ```
@@ -6028,7 +6028,7 @@ func InternalValue() DataFusionInstanceNetworkConfigPrivateServiceConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceTimeoutsOutputReference
 ```

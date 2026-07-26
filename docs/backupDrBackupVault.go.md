@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.NewBackupDrBackupVault(scope Construct, id *string, config BackupDrBackupVaultConfig) BackupDrBackupVault
 ```
@@ -545,7 +545,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.BackupDrBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.BackupDrBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ backupdrbackupvault.BackupDrBackupVault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.BackupDrBackupVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ backupdrbackupvault.BackupDrBackupVault_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.BackupDrBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1417,7 +1417,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 &backupdrbackupvault.BackupDrBackupVaultConfig {
 	Connection: interface{},
@@ -1437,7 +1437,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupva
 	DeletionPolicy: *string,
 	Description: *string,
 	EffectiveTime: *string,
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig,
 	ForceDelete: interface{},
 	ForceUpdate: interface{},
 	ForceUpdateAccessRestriction: interface{},
@@ -1446,7 +1446,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupva
 	IgnoreInactiveDatasources: interface{},
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.backupDrBackupVault.BackupDrBackupVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.backupDrBackupVault.BackupDrBackupVaultTimeouts,
 }
 ```
 
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 &backupdrbackupvault.BackupDrBackupVaultEncryptionConfig {
 	KmsKeyName: *string,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 &backupdrbackupvault.BackupDrBackupVaultTimeouts {
 	Create: *string,
@@ -1962,7 +1962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.NewBackupDrBackupVaultEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupDrBackupVaultEncryptionConfigOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() BackupDrBackupVaultEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/backupdrbackupvault"
 
 backupdrbackupvault.NewBackupDrBackupVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupDrBackupVaultTimeoutsOutputReference
 ```

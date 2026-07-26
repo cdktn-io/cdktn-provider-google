@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.NewGkeBackupBackupChannel(scope Construct, id *string, config GkeBackupBackupChannelConfig) GkeBackupBackupChannel
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.GkeBackupBackupChannel_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.GkeBackupBackupChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ gkebackupbackupchannel.GkeBackupBackupChannel_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.GkeBackupBackupChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ gkebackupbackupchannel.GkeBackupBackupChannel_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.GkeBackupBackupChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 &gkebackupbackupchannel.GkeBackupBackupChannelConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupc
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeBackupBackupChannel.GkeBackupBackupChannelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeBackupBackupChannel.GkeBackupBackupChannelTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 &gkebackupbackupchannel.GkeBackupBackupChannelTimeouts {
 	Create: *string,
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeBackupBackupChannel.GkeBackupBackupChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkebackupbackupchannel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkebackupbackupchannel"
 
 gkebackupbackupchannel.NewGkeBackupBackupChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeBackupBackupChannelTimeoutsOutputReference
 ```

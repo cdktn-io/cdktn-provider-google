@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NewNetworkSecurityUllMirroringCollectorRule(scope Construct, id *string, config NetworkSecurityUllMirroringCollectorRuleConfig) NetworkSecurityUllMirroringCollectorRule
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRule_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRul
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRul
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1014,7 +1014,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 &networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRuleConfig {
 	Connection: interface{},
@@ -1025,14 +1025,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityu
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleMatch,
+	Match: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleMatch,
 	UllMirroringCollector: *string,
 	UllMirroringCollectorRuleId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleTimeouts,
 }
 ```
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 &networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRuleMatch {
 	Direction: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 &networksecurityullmirroringcollectorrule.NetworkSecurityUllMirroringCollectorRuleTimeouts {
 	Create: *string,
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NewNetworkSecurityUllMirroringCollectorRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityUllMirroringCollectorRuleMatchOutputReference
 ```
@@ -1783,7 +1783,7 @@ func InternalValue() NetworkSecurityUllMirroringCollectorRuleMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringCollectorRule.NetworkSecurityUllMirroringCollectorRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringcollectorrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringcollectorrule"
 
 networksecurityullmirroringcollectorrule.NewNetworkSecurityUllMirroringCollectorRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityUllMirroringCollectorRuleTimeoutsOutputReference
 ```

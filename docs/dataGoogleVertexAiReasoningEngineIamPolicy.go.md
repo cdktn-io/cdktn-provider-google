@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 datagooglevertexaireasoningengineiampolicy.NewDataGoogleVertexAiReasoningEngineIamPolicy(scope Construct, id *string, config DataGoogleVertexAiReasoningEngineIamPolicyConfig) DataGoogleVertexAiReasoningEngineIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineIamPolicy.DataGoogleVertexAiReasoningEngineIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningengineiampolicy"
 
 &datagooglevertexaireasoningengineiampolicy.DataGoogleVertexAiReasoningEngineIamPolicyConfig {
 	Connection: interface{},

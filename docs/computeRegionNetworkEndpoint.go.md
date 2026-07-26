@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.NewComputeRegionNetworkEndpoint(scope Construct, id *string, config ComputeRegionNetworkEndpointConfig) ComputeRegionNetworkEndpoint
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.ComputeRegionNetworkEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1018,7 +1018,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 &computeregionnetworkendpoint.ComputeRegionNetworkEndpointConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnet
 	IpAddress: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts,
 }
 ```
 
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 &computeregionnetworkendpoint.ComputeRegionNetworkEndpointTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkendpoint"
 
 computeregionnetworkendpoint.NewComputeRegionNetworkEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionNetworkEndpointTimeoutsOutputReference
 ```

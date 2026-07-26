@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.NewApigeeKeystoresAliasesKeyCertFile(scope Construct, id *string, config ApigeeKeystoresAliasesKeyCertFileConfig) ApigeeKeystoresAliasesKeyCertFile
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 &apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFileCertsInfo {
 
@@ -945,7 +945,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresa
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 &apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFileConfig {
 	Connection: interface{},
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresa
 	OrgId: *string,
 	Key: *string,
 	Password: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeouts,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 &apigeekeystoresaliaseskeycertfile.ApigeeKeystoresAliasesKeyCertFileTimeouts {
 	Create: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.NewApigeeKeystoresAliasesKeyCertFileCertsInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeKeystoresAliasesKeyCertFileCertsInfoList
 ```
@@ -1408,7 +1408,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.NewApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference
 ```
@@ -1796,7 +1796,7 @@ func InternalValue() ApigeeKeystoresAliasesKeyCertFileCertsInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeekeystoresaliaseskeycertfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeekeystoresaliaseskeycertfile"
 
 apigeekeystoresaliaseskeycertfile.NewApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference
 ```

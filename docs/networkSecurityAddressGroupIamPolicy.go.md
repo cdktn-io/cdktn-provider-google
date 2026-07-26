@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 networksecurityaddressgroupiampolicy.NewNetworkSecurityAddressGroupIamPolicy(scope Construct, id *string, config NetworkSecurityAddressGroupIamPolicyConfig) NetworkSecurityAddressGroupIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiampolicy"
 
 &networksecurityaddressgroupiampolicy.NetworkSecurityAddressGroupIamPolicyConfig {
 	Connection: interface{},

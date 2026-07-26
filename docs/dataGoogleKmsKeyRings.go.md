@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.NewDataGoogleKmsKeyRings(scope Construct, id *string, config DataGoogleKmsKeyRingsConfig) DataGoogleKmsKeyRings
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.DataGoogleKmsKeyRings_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.DataGoogleKmsKeyRings_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglekmskeyrings.DataGoogleKmsKeyRings_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.DataGoogleKmsKeyRings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglekmskeyrings.DataGoogleKmsKeyRings_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.DataGoogleKmsKeyRings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 &datagooglekmskeyrings.DataGoogleKmsKeyRingsConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRingsKeyRings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 &datagooglekmskeyrings.DataGoogleKmsKeyRingsKeyRings {
 
@@ -872,7 +872,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRingsKeyRingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.NewDataGoogleKmsKeyRingsKeyRingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleKmsKeyRingsKeyRingsList
 ```
@@ -1021,7 +1021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyRings.DataGoogleKmsKeyRingsKeyRingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyrings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyrings"
 
 datagooglekmskeyrings.NewDataGoogleKmsKeyRingsKeyRingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleKmsKeyRingsKeyRingsOutputReference
 ```

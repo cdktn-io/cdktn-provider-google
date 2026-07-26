@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 datagoogleiapwebiampolicy.NewDataGoogleIapWebIamPolicy(scope Construct, id *string, config DataGoogleIapWebIamPolicyConfig) DataGoogleIapWebIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapWebIamPolicy.DataGoogleIapWebIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebiampolicy"
 
 &datagoogleiapwebiampolicy.DataGoogleIapWebIamPolicyConfig {
 	Connection: interface{},

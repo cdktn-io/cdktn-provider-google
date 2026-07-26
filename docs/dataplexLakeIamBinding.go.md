@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.NewDataplexLakeIamBinding(scope Construct, id *string, config DataplexLakeIamBindingConfig) DataplexLakeIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.DataplexLakeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.DataplexLakeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexlakeiambinding.DataplexLakeIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.DataplexLakeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexlakeiambinding.DataplexLakeIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.DataplexLakeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 &dataplexlakeiambinding.DataplexLakeIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 &dataplexlakeiambinding.DataplexLakeIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiamb
 	Lake: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexLakeIamBinding.DataplexLakeIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexLakeIamBinding.DataplexLakeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexlakeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexlakeiambinding"
 
 dataplexlakeiambinding.NewDataplexLakeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexLakeIamBindingConditionOutputReference
 ```

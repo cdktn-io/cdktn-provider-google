@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.NewIapWebIamBinding(scope Construct, id *string, config IapWebIamBindingConfig) IapWebIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.IapWebIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.IapWebIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iapwebiambinding.IapWebIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.IapWebIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iapwebiambinding.IapWebIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.IapWebIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 &iapwebiambinding.IapWebIamBindingCondition {
 	Expression: *string,
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 &iapwebiambinding.IapWebIamBindingConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding
 	Provisioners: *[]interface{},
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapWebIamBinding.IapWebIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapWebIamBinding.IapWebIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebIamBinding.IapWebIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiambinding"
 
 iapwebiambinding.NewIapWebIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebIamBindingConditionOutputReference
 ```

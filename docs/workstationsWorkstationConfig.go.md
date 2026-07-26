@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigA(scope Construct, id *string, config WorkstationsWorkstationConfigAConfig) WorkstationsWorkstationConfigA
 ```
@@ -644,7 +644,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.WorkstationsWorkstationConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.WorkstationsWorkstationConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ workstationsworkstationconfig.WorkstationsWorkstationConfigA_IsTerraformElement(
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.WorkstationsWorkstationConfigA_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ workstationsworkstationconfig.WorkstationsWorkstationConfigA_IsTerraformResource
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.WorkstationsWorkstationConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1538,7 +1538,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigAConfig {
 	Connection: interface{},
@@ -1553,14 +1553,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 	WorkstationConfigId: *string,
 	AllowedPorts: interface{},
 	Annotations: *map[string]*string,
-	Container: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainer,
+	Container: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainer,
 	DeletionPolicy: *string,
 	DisableTcpConnections: interface{},
 	DisplayName: *string,
 	EnableAuditAgent: interface{},
-	EncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKey,
+	EncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKey,
 	EphemeralDirectories: interface{},
-	Host: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigHost,
+	Host: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigHost,
 	Id: *string,
 	IdleTimeout: *string,
 	Labels: *map[string]*string,
@@ -1570,7 +1570,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 	ReadinessChecks: interface{},
 	ReplicaZones: *[]*string,
 	RunningTimeout: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeouts,
 }
 ```
 
@@ -2033,7 +2033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigAllowedPorts {
 	First: *f64,
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigConditions {
 
@@ -2100,7 +2100,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigContainer {
 	Args: *[]*string,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigEncryptionKey {
 	KmsKey: *string,
@@ -2266,10 +2266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigEphemeralDirectories {
-	GcePd: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePd,
+	GcePd: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePd,
 	MountPath: *string,
 }
 ```
@@ -2316,7 +2316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePd {
 	DiskType: *string,
@@ -2407,10 +2407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHost {
-	GceInstance: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstance,
+	GceInstance: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstance,
 }
 ```
 
@@ -2441,13 +2441,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstance {
 	Accelerators: interface{},
 	BoostConfigs: interface{},
 	BootDiskSizeGb: *f64,
-	ConfidentialInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig,
+	ConfidentialInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig,
 	DisablePublicIpAddresses: interface{},
 	DisableSsh: interface{},
 	EnableNestedVirtualization: interface{},
@@ -2456,7 +2456,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 	PoolSize: *f64,
 	ServiceAccount: *string,
 	ServiceAccountScopes: *[]*string,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig,
 	Tags: *[]*string,
 	VmTags: *map[string]*string,
 }
@@ -2710,7 +2710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstanceAccelerators {
 	Count: *f64,
@@ -2760,7 +2760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigs {
 	Id: *string,
@@ -2881,7 +2881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators {
 	Count: *f64,
@@ -2931,7 +2931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig {
 	EnableConfidentialCompute: interface{},
@@ -2965,7 +2965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -3031,11 +3031,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigPersistentDirectories {
-	GceHd: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHd,
-	GcePd: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePd,
+	GceHd: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHd,
+	GcePd: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePd,
 	MountPath: *string,
 }
 ```
@@ -3097,7 +3097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHd {
 	ArchiveTimeout: *string,
@@ -3179,7 +3179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePd {
 	DiskType: *string,
@@ -3286,7 +3286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigReadinessChecks {
 	Path: *string,
@@ -3336,7 +3336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 &workstationsworkstationconfig.WorkstationsWorkstationConfigTimeouts {
 	Create: *string,
@@ -3398,7 +3398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigAllowedPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigAllowedPortsList
 ```
@@ -3558,7 +3558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigAllowedPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigAllowedPortsOutputReference
 ```
@@ -3883,7 +3883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigConditionsList
 ```
@@ -4032,7 +4032,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigConditionsOutputReference
 ```
@@ -4332,7 +4332,7 @@ func InternalValue() WorkstationsWorkstationConfigConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigContainerOutputReference
 ```
@@ -4755,7 +4755,7 @@ func InternalValue() WorkstationsWorkstationConfigContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigEncryptionKeyOutputReference
 ```
@@ -5048,7 +5048,7 @@ func InternalValue() WorkstationsWorkstationConfigEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference
 ```
@@ -5413,7 +5413,7 @@ func InternalValue() WorkstationsWorkstationConfigEphemeralDirectoriesGcePd
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigEphemeralDirectoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigEphemeralDirectoriesList
 ```
@@ -5573,7 +5573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigEphemeralDirectoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference
 ```
@@ -5911,7 +5911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
 ```
@@ -6071,7 +6071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference
 ```
@@ -6382,7 +6382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList
 ```
@@ -6542,7 +6542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference
 ```
@@ -6853,7 +6853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
 ```
@@ -7013,7 +7013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference
 ```
@@ -7460,7 +7460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference
 ```
@@ -7738,7 +7738,7 @@ func InternalValue() WorkstationsWorkstationConfigHostGceInstanceConfidentialIns
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostGceInstanceOutputReference
 ```
@@ -8474,7 +8474,7 @@ func InternalValue() WorkstationsWorkstationConfigHostGceInstance
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference
 ```
@@ -8810,7 +8810,7 @@ func InternalValue() WorkstationsWorkstationConfigHostGceInstanceShieldedInstanc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostOutputReference
 ```
@@ -9101,7 +9101,7 @@ func InternalValue() WorkstationsWorkstationConfigHost
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference
 ```
@@ -9466,7 +9466,7 @@ func InternalValue() WorkstationsWorkstationConfigPersistentDirectoriesGceHd
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference
 ```
@@ -9860,7 +9860,7 @@ func InternalValue() WorkstationsWorkstationConfigPersistentDirectoriesGcePd
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigPersistentDirectoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigPersistentDirectoriesList
 ```
@@ -10020,7 +10020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigPersistentDirectoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigPersistentDirectoriesOutputReference
 ```
@@ -10400,7 +10400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigReadinessChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationConfigReadinessChecksList
 ```
@@ -10560,7 +10560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigReadinessChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkstationsWorkstationConfigReadinessChecksOutputReference
 ```
@@ -10871,7 +10871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfig"
 
 workstationsworkstationconfig.NewWorkstationsWorkstationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnection(scope Construct, id *string, config DatabaseMigrationServicePrivateConnectionConfig) DatabaseMigrationServicePrivateConnection
 ```
@@ -502,7 +502,7 @@ func ResetVpcPeeringConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnection_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnect
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnect
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1088,7 +1088,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 &databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnectionConfig {
 	Connection: interface{},
@@ -1106,9 +1106,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigratio
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts,
-	VpcPeeringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig,
+	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts,
+	VpcPeeringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig,
 }
 ```
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 &databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnectionError {
 
@@ -1388,7 +1388,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigratio
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 &databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig {
 	NetworkAttachment: *string,
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 &databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnectionTimeouts {
 	Create: *string,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 &databasemigrationserviceprivateconnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig {
 	Subnet: *string,
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnectionErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseMigrationServicePrivateConnectionErrorList
 ```
@@ -1683,7 +1683,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnectionErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseMigrationServicePrivateConnectionErrorOutputReference
 ```
@@ -1972,7 +1972,7 @@ func InternalValue() DatabaseMigrationServicePrivateConnectionError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReference
 ```
@@ -2243,7 +2243,7 @@ func InternalValue() DatabaseMigrationServicePrivateConnectionPscInterfaceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference
 ```
@@ -2579,7 +2579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationserviceprivateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationserviceprivateconnection"
 
 databasemigrationserviceprivateconnection.NewDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference
 ```
