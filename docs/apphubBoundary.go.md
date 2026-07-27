@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.NewApphubBoundary(scope Construct, id *string, config ApphubBoundaryConfig) ApphubBoundary
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.ApphubBoundary_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.ApphubBoundary_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apphubboundary.ApphubBoundary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.ApphubBoundary_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apphubboundary.ApphubBoundary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apphubBoundary.ApphubBoundary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.ApphubBoundary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubBoundary.ApphubBoundaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 &apphubboundary.ApphubBoundaryConfig {
 	Connection: interface{},
@@ -898,7 +898,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
 	CrmNode: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubBoundary.ApphubBoundaryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apphubBoundary.ApphubBoundaryTimeouts,
 }
 ```
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 &apphubboundary.ApphubBoundaryTimeouts {
 	Create: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubBoundary.ApphubBoundaryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubboundary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubboundary"
 
 apphubboundary.NewApphubBoundaryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubBoundaryTimeoutsOutputReference
 ```

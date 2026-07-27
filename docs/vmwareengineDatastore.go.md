@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.NewVmwareengineDatastore(scope Construct, id *string, config VmwareengineDatastoreConfig) VmwareengineDatastore
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.VmwareengineDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.VmwareengineDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ vmwareenginedatastore.VmwareengineDatastore_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.VmwareengineDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ vmwareenginedatastore.VmwareengineDatastore_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.VmwareengineDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,7 +981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 &vmwareenginedatastore.VmwareengineDatastoreConfig {
 	Connection: interface{},
@@ -993,12 +993,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedata
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	NfsDatastore: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vmwareengineDatastore.VmwareengineDatastoreNfsDatastore,
+	NfsDatastore: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vmwareengineDatastore.VmwareengineDatastoreNfsDatastore,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vmwareengineDatastore.VmwareengineDatastoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vmwareengineDatastore.VmwareengineDatastoreTimeouts,
 }
 ```
 
@@ -1228,11 +1228,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 &vmwareenginedatastore.VmwareengineDatastoreNfsDatastore {
-	GoogleFileService: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileService,
-	ThirdPartyFileService: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileService,
+	GoogleFileService: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileService,
+	ThirdPartyFileService: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileService,
 }
 ```
 
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 &vmwareenginedatastore.VmwareengineDatastoreNfsDatastoreGoogleFileService {
 	FilestoreInstance: *string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 &vmwareenginedatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileService {
 	FileShare: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 &vmwareenginedatastore.VmwareengineDatastoreTimeouts {
 	Create: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() VmwareengineDatastoreNfsDatastoreGoogleFileService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.NewVmwareengineDatastoreNfsDatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreOutputReference
 ```
@@ -2100,7 +2100,7 @@ func InternalValue() VmwareengineDatastoreNfsDatastore
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.NewVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() VmwareengineDatastoreNfsDatastoreThirdPartyFileService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vmwareenginedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vmwareenginedatastore"
 
 vmwareenginedatastore.NewVmwareengineDatastoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreTimeoutsOutputReference
 ```

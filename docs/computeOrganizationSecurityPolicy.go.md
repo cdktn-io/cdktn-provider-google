@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicy(scope Construct, id *string, config ComputeOrganizationSecurityPolicyConfig) ComputeOrganizationSecurityPolicy
 ```
@@ -482,7 +482,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,10 +991,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig {
-	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
+	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
 	JsonParsing: *string,
 	LogLevel: *string,
 	RequestBodyInspectionSize: *string,
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 	ContentTypes: *[]*string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyConfig {
 	Connection: interface{},
@@ -1137,13 +1137,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Parent: *string,
-	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig,
+	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	ShortName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyTimeouts {
 	Create: *string,
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
 ```
@@ -1721,7 +1721,7 @@ func InternalValue() ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference
 ```
@@ -2128,7 +2128,7 @@ func InternalValue() ComputeOrganizationSecurityPolicyAdvancedOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncements(scope Construct, id *string, config DataGoogleVmwareengineAnnouncementsConfig) DataGoogleVmwareengineAnnouncements
 ```
@@ -312,7 +312,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 &datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncementsAnnouncements {
 
@@ -669,7 +669,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 &datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncementsConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncementsAnnouncementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsList
 ```
@@ -973,7 +973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference
 ```

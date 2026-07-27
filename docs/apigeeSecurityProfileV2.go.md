@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.NewApigeeSecurityProfileV2(scope Construct, id *string, config ApigeeSecurityProfileV2Config) ApigeeSecurityProfileV2
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.ApigeeSecurityProfileV2_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.ApigeeSecurityProfileV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ apigeesecurityprofilev2.ApigeeSecurityProfileV2_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.ApigeeSecurityProfileV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ apigeesecurityprofilev2.ApigeeSecurityProfileV2_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.ApigeeSecurityProfileV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 &apigeesecurityprofilev2.ApigeeSecurityProfileV2Config {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecuritypr
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts,
 }
 ```
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 &apigeesecurityprofilev2.ApigeeSecurityProfileV2ProfileAssessmentConfigs {
 	Assessment: *string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 &apigeesecurityprofilev2.ApigeeSecurityProfileV2Timeouts {
 	Create: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.NewApigeeSecurityProfileV2ProfileAssessmentConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeSecurityProfileV2ProfileAssessmentConfigsList
 ```
@@ -1422,7 +1422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference
 ```
@@ -1733,7 +1733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityprofilev2"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityprofilev2"
 
 apigeesecurityprofilev2.NewApigeeSecurityProfileV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeSecurityProfileV2TimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.NewComputeFirewallPolicyIamMember(scope Construct, id *string, config ComputeFirewallPolicyIamMemberConfig) ComputeFirewallPolicyIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.ComputeFirewallPolicyIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 &computefirewallpolicyiammember.ComputeFirewallPolicyIamMemberCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 &computefirewallpolicyiammember.ComputeFirewallPolicyIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallp
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewallPolicyIamMember.ComputeFirewallPolicyIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewallpolicyiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computefirewallpolicyiammember"
 
 computefirewallpolicyiammember.NewComputeFirewallPolicyIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeFirewallPolicyIamMemberConditionOutputReference
 ```

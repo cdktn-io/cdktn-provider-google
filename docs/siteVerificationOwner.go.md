@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.NewSiteVerificationOwner(scope Construct, id *string, config SiteVerificationOwnerConfig) SiteVerificationOwner
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ siteverificationowner.SiteVerificationOwner_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ siteverificationowner.SiteVerificationOwner_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 &siteverificationowner.SiteVerificationOwnerConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverification
 	WebResourceId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.siteVerificationOwner.SiteVerificationOwnerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.siteVerificationOwner.SiteVerificationOwnerTimeouts,
 }
 ```
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 &siteverificationowner.SiteVerificationOwnerTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationowner"
 
 siteverificationowner.NewSiteVerificationOwnerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationOwnerTimeoutsOutputReference
 ```

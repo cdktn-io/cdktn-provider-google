@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 datagooglebiglakeicebergnamespaceiampolicy.NewDataGoogleBiglakeIcebergNamespaceIamPolicy(scope Construct, id *string, config DataGoogleBiglakeIcebergNamespaceIamPolicyConfig) DataGoogleBiglakeIcebergNamespaceIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebiglakeicebergnamespaceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebiglakeicebergnamespaceiampolicy"
 
 &datagooglebiglakeicebergnamespaceiampolicy.DataGoogleBiglakeIcebergNamespaceIamPolicyConfig {
 	Connection: interface{},

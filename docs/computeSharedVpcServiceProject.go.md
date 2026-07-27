@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.NewComputeSharedVpcServiceProject(scope Construct, id *string, config ComputeSharedVpcServiceProjectConfig) ComputeSharedVpcServiceProject
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.ComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.ComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computesharedvpcserviceproject.ComputeSharedVpcServiceProject_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.ComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computesharedvpcserviceproject.ComputeSharedVpcServiceProject_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.ComputeSharedVpcServiceProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 &computesharedvpcserviceproject.ComputeSharedVpcServiceProjectConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpc
 	ServiceProject: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeouts,
 }
 ```
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 &computesharedvpcserviceproject.ComputeSharedVpcServiceProjectTimeouts {
 	Create: *string,
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesharedvpcserviceproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesharedvpcserviceproject"
 
 computesharedvpcserviceproject.NewComputeSharedVpcServiceProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSharedVpcServiceProjectTimeoutsOutputReference
 ```

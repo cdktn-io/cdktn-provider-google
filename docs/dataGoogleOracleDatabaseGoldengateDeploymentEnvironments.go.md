@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.NewDataGoogleOracleDatabaseGoldengateDeploymentEnvironments(scope Construct, id *string, config DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsConfig) DataGoogleOracleDatabaseGoldengateDeploymentEnvironments
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabas
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabas
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 &datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 &datagoogleoracledatabasegoldengatedeploymentenvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironments {
 
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracle
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.NewDataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsList
 ```
@@ -973,7 +973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateDeploymentEnvironments.DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabasegoldengatedeploymentenvironments"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleoracledatabasegoldengatedeploymentenvironments"
 
 datagoogleoracledatabasegoldengatedeploymentenvironments.NewDataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseGoldengateDeploymentEnvironmentsGoldengateDeploymentEnvironmentsOutputReference
 ```

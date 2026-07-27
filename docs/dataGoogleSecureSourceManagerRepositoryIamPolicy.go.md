@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 datagooglesecuresourcemanagerrepositoryiampolicy.NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope Construct, id *string, config DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) DataGoogleSecureSourceManagerRepositoryIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesecuresourcemanagerrepositoryiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesecuresourcemanagerrepositoryiampolicy"
 
 &datagooglesecuresourcemanagerrepositoryiampolicy.DataGoogleSecureSourceManagerRepositoryIamPolicyConfig {
 	Connection: interface{},

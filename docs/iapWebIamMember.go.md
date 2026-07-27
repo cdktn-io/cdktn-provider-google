@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.NewIapWebIamMember(scope Construct, id *string, config IapWebIamMemberConfig) IapWebIamMember
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.IapWebIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.IapWebIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iapwebiammember.IapWebIamMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.IapWebIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iapwebiammember.IapWebIamMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.IapWebIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 &iapwebiammember.IapWebIamMemberCondition {
 	Expression: *string,
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 &iapwebiammember.IapWebIamMemberConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
 	Provisioners: *[]interface{},
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapWebIamMember.IapWebIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapWebIamMember.IapWebIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebIamMember.IapWebIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebiammember"
 
 iapwebiammember.NewIapWebIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebIamMemberConditionOutputReference
 ```

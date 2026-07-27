@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 cloudbuildv2connectioniampolicy.NewCloudbuildv2ConnectionIamPolicy(scope Construct, id *string, config Cloudbuildv2ConnectionIamPolicyConfig) Cloudbuildv2ConnectionIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudbuildv2connectioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2connectioniampolicy"
 
 &cloudbuildv2connectioniampolicy.Cloudbuildv2ConnectionIamPolicyConfig {
 	Connection: interface{},

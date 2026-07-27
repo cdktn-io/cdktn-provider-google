@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.NewComputeInstanceSettings(scope Construct, id *string, config ComputeInstanceSettingsConfig) ComputeInstanceSettings
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.ComputeInstanceSettings_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.ComputeInstanceSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computeinstancesettings.ComputeInstanceSettings_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.ComputeInstanceSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computeinstancesettings.ComputeInstanceSettings_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.ComputeInstanceSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 &computeinstancesettings.ComputeInstanceSettingsConfig {
 	Connection: interface{},
@@ -906,9 +906,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstances
 	Zone: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstanceSettings.ComputeInstanceSettingsMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceSettings.ComputeInstanceSettingsMetadata,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstanceSettings.ComputeInstanceSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceSettings.ComputeInstanceSettingsTimeouts,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 &computeinstancesettings.ComputeInstanceSettingsMetadata {
 	Items: *map[string]*string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 &computeinstancesettings.ComputeInstanceSettingsTimeouts {
 	Create: *string,
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.NewComputeInstanceSettingsMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceSettingsMetadataOutputReference
 ```
@@ -1471,7 +1471,7 @@ func InternalValue() ComputeInstanceSettingsMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancesettings"
 
 computeinstancesettings.NewComputeInstanceSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceSettingsTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.NewChronicleFindingsRefinementDeployment(scope Construct, id *string, config ChronicleFindingsRefinementDeploymentConfig) ChronicleFindingsRefinementDeployment
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 &chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeploymentConfig {
 	Connection: interface{},
@@ -991,11 +991,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefinding
 	Instance: *string,
 	Location: *string,
 	Archived: interface{},
-	DetectionExclusionApplication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentDetectionExclusionApplication,
+	DetectionExclusionApplication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentDetectionExclusionApplication,
 	Enabled: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentTimeouts,
 }
 ```
 
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentDetectionExclusionApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 &chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeploymentDetectionExclusionApplication {
 	CuratedRules: *[]*string,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 &chroniclefindingsrefinementdeployment.ChronicleFindingsRefinementDeploymentTimeouts {
 	Create: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentDetectionExclusionApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.NewChronicleFindingsRefinementDeploymentDetectionExclusionApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFindingsRefinementDeploymentDetectionExclusionApplicationOutputReference
 ```
@@ -1700,7 +1700,7 @@ func InternalValue() ChronicleFindingsRefinementDeploymentDetectionExclusionAppl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFindingsRefinementDeployment.ChronicleFindingsRefinementDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefindingsrefinementdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefindingsrefinementdeployment"
 
 chroniclefindingsrefinementdeployment.NewChronicleFindingsRefinementDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFindingsRefinementDeploymentTimeoutsOutputReference
 ```

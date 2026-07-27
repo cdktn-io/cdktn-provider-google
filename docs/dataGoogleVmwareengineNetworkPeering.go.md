@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 datagooglevmwareenginenetworkpeering.NewDataGoogleVmwareengineNetworkPeering(scope Construct, id *string, config DataGoogleVmwareengineNetworkPeeringConfig) DataGoogleVmwareengineNetworkPeering
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineNetworkPeering.DataGoogleVmwareengineNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareenginenetworkpeering"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginenetworkpeering"
 
 &datagooglevmwareenginenetworkpeering.DataGoogleVmwareengineNetworkPeeringConfig {
 	Connection: interface{},

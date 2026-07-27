@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NewNetworkServicesMulticastConsumerAssociation(scope Construct, id *string, config NetworkServicesMulticastConsumerAssociationConfig) NetworkServicesMulticastConsumerAssociation
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAsso
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAsso
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1052,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 &networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociationConfig {
 	Connection: interface{},
@@ -1071,7 +1071,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeouts,
 }
 ```
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 &networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociationState {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 &networkservicesmulticastconsumerassociation.NetworkServicesMulticastConsumerAssociationTimeouts {
 	Create: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NewNetworkServicesMulticastConsumerAssociationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastConsumerAssociationStateList
 ```
@@ -1556,7 +1556,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NewNetworkServicesMulticastConsumerAssociationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastConsumerAssociationStateOutputReference
 ```
@@ -1834,7 +1834,7 @@ func InternalValue() NetworkServicesMulticastConsumerAssociationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastconsumerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastconsumerassociation"
 
 networkservicesmulticastconsumerassociation.NewNetworkServicesMulticastConsumerAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference
 ```

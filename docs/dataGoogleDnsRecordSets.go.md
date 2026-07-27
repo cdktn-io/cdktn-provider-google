@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.NewDataGoogleDnsRecordSets(scope Construct, id *string, config DataGoogleDnsRecordSetsConfig) DataGoogleDnsRecordSets
 ```
@@ -326,7 +326,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.DataGoogleDnsRecordSets_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.DataGoogleDnsRecordSets_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglednsrecordsets.DataGoogleDnsRecordSets_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.DataGoogleDnsRecordSets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglednsrecordsets.DataGoogleDnsRecordSets_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.DataGoogleDnsRecordSets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 &datagooglednsrecordsets.DataGoogleDnsRecordSetsConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 &datagooglednsrecordsets.DataGoogleDnsRecordSetsRrsets {
 
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.NewDataGoogleDnsRecordSetsRrsetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDnsRecordSetsRrsetsList
 ```
@@ -1053,7 +1053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglednsrecordsets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsrecordsets"
 
 datagooglednsrecordsets.NewDataGoogleDnsRecordSetsRrsetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDnsRecordSetsRrsetsOutputReference
 ```

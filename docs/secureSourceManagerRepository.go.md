@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepository(scope Construct, id *string, config SecureSourceManagerRepositoryConfig) SecureSourceManagerRepository
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryConfig {
 	Connection: interface{},
@@ -1026,9 +1026,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	InitialConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig,
+	InitialConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts,
 }
 ```
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryInitialConfig {
 	DefaultBranch: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryTimeouts {
 	Create: *string,
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUris.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryUris {
 
@@ -1419,7 +1419,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryInitialConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryInitialConfigOutputReference
 ```
@@ -1784,7 +1784,7 @@ func InternalValue() SecureSourceManagerRepositoryInitialConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryTimeoutsOutputReference
 ```
@@ -2120,7 +2120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryUrisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecureSourceManagerRepositoryUrisList
 ```
@@ -2269,7 +2269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryUrisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecureSourceManagerRepositoryUrisOutputReference
 ```

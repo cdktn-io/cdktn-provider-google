@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NewNetworkSecurityGatewaySecurityPolicyRule(scope Construct, id *string, config NetworkSecurityGatewaySecurityPolicyRuleConfig) NetworkSecurityGatewaySecurityPolicyRule
 ```
@@ -462,7 +462,7 @@ func ResetTlsInspectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRul
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRul
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 &networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRuleConfig {
 	Connection: interface{},
@@ -1114,7 +1114,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityg
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeouts,
 	TlsInspectionEnabled: interface{},
 }
 ```
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 &networksecuritygatewaysecuritypolicyrule.NetworkSecurityGatewaySecurityPolicyRuleTimeouts {
 	Create: *string,
@@ -1488,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritygatewaysecuritypolicyrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritygatewaysecuritypolicyrule"
 
 networksecuritygatewaysecuritypolicyrule.NewNetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference
 ```

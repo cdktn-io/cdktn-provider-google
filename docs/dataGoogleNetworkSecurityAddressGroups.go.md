@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.NewDataGoogleNetworkSecurityAddressGroups(scope Construct, id *string, config DataGoogleNetworkSecurityAddressGroupsConfig) DataGoogleNetworkSecurityAddressGroups
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 &datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroupsAddressGroups {
 
@@ -698,7 +698,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetwor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 &datagooglenetworksecurityaddressgroups.DataGoogleNetworkSecurityAddressGroupsConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.NewDataGoogleNetworkSecurityAddressGroupsAddressGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleNetworkSecurityAddressGroupsAddressGroupsList
 ```
@@ -1012,7 +1012,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroups"
 
 datagooglenetworksecurityaddressgroups.NewDataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference
 ```

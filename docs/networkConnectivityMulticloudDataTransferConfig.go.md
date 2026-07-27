@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfig(scope Construct, id *string, config NetworkConnectivityMulticloudDataTransferConfigConfig) NetworkConnectivityMulticloudDataTransferConfig
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfig_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 &networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfigConfig {
 	Connection: interface{},
@@ -1068,7 +1068,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 	Labels: *map[string]*string,
 	Project: *string,
 	Services: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigTimeouts,
 }
 ```
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 &networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfigServices {
 	ServiceName: *string,
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesStates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 &networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfigServicesStates {
 
@@ -1352,7 +1352,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 &networkconnectivitymulticlouddatatransferconfig.NetworkConnectivityMulticloudDataTransferConfigTimeouts {
 	Create: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfigServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesList
 ```
@@ -1574,7 +1574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference
 ```
@@ -1874,7 +1874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfigServicesStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesStatesList
 ```
@@ -2023,7 +2023,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference
 ```
@@ -2312,7 +2312,7 @@ func InternalValue() NetworkConnectivityMulticloudDataTransferConfigServicesStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitymulticlouddatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitymulticlouddatatransferconfig"
 
 networkconnectivitymulticlouddatatransferconfig.NewNetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference
 ```

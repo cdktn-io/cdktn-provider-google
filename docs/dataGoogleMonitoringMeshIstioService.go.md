@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.NewDataGoogleMonitoringMeshIstioService(scope Construct, id *string, config DataGoogleMonitoringMeshIstioServiceConfig) DataGoogleMonitoringMeshIstioService
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 &datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioServiceConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 &datagooglemonitoringmeshistioservice.DataGoogleMonitoringMeshIstioServiceTelemetry {
 
@@ -957,7 +957,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.NewDataGoogleMonitoringMeshIstioServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringMeshIstioServiceTelemetryList
 ```
@@ -1106,7 +1106,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglemonitoringmeshistioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringmeshistioservice"
 
 datagooglemonitoringmeshistioservice.NewDataGoogleMonitoringMeshIstioServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference
 ```

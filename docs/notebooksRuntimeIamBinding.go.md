@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NewNotebooksRuntimeIamBinding(scope Construct, id *string, config NotebooksRuntimeIamBindingConfig) NotebooksRuntimeIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NotebooksRuntimeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NotebooksRuntimeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ notebooksruntimeiambinding.NotebooksRuntimeIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NotebooksRuntimeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ notebooksruntimeiambinding.NotebooksRuntimeIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NotebooksRuntimeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 &notebooksruntimeiambinding.NotebooksRuntimeIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 &notebooksruntimeiambinding.NotebooksRuntimeIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntime
 	Members: *[]*string,
 	Role: *string,
 	RuntimeName: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.notebooksRuntimeIamBinding.NotebooksRuntimeIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.notebooksRuntimeIamBinding.NotebooksRuntimeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.notebooksRuntimeIamBinding.NotebooksRuntimeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/notebooksruntimeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/notebooksruntimeiambinding"
 
 notebooksruntimeiambinding.NewNotebooksRuntimeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotebooksRuntimeIamBindingConditionOutputReference
 ```

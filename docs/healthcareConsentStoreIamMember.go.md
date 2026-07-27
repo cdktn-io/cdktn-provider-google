@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.NewHealthcareConsentStoreIamMember(scope Construct, id *string, config HealthcareConsentStoreIamMemberConfig) HealthcareConsentStoreIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.HealthcareConsentStoreIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 &healthcareconsentstoreiammember.HealthcareConsentStoreIamMemberCondition {
 	Expression: *string,
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 &healthcareconsentstoreiammember.HealthcareConsentStoreIamMemberConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsen
 	Dataset: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1112,7 +1112,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/healthcareconsentstoreiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/healthcareconsentstoreiammember"
 
 healthcareconsentstoreiammember.NewHealthcareConsentStoreIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareConsentStoreIamMemberConditionOutputReference
 ```

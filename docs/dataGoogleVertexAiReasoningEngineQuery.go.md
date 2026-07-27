@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 datagooglevertexaireasoningenginequery.NewDataGoogleVertexAiReasoningEngineQuery(scope Construct, id *string, config DataGoogleVertexAiReasoningEngineQueryConfig) DataGoogleVertexAiReasoningEngineQuery
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQuery.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVertexAiReasoningEngineQuery.DataGoogleVertexAiReasoningEngineQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevertexaireasoningenginequery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevertexaireasoningenginequery"
 
 &datagooglevertexaireasoningenginequery.DataGoogleVertexAiReasoningEngineQueryConfig {
 	Connection: interface{},

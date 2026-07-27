@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 datagoogleiapwebforwardingruleserviceiampolicy.NewDataGoogleIapWebForwardingRuleServiceIamPolicy(scope Construct, id *string, config DataGoogleIapWebForwardingRuleServiceIamPolicyConfig) DataGoogleIapWebForwardingRuleServiceIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleSer
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleSer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleServiceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapWebForwardingRuleServiceIamPolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebforwardingruleserviceiampolicy"
 
 &datagoogleiapwebforwardingruleserviceiampolicy.DataGoogleIapWebForwardingRuleServiceIamPolicyConfig {
 	Connection: interface{},

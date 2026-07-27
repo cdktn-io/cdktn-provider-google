@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 datagooglediscoveryenginesearchengineiampolicy.NewDataGoogleDiscoveryEngineSearchEngineIamPolicy(scope Construct, id *string, config DataGoogleDiscoveryEngineSearchEngineIamPolicyConfig) DataGoogleDiscoveryEngineSearchEngineIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEn
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEn
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDiscoveryEngineSearchEngineIamPolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglediscoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglediscoveryenginesearchengineiampolicy"
 
 &datagooglediscoveryenginesearchengineiampolicy.DataGoogleDiscoveryEngineSearchEngineIamPolicyConfig {
 	Connection: interface{},

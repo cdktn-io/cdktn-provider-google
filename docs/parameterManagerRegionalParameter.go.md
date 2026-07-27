@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.NewParameterManagerRegionalParameter(scope Construct, id *string, config ParameterManagerRegionalParameterConfig) ParameterManagerRegionalParameter
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.ParameterManagerRegionalParameter_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.ParameterManagerRegionalParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ parametermanagerregionalparameter.ParameterManagerRegionalParameter_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.ParameterManagerRegionalParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ parametermanagerregionalparameter.ParameterManagerRegionalParameter_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.ParameterManagerRegionalParameter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1015,7 +1015,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 &parametermanagerregionalparameter.ParameterManagerRegionalParameterConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanager
 	KmsKey: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.parameterManagerRegionalParameter.ParameterManagerRegionalParameterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.parameterManagerRegionalParameter.ParameterManagerRegionalParameterTimeouts,
 }
 ```
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterPolicyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 &parametermanagerregionalparameter.ParameterManagerRegionalParameterPolicyMember {
 
@@ -1294,7 +1294,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanager
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 &parametermanagerregionalparameter.ParameterManagerRegionalParameterTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterPolicyMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.NewParameterManagerRegionalParameterPolicyMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ParameterManagerRegionalParameterPolicyMemberList
 ```
@@ -1505,7 +1505,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterPolicyMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.NewParameterManagerRegionalParameterPolicyMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ParameterManagerRegionalParameterPolicyMemberOutputReference
 ```
@@ -1794,7 +1794,7 @@ func InternalValue() ParameterManagerRegionalParameterPolicyMember
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerregionalparameter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerregionalparameter"
 
 parametermanagerregionalparameter.NewParameterManagerRegionalParameterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ParameterManagerRegionalParameterTimeoutsOutputReference
 ```

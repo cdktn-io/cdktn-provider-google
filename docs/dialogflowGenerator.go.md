@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGenerator(scope Construct, id *string, config DialogflowGeneratorConfig) DialogflowGenerator
 ```
@@ -502,7 +502,7 @@ func ResetTriggerEvent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.DialogflowGenerator_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.DialogflowGenerator_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ dialogflowgenerator.DialogflowGenerator_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.DialogflowGenerator_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ dialogflowgenerator.DialogflowGenerator_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.DialogflowGenerator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1044,7 +1044,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorConfig {
 	Connection: interface{},
@@ -1055,15 +1055,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenera
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	SummarizationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorSummarizationContext,
+	SummarizationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorSummarizationContext,
 	DeletionPolicy: *string,
 	Description: *string,
 	GeneratorId: *string,
 	Id: *string,
-	InferenceParameter: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorInferenceParameter,
+	InferenceParameter: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorInferenceParameter,
 	Project: *string,
 	PublishedModel: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorTimeouts,
 	TriggerEvent: *string,
 }
 ```
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorInferenceParameter {
 	MaxOutputTokens: *f64,
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContext {
 	FewShotExamples: interface{},
@@ -1504,13 +1504,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamples.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamples {
-	Output: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutput,
-	ConversationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext,
+	Output: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutput,
+	ConversationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext,
 	ExtraInfo: *map[string]*string,
-	SummarizationSectionList: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct,
+	SummarizationSectionList: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct,
 }
 ```
 
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext {
 	MessageEntries: interface{},
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries {
 	CreateTime: *string,
@@ -1704,10 +1704,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutput {
-	SummarySuggestion: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion,
+	SummarySuggestion: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion,
 }
 ```
 
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion {
 	SummarySections: interface{},
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections {
 	Section: *string,
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct {
 	SummarizationSections: interface{},
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections {
 	Definition: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorSummarizationContextSummarizationSections {
 	Definition: *string,
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 &dialogflowgenerator.DialogflowGeneratorTimeouts {
 	Create: *string,
@@ -2050,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorInferenceParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorInferenceParameterOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() DialogflowGeneratorInferenceParameter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList
 ```
@@ -2575,7 +2575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference
 ```
@@ -2958,7 +2958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference
 ```
@@ -3249,7 +3249,7 @@ func InternalValue() DialogflowGeneratorSummarizationContextFewShotExamplesConve
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesList
 ```
@@ -3409,7 +3409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference
 ```
@@ -3700,7 +3700,7 @@ func InternalValue() DialogflowGeneratorSummarizationContextFewShotExamplesOutpu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference
 ```
@@ -4115,7 +4115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference
 ```
@@ -4399,7 +4399,7 @@ func InternalValue() DialogflowGeneratorSummarizationContextFewShotExamplesOutpu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList
 ```
@@ -4559,7 +4559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference
 ```
@@ -4870,7 +4870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference
 ```
@@ -5161,7 +5161,7 @@ func InternalValue() DialogflowGeneratorSummarizationContextFewShotExamplesSumma
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList
 ```
@@ -5321,7 +5321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference
 ```
@@ -5675,7 +5675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextOutputReference
 ```
@@ -6066,7 +6066,7 @@ func InternalValue() DialogflowGeneratorSummarizationContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextSummarizationSectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorSummarizationContextSummarizationSectionsList
 ```
@@ -6226,7 +6226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference
 ```
@@ -6580,7 +6580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowgenerator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowgenerator"
 
 dialogflowgenerator.NewDialogflowGeneratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorTimeoutsOutputReference
 ```

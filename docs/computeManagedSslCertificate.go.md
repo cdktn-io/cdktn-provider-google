@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.NewComputeManagedSslCertificate(scope Construct, id *string, config ComputeManagedSslCertificateConfig) ComputeManagedSslCertificate
 ```
@@ -482,7 +482,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.ComputeManagedSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.ComputeManagedSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computemanagedsslcertificate.ComputeManagedSslCertificate_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.ComputeManagedSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ computemanagedsslcertificate.ComputeManagedSslCertificate_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.ComputeManagedSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1002,7 +1002,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 &computemanagedsslcertificate.ComputeManagedSslCertificateConfig {
 	Connection: interface{},
@@ -1015,10 +1015,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedss
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Managed: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeManagedSslCertificate.ComputeManagedSslCertificateManaged,
+	Managed: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeManagedSslCertificate.ComputeManagedSslCertificateManaged,
 	Name: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 &computemanagedsslcertificate.ComputeManagedSslCertificateManaged {
 	Domains: *[]*string,
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 &computemanagedsslcertificate.ComputeManagedSslCertificateTimeouts {
 	Create: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.NewComputeManagedSslCertificateManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeManagedSslCertificateManagedOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() ComputeManagedSslCertificateManaged
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computemanagedsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computemanagedsslcertificate"
 
 computemanagedsslcertificate.NewComputeManagedSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeManagedSslCertificateTimeoutsOutputReference
 ```

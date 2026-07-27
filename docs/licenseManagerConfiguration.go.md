@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.NewLicenseManagerConfiguration(scope Construct, id *string, config LicenseManagerConfigurationConfig) LicenseManagerConfiguration
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.LicenseManagerConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.LicenseManagerConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ licensemanagerconfiguration.LicenseManagerConfiguration_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.LicenseManagerConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ licensemanagerconfiguration.LicenseManagerConfiguration_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.LicenseManagerConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 &licensemanagerconfiguration.LicenseManagerConfigurationConfig {
 	Connection: interface{},
@@ -1049,7 +1049,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerco
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts,
 }
 ```
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 &licensemanagerconfiguration.LicenseManagerConfigurationTimeouts {
 	Create: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/licensemanagerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/licensemanagerconfiguration"
 
 licensemanagerconfiguration.NewLicenseManagerConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LicenseManagerConfigurationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.NewDiscoveryEngineSitemap(scope Construct, id *string, config DiscoveryEngineSitemapConfig) DiscoveryEngineSitemap
 ```
@@ -448,7 +448,7 @@ func ResetUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.DiscoveryEngineSitemap_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.DiscoveryEngineSitemap_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ discoveryenginesitemap.DiscoveryEngineSitemap_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.DiscoveryEngineSitemap_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ discoveryenginesitemap.DiscoveryEngineSitemap_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.DiscoveryEngineSitemap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 &discoveryenginesitemap.DiscoveryEngineSitemapConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengines
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts,
 	Uri: *string,
 }
 ```
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 &discoveryenginesitemap.DiscoveryEngineSitemapTimeouts {
 	Create: *string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesitemap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesitemap"
 
 discoveryenginesitemap.NewDiscoveryEngineSitemapTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSitemapTimeoutsOutputReference
 ```

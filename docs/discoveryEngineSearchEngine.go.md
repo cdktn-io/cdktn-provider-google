@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngine(scope Construct, id *string, config DiscoveryEngineSearchEngineConfig) DiscoveryEngineSearchEngine
 ```
@@ -529,7 +529,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.DiscoveryEngineSearchEngine_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.DiscoveryEngineSearchEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ discoveryenginesearchengine.DiscoveryEngineSearchEngine_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.DiscoveryEngineSearchEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ discoveryenginesearchengine.DiscoveryEngineSearchEngine_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.DiscoveryEngineSearchEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1225,7 +1225,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineCommonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineCommonConfig {
 	CompanyName: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineConfig {
 	Connection: interface{},
@@ -1276,18 +1276,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengines
 	DisplayName: *string,
 	EngineId: *string,
 	Location: *string,
-	SearchEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineSearchEngineConfig,
+	SearchEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineSearchEngineConfig,
 	AppType: *string,
-	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineCommonConfig,
+	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineCommonConfig,
 	DeletionPolicy: *string,
 	DisableAnalytics: interface{},
 	Features: *map[string]*string,
 	Id: *string,
 	IndustryVertical: *string,
 	KmsKeyName: *string,
-	KnowledgeGraphConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfig,
+	KnowledgeGraphConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineTimeouts,
 }
 ```
 
@@ -1651,13 +1651,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineKnowledgeGraphConfig {
 	CloudKnowledgeGraphTypes: *[]*string,
 	EnableCloudKnowledgeGraph: interface{},
 	EnablePrivateKnowledgeGraph: interface{},
-	FeatureConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig,
+	FeatureConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig,
 }
 ```
 
@@ -1733,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig {
 	DisablePrivateKgAutoComplete: interface{},
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineSearchEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineSearchEngineConfig {
 	RequiredSubscriptionTier: *string,
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 &discoveryenginesearchengine.DiscoveryEngineSearchEngineTimeouts {
 	Create: *string,
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineCommonConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngineCommonConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineCommonConfigOutputReference
 ```
@@ -2225,7 +2225,7 @@ func InternalValue() DiscoveryEngineSearchEngineCommonConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference
 ```
@@ -2590,7 +2590,7 @@ func InternalValue() DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference
 ```
@@ -2968,7 +2968,7 @@ func InternalValue() DiscoveryEngineSearchEngineKnowledgeGraphConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineSearchEngineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngineSearchEngineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineSearchEngineConfigOutputReference
 ```
@@ -3304,7 +3304,7 @@ func InternalValue() DiscoveryEngineSearchEngineSearchEngineConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengine"
 
 discoveryenginesearchengine.NewDiscoveryEngineSearchEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineTimeoutsOutputReference
 ```

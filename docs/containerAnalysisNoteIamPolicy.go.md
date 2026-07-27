@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 containeranalysisnoteiampolicy.NewContainerAnalysisNoteIamPolicy(scope Construct, id *string, config ContainerAnalysisNoteIamPolicyConfig) ContainerAnalysisNoteIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisNoteIamPolicy.ContainerAnalysisNoteIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiampolicy"
 
 &containeranalysisnoteiampolicy.ContainerAnalysisNoteIamPolicyConfig {
 	Connection: interface{},

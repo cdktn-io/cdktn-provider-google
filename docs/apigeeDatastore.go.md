@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.NewApigeeDatastore(scope Construct, id *string, config ApigeeDatastoreConfig) ApigeeDatastore
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.ApigeeDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.ApigeeDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ apigeedatastore.ApigeeDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.ApigeeDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apigeedatastore.ApigeeDatastore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.ApigeeDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 &apigeedatastore.ApigeeDatastoreConfig {
 	Connection: interface{},
@@ -955,13 +955,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DatastoreConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeDatastore.ApigeeDatastoreDatastoreConfig,
+	DatastoreConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeDatastore.ApigeeDatastoreDatastoreConfig,
 	DisplayName: *string,
 	OrgId: *string,
 	TargetType: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeDatastore.ApigeeDatastoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeDatastore.ApigeeDatastoreTimeouts,
 }
 ```
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastoreDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 &apigeedatastore.ApigeeDatastoreDatastoreConfig {
 	ProjectId: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 &apigeedatastore.ApigeeDatastoreTimeouts {
 	Create: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastoreDatastoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.NewApigeeDatastoreDatastoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeDatastoreDatastoreConfigOutputReference
 ```
@@ -1714,7 +1714,7 @@ func InternalValue() ApigeeDatastoreDatastoreConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDatastore.ApigeeDatastoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatastore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatastore"
 
 apigeedatastore.NewApigeeDatastoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeDatastoreTimeoutsOutputReference
 ```

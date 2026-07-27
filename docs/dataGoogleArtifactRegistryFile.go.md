@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.NewDataGoogleArtifactRegistryFile(scope Construct, id *string, config DataGoogleArtifactRegistryFileConfig) DataGoogleArtifactRegistryFile
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.DataGoogleArtifactRegistryFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 &datagoogleartifactregistryfile.DataGoogleArtifactRegistryFileConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifa
 	Id: *string,
 	Overwrite: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFileTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 &datagoogleartifactregistryfile.DataGoogleArtifactRegistryFileTimeouts {
 	Read: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistryfile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleartifactregistryfile"
 
 datagoogleartifactregistryfile.NewDataGoogleArtifactRegistryFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGoogleArtifactRegistryFileTimeoutsOutputReference
 ```

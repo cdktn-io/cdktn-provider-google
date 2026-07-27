@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.NewParameterManagerParameterVersion(scope Construct, id *string, config ParameterManagerParameterVersionConfig) ParameterManagerParameterVersion
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.ParameterManagerParameterVersion_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.ParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ parametermanagerparameterversion.ParameterManagerParameterVersion_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.ParameterManagerParameterVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ parametermanagerparameterversion.ParameterManagerParameterVersion_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.ParameterManagerParameterVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 &parametermanagerparameterversion.ParameterManagerParameterVersionConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanager
 	DeletionPolicy: *string,
 	Disabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts,
 }
 ```
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 &parametermanagerparameterversion.ParameterManagerParameterVersionTimeouts {
 	Create: *string,
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/parametermanagerparameterversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/parametermanagerparameterversion"
 
 parametermanagerparameterversion.NewParameterManagerParameterVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ParameterManagerParameterVersionTimeoutsOutputReference
 ```

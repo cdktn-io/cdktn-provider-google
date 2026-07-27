@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.NewApigeeSecurityFeedback(scope Construct, id *string, config ApigeeSecurityFeedbackConfig) ApigeeSecurityFeedback
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.ApigeeSecurityFeedback_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.ApigeeSecurityFeedback_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ apigeesecurityfeedback.ApigeeSecurityFeedback_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.ApigeeSecurityFeedback_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ apigeesecurityfeedback.ApigeeSecurityFeedback_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.ApigeeSecurityFeedback_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 &apigeesecurityfeedback.ApigeeSecurityFeedbackConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfe
 	DisplayName: *string,
 	Id: *string,
 	Reason: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts,
 }
 ```
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 &apigeesecurityfeedback.ApigeeSecurityFeedbackFeedbackContexts {
 	Attribute: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 &apigeesecurityfeedback.ApigeeSecurityFeedbackTimeouts {
 	Create: *string,
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.NewApigeeSecurityFeedbackFeedbackContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeSecurityFeedbackFeedbackContextsList
 ```
@@ -1552,7 +1552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.NewApigeeSecurityFeedbackFeedbackContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeSecurityFeedbackFeedbackContextsOutputReference
 ```
@@ -1863,7 +1863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeesecurityfeedback"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesecurityfeedback"
 
 apigeesecurityfeedback.NewApigeeSecurityFeedbackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeSecurityFeedbackTimeoutsOutputReference
 ```

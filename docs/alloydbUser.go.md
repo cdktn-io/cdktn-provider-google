@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbUser.AlloydbUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.NewAlloydbUser(scope Construct, id *string, config AlloydbUserConfig) AlloydbUser
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.alloydbUser.AlloydbUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.AlloydbUser_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.alloydbUser.AlloydbUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.AlloydbUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ alloydbuser.AlloydbUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.alloydbUser.AlloydbUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.AlloydbUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ alloydbuser.AlloydbUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.alloydbUser.AlloydbUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.AlloydbUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbUser.AlloydbUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 &alloydbuser.AlloydbUserConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
 	Password: *string,
 	PasswordWo: *string,
 	PasswordWoVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.alloydbUser.AlloydbUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbUser.AlloydbUserTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbUser.AlloydbUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 &alloydbuser.AlloydbUserTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbUser.AlloydbUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/alloydbuser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbuser"
 
 alloydbuser.NewAlloydbUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbUserTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.NewCloudRunServiceIamMember(scope Construct, id *string, config CloudRunServiceIamMemberConfig) CloudRunServiceIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.CloudRunServiceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.CloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudrunserviceiammember.CloudRunServiceIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.CloudRunServiceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cloudrunserviceiammember.CloudRunServiceIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.CloudRunServiceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 &cloudrunserviceiammember.CloudRunServiceIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 &cloudrunserviceiammember.CloudRunServiceIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunservicei
 	Member: *string,
 	Role: *string,
 	Service: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudRunServiceIamMember.CloudRunServiceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudRunServiceIamMember.CloudRunServiceIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunServiceIamMember.CloudRunServiceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunserviceiammember"
 
 cloudrunserviceiammember.NewCloudRunServiceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunServiceIamMemberConditionOutputReference
 ```

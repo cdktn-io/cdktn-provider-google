@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.NewDataGoogleComputeInstanceGroups(scope Construct, id *string, config DataGoogleComputeInstanceGroupsConfig) DataGoogleComputeInstanceGroups
 ```
@@ -326,7 +326,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 &datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroupsConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 &datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroupsInstanceGroups {
 
@@ -866,7 +866,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroupsNamedPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 &datagooglecomputeinstancegroups.DataGoogleComputeInstanceGroupsInstanceGroupsNamedPort {
 
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.NewDataGoogleComputeInstanceGroupsInstanceGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupsInstanceGroupsList
 ```
@@ -1030,7 +1030,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroupsNamedPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.NewDataGoogleComputeInstanceGroupsInstanceGroupsNamedPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupsInstanceGroupsNamedPortList
 ```
@@ -1179,7 +1179,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroupsNamedPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.NewDataGoogleComputeInstanceGroupsInstanceGroupsNamedPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupsInstanceGroupsNamedPortOutputReference
 ```
@@ -1468,7 +1468,7 @@ func InternalValue() DataGoogleComputeInstanceGroupsInstanceGroupsNamedPort
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInstanceGroups.DataGoogleComputeInstanceGroupsInstanceGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeinstancegroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeinstancegroups"
 
 datagooglecomputeinstancegroups.NewDataGoogleComputeInstanceGroupsInstanceGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupsInstanceGroupsOutputReference
 ```

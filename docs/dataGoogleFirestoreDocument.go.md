@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 datagooglefirestoredocument.NewDataGoogleFirestoreDocument(scope Construct, id *string, config DataGoogleFirestoreDocumentConfig) DataGoogleFirestoreDocument
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 datagooglefirestoredocument.DataGoogleFirestoreDocument_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 datagooglefirestoredocument.DataGoogleFirestoreDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglefirestoredocument.DataGoogleFirestoreDocument_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 datagooglefirestoredocument.DataGoogleFirestoreDocument_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglefirestoredocument.DataGoogleFirestoreDocument_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 datagooglefirestoredocument.DataGoogleFirestoreDocument_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefirestoredocument"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirestoredocument"
 
 &datagooglefirestoredocument.DataGoogleFirestoreDocumentConfig {
 	Connection: interface{},

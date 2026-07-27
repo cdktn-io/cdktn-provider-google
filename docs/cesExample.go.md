@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExample.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExample(scope Construct, id *string, config CesExampleConfig) CesExample
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cesExample.CesExample.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.CesExample_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cesExample.CesExample.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.CesExample_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ cesexample.CesExample_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cesExample.CesExample.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.CesExample_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ cesexample.CesExample_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cesExample.CesExample.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.CesExample_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleConfig {
 	Connection: interface{},
@@ -1081,7 +1081,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
 	Id: *string,
 	Messages: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleTimeouts,
 }
 ```
 
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessages {
 	Chunks: interface{},
@@ -1405,14 +1405,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunks {
-	AgentTransfer: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksAgentTransfer,
-	Image: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksImage,
+	AgentTransfer: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksAgentTransfer,
+	Image: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksImage,
 	Text: *string,
-	ToolCall: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksToolCall,
-	ToolResponse: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksToolResponse,
+	ToolCall: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksToolCall,
+	ToolResponse: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksToolResponse,
 	UpdatedVariables: *string,
 }
 ```
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransfer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksAgentTransfer {
 	TargetAgent: *string,
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksImage {
 	Data: *string,
@@ -1603,13 +1603,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCall.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksToolCall {
 	Args: *string,
 	Id: *string,
 	Tool: *string,
-	ToolsetTool: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksToolCallToolsetTool,
+	ToolsetTool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksToolCallToolsetTool,
 }
 ```
 
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCallToolsetTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksToolCallToolsetTool {
 	Toolset: *string,
@@ -1742,13 +1742,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksToolResponse {
 	Response: *string,
 	Id: *string,
 	Tool: *string,
-	ToolsetTool: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cesExample.CesExampleMessagesChunksToolResponseToolsetTool,
+	ToolsetTool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cesExample.CesExampleMessagesChunksToolResponseToolsetTool,
 }
 ```
 
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseToolsetTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleMessagesChunksToolResponseToolsetTool {
 	Toolset: *string,
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 &cesexample.CesExampleTimeouts {
 	Create: *string,
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksAgentTransferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksAgentTransferOutputReference
 ```
@@ -2225,7 +2225,7 @@ func InternalValue() CesExampleMessagesChunksAgentTransfer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksImageOutputReference
 ```
@@ -2518,7 +2518,7 @@ func InternalValue() CesExampleMessagesChunksImage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesExampleMessagesChunksList
 ```
@@ -2678,7 +2678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesExampleMessagesChunksOutputReference
 ```
@@ -3171,7 +3171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksToolCallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolCallOutputReference
 ```
@@ -3560,7 +3560,7 @@ func InternalValue() CesExampleMessagesChunksToolCall
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCallToolsetToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksToolCallToolsetToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolCallToolsetToolOutputReference
 ```
@@ -3860,7 +3860,7 @@ func InternalValue() CesExampleMessagesChunksToolCallToolsetTool
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksToolResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolResponseOutputReference
 ```
@@ -4242,7 +4242,7 @@ func InternalValue() CesExampleMessagesChunksToolResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseToolsetToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesChunksToolResponseToolsetToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolResponseToolsetToolOutputReference
 ```
@@ -4542,7 +4542,7 @@ func InternalValue() CesExampleMessagesChunksToolResponseToolsetTool
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesExampleMessagesList
 ```
@@ -4702,7 +4702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleMessagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesExampleMessagesOutputReference
 ```
@@ -5040,7 +5040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cesexample"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cesexample"
 
 cesexample.NewCesExampleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesExampleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 computeinstantsnapshotiampolicy.NewComputeInstantSnapshotIamPolicy(scope Construct, id *string, config ComputeInstantSnapshotIamPolicyConfig) ComputeInstantSnapshotIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstantSnapshotIamPolicy.ComputeInstantSnapshotIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstantsnapshotiampolicy"
 
 &computeinstantsnapshotiampolicy.ComputeInstantSnapshotIamPolicyConfig {
 	Connection: interface{},

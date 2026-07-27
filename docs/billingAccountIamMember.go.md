@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.NewBillingAccountIamMember(scope Construct, id *string, config BillingAccountIamMemberConfig) BillingAccountIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.BillingAccountIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.BillingAccountIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ billingaccountiammember.BillingAccountIamMember_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.BillingAccountIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ billingaccountiammember.BillingAccountIamMember_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.BillingAccountIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 &billingaccountiammember.BillingAccountIamMemberCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 &billingaccountiammember.BillingAccountIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountia
 	BillingAccountId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.billingAccountIamMember.BillingAccountIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.billingAccountIamMember.BillingAccountIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/billingaccountiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingaccountiammember"
 
 billingaccountiammember.NewBillingAccountIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BillingAccountIamMemberConditionOutputReference
 ```

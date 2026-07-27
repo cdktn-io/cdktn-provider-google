@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfile(scope Construct, id *string, config DialogflowConversationProfileConfig) DialogflowConversationProfile
 ```
@@ -642,7 +642,7 @@ func ResetTtsConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.DialogflowConversationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.DialogflowConversationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ dialogflowconversationprofile.DialogflowConversationProfile_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.DialogflowConversationProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -702,7 +702,7 @@ dialogflowconversationprofile.DialogflowConversationProfile_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.DialogflowConversationProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1338,7 +1338,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileAutomatedAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileAutomatedAgentConfig {
 	Agent: *string,
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileConfig {
 	Connection: interface{},
@@ -1400,22 +1400,22 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconver
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Location: *string,
-	AutomatedAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileAutomatedAgentConfig,
+	AutomatedAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileAutomatedAgentConfig,
 	DeletionPolicy: *string,
-	HumanAgentAssistantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfig,
-	HumanAgentHandoffConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfig,
+	HumanAgentAssistantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfig,
+	HumanAgentHandoffConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfig,
 	Id: *string,
 	LanguageCode: *string,
-	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileLoggingConfig,
-	NewMessageEventNotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileNewMessageEventNotificationConfig,
-	NewRecognitionResultNotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileNewRecognitionResultNotificationConfig,
-	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileNotificationConfig,
+	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileLoggingConfig,
+	NewMessageEventNotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileNewMessageEventNotificationConfig,
+	NewRecognitionResultNotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileNewRecognitionResultNotificationConfig,
+	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileNotificationConfig,
 	Project: *string,
 	SecuritySettings: *string,
-	SttConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileSttConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileTimeouts,
+	SttConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileSttConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileTimeouts,
 	TimeZone: *string,
-	TtsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileTtsConfig,
+	TtsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileTtsConfig,
 }
 ```
 
@@ -1784,13 +1784,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfig {
-	EndUserSuggestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig,
-	HumanAgentSuggestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig,
-	MessageAnalysisConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig,
-	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig,
+	EndUserSuggestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig,
+	HumanAgentSuggestionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig,
+	MessageAnalysisConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig,
+	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig,
 }
 ```
 
@@ -1866,7 +1866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig {
 	DisableHighLatencyFeaturesSyncDelivery: interface{},
@@ -1954,19 +1954,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs {
-	ConversationModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig,
-	ConversationProcessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig,
+	ConversationModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig,
+	ConversationProcessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig,
 	DisableAgentQueryLogging: interface{},
 	EnableConversationAugmentedQuery: interface{},
 	EnableEventBasedSuggestion: interface{},
 	EnableQuerySuggestionOnly: interface{},
 	EnableQuerySuggestionWhenNoAnswer: interface{},
-	QueryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig,
-	SuggestionFeature: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature,
-	SuggestionTriggerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings,
+	QueryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig,
+	SuggestionFeature: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature,
+	SuggestionTriggerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings,
 }
 ```
 
@@ -2138,7 +2138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfig {
 	BaselineModelVersion: *string,
@@ -2190,7 +2190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfig {
 	RecentSentencesCount: *f64,
@@ -2224,16 +2224,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfig {
 	ConfidenceThreshold: *f64,
-	ContextFilterSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings,
-	DialogflowQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource,
-	DocumentQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource,
-	KnowledgeBaseQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource,
+	ContextFilterSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings,
+	DialogflowQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource,
+	DocumentQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource,
+	KnowledgeBaseQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource,
 	MaxResults: *f64,
-	Sections: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections,
+	Sections: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections,
 }
 ```
 
@@ -2354,7 +2354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings {
 	DropHandoffMessages: interface{},
@@ -2420,11 +2420,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource {
 	Agent: *string,
-	HumanAgentSideConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig,
+	HumanAgentSideConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig,
 }
 ```
 
@@ -2472,7 +2472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig {
 	Agent: *string,
@@ -2508,7 +2508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySource {
 	Documents: *[]*string,
@@ -2542,7 +2542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySource {
 	KnowledgeBases: *[]*string,
@@ -2576,7 +2576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSections {
 	SectionTypes: *[]*string,
@@ -2612,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeature {
 	Type: *string,
@@ -2646,7 +2646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings {
 	NoSmallTalk: interface{},
@@ -2696,7 +2696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfig {
 	DisableHighLatencyFeaturesSyncDelivery: interface{},
@@ -2784,19 +2784,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigs {
-	ConversationModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig,
-	ConversationProcessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig,
+	ConversationModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig,
+	ConversationProcessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig,
 	DisableAgentQueryLogging: interface{},
 	EnableConversationAugmentedQuery: interface{},
 	EnableEventBasedSuggestion: interface{},
 	EnableQuerySuggestionOnly: interface{},
 	EnableQuerySuggestionWhenNoAnswer: interface{},
-	QueryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig,
-	SuggestionFeature: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature,
-	SuggestionTriggerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings,
+	QueryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig,
+	SuggestionFeature: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature,
+	SuggestionTriggerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings,
 }
 ```
 
@@ -2968,7 +2968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfig {
 	BaselineModelVersion: *string,
@@ -3020,7 +3020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfig {
 	RecentSentencesCount: *f64,
@@ -3054,14 +3054,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfig {
 	ConfidenceThreshold: *f64,
-	ContextFilterSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings,
-	DialogflowQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource,
+	ContextFilterSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings,
+	DialogflowQuerySource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource,
 	MaxResults: *f64,
-	Sections: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections,
+	Sections: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections,
 }
 ```
 
@@ -3152,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettings {
 	DropHandoffMessages: interface{},
@@ -3218,11 +3218,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySource {
 	Agent: *string,
-	HumanAgentSideConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig,
+	HumanAgentSideConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig,
 }
 ```
 
@@ -3270,7 +3270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfig {
 	Agent: *string,
@@ -3306,7 +3306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSections {
 	SectionTypes: *[]*string,
@@ -3342,7 +3342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeature {
 	Type: *string,
@@ -3376,7 +3376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettings {
 	NoSmallTalk: interface{},
@@ -3426,7 +3426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfig {
 	EnableEntityExtraction: interface{},
@@ -3478,7 +3478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig {
 	MessageFormat: *string,
@@ -3528,10 +3528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentHandoffConfig {
-	LivePersonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig,
+	LivePersonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig,
 }
 ```
 
@@ -3562,7 +3562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig {
 	AccountNumber: *string,
@@ -3596,7 +3596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileLoggingConfig {
 	EnableStackdriverLogging: interface{},
@@ -3630,7 +3630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewMessageEventNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileNewMessageEventNotificationConfig {
 	MessageFormat: *string,
@@ -3680,7 +3680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewRecognitionResultNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileNewRecognitionResultNotificationConfig {
 	MessageFormat: *string,
@@ -3734,7 +3734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileNotificationConfig {
 	MessageFormat: *string,
@@ -3784,7 +3784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileSttConfig {
 	AudioEncoding: *string,
@@ -3914,7 +3914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileTimeouts {
 	Create: *string,
@@ -3974,13 +3974,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTtsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileTtsConfig {
 	EffectsProfileId: *[]*string,
 	Pitch: *f64,
 	SpeakingRate: *f64,
-	Voice: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowConversationProfile.DialogflowConversationProfileTtsConfigVoice,
+	Voice: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowConversationProfile.DialogflowConversationProfileTtsConfigVoice,
 	VolumeGainDb: *f64,
 }
 ```
@@ -4074,7 +4074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTtsConfigVoice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 &dialogflowconversationprofile.DialogflowConversationProfileTtsConfigVoice {
 	Name: *string,
@@ -4126,7 +4126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileAutomatedAgentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileAutomatedAgentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileAutomatedAgentConfigOutputReference
 ```
@@ -4426,7 +4426,7 @@ func InternalValue() DialogflowConversationProfileAutomatedAgentConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationModelConfigOutputReference
 ```
@@ -4733,7 +4733,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference
 ```
@@ -5011,7 +5011,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList
 ```
@@ -5171,7 +5171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsOutputReference
 ```
@@ -5793,7 +5793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference
 ```
@@ -6129,7 +6129,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference
 ```
@@ -6407,7 +6407,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference
 ```
@@ -6720,7 +6720,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigDocumentQuerySourceOutputReference
 ```
@@ -6991,7 +6991,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigKnowledgeBaseQuerySourceOutputReference
 ```
@@ -7262,7 +7262,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigOutputReference
 ```
@@ -7779,7 +7779,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference
 ```
@@ -8057,7 +8057,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference
 ```
@@ -8335,7 +8335,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference
 ```
@@ -8642,7 +8642,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference
 ```
@@ -9020,7 +9020,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigEndUs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationModelConfigOutputReference
 ```
@@ -9327,7 +9327,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsConversationProcessConfigOutputReference
 ```
@@ -9605,7 +9605,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsList
 ```
@@ -9765,7 +9765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference
 ```
@@ -10387,7 +10387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigContextFilterSettingsOutputReference
 ```
@@ -10723,7 +10723,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceHumanAgentSideConfigOutputReference
 ```
@@ -11001,7 +11001,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference
 ```
@@ -11314,7 +11314,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigOutputReference
 ```
@@ -11747,7 +11747,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigSectionsOutputReference
 ```
@@ -12025,7 +12025,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionFeatureOutputReference
 ```
@@ -12303,7 +12303,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsSuggestionTriggerSettingsOutputReference
 ```
@@ -12610,7 +12610,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigOutputReference
 ```
@@ -12988,7 +12988,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigHuman
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference
 ```
@@ -13295,7 +13295,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigMessa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference
 ```
@@ -13602,7 +13602,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfigNotif
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentAssistantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigOutputReference
 ```
@@ -14019,7 +14019,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentAssistantConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference
 ```
@@ -14290,7 +14290,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentHandoffConfigLivePer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileHumanAgentHandoffConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentHandoffConfigOutputReference
 ```
@@ -14581,7 +14581,7 @@ func InternalValue() DialogflowConversationProfileHumanAgentHandoffConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileLoggingConfigOutputReference
 ```
@@ -14859,7 +14859,7 @@ func InternalValue() DialogflowConversationProfileLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference
 ```
@@ -15166,7 +15166,7 @@ func InternalValue() DialogflowConversationProfileNewMessageEventNotificationCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference
 ```
@@ -15473,7 +15473,7 @@ func InternalValue() DialogflowConversationProfileNewRecognitionResultNotificati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileNotificationConfigOutputReference
 ```
@@ -15780,7 +15780,7 @@ func InternalValue() DialogflowConversationProfileNotificationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileSttConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileSttConfigOutputReference
 ```
@@ -16232,7 +16232,7 @@ func InternalValue() DialogflowConversationProfileSttConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileTimeoutsOutputReference
 ```
@@ -16568,7 +16568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTtsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileTtsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileTtsConfigOutputReference
 ```
@@ -16975,7 +16975,7 @@ func InternalValue() DialogflowConversationProfileTtsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTtsConfigVoiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowconversationprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowconversationprofile"
 
 dialogflowconversationprofile.NewDialogflowConversationProfileTtsConfigVoiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileTtsConfigVoiceOutputReference
 ```

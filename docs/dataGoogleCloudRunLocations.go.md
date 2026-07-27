@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 datagooglecloudrunlocations.NewDataGoogleCloudRunLocations(scope Construct, id *string, config DataGoogleCloudRunLocationsConfig) DataGoogleCloudRunLocations
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 datagooglecloudrunlocations.DataGoogleCloudRunLocations_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 datagooglecloudrunlocations.DataGoogleCloudRunLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecloudrunlocations.DataGoogleCloudRunLocations_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 datagooglecloudrunlocations.DataGoogleCloudRunLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecloudrunlocations.DataGoogleCloudRunLocations_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 datagooglecloudrunlocations.DataGoogleCloudRunLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudrunlocations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudrunlocations"
 
 &datagooglecloudrunlocations.DataGoogleCloudRunLocationsConfig {
 	Connection: interface{},

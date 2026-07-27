@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.NewComputeRegionNetworkFirewallPolicyIamBinding(scope Construct, id *string, config ComputeRegionNetworkFirewallPolicyIamBindingConfig) ComputeRegionNetworkFirewallPolicyIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyI
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyI
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 &computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 &computeregionnetworkfirewallpolicyiambinding.ComputeRegionNetworkFirewallPolicyIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnet
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkFirewallPolicyIamBinding.ComputeRegionNetworkFirewallPolicyIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionnetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionnetworkfirewallpolicyiambinding"
 
 computeregionnetworkfirewallpolicyiambinding.NewComputeRegionNetworkFirewallPolicyIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionNetworkFirewallPolicyIamBindingConditionOutputReference
 ```

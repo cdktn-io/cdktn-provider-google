@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClient(scope Construct, id *string, config MigrationCenterDiscoveryClientConfig) MigrationCenterDiscoveryClient
 ```
@@ -476,7 +476,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.MigrationCenterDiscoveryClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1161,7 +1161,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 &migrationcenterdiscoveryclient.MigrationCenterDiscoveryClientConfig {
 	Connection: interface{},
@@ -1182,7 +1182,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterd
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientTimeouts,
 	Ttl: *string,
 }
 ```
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 &migrationcenterdiscoveryclient.MigrationCenterDiscoveryClientErrors {
 
@@ -1504,7 +1504,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterd
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrorsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 &migrationcenterdiscoveryclient.MigrationCenterDiscoveryClientErrorsDetails {
 
@@ -1517,7 +1517,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterd
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 &migrationcenterdiscoveryclient.MigrationCenterDiscoveryClientTimeouts {
 	Create: *string,
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrorsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClientErrorsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterDiscoveryClientErrorsDetailsList
 ```
@@ -1728,7 +1728,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrorsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClientErrorsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterDiscoveryClientErrorsDetailsOutputReference
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() MigrationCenterDiscoveryClientErrorsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClientErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterDiscoveryClientErrorsList
 ```
@@ -2144,7 +2144,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClientErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterDiscoveryClientErrorsOutputReference
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() MigrationCenterDiscoveryClientErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterDiscoveryClient.MigrationCenterDiscoveryClientTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterdiscoveryclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterdiscoveryclient"
 
 migrationcenterdiscoveryclient.NewMigrationCenterDiscoveryClientTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterDiscoveryClientTimeoutsOutputReference
 ```

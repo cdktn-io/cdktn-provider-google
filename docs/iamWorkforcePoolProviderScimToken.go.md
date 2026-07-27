@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.NewIamWorkforcePoolProviderScimToken(scope Construct, id *string, config IamWorkforcePoolProviderScimTokenConfig) IamWorkforcePoolProviderScimToken
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 &iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimTokenConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepool
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimTokenTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimTokenTimeouts,
 }
 ```
 
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 &iamworkforcepoolproviderscimtoken.IamWorkforcePoolProviderScimTokenTimeouts {
 	Create: *string,
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProviderScimToken.IamWorkforcePoolProviderScimTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepoolproviderscimtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepoolproviderscimtoken"
 
 iamworkforcepoolproviderscimtoken.NewIamWorkforcePoolProviderScimTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamWorkforcePoolProviderScimTokenTimeoutsOutputReference
 ```

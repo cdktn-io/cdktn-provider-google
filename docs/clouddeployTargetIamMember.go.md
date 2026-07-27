@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.NewClouddeployTargetIamMember(scope Construct, id *string, config ClouddeployTargetIamMemberConfig) ClouddeployTargetIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.ClouddeployTargetIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.ClouddeployTargetIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ clouddeploytargetiammember.ClouddeployTargetIamMember_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.ClouddeployTargetIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ clouddeploytargetiammember.ClouddeployTargetIamMember_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.ClouddeployTargetIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 &clouddeploytargetiammember.ClouddeployTargetIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 &clouddeploytargetiammember.ClouddeployTargetIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarge
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTargetIamMember.ClouddeployTargetIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTargetIamMember.ClouddeployTargetIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTargetIamMember.ClouddeployTargetIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytargetiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytargetiammember"
 
 clouddeploytargetiammember.NewClouddeployTargetIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetIamMemberConditionOutputReference
 ```

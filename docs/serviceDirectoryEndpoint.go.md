@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.NewServiceDirectoryEndpoint(scope Construct, id *string, config ServiceDirectoryEndpointConfig) ServiceDirectoryEndpoint
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.ServiceDirectoryEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.ServiceDirectoryEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ servicedirectoryendpoint.ServiceDirectoryEndpoint_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.ServiceDirectoryEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ servicedirectoryendpoint.ServiceDirectoryEndpoint_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.ServiceDirectoryEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -960,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 &servicedirectoryendpoint.ServiceDirectoryEndpointConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectory
 	Metadata: *map[string]*string,
 	Network: *string,
 	Port: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeouts,
 }
 ```
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 &servicedirectoryendpoint.ServiceDirectoryEndpointTimeouts {
 	Create: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryendpoint"
 
 servicedirectoryendpoint.NewServiceDirectoryEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDirectoryEndpointTimeoutsOutputReference
 ```

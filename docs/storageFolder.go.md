@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageFolder.StorageFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.NewStorageFolder(scope Construct, id *string, config StorageFolderConfig) StorageFolder
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageFolder.StorageFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageFolder.StorageFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ storagefolder.StorageFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageFolder.StorageFolder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ storagefolder.StorageFolder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageFolder.StorageFolder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageFolder.StorageFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 &storagefolder.StorageFolderConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
 	DeletionPolicy: *string,
 	ForceDestroy: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageFolder.StorageFolderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageFolder.StorageFolderTimeouts,
 }
 ```
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageFolder.StorageFolderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 &storagefolder.StorageFolderTimeouts {
 	Create: *string,
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageFolder.StorageFolderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.NewStorageFolderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageFolderTimeoutsOutputReference
 ```

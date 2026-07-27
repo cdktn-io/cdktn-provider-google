@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosture(scope Construct, id *string, config SecurityposturePostureConfig) SecurityposturePosture
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosture.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.SecurityposturePosture_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosture.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.SecurityposturePosture_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ securitypostureposture.SecurityposturePosture_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosture.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.SecurityposturePosture_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ securitypostureposture.SecurityposturePosture_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosture.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.SecurityposturePosture_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePostureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePostureConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securityposturep
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePostureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePostureTimeouts,
 }
 ```
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySets {
 	Policies: interface{},
@@ -1330,10 +1330,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPolicies {
-	Constraint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraint,
+	Constraint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraint,
 	PolicyId: *string,
 	ComplianceStandards: interface{},
 	Description: *string,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesComplianceStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesComplianceStandards {
 	Control: *string,
@@ -1462,13 +1462,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraint {
-	OrgPolicyConstraint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint,
-	OrgPolicyConstraintCustom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom,
-	SecurityHealthAnalyticsCustomModule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule,
-	SecurityHealthAnalyticsModule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule,
+	OrgPolicyConstraint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint,
+	OrgPolicyConstraintCustom: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom,
+	SecurityHealthAnalyticsCustomModule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule,
+	SecurityHealthAnalyticsModule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule,
 }
 ```
 
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint {
 	CannedConstraintId: *string,
@@ -1594,11 +1594,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustom {
 	PolicyRules: interface{},
-	CustomConstraint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint,
+	CustomConstraint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint,
 }
 ```
 
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraint {
 	ActionType: *string,
@@ -1778,14 +1778,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRules {
 	AllowAll: interface{},
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition,
 	DenyAll: interface{},
 	Enforce: interface{},
-	Values: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues,
+	Values: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues,
 }
 ```
 
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesCondition {
 	Expression: *string,
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValues {
 	AllowedValues: *[]*string,
@@ -2015,14 +2015,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRules {
 	AllowAll: interface{},
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition,
 	DenyAll: interface{},
 	Enforce: interface{},
-	Values: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues,
+	Values: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues,
 }
 ```
 
@@ -2120,7 +2120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition {
 	Expression: *string,
@@ -2202,7 +2202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues {
 	AllowedValues: *[]*string,
@@ -2252,10 +2252,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModule {
-	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig,
+	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig,
 	DisplayName: *string,
 	ModuleEnablementState: *string,
 }
@@ -2322,13 +2322,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfig {
-	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate,
-	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector,
+	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate,
+	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector,
 	Severity: *string,
-	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput,
+	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput,
 	Description: *string,
 	Recommendation: *string,
 }
@@ -2436,7 +2436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput {
 	Properties: interface{},
@@ -2470,11 +2470,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputProperties {
 	Name: *string,
-	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v20.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression,
+	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v19.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression,
 }
 ```
 
@@ -2520,7 +2520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpression {
 	Expression: *string,
@@ -2602,7 +2602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicate {
 	Expression: *string,
@@ -2684,7 +2684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelector {
 	ResourceTypes: *[]*string,
@@ -2718,7 +2718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModule {
 	ModuleName: *string,
@@ -2768,7 +2768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.securityposturePosture.SecurityposturePostureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 &securitypostureposture.SecurityposturePostureTimeouts {
 	Create: *string,
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsList
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsOutputReference
 ```
@@ -3343,7 +3343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesComplianceStandardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesComplianceStandardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsPoliciesComplianceStandardsList
 ```
@@ -3503,7 +3503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference
 ```
@@ -3828,7 +3828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomCustomConstraintOutputReference
 ```
@@ -4245,7 +4245,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomOutputReference
 ```
@@ -4571,7 +4571,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesConditionOutputReference
 ```
@@ -4929,7 +4929,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesList
 ```
@@ -5089,7 +5089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesOutputReference
 ```
@@ -5527,7 +5527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintCustomPolicyRulesValuesOutputReference
 ```
@@ -5834,7 +5834,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintOutputReference
 ```
@@ -6140,7 +6140,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
 ```
@@ -6498,7 +6498,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesList
 ```
@@ -6658,7 +6658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference
 ```
@@ -7096,7 +7096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValuesOutputReference
 ```
@@ -7403,7 +7403,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintOutputReference
 ```
@@ -7820,7 +7820,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraint
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputOutputReference
 ```
@@ -8111,7 +8111,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesList
 ```
@@ -8271,7 +8271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesOutputReference
 ```
@@ -8602,7 +8602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutputPropertiesValueExpressionOutputReference
 ```
@@ -8960,7 +8960,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigOutputReference
 ```
@@ -9401,7 +9401,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigPredicateOutputReference
 ```
@@ -9759,7 +9759,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigResourceSelectorOutputReference
 ```
@@ -10030,7 +10030,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleOutputReference
 ```
@@ -10383,7 +10383,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsModuleOutputReference
 ```
@@ -10683,7 +10683,7 @@ func InternalValue() SecurityposturePosturePolicySetsPoliciesConstraintSecurityH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityposturePosturePolicySetsPoliciesList
 ```
@@ -10843,7 +10843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesOutputReference
 ```
@@ -11238,7 +11238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePosture.SecurityposturePostureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securitypostureposture"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/securitypostureposture"
 
 securitypostureposture.NewSecurityposturePostureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityposturePostureTimeoutsOutputReference
 ```

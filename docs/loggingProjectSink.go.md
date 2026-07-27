@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.NewLoggingProjectSink(scope Construct, id *string, config LoggingProjectSinkConfig) LoggingProjectSink
 ```
@@ -496,7 +496,7 @@ func ResetUniqueWriterIdentity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.LoggingProjectSink_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.LoggingProjectSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ loggingprojectsink.LoggingProjectSink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.LoggingProjectSink_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ loggingprojectsink.LoggingProjectSink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.LoggingProjectSink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 &loggingprojectsink.LoggingProjectSinkBigqueryOptions {
 	UsePartitionedTables: interface{},
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 &loggingprojectsink.LoggingProjectSinkConfig {
 	Connection: interface{},
@@ -1108,7 +1108,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsi
 	Provisioners: *[]interface{},
 	Destination: *string,
 	Name: *string,
-	BigqueryOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingProjectSink.LoggingProjectSinkBigqueryOptions,
+	BigqueryOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingProjectSink.LoggingProjectSinkBigqueryOptions,
 	CustomWriterIdentity: *string,
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 &loggingprojectsink.LoggingProjectSinkExclusions {
 	Filter: *string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.NewLoggingProjectSinkBigqueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingProjectSinkBigqueryOptionsOutputReference
 ```
@@ -1765,7 +1765,7 @@ func InternalValue() LoggingProjectSinkBigqueryOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.NewLoggingProjectSinkExclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingProjectSinkExclusionsList
 ```
@@ -1925,7 +1925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectsink"
 
 loggingprojectsink.NewLoggingProjectSinkExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingProjectSinkExclusionsOutputReference
 ```

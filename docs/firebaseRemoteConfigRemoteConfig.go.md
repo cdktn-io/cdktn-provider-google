@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfig(scope Construct, id *string, config FirebaseRemoteConfigRemoteConfigConfig) FirebaseRemoteConfigRemoteConfig
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigConditions {
 	Expression: *string,
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 	ParameterGroups: interface{},
 	Parameters: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts,
 }
 ```
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroups {
 	ParameterGroupName: *string,
@@ -1274,12 +1274,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters {
 	ParameterName: *string,
 	ConditionalValues: interface{},
-	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue,
+	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue,
 	Description: *string,
 	ValueType: *string,
 }
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues {
 	ConditionName: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue {
 	UseInAppDefault: interface{},
@@ -1489,12 +1489,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameters {
 	ParameterName: *string,
 	ConditionalValues: interface{},
-	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue,
+	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue,
 	Description: *string,
 	ValueType: *string,
 }
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues {
 	ConditionName: *string,
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue {
 	UseInAppDefault: interface{},
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigTimeouts {
 	Create: *string,
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigVersion {
 
@@ -1777,7 +1777,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUser {
 
@@ -1792,7 +1792,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigConditionsList
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigConditionsOutputReference
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsList
 ```
@@ -2452,7 +2452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList
 ```
@@ -2972,7 +2972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference
 ```
@@ -3626,7 +3626,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersList
 ```
@@ -3786,7 +3786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference
 ```
@@ -4217,7 +4217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersConditionalValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParametersConditionalValuesList
 ```
@@ -4377,7 +4377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference
 ```
@@ -4724,7 +4724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference
 ```
@@ -5031,7 +5031,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigParametersDefaultValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParametersList
 ```
@@ -5191,7 +5191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParametersOutputReference
 ```
@@ -5622,7 +5622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference
 ```
@@ -5958,7 +5958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigVersionList
 ```
@@ -6107,7 +6107,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigVersionOutputReference
 ```
@@ -6451,7 +6451,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigVersion
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionUpdateUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigVersionUpdateUserList
 ```
@@ -6600,7 +6600,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference
 ```

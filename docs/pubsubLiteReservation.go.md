@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.NewPubsubLiteReservation(scope Construct, id *string, config PubsubLiteReservationConfig) PubsubLiteReservation
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.PubsubLiteReservation_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.PubsubLiteReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ pubsublitereservation.PubsubLiteReservation_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.PubsubLiteReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ pubsublitereservation.PubsubLiteReservation_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.PubsubLiteReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 &pubsublitereservation.PubsubLiteReservationConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereserv
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.pubsubLiteReservation.PubsubLiteReservationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.pubsubLiteReservation.PubsubLiteReservationTimeouts,
 }
 ```
 
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 &pubsublitereservation.PubsubLiteReservationTimeouts {
 	Create: *string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsublitereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsublitereservation"
 
 pubsublitereservation.NewPubsubLiteReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PubsubLiteReservationTimeoutsOutputReference
 ```

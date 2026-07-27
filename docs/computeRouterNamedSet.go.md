@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSet(scope Construct, id *string, config ComputeRouterNamedSetConfig) ComputeRouterNamedSet
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computerouternamedset.ComputeRouterNamedSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ computerouternamedset.ComputeRouterNamedSet_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternam
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRouterNamedSet.ComputeRouterNamedSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRouterNamedSet.ComputeRouterNamedSetTimeouts,
 }
 ```
 
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetElements {
 	Expression: *string,
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetTimeouts {
 	Create: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouterNamedSetElementsList
 ```
@@ -1567,7 +1567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouterNamedSetElementsOutputReference
 ```
@@ -1943,7 +1943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterNamedSetTimeoutsOutputReference
 ```

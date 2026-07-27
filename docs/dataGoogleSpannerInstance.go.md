@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstance(scope Construct, id *string, config DataGoogleSpannerInstanceConfig) DataGoogleSpannerInstance
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglespannerinstance.DataGoogleSpannerInstance_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.DataGoogleSpannerInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfig {
 
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptions {
 
@@ -861,7 +861,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides {
 
@@ -874,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimits {
 
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelection {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits {
 
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargets {
 
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespanne
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 &datagooglespannerinstance.DataGoogleSpannerInstanceConfig {
 	Connection: interface{},
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList
 ```
@@ -1270,7 +1270,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutosca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsList
 ```
@@ -1708,7 +1708,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesAutoscalingLimitsOutputReference
 ```
@@ -2019,7 +2019,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutosca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesList
 ```
@@ -2168,7 +2168,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverridesOutputReference
 ```
@@ -2490,7 +2490,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutosca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionList
 ```
@@ -2639,7 +2639,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsReplicaSelectionOutputReference
 ```
@@ -2917,7 +2917,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAsymmetricAutosca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsList
 ```
@@ -3066,7 +3066,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference
 ```
@@ -3377,7 +3377,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAutoscalingLimits
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList
 ```
@@ -3526,7 +3526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference
 ```
@@ -3826,7 +3826,7 @@ func InternalValue() DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSpannerInstanceAutoscalingConfigList
 ```
@@ -3975,7 +3975,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstanceAutoscalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglespannerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglespannerinstance"
 
 datagooglespannerinstance.NewDataGoogleSpannerInstanceAutoscalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSpannerInstanceAutoscalingConfigOutputReference
 ```

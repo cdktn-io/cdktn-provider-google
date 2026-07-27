@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 computeinstanceiampolicy.NewComputeInstanceIamPolicy(scope Construct, id *string, config ComputeInstanceIamPolicyConfig) ComputeInstanceIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 computeinstanceiampolicy.ComputeInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 computeinstanceiampolicy.ComputeInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ computeinstanceiampolicy.ComputeInstanceIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 computeinstanceiampolicy.ComputeInstanceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ computeinstanceiampolicy.ComputeInstanceIamPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 computeinstanceiampolicy.ComputeInstanceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceIamPolicy.ComputeInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceiampolicy"
 
 &computeinstanceiampolicy.ComputeInstanceIamPolicyConfig {
 	Connection: interface{},

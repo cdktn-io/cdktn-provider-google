@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemaps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.NewApigeeEnvironmentKeyvaluemaps(scope Construct, id *string, config ApigeeEnvironmentKeyvaluemapsConfig) ApigeeEnvironmentKeyvaluemaps
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemaps.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemaps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemaps.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemaps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemaps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemapsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 &apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemapsConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmen
 	Name: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemapsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemapsTimeouts,
 }
 ```
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemapsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 &apigeeenvironmentkeyvaluemaps.ApigeeEnvironmentKeyvaluemapsTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemaps.ApigeeEnvironmentKeyvaluemapsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentkeyvaluemaps"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentkeyvaluemaps"
 
 apigeeenvironmentkeyvaluemaps.NewApigeeEnvironmentKeyvaluemapsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeEnvironmentKeyvaluemapsTimeoutsOutputReference
 ```

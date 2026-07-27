@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.NewCloudRunV2WorkerPoolIamMember(scope Construct, id *string, config CloudRunV2WorkerPoolIamMemberConfig) CloudRunV2WorkerPoolIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 &cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 &cloudrunv2workerpooliammember.CloudRunV2WorkerPoolIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2worker
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudrunv2workerpooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudrunv2workerpooliammember"
 
 cloudrunv2workerpooliammember.NewCloudRunV2WorkerPoolIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolIamMemberConditionOutputReference
 ```

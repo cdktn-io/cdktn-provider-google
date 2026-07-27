@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.NewFirebaseAppCheckDeviceCheckConfig(scope Construct, id *string, config FirebaseAppCheckDeviceCheckConfigConfig) FirebaseAppCheckDeviceCheckConfig
 ```
@@ -441,7 +441,7 @@ func ResetTokenTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 &firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfigConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheck
 	PrivateKey: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfigTimeouts,
 	TokenTtl: *string,
 }
 ```
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 &firebaseappcheckdevicecheckconfig.FirebaseAppCheckDeviceCheckConfigTimeouts {
 	Create: *string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckDeviceCheckConfig.FirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckdevicecheckconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckdevicecheckconfig"
 
 firebaseappcheckdevicecheckconfig.NewFirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppCheckDeviceCheckConfigTimeoutsOutputReference
 ```
