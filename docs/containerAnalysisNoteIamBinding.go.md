@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.NewContainerAnalysisNoteIamBinding(scope Construct, id *string, config ContainerAnalysisNoteIamBindingConfig) ContainerAnalysisNoteIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.ContainerAnalysisNoteIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 &containeranalysisnoteiambinding.ContainerAnalysisNoteIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 &containeranalysisnoteiambinding.ContainerAnalysisNoteIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysi
 	Members: *[]*string,
 	Note: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/containeranalysisnoteiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/containeranalysisnoteiambinding"
 
 containeranalysisnoteiambinding.NewContainerAnalysisNoteIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAnalysisNoteIamBindingConditionOutputReference
 ```

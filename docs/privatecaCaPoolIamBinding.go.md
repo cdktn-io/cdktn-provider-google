@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.NewPrivatecaCaPoolIamBinding(scope Construct, id *string, config PrivatecaCaPoolIamBindingConfig) PrivatecaCaPoolIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.PrivatecaCaPoolIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.PrivatecaCaPoolIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ privatecacapooliambinding.PrivatecaCaPoolIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.PrivatecaCaPoolIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ privatecacapooliambinding.PrivatecaCaPoolIamBinding_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.PrivatecaCaPoolIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 &privatecacapooliambinding.PrivatecaCaPoolIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 &privatecacapooliambinding.PrivatecaCaPoolIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooli
 	CaPool: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliambinding"
 
 privatecacapooliambinding.NewPrivatecaCaPoolIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIamBindingConditionOutputReference
 ```

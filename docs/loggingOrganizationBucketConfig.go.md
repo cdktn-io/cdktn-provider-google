@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.NewLoggingOrganizationBucketConfig(scope Construct, id *string, config LoggingOrganizationBucketConfigConfig) LoggingOrganizationBucketConfig
 ```
@@ -468,7 +468,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.LoggingOrganizationBucketConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 &loggingorganizationbucketconfig.LoggingOrganizationBucketConfigCmekSettings {
 	KmsKeyName: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 &loggingorganizationbucketconfig.LoggingOrganizationBucketConfigConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizat
 	BucketId: *string,
 	Location: *string,
 	Organization: *string,
-	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings,
+	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 &loggingorganizationbucketconfig.LoggingOrganizationBucketConfigIndexConfigs {
 	FieldPath: *string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.NewLoggingOrganizationBucketConfigCmekSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingOrganizationBucketConfigCmekSettingsOutputReference
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() LoggingOrganizationBucketConfigCmekSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.NewLoggingOrganizationBucketConfigIndexConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingOrganizationBucketConfigIndexConfigsList
 ```
@@ -1792,7 +1792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigIndexConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingorganizationbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingorganizationbucketconfig"
 
 loggingorganizationbucketconfig.NewLoggingOrganizationBucketConfigIndexConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingOrganizationBucketConfigIndexConfigsOutputReference
 ```

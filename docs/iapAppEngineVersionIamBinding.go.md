@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.NewIapAppEngineVersionIamBinding(scope Construct, id *string, config IapAppEngineVersionIamBindingConfig) IapAppEngineVersionIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.IapAppEngineVersionIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.IapAppEngineVersionIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iapappengineversioniambinding.IapAppEngineVersionIamBinding_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.IapAppEngineVersionIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iapappengineversioniambinding.IapAppEngineVersionIamBinding_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.IapAppEngineVersionIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 &iapappengineversioniambinding.IapAppEngineVersionIamBindingCondition {
 	Expression: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 &iapappengineversioniambinding.IapAppEngineVersionIamBindingConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappenginevers
 	Role: *string,
 	Service: *string,
 	VersionId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAppEngineVersionIamBinding.IapAppEngineVersionIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapappengineversioniambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapappengineversioniambinding"
 
 iapappengineversioniambinding.NewIapAppEngineVersionIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapAppEngineVersionIamBindingConditionOutputReference
 ```

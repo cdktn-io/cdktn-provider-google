@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.NewIapAgentRegistryMcpServerIamBinding(scope Construct, id *string, config IapAgentRegistryMcpServerIamBindingConfig) IapAgentRegistryMcpServerIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 &iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 &iapagentregistrymcpserveriambinding.IapAgentRegistryMcpServerIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistry
 	McpServerId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamBinding.IapAgentRegistryMcpServerIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapagentregistrymcpserveriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapagentregistrymcpserveriambinding"
 
 iapagentregistrymcpserveriambinding.NewIapAgentRegistryMcpServerIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapAgentRegistryMcpServerIamBindingConditionOutputReference
 ```

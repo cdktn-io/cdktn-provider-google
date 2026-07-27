@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.NewVertexAiSemanticGovernancePolicyEngine(scope Construct, id *string, config VertexAiSemanticGovernancePolicyEngineConfig) VertexAiSemanticGovernancePolicyEngine
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 &vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngineConfig {
 	Connection: interface{},
@@ -938,7 +938,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemantic
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts,
 }
 ```
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 &vertexaisemanticgovernancepolicyengine.VertexAiSemanticGovernancePolicyEngineTimeouts {
 	Create: *string,
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaisemanticgovernancepolicyengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaisemanticgovernancepolicyengine"
 
 vertexaisemanticgovernancepolicyengine.NewVertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference
 ```

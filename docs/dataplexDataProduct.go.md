@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProduct(scope Construct, id *string, config DataplexDataProductConfig) DataplexDataProduct
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.DataplexDataProduct_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.DataplexDataProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ dataplexdataproduct.DataplexDataProduct_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.DataplexDataProduct_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ dataplexdataproduct.DataplexDataProduct_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.DataplexDataProduct_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1165,7 +1165,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessApprovalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 &dataplexdataproduct.DataplexDataProductAccessApprovalConfig {
 	ApproverEmails: *[]*string,
@@ -1199,13 +1199,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 &dataplexdataproduct.DataplexDataProductAccessGroups {
 	DisplayName: *string,
 	GroupId: *string,
 	Id: *string,
-	Principal: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal,
+	Principal: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal,
 	Description: *string,
 }
 ```
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 &dataplexdataproduct.DataplexDataProductAccessGroupsPrincipal {
 	GoogleGroup: *string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 &dataplexdataproduct.DataplexDataProductConfig {
 	Connection: interface{},
@@ -1362,7 +1362,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataprod
 	DisplayName: *string,
 	Location: *string,
 	OwnerEmails: *[]*string,
-	AccessApprovalConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexDataProduct.DataplexDataProductAccessApprovalConfig,
+	AccessApprovalConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexDataProduct.DataplexDataProductAccessApprovalConfig,
 	AccessGroups: interface{},
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1370,7 +1370,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataprod
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexDataProduct.DataplexDataProductTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexDataProduct.DataplexDataProductTimeouts,
 }
 ```
 
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 &dataplexdataproduct.DataplexDataProductTimeouts {
 	Create: *string,
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessApprovalConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProductAccessApprovalConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexDataProductAccessApprovalConfigOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() DataplexDataProductAccessApprovalConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProductAccessGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexDataProductAccessGroupsList
 ```
@@ -2173,7 +2173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProductAccessGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexDataProductAccessGroupsOutputReference
 ```
@@ -2570,7 +2570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProductAccessGroupsPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexDataProductAccessGroupsPrincipalOutputReference
 ```
@@ -2877,7 +2877,7 @@ func InternalValue() DataplexDataProductAccessGroupsPrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexdataproduct"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexdataproduct"
 
 dataplexdataproduct.NewDataplexDataProductTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexDataProductTimeoutsOutputReference
 ```

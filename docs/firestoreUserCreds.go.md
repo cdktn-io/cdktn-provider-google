@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCreds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.NewFirestoreUserCreds(scope Construct, id *string, config FirestoreUserCredsConfig) FirestoreUserCreds
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCreds.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.FirestoreUserCreds_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCreds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.FirestoreUserCreds_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ firestoreusercreds.FirestoreUserCreds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCreds.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.FirestoreUserCreds_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ firestoreusercreds.FirestoreUserCreds_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCreds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.FirestoreUserCreds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 &firestoreusercreds.FirestoreUserCredsConfig {
 	Connection: interface{},
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercre
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreUserCreds.FirestoreUserCredsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreUserCreds.FirestoreUserCredsTimeouts,
 }
 ```
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 &firestoreusercreds.FirestoreUserCredsResourceIdentity {
 
@@ -1138,7 +1138,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercre
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 &firestoreusercreds.FirestoreUserCredsTimeouts {
 	Create: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.NewFirestoreUserCredsResourceIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirestoreUserCredsResourceIdentityList
 ```
@@ -1335,7 +1335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.NewFirestoreUserCredsResourceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirestoreUserCredsResourceIdentityOutputReference
 ```
@@ -1613,7 +1613,7 @@ func InternalValue() FirestoreUserCredsResourceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreUserCreds.FirestoreUserCredsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreusercreds"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreusercreds"
 
 firestoreusercreds.NewFirestoreUserCredsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreUserCredsTimeoutsOutputReference
 ```

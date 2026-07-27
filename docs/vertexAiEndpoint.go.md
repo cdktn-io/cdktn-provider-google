@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpoint(scope Construct, id *string, config VertexAiEndpointConfig) VertexAiEndpoint
 ```
@@ -543,7 +543,7 @@ func ResetTrafficSplit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.VertexAiEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.VertexAiEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ vertexaiendpoint.VertexAiEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.VertexAiEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ vertexaiendpoint.VertexAiEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.VertexAiEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1272,7 +1272,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointConfig {
 	Connection: interface{},
@@ -1288,15 +1288,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 	DedicatedEndpointEnabled: interface{},
 	DeletionPolicy: *string,
 	Description: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiEndpoint.VertexAiEndpointEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiEndpoint.VertexAiEndpointEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Network: *string,
-	PredictRequestResponseLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfig,
-	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfig,
+	PredictRequestResponseLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfig,
+	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfig,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiEndpoint.VertexAiEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiEndpoint.VertexAiEndpointTimeouts,
 	TrafficSplit: *string,
 }
 ```
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModels {
 
@@ -1665,7 +1665,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModelsAutomaticResources {
 
@@ -1678,7 +1678,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModelsDedicatedResources {
 
@@ -1691,7 +1691,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs {
 
@@ -1704,7 +1704,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec {
 
@@ -1717,7 +1717,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointDeployedModelsPrivateEndpoints {
 
@@ -1730,7 +1730,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointEncryptionSpec {
 	KmsKeyName: *string,
@@ -1766,10 +1766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointPredictRequestResponseLoggingConfig {
-	BigqueryDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination,
+	BigqueryDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination,
 	Enabled: interface{},
 	SamplingRate: *f64,
 }
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination {
 	OutputUri: *string,
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointPrivateServiceConnectConfig {
 	EnablePrivateServiceConnect: interface{},
@@ -1934,7 +1934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigs {
 	Network: *string,
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 &vertexaiendpoint.VertexAiEndpointTimeouts {
 	Create: *string,
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsAutomaticResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsAutomaticResourcesList
 ```
@@ -2195,7 +2195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsAutomaticResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsAutomaticResourcesOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() VertexAiEndpointDeployedModelsAutomaticResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList
 ```
@@ -2633,7 +2633,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference
 ```
@@ -2922,7 +2922,7 @@ func InternalValue() VertexAiEndpointDeployedModelsDedicatedResourcesAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesList
 ```
@@ -3071,7 +3071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList
 ```
@@ -3220,7 +3220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference
 ```
@@ -3520,7 +3520,7 @@ func InternalValue() VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference
 ```
@@ -3831,7 +3831,7 @@ func InternalValue() VertexAiEndpointDeployedModelsDedicatedResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsList
 ```
@@ -3980,7 +3980,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsOutputReference
 ```
@@ -4379,7 +4379,7 @@ func InternalValue() VertexAiEndpointDeployedModels
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsPrivateEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsPrivateEndpointsList
 ```
@@ -4528,7 +4528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointDeployedModelsPrivateEndpointsOutputReference
 ```
@@ -4839,7 +4839,7 @@ func InternalValue() VertexAiEndpointDeployedModelsPrivateEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointEncryptionSpecOutputReference
 ```
@@ -5110,7 +5110,7 @@ func InternalValue() VertexAiEndpointEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference
 ```
@@ -5388,7 +5388,7 @@ func InternalValue() VertexAiEndpointPredictRequestResponseLoggingConfigBigquery
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointPredictRequestResponseLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference
 ```
@@ -5737,7 +5737,7 @@ func InternalValue() VertexAiEndpointPredictRequestResponseLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointPrivateServiceConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointPrivateServiceConnectConfigOutputReference
 ```
@@ -6079,7 +6079,7 @@ func InternalValue() VertexAiEndpointPrivateServiceConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList
 ```
@@ -6239,7 +6239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference
 ```
@@ -6594,7 +6594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEndpoint.VertexAiEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaiendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiendpoint"
 
 vertexaiendpoint.NewVertexAiEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointTimeoutsOutputReference
 ```

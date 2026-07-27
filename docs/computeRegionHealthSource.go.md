@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.NewComputeRegionHealthSource(scope Construct, id *string, config ComputeRegionHealthSourceConfig) ComputeRegionHealthSource
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.ComputeRegionHealthSource_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.ComputeRegionHealthSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computeregionhealthsource.ComputeRegionHealthSource_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.ComputeRegionHealthSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ computeregionhealthsource.ComputeRegionHealthSource_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.ComputeRegionHealthSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 &computeregionhealthsource.ComputeRegionHealthSourceConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhea
 	HealthAggregationPolicy: *string,
 	Project: *string,
 	Sources: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts,
 }
 ```
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 &computeregionhealthsource.ComputeRegionHealthSourceTimeouts {
 	Create: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthSource.ComputeRegionHealthSourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionhealthsource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionhealthsource"
 
 computeregionhealthsource.NewComputeRegionHealthSourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthSourceTimeoutsOutputReference
 ```

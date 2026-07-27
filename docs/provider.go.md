@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.provider.GoogleProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 provider.NewGoogleProvider(scope Construct, id *string, config GoogleProviderConfig) GoogleProvider
 ```
@@ -1580,7 +1580,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.provider.GoogleProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 provider.GoogleProvider_IsConstruct(x interface{}) *bool
 ```
@@ -1612,7 +1612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.provider.GoogleProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 provider.GoogleProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -1626,7 +1626,7 @@ provider.GoogleProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-google.provider.GoogleProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 provider.GoogleProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1640,7 +1640,7 @@ provider.GoogleProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.provider.GoogleProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 provider.GoogleProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -6247,7 +6247,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.provider.GoogleProviderBatching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 &provider.GoogleProviderBatching {
 	EnableBatching: interface{},
@@ -6293,7 +6293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.provider.GoogleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 &provider.GoogleProviderConfig {
 	AccessApprovalCustomEndpoint: *string,
@@ -9145,7 +9145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.provider.GoogleProviderExternalCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/provider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/provider"
 
 &provider.GoogleProviderExternalCredentials {
 	Audience: *string,

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.NewDataGoogleKmsCryptoKeyLatestVersion(scope Construct, id *string, config DataGoogleKmsCryptoKeyLatestVersionConfig) DataGoogleKmsCryptoKeyLatestVersion
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 &datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersionConfig {
 	Connection: interface{},
@@ -866,7 +866,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersionPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 &datagooglekmscryptokeylatestversion.DataGoogleKmsCryptoKeyLatestVersionPublicKey {
 
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscry
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersionPublicKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.NewDataGoogleKmsCryptoKeyLatestVersionPublicKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleKmsCryptoKeyLatestVersionPublicKeyList
 ```
@@ -1030,7 +1030,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyLatestVersion.DataGoogleKmsCryptoKeyLatestVersionPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmscryptokeylatestversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmscryptokeylatestversion"
 
 datagooglekmscryptokeylatestversion.NewDataGoogleKmsCryptoKeyLatestVersionPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleKmsCryptoKeyLatestVersionPublicKeyOutputReference
 ```

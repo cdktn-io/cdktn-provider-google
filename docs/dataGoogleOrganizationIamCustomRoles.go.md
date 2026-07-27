@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.NewDataGoogleOrganizationIamCustomRoles(scope Construct, id *string, config DataGoogleOrganizationIamCustomRolesConfig) DataGoogleOrganizationIamCustomRoles
 ```
@@ -326,7 +326,7 @@ func ResetView()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 &datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRolesConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 &datagoogleorganizationiamcustomroles.DataGoogleOrganizationIamCustomRolesRoles {
 
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorgani
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.NewDataGoogleOrganizationIamCustomRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOrganizationIamCustomRolesRolesList
 ```
@@ -1017,7 +1017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizationIamCustomRoles.DataGoogleOrganizationIamCustomRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleorganizationiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizationiamcustomroles"
 
 datagoogleorganizationiamcustomroles.NewDataGoogleOrganizationIamCustomRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOrganizationIamCustomRolesRolesOutputReference
 ```

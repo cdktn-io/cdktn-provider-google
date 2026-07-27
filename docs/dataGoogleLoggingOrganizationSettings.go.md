@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 datagoogleloggingorganizationsettings.NewDataGoogleLoggingOrganizationSettings(scope Construct, id *string, config DataGoogleLoggingOrganizationSettingsConfig) DataGoogleLoggingOrganizationSettings
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingOrganizationSettings.DataGoogleLoggingOrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleloggingorganizationsettings"
 
 &datagoogleloggingorganizationsettings.DataGoogleLoggingOrganizationSettingsConfig {
 	Connection: interface{},

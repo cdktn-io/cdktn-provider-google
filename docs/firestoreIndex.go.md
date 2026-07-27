@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndex(scope Construct, id *string, config FirestoreIndexConfig) FirestoreIndex
 ```
@@ -503,7 +503,7 @@ func ResetUnique()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.FirestoreIndex_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.FirestoreIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ firestoreindex.FirestoreIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.FirestoreIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ firestoreindex.FirestoreIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.FirestoreIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1089,7 +1089,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexConfig {
 	Connection: interface{},
@@ -1110,7 +1110,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
 	Project: *string,
 	QueryScope: *string,
 	SkipWait: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexTimeouts,
 	Unique: interface{},
 }
 ```
@@ -1407,14 +1407,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFields {
 	ArrayConfig: *string,
 	FieldPath: *string,
 	Order: *string,
-	SearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexFieldsSearchConfig,
-	VectorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexFieldsVectorConfig,
+	SearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexFieldsSearchConfig,
+	VectorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexFieldsVectorConfig,
 }
 ```
 
@@ -1510,11 +1510,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsSearchConfig {
-	GeoSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpec,
-	TextSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpec,
+	GeoSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpec,
+	TextSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpec,
 }
 ```
 
@@ -1560,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsSearchConfigGeoSpec {
 	GeoJsonIndexingDisabled: interface{},
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsSearchConfigTextSpec {
 	IndexSpecs: interface{},
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpecIndexSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsSearchConfigTextSpecIndexSpecs {
 	IndexType: *string,
@@ -1681,11 +1681,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsVectorConfig {
 	Dimension: *f64,
-	Flat: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreIndex.FirestoreIndexFieldsVectorConfigFlat,
+	Flat: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreIndex.FirestoreIndexFieldsVectorConfigFlat,
 }
 ```
 
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigFlat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexFieldsVectorConfigFlat {
 
@@ -1744,7 +1744,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 &firestoreindex.FirestoreIndexTimeouts {
 	Create: *string,
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirestoreIndexFieldsList
 ```
@@ -1966,7 +1966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirestoreIndexFieldsOutputReference
 ```
@@ -2404,7 +2404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsSearchConfigGeoSpecOutputReference
 ```
@@ -2675,7 +2675,7 @@ func InternalValue() FirestoreIndexFieldsSearchConfigGeoSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsSearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsSearchConfigOutputReference
 ```
@@ -3008,7 +3008,7 @@ func InternalValue() FirestoreIndexFieldsSearchConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList
 ```
@@ -3168,7 +3168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsOutputReference
 ```
@@ -3493,7 +3493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigTextSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsSearchConfigTextSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsSearchConfigTextSpecOutputReference
 ```
@@ -3777,7 +3777,7 @@ func InternalValue() FirestoreIndexFieldsSearchConfigTextSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigFlatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsVectorConfigFlatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsVectorConfigFlatOutputReference
 ```
@@ -4026,7 +4026,7 @@ func InternalValue() FirestoreIndexFieldsVectorConfigFlat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexFieldsVectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsVectorConfigOutputReference
 ```
@@ -4346,7 +4346,7 @@ func InternalValue() FirestoreIndexFieldsVectorConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoreindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoreindex"
 
 firestoreindex.NewFirestoreIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreIndexTimeoutsOutputReference
 ```

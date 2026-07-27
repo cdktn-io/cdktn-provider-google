@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.NewResourceManagerCapability(scope Construct, id *string, config ResourceManagerCapabilityConfig) ResourceManagerCapability
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.ResourceManagerCapability_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.ResourceManagerCapability_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ resourcemanagercapability.ResourceManagerCapability_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.ResourceManagerCapability_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ resourcemanagercapability.ResourceManagerCapability_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapability.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.ResourceManagerCapability_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 &resourcemanagercapability.ResourceManagerCapabilityConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagerc
 	Parent: *string,
 	Value: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.resourceManagerCapability.ResourceManagerCapabilityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.resourceManagerCapability.ResourceManagerCapabilityTimeouts,
 }
 ```
 
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 &resourcemanagercapability.ResourceManagerCapabilityTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/resourcemanagercapability"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/resourcemanagercapability"
 
 resourcemanagercapability.NewResourceManagerCapabilityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceManagerCapabilityTimeoutsOutputReference
 ```

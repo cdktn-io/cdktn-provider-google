@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfig(scope Construct, id *string, config DiscoveryEngineWidgetConfigConfig) DiscoveryEngineWidgetConfig
 ```
@@ -528,7 +528,7 @@ func ResetWidgetConfigId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigAccessSettings {
 	AllowlistedDomains: *[]*string,
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigConfig {
 	Connection: interface{},
@@ -1191,14 +1191,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 	Provisioners: *[]interface{},
 	EngineId: *string,
 	Location: *string,
-	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings,
+	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings,
 	CollectionId: *string,
-	HomepageSetting: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting,
+	HomepageSetting: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts,
-	UiBranding: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding,
-	UiSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts,
+	UiBranding: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding,
+	UiSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings,
 	WidgetConfigId: *string,
 }
 ```
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSetting {
 	Shortcuts: interface{},
@@ -1490,11 +1490,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcuts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSettingShortcuts {
 	DestinationUri: *string,
-	Icon: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon,
+	Icon: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon,
 	Title: *string,
 }
 ```
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon {
 	Url: *string,
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigTimeouts {
 	Create: *string,
@@ -1650,10 +1650,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiBranding {
-	Logo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo,
+	Logo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo,
 }
 ```
 
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiBrandingLogo {
 	Url: *string,
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettings {
 	DataStoreUiConfigs: interface{},
@@ -1731,7 +1731,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 	EnableSafeSearch: interface{},
 	EnableSearchAsYouType: interface{},
 	EnableVisualContentSummary: interface{},
-	GenerativeAnswerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig,
+	GenerativeAnswerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig,
 	InteractionType: *string,
 	ResultDescriptionType: *string,
 }
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs {
 	FacetField: interface{},
@@ -2017,7 +2017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField {
 	Field: *string,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap {
 	Field: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig {
 	DisableRelatedQuestions: interface{},
@@ -2337,7 +2337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigAccessSettingsOutputReference
 ```
@@ -2731,7 +2731,7 @@ func InternalValue() DiscoveryEngineWidgetConfigAccessSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingOutputReference
 ```
@@ -3022,7 +3022,7 @@ func InternalValue() DiscoveryEngineWidgetConfigHomepageSetting
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference
 ```
@@ -3300,7 +3300,7 @@ func InternalValue() DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigHomepageSettingShortcutsList
 ```
@@ -3460,7 +3460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference
 ```
@@ -3827,7 +3827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigTimeoutsOutputReference
 ```
@@ -4163,7 +4163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiBrandingLogoOutputReference
 ```
@@ -4441,7 +4441,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiBrandingLogo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiBrandingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiBrandingOutputReference
 ```
@@ -4732,7 +4732,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiBranding
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList
 ```
@@ -4892,7 +4892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference
 ```
@@ -5210,7 +5210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList
 ```
@@ -5370,7 +5370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference
 ```
@@ -5739,7 +5739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList
 ```
@@ -5899,7 +5899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference
 ```
@@ -6279,7 +6279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference
 ```
@@ -6818,7 +6818,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsOutputReference
 ```

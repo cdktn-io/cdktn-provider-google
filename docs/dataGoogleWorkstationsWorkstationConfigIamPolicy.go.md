@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 datagoogleworkstationsworkstationconfigiampolicy.NewDataGoogleWorkstationsWorkstationConfigIamPolicy(scope Construct, id *string, config DataGoogleWorkstationsWorkstationConfigIamPolicyConfig) DataGoogleWorkstationsWorkstationConfigIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstati
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstationConfigIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleWorkstationsWorkstationConfigIamPolicy.DataGoogleWorkstationsWorkstationConfigIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleworkstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleworkstationsworkstationconfigiampolicy"
 
 &datagoogleworkstationsworkstationconfigiampolicy.DataGoogleWorkstationsWorkstationConfigIamPolicyConfig {
 	Connection: interface{},

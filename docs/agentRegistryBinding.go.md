@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBinding(scope Construct, id *string, config AgentRegistryBindingConfig) AgentRegistryBinding
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ agentregistrybinding.AgentRegistryBinding_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ agentregistrybinding.AgentRegistryBinding_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1058,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingAuthProviderBinding {
 	AuthProvider: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingConfig {
 	Connection: interface{},
@@ -1134,17 +1134,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AuthProviderBinding: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding,
+	AuthProviderBinding: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding,
 	BindingId: *string,
 	Location: *string,
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingSource,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingTarget,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentRegistryBinding.AgentRegistryBindingSource,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentRegistryBinding.AgentRegistryBindingTarget,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentRegistryBinding.AgentRegistryBindingTimeouts,
 }
 ```
 
@@ -1408,7 +1408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingSource {
 	Identifier: *string,
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingTarget {
 	Identifier: *string,
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingTimeouts {
 	Create: *string,
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingAuthProviderBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingAuthProviderBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingAuthProviderBindingOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() AgentRegistryBindingAuthProviderBinding
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingSourceOutputReference
 ```
@@ -2138,7 +2138,7 @@ func InternalValue() AgentRegistryBindingSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingTargetOutputReference
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() AgentRegistryBindingTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingTimeoutsOutputReference
 ```

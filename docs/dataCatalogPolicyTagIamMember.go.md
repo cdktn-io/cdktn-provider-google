@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.NewDataCatalogPolicyTagIamMember(scope Construct, id *string, config DataCatalogPolicyTagIamMemberConfig) DataCatalogPolicyTagIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.DataCatalogPolicyTagIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 &datacatalogpolicytagiammember.DataCatalogPolicyTagIamMemberCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 &datacatalogpolicytagiammember.DataCatalogPolicyTagIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolic
 	Member: *string,
 	PolicyTag: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogpolicytagiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datacatalogpolicytagiammember"
 
 datacatalogpolicytagiammember.NewDataCatalogPolicyTagIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogPolicyTagIamMemberConditionOutputReference
 ```

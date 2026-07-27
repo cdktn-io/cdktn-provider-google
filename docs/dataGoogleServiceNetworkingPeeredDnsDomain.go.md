@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 datagoogleservicenetworkingpeereddnsdomain.NewDataGoogleServiceNetworkingPeeredDnsDomain(scope Construct, id *string, config DataGoogleServiceNetworkingPeeredDnsDomainConfig) DataGoogleServiceNetworkingPeeredDnsDomain
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsD
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleservicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleservicenetworkingpeereddnsdomain"
 
 &datagoogleservicenetworkingpeereddnsdomain.DataGoogleServiceNetworkingPeeredDnsDomainConfig {
 	Connection: interface{},

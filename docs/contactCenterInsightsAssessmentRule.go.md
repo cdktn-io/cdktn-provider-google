@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.NewContactCenterInsightsAssessmentRule(scope Construct, id *string, config ContactCenterInsightsAssessmentRuleConfig) ContactCenterInsightsAssessmentRule
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1044,7 +1044,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 &contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRuleConfig {
 	Connection: interface{},
@@ -1061,9 +1061,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterins
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	SampleRule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRule,
-	ScheduleInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeouts,
+	SampleRule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRule,
+	ScheduleInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeouts,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 &contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRuleSampleRule {
 	ConversationFilter: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 &contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRuleScheduleInfo {
 	EndTime: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 &contactcenterinsightsassessmentrule.ContactCenterInsightsAssessmentRuleTimeouts {
 	Create: *string,
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.NewContactCenterInsightsAssessmentRuleSampleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsAssessmentRuleSampleRuleOutputReference
 ```
@@ -1936,7 +1936,7 @@ func InternalValue() ContactCenterInsightsAssessmentRuleSampleRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.NewContactCenterInsightsAssessmentRuleScheduleInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() ContactCenterInsightsAssessmentRuleScheduleInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsassessmentrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsassessmentrule"
 
 contactcenterinsightsassessmentrule.NewContactCenterInsightsAssessmentRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsAssessmentRuleTimeoutsOutputReference
 ```

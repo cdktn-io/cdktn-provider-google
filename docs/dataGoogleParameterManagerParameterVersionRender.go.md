@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRender.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 datagoogleparametermanagerparameterversionrender.NewDataGoogleParameterManagerParameterVersionRender(scope Construct, id *string, config DataGoogleParameterManagerParameterVersionRenderConfig) DataGoogleParameterManagerParameterVersionRender
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRender.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParameterVersionRender_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRender.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParameterVersionRender_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParam
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRender.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParameterVersionRender_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParam
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRender.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParameterVersionRender_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleParameterManagerParameterVersionRender.DataGoogleParameterManagerParameterVersionRenderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleparametermanagerparameterversionrender"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameterversionrender"
 
 &datagoogleparametermanagerparameterversionrender.DataGoogleParameterManagerParameterVersionRenderConfig {
 	Connection: interface{},

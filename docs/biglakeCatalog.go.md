@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.NewBiglakeCatalog(scope Construct, id *string, config BiglakeCatalogConfig) BiglakeCatalog
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ biglakecatalog.BiglakeCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ biglakecatalog.BiglakeCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 &biglakecatalog.BiglakeCatalogConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeCatalog.BiglakeCatalogTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeCatalog.BiglakeCatalogTimeouts,
 }
 ```
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 &biglakecatalog.BiglakeCatalogTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakecatalog"
 
 biglakecatalog.NewBiglakeCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeCatalogTimeoutsOutputReference
 ```

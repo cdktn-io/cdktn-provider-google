@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.NewStorageHmacKey(scope Construct, id *string, config StorageHmacKeyConfig) StorageHmacKey
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.StorageHmacKey_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.StorageHmacKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storagehmackey.StorageHmacKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.StorageHmacKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ storagehmackey.StorageHmacKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageHmacKey.StorageHmacKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.StorageHmacKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageHmacKey.StorageHmacKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 &storagehmackey.StorageHmacKeyConfig {
 	Connection: interface{},
@@ -928,7 +928,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
 	Id: *string,
 	Project: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageHmacKey.StorageHmacKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageHmacKey.StorageHmacKeyTimeouts,
 }
 ```
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 &storagehmackey.StorageHmacKeyTimeouts {
 	Create: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageHmacKey.StorageHmacKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagehmackey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagehmackey"
 
 storagehmackey.NewStorageHmacKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageHmacKeyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.NewMigrationCenterReportConfigA(scope Construct, id *string, config MigrationCenterReportConfigAConfig) MigrationCenterReportConfigA
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.MigrationCenterReportConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.MigrationCenterReportConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ migrationcenterreportconfig.MigrationCenterReportConfigA_IsTerraformElement(x in
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.MigrationCenterReportConfigA_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ migrationcenterreportconfig.MigrationCenterReportConfigA_IsTerraformResource(x i
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.MigrationCenterReportConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 &migrationcenterreportconfig.MigrationCenterReportConfigAConfig {
 	Connection: interface{},
@@ -1006,7 +1006,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts,
 }
 ```
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 &migrationcenterreportconfig.MigrationCenterReportConfigGroupPreferencesetAssignments {
 	Group: *string,
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 &migrationcenterreportconfig.MigrationCenterReportConfigTimeouts {
 	Create: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.NewMigrationCenterReportConfigGroupPreferencesetAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportConfigGroupPreferencesetAssignmentsList
 ```
@@ -1504,7 +1504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigGroupPreferencesetAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.NewMigrationCenterReportConfigGroupPreferencesetAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportConfigGroupPreferencesetAssignmentsOutputReference
 ```
@@ -1815,7 +1815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReportConfig.MigrationCenterReportConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreportconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreportconfig"
 
 migrationcenterreportconfig.NewMigrationCenterReportConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterReportConfigTimeoutsOutputReference
 ```

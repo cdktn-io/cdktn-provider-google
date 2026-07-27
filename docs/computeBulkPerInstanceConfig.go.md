@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.NewComputeBulkPerInstanceConfig(scope Construct, id *string, config ComputeBulkPerInstanceConfigConfig) ComputeBulkPerInstanceConfig
 ```
@@ -468,7 +468,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.ComputeBulkPerInstanceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 &computebulkperinstanceconfig.ComputeBulkPerInstanceConfigConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperin
 	Id: *string,
 	Instances: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigTimeouts,
 	Zone: *string,
 }
 ```
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 &computebulkperinstanceconfig.ComputeBulkPerInstanceConfigInstances {
 	Name: *string,
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 &computebulkperinstanceconfig.ComputeBulkPerInstanceConfigTimeouts {
 	Create: *string,
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.NewComputeBulkPerInstanceConfigInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBulkPerInstanceConfigInstancesList
 ```
@@ -1373,7 +1373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.NewComputeBulkPerInstanceConfigInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBulkPerInstanceConfigInstancesOutputReference
 ```
@@ -1662,7 +1662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBulkPerInstanceConfig.ComputeBulkPerInstanceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computebulkperinstanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebulkperinstanceconfig"
 
 computebulkperinstanceconfig.NewComputeBulkPerInstanceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBulkPerInstanceConfigTimeoutsOutputReference
 ```

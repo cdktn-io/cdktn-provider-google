@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 tagstagkeyiampolicy.NewTagsTagKeyIamPolicy(scope Construct, id *string, config TagsTagKeyIamPolicyConfig) TagsTagKeyIamPolicy
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 tagstagkeyiampolicy.TagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 tagstagkeyiampolicy.TagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ tagstagkeyiampolicy.TagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 tagstagkeyiampolicy.TagsTagKeyIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ tagstagkeyiampolicy.TagsTagKeyIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 tagstagkeyiampolicy.TagsTagKeyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagKeyIamPolicy.TagsTagKeyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagkeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiampolicy"
 
 &tagstagkeyiampolicy.TagsTagKeyIamPolicyConfig {
 	Connection: interface{},

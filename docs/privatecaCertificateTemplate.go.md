@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplate(scope Construct, id *string, config PrivatecaCertificateTemplateConfig) PrivatecaCertificateTemplate
 ```
@@ -522,7 +522,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.PrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.PrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ privatecacertificatetemplate.PrivatecaCertificateTemplate_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.PrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ privatecacertificatetemplate.PrivatecaCertificateTemplate_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.PrivatecaCertificateTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1119,7 +1119,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplateConfig {
 	Connection: interface{},
@@ -1134,13 +1134,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertifi
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	IdentityConstraints: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraints,
+	IdentityConstraints: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraints,
 	Labels: *map[string]*string,
 	MaximumLifetime: *string,
-	PassthroughExtensions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensions,
-	PredefinedValues: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValues,
+	PassthroughExtensions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensions,
+	PredefinedValues: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValues,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplateTimeouts,
 }
 ```
 
@@ -1426,12 +1426,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplateIdentityConstraints {
 	AllowSubjectAltNamesPassthrough: interface{},
 	AllowSubjectPassthrough: interface{},
-	CelExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpression,
+	CelExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpression,
 }
 ```
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpression {
 	Description: *string,
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePassthroughExtensions {
 	AdditionalExtensions: interface{},
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensions {
 	ObjectIdPath: *[]*f64,
@@ -1670,14 +1670,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValues {
 	AdditionalExtensions: interface{},
 	AiaOcspServers: *[]*string,
-	CaOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptions,
-	KeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsage,
-	NameConstraints: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesNameConstraints,
+	CaOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptions,
+	KeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsage,
+	NameConstraints: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesNameConstraints,
 	PolicyIds: interface{},
 }
 ```
@@ -1786,10 +1786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensions {
-	ObjectId: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId,
+	ObjectId: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId,
 	Value: *string,
 	Critical: interface{},
 }
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectId {
 	ObjectIdPath: *[]*f64,
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptions {
 	IsCa: interface{},
@@ -1983,11 +1983,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsage {
-	BaseKeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage,
-	ExtendedKeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage,
+	BaseKeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage,
+	ExtendedKeyUsage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage,
 	UnknownExtendedKeyUsages: interface{},
 }
 ```
@@ -2049,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsage {
 	CertSign: interface{},
@@ -2211,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsage {
 	ClientAuth: interface{},
@@ -2325,7 +2325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsages {
 	ObjectIdPath: *[]*f64,
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesNameConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesNameConstraints {
 	Critical: interface{},
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIds {
 	ObjectIdPath: *[]*f64,
@@ -2593,7 +2593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 &privatecacertificatetemplate.PrivatecaCertificateTemplateTimeouts {
 	Create: *string,
@@ -2655,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference
 ```
@@ -3020,7 +3020,7 @@ func InternalValue() PrivatecaCertificateTemplateIdentityConstraintsCelExpressio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplateIdentityConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplateIdentityConstraintsOutputReference
 ```
@@ -3355,7 +3355,7 @@ func InternalValue() PrivatecaCertificateTemplateIdentityConstraints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList
 ```
@@ -3515,7 +3515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference
 ```
@@ -3804,7 +3804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePassthroughExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePassthroughExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePassthroughExtensionsOutputReference
 ```
@@ -4124,7 +4124,7 @@ func InternalValue() PrivatecaCertificateTemplatePassthroughExtensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsList
 ```
@@ -4284,7 +4284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsObjectIdOutputReference
 ```
@@ -4555,7 +4555,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesAdditionalExten
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference
 ```
@@ -4908,7 +4908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference
 ```
@@ -5273,7 +5273,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesCaOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference
 ```
@@ -5783,7 +5783,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtendedKeyUsageOutputReference
 ```
@@ -6206,7 +6206,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesKeyUsageExtende
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesKeyUsageOutputReference
 ```
@@ -6581,7 +6581,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesKeyUsage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesList
 ```
@@ -6741,7 +6741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivatecaCertificateTemplatePredefinedValuesKeyUsageUnknownExtendedKeyUsagesOutputReference
 ```
@@ -7030,7 +7030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference
 ```
@@ -7533,7 +7533,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValuesNameConstraints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplatePredefinedValuesOutputReference
 ```
@@ -8021,7 +8021,7 @@ func InternalValue() PrivatecaCertificateTemplatePredefinedValues
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesPolicyIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList
 ```
@@ -8181,7 +8181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivatecaCertificateTemplatePredefinedValuesPolicyIdsOutputReference
 ```
@@ -8470,7 +8470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacertificatetemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacertificatetemplate"
 
 privatecacertificatetemplate.NewPrivatecaCertificateTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplateTimeoutsOutputReference
 ```

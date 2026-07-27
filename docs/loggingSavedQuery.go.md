@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQuery(scope Construct, id *string, config LoggingSavedQueryConfig) LoggingSavedQuery
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.LoggingSavedQuery_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.LoggingSavedQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ loggingsavedquery.LoggingSavedQuery_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.LoggingSavedQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ loggingsavedquery.LoggingSavedQuery_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.LoggingSavedQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1034,7 +1034,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 &loggingsavedquery.LoggingSavedQueryConfig {
 	Connection: interface{},
@@ -1052,9 +1052,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquer
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	LoggingQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingSavedQuery.LoggingSavedQueryLoggingQuery,
-	OpsAnalyticsQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.loggingSavedQuery.LoggingSavedQueryTimeouts,
+	LoggingQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingSavedQuery.LoggingSavedQueryLoggingQuery,
+	OpsAnalyticsQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingSavedQuery.LoggingSavedQueryTimeouts,
 }
 ```
 
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 &loggingsavedquery.LoggingSavedQueryLoggingQuery {
 	Filter: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 &loggingsavedquery.LoggingSavedQueryLoggingQuerySummaryFields {
 	Field: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 &loggingsavedquery.LoggingSavedQueryOpsAnalyticsQuery {
 	SqlQueryText: *string,
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 &loggingsavedquery.LoggingSavedQueryTimeouts {
 	Create: *string,
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQueryLoggingQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryLoggingQueryOutputReference
 ```
@@ -1903,7 +1903,7 @@ func InternalValue() LoggingSavedQueryLoggingQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQueryLoggingQuerySummaryFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingSavedQueryLoggingQuerySummaryFieldsList
 ```
@@ -2063,7 +2063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQueryLoggingQuerySummaryFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQueryOpsAnalyticsQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryOpsAnalyticsQueryOutputReference
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() LoggingSavedQueryOpsAnalyticsQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingsavedquery"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingsavedquery"
 
 loggingsavedquery.NewLoggingSavedQueryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryTimeoutsOutputReference
 ```

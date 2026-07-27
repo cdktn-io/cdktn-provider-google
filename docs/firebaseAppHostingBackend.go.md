@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackend(scope Construct, id *string, config FirebaseAppHostingBackendConfig) FirebaseAppHostingBackend
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.FirebaseAppHostingBackend_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.FirebaseAppHostingBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ firebaseapphostingbackend.FirebaseAppHostingBackend_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.FirebaseAppHostingBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ firebaseapphostingbackend.FirebaseAppHostingBackend_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.FirebaseAppHostingBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1207,7 +1207,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendCodebase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 &firebaseapphostingbackend.FirebaseAppHostingBackendCodebase {
 	Repository: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 &firebaseapphostingbackend.FirebaseAppHostingBackendConfig {
 	Connection: interface{},
@@ -1275,14 +1275,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphosti
 	ServiceAccount: *string,
 	ServingLocality: *string,
 	Annotations: *map[string]*string,
-	Codebase: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseAppHostingBackend.FirebaseAppHostingBackendCodebase,
+	Codebase: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseAppHostingBackend.FirebaseAppHostingBackendCodebase,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Environment: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseAppHostingBackend.FirebaseAppHostingBackendTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseAppHostingBackend.FirebaseAppHostingBackendTimeouts,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 &firebaseapphostingbackend.FirebaseAppHostingBackendManagedResources {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResourcesRunService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 &firebaseapphostingbackend.FirebaseAppHostingBackendManagedResourcesRunService {
 
@@ -1633,7 +1633,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphosti
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 &firebaseapphostingbackend.FirebaseAppHostingBackendTimeouts {
 	Create: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendCodebaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendCodebaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBackendCodebaseOutputReference
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() FirebaseAppHostingBackendCodebase
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendManagedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingBackendManagedResourcesList
 ```
@@ -2144,7 +2144,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendManagedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingBackendManagedResourcesOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() FirebaseAppHostingBackendManagedResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResourcesRunServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendManagedResourcesRunServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingBackendManagedResourcesRunServiceList
 ```
@@ -2571,7 +2571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendManagedResourcesRunServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference
 ```
@@ -2849,7 +2849,7 @@ func InternalValue() FirebaseAppHostingBackendManagedResourcesRunService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppHostingBackend.FirebaseAppHostingBackendTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseapphostingbackend"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseapphostingbackend"
 
 firebaseapphostingbackend.NewFirebaseAppHostingBackendTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBackendTimeoutsOutputReference
 ```

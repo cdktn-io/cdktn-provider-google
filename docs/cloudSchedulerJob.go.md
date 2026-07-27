@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJob(scope Construct, id *string, config CloudSchedulerJobConfig) CloudSchedulerJob
 ```
@@ -563,7 +563,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.CloudSchedulerJob_IsConstruct(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.CloudSchedulerJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ cloudschedulerjob.CloudSchedulerJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.CloudSchedulerJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ cloudschedulerjob.CloudSchedulerJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.CloudSchedulerJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1193,11 +1193,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobAppEngineHttpTarget {
 	RelativeUri: *string,
-	AppEngineRouting: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting,
+	AppEngineRouting: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting,
 	Body: *string,
 	Headers: *map[string]*string,
 	HttpMethod: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting {
 	Instance: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobConfig {
 	Connection: interface{},
@@ -1382,19 +1382,19 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjo
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AppEngineHttpTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTarget,
+	AppEngineHttpTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTarget,
 	AttemptDeadline: *string,
 	DeletionPolicy: *string,
 	Description: *string,
-	HttpTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobHttpTarget,
+	HttpTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobHttpTarget,
 	Id: *string,
 	Paused: interface{},
 	Project: *string,
-	PubsubTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobPubsubTarget,
+	PubsubTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobPubsubTarget,
 	Region: *string,
-	RetryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobRetryConfig,
+	RetryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobRetryConfig,
 	Schedule: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1731,15 +1731,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobHttpTarget {
 	Uri: *string,
 	Body: *string,
 	Headers: *map[string]*string,
 	HttpMethod: *string,
-	OauthToken: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthToken,
-	OidcToken: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcToken,
+	OauthToken: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthToken,
+	OidcToken: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcToken,
 }
 ```
 
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobHttpTargetOauthToken {
 	ServiceAccountEmail: *string,
@@ -1904,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobHttpTargetOidcToken {
 	ServiceAccountEmail: *string,
@@ -1956,7 +1956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobPubsubTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobPubsubTarget {
 	TopicName: *string,
@@ -2028,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobRetryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobRetryConfig {
 	MaxBackoffDuration: *string,
@@ -2139,7 +2139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 &cloudschedulerjob.CloudSchedulerJobTimeouts {
 	Create: *string,
@@ -2201,7 +2201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference
 ```
@@ -2537,7 +2537,7 @@ func InternalValue() CloudSchedulerJobAppEngineHttpTargetAppEngineRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobAppEngineHttpTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobAppEngineHttpTargetOutputReference
 ```
@@ -2937,7 +2937,7 @@ func InternalValue() CloudSchedulerJobAppEngineHttpTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobHttpTargetOauthTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobHttpTargetOauthTokenOutputReference
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() CloudSchedulerJobHttpTargetOauthToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobHttpTargetOidcTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobHttpTargetOidcTokenOutputReference
 ```
@@ -3537,7 +3537,7 @@ func InternalValue() CloudSchedulerJobHttpTargetOidcToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobHttpTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobHttpTargetOutputReference
 ```
@@ -3979,7 +3979,7 @@ func InternalValue() CloudSchedulerJobHttpTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobPubsubTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobPubsubTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobPubsubTargetOutputReference
 ```
@@ -4308,7 +4308,7 @@ func InternalValue() CloudSchedulerJobPubsubTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobRetryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobRetryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobRetryConfigOutputReference
 ```
@@ -4702,7 +4702,7 @@ func InternalValue() CloudSchedulerJobRetryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudschedulerjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudschedulerjob"
 
 cloudschedulerjob.NewCloudSchedulerJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSchedulerJobTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.NewPubsubSchemaIamBinding(scope Construct, id *string, config PubsubSchemaIamBindingConfig) PubsubSchemaIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.PubsubSchemaIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.PubsubSchemaIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ pubsubschemaiambinding.PubsubSchemaIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.PubsubSchemaIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ pubsubschemaiambinding.PubsubSchemaIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.PubsubSchemaIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 &pubsubschemaiambinding.PubsubSchemaIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 &pubsubschemaiambinding.PubsubSchemaIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiamb
 	Members: *[]*string,
 	Role: *string,
 	Schema: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.pubsubSchemaIamBinding.PubsubSchemaIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.pubsubSchemaIamBinding.PubsubSchemaIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/pubsubschemaiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschemaiambinding"
 
 pubsubschemaiambinding.NewPubsubSchemaIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PubsubSchemaIamBindingConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.NewDataGoogleSqlBackupRun(scope Construct, id *string, config DataGoogleSqlBackupRunConfig) DataGoogleSqlBackupRun
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglesqlbackuprun.DataGoogleSqlBackupRun_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 datagooglesqlbackuprun.DataGoogleSqlBackupRun_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqlbackuprun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqlbackuprun"
 
 &datagooglesqlbackuprun.DataGoogleSqlBackupRunConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 datagooglecomputesslpolicy.NewDataGoogleComputeSslPolicy(scope Construct, id *string, config DataGoogleComputeSslPolicyConfig) DataGoogleComputeSslPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 datagooglecomputesslpolicy.DataGoogleComputeSslPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesslpolicy"
 
 &datagooglecomputesslpolicy.DataGoogleComputeSslPolicyConfig {
 	Connection: interface{},

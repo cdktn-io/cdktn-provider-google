@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnection(scope Construct, id *string, config EdgecontainerVpnConnectionConfig) EdgecontainerVpnConnection
 ```
@@ -496,7 +496,7 @@ func ResetVpcProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.EdgecontainerVpnConnection_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.EdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ edgecontainervpnconnection.EdgecontainerVpnConnection_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.EdgecontainerVpnConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ edgecontainervpnconnection.EdgecontainerVpnConnection_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.EdgecontainerVpnConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1126,7 +1126,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionConfig {
 	Connection: interface{},
@@ -1146,9 +1146,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpn
 	NatGatewayIp: *string,
 	Project: *string,
 	Router: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts,
 	Vpc: *string,
-	VpcProject: github.com/cdktn-io/cdktn-provider-google-go/google/v20.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProject,
+	VpcProject: github.com/cdktn-io/cdktn-provider-google-go/google/v19.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProject,
 }
 ```
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionDetails {
 
@@ -1463,7 +1463,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionDetailsCloudRouter {
 
@@ -1476,7 +1476,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudVpns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionDetailsCloudVpns {
 
@@ -1489,7 +1489,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionTimeouts {
 	Create: *string,
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 &edgecontainervpnconnection.EdgecontainerVpnConnectionVpcProject {
 	ProjectId: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudRouterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsCloudRouterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EdgecontainerVpnConnectionDetailsCloudRouterList
 ```
@@ -1734,7 +1734,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsCloudRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EdgecontainerVpnConnectionDetailsCloudRouterOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() EdgecontainerVpnConnectionDetailsCloudRouter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudVpnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsCloudVpnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EdgecontainerVpnConnectionDetailsCloudVpnsList
 ```
@@ -2161,7 +2161,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsCloudVpnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference
 ```
@@ -2439,7 +2439,7 @@ func InternalValue() EdgecontainerVpnConnectionDetailsCloudVpns
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EdgecontainerVpnConnectionDetailsList
 ```
@@ -2588,7 +2588,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EdgecontainerVpnConnectionDetailsOutputReference
 ```
@@ -2899,7 +2899,7 @@ func InternalValue() EdgecontainerVpnConnectionDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EdgecontainerVpnConnectionTimeoutsOutputReference
 ```
@@ -3235,7 +3235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/edgecontainervpnconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpnconnection"
 
 edgecontainervpnconnection.NewEdgecontainerVpnConnectionVpcProjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EdgecontainerVpnConnectionVpcProjectOutputReference
 ```

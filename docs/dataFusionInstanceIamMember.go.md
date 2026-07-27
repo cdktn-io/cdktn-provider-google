@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.NewDataFusionInstanceIamMember(scope Construct, id *string, config DataFusionInstanceIamMemberConfig) DataFusionInstanceIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.DataFusionInstanceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.DataFusionInstanceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datafusioninstanceiammember.DataFusionInstanceIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.DataFusionInstanceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ datafusioninstanceiammember.DataFusionInstanceIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.DataFusionInstanceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 &datafusioninstanceiammember.DataFusionInstanceIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 &datafusioninstanceiammember.DataFusionInstanceIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstanceIamMember.DataFusionInstanceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataFusionInstanceIamMember.DataFusionInstanceIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datafusioninstanceiammember"
 
 datafusioninstanceiammember.NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceIamMemberConditionOutputReference
 ```

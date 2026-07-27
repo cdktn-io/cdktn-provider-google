@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestination(scope Construct, id *string, config NetworkConnectivityDestinationConfig) NetworkConnectivityDestination
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NetworkConnectivityDestination_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NetworkConnectivityDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ networkconnectivitydestination.NetworkConnectivityDestination_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NetworkConnectivityDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ networkconnectivitydestination.NetworkConnectivityDestination_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NetworkConnectivityDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1076,7 +1076,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 &networkconnectivitydestination.NetworkConnectivityDestinationConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityDestination.NetworkConnectivityDestinationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityDestination.NetworkConnectivityDestinationTimeouts,
 }
 ```
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 &networkconnectivitydestination.NetworkConnectivityDestinationEndpoints {
 	Asn: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 &networkconnectivitydestination.NetworkConnectivityDestinationStateTimeline {
 
@@ -1426,7 +1426,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimelineStates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 &networkconnectivitydestination.NetworkConnectivityDestinationStateTimelineStates {
 
@@ -1439,7 +1439,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 &networkconnectivitydestination.NetworkConnectivityDestinationTimeouts {
 	Create: *string,
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityDestinationEndpointsList
 ```
@@ -1661,7 +1661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityDestinationEndpointsOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimelineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationStateTimelineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityDestinationStateTimelineList
 ```
@@ -2143,7 +2143,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationStateTimelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityDestinationStateTimelineOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() NetworkConnectivityDestinationStateTimeline
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimelineStatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationStateTimelineStatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkConnectivityDestinationStateTimelineStatesList
 ```
@@ -2570,7 +2570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationStateTimelineStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationStateTimelineStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkConnectivityDestinationStateTimelineStatesOutputReference
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() NetworkConnectivityDestinationStateTimelineStates
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityDestination.NetworkConnectivityDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitydestination"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitydestination"
 
 networkconnectivitydestination.NewNetworkConnectivityDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityDestinationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 datagooglebillingaccount.NewDataGoogleBillingAccount(scope Construct, id *string, config DataGoogleBillingAccountConfig) DataGoogleBillingAccount
 ```
@@ -333,7 +333,7 @@ func ResetOpen()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 datagooglebillingaccount.DataGoogleBillingAccount_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 datagooglebillingaccount.DataGoogleBillingAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglebillingaccount.DataGoogleBillingAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 datagooglebillingaccount.DataGoogleBillingAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datagooglebillingaccount.DataGoogleBillingAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 datagooglebillingaccount.DataGoogleBillingAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccount"
 
 &datagooglebillingaccount.DataGoogleBillingAccountConfig {
 	Connection: interface{},

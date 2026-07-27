@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 datagooglecontainerawsversions.NewDataGoogleContainerAwsVersions(scope Construct, id *string, config DataGoogleContainerAwsVersionsConfig) DataGoogleContainerAwsVersions
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 datagooglecontainerawsversions.DataGoogleContainerAwsVersions_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 datagooglecontainerawsversions.DataGoogleContainerAwsVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecontainerawsversions.DataGoogleContainerAwsVersions_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 datagooglecontainerawsversions.DataGoogleContainerAwsVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecontainerawsversions.DataGoogleContainerAwsVersions_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 datagooglecontainerawsversions.DataGoogleContainerAwsVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecontainerawsversions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecontainerawsversions"
 
 &datagooglecontainerawsversions.DataGoogleContainerAwsVersionsConfig {
 	Connection: interface{},

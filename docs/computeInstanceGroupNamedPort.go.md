@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.NewComputeInstanceGroupNamedPortA(scope Construct, id *string, config ComputeInstanceGroupNamedPortAConfig) ComputeInstanceGroupNamedPortA
 ```
@@ -448,7 +448,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformElement(
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformResource
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 &computeinstancegroupnamedport.ComputeInstanceGroupNamedPortAConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceg
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts,
 	Zone: *string,
 }
 ```
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 &computeinstancegroupnamedport.ComputeInstanceGroupNamedPortTimeouts {
 	Create: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.NewComputeInstanceGroupNamedPortTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupNamedPortTimeoutsOutputReference
 ```

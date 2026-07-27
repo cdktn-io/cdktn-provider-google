@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 datagoogleiapclient.NewDataGoogleIapClient(scope Construct, id *string, config DataGoogleIapClientConfig) DataGoogleIapClient
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 datagoogleiapclient.DataGoogleIapClient_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 datagoogleiapclient.DataGoogleIapClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleiapclient.DataGoogleIapClient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 datagoogleiapclient.DataGoogleIapClient_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleiapclient.DataGoogleIapClient_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 datagoogleiapclient.DataGoogleIapClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapclient"
 
 &datagoogleiapclient.DataGoogleIapClientConfig {
 	Connection: interface{},

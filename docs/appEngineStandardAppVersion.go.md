@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersion(scope Construct, id *string, config AppEngineStandardAppVersionConfig) AppEngineStandardAppVersion
 ```
@@ -664,7 +664,7 @@ func ResetVpcAccessConnector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.AppEngineStandardAppVersion_IsConstruct(x interface{}) *bool
 ```
@@ -696,7 +696,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.AppEngineStandardAppVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ appenginestandardappversion.AppEngineStandardAppVersion_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.AppEngineStandardAppVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -724,7 +724,7 @@ appenginestandardappversion.AppEngineStandardAppVersion_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.AppEngineStandardAppVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1514,7 +1514,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionAutomaticScaling {
 	MaxConcurrentRequests: *f64,
@@ -1522,7 +1522,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandar
 	MaxPendingLatency: *string,
 	MinIdleInstances: *f64,
 	MinPendingLatency: *string,
-	StandardSchedulerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings,
+	StandardSchedulerSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings,
 }
 ```
 
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings {
 	MaxInstances: *f64,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionBasicScaling {
 	MaxInstances: *f64,
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionConfig {
 	Connection: interface{},
@@ -1786,14 +1786,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandar
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Deployment: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment,
-	Entrypoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint,
+	Deployment: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment,
+	Entrypoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint,
 	Runtime: *string,
 	Service: *string,
 	AppEngineApis: interface{},
 	AppEngineBundledServices: *[]*string,
-	AutomaticScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling,
-	BasicScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling,
+	AutomaticScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling,
+	BasicScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling,
 	DeleteServiceOnDestroy: interface{},
 	DeletionPolicy: *string,
 	EnvVariables: *map[string]*string,
@@ -1802,15 +1802,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandar
 	InboundServices: *[]*string,
 	InstanceClass: *string,
 	Libraries: interface{},
-	ManualScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling,
+	ManualScaling: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling,
 	NoopOnDestroy: interface{},
 	Project: *string,
 	RuntimeApiVersion: *string,
 	ServiceAccount: *string,
 	Threadsafe: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts,
 	VersionId: *string,
-	VpcAccessConnector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector,
+	VpcAccessConnector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector,
 }
 ```
 
@@ -2300,11 +2300,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionDeployment {
 	Files: interface{},
-	Zip: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZip,
+	Zip: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZip,
 }
 ```
 
@@ -2350,7 +2350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionDeploymentFiles {
 	Name: *string,
@@ -2414,7 +2414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionDeploymentZip {
 	SourceUrl: *string,
@@ -2464,7 +2464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionEntrypoint {
 	Shell: *string,
@@ -2498,15 +2498,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionHandlers {
 	AuthFailAction: *string,
 	Login: *string,
 	RedirectHttpResponseCode: *string,
-	Script: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScript,
+	Script: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScript,
 	SecurityLevel: *string,
-	StaticFiles: github.com/cdktn-io/cdktn-provider-google-go/google/v20.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles,
+	StaticFiles: github.com/cdktn-io/cdktn-provider-google-go/google/v19.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles,
 	UrlRegex: *string,
 }
 ```
@@ -2631,7 +2631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionHandlersScript {
 	ScriptPath: *string,
@@ -2665,7 +2665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionHandlersStaticFiles {
 	ApplicationReadable: interface{},
@@ -2805,7 +2805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionLibraries {
 	Name: *string,
@@ -2855,7 +2855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionManualScaling {
 	Instances: *f64,
@@ -2892,7 +2892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionTimeouts {
 	Create: *string,
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 &appenginestandardappversion.AppEngineStandardAppVersionVpcAccessConnector {
 	Name: *string,
@@ -3004,7 +3004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionAutomaticScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionAutomaticScalingOutputReference
 ```
@@ -3440,7 +3440,7 @@ func InternalValue() AppEngineStandardAppVersionAutomaticScaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference
 ```
@@ -3805,7 +3805,7 @@ func InternalValue() AppEngineStandardAppVersionAutomaticScalingStandardSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionBasicScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionBasicScalingOutputReference
 ```
@@ -4105,7 +4105,7 @@ func InternalValue() AppEngineStandardAppVersionBasicScaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionDeploymentFilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineStandardAppVersionDeploymentFilesList
 ```
@@ -4265,7 +4265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionDeploymentFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppEngineStandardAppVersionDeploymentFilesOutputReference
 ```
@@ -4605,7 +4605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionDeploymentOutputReference
 ```
@@ -4938,7 +4938,7 @@ func InternalValue() AppEngineStandardAppVersionDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionDeploymentZipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionDeploymentZipOutputReference
 ```
@@ -5238,7 +5238,7 @@ func InternalValue() AppEngineStandardAppVersionDeploymentZip
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionEntrypointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionEntrypointOutputReference
 ```
@@ -5509,7 +5509,7 @@ func InternalValue() AppEngineStandardAppVersionEntrypoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionHandlersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineStandardAppVersionHandlersList
 ```
@@ -5669,7 +5669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionHandlersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppEngineStandardAppVersionHandlersOutputReference
 ```
@@ -6165,7 +6165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionHandlersScriptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionHandlersScriptOutputReference
 ```
@@ -6436,7 +6436,7 @@ func InternalValue() AppEngineStandardAppVersionHandlersScript
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionHandlersStaticFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 ```
@@ -6888,7 +6888,7 @@ func InternalValue() AppEngineStandardAppVersionHandlersStaticFiles
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionLibrariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineStandardAppVersionLibrariesList
 ```
@@ -7048,7 +7048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionLibrariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppEngineStandardAppVersionLibrariesOutputReference
 ```
@@ -7373,7 +7373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionManualScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionManualScalingOutputReference
 ```
@@ -7644,7 +7644,7 @@ func InternalValue() AppEngineStandardAppVersionManualScaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionTimeoutsOutputReference
 ```
@@ -7980,7 +7980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/appenginestandardappversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/appenginestandardappversion"
 
 appenginestandardappversion.NewAppEngineStandardAppVersionVpcAccessConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionVpcAccessConnectorOutputReference
 ```

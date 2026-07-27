@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequest(scope Construct, id *string, config ComputeRegionResizeRequestConfig) ComputeRegionResizeRequest
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.ComputeRegionResizeRequest_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.ComputeRegionResizeRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computeregionresizerequest.ComputeRegionResizeRequest_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.ComputeRegionResizeRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ computeregionresizerequest.ComputeRegionResizeRequest_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.ComputeRegionResizeRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1017,7 +1017,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestConfig {
 	Connection: interface{},
@@ -1035,8 +1035,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	RequestedRunDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionResizeRequest.ComputeRegionResizeRequestRequestedRunDuration,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionResizeRequest.ComputeRegionResizeRequestTimeouts,
+	RequestedRunDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionResizeRequest.ComputeRegionResizeRequestRequestedRunDuration,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionResizeRequest.ComputeRegionResizeRequestTimeouts,
 }
 ```
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestRequestedRunDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestRequestedRunDuration {
 	Seconds: *string,
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatus {
 
@@ -1354,7 +1354,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusError {
 
@@ -1367,7 +1367,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrors {
 
@@ -1380,7 +1380,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetails {
 
@@ -1393,7 +1393,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfo {
 
@@ -1406,7 +1406,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelp {
 
@@ -1419,7 +1419,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinks {
 
@@ -1432,7 +1432,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage {
 
@@ -1445,7 +1445,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo {
 
@@ -1458,7 +1458,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttempt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttempt {
 
@@ -1471,7 +1471,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptError {
 
@@ -1484,7 +1484,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrors {
 
@@ -1497,7 +1497,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetails {
 
@@ -1510,7 +1510,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo {
 
@@ -1523,7 +1523,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp {
 
@@ -1536,7 +1536,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks {
 
@@ -1549,7 +1549,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage {
 
@@ -1562,7 +1562,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo {
 
@@ -1575,7 +1575,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionres
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 &computeregionresizerequest.ComputeRegionResizeRequestTimeouts {
 	Create: *string,
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestRequestedRunDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestRequestedRunDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionResizeRequestRequestedRunDurationOutputReference
 ```
@@ -1923,7 +1923,7 @@ func InternalValue() ComputeRegionResizeRequestRequestedRunDuration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList
 ```
@@ -2072,7 +2072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference
 ```
@@ -2372,7 +2372,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsErro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList
 ```
@@ -2521,7 +2521,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference
 ```
@@ -2810,7 +2810,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpList
 ```
@@ -2959,7 +2959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsHelp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsList
 ```
@@ -3386,7 +3386,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList
 ```
@@ -3535,7 +3535,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference
 ```
@@ -3824,7 +3824,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsLoca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsOutputReference
 ```
@@ -4135,7 +4135,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList
 ```
@@ -4284,7 +4284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference
 ```
@@ -4617,7 +4617,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrorsErrorDetailsQuot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorErrorsList
 ```
@@ -4766,7 +4766,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorErrorsOutputReference
 ```
@@ -5077,7 +5077,7 @@ func InternalValue() ComputeRegionResizeRequestStatusErrorErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusErrorList
 ```
@@ -5226,7 +5226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusErrorOutputReference
 ```
@@ -5504,7 +5504,7 @@ func InternalValue() ComputeRegionResizeRequestStatusError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList
 ```
@@ -5653,7 +5653,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference
 ```
@@ -5953,7 +5953,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList
 ```
@@ -6102,7 +6102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference
 ```
@@ -6391,7 +6391,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList
 ```
@@ -6540,7 +6540,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference
 ```
@@ -6818,7 +6818,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList
 ```
@@ -6967,7 +6967,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList
 ```
@@ -7116,7 +7116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference
 ```
@@ -7405,7 +7405,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference
 ```
@@ -7716,7 +7716,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList
 ```
@@ -7865,7 +7865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference
 ```
@@ -8198,7 +8198,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrorsError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsList
 ```
@@ -8347,7 +8347,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorErrorsOutputReference
 ```
@@ -8658,7 +8658,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptErrorErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorList
 ```
@@ -8807,7 +8807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptErrorOutputReference
 ```
@@ -9085,7 +9085,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttemptError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusLastAttemptList
 ```
@@ -9234,7 +9234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusLastAttemptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusLastAttemptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusLastAttemptOutputReference
 ```
@@ -9512,7 +9512,7 @@ func InternalValue() ComputeRegionResizeRequestStatusLastAttempt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionResizeRequestStatusList
 ```
@@ -9661,7 +9661,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionResizeRequestStatusOutputReference
 ```
@@ -9950,7 +9950,7 @@ func InternalValue() ComputeRegionResizeRequestStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionResizeRequest.ComputeRegionResizeRequestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionresizerequest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionresizerequest"
 
 computeregionresizerequest.NewComputeRegionResizeRequestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionResizeRequestTimeoutsOutputReference
 ```

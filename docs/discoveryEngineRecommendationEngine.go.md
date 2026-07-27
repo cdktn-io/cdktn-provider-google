@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngine(scope Construct, id *string, config DiscoveryEngineRecommendationEngineConfig) DiscoveryEngineRecommendationEngine
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1052,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineCommonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineCommonConfig {
 	CompanyName: *string,
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineConfig {
 	Connection: interface{},
@@ -1102,13 +1102,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginer
 	DisplayName: *string,
 	EngineId: *string,
 	Location: *string,
-	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineCommonConfig,
+	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineCommonConfig,
 	DeletionPolicy: *string,
 	Id: *string,
 	IndustryVertical: *string,
-	MediaRecommendationEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig,
+	MediaRecommendationEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineTimeouts,
 }
 ```
 
@@ -1376,12 +1376,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig {
-	EngineFeaturesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig,
+	EngineFeaturesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig,
 	OptimizationObjective: *string,
-	OptimizationObjectiveConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig,
+	OptimizationObjectiveConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig,
 	TrainingState: *string,
 	Type: *string,
 }
@@ -1488,11 +1488,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig {
-	MostPopularConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig,
-	RecommendedForYouConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig,
+	MostPopularConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig,
+	RecommendedForYouConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig,
 }
 ```
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig {
 	TimeWindowDays: *f64,
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig {
 	ContextEventType: *string,
@@ -1617,7 +1617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig {
 	TargetField: *string,
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 &discoveryenginerecommendationengine.DiscoveryEngineRecommendationEngineTimeouts {
 	Create: *string,
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineCommonConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineCommonConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineCommonConfigOutputReference
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineCommonConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference
 ```
@@ -2285,7 +2285,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineMediaRecommendationEngin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference
 ```
@@ -2618,7 +2618,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineMediaRecommendationEngin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference
 ```
@@ -2896,7 +2896,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineMediaRecommendationEngin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference
 ```
@@ -3203,7 +3203,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineMediaRecommendationEngin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference
 ```
@@ -3623,7 +3623,7 @@ func InternalValue() DiscoveryEngineRecommendationEngineMediaRecommendationEngin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineRecommendationEngine.DiscoveryEngineRecommendationEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginerecommendationengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginerecommendationengine"
 
 discoveryenginerecommendationengine.NewDiscoveryEngineRecommendationEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineRecommendationEngineTimeoutsOutputReference
 ```

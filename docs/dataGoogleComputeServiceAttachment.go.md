@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachment(scope Construct, id *string, config DataGoogleComputeServiceAttachmentConfig) DataGoogleComputeServiceAttachment
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 &datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachmentConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConnectedEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 &datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachmentConnectedEndpoints {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConsumerAcceptLists.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 &datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachmentConsumerAcceptLists {
 
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentPscServiceAttachmentId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 &datagooglecomputeserviceattachment.DataGoogleComputeServiceAttachmentPscServiceAttachmentId {
 
@@ -1074,7 +1074,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConnectedEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentConnectedEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeServiceAttachmentConnectedEndpointsList
 ```
@@ -1223,7 +1223,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConnectedEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentConnectedEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeServiceAttachmentConnectedEndpointsOutputReference
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() DataGoogleComputeServiceAttachmentConnectedEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConsumerAcceptListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentConsumerAcceptListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeServiceAttachmentConsumerAcceptListsList
 ```
@@ -1705,7 +1705,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentConsumerAcceptListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentConsumerAcceptListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeServiceAttachmentConsumerAcceptListsOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() DataGoogleComputeServiceAttachmentConsumerAcceptLists
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentPscServiceAttachmentIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentPscServiceAttachmentIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeServiceAttachmentPscServiceAttachmentIdList
 ```
@@ -2165,7 +2165,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeServiceAttachment.DataGoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeserviceattachment"
 
 datagooglecomputeserviceattachment.NewDataGoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference
 ```

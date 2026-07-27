@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroup(scope Construct, id *string, config ComputeNodeGroupConfig) ComputeNodeGroup
 ```
@@ -529,7 +529,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.ComputeNodeGroup_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.ComputeNodeGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ computenodegroup.ComputeNodeGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.ComputeNodeGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ computenodegroup.ComputeNodeGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.ComputeNodeGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1137,7 +1137,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupAutoscalingPolicy {
 	MaxNodes: *f64,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupConfig {
 	Connection: interface{},
@@ -1226,16 +1226,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup
 	Provisioners: *[]interface{},
 	Name: *string,
 	NodeTemplate: *string,
-	AutoscalingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy,
+	AutoscalingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeNodeGroup.ComputeNodeGroupAutoscalingPolicy,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	InitialSize: *f64,
 	MaintenancePolicy: *string,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNodeGroup.ComputeNodeGroupMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeNodeGroup.ComputeNodeGroupMaintenanceWindow,
 	Project: *string,
-	ShareSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNodeGroup.ComputeNodeGroupShareSettings,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNodeGroup.ComputeNodeGroupTimeouts,
+	ShareSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeNodeGroup.ComputeNodeGroupShareSettings,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeNodeGroup.ComputeNodeGroupTimeouts,
 	Zone: *string,
 }
 ```
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupMaintenanceWindow {
 	StartTime: *string,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupShareSettings {
 	ShareType: *string,
@@ -1618,7 +1618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupShareSettingsProjectMap {
 	Id: *string,
@@ -1669,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 &computenodegroup.ComputeNodeGroupTimeouts {
 	Create: *string,
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupAutoscalingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupAutoscalingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNodeGroupAutoscalingPolicyOutputReference
 ```
@@ -2067,7 +2067,7 @@ func InternalValue() ComputeNodeGroupAutoscalingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNodeGroupMaintenanceWindowOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() ComputeNodeGroupMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupShareSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNodeGroupShareSettingsOutputReference
 ```
@@ -2651,7 +2651,7 @@ func InternalValue() ComputeNodeGroupShareSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupShareSettingsProjectMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeNodeGroupShareSettingsProjectMapList
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupShareSettingsProjectMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeNodeGroupShareSettingsProjectMapOutputReference
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNodeGroup.ComputeNodeGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenodegroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenodegroup"
 
 computenodegroup.NewComputeNodeGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNodeGroupTimeoutsOutputReference
 ```

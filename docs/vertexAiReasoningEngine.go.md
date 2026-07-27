@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngine(scope Construct, id *string, config VertexAiReasoningEngineConfig) VertexAiReasoningEngine
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1066,7 +1066,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineConfig {
 	Connection: interface{},
@@ -1079,13 +1079,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasonin
 	DisplayName: *string,
 	DeletionPolicy: *string,
 	Description: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
 	Region: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpec,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts,
+	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpec,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts,
 }
 ```
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineEncryptionSpec {
 	KmsKeyName: *string,
@@ -1370,17 +1370,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpec {
 	AgentFramework: *string,
 	ClassMethods: *string,
-	ContainerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec,
-	DeploymentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec,
+	ContainerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec,
+	DeploymentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec,
 	IdentityType: *string,
-	PackageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec,
+	PackageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec,
 	ServiceAccount: *string,
-	SourceCodeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec,
+	SourceCodeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec,
 }
 ```
 
@@ -1783,7 +1783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecContainerSpec {
 	ImageUri: *string,
@@ -1817,14 +1817,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpec {
 	ContainerConcurrency: *f64,
 	Env: interface{},
 	MaxInstances: *f64,
 	MinInstances: *f64,
-	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig,
+	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig,
 	ResourceLimits: *map[string]*string,
 	SecretEnv: interface{},
 }
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecEnv {
 	Name: *string,
@@ -2022,7 +2022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig {
 	DnsPeeringConfigs: interface{},
@@ -2077,7 +2077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs {
 	Domain: *string,
@@ -2148,11 +2148,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnv {
 	Name: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef,
 }
 ```
 
@@ -2198,7 +2198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef {
 	Secret: *string,
@@ -2252,7 +2252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecPackageSpec {
 	DependencyFilesGcsUri: *string,
@@ -2334,13 +2334,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpec {
-	DeveloperConnectSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource,
-	ImageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec,
-	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource,
-	PythonSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec,
+	DeveloperConnectSource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource,
+	ImageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec,
+	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource,
+	PythonSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec,
 }
 ```
 
@@ -2416,10 +2416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource {
-	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig,
+	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig,
 }
 ```
 
@@ -2450,7 +2450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig {
 	Dir: *string,
@@ -2518,7 +2518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec {
 	BuildArgs: *map[string]*string,
@@ -2552,7 +2552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource {
 	SourceArchive: *string,
@@ -2586,7 +2586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec {
 	EntrypointModule: *string,
@@ -2678,7 +2678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineTimeouts {
 	Create: *string,
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineEncryptionSpecOutputReference
 ```
@@ -3011,7 +3011,7 @@ func InternalValue() VertexAiReasoningEngineEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecContainerSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecContainerSpecOutputReference
 ```
@@ -3282,7 +3282,7 @@ func InternalValue() VertexAiReasoningEngineSpecContainerSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecEnvList
 ```
@@ -3442,7 +3442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference
 ```
@@ -3753,7 +3753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecOutputReference
 ```
@@ -4244,7 +4244,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList
 ```
@@ -4404,7 +4404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference
 ```
@@ -4737,7 +4737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference
 ```
@@ -5057,7 +5057,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList
 ```
@@ -5217,7 +5217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference
 ```
@@ -5541,7 +5541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference
 ```
@@ -5841,7 +5841,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecOutputReference
 ```
@@ -6385,7 +6385,7 @@ func InternalValue() VertexAiReasoningEngineSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecPackageSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecPackageSpecOutputReference
 ```
@@ -6750,7 +6750,7 @@ func InternalValue() VertexAiReasoningEngineSpecPackageSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference
 ```
@@ -7065,7 +7065,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference
 ```
@@ -7349,7 +7349,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference
 ```
@@ -7627,7 +7627,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecImageSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference
 ```
@@ -7905,7 +7905,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecInlineSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecOutputReference
 ```
@@ -8322,7 +8322,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference
 ```
@@ -8687,7 +8687,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineTimeoutsOutputReference
 ```

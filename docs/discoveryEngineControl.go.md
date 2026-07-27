@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControl(scope Construct, id *string, config DiscoveryEngineControlConfig) DiscoveryEngineControl
 ```
@@ -575,7 +575,7 @@ func ResetUseCases()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.DiscoveryEngineControl_IsConstruct(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.DiscoveryEngineControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ discoveryenginecontrol.DiscoveryEngineControl_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.DiscoveryEngineControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ discoveryenginecontrol.DiscoveryEngineControl_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.DiscoveryEngineControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1249,13 +1249,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlBoostAction {
 	DataStore: *string,
 	Filter: *string,
 	FixedBoost: *f64,
-	InterpolationBoostSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpec,
+	InterpolationBoostSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpec,
 }
 ```
 
@@ -1333,11 +1333,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlBoostActionInterpolationBoostSpec {
 	AttributeType: *string,
-	ControlPoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint,
+	ControlPoint: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint,
 	FieldName: *string,
 	InterpolationType: *string,
 }
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint {
 	AttributeValue: *string,
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlConditions {
 	ActiveTimeRange: interface{},
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlConditionsActiveTimeRange {
 	EndTime: *string,
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTerms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlConditionsQueryTerms {
 	FullMatch: interface{},
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlConfig {
 	Connection: interface{},
@@ -1646,17 +1646,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 	EngineId: *string,
 	Location: *string,
 	SolutionType: *string,
-	BoostAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlBoostAction,
+	BoostAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlBoostAction,
 	CollectionId: *string,
 	Conditions: interface{},
 	DeletionPolicy: *string,
-	FilterAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlFilterAction,
+	FilterAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlFilterAction,
 	Id: *string,
 	Project: *string,
-	PromoteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlPromoteAction,
-	RedirectAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlRedirectAction,
-	SynonymsAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlSynonymsAction,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlTimeouts,
+	PromoteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlPromoteAction,
+	RedirectAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlRedirectAction,
+	SynonymsAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlSynonymsAction,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlTimeouts,
 	UseCases: *[]*string,
 }
 ```
@@ -2014,7 +2014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlFilterAction {
 	DataStore: *string,
@@ -2064,11 +2064,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlPromoteAction {
 	DataStore: *string,
-	SearchLinkPromotion: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotion,
+	SearchLinkPromotion: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotion,
 }
 ```
 
@@ -2114,7 +2114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlPromoteActionSearchLinkPromotion {
 	Title: *string,
@@ -2228,7 +2228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlRedirectAction {
 	RedirectUri: *string,
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlSynonymsAction {
 	Synonyms: *[]*string,
@@ -2296,7 +2296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 &discoveryenginecontrol.DiscoveryEngineControlTimeouts {
 	Create: *string,
@@ -2358,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPointOutputReference
 ```
@@ -2665,7 +2665,7 @@ func InternalValue() DiscoveryEngineControlBoostActionInterpolationBoostSpecCont
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference
 ```
@@ -3043,7 +3043,7 @@ func InternalValue() DiscoveryEngineControlBoostActionInterpolationBoostSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlBoostActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionOutputReference
 ```
@@ -3407,7 +3407,7 @@ func InternalValue() DiscoveryEngineControlBoostAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsActiveTimeRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineControlConditionsActiveTimeRangeList
 ```
@@ -3567,7 +3567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsActiveTimeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsActiveTimeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineControlConditionsActiveTimeRangeOutputReference
 ```
@@ -3892,7 +3892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineControlConditionsList
 ```
@@ -4052,7 +4052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineControlConditionsOutputReference
 ```
@@ -4432,7 +4432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsQueryTermsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineControlConditionsQueryTermsList
 ```
@@ -4592,7 +4592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsQueryTermsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlConditionsQueryTermsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineControlConditionsQueryTermsOutputReference
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlFilterActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlFilterActionOutputReference
 ```
@@ -5210,7 +5210,7 @@ func InternalValue() DiscoveryEngineControlFilterAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlPromoteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlPromoteActionOutputReference
 ```
@@ -5516,7 +5516,7 @@ func InternalValue() DiscoveryEngineControlPromoteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference
 ```
@@ -5932,7 +5932,7 @@ func InternalValue() DiscoveryEngineControlPromoteActionSearchLinkPromotion
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlRedirectActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlRedirectActionOutputReference
 ```
@@ -6203,7 +6203,7 @@ func InternalValue() DiscoveryEngineControlRedirectAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlSynonymsActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlSynonymsActionOutputReference
 ```
@@ -6481,7 +6481,7 @@ func InternalValue() DiscoveryEngineControlSynonymsAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginecontrol"
 
 discoveryenginecontrol.NewDiscoveryEngineControlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlTimeoutsOutputReference
 ```

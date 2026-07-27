@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NewNetappStoragePool(scope Construct, id *string, config NetappStoragePoolConfig) NetappStoragePool
 ```
@@ -560,7 +560,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NetappStoragePool_IsConstruct(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NetappStoragePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ netappstoragepool.NetappStoragePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NetappStoragePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ netappstoragepool.NetappStoragePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NetappStoragePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1509,7 +1509,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 &netappstoragepool.NetappStoragePoolConfig {
 	Connection: interface{},
@@ -1540,7 +1540,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepoo
 	QosType: *string,
 	ReplicaZone: *string,
 	ScaleType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappStoragePool.NetappStoragePoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappStoragePool.NetappStoragePoolTimeouts,
 	TotalIops: *string,
 	TotalThroughputMibps: *string,
 	Type: *string,
@@ -2065,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 &netappstoragepool.NetappStoragePoolTimeouts {
 	Create: *string,
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappstoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappstoragepool"
 
 netappstoragepool.NewNetappStoragePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappStoragePoolTimeoutsOutputReference
 ```
