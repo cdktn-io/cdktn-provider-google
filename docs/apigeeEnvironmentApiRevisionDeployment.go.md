@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.NewApigeeEnvironmentApiRevisionDeployment(scope Construct, id *string, config ApigeeEnvironmentApiRevisionDeploymentConfig) ApigeeEnvironmentApiRevisionDeployment
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 &apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeploymentConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmen
 	Override: interface{},
 	SequencedRollout: interface{},
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeploymentTimeouts,
 }
 ```
 
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 &apigeeenvironmentapirevisiondeployment.ApigeeEnvironmentApiRevisionDeploymentTimeouts {
 	Create: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvironmentApiRevisionDeployment.ApigeeEnvironmentApiRevisionDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeenvironmentapirevisiondeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeenvironmentapirevisiondeployment"
 
 apigeeenvironmentapirevisiondeployment.NewApigeeEnvironmentApiRevisionDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeEnvironmentApiRevisionDeploymentTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExport(scope Construct, id *string, config ChronicleDataExportConfig) ChronicleDataExport
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.ChronicleDataExport_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.ChronicleDataExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ chronicledataexport.ChronicleDataExport_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.ChronicleDataExport_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ chronicledataexport.ChronicleDataExport_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.ChronicleDataExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1076,7 +1076,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 &chronicledataexport.ChronicleDataExportConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexp
 	IngestionLabels: interface{},
 	Namespaces: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleDataExport.ChronicleDataExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleDataExport.ChronicleDataExportTimeouts,
 }
 ```
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportDataExportStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 &chronicledataexport.ChronicleDataExportDataExportStatus {
 
@@ -1366,7 +1366,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexp
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportIngestionLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 &chronicledataexport.ChronicleDataExportIngestionLabels {
 	Key: *string,
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 &chronicledataexport.ChronicleDataExportTimeouts {
 	Create: *string,
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportDataExportStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExportDataExportStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleDataExportDataExportStatusList
 ```
@@ -1613,7 +1613,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportDataExportStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExportDataExportStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleDataExportDataExportStatusOutputReference
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() ChronicleDataExportDataExportStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportIngestionLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExportIngestionLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleDataExportIngestionLabelsList
 ```
@@ -2084,7 +2084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportIngestionLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExportIngestionLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleDataExportIngestionLabelsOutputReference
 ```
@@ -2395,7 +2395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledataexport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicledataexport"
 
 chronicledataexport.NewChronicleDataExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataExportTimeoutsOutputReference
 ```

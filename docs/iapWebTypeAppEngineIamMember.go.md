@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.NewIapWebTypeAppEngineIamMember(scope Construct, id *string, config IapWebTypeAppEngineIamMemberConfig) IapWebTypeAppEngineIamMember
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.IapWebTypeAppEngineIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 &iapwebtypeappengineiammember.IapWebTypeAppEngineIamMemberCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 &iapwebtypeappengineiammember.IapWebTypeAppEngineIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappeng
 	AppId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebtypeappengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebtypeappengineiammember"
 
 iapwebtypeappengineiammember.NewIapWebTypeAppEngineIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebTypeAppEngineIamMemberConditionOutputReference
 ```

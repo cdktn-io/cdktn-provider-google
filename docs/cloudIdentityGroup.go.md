@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.NewCloudIdentityGroup(scope Construct, id *string, config CloudIdentityGroupConfig) CloudIdentityGroup
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.CloudIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.CloudIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cloudidentitygroup.CloudIdentityGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.CloudIdentityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ cloudidentitygroup.CloudIdentityGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.CloudIdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -999,7 +999,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupAdditionalGroupKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 &cloudidentitygroup.CloudIdentityGroupAdditionalGroupKeys {
 
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygro
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 &cloudidentitygroup.CloudIdentityGroupConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygro
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	GroupKey: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudIdentityGroup.CloudIdentityGroupGroupKey,
+	GroupKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudIdentityGroup.CloudIdentityGroupGroupKey,
 	Labels: *map[string]*string,
 	Parent: *string,
 	DeletionPolicy: *string,
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygro
 	DisplayName: *string,
 	Id: *string,
 	InitialGroupConfig: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudIdentityGroup.CloudIdentityGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudIdentityGroup.CloudIdentityGroupTimeouts,
 }
 ```
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 &cloudidentitygroup.CloudIdentityGroupGroupKey {
 	Id: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 &cloudidentitygroup.CloudIdentityGroupTimeouts {
 	Create: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupAdditionalGroupKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.NewCloudIdentityGroupAdditionalGroupKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudIdentityGroupAdditionalGroupKeysList
 ```
@@ -1562,7 +1562,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupAdditionalGroupKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.NewCloudIdentityGroupAdditionalGroupKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudIdentityGroupAdditionalGroupKeysOutputReference
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() CloudIdentityGroupAdditionalGroupKeys
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.NewCloudIdentityGroupGroupKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudIdentityGroupGroupKeyOutputReference
 ```
@@ -2151,7 +2151,7 @@ func InternalValue() CloudIdentityGroupGroupKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudIdentityGroup.CloudIdentityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudidentitygroup"
 
 cloudidentitygroup.NewCloudIdentityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudIdentityGroupTimeoutsOutputReference
 ```

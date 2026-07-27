@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 datagoogleendpointsserviceconsumersiampolicy.NewDataGoogleEndpointsServiceConsumersIamPolicy(scope Construct, id *string, config DataGoogleEndpointsServiceConsumersIamPolicyConfig) DataGoogleEndpointsServiceConsumersIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumers
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumers
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumersIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleendpointsserviceconsumersiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleendpointsserviceconsumersiampolicy"
 
 &datagoogleendpointsserviceconsumersiampolicy.DataGoogleEndpointsServiceConsumersIamPolicyConfig {
 	Connection: interface{},

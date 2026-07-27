@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.NewGeminiRepositoryGroupIamBinding(scope Construct, id *string, config GeminiRepositoryGroupIamBindingConfig) GeminiRepositoryGroupIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.GeminiRepositoryGroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 &geminirepositorygroupiambinding.GeminiRepositoryGroupIamBindingCondition {
 	Expression: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 &geminirepositorygroupiambinding.GeminiRepositoryGroupIamBindingConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepository
 	Members: *[]*string,
 	RepositoryGroupId: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroupIamBinding.GeminiRepositoryGroupIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminirepositorygroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/geminirepositorygroupiambinding"
 
 geminirepositorygroupiambinding.NewGeminiRepositoryGroupIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GeminiRepositoryGroupIamBindingConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.NewComputeProjectDefaultNetworkTier(scope Construct, id *string, config ComputeProjectDefaultNetworkTierConfig) ComputeProjectDefaultNetworkTier
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTier_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 &computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTierConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectde
 	NetworkTier: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts,
 }
 ```
 
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 &computeprojectdefaultnetworktier.ComputeProjectDefaultNetworkTierTimeouts {
 	Create: *string,
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectdefaultnetworktier"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeprojectdefaultnetworktier"
 
 computeprojectdefaultnetworktier.NewComputeProjectDefaultNetworkTierTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeProjectDefaultNetworkTierTimeoutsOutputReference
 ```

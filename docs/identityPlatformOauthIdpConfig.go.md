@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.NewIdentityPlatformOauthIdpConfig(scope Construct, id *string, config IdentityPlatformOauthIdpConfigConfig) IdentityPlatformOauthIdpConfig
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 &identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfigConfig {
 	Connection: interface{},
@@ -1032,8 +1032,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatform
 	Enabled: interface{},
 	Id: *string,
 	Project: *string,
-	ResponseType: github.com/cdktn-io/cdktn-provider-google-go/google/v20.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigResponseType,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigTimeouts,
+	ResponseType: github.com/cdktn-io/cdktn-provider-google-go/google/v19.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigResponseType,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigTimeouts,
 }
 ```
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigResponseType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 &identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfigResponseType {
 	Code: interface{},
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 &identityplatformoauthidpconfig.IdentityPlatformOauthIdpConfigTimeouts {
 	Create: *string,
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigResponseTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.NewIdentityPlatformOauthIdpConfigResponseTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformOauthIdpConfigResponseTypeOutputReference
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() IdentityPlatformOauthIdpConfigResponseType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/identityplatformoauthidpconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/identityplatformoauthidpconfig"
 
 identityplatformoauthidpconfig.NewIdentityPlatformOauthIdpConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformOauthIdpConfigTimeoutsOutputReference
 ```

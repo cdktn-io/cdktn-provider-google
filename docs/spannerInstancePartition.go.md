@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartition(scope Construct, id *string, config SpannerInstancePartitionConfig) SpannerInstancePartition
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ spannerinstancepartition.SpannerInstancePartition_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ spannerinstancepartition.SpannerInstancePartition_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.SpannerInstancePartition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1017,11 +1017,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionAutoscalingConfig {
-	AutoscalingLimits: github.com/cdktn-io/cdktn-provider-google-go/google/v20.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingLimits,
-	AutoscalingTargets: github.com/cdktn-io/cdktn-provider-google-go/google/v20.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingTargets,
+	AutoscalingLimits: github.com/cdktn-io/cdktn-provider-google-go/google/v19.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingLimits,
+	AutoscalingTargets: github.com/cdktn-io/cdktn-provider-google-go/google/v19.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingTargets,
 }
 ```
 
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionAutoscalingConfigAutoscalingLimits {
 	MaxNodes: *f64,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionAutoscalingConfigAutoscalingTargets {
 	HighPriorityCpuUtilizationPercent: *f64,
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionConfig {
 	Connection: interface{},
@@ -1246,13 +1246,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancep
 	DisplayName: *string,
 	Instance: *string,
 	Name: *string,
-	AutoscalingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfig,
+	AutoscalingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfig,
 	DeletionPolicy: *string,
 	Id: *string,
 	NodeCount: *f64,
 	ProcessingUnits: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.spannerInstancePartition.SpannerInstancePartitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.spannerInstancePartition.SpannerInstancePartitionTimeouts,
 }
 ```
 
@@ -1525,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 &spannerinstancepartition.SpannerInstancePartitionTimeouts {
 	Create: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstancePartitionAutoscalingConfigAutoscalingLimitsOutputReference
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() SpannerInstancePartitionAutoscalingConfigAutoscalingLimits
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigAutoscalingTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartitionAutoscalingConfigAutoscalingTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstancePartitionAutoscalingConfigAutoscalingTargetsOutputReference
 ```
@@ -2288,7 +2288,7 @@ func InternalValue() SpannerInstancePartitionAutoscalingConfigAutoscalingTargets
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionAutoscalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartitionAutoscalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstancePartitionAutoscalingConfigOutputReference
 ```
@@ -2621,7 +2621,7 @@ func InternalValue() SpannerInstancePartitionAutoscalingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstancePartition.SpannerInstancePartitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerinstancepartition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstancepartition"
 
 spannerinstancepartition.NewSpannerInstancePartitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstancePartitionTimeoutsOutputReference
 ```

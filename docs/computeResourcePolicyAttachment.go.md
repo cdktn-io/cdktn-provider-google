@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.NewComputeResourcePolicyAttachment(scope Construct, id *string, config ComputeResourcePolicyAttachmentConfig) ComputeResourcePolicyAttachment
 ```
@@ -448,7 +448,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 &computeresourcepolicyattachment.ComputeResourcePolicyAttachmentConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcep
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts,
 	Zone: *string,
 }
 ```
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 &computeresourcepolicyattachment.ComputeResourcePolicyAttachmentTimeouts {
 	Create: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.NewComputeResourcePolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeResourcePolicyAttachmentTimeoutsOutputReference
 ```

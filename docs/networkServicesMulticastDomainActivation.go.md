@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NewNetworkServicesMulticastDomainActivation(scope Construct, id *string, config NetworkServicesMulticastDomainActivationConfig) NetworkServicesMulticastDomainActivation
 ```
@@ -482,7 +482,7 @@ func ResetTrafficSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivation_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivation_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivatio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivation_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivatio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1101,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 &networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivationConfig {
 	Connection: interface{},
@@ -1120,8 +1120,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTimeouts,
-	TrafficSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpec,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTimeouts,
+	TrafficSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpec,
 }
 ```
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 &networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivationState {
 
@@ -1410,7 +1410,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 &networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivationTimeouts {
 	Create: *string,
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 &networkservicesmulticastdomainactivation.NetworkServicesMulticastDomainActivationTrafficSpec {
 	AggrEgressPps: *string,
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NewNetworkServicesMulticastDomainActivationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastDomainActivationStateList
 ```
@@ -1719,7 +1719,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NewNetworkServicesMulticastDomainActivationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastDomainActivationStateOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() NetworkServicesMulticastDomainActivationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NewNetworkServicesMulticastDomainActivationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainActivationTimeoutsOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomainactivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomainactivation"
 
 networkservicesmulticastdomainactivation.NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainActivationTrafficSpecOutputReference
 ```

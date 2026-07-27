@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroups(scope Construct, id *string, config DataGoogleCloudIdentityGroupsConfig) DataGoogleCloudIdentityGroups
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.DataGoogleCloudIdentityGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 &datagooglecloudidentitygroups.DataGoogleCloudIdentityGroupsConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 &datagooglecloudidentitygroups.DataGoogleCloudIdentityGroupsGroups {
 
@@ -778,7 +778,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 &datagooglecloudidentitygroups.DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeys {
 
@@ -791,7 +791,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 &datagooglecloudidentitygroups.DataGoogleCloudIdentityGroupsGroupsGroupKey {
 
@@ -806,7 +806,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList
 ```
@@ -955,7 +955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysOutputReference
 ```
@@ -1244,7 +1244,7 @@ func InternalValue() DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeys
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsGroupKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudIdentityGroupsGroupsGroupKeyList
 ```
@@ -1393,7 +1393,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference
 ```
@@ -1682,7 +1682,7 @@ func InternalValue() DataGoogleCloudIdentityGroupsGroupsGroupKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudIdentityGroupsGroupsList
 ```
@@ -1831,7 +1831,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitygroups"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudidentitygroups"
 
 datagooglecloudidentitygroups.NewDataGoogleCloudIdentityGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudIdentityGroupsGroupsOutputReference
 ```

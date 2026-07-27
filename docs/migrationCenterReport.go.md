@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReport(scope Construct, id *string, config MigrationCenterReportConfig) MigrationCenterReport
 ```
@@ -462,7 +462,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.MigrationCenterReport_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.MigrationCenterReport_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ migrationcenterreport.MigrationCenterReport_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.MigrationCenterReport_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ migrationcenterreport.MigrationCenterReport_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.MigrationCenterReport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportConfig {
 	Connection: interface{},
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterReport.MigrationCenterReportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.migrationCenterReport.MigrationCenterReportTimeouts,
 	Type: *string,
 }
 ```
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummary {
 
@@ -1313,7 +1313,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStats {
 
@@ -1326,7 +1326,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogram {
 
@@ -1339,7 +1339,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBuckets {
 
@@ -1352,7 +1352,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogram {
 
@@ -1365,7 +1365,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBuckets {
 
@@ -1378,7 +1378,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChart {
 
@@ -1391,7 +1391,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystem {
 
@@ -1404,7 +1404,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPoints {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstances {
 
@@ -1430,7 +1430,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPoints {
 
@@ -1443,7 +1443,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogram {
 
@@ -1456,7 +1456,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBuckets {
 
@@ -1469,7 +1469,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChart {
 
@@ -1482,7 +1482,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindings {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStats {
 
@@ -1508,7 +1508,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogram {
 
@@ -1521,7 +1521,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBuckets {
 
@@ -1534,7 +1534,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogram {
 
@@ -1547,7 +1547,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBuckets {
 
@@ -1560,7 +1560,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChart {
 
@@ -1573,7 +1573,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystem {
 
@@ -1586,7 +1586,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPoints {
 
@@ -1599,7 +1599,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstances {
 
@@ -1612,7 +1612,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPoints {
 
@@ -1625,7 +1625,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogram.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogram {
 
@@ -1638,7 +1638,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBuckets {
 
@@ -1651,7 +1651,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChart {
 
@@ -1664,7 +1664,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindings {
 
@@ -1677,7 +1677,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFinding {
 
@@ -1690,7 +1690,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocations {
 
@@ -1703,7 +1703,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeries {
 
@@ -1716,7 +1716,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferences {
 
@@ -1729,7 +1729,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferences {
 
@@ -1742,7 +1742,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferences {
 
@@ -1755,7 +1755,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries {
 
@@ -1768,7 +1768,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferences {
 
@@ -1781,7 +1781,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferences {
 
@@ -1794,7 +1794,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypes {
 
@@ -1807,7 +1807,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferences {
 
@@ -1820,7 +1820,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostCompute {
 
@@ -1833,7 +1833,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgress {
 
@@ -1846,7 +1846,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicense {
 
@@ -1859,7 +1859,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOther.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOther {
 
@@ -1872,7 +1872,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorage {
 
@@ -1885,7 +1885,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotal {
 
@@ -1898,7 +1898,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFinding {
 
@@ -1911,7 +1911,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocations {
 
@@ -1924,7 +1924,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNode {
 
@@ -1937,7 +1937,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFinding {
 
@@ -1950,7 +1950,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocations {
 
@@ -1963,7 +1963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNode {
 
@@ -1976,7 +1976,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 &migrationcenterreport.MigrationCenterReportTimeouts {
 	Create: *string,
@@ -2024,7 +2024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsList
 ```
@@ -2173,7 +2173,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramBucketsOutputReference
 ```
@@ -2473,7 +2473,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogra
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramList
 ```
@@ -2622,7 +2622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogramOutputReference
 ```
@@ -2900,7 +2900,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsCoreCountHistogra
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsList
 ```
@@ -3049,7 +3049,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsList
 ```
@@ -3198,7 +3198,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramBucketsOutputReference
 ```
@@ -3498,7 +3498,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistog
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramList
 ```
@@ -3647,7 +3647,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistogramOutputReference
 ```
@@ -3925,7 +3925,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsMemoryBytesHistog
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartList
 ```
@@ -4074,7 +4074,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsMemoryUtilizationChartOutputReference
 ```
@@ -4363,7 +4363,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsMemoryUtilization
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsList
 ```
@@ -4512,7 +4512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDataPointsOutputReference
 ```
@@ -4801,7 +4801,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsOperatingSystemDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsOperatingSystemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsOperatingSystemList
 ```
@@ -4950,7 +4950,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOperatingSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsOperatingSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsOperatingSystemOutputReference
 ```
@@ -5228,7 +5228,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsOperatingSystem
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsOutputReference
 ```
@@ -5616,7 +5616,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStats
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsList
 ```
@@ -5765,7 +5765,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesDataPointsOutputReference
 ```
@@ -6054,7 +6054,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsSoftwareInstances
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesList
 ```
@@ -6203,7 +6203,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsSoftwareInstancesOutputReference
 ```
@@ -6481,7 +6481,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsSoftwareInstances
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsList
 ```
@@ -6630,7 +6630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramBucketsOutputReference
 ```
@@ -6930,7 +6930,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsStorageBytesHisto
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramList
 ```
@@ -7079,7 +7079,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageBytesHistogramOutputReference
 ```
@@ -7357,7 +7357,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsStorageBytesHisto
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartList
 ```
@@ -7506,7 +7506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryAllAssetsStatsStorageUtilizationChartOutputReference
 ```
@@ -7795,7 +7795,7 @@ func InternalValue() MigrationCenterReportSummaryAllAssetsStatsStorageUtilizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsList
 ```
@@ -7944,7 +7944,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramBucketsOutputReference
 ```
@@ -8244,7 +8244,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramList
 ```
@@ -8393,7 +8393,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsCoreCountHistogramOutputReference
 ```
@@ -8671,7 +8671,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsList
 ```
@@ -8820,7 +8820,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsList
 ```
@@ -8969,7 +8969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramBucketsOutputReference
 ```
@@ -9269,7 +9269,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramList
 ```
@@ -9418,7 +9418,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryBytesHistogramOutputReference
 ```
@@ -9696,7 +9696,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartList
 ```
@@ -9845,7 +9845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsMemoryUtilizationChartOutputReference
 ```
@@ -10134,7 +10134,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsList
 ```
@@ -10283,7 +10283,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemDataPointsOutputReference
 ```
@@ -10572,7 +10572,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemList
 ```
@@ -10721,7 +10721,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOperatingSystemOutputReference
 ```
@@ -10999,7 +10999,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsOutputReference
 ```
@@ -11387,7 +11387,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsList
 ```
@@ -11536,7 +11536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesDataPointsOutputReference
 ```
@@ -11825,7 +11825,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesList
 ```
@@ -11974,7 +11974,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsSoftwareInstancesOutputReference
 ```
@@ -12252,7 +12252,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsList
 ```
@@ -12401,7 +12401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramBucketsOutputReference
 ```
@@ -12701,7 +12701,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramList
 ```
@@ -12850,7 +12850,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageBytesHistogramOutputReference
 ```
@@ -13128,7 +13128,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartList
 ```
@@ -13277,7 +13277,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsAssetAggregateStatsStorageUtilizationChartOutputReference
 ```
@@ -13566,7 +13566,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsAssetAggregateStat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsList
 ```
@@ -13715,7 +13715,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsOutputReference
 ```
@@ -14037,7 +14037,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingList
 ```
@@ -14186,7 +14186,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsList
 ```
@@ -14335,7 +14335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesList
 ```
@@ -14484,7 +14484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsMachineSeriesOutputReference
 ```
@@ -14762,7 +14762,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingMachineSeriesAllocationsOutputReference
 ```
@@ -15051,7 +15051,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsComputeEngineFindingOutputReference
 ```
@@ -15362,7 +15362,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsList
 ```
@@ -15511,7 +15511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesList
 ```
@@ -15660,7 +15660,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList
 ```
@@ -15809,7 +15809,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference
 ```
@@ -16087,7 +16087,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesList
 ```
@@ -16236,7 +16236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference
 ```
@@ -16514,7 +16514,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesComputeEnginePreferencesOutputReference
 ```
@@ -16814,7 +16814,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesList
 ```
@@ -16963,7 +16963,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesOutputReference
 ```
@@ -17307,7 +17307,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesList
 ```
@@ -17456,7 +17456,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesRegionPreferencesOutputReference
 ```
@@ -17734,7 +17734,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesList
 ```
@@ -17883,7 +17883,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesList
 ```
@@ -18032,7 +18032,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference
 ```
@@ -18310,7 +18310,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesSoleTenancyPreferencesOutputReference
 ```
@@ -18621,7 +18621,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesList
 ```
@@ -18770,7 +18770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMachinePreferencesVmwareEnginePreferencesOutputReference
 ```
@@ -19081,7 +19081,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeList
 ```
@@ -19230,7 +19230,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostComputeOutputReference
 ```
@@ -19530,7 +19530,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressList
 ```
@@ -19679,7 +19679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostNetworkEgressOutputReference
 ```
@@ -19979,7 +19979,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseList
 ```
@@ -20128,7 +20128,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOsLicenseOutputReference
 ```
@@ -20428,7 +20428,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherList
 ```
@@ -20577,7 +20577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostOtherOutputReference
 ```
@@ -20877,7 +20877,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageList
 ```
@@ -21026,7 +21026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostStorageOutputReference
 ```
@@ -21326,7 +21326,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalList
 ```
@@ -21475,7 +21475,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsMonthlyCostTotalOutputReference
 ```
@@ -21775,7 +21775,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsOutputReference
 ```
@@ -22174,7 +22174,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingList
 ```
@@ -22323,7 +22323,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsList
 ```
@@ -22472,7 +22472,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeList
 ```
@@ -22621,7 +22621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsNodeOutputReference
 ```
@@ -22899,7 +22899,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingNodeAllocationsOutputReference
 ```
@@ -23199,7 +23199,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsSoleTenantFindingOutputReference
 ```
@@ -23499,7 +23499,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingList
 ```
@@ -23648,7 +23648,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsList
 ```
@@ -23797,7 +23797,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsOutputReference
 ```
@@ -24097,7 +24097,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeList
 ```
@@ -24246,7 +24246,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingNodeAllocationsVmwareNodeOutputReference
 ```
@@ -24524,7 +24524,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryGroupFindingsPreferenceSetFindingsVmwareEngineFindingOutputReference
 ```
@@ -24824,7 +24824,7 @@ func InternalValue() MigrationCenterReportSummaryGroupFindingsPreferenceSetFindi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterReportSummaryList
 ```
@@ -24973,7 +24973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportSummaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportSummaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterReportSummaryOutputReference
 ```
@@ -25262,7 +25262,7 @@ func InternalValue() MigrationCenterReportSummary
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterReport.MigrationCenterReportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterreport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterreport"
 
 migrationcenterreport.NewMigrationCenterReportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterReportTimeoutsOutputReference
 ```

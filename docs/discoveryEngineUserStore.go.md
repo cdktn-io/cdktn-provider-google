@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.NewDiscoveryEngineUserStore(scope Construct, id *string, config DiscoveryEngineUserStoreConfig) DiscoveryEngineUserStore
 ```
@@ -462,7 +462,7 @@ func ResetUserStoreId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.DiscoveryEngineUserStore_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.DiscoveryEngineUserStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ discoveryengineuserstore.DiscoveryEngineUserStore_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.DiscoveryEngineUserStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ discoveryengineuserstore.DiscoveryEngineUserStore_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.DiscoveryEngineUserStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 &discoveryengineuserstore.DiscoveryEngineUserStoreConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineu
 	EnableLicenseAutoRegister: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts,
 	UserStoreId: *string,
 }
 ```
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 &discoveryengineuserstore.DiscoveryEngineUserStoreTimeouts {
 	Create: *string,
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineUserStore.DiscoveryEngineUserStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineuserstore"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineuserstore"
 
 discoveryengineuserstore.NewDiscoveryEngineUserStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineUserStoreTimeoutsOutputReference
 ```

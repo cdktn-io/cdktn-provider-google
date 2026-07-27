@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.NewDataprocMetastoreFederationIamBinding(scope Construct, id *string, config DataprocMetastoreFederationIamBindingConfig) DataprocMetastoreFederationIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 &dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 &dataprocmetastorefederationiambinding.DataprocMetastoreFederationIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastor
 	FederationId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederationiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocmetastorefederationiambinding"
 
 dataprocmetastorefederationiambinding.NewDataprocMetastoreFederationIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocMetastoreFederationIamBindingConditionOutputReference
 ```

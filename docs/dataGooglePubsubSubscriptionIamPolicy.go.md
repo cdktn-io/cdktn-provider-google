@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.NewDataGooglePubsubSubscriptionIamPolicy(scope Construct, id *string, config DataGooglePubsubSubscriptionIamPolicyConfig) DataGooglePubsubSubscriptionIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglepubsubsubscriptioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscriptioniampolicy"
 
 &datagooglepubsubsubscriptioniampolicy.DataGooglePubsubSubscriptionIamPolicyConfig {
 	Connection: interface{},

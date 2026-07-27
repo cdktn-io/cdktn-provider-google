@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NewNetappKmsconfig(scope Construct, id *string, config NetappKmsconfigConfig) NetappKmsconfig
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NetappKmsconfig_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NetappKmsconfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ netappkmsconfig.NetappKmsconfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NetappKmsconfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ netappkmsconfig.NetappKmsconfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NetappKmsconfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 &netappkmsconfig.NetappKmsconfigConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappKmsconfig.NetappKmsconfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.netappKmsconfig.NetappKmsconfigTimeouts,
 }
 ```
 
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 &netappkmsconfig.NetappKmsconfigTimeouts {
 	Create: *string,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappKmsconfig.NetappKmsconfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappkmsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/netappkmsconfig"
 
 netappkmsconfig.NewNetappKmsconfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappKmsconfigTimeoutsOutputReference
 ```

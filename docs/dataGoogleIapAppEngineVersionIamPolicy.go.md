@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 datagoogleiapappengineversioniampolicy.NewDataGoogleIapAppEngineVersionIamPolicy(scope Construct, id *string, config DataGoogleIapAppEngineVersionIamPolicyConfig) DataGoogleIapAppEngineVersionIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapappengineversioniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapappengineversioniampolicy"
 
 &datagoogleiapappengineversioniampolicy.DataGoogleIapAppEngineVersionIamPolicyConfig {
 	Connection: interface{},

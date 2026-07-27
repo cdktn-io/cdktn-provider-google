@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.NewComputeNetworkEndpoints(scope Construct, id *string, config ComputeNetworkEndpointsConfig) ComputeNetworkEndpoints
 ```
@@ -468,7 +468,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.ComputeNetworkEndpoints_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.ComputeNetworkEndpoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ computenetworkendpoints.ComputeNetworkEndpoints_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.ComputeNetworkEndpoints_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computenetworkendpoints.ComputeNetworkEndpoints_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.ComputeNetworkEndpoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 &computenetworkendpoints.ComputeNetworkEndpointsConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworken
 	Id: *string,
 	NetworkEndpoints: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts,
 	Zone: *string,
 }
 ```
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 &computenetworkendpoints.ComputeNetworkEndpointsNetworkEndpoints {
 	Instance: *string,
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 &computenetworkendpoints.ComputeNetworkEndpointsTimeouts {
 	Create: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.NewComputeNetworkEndpointsNetworkEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeNetworkEndpointsNetworkEndpointsList
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsNetworkEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.NewComputeNetworkEndpointsNetworkEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeNetworkEndpointsNetworkEndpointsOutputReference
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkendpoints"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworkendpoints"
 
 computenetworkendpoints.NewComputeNetworkEndpointsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNetworkEndpointsTimeoutsOutputReference
 ```

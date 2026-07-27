@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.NewComputeSslCertificate(scope Construct, id *string, config ComputeSslCertificateConfig) ComputeSslCertificate
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.ComputeSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.ComputeSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ computesslcertificate.ComputeSslCertificate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.ComputeSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ computesslcertificate.ComputeSslCertificate_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.ComputeSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1058,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 &computesslcertificate.ComputeSslCertificateConfig {
 	Connection: interface{},
@@ -1078,7 +1078,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertif
 	PrivateKeyWo: *string,
 	PrivateKeyWoVersion: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeSslCertificate.ComputeSslCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeSslCertificate.ComputeSslCertificateTimeouts,
 }
 ```
 
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 &computesslcertificate.ComputeSslCertificateTimeouts {
 	Create: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSslCertificate.ComputeSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesslcertificate"
 
 computesslcertificate.NewComputeSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSslCertificateTimeoutsOutputReference
 ```

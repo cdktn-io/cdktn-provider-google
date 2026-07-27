@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabases(scope Construct, id *string, config DataGoogleSqlDatabasesConfig) DataGoogleSqlDatabases
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabases.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 &datagooglesqldatabases.DataGoogleSqlDatabasesConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 &datagooglesqldatabases.DataGoogleSqlDatabasesDatabases {
 
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabasesDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSqlDatabasesDatabasesList
 ```
@@ -971,7 +971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabases"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabasesDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSqlDatabasesDatabasesOutputReference
 ```

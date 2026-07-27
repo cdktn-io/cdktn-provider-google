@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.NewSpannerDatabaseIamPolicy(scope Construct, id *string, config SpannerDatabaseIamPolicyConfig) SpannerDatabaseIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 &spannerdatabaseiampolicy.SpannerDatabaseIamPolicyConfig {
 	Connection: interface{},

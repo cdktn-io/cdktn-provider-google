@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnection(scope Construct, id *string, config DeveloperConnectConnectionConfig) DeveloperConnectConnection
 ```
@@ -629,7 +629,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.DeveloperConnectConnection_IsConstruct(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.DeveloperConnectConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ developerconnectconnection.DeveloperConnectConnection_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.DeveloperConnectConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ developerconnectconnection.DeveloperConnectConnection_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.DeveloperConnectConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1424,11 +1424,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketCloudConfig {
-	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential,
-	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential,
+	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential,
 	WebhookSecretSecretVersion: *string,
 	Workspace: *string,
 }
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -1548,7 +1548,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -1584,14 +1584,14 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketDataCenterConfig {
-	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential,
 	HostUri: *string,
-	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential,
+	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential,
 	WebhookSecretSecretVersion: *string,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig,
 	SslCaCertificate: *string,
 }
 ```
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -1740,7 +1740,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -1776,7 +1776,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig {
 	Service: *string,
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionConfig {
 	Connection: interface{},
@@ -1823,21 +1823,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 	ConnectionId: *string,
 	Location: *string,
 	Annotations: *map[string]*string,
-	BitbucketCloudConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfig,
-	BitbucketDataCenterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfig,
-	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfig,
+	BitbucketCloudConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfig,
+	BitbucketDataCenterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfig,
+	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfig,
 	DeletionPolicy: *string,
 	Disabled: interface{},
 	Etag: *string,
-	GithubConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGithubConfig,
-	GithubEnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig,
-	GitlabConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabConfig,
-	GitlabEnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig,
-	HttpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionHttpConfig,
+	GithubConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGithubConfig,
+	GithubEnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig,
+	GitlabConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabConfig,
+	GitlabEnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig,
+	HttpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionHttpConfig,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionTimeouts,
 }
 ```
 
@@ -2220,7 +2220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionCryptoKeyConfig {
 	KeyReference: *string,
@@ -2260,12 +2260,12 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGithubConfig {
 	GithubApp: *string,
 	AppInstallationId: *string,
-	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential,
 }
 ```
 
@@ -2326,7 +2326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential {
 	OauthTokenSecretVersion: *string,
@@ -2362,14 +2362,14 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGithubEnterpriseConfig {
 	HostUri: *string,
 	AppId: *string,
 	AppInstallationId: *string,
 	PrivateKeySecretVersion: *string,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig,
 	SslCaCertificate: *string,
 	WebhookSecretSecretVersion: *string,
 }
@@ -2496,7 +2496,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig {
 	Service: *string,
@@ -2530,11 +2530,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabConfig {
-	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential,
-	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential,
+	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential,
 	WebhookSecretSecretVersion: *string,
 }
 ```
@@ -2602,7 +2602,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -2638,7 +2638,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -2674,14 +2674,14 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabEnterpriseConfig {
-	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential,
+	AuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential,
 	HostUri: *string,
-	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential,
+	ReadAuthorizerCredential: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential,
 	WebhookSecretSecretVersion: *string,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig,
 	SslCaCertificate: *string,
 }
 ```
@@ -2794,7 +2794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -2830,7 +2830,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential {
 	UserTokenSecretVersion: *string,
@@ -2866,7 +2866,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig {
 	Service: *string,
@@ -2900,13 +2900,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionHttpConfig {
 	HostUri: *string,
-	BasicAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication,
-	BearerTokenAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig,
+	BasicAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication,
+	BearerTokenAuthentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig,
 	SslCaCertificate: *string,
 }
 ```
@@ -2998,7 +2998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionHttpConfigBasicAuthentication {
 	Username: *string,
@@ -3048,7 +3048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication {
 	TokenSecretVersion: *string,
@@ -3082,7 +3082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig {
 	Service: *string,
@@ -3116,7 +3116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionInstallationState {
 
@@ -3129,7 +3129,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 &developerconnectconnection.DeveloperConnectConnectionTimeouts {
 	Create: *string,
@@ -3191,7 +3191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference
 ```
@@ -3473,7 +3473,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCre
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketCloudConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketCloudConfigOutputReference
 ```
@@ -3836,7 +3836,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketCloudConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference
 ```
@@ -4118,7 +4118,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketCloudConfigReadAuthorize
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference
 ```
@@ -4400,7 +4400,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketDataCenterConfigAuthoriz
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketDataCenterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference
 ```
@@ -4845,7 +4845,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketDataCenterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference
 ```
@@ -5127,7 +5127,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketDataCenterConfigReadAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference
 ```
@@ -5398,7 +5398,7 @@ func InternalValue() DeveloperConnectConnectionBitbucketDataCenterConfigServiceD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionCryptoKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionCryptoKeyConfigOutputReference
 ```
@@ -5669,7 +5669,7 @@ func InternalValue() DeveloperConnectConnectionCryptoKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference
 ```
@@ -5951,7 +5951,7 @@ func InternalValue() DeveloperConnectConnectionGithubConfigAuthorizerCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGithubConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigOutputReference
 ```
@@ -6304,7 +6304,7 @@ func InternalValue() DeveloperConnectConnectionGithubConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGithubEnterpriseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubEnterpriseConfigOutputReference
 ```
@@ -6795,7 +6795,7 @@ func InternalValue() DeveloperConnectConnectionGithubEnterpriseConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference
 ```
@@ -7066,7 +7066,7 @@ func InternalValue() DeveloperConnectConnectionGithubEnterpriseConfigServiceDire
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference
 ```
@@ -7348,7 +7348,7 @@ func InternalValue() DeveloperConnectConnectionGitlabConfigAuthorizerCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabConfigOutputReference
 ```
@@ -7689,7 +7689,7 @@ func InternalValue() DeveloperConnectConnectionGitlabConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference
 ```
@@ -7971,7 +7971,7 @@ func InternalValue() DeveloperConnectConnectionGitlabConfigReadAuthorizerCredent
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference
 ```
@@ -8253,7 +8253,7 @@ func InternalValue() DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabEnterpriseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference
 ```
@@ -8698,7 +8698,7 @@ func InternalValue() DeveloperConnectConnectionGitlabEnterpriseConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference
 ```
@@ -8980,7 +8980,7 @@ func InternalValue() DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthori
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference
 ```
@@ -9251,7 +9251,7 @@ func InternalValue() DeveloperConnectConnectionGitlabEnterpriseConfigServiceDire
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference
 ```
@@ -9551,7 +9551,7 @@ func InternalValue() DeveloperConnectConnectionHttpConfigBasicAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference
 ```
@@ -9829,7 +9829,7 @@ func InternalValue() DeveloperConnectConnectionHttpConfigBearerTokenAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigOutputReference
 ```
@@ -10255,7 +10255,7 @@ func InternalValue() DeveloperConnectConnectionHttpConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference
 ```
@@ -10526,7 +10526,7 @@ func InternalValue() DeveloperConnectConnectionHttpConfigServiceDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionInstallationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectConnectionInstallationStateList
 ```
@@ -10675,7 +10675,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionInstallationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectConnectionInstallationStateOutputReference
 ```
@@ -10975,7 +10975,7 @@ func InternalValue() DeveloperConnectConnectionInstallationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/developerconnectconnection"
 
 developerconnectconnection.NewDeveloperConnectConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionTimeoutsOutputReference
 ```

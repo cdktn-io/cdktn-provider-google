@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohunt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.NewChronicleRetrohunt(scope Construct, id *string, config ChronicleRetrohuntConfig) ChronicleRetrohunt
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohunt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.ChronicleRetrohunt_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohunt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.ChronicleRetrohunt_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ chronicleretrohunt.ChronicleRetrohunt_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohunt.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.ChronicleRetrohunt_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ chronicleretrohunt.ChronicleRetrohunt_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohunt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.ChronicleRetrohunt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -963,7 +963,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 &chronicleretrohunt.ChronicleRetrohuntConfig {
 	Connection: interface{},
@@ -975,12 +975,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohu
 	Provisioners: *[]interface{},
 	Instance: *string,
 	Location: *string,
-	ProcessInterval: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleRetrohunt.ChronicleRetrohuntProcessInterval,
+	ProcessInterval: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleRetrohunt.ChronicleRetrohuntProcessInterval,
 	Rule: *string,
 	Id: *string,
 	Project: *string,
 	Retrohunt: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleRetrohunt.ChronicleRetrohuntTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleRetrohunt.ChronicleRetrohuntTimeouts,
 }
 ```
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntExecutionInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 &chronicleretrohunt.ChronicleRetrohuntExecutionInterval {
 
@@ -1209,7 +1209,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohu
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntProcessInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 &chronicleretrohunt.ChronicleRetrohuntProcessInterval {
 	EndTime: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 &chronicleretrohunt.ChronicleRetrohuntTimeouts {
 	Create: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntExecutionIntervalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.NewChronicleRetrohuntExecutionIntervalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleRetrohuntExecutionIntervalList
 ```
@@ -1456,7 +1456,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntExecutionIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.NewChronicleRetrohuntExecutionIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleRetrohuntExecutionIntervalOutputReference
 ```
@@ -1745,7 +1745,7 @@ func InternalValue() ChronicleRetrohuntExecutionInterval
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntProcessIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.NewChronicleRetrohuntProcessIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleRetrohuntProcessIntervalOutputReference
 ```
@@ -2038,7 +2038,7 @@ func InternalValue() ChronicleRetrohuntProcessInterval
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRetrohunt.ChronicleRetrohuntTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleretrohunt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleretrohunt"
 
 chronicleretrohunt.NewChronicleRetrohuntTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleRetrohuntTimeoutsOutputReference
 ```

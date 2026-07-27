@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 datagooglecomputeregionnetworkfirewallpolicyiampolicy.NewDataGoogleComputeRegionNetworkFirewallPolicyIamPolicy(scope Construct, id *string, config DataGoogleComputeRegionNetworkFirewallPolicyIamPolicyConfig) DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNet
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNet
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionNetworkFirewallPolicyIamPolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionnetworkfirewallpolicyiampolicy"
 
 &datagooglecomputeregionnetworkfirewallpolicyiampolicy.DataGoogleComputeRegionNetworkFirewallPolicyIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicy(scope Construct, id *string, config DataGoogleComputeRegionSecurityPolicyConfig) DataGoogleComputeRegionSecurityPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfig {
 
@@ -808,7 +808,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyDdosProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyDdosProtectionConfig {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRules {
 
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesMatch {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchConfig {
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchExpr.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchExpr {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatch {
 
@@ -1069,7 +1069,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields {
 
@@ -1082,7 +1082,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfig {
 
@@ -1095,7 +1095,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusion {
 
@@ -1108,7 +1108,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookie {
 
@@ -1121,7 +1121,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeader {
 
@@ -1134,7 +1134,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParam {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUri.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUri {
 
@@ -1160,7 +1160,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptions {
 
@@ -1173,7 +1173,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThreshold {
 
@@ -1186,7 +1186,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigs {
 
@@ -1199,7 +1199,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold {
 
@@ -1212,7 +1212,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 &datagooglecomputeregionsecuritypolicy.DataGoogleComputeRegionSecurityPolicyUserDefinedFields {
 
@@ -1227,7 +1227,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList
 ```
@@ -1376,7 +1376,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
 ```
@@ -1654,7 +1654,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJ
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigList
 ```
@@ -1803,7 +1803,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyDdosProtectionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyDdosProtectionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyDdosProtectionConfigList
 ```
@@ -2263,7 +2263,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReference
 ```
@@ -2541,7 +2541,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyDdosProtectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesList
 ```
@@ -2690,7 +2690,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchConfigList
 ```
@@ -2839,7 +2839,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchConfigOutputReference
 ```
@@ -3117,7 +3117,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesMatchConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchExprList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchExprList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchExprList
 ```
@@ -3266,7 +3266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchExprOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchExprOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchExprOutputReference
 ```
@@ -3544,7 +3544,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesMatchExpr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchList
 ```
@@ -3693,7 +3693,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesMatchOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesNetworkMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchList
 ```
@@ -4142,7 +4142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesNetworkMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList
 ```
@@ -4646,7 +4646,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsOutputReference
 ```
@@ -4935,7 +4935,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesNetworkMatchUserD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesOutputReference
 ```
@@ -5290,7 +5290,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionList
 ```
@@ -5439,7 +5439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionOutputReference
 ```
@@ -5772,7 +5772,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieList
 ```
@@ -5921,7 +5921,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference
 ```
@@ -6210,7 +6210,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderList
 ```
@@ -6359,7 +6359,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestHeaderOutputReference
 ```
@@ -6648,7 +6648,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList
 ```
@@ -6797,7 +6797,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamOutputReference
 ```
@@ -7086,7 +7086,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriList
 ```
@@ -7235,7 +7235,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestUriOutputReference
 ```
@@ -7524,7 +7524,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigList
 ```
@@ -7673,7 +7673,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference
 ```
@@ -7951,7 +7951,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdList
 ```
@@ -8100,7 +8100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference
 ```
@@ -8389,7 +8389,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsB
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsList
 ```
@@ -8538,7 +8538,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsEnforceOnKeyConfigsOutputReference
 ```
@@ -8827,7 +8827,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsE
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsList
 ```
@@ -8976,7 +8976,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference
 ```
@@ -9331,7 +9331,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList
 ```
@@ -9480,7 +9480,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdOutputReference
 ```
@@ -9769,7 +9769,7 @@ func InternalValue() DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsR
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionSecurityPolicyUserDefinedFieldsList
 ```
@@ -9918,7 +9918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSecurityPolicy.DataGoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsecuritypolicy"
 
 datagooglecomputeregionsecuritypolicy.NewDataGoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference
 ```

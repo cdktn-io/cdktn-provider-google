@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.NewEndpointsServiceConsumersIamMember(scope Construct, id *string, config EndpointsServiceConsumersIamMemberConfig) EndpointsServiceConsumersIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 &endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMemberCondition {
 	Expression: *string,
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 &endpointsserviceconsumersiammember.EndpointsServiceConsumersIamMemberConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsservice
 	Member: *string,
 	Role: *string,
 	ServiceName: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1112,7 +1112,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/endpointsserviceconsumersiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/endpointsserviceconsumersiammember"
 
 endpointsserviceconsumersiammember.NewEndpointsServiceConsumersIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EndpointsServiceConsumersIamMemberConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 datagooglecomputeregionsslpolicy.NewDataGoogleComputeRegionSslPolicy(scope Construct, id *string, config DataGoogleComputeRegionSslPolicyConfig) DataGoogleComputeRegionSslPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregionsslpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregionsslpolicy"
 
 &datagooglecomputeregionsslpolicy.DataGoogleComputeRegionSslPolicyConfig {
 	Connection: interface{},

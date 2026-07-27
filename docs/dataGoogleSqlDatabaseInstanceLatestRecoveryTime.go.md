@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.NewDataGoogleSqlDatabaseInstanceLatestRecoveryTime(scope Construct, id *string, config DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig) DataGoogleSqlDatabaseInstanceLatestRecoveryTime
 ```
@@ -319,7 +319,7 @@ func ResetSourceInstanceDeletionTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTime_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSqlDatabaseInstanceLatestRecoveryTime.DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglesqldatabaseinstancelatestrecoverytime"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesqldatabaseinstancelatestrecoverytime"
 
 &datagooglesqldatabaseinstancelatestrecoverytime.DataGoogleSqlDatabaseInstanceLatestRecoveryTimeConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplication(scope Construct, id *string, config ComputeDiskAsyncReplicationConfig) ComputeDiskAsyncReplication
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationConfig {
 	Connection: interface{},
@@ -857,10 +857,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasync
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	PrimaryDisk: *string,
-	SecondaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk,
+	SecondaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts,
 }
 ```
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationSecondaryDisk {
 	Disk: *string,
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationTimeouts {
 	Create: *string,
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplicationSecondaryDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncReplicationSecondaryDiskOutputReference
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() ComputeDiskAsyncReplicationSecondaryDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncReplicationTimeoutsOutputReference
 ```

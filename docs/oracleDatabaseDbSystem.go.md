@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystem(scope Construct, id *string, config OracleDatabaseDbSystemConfig) OracleDatabaseDbSystem
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.OracleDatabaseDbSystem_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.OracleDatabaseDbSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ oracledatabasedbsystem.OracleDatabaseDbSystem_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.OracleDatabaseDbSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ oracledatabasedbsystem.OracleDatabaseDbSystem_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.OracleDatabaseDbSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1130,7 +1130,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemConfig {
 	Connection: interface{},
@@ -1151,8 +1151,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedb
 	Labels: *map[string]*string,
 	OdbNetwork: *string,
 	Project: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemProperties,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeouts,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemProperties,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeouts,
 }
 ```
 
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemProperties {
 	ComputeCount: *f64,
@@ -1473,17 +1473,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedb
 	Shape: *string,
 	SshPublicKeys: *[]*string,
 	ComputeModel: *string,
-	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptions,
+	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptions,
 	DataStorageSizeGb: *f64,
-	DbHome: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHome,
-	DbSystemOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptions,
+	DbHome: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHome,
+	DbSystemOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptions,
 	Domain: *string,
 	HostnamePrefix: *string,
 	MemorySizeGb: *f64,
 	NodeCount: *f64,
 	PrivateIp: *string,
 	RecoStorageSizeGb: *f64,
-	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZone,
+	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZone,
 }
 ```
 
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDataCollectionOptions {
 	IsDiagnosticsEventsEnabled: interface{},
@@ -1819,10 +1819,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHome.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHome {
-	Database: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabase,
+	Database: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabase,
 	DbVersion: *string,
 	DisplayName: *string,
 	IsUnifiedAuditingEnabled: interface{},
@@ -1901,7 +1901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHomeDatabase {
 	AdminPassword: *string,
@@ -1914,7 +1914,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedb
 	NcharacterSet: *string,
 	PluggableDatabaseId: *string,
 	PluggableDatabaseName: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties,
 	TdeWalletPassword: *string,
 }
 ```
@@ -2117,12 +2117,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties {
 	DbVersion: *string,
-	DatabaseManagementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig,
-	DbBackupConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig,
+	DatabaseManagementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig,
+	DbBackupConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig,
 }
 ```
 
@@ -2183,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig {
 
@@ -2196,7 +2196,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedb
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig {
 	AutoBackupEnabled: interface{},
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails {
 	Type: *string,
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesDbSystemOptions {
 	StorageManagement: *string,
@@ -2428,7 +2428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemPropertiesTimeZone {
 	Id: *string,
@@ -2465,7 +2465,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 &oracledatabasedbsystem.OracleDatabaseDbSystemTimeouts {
 	Create: *string,
@@ -2527,7 +2527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDataCollectionOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference
 ```
@@ -3474,7 +3474,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbHomeDatabase
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference
 ```
@@ -3745,7 +3745,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList
 ```
@@ -3905,7 +3905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference
 ```
@@ -4201,7 +4201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference
 ```
@@ -4666,7 +4666,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbB
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference
 ```
@@ -5032,7 +5032,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbHomeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeOutputReference
 ```
@@ -5396,7 +5396,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbHome
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference
 ```
@@ -5674,7 +5674,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesDbSystemOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesOutputReference
 ```
@@ -6488,7 +6488,7 @@ func InternalValue() OracleDatabaseDbSystemProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemPropertiesTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesTimeZoneOutputReference
 ```
@@ -6766,7 +6766,7 @@ func InternalValue() OracleDatabaseDbSystemPropertiesTimeZone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasedbsystem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasedbsystem"
 
 oracledatabasedbsystem.NewOracleDatabaseDbSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemTimeoutsOutputReference
 ```

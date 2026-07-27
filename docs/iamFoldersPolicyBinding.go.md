@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.NewIamFoldersPolicyBinding(scope Construct, id *string, config IamFoldersPolicyBindingConfig) IamFoldersPolicyBinding
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.IamFoldersPolicyBinding_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.IamFoldersPolicyBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ iamfolderspolicybinding.IamFoldersPolicyBinding_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.IamFoldersPolicyBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ iamfolderspolicybinding.IamFoldersPolicyBinding_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.IamFoldersPolicyBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1118,7 +1118,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 &iamfolderspolicybinding.IamFoldersPolicyBindingCondition {
 	Description: *string,
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 &iamfolderspolicybinding.IamFoldersPolicyBindingConfig {
 	Connection: interface{},
@@ -1220,14 +1220,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicy
 	Location: *string,
 	Policy: *string,
 	PolicyBindingId: *string,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget,
 	Annotations: *map[string]*string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamFoldersPolicyBinding.IamFoldersPolicyBindingCondition,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	PolicyKind: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts,
 }
 ```
 
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 &iamfolderspolicybinding.IamFoldersPolicyBindingTarget {
 	PrincipalSet: *string,
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 &iamfolderspolicybinding.IamFoldersPolicyBindingTimeouts {
 	Create: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.NewIamFoldersPolicyBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamFoldersPolicyBindingConditionOutputReference
 ```
@@ -1984,7 +1984,7 @@ func InternalValue() IamFoldersPolicyBindingCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.NewIamFoldersPolicyBindingTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamFoldersPolicyBindingTargetOutputReference
 ```
@@ -2262,7 +2262,7 @@ func InternalValue() IamFoldersPolicyBindingTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFoldersPolicyBinding.IamFoldersPolicyBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamfolderspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamfolderspolicybinding"
 
 iamfolderspolicybinding.NewIamFoldersPolicyBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamFoldersPolicyBindingTimeoutsOutputReference
 ```

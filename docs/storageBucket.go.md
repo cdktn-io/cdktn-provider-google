@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucket(scope Construct, id *string, config StorageBucketConfig) StorageBucket
 ```
@@ -744,7 +744,7 @@ func ResetWebsite()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageBucket.StorageBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.StorageBucket_IsConstruct(x interface{}) *bool
 ```
@@ -776,7 +776,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.StorageBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ storagebucket.StorageBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.StorageBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -804,7 +804,7 @@ storagebucket.StorageBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.StorageBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1704,7 +1704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclass.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketAutoclass {
 	Enabled: interface{},
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketConfig {
 	Connection: interface{},
@@ -1768,31 +1768,31 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Autoclass: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketAutoclass,
+	Autoclass: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketAutoclass,
 	Cors: interface{},
-	CustomPlacementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketCustomPlacementConfig,
+	CustomPlacementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketCustomPlacementConfig,
 	DefaultEventBasedHold: interface{},
 	DeletionPolicy: *string,
 	EnableObjectRetention: interface{},
-	Encryption: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketEncryption,
 	ForceDestroy: interface{},
-	HierarchicalNamespace: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketHierarchicalNamespace,
+	HierarchicalNamespace: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketHierarchicalNamespace,
 	Id: *string,
-	IpFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketIpFilter,
+	IpFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketIpFilter,
 	Labels: *map[string]*string,
 	LifecycleRule: interface{},
-	Logging: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketLogging,
+	Logging: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketLogging,
 	Project: *string,
 	PublicAccessPrevention: *string,
 	RequesterPays: interface{},
-	RetentionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketRetentionPolicy,
+	RetentionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketRetentionPolicy,
 	Rpo: *string,
-	SoftDeletePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketSoftDeletePolicy,
+	SoftDeletePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketSoftDeletePolicy,
 	StorageClass: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketTimeouts,
 	UniformBucketLevelAccess: interface{},
-	Versioning: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketVersioning,
-	Website: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketWebsite,
+	Versioning: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketVersioning,
+	Website: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketWebsite,
 }
 ```
 
@@ -2304,7 +2304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketCors {
 	MaxAgeSeconds: *f64,
@@ -2388,7 +2388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketCustomPlacementConfig {
 	DataLocations: *[]*string,
@@ -2424,13 +2424,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketEncryption {
-	CustomerManagedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig,
-	CustomerSuppliedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig,
+	CustomerManagedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig,
+	CustomerSuppliedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig,
 	DefaultKmsKeyName: *string,
-	GoogleManagedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig,
+	GoogleManagedEncryptionEnforcementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig,
 }
 ```
 
@@ -2508,7 +2508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig {
 	RestrictionMode: *string,
@@ -2544,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig {
 	RestrictionMode: *string,
@@ -2580,7 +2580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig {
 	RestrictionMode: *string,
@@ -2616,7 +2616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketHierarchicalNamespace {
 	Enabled: interface{},
@@ -2650,13 +2650,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketIpFilter {
 	Mode: *string,
 	AllowAllServiceAgentAccess: interface{},
 	AllowCrossOrgVpcs: interface{},
-	PublicNetworkSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketIpFilterPublicNetworkSource,
+	PublicNetworkSource: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketIpFilterPublicNetworkSource,
 	VpcNetworkSources: interface{},
 }
 ```
@@ -2748,7 +2748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketIpFilterPublicNetworkSource {
 	AllowedIpCidrRanges: *[]*string,
@@ -2782,7 +2782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketIpFilterVpcNetworkSources {
 	AllowedIpCidrRanges: *[]*string,
@@ -2832,11 +2832,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketLifecycleRule {
-	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketLifecycleRuleAction,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageBucket.StorageBucketLifecycleRuleCondition,
+	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketLifecycleRuleAction,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageBucket.StorageBucketLifecycleRuleCondition,
 }
 ```
 
@@ -2882,7 +2882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketLifecycleRuleAction {
 	Type: *string,
@@ -2932,7 +2932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketLifecycleRuleCondition {
 	Age: *f64,
@@ -3230,7 +3230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketLogging {
 	LogBucket: *string,
@@ -3282,7 +3282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketRetentionPolicy {
 	RetentionPeriod: *string,
@@ -3336,7 +3336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketSoftDeletePolicy {
 	RetentionDurationSeconds: *f64,
@@ -3372,7 +3372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketTimeouts {
 	Create: *string,
@@ -3432,7 +3432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketVersioning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketVersioning {
 	Enabled: interface{},
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketWebsite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 &storagebucket.StorageBucketWebsite {
 	MainPageSuffix: *string,
@@ -3518,7 +3518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketAutoclassOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketAutoclassOutputReference
 ```
@@ -3818,7 +3818,7 @@ func InternalValue() StorageBucketAutoclass
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageBucketCorsList
 ```
@@ -3978,7 +3978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageBucketCorsOutputReference
 ```
@@ -4361,7 +4361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketCustomPlacementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketCustomPlacementConfigOutputReference
 ```
@@ -4632,7 +4632,7 @@ func InternalValue() StorageBucketCustomPlacementConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference
 ```
@@ -4914,7 +4914,7 @@ func InternalValue() StorageBucketEncryptionCustomerManagedEncryptionEnforcement
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference
 ```
@@ -5196,7 +5196,7 @@ func InternalValue() StorageBucketEncryptionCustomerSuppliedEncryptionEnforcemen
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference
 ```
@@ -5478,7 +5478,7 @@ func InternalValue() StorageBucketEncryptionGoogleManagedEncryptionEnforcementCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketEncryptionOutputReference
 ```
@@ -5882,7 +5882,7 @@ func InternalValue() StorageBucketEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketHierarchicalNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketHierarchicalNamespaceOutputReference
 ```
@@ -6153,7 +6153,7 @@ func InternalValue() StorageBucketHierarchicalNamespace
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketIpFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketIpFilterOutputReference
 ```
@@ -6566,7 +6566,7 @@ func InternalValue() StorageBucketIpFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketIpFilterPublicNetworkSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketIpFilterPublicNetworkSourceOutputReference
 ```
@@ -6837,7 +6837,7 @@ func InternalValue() StorageBucketIpFilterPublicNetworkSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketIpFilterVpcNetworkSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageBucketIpFilterVpcNetworkSourcesList
 ```
@@ -6997,7 +6997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketIpFilterVpcNetworkSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageBucketIpFilterVpcNetworkSourcesOutputReference
 ```
@@ -7308,7 +7308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketLifecycleRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketLifecycleRuleActionOutputReference
 ```
@@ -7608,7 +7608,7 @@ func InternalValue() StorageBucketLifecycleRuleAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketLifecycleRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketLifecycleRuleConditionOutputReference
 ```
@@ -8350,7 +8350,7 @@ func InternalValue() StorageBucketLifecycleRuleCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketLifecycleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageBucketLifecycleRuleList
 ```
@@ -8510,7 +8510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketLifecycleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageBucketLifecycleRuleOutputReference
 ```
@@ -8847,7 +8847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketLoggingOutputReference
 ```
@@ -9147,7 +9147,7 @@ func InternalValue() StorageBucketLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketRetentionPolicyOutputReference
 ```
@@ -9447,7 +9447,7 @@ func InternalValue() StorageBucketRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketSoftDeletePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketSoftDeletePolicyOutputReference
 ```
@@ -9736,7 +9736,7 @@ func InternalValue() StorageBucketSoftDeletePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketTimeoutsOutputReference
 ```
@@ -10072,7 +10072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketVersioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketVersioningOutputReference
 ```
@@ -10343,7 +10343,7 @@ func InternalValue() StorageBucketVersioning
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagebucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucket"
 
 storagebucket.NewStorageBucketWebsiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBucketWebsiteOutputReference
 ```

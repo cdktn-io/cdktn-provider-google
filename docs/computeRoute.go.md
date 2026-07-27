@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRoute(scope Construct, id *string, config ComputeRouteConfig) ComputeRoute
 ```
@@ -524,7 +524,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRoute.ComputeRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.ComputeRoute_IsConstruct(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRoute.ComputeRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.ComputeRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ computeroute.ComputeRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRoute.ComputeRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.ComputeRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ computeroute.ComputeRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRoute.ComputeRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.ComputeRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1319,7 +1319,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteAsPaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteAsPaths {
 
@@ -1332,7 +1332,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteConfig {
 	Connection: interface{},
@@ -1354,11 +1354,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
 	NextHopInstanceZone: *string,
 	NextHopIp: *string,
 	NextHopVpnTunnel: *string,
-	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRoute.ComputeRouteParams,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRoute.ComputeRouteParams,
 	Priority: *f64,
 	Project: *string,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRoute.ComputeRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRoute.ComputeRouteTimeouts,
 }
 ```
 
@@ -1757,7 +1757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteParams {
 	ResourceManagerTags: *map[string]*string,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteTimeouts {
 	Create: *string,
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteWarnings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteWarnings {
 
@@ -1857,7 +1857,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRoute.ComputeRouteWarningsData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 &computeroute.ComputeRouteWarningsData {
 
@@ -1872,7 +1872,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteAsPathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteAsPathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouteAsPathsList
 ```
@@ -2021,7 +2021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteAsPathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteAsPathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouteAsPathsOutputReference
 ```
@@ -2310,7 +2310,7 @@ func InternalValue() ComputeRouteAsPaths
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouteParamsOutputReference
 ```
@@ -2588,7 +2588,7 @@ func InternalValue() ComputeRouteParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouteTimeoutsOutputReference
 ```
@@ -2895,7 +2895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteWarningsDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteWarningsDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouteWarningsDataList
 ```
@@ -3044,7 +3044,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteWarningsDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteWarningsDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouteWarningsDataOutputReference
 ```
@@ -3333,7 +3333,7 @@ func InternalValue() ComputeRouteWarningsData
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteWarningsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteWarningsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouteWarningsList
 ```
@@ -3482,7 +3482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRouteWarningsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeroute"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeroute"
 
 computeroute.NewComputeRouteWarningsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouteWarningsOutputReference
 ```

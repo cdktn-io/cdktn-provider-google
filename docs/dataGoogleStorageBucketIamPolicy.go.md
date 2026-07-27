@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 datagooglestoragebucketiampolicy.NewDataGoogleStorageBucketIamPolicy(scope Construct, id *string, config DataGoogleStorageBucketIamPolicyConfig) DataGoogleStorageBucketIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragebucketiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragebucketiampolicy"
 
 &datagooglestoragebucketiampolicy.DataGoogleStorageBucketIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.NewServiceDirectoryServiceIamBinding(scope Construct, id *string, config ServiceDirectoryServiceIamBindingConfig) ServiceDirectoryServiceIamBinding
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 &servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBindingCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 &servicedirectoryserviceiambinding.ServiceDirectoryServiceIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectory
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryserviceiambinding"
 
 servicedirectoryserviceiambinding.NewServiceDirectoryServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDirectoryServiceIamBindingConditionOutputReference
 ```

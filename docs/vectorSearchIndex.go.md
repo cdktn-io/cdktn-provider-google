@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndex(scope Construct, id *string, config VectorSearchIndexConfig) VectorSearchIndex
 ```
@@ -523,7 +523,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1219,7 +1219,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexConfig {
 	Connection: interface{},
@@ -1233,9 +1233,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchinde
 	IndexField: *string,
 	IndexId: *string,
 	Location: *string,
-	DedicatedInfrastructure: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure,
+	DedicatedInfrastructure: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure,
 	DeletionPolicy: *string,
-	DenseScann: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchIndex.VectorSearchIndexDenseScann,
+	DenseScann: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchIndex.VectorSearchIndexDenseScann,
 	Description: *string,
 	DisplayName: *string,
 	DistanceMetric: *string,
@@ -1244,7 +1244,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchinde
 	Labels: *map[string]*string,
 	Project: *string,
 	StoreFields: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchIndex.VectorSearchIndexTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchIndex.VectorSearchIndexTimeouts,
 }
 ```
 
@@ -1591,10 +1591,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDedicatedInfrastructure {
-	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec,
+	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec,
 	Mode: *string,
 }
 ```
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec {
 	MaxReplicaCount: *f64,
@@ -1698,7 +1698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDenseScann.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDenseScann {
 	FeatureNormType: *string,
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexTimeouts {
 	Create: *string,
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() VectorSearchIndexDedicatedInfrastructureAutoscalingSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDedicatedInfrastructureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDedicatedInfrastructureOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() VectorSearchIndexDedicatedInfrastructure
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDenseScannOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDenseScannOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDenseScannOutputReference
 ```
@@ -2699,7 +2699,7 @@ func InternalValue() VectorSearchIndexDenseScann
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexTimeoutsOutputReference
 ```

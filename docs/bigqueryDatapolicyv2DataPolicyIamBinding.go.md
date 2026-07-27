@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.NewBigqueryDatapolicyv2DataPolicyIamBinding(scope Construct, id *string, config BigqueryDatapolicyv2DataPolicyIamBindingConfig) BigqueryDatapolicyv2DataPolicyIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBindin
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBindin
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 &bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 &bigquerydatapolicyv2datapolicyiambinding.BigqueryDatapolicyv2DataPolicyIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapoli
 	DataPolicyId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicyIamBinding.BigqueryDatapolicyv2DataPolicyIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicyiambinding"
 
 bigquerydatapolicyv2datapolicyiambinding.NewBigqueryDatapolicyv2DataPolicyIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDatapolicyv2DataPolicyIamBindingConditionOutputReference
 ```

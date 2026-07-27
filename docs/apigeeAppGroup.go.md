@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.NewApigeeAppGroup(scope Construct, id *string, config ApigeeAppGroupConfig) ApigeeAppGroup
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.ApigeeAppGroup_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.ApigeeAppGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ apigeeappgroup.ApigeeAppGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.ApigeeAppGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ apigeeappgroup.ApigeeAppGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.ApigeeAppGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1035,7 +1035,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 &apigeeappgroup.ApigeeAppGroupAttributes {
 	Name: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 &apigeeappgroup.ApigeeAppGroupConfig {
 	Connection: interface{},
@@ -1104,7 +1104,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
 	DisplayName: *string,
 	Id: *string,
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeAppGroup.ApigeeAppGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAppGroup.ApigeeAppGroupTimeouts,
 }
 ```
 
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 &apigeeappgroup.ApigeeAppGroupTimeouts {
 	Create: *string,
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.NewApigeeAppGroupAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeAppGroupAttributesList
 ```
@@ -1579,7 +1579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.NewApigeeAppGroupAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeAppGroupAttributesOutputReference
 ```
@@ -1904,7 +1904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAppGroup.ApigeeAppGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeappgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeappgroup"
 
 apigeeappgroup.NewApigeeAppGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAppGroupTimeoutsOutputReference
 ```

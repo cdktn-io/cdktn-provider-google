@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalog(scope Construct, id *string, config BiglakeIcebergCatalogConfig) BiglakeIcebergCatalog
 ```
@@ -509,7 +509,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.BiglakeIcebergCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.BiglakeIcebergCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ biglakeicebergcatalog.BiglakeIcebergCatalog_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.BiglakeIcebergCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ biglakeicebergcatalog.BiglakeIcebergCatalog_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.BiglakeIcebergCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1128,7 +1128,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogConfig {
 	Connection: interface{},
@@ -1144,12 +1144,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergca
 	DefaultLocation: *string,
 	DeletionPolicy: *string,
 	Description: *string,
-	FederatedCatalogOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptions,
+	FederatedCatalogOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptions,
 	Id: *string,
 	PrimaryLocation: *string,
 	Project: *string,
-	RestrictedLocationsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogRestrictedLocationsConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeouts,
+	RestrictedLocationsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogRestrictedLocationsConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeouts,
 }
 ```
 
@@ -1442,14 +1442,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptions {
-	GlueCatalogInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo,
-	RefreshOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions,
+	GlueCatalogInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo,
+	RefreshOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions,
 	SecretName: *string,
 	ServiceDirectoryName: *string,
-	UnityCatalogInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo,
+	UnityCatalogInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo,
 }
 ```
 
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo {
 	AwsRegion: *string,
@@ -1606,11 +1606,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions {
-	RefreshSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshSchedule,
-	RefreshScope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScope,
+	RefreshSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshSchedule,
+	RefreshScope: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScope,
 }
 ```
 
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshSchedule {
 	RefreshInterval: *string,
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScope {
 	NamespaceFilters: *[]*string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatus {
 
@@ -1737,7 +1737,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergca
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatus {
 
@@ -1750,7 +1750,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergca
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo {
 	CatalogName: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogReplicas {
 
@@ -1829,7 +1829,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergca
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogRestrictedLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogRestrictedLocationsConfig {
 	RestrictedLocations: *[]*string,
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 &biglakeicebergcatalog.BiglakeIcebergCatalogTimeouts {
 	Create: *string,
@@ -1925,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfoOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsOutputReference
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsOutputReference
 ```
@@ -3017,7 +3017,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScheduleOutputReference
 ```
@@ -3295,7 +3295,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsR
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScopeOutputReference
 ```
@@ -3573,7 +3573,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsR
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusList
 ```
@@ -3722,7 +3722,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusOutputReference
 ```
@@ -4022,7 +4022,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusList
 ```
@@ -4171,7 +4171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusStatusOutputReference
 ```
@@ -4460,7 +4460,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsRefreshStatusSt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfoOutputReference
 ```
@@ -4782,7 +4782,7 @@ func InternalValue() BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicasList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogReplicasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergCatalogReplicasList
 ```
@@ -4931,7 +4931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogReplicasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergCatalogReplicasOutputReference
 ```
@@ -5220,7 +5220,7 @@ func InternalValue() BiglakeIcebergCatalogReplicas
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogRestrictedLocationsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference
 ```
@@ -5498,7 +5498,7 @@ func InternalValue() BiglakeIcebergCatalogRestrictedLocationsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalog"
 
 biglakeicebergcatalog.NewBiglakeIcebergCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTarget(scope Construct, id *string, config ClouddeployTargetConfig) ClouddeployTarget
 ```
@@ -616,7 +616,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsConstruct(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ clouddeploytarget.ClouddeployTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ clouddeploytarget.ClouddeployTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1389,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAnthosCluster {
 	Membership: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntities {
 	EntityId: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntitiesAnthosClusters {
 	Membership: *string,
@@ -1523,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntitiesGkeClusters {
 	Cluster: *string,
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetConfig {
 	Connection: interface{},
@@ -1604,21 +1604,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarge
 	Location: *string,
 	Name: *string,
 	Annotations: *map[string]*string,
-	AnthosCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetAnthosCluster,
+	AnthosCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetAnthosCluster,
 	AssociatedEntities: interface{},
-	CustomTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetCustomTarget,
+	CustomTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetCustomTarget,
 	DeletionPolicy: *string,
 	DeployParameters: *map[string]*string,
 	Description: *string,
 	ExecutionConfigs: interface{},
-	Gke: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetGke,
+	Gke: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetGke,
 	Id: *string,
 	Labels: *map[string]*string,
-	MultiTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetMultiTarget,
+	MultiTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetMultiTarget,
 	Project: *string,
 	RequireApproval: interface{},
-	Run: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetRun,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetTimeouts,
+	Run: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetRun,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetTimeouts,
 }
 ```
 
@@ -1999,7 +1999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetCustomTarget {
 	CustomTargetType: *string,
@@ -2033,14 +2033,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetExecutionConfigs {
 	Usages: *[]*string,
 	ArtifactStorage: *string,
-	DefaultPool: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool,
+	DefaultPool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool,
 	ExecutionTimeout: *string,
-	PrivatePool: github.com/cdktn-io/cdktn-provider-google-go/google/v20.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool,
+	PrivatePool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool,
 	ServiceAccount: *string,
 	Verbose: interface{},
 	WorkerPool: *string,
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetExecutionConfigsDefaultPool {
 	ArtifactStorage: *string,
@@ -2237,7 +2237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetExecutionConfigsPrivatePool {
 	WorkerPool: *string,
@@ -2305,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetGke {
 	Cluster: *string,
@@ -2391,7 +2391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetMultiTarget {
 	TargetIds: *[]*string,
@@ -2425,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetRun {
 	Location: *string,
@@ -2459,7 +2459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetTimeouts {
 	Create: *string,
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAnthosClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetAnthosClusterOutputReference
 ```
@@ -2799,7 +2799,7 @@ func InternalValue() ClouddeployTargetAnthosCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesAnthosClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesAnthosClustersList
 ```
@@ -2959,7 +2959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference
 ```
@@ -3255,7 +3255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesGkeClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersList
 ```
@@ -3415,7 +3415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 ```
@@ -3769,7 +3769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesList
 ```
@@ -3929,7 +3929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesOutputReference
 ```
@@ -4302,7 +4302,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetCustomTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetCustomTargetOutputReference
 ```
@@ -4573,7 +4573,7 @@ func InternalValue() ClouddeployTargetCustomTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsDefaultPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetExecutionConfigsDefaultPoolOutputReference
 ```
@@ -4880,7 +4880,7 @@ func InternalValue() ClouddeployTargetExecutionConfigsDefaultPool
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetExecutionConfigsList
 ```
@@ -5040,7 +5040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetExecutionConfigsOutputReference
 ```
@@ -5558,7 +5558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsPrivatePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetExecutionConfigsPrivatePoolOutputReference
 ```
@@ -5887,7 +5887,7 @@ func InternalValue() ClouddeployTargetExecutionConfigsPrivatePool
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetGkeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetGkeOutputReference
 ```
@@ -6252,7 +6252,7 @@ func InternalValue() ClouddeployTargetGke
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetMultiTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetMultiTargetOutputReference
 ```
@@ -6523,7 +6523,7 @@ func InternalValue() ClouddeployTargetMultiTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetRunOutputReference
 ```
@@ -6794,7 +6794,7 @@ func InternalValue() ClouddeployTargetRun
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetTimeoutsOutputReference
 ```

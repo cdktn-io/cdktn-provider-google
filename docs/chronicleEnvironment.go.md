@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.NewChronicleEnvironment(scope Construct, id *string, config ChronicleEnvironmentConfig) ChronicleEnvironment
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ chronicleenvironment.ChronicleEnvironment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ chronicleenvironment.ChronicleEnvironment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1103,7 +1103,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 &chronicleenvironment.ChronicleEnvironmentConfig {
 	Connection: interface{},
@@ -1127,7 +1127,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 	DeletionProtection: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleEnvironment.ChronicleEnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleEnvironment.ChronicleEnvironmentTimeouts,
 }
 ```
 
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 &chronicleenvironment.ChronicleEnvironmentTimeouts {
 	Create: *string,
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chronicleenvironment"
 
 chronicleenvironment.NewChronicleEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleEnvironmentTimeoutsOutputReference
 ```

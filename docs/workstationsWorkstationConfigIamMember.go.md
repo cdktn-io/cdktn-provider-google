@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.NewWorkstationsWorkstationConfigIamMember(scope Construct, id *string, config WorkstationsWorkstationConfigIamMemberConfig) WorkstationsWorkstationConfigIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 &workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMemberCondition {
 	Expression: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 &workstationsworkstationconfigiammember.WorkstationsWorkstationConfigIamMemberConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationswork
 	Role: *string,
 	WorkstationClusterId: *string,
 	WorkstationConfigId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfigIamMember.WorkstationsWorkstationConfigIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiammember"
 
 workstationsworkstationconfigiammember.NewWorkstationsWorkstationConfigIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigIamMemberConditionOutputReference
 ```

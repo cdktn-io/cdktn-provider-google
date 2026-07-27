@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplication(scope Construct, id *string, config DataGoogleApphubApplicationConfig) DataGoogleApphubApplication
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.DataGoogleApphubApplication_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.DataGoogleApphubApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleapphubapplication.DataGoogleApphubApplication_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.DataGoogleApphubApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleapphubapplication.DataGoogleApphubApplication_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.DataGoogleApphubApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributes {
 
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributesBusinessOwners {
 
@@ -796,7 +796,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributesCriticality {
 
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributesDeveloperOwners {
 
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributesEnvironment {
 
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationAttributesOperatorOwners {
 
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 &datagoogleapphubapplication.DataGoogleApphubApplicationScope {
 
@@ -1028,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesBusinessOwnersList
 ```
@@ -1177,7 +1177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesBusinessOwnersOutputReference
 ```
@@ -1466,7 +1466,7 @@ func InternalValue() DataGoogleApphubApplicationAttributesBusinessOwners
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesCriticalityList
 ```
@@ -1615,7 +1615,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesCriticalityOutputReference
 ```
@@ -1893,7 +1893,7 @@ func InternalValue() DataGoogleApphubApplicationAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesDeveloperOwnersList
 ```
@@ -2042,7 +2042,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesDeveloperOwnersOutputReference
 ```
@@ -2331,7 +2331,7 @@ func InternalValue() DataGoogleApphubApplicationAttributesDeveloperOwners
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesEnvironmentList
 ```
@@ -2480,7 +2480,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesEnvironmentOutputReference
 ```
@@ -2758,7 +2758,7 @@ func InternalValue() DataGoogleApphubApplicationAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesList
 ```
@@ -2907,7 +2907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationAttributesOperatorOwnersList
 ```
@@ -3056,7 +3056,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesOperatorOwnersOutputReference
 ```
@@ -3345,7 +3345,7 @@ func InternalValue() DataGoogleApphubApplicationAttributesOperatorOwners
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationAttributesOutputReference
 ```
@@ -3667,7 +3667,7 @@ func InternalValue() DataGoogleApphubApplicationAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApphubApplicationScopeList
 ```
@@ -3816,7 +3816,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubApplication.DataGoogleApphubApplicationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleapphubapplication"
 
 datagoogleapphubapplication.NewDataGoogleApphubApplicationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApphubApplicationScopeOutputReference
 ```

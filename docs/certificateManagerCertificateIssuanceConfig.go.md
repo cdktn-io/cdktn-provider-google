@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.NewCertificateManagerCertificateIssuanceConfig(scope Construct, id *string, config CertificateManagerCertificateIssuanceConfigConfig) CertificateManagerCertificateIssuanceConfig
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,10 +1072,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 &certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfig {
-	CertificateAuthorityServiceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig,
+	CertificateAuthorityServiceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig,
 }
 ```
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 &certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig {
 	CaPool: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 &certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfigConfig {
 	Connection: interface{},
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanag
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CertificateAuthorityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfig,
+	CertificateAuthorityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfig,
 	KeyAlgorithm: *string,
 	Lifetime: *string,
 	Name: *string,
@@ -1164,7 +1164,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanag
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigTimeouts,
 }
 ```
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 &certificatemanagercertificateissuanceconfig.CertificateManagerCertificateIssuanceConfigTimeouts {
 	Create: *string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.NewCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfigOutputReference
 ```
@@ -1788,7 +1788,7 @@ func InternalValue() CertificateManagerCertificateIssuanceConfigCertificateAutho
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.NewCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference
 ```
@@ -2079,7 +2079,7 @@ func InternalValue() CertificateManagerCertificateIssuanceConfigCertificateAutho
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerCertificateIssuanceConfig.CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagercertificateissuanceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/certificatemanagercertificateissuanceconfig"
 
 certificatemanagercertificateissuanceconfig.NewCertificateManagerCertificateIssuanceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference
 ```

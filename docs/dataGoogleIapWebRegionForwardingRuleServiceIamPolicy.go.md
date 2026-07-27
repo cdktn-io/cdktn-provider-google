@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 datagoogleiapwebregionforwardingruleserviceiampolicy.NewDataGoogleIapWebRegionForwardingRuleServiceIamPolicy(scope Construct, id *string, config DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig) DataGoogleIapWebRegionForwardingRuleServiceIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapwebregionforwardingruleserviceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapwebregionforwardingruleserviceiampolicy"
 
 &datagoogleiapwebregionforwardingruleserviceiampolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig {
 	Connection: interface{},

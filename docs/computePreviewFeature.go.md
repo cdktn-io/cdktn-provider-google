@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeature(scope Construct, id *string, config ComputePreviewFeatureConfig) ComputePreviewFeature
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ computepreviewfeature.ComputePreviewFeature_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ computepreviewfeature.ComputePreviewFeature_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureConfig {
 	Connection: interface{},
@@ -889,8 +889,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfe
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureRolloutOperation,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureTimeouts,
+	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computePreviewFeature.ComputePreviewFeatureRolloutOperation,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computePreviewFeature.ComputePreviewFeatureTimeouts,
 }
 ```
 
@@ -1072,10 +1072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureRolloutOperation {
-	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput,
+	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput,
 }
 ```
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureRolloutOperationRolloutInput {
 	PredefinedRolloutPlan: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureTimeouts {
 	Create: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureRolloutOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureRolloutOperationOutputReference
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() ComputePreviewFeatureRolloutOperation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureRolloutOperationRolloutInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureRolloutOperationRolloutInputOutputReference
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() ComputePreviewFeatureRolloutOperationRolloutInput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureTimeoutsOutputReference
 ```

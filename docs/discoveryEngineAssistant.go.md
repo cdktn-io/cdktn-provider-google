@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistant(scope Construct, id *string, config DiscoveryEngineAssistantConfig) DiscoveryEngineAssistant
 ```
@@ -495,7 +495,7 @@ func ResetWebGroundingType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.DiscoveryEngineAssistant_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.DiscoveryEngineAssistant_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ discoveryengineassistant.DiscoveryEngineAssistant_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.DiscoveryEngineAssistant_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ discoveryengineassistant.DiscoveryEngineAssistant_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.DiscoveryEngineAssistant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantConfig {
 	Connection: interface{},
@@ -1096,13 +1096,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginea
 	DisplayName: *string,
 	EngineId: *string,
 	Location: *string,
-	CustomerPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy,
+	CustomerPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy,
 	DeletionPolicy: *string,
 	Description: *string,
-	GenerationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfig,
+	GenerationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfig,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts,
 	WebGroundingType: *string,
 }
 ```
@@ -1399,11 +1399,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantCustomerPolicy {
 	BannedPhrases: interface{},
-	ModelArmorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyModelArmorConfig,
+	ModelArmorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyModelArmorConfig,
 }
 ```
 
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrases {
 	Phrase: *string,
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyModelArmorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantCustomerPolicyModelArmorConfig {
 	ResponseTemplate: *string,
@@ -1586,11 +1586,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantGenerationConfig {
 	DefaultLanguage: *string,
-	SystemInstruction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstruction,
+	SystemInstruction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstruction,
 }
 ```
 
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstruction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantGenerationConfigSystemInstruction {
 	AdditionalSystemInstruction: *string,
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 &discoveryengineassistant.DiscoveryEngineAssistantTimeouts {
 	Create: *string,
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineAssistantCustomerPolicyBannedPhrasesList
 ```
@@ -1895,7 +1895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference
 ```
@@ -2242,7 +2242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference
 ```
@@ -2564,7 +2564,7 @@ func InternalValue() DiscoveryEngineAssistantCustomerPolicyModelArmorConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantCustomerPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantCustomerPolicyOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() DiscoveryEngineAssistantCustomerPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantGenerationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantGenerationConfigOutputReference
 ```
@@ -3217,7 +3217,7 @@ func InternalValue() DiscoveryEngineAssistantGenerationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference
 ```
@@ -3495,7 +3495,7 @@ func InternalValue() DiscoveryEngineAssistantGenerationConfigSystemInstruction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineassistant"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengineassistant"
 
 discoveryengineassistant.NewDiscoveryEngineAssistantTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantTimeoutsOutputReference
 ```

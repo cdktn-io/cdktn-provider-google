@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.NewPrivatecaCaPoolIamMember(scope Construct, id *string, config PrivatecaCaPoolIamMemberConfig) PrivatecaCaPoolIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.PrivatecaCaPoolIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.PrivatecaCaPoolIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ privatecacapooliammember.PrivatecaCaPoolIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.PrivatecaCaPoolIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ privatecacapooliammember.PrivatecaCaPoolIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.PrivatecaCaPoolIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 &privatecacapooliammember.PrivatecaCaPoolIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 &privatecacapooliammember.PrivatecaCaPoolIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooli
 	CaPool: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/privatecacapooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/privatecacapooliammember"
 
 privatecacapooliammember.NewPrivatecaCaPoolIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIamMemberConditionOutputReference
 ```
