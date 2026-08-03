@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk
+// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface DialogflowSipTrunkConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#deletion_policy DialogflowSipTrunk#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#deletion_policy DialogflowSipTrunk#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. Human-readable alias for this trunk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#display_name DialogflowSipTrunk#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#display_name DialogflowSipTrunk#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. The expected hostnames in the peer certificate from the partner that is used for TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#expected_hostname DialogflowSipTrunk#expected_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#expected_hostname DialogflowSipTrunk#expected_hostname}
   */
   readonly expectedHostname: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#id DialogflowSipTrunk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#id DialogflowSipTrunk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,17 +46,17 @@ export interface DialogflowSipTrunkConfig extends cdktn.TerraformMetaArguments {
   /**
   * The location of the SIP trunk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#location DialogflowSipTrunk#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#location DialogflowSipTrunk#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#project DialogflowSipTrunk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#project DialogflowSipTrunk#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#timeouts DialogflowSipTrunk#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#timeouts DialogflowSipTrunk#timeouts}
   */
   readonly timeouts?: DialogflowSipTrunkTimeouts;
 }
@@ -233,15 +233,15 @@ export class DialogflowSipTrunkConnectionsList extends cdktn.ComplexList {
 }
 export interface DialogflowSipTrunkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#create DialogflowSipTrunk#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#create DialogflowSipTrunk#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#delete DialogflowSipTrunk#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#delete DialogflowSipTrunk#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#update DialogflowSipTrunk#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#update DialogflowSipTrunk#update}
   */
   readonly update?: string;
 }
@@ -393,7 +393,7 @@ export class DialogflowSipTrunkTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk google_dialogflow_sip_trunk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk google_dialogflow_sip_trunk}
 */
 export class DialogflowSipTrunk extends cdktn.TerraformResource {
 
@@ -409,7 +409,7 @@ export class DialogflowSipTrunk extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowSipTrunk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowSipTrunk to import
-  * @param importFromId The id of the existing DialogflowSipTrunk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowSipTrunk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowSipTrunk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -421,7 +421,7 @@ export class DialogflowSipTrunk extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dialogflow_sip_trunk google_dialogflow_sip_trunk} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dialogflow_sip_trunk google_dialogflow_sip_trunk} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -432,7 +432,7 @@ export class DialogflowSipTrunk extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_sip_trunk',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.41.0',
+        providerVersion: '7.42.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

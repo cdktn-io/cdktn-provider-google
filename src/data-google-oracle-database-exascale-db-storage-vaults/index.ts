@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults
+// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleOracleDatabaseExascaleDbStorageVaultsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#id DataGoogleOracleDatabaseExascaleDbStorageVaults#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#id DataGoogleOracleDatabaseExascaleDbStorageVaults#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleOracleDatabaseExascaleDbStorageVaultsConfig extends c
   /**
   * location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#location DataGoogleOracleDatabaseExascaleDbStorageVaults#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#location DataGoogleOracleDatabaseExascaleDbStorageVaults#location}
   */
   readonly location: string;
   /**
   * The ID of the project in which the dataset is located. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#project DataGoogleOracleDatabaseExascaleDbStorageVaults#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#project DataGoogleOracleDatabaseExascaleDbStorageVaults#project}
   */
   readonly project?: string;
 }
@@ -465,7 +465,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVaultsExascaleDbStorageVau
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults google_oracle_database_exascale_db_storage_vaults}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults google_oracle_database_exascale_db_storage_vaults}
 */
 export class DataGoogleOracleDatabaseExascaleDbStorageVaults extends cdktn.TerraformDataSource {
 
@@ -481,7 +481,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVaults extends cdktn.Terra
   * Generates CDKTN code for importing a DataGoogleOracleDatabaseExascaleDbStorageVaults resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOracleDatabaseExascaleDbStorageVaults to import
-  * @param importFromId The id of the existing DataGoogleOracleDatabaseExascaleDbStorageVaults that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleOracleDatabaseExascaleDbStorageVaults that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOracleDatabaseExascaleDbStorageVaults to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -493,7 +493,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVaults extends cdktn.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/oracle_database_exascale_db_storage_vaults google_oracle_database_exascale_db_storage_vaults} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/oracle_database_exascale_db_storage_vaults google_oracle_database_exascale_db_storage_vaults} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -504,7 +504,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVaults extends cdktn.Terra
       terraformResourceType: 'google_oracle_database_exascale_db_storage_vaults',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.41.0',
+        providerVersion: '7.42.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
