@@ -4,7 +4,7 @@
 
 ### DataGoogleFirestoreDocument <a name="DataGoogleFirestoreDocument" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document google_firestore_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document google_firestore_document}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleFirestoreDocumen
 
 The id of the existing DataGoogleFirestoreDocument that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,8 +787,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefirest
 | <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.collection">Collection</a></code> | <code>*string</code> | The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages. |
 | <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.database">Database</a></code> | <code>*string</code> | The Firestore database id. Defaults to '"(default)"'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.documentId">DocumentId</a></code> | <code>*string</code> | The client-assigned document ID to use for this document during creation. |
-| <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#id DataGoogleFirestoreDocument#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#project DataGoogleFirestoreDocument#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#id DataGoogleFirestoreDocument#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#project DataGoogleFirestoreDocument#project}. |
 
 ---
 
@@ -872,7 +872,7 @@ Collection *string
 
 The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#collection DataGoogleFirestoreDocument#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#collection DataGoogleFirestoreDocument#collection}
 
 ---
 
@@ -886,7 +886,7 @@ Database *string
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#database DataGoogleFirestoreDocument#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#database DataGoogleFirestoreDocument#database}
 
 ---
 
@@ -900,7 +900,7 @@ DocumentId *string
 
 The client-assigned document ID to use for this document during creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#document_id DataGoogleFirestoreDocument#document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#document_id DataGoogleFirestoreDocument#document_id}
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#id DataGoogleFirestoreDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#id DataGoogleFirestoreDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/data-sources/firestore_document#project DataGoogleFirestoreDocument#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/data-sources/firestore_document#project DataGoogleFirestoreDocument#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### BigqueryRoutine <a name="BigqueryRoutine" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine google_bigquery_routine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine google_bigquery_routine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutine.Initializer"></a>
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the BigqueryRoutine to import.
 
 The id of the existing BigqueryRoutine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1295,10 +1295,11 @@ const bigqueryRoutineArguments: bigqueryRoutine.BigqueryRoutineArguments = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.argumentKind">argumentKind</a></code> | <code>string</code> | Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE"]. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.argumentKind">argumentKind</a></code> | <code>string</code> | Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE", "FIXED_TABLE"]. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.dataType">dataType</a></code> | <code>string</code> | A JSON schema for the data type. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.mode">mode</a></code> | <code>string</code> | Specifies whether the argument is input or output. Can be set for procedures only. Possible values: ["IN", "OUT", "INOUT"]. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.name">name</a></code> | <code>string</code> | The name of this argument. Can be absent for function return argument. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.tableType">tableType</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a></code> | table_type block. |
 
 ---
 
@@ -1310,9 +1311,9 @@ public readonly argumentKind: string;
 
 - *Type:* string
 
-Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE"].
+Defaults to FIXED_TYPE. Default value: "FIXED_TYPE" Possible values: ["FIXED_TYPE", "ANY_TYPE", "FIXED_TABLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#argument_kind BigqueryRoutine#argument_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#argument_kind BigqueryRoutine#argument_kind}
 
 ---
 
@@ -1334,7 +1335,7 @@ or replaced STRUCT field type with RECORD field type, we currently cannot
 suppress the recurring diff this causes. As a workaround, we recommend using
 the schema as returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#data_type BigqueryRoutine#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#data_type BigqueryRoutine#data_type}
 
 ---
 
@@ -1348,7 +1349,7 @@ public readonly mode: string;
 
 Specifies whether the argument is input or output. Can be set for procedures only. Possible values: ["IN", "OUT", "INOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#mode BigqueryRoutine#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#mode BigqueryRoutine#mode}
 
 ---
 
@@ -1362,7 +1363,108 @@ public readonly name: string;
 
 The name of this argument. Can be absent for function return argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#name BigqueryRoutine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#name BigqueryRoutine#name}
+
+---
+
+##### `tableType`<sup>Optional</sup> <a name="tableType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments.property.tableType"></a>
+
+```typescript
+public readonly tableType: BigqueryRoutineArgumentsTableType;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a>
+
+table_type block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#table_type BigqueryRoutine#table_type}
+
+---
+
+### BigqueryRoutineArgumentsTableType <a name="BigqueryRoutineArgumentsTableType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType.Initializer"></a>
+
+```typescript
+import { bigqueryRoutine } from '@cdktn/provider-google'
+
+const bigqueryRoutineArgumentsTableType: bigqueryRoutine.BigqueryRoutineArgumentsTableType = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType.property.columns">columns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]</code> | columns block. |
+
+---
+
+##### `columns`<sup>Optional</sup> <a name="columns" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType.property.columns"></a>
+
+```typescript
+public readonly columns: IResolvable | BigqueryRoutineArgumentsTableTypeColumns[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]
+
+columns block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#columns BigqueryRoutine#columns}
+
+---
+
+### BigqueryRoutineArgumentsTableTypeColumns <a name="BigqueryRoutineArgumentsTableTypeColumns" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns.Initializer"></a>
+
+```typescript
+import { bigqueryRoutine } from '@cdktn/provider-google'
+
+const bigqueryRoutineArgumentsTableTypeColumns: bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns.property.name">name</a></code> | <code>string</code> | The name of the column. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns.property.type">type</a></code> | <code>string</code> | A JSON schema for the data type of the column. |
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the column.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#name BigqueryRoutine#name}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+A JSON schema for the data type of the column.
+
+Required unless argumentKind = ANY_TYPE.
+~>**NOTE**: Because this field expects a JSON string, any changes to the string
+will create a diff, even if the JSON itself hasn't changed. If the API returns
+a different value for the same schema, e.g. it switched the order of values
+or replaced STRUCT field type with RECORD field type, we currently cannot
+suppress the recurring diff this causes. As a workaround, we recommend using
+the schema as returned by the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#type BigqueryRoutine#type}
 
 ---
 
@@ -1396,10 +1498,10 @@ const bigqueryRoutineConfig: bigqueryRoutine.BigqueryRoutineConfig = { ... }
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.description">description</a></code> | <code>string</code> | The description of the routine if defined. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.determinismLevel">determinismLevel</a></code> | <code>string</code> | The determinism level of the JavaScript UDF if defined. Possible values: ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"]. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.importedLibraries">importedLibraries</a></code> | <code>string[]</code> | Optional. If language = "JAVASCRIPT", this field stores the path of the imported JAVASCRIPT libraries. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.language">language</a></code> | <code>string</code> | The language of the routine. Possible values: ["SQL", "JAVASCRIPT", "PYTHON", "JAVA", "SCALA"]. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.remoteFunctionOptions">remoteFunctionOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineRemoteFunctionOptions">BigqueryRoutineRemoteFunctionOptions</a></code> | remote_function_options block. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.returnTableType">returnTableType</a></code> | <code>string</code> | Optional. Can be set only if routineType = "TABLE_VALUED_FUNCTION". |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig.property.returnType">returnType</a></code> | <code>string</code> | A JSON schema for the return type. |
@@ -1489,7 +1591,7 @@ public readonly datasetId: string;
 
 The ID of the dataset containing this routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#dataset_id BigqueryRoutine#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#dataset_id BigqueryRoutine#dataset_id}
 
 ---
 
@@ -1506,7 +1608,7 @@ The body of the routine.
 For functions, this is the expression in the AS clause.
 If language=SQL, it is the substring inside (but excluding) the parentheses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#definition_body BigqueryRoutine#definition_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#definition_body BigqueryRoutine#definition_body}
 
 ---
 
@@ -1522,7 +1624,7 @@ The ID of the the routine.
 
 The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#routine_id BigqueryRoutine#routine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#routine_id BigqueryRoutine#routine_id}
 
 ---
 
@@ -1536,7 +1638,7 @@ public readonly routineType: string;
 
 The type of routine. Possible values: ["SCALAR_FUNCTION", "PROCEDURE", "TABLE_VALUED_FUNCTION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#routine_type BigqueryRoutine#routine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#routine_type BigqueryRoutine#routine_type}
 
 ---
 
@@ -1550,7 +1652,7 @@ public readonly arguments: IResolvable | BigqueryRoutineArguments[];
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
 
 ---
 
@@ -1566,7 +1668,7 @@ If set to DATA_MASKING, the function is validated and made available as a maskin
 
 For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#data_governance_type BigqueryRoutine#data_governance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#data_governance_type BigqueryRoutine#data_governance_type}
 
 ---
 
@@ -1588,7 +1690,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#deletion_policy BigqueryRoutine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#deletion_policy BigqueryRoutine#deletion_policy}
 
 ---
 
@@ -1602,7 +1704,7 @@ public readonly description: string;
 
 The description of the routine if defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#description BigqueryRoutine#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#description BigqueryRoutine#description}
 
 ---
 
@@ -1616,7 +1718,7 @@ public readonly determinismLevel: string;
 
 The determinism level of the JavaScript UDF if defined. Possible values: ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#determinism_level BigqueryRoutine#determinism_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#determinism_level BigqueryRoutine#determinism_level}
 
 ---
 
@@ -1628,7 +1730,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1645,7 +1747,7 @@ public readonly importedLibraries: string[];
 
 Optional. If language = "JAVASCRIPT", this field stores the path of the imported JAVASCRIPT libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#imported_libraries BigqueryRoutine#imported_libraries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#imported_libraries BigqueryRoutine#imported_libraries}
 
 ---
 
@@ -1659,7 +1761,7 @@ public readonly language: string;
 
 The language of the routine. Possible values: ["SQL", "JAVASCRIPT", "PYTHON", "JAVA", "SCALA"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#language BigqueryRoutine#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#language BigqueryRoutine#language}
 
 ---
 
@@ -1671,7 +1773,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}.
 
 ---
 
@@ -1685,7 +1787,7 @@ public readonly remoteFunctionOptions: BigqueryRoutineRemoteFunctionOptions;
 
 remote_function_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#remote_function_options BigqueryRoutine#remote_function_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#remote_function_options BigqueryRoutine#remote_function_options}
 
 ---
 
@@ -1703,7 +1805,7 @@ If absent, the return table type is inferred from definitionBody at query time i
 that references this routine. If present, then the columns in the evaluated table result will
 be cast to match the column types specificed in return table type, at query time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#return_table_type BigqueryRoutine#return_table_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#return_table_type BigqueryRoutine#return_table_type}
 
 ---
 
@@ -1727,7 +1829,7 @@ d the order of values or replaced STRUCT field type with RECORD field type, we c
 cannot suppress the recurring diff this causes. As a workaround, we recommend using
 the schema as returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#return_type BigqueryRoutine#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#return_type BigqueryRoutine#return_type}
 
 ---
 
@@ -1743,7 +1845,7 @@ Optional.
 
 The security mode of the routine, if defined. If not defined, the security mode is automatically determined from the routine's configuration. Possible values: ["DEFINER", "INVOKER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#security_mode BigqueryRoutine#security_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#security_mode BigqueryRoutine#security_mode}
 
 ---
 
@@ -1757,7 +1859,7 @@ public readonly sparkOptions: BigqueryRoutineSparkOptions;
 
 spark_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#spark_options BigqueryRoutine#spark_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#spark_options BigqueryRoutine#spark_options}
 
 ---
 
@@ -1771,7 +1873,7 @@ public readonly timeouts: BigqueryRoutineTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#timeouts BigqueryRoutine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#timeouts BigqueryRoutine#timeouts}
 
 ---
 
@@ -1808,7 +1910,7 @@ Fully qualified name of the user-provided connection object which holds the auth
 
 Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#connection BigqueryRoutine#connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#connection BigqueryRoutine#connection}
 
 ---
 
@@ -1822,7 +1924,7 @@ public readonly endpoint: string;
 
 Endpoint of the user-provided remote service, e.g. 'https://us-east1-my_gcf_project.cloudfunctions.net/remote_add'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#endpoint BigqueryRoutine#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#endpoint BigqueryRoutine#endpoint}
 
 ---
 
@@ -1839,7 +1941,7 @@ Max number of rows in each batch sent to the remote service.
 If absent or if 0,
 BigQuery dynamically decides the number of rows in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#max_batching_rows BigqueryRoutine#max_batching_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#max_batching_rows BigqueryRoutine#max_batching_rows}
 
 ---
 
@@ -1858,7 +1960,7 @@ The total number of bytes of keys and values must be less than 8KB.
 An object containing a list of "key": value pairs. Example:
 '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#user_defined_context BigqueryRoutine#user_defined_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#user_defined_context BigqueryRoutine#user_defined_context}
 
 ---
 
@@ -1901,7 +2003,7 @@ Archive files to be extracted into the working directory of each executor.
 
 For more information about Apache Spark, see Apache Spark.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#archive_uris BigqueryRoutine#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#archive_uris BigqueryRoutine#archive_uris}
 
 ---
 
@@ -1915,7 +2017,7 @@ public readonly connection: string;
 
 Fully qualified name of the user-provided Spark connection object. Format: "projects/{projectId}/locations/{locationId}/connections/{connectionId}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#connection BigqueryRoutine#connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#connection BigqueryRoutine#connection}
 
 ---
 
@@ -1929,7 +2031,7 @@ public readonly containerImage: string;
 
 Custom container image for the runtime environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#container_image BigqueryRoutine#container_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#container_image BigqueryRoutine#container_image}
 
 ---
 
@@ -1945,7 +2047,7 @@ Files to be placed in the working directory of each executor.
 
 For more information about Apache Spark, see Apache Spark.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#file_uris BigqueryRoutine#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#file_uris BigqueryRoutine#file_uris}
 
 ---
 
@@ -1959,7 +2061,7 @@ public readonly jarUris: string[];
 
 JARs to include on the driver and executor CLASSPATH. For more information about Apache Spark, see Apache Spark.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#jar_uris BigqueryRoutine#jar_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#jar_uris BigqueryRoutine#jar_uris}
 
 ---
 
@@ -1973,7 +2075,7 @@ public readonly mainClass: string;
 
 The fully qualified name of a class in jarUris, for example, com.example.wordcount. Exactly one of mainClass and main_jar_uri field should be set for Java/Scala language type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#main_class BigqueryRoutine#main_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#main_class BigqueryRoutine#main_class}
 
 ---
 
@@ -1990,7 +2092,7 @@ The main file/jar URI of the Spark application.
 Exactly one of the definitionBody field and the mainFileUri field must be set for Python.
 Exactly one of mainClass and mainFileUri field should be set for Java/Scala language type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#main_file_uri BigqueryRoutine#main_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#main_file_uri BigqueryRoutine#main_file_uri}
 
 ---
 
@@ -2007,7 +2109,7 @@ Configuration properties as a set of key/value pairs, which will be passed on to
 For more information, see Apache Spark and the procedure option list.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#properties BigqueryRoutine#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#properties BigqueryRoutine#properties}
 
 ---
 
@@ -2023,7 +2125,7 @@ Python files to be placed on the PYTHONPATH for PySpark application.
 
 Supported file types: .py, .egg, and .zip. For more information about Apache Spark, see Apache Spark.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#py_file_uris BigqueryRoutine#py_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#py_file_uris BigqueryRoutine#py_file_uris}
 
 ---
 
@@ -2037,7 +2139,7 @@ public readonly runtimeVersion: string;
 
 Runtime version. If not specified, the default runtime version is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#runtime_version BigqueryRoutine#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#runtime_version BigqueryRoutine#runtime_version}
 
 ---
 
@@ -2055,9 +2157,9 @@ const bigqueryRoutineTimeouts: bigqueryRoutine.BigqueryRoutineTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#create BigqueryRoutine#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#delete BigqueryRoutine#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#update BigqueryRoutine#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#create BigqueryRoutine#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#delete BigqueryRoutine#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#update BigqueryRoutine#update}. |
 
 ---
 
@@ -2069,7 +2171,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#create BigqueryRoutine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#create BigqueryRoutine#create}.
 
 ---
 
@@ -2081,7 +2183,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#delete BigqueryRoutine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#delete BigqueryRoutine#delete}.
 
 ---
 
@@ -2093,7 +2195,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_routine#update BigqueryRoutine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_routine#update BigqueryRoutine#update}.
 
 ---
 
@@ -2327,10 +2429,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.putTableType">putTableType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetArgumentKind">resetArgumentKind</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetDataType">resetDataType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetMode">resetMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetTableType">resetTableType</a></code> | *No description.* |
 
 ---
 
@@ -2484,6 +2588,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putTableType` <a name="putTableType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.putTableType"></a>
+
+```typescript
+public putTableType(value: BigqueryRoutineArgumentsTableType): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.putTableType.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a>
+
+---
+
 ##### `resetArgumentKind` <a name="resetArgumentKind" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetArgumentKind"></a>
 
 ```typescript
@@ -2508,6 +2624,12 @@ public resetMode(): void
 public resetName(): void
 ```
 
+##### `resetTableType` <a name="resetTableType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.resetTableType"></a>
+
+```typescript
+public resetTableType(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2515,10 +2637,12 @@ public resetName(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.tableType">tableType</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference">BigqueryRoutineArgumentsTableTypeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.argumentKindInput">argumentKindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.tableTypeInput">tableTypeInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.argumentKind">argumentKind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
@@ -2548,6 +2672,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tableType`<sup>Required</sup> <a name="tableType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.tableType"></a>
+
+```typescript
+public readonly tableType: BigqueryRoutineArgumentsTableTypeOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference">BigqueryRoutineArgumentsTableTypeOutputReference</a>
 
 ---
 
@@ -2588,6 +2722,16 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tableTypeInput`<sup>Optional</sup> <a name="tableTypeInput" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference.property.tableTypeInput"></a>
+
+```typescript
+public readonly tableTypeInput: BigqueryRoutineArgumentsTableType;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a>
 
 ---
 
@@ -2638,6 +2782,782 @@ public readonly internalValue: IResolvable | BigqueryRoutineArguments;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments">BigqueryRoutineArguments</a>
+
+---
+
+
+### BigqueryRoutineArgumentsTableTypeColumnsList <a name="BigqueryRoutineArgumentsTableTypeColumnsList" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer"></a>
+
+```typescript
+import { bigqueryRoutine } from '@cdktn/provider-google'
+
+new bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.get"></a>
+
+```typescript
+public get(index: number): BigqueryRoutineArgumentsTableTypeColumnsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | BigqueryRoutineArgumentsTableTypeColumns[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]
+
+---
+
+
+### BigqueryRoutineArgumentsTableTypeColumnsOutputReference <a name="BigqueryRoutineArgumentsTableTypeColumnsOutputReference" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer"></a>
+
+```typescript
+import { bigqueryRoutine } from '@cdktn/provider-google'
+
+new bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resetType">resetType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+##### `resetType` <a name="resetType" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.resetType"></a>
+
+```typescript
+public resetType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | BigqueryRoutineArgumentsTableTypeColumns;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>
+
+---
+
+
+### BigqueryRoutineArgumentsTableTypeOutputReference <a name="BigqueryRoutineArgumentsTableTypeOutputReference" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.Initializer"></a>
+
+```typescript
+import { bigqueryRoutine } from '@cdktn/provider-google'
+
+new bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.putColumns">putColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.resetColumns">resetColumns</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putColumns` <a name="putColumns" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.putColumns"></a>
+
+```typescript
+public putColumns(value: IResolvable | BigqueryRoutineArgumentsTableTypeColumns[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.putColumns.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]
+
+---
+
+##### `resetColumns` <a name="resetColumns" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.resetColumns"></a>
+
+```typescript
+public resetColumns(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.columns">columns</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList">BigqueryRoutineArgumentsTableTypeColumnsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.columns"></a>
+
+```typescript
+public readonly columns: BigqueryRoutineArgumentsTableTypeColumnsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumnsList">BigqueryRoutineArgumentsTableTypeColumnsList</a>
+
+---
+
+##### `columnsInput`<sup>Optional</sup> <a name="columnsInput" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.columnsInput"></a>
+
+```typescript
+public readonly columnsInput: IResolvable | BigqueryRoutineArgumentsTableTypeColumns[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeColumns">BigqueryRoutineArgumentsTableTypeColumns</a>[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableTypeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: BigqueryRoutineArgumentsTableType;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsTableType">BigqueryRoutineArgumentsTableType</a>
 
 ---
 

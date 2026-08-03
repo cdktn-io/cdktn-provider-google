@@ -4,7 +4,7 @@
 
 ### GeminiReleaseChannelSetting <a name="GeminiReleaseChannelSetting" id="@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting google_gemini_release_channel_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting google_gemini_release_channel_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer"></a>
 
@@ -46,9 +46,9 @@ geminiReleaseChannelSetting.GeminiReleaseChannelSetting(
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.releaseChannelSettingId">release_channel_setting_id</a></code> | <code>str</code> | Id of the Release Channel Setting. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.releaseChannel">release_channel</a></code> | <code>str</code> | Release channel to be used. Possible values: STABLE EXPERIMENTAL. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts">GeminiReleaseChannelSettingTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#location GeminiReleaseChannelSetting#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#location GeminiReleaseChannelSetting#location}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Id of the Release Channel Setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#release_channel_setting_id GeminiReleaseChannelSetting#release_channel_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#release_channel_setting_id GeminiReleaseChannelSetting#release_channel_setting_id}
 
 ---
 
@@ -147,7 +147,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#deletion_policy GeminiReleaseChannelSetting#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#deletion_policy GeminiReleaseChannelSetting#deletion_policy}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#labels GeminiReleaseChannelSetting#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#labels GeminiReleaseChannelSetting#labels}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Release channel to be used. Possible values: STABLE EXPERIMENTAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#release_channel GeminiReleaseChannelSetting#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#release_channel GeminiReleaseChannelSetting#release_channel}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#timeouts GeminiReleaseChannelSetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#timeouts GeminiReleaseChannelSetting#timeouts}
 
 ---
 
@@ -603,7 +603,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}.
 
 ---
 
@@ -619,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}.
 
 ---
 
@@ -773,7 +773,7 @@ The construct id used in the generated config for the GeminiReleaseChannelSettin
 
 The id of the existing GeminiReleaseChannelSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1239,9 +1239,9 @@ geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig(
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.releaseChannelSettingId">release_channel_setting_id</a></code> | <code>str</code> | Id of the Release Channel Setting. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.releaseChannel">release_channel</a></code> | <code>str</code> | Release channel to be used. Possible values: STABLE EXPERIMENTAL. |
 | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts">GeminiReleaseChannelSettingTimeouts</a></code> | timeouts block. |
 
@@ -1327,7 +1327,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#location GeminiReleaseChannelSetting#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#location GeminiReleaseChannelSetting#location}
 
 ---
 
@@ -1341,7 +1341,7 @@ release_channel_setting_id: str
 
 Id of the Release Channel Setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#release_channel_setting_id GeminiReleaseChannelSetting#release_channel_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#release_channel_setting_id GeminiReleaseChannelSetting#release_channel_setting_id}
 
 ---
 
@@ -1362,7 +1362,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#deletion_policy GeminiReleaseChannelSetting#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#deletion_policy GeminiReleaseChannelSetting#deletion_policy}
 
 ---
 
@@ -1374,7 +1374,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#id GeminiReleaseChannelSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1394,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#labels GeminiReleaseChannelSetting#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#labels GeminiReleaseChannelSetting#labels}
 
 ---
 
@@ -1406,7 +1406,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#project GeminiReleaseChannelSetting#project}.
 
 ---
 
@@ -1420,7 +1420,7 @@ release_channel: str
 
 Release channel to be used. Possible values: STABLE EXPERIMENTAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#release_channel GeminiReleaseChannelSetting#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#release_channel GeminiReleaseChannelSetting#release_channel}
 
 ---
 
@@ -1434,7 +1434,7 @@ timeouts: GeminiReleaseChannelSettingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#timeouts GeminiReleaseChannelSetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#timeouts GeminiReleaseChannelSetting#timeouts}
 
 ---
 
@@ -1456,9 +1456,9 @@ geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}. |
 
 ---
 
@@ -1470,7 +1470,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#create GeminiReleaseChannelSetting#create}.
 
 ---
 
@@ -1482,7 +1482,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#delete GeminiReleaseChannelSetting#delete}.
 
 ---
 
@@ -1494,7 +1494,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gemini_release_channel_setting#update GeminiReleaseChannelSetting#update}.
 
 ---
 

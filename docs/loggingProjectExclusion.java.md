@@ -4,7 +4,7 @@
 
 ### LoggingProjectExclusion <a name="LoggingProjectExclusion" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion google_logging_project_exclusion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion google_logging_project_exclusion}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer"></a>
 
@@ -43,8 +43,8 @@ LoggingProjectExclusion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the logging exclusion. |
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description. |
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this exclusion rule should be disabled or not. This defaults to false. |
-| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}. |
-| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}. |
+| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}. |
+| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The filter to apply when excluding logs. Only log entries that match the filter are excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#filter LoggingProjectExclusion#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#filter LoggingProjectExclusion#filter}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the logging exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#name LoggingProjectExclusion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#name LoggingProjectExclusion#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A human-readable description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#description LoggingProjectExclusion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#description LoggingProjectExclusion#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether this exclusion rule should be disabled or not. This defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#disabled LoggingProjectExclusion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#disabled LoggingProjectExclusion#disabled}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the LoggingProjectExclusion to
 
 The id of the existing LoggingProjectExclusion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,8 +1006,8 @@ LoggingProjectExclusionConfig.builder()
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the logging exclusion. |
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description. |
 | <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this exclusion rule should be disabled or not. This defaults to false. |
-| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}. |
-| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}. |
+| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}. |
+| <code><a href="#@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getFilter();
 
 The filter to apply when excluding logs. Only log entries that match the filter are excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#filter LoggingProjectExclusion#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#filter LoggingProjectExclusion#filter}
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getName();
 
 The name of the logging exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#name LoggingProjectExclusion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#name LoggingProjectExclusion#name}
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getDescription();
 
 A human-readable description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#description LoggingProjectExclusion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#description LoggingProjectExclusion#description}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether this exclusion rule should be disabled or not. This defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#disabled LoggingProjectExclusion#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#disabled LoggingProjectExclusion#disabled}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#id LoggingProjectExclusion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1160,7 +1160,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/logging_project_exclusion#project LoggingProjectExclusion#project}.
 
 ---
 

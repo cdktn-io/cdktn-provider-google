@@ -4,7 +4,7 @@
 
 ### ComputeResizeRequest <a name="ComputeResizeRequest" id="@cdktn/provider-google.computeResizeRequest.ComputeResizeRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request google_compute_resize_request}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request google_compute_resize_request}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResizeRequest.ComputeResizeRequest.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the ComputeResizeRequest to im
 
 The id of the existing ComputeResizeRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1038,8 +1038,8 @@ const computeResizeRequestConfig: computeResizeRequest.ComputeResizeRequestConfi
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.resizeBy">resizeBy</a></code> | <code>number</code> | The number of instances to be created by this resize request. |
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resize-request. |
-| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}. |
-| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}. |
+| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}. |
+| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}. |
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.requestedRunDuration">requestedRunDuration</a></code> | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestRequestedRunDuration">ComputeResizeRequestRequestedRunDuration</a></code> | requested_run_duration block. |
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts">ComputeResizeRequestTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestConfig.property.zone">zone</a></code> | <code>string</code> | The reference of the compute zone scoping this request. If it is not provided, the provider zone is used. |
@@ -1126,7 +1126,7 @@ public readonly instanceGroupManager: string;
 
 The reference of the instance group manager this ResizeRequest is a part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#instance_group_manager ComputeResizeRequest#instance_group_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#instance_group_manager ComputeResizeRequest#instance_group_manager}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly name: string;
 
 The name of this resize request. The name must be 1-63 characters long, and comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#name ComputeResizeRequest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#name ComputeResizeRequest#name}
 
 ---
 
@@ -1156,7 +1156,7 @@ The number of instances to be created by this resize request.
 
 The group's target size will be increased by this number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#resize_by ComputeResizeRequest#resize_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#resize_by ComputeResizeRequest#resize_by}
 
 ---
 
@@ -1178,7 +1178,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#deletion_policy ComputeResizeRequest#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#deletion_policy ComputeResizeRequest#deletion_policy}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly description: string;
 
 An optional description of this resize-request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#description ComputeResizeRequest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#description ComputeResizeRequest#description}
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#id ComputeResizeRequest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1219,7 +1219,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#project ComputeResizeRequest#project}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly requestedRunDuration: ComputeResizeRequestRequestedRunDuration;
 
 requested_run_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#requested_run_duration ComputeResizeRequest#requested_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#requested_run_duration ComputeResizeRequest#requested_run_duration}
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly timeouts: ComputeResizeRequestTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#timeouts ComputeResizeRequest#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#timeouts ComputeResizeRequest#timeouts}
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly zone: string;
 
 The reference of the compute zone scoping this request. If it is not provided, the provider zone is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#zone ComputeResizeRequest#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#zone ComputeResizeRequest#zone}
 
 ---
 
@@ -1296,7 +1296,7 @@ Span of time at a resolution of a second.
 
 Must be from 600 to 604800 inclusive. Note: minimum and maximum allowed range for requestedRunDuration is 10 minutes (600 seconds) and 7 days(604800 seconds) correspondingly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#seconds ComputeResizeRequest#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#seconds ComputeResizeRequest#seconds}
 
 ---
 
@@ -1312,7 +1312,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 
 Durations less than one second are represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#nanos ComputeResizeRequest#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#nanos ComputeResizeRequest#nanos}
 
 ---
 
@@ -1528,8 +1528,8 @@ const computeResizeRequestTimeouts: computeResizeRequest.ComputeResizeRequestTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}. |
-| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}. |
+| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}. |
+| <code><a href="#@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}. |
 
 ---
 
@@ -1541,7 +1541,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}.
 
 ---
 
@@ -1553,7 +1553,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}.
 
 ---
 
