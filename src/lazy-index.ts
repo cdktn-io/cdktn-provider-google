@@ -25,6 +25,7 @@ Object.defineProperty(exports, 'accessContextManagerServicePerimeterResource', {
 Object.defineProperty(exports, 'accessContextManagerServicePerimeters', { get: function () { return require('./access-context-manager-service-perimeters'); } });
 Object.defineProperty(exports, 'activeDirectoryDomain', { get: function () { return require('./active-directory-domain'); } });
 Object.defineProperty(exports, 'activeDirectoryDomainTrust', { get: function () { return require('./active-directory-domain-trust'); } });
+Object.defineProperty(exports, 'agentIdentityAuthProvider', { get: function () { return require('./agent-identity-auth-provider'); } });
 Object.defineProperty(exports, 'agentRegistryBinding', { get: function () { return require('./agent-registry-binding'); } });
 Object.defineProperty(exports, 'agentRegistryService', { get: function () { return require('./agent-registry-service'); } });
 Object.defineProperty(exports, 'alloydbBackup', { get: function () { return require('./alloydb-backup'); } });
@@ -78,6 +79,7 @@ Object.defineProperty(exports, 'apihubCuration', { get: function () { return req
 Object.defineProperty(exports, 'apihubHostProjectRegistration', { get: function () { return require('./apihub-host-project-registration'); } });
 Object.defineProperty(exports, 'apihubPlugin', { get: function () { return require('./apihub-plugin'); } });
 Object.defineProperty(exports, 'apihubPluginInstance', { get: function () { return require('./apihub-plugin-instance'); } });
+Object.defineProperty(exports, 'apihubRuntimeProjectAttachment', { get: function () { return require('./apihub-runtime-project-attachment'); } });
 Object.defineProperty(exports, 'apikeysKey', { get: function () { return require('./apikeys-key'); } });
 Object.defineProperty(exports, 'appEngineApplication', { get: function () { return require('./app-engine-application'); } });
 Object.defineProperty(exports, 'appEngineApplicationUrlDispatchRules', { get: function () { return require('./app-engine-application-url-dispatch-rules'); } });
@@ -214,6 +216,7 @@ Object.defineProperty(exports, 'cesExample', { get: function () { return require
 Object.defineProperty(exports, 'cesGuardrail', { get: function () { return require('./ces-guardrail'); } });
 Object.defineProperty(exports, 'cesTool', { get: function () { return require('./ces-tool'); } });
 Object.defineProperty(exports, 'cesToolset', { get: function () { return require('./ces-toolset'); } });
+Object.defineProperty(exports, 'chronicleBigQueryExport', { get: function () { return require('./chronicle-big-query-export'); } });
 Object.defineProperty(exports, 'chronicleCustomList', { get: function () { return require('./chronicle-custom-list'); } });
 Object.defineProperty(exports, 'chronicleDashboardChart', { get: function () { return require('./chronicle-dashboard-chart'); } });
 Object.defineProperty(exports, 'chronicleDataAccessLabel', { get: function () { return require('./chronicle-data-access-label'); } });
@@ -240,6 +243,7 @@ Object.defineProperty(exports, 'cloudAssetProjectFeed', { get: function () { ret
 Object.defineProperty(exports, 'cloudIdentityGroup', { get: function () { return require('./cloud-identity-group'); } });
 Object.defineProperty(exports, 'cloudIdentityGroupMembership', { get: function () { return require('./cloud-identity-group-membership'); } });
 Object.defineProperty(exports, 'cloudIdsEndpoint', { get: function () { return require('./cloud-ids-endpoint'); } });
+Object.defineProperty(exports, 'cloudQuotasQuotaAdjusterSettings', { get: function () { return require('./cloud-quotas-quota-adjuster-settings'); } });
 Object.defineProperty(exports, 'cloudQuotasQuotaPreference', { get: function () { return require('./cloud-quotas-quota-preference'); } });
 Object.defineProperty(exports, 'cloudRunDomainMapping', { get: function () { return require('./cloud-run-domain-mapping'); } });
 Object.defineProperty(exports, 'cloudRunService', { get: function () { return require('./cloud-run-service'); } });
@@ -336,6 +340,7 @@ Object.defineProperty(exports, 'computeGlobalAddress', { get: function () { retu
 Object.defineProperty(exports, 'computeGlobalForwardingRule', { get: function () { return require('./compute-global-forwarding-rule'); } });
 Object.defineProperty(exports, 'computeGlobalNetworkEndpoint', { get: function () { return require('./compute-global-network-endpoint'); } });
 Object.defineProperty(exports, 'computeGlobalNetworkEndpointGroup', { get: function () { return require('./compute-global-network-endpoint-group'); } });
+Object.defineProperty(exports, 'computeGlobalVmExtensionPolicy', { get: function () { return require('./compute-global-vm-extension-policy'); } });
 Object.defineProperty(exports, 'computeHaVpnGateway', { get: function () { return require('./compute-ha-vpn-gateway'); } });
 Object.defineProperty(exports, 'computeHealthCheck', { get: function () { return require('./compute-health-check'); } });
 Object.defineProperty(exports, 'computeHttpHealthCheck', { get: function () { return require('./compute-http-health-check'); } });
@@ -436,6 +441,7 @@ Object.defineProperty(exports, 'computeReservation', { get: function () { return
 Object.defineProperty(exports, 'computeResizeRequest', { get: function () { return require('./compute-resize-request'); } });
 Object.defineProperty(exports, 'computeResourcePolicy', { get: function () { return require('./compute-resource-policy'); } });
 Object.defineProperty(exports, 'computeResourcePolicyAttachment', { get: function () { return require('./compute-resource-policy-attachment'); } });
+Object.defineProperty(exports, 'computeRolloutPlan', { get: function () { return require('./compute-rollout-plan'); } });
 Object.defineProperty(exports, 'computeRoute', { get: function () { return require('./compute-route'); } });
 Object.defineProperty(exports, 'computeRouter', { get: function () { return require('./compute-router'); } });
 Object.defineProperty(exports, 'computeRouterInterface', { get: function () { return require('./compute-router-interface'); } });
@@ -1275,6 +1281,7 @@ Object.defineProperty(exports, 'tagsTagValueIamPolicy', { get: function () { ret
 Object.defineProperty(exports, 'transcoderJob', { get: function () { return require('./transcoder-job'); } });
 Object.defineProperty(exports, 'transcoderJobTemplate', { get: function () { return require('./transcoder-job-template'); } });
 Object.defineProperty(exports, 'vectorSearchCollection', { get: function () { return require('./vector-search-collection'); } });
+Object.defineProperty(exports, 'vectorSearchDataObject', { get: function () { return require('./vector-search-data-object'); } });
 Object.defineProperty(exports, 'vectorSearchIndex', { get: function () { return require('./vector-search-index'); } });
 Object.defineProperty(exports, 'vertexAiCacheConfig', { get: function () { return require('./vertex-ai-cache-config'); } });
 Object.defineProperty(exports, 'vertexAiDataset', { get: function () { return require('./vertex-ai-dataset'); } });
@@ -1291,6 +1298,7 @@ Object.defineProperty(exports, 'vertexAiFeaturestoreEntitytypeFeature', { get: f
 Object.defineProperty(exports, 'vertexAiIndex', { get: function () { return require('./vertex-ai-index'); } });
 Object.defineProperty(exports, 'vertexAiIndexEndpoint', { get: function () { return require('./vertex-ai-index-endpoint'); } });
 Object.defineProperty(exports, 'vertexAiIndexEndpointDeployedIndex', { get: function () { return require('./vertex-ai-index-endpoint-deployed-index'); } });
+Object.defineProperty(exports, 'vertexAiPersistentResource', { get: function () { return require('./vertex-ai-persistent-resource'); } });
 Object.defineProperty(exports, 'vertexAiRagEngineConfig', { get: function () { return require('./vertex-ai-rag-engine-config'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngine', { get: function () { return require('./vertex-ai-reasoning-engine'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngineIamBinding', { get: function () { return require('./vertex-ai-reasoning-engine-iam-binding'); } });
