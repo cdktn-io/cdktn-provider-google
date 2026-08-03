@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence
+// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface GkeHubRolloutSequenceConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#deletion_policy GkeHubRolloutSequence#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#deletion_policy GkeHubRolloutSequence#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human readable display name of the Rollout Sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#display_name GkeHubRolloutSequence#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#display_name GkeHubRolloutSequence#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,50 +44,149 @@ export interface GkeHubRolloutSequenceConfig extends cdktn.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#labels GkeHubRolloutSequence#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#labels GkeHubRolloutSequence#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}
+  * Minimum control plane version that the clusters in the sequence should be upgraded to.
+  * Setting this field will cause the creation of a rollout to the specified version.
+  * Any rollout of the same type already running on the first stage of the sequence will be cancelled to allow for the creation of the new rollout.
+  * Should be a valid [semantic version](https://semver.org/).
+  * Version aliases are supported, as described in the [cluster version docs](https://docs.cloud.google.com/kubernetes-engine/versioning#specifying_cluster_version).
+  * Note that the 'latest' and '-' aliases are not supported for this field.
+  * Supported formats: '1.X', '1.X.Y', '1.X.Y-gke.N'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#min_control_plane_version GkeHubRolloutSequence#min_control_plane_version}
+  */
+  readonly minControlPlaneVersion?: string;
+  /**
+  * Minimum node version that the clusters in the sequence should be upgraded to.
+  * Setting this field will cause the creation of a rollout to the specified version.
+  * Any rollout of the same type already running on the first stage of the sequence will be cancelled to allow for the creation of the new rollout.
+  * Should be a valid [semantic version](https://semver.org/).
+  * Version aliases are supported, as described in the [cluster version docs](https://docs.cloud.google.com/kubernetes-engine/versioning#specifying_cluster_version).
+  * Note that the 'latest' and '-' aliases are not supported for this field.
+  * Supported formats: '1.X', '1.X.Y', '1.X.Y-gke.N'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#min_node_version GkeHubRolloutSequence#min_node_version}
+  */
+  readonly minNodeVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}
   */
   readonly project?: string;
   /**
   * The user-provided identifier of the RolloutSequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#rollout_sequence_id GkeHubRolloutSequence#rollout_sequence_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#rollout_sequence_id GkeHubRolloutSequence#rollout_sequence_id}
   */
   readonly rolloutSequenceId: string;
   /**
   * auto_upgrade_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#auto_upgrade_config GkeHubRolloutSequence#auto_upgrade_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#auto_upgrade_config GkeHubRolloutSequence#auto_upgrade_config}
   */
   readonly autoUpgradeConfig?: GkeHubRolloutSequenceAutoUpgradeConfig;
   /**
   * ignored_clusters_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#ignored_clusters_selector GkeHubRolloutSequence#ignored_clusters_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#ignored_clusters_selector GkeHubRolloutSequence#ignored_clusters_selector}
   */
   readonly ignoredClustersSelector?: GkeHubRolloutSequenceIgnoredClustersSelector;
   /**
   * stages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#stages GkeHubRolloutSequence#stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#stages GkeHubRolloutSequence#stages}
   */
   readonly stages: GkeHubRolloutSequenceStages[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#timeouts GkeHubRolloutSequence#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#timeouts GkeHubRolloutSequence#timeouts}
   */
   readonly timeouts?: GkeHubRolloutSequenceTimeouts;
+}
+export interface GkeHubRolloutSequenceOperationalState {
+}
+
+export function gkeHubRolloutSequenceOperationalStateToTerraform(struct?: GkeHubRolloutSequenceOperationalState): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function gkeHubRolloutSequenceOperationalStateToHclTerraform(struct?: GkeHubRolloutSequenceOperationalState): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class GkeHubRolloutSequenceOperationalStateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GkeHubRolloutSequenceOperationalState | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GkeHubRolloutSequenceOperationalState | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+}
+
+export class GkeHubRolloutSequenceOperationalStateList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GkeHubRolloutSequenceOperationalStateOutputReference {
+    return new GkeHubRolloutSequenceOperationalStateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope {
   /**
   * The list of enabled upgrade types.
   * Current valid values are 'CONTROL_PLANE_MINOR', 'CONTROL_PLANE_PATCH', 'NODE_MINOR', and 'NODE_PATCH'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#upgrade_types GkeHubRolloutSequence#upgrade_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#upgrade_types GkeHubRolloutSequence#upgrade_types}
   */
   readonly upgradeTypes?: string[];
 }
@@ -173,7 +272,7 @@ export interface GkeHubRolloutSequenceAutoUpgradeConfig {
   /**
   * rollout_creation_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#rollout_creation_scope GkeHubRolloutSequence#rollout_creation_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#rollout_creation_scope GkeHubRolloutSequence#rollout_creation_scope}
   */
   readonly rolloutCreationScope?: GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope;
 }
@@ -260,7 +359,7 @@ export interface GkeHubRolloutSequenceIgnoredClustersSelector {
   * The label selector must be a valid CEL (Common Expression Language) expression which
   * evaluates resource.labels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
   */
   readonly labelSelector: string;
 }
@@ -344,7 +443,7 @@ export interface GkeHubRolloutSequenceStagesClusterSelector {
   * The label selector must be a valid CEL (Common Expression Language) expression which
   * evaluates resource.labels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
   */
   readonly labelSelector: string;
 }
@@ -428,20 +527,20 @@ export interface GkeHubRolloutSequenceStages {
   * List of Fleet projects to select the clusters from.
   * Expected format: projects/{project}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#fleet_projects GkeHubRolloutSequence#fleet_projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#fleet_projects GkeHubRolloutSequence#fleet_projects}
   */
   readonly fleetProjects: string[];
   /**
   * Soak time after upgrading all the clusters in the stage.
   * Has to be specified in seconds, minutes, hours or days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#soak_duration GkeHubRolloutSequence#soak_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#soak_duration GkeHubRolloutSequence#soak_duration}
   */
   readonly soakDuration?: string;
   /**
   * cluster_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#cluster_selector GkeHubRolloutSequence#cluster_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#cluster_selector GkeHubRolloutSequence#cluster_selector}
   */
   readonly clusterSelector?: GkeHubRolloutSequenceStagesClusterSelector;
 }
@@ -612,15 +711,15 @@ export class GkeHubRolloutSequenceStagesList extends cdktn.ComplexList {
 }
 export interface GkeHubRolloutSequenceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}
   */
   readonly update?: string;
 }
@@ -772,7 +871,7 @@ export class GkeHubRolloutSequenceTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence}
 */
 export class GkeHubRolloutSequence extends cdktn.TerraformResource {
 
@@ -788,7 +887,7 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GkeHubRolloutSequence resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeHubRolloutSequence to import
-  * @param importFromId The id of the existing GkeHubRolloutSequence that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GkeHubRolloutSequence that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeHubRolloutSequence to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -800,7 +899,7 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -811,7 +910,7 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
       terraformResourceType: 'google_gke_hub_rollout_sequence',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.41.0',
+        providerVersion: '7.42.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -826,6 +925,8 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
     this._displayName = config.displayName;
     this._id = config.id;
     this._labels = config.labels;
+    this._minControlPlaneVersion = config.minControlPlaneVersion;
+    this._minNodeVersion = config.minNodeVersion;
     this._project = config.project;
     this._rolloutSequenceId = config.rolloutSequenceId;
     this._autoUpgradeConfig.internalValue = config.autoUpgradeConfig;
@@ -923,9 +1024,47 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
     return this._labels;
   }
 
+  // min_control_plane_version - computed: false, optional: true, required: false
+  private _minControlPlaneVersion?: string; 
+  public get minControlPlaneVersion() {
+    return this.getStringAttribute('min_control_plane_version');
+  }
+  public set minControlPlaneVersion(value: string) {
+    this._minControlPlaneVersion = value;
+  }
+  public resetMinControlPlaneVersion() {
+    this._minControlPlaneVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minControlPlaneVersionInput() {
+    return this._minControlPlaneVersion;
+  }
+
+  // min_node_version - computed: false, optional: true, required: false
+  private _minNodeVersion?: string; 
+  public get minNodeVersion() {
+    return this.getStringAttribute('min_node_version');
+  }
+  public set minNodeVersion(value: string) {
+    this._minNodeVersion = value;
+  }
+  public resetMinNodeVersion() {
+    this._minNodeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minNodeVersionInput() {
+    return this._minNodeVersion;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // operational_state - computed: true, optional: false, required: false
+  private _operationalState = new GkeHubRolloutSequenceOperationalStateList(this, "operational_state", false);
+  public get operationalState() {
+    return this._operationalState;
   }
 
   // project - computed: true, optional: true, required: false
@@ -955,6 +1094,16 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get rolloutSequenceIdInput() {
     return this._rolloutSequenceId;
+  }
+
+  // target_control_plane_version - computed: true, optional: false, required: false
+  public get targetControlPlaneVersion() {
+    return this.getStringAttribute('target_control_plane_version');
+  }
+
+  // target_node_version - computed: true, optional: false, required: false
+  public get targetNodeVersion() {
+    return this.getStringAttribute('target_node_version');
   }
 
   // terraform_labels - computed: true, optional: false, required: false
@@ -1044,6 +1193,8 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      min_control_plane_version: cdktn.stringToTerraform(this._minControlPlaneVersion),
+      min_node_version: cdktn.stringToTerraform(this._minNodeVersion),
       project: cdktn.stringToTerraform(this._project),
       rollout_sequence_id: cdktn.stringToTerraform(this._rolloutSequenceId),
       auto_upgrade_config: gkeHubRolloutSequenceAutoUpgradeConfigToTerraform(this._autoUpgradeConfig.internalValue),
@@ -1078,6 +1229,18 @@ export class GkeHubRolloutSequence extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      min_control_plane_version: {
+        value: cdktn.stringToHclTerraform(this._minControlPlaneVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_node_version: {
+        value: cdktn.stringToHclTerraform(this._minNodeVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),

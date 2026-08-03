@@ -4,7 +4,7 @@
 
 ### CesGuardrail <a name="CesGuardrail" id="@cdktn/provider-google.cesGuardrail.CesGuardrail"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail google_ces_guardrail}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail google_ces_guardrail}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer"></a>
 
@@ -61,11 +61,11 @@ cesGuardrail.CesGuardrail(
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the guardrail. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the guardrail is enabled. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.llmPolicy">llm_policy</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPolicy">CesGuardrailLlmPolicy</a></code> | llm_policy block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.llmPromptSecurity">llm_prompt_security</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurity">CesGuardrailLlmPromptSecurity</a></code> | llm_prompt_security block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.modelSafety">model_safety</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafety">CesGuardrailModelSafety</a></code> | model_safety block. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts">CesGuardrailTimeouts</a></code> | timeouts block. |
 
 ---
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#app CesGuardrail#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#app CesGuardrail#app}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
 
 ---
 
@@ -159,7 +159,7 @@ The ID to use for the guardrail, which will become the final component of the gu
 If not provided, a unique ID will be
 automatically assigned for the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#location CesGuardrail#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#location CesGuardrail#location}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#action CesGuardrail#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#action CesGuardrail#action}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 code_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 content_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
 
 ---
 
@@ -216,7 +216,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the guardrail is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -257,7 +257,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 llm_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 llm_prompt_security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_safety block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
 
 ---
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
 
 ---
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
 
 ---
 
@@ -713,7 +713,7 @@ def put_action(
 
 generative_answer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
 
 ---
 
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 respond_immediately block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
 
 ---
 
@@ -733,7 +733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 transfer_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
 
 ---
 
@@ -754,7 +754,7 @@ def put_code_callback(
 
 after_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
 
 ---
 
@@ -764,7 +764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 after_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
 
 ---
 
@@ -774,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 before_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 before_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
 
 ---
 
@@ -806,7 +806,7 @@ def put_content_filter(
 
 Match type for the content filter. Possible values: SIMPLE_STRING_MATCH WORD_BOUNDARY_STRING_MATCH REGEXP_MATCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
 
 ---
 
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of banned phrases. Applies to both user inputs and agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
 
 ---
 
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of banned phrases. Applies only to agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
 
 ---
 
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of banned phrases. Applies only to user inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
 
 ---
 
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, diacritics are ignored during matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
 
 ---
 
@@ -878,7 +878,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE Possible values: ["USER_QUERY", "AGENT_RESPONSE", "USER_QUERY_AND_AGENT_RESPONSE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -901,7 +901,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -923,7 +923,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 
@@ -953,7 +953,7 @@ def put_llm_prompt_security(
 
 custom_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
 
 ---
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
 
 ---
 
@@ -978,7 +978,7 @@ Determines the behavior when the guardrail encounters an LLM error.
   Note: If a custom policy is provided, this field is ignored in favor of
   the policy's 'failOpen' configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -996,7 +996,7 @@ def put_model_safety(
 
 safety_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
 
 ---
 
@@ -1014,7 +1014,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#create CesGuardrail#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#create CesGuardrail#create}.
 
 ---
 
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#update CesGuardrail#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#update CesGuardrail#update}.
 
 ---
 
@@ -1220,7 +1220,7 @@ The construct id used in the generated config for the CesGuardrail to import.
 
 The id of the existing CesGuardrail that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1845,7 +1845,7 @@ generative_answer: CesGuardrailActionGenerativeAnswer
 
 generative_answer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
 
 ---
 
@@ -1859,7 +1859,7 @@ respond_immediately: CesGuardrailActionRespondImmediately
 
 respond_immediately block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
 
 ---
 
@@ -1873,7 +1873,7 @@ transfer_agent: CesGuardrailActionTransferAgent
 
 transfer_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
 
 ---
 
@@ -1907,7 +1907,7 @@ prompt: str
 
 The prompt to use for the generative answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -1941,7 +1941,7 @@ responses: IResolvable | typing.List[CesGuardrailActionRespondImmediatelyRespons
 
 responses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
 
 ---
 
@@ -1977,7 +1977,7 @@ text: str
 
 Text for the agent to respond with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#text CesGuardrail#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#text CesGuardrail#text}
 
 ---
 
@@ -1991,7 +1991,7 @@ disabled: bool | IResolvable
 
 Whether the response is disabled. Disabled responses are not used by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -2030,7 +2030,7 @@ in the same app as the current agent.
 Format:
 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
 
 ---
 
@@ -2070,7 +2070,7 @@ after_agent_callback: CesGuardrailCodeCallbackAfterAgentCallback
 
 after_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
 
 ---
 
@@ -2084,7 +2084,7 @@ after_model_callback: CesGuardrailCodeCallbackAfterModelCallback
 
 after_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
 
 ---
 
@@ -2098,7 +2098,7 @@ before_agent_callback: CesGuardrailCodeCallbackBeforeAgentCallback
 
 before_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
 
 ---
 
@@ -2112,7 +2112,7 @@ before_model_callback: CesGuardrailCodeCallbackBeforeModelCallback
 
 before_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
 
 ---
 
@@ -2150,7 +2150,7 @@ python_code: str
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -2164,7 +2164,7 @@ description: str
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2178,7 +2178,7 @@ disabled: bool | IResolvable
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -2216,7 +2216,7 @@ python_code: str
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -2230,7 +2230,7 @@ description: str
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2244,7 +2244,7 @@ disabled: bool | IResolvable
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -2282,7 +2282,7 @@ python_code: str
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -2296,7 +2296,7 @@ description: str
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2310,7 +2310,7 @@ disabled: bool | IResolvable
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -2348,7 +2348,7 @@ python_code: str
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -2362,7 +2362,7 @@ description: str
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2376,7 +2376,7 @@ disabled: bool | IResolvable
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -2435,11 +2435,11 @@ cesGuardrail.CesGuardrailConfig(
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.description">description</a></code> | <code>str</code> | Description of the guardrail. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the guardrail is enabled. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.llmPolicy">llm_policy</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPolicy">CesGuardrailLlmPolicy</a></code> | llm_policy block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.llmPromptSecurity">llm_prompt_security</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurity">CesGuardrailLlmPromptSecurity</a></code> | llm_prompt_security block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.modelSafety">model_safety</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafety">CesGuardrailModelSafety</a></code> | model_safety block. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts">CesGuardrailTimeouts</a></code> | timeouts block. |
 
 ---
@@ -2524,7 +2524,7 @@ app: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#app CesGuardrail#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#app CesGuardrail#app}
 
 ---
 
@@ -2538,7 +2538,7 @@ display_name: str
 
 Display name of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
 
 ---
 
@@ -2555,7 +2555,7 @@ The ID to use for the guardrail, which will become the final component of the gu
 If not provided, a unique ID will be
 automatically assigned for the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
 
 ---
 
@@ -2569,7 +2569,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#location CesGuardrail#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#location CesGuardrail#location}
 
 ---
 
@@ -2583,7 +2583,7 @@ action: CesGuardrailAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#action CesGuardrail#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#action CesGuardrail#action}
 
 ---
 
@@ -2597,7 +2597,7 @@ code_callback: CesGuardrailCodeCallback
 
 code_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
 
 ---
 
@@ -2611,7 +2611,7 @@ content_filter: CesGuardrailContentFilter
 
 content_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
 
 ---
 
@@ -2632,7 +2632,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
 
 ---
 
@@ -2646,7 +2646,7 @@ description: str
 
 Description of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2660,7 +2660,7 @@ enabled: bool | IResolvable
 
 Whether the guardrail is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
 
 ---
 
@@ -2672,7 +2672,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2689,7 +2689,7 @@ llm_policy: CesGuardrailLlmPolicy
 
 llm_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
 
 ---
 
@@ -2703,7 +2703,7 @@ llm_prompt_security: CesGuardrailLlmPromptSecurity
 
 llm_prompt_security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
 
 ---
 
@@ -2717,7 +2717,7 @@ model_safety: CesGuardrailModelSafety
 
 model_safety block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
 
 ---
 
@@ -2729,7 +2729,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
 
 ---
 
@@ -2743,7 +2743,7 @@ timeouts: CesGuardrailTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
 
 ---
 
@@ -2785,7 +2785,7 @@ match_type: str
 
 Match type for the content filter. Possible values: SIMPLE_STRING_MATCH WORD_BOUNDARY_STRING_MATCH REGEXP_MATCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
 
 ---
 
@@ -2799,7 +2799,7 @@ banned_contents: typing.List[str]
 
 List of banned phrases. Applies to both user inputs and agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
 
 ---
 
@@ -2813,7 +2813,7 @@ banned_contents_in_agent_response: typing.List[str]
 
 List of banned phrases. Applies only to agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
 
 ---
 
@@ -2827,7 +2827,7 @@ banned_contents_in_user_input: typing.List[str]
 
 List of banned phrases. Applies only to user inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
 
 ---
 
@@ -2841,7 +2841,7 @@ disregard_diacritics: bool | IResolvable
 
 If true, diacritics are ignored during matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
 
 ---
 
@@ -2894,7 +2894,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE Possible values: ["USER_QUERY", "AGENT_RESPONSE", "USER_QUERY_AND_AGENT_RESPONSE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -2908,7 +2908,7 @@ prompt: str
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -2925,7 +2925,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -2939,7 +2939,7 @@ fail_open: bool | IResolvable
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -2955,7 +2955,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -2969,7 +2969,7 @@ model_settings: CesGuardrailLlmPolicyModelSettings
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 
@@ -3007,7 +3007,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -3026,7 +3026,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -3064,7 +3064,7 @@ custom_policy: CesGuardrailLlmPromptSecurityCustomPolicy
 
 custom_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
 
 ---
 
@@ -3078,7 +3078,7 @@ default_settings: CesGuardrailLlmPromptSecurityDefaultSettings
 
 default_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
 
 ---
 
@@ -3097,7 +3097,7 @@ Determines the behavior when the guardrail encounters an LLM error.
   Note: If a custom policy is provided, this field is ignored in favor of
   the policy's 'failOpen' configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -3150,7 +3150,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -3164,7 +3164,7 @@ prompt: str
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -3181,7 +3181,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -3195,7 +3195,7 @@ fail_open: bool | IResolvable
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -3211,7 +3211,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -3225,7 +3225,7 @@ model_settings: CesGuardrailLlmPromptSecurityCustomPolicyModelSettings
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 
@@ -3263,7 +3263,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -3282,7 +3282,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -3327,7 +3327,7 @@ safety_settings: IResolvable | typing.List[CesGuardrailModelSafetySafetySettings
 
 safety_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
 
 ---
 
@@ -3363,7 +3363,7 @@ category: str
 
 The harm category. Possible values: HARM_CATEGORY_HATE_SPEECH HARM_CATEGORY_DANGEROUS_CONTENT HARM_CATEGORY_HARASSMENT HARM_CATEGORY_SEXUALLY_EXPLICIT Possible values: ["HARM_CATEGORY_HATE_SPEECH", "HARM_CATEGORY_DANGEROUS_CONTENT", "HARM_CATEGORY_HARASSMENT", "HARM_CATEGORY_SEXUALLY_EXPLICIT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#category CesGuardrail#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#category CesGuardrail#category}
 
 ---
 
@@ -3377,7 +3377,7 @@ threshold: str
 
 The harm block threshold. Possible values: BLOCK_LOW_AND_ABOVE BLOCK_MEDIUM_AND_ABOVE BLOCK_ONLY_HIGH BLOCK_NONE OFF Possible values: ["BLOCK_LOW_AND_ABOVE", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_ONLY_HIGH", "BLOCK_NONE", "OFF"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
 
 ---
 
@@ -3399,9 +3399,9 @@ cesGuardrail.CesGuardrailTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#create CesGuardrail#create}. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#update CesGuardrail#update}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#create CesGuardrail#create}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#update CesGuardrail#update}. |
 
 ---
 
@@ -3413,7 +3413,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#create CesGuardrail#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#create CesGuardrail#create}.
 
 ---
 
@@ -3425,7 +3425,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
 
 ---
 
@@ -3437,7 +3437,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#update CesGuardrail#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#update CesGuardrail#update}.
 
 ---
 
@@ -3987,7 +3987,7 @@ def put_generative_answer(
 
 The prompt to use for the generative answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -4005,7 +4005,7 @@ def put_respond_immediately(
 
 responses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
 
 ---
 
@@ -4028,7 +4028,7 @@ in the same app as the current agent.
 Format:
 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
 
 ---
 
@@ -6952,7 +6952,7 @@ def put_after_agent_callback(
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -6962,7 +6962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -6972,7 +6972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -6992,7 +6992,7 @@ def put_after_model_callback(
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -7002,7 +7002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -7012,7 +7012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -7032,7 +7032,7 @@ def put_before_agent_callback(
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -7042,7 +7042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -7052,7 +7052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -7072,7 +7072,7 @@ def put_before_model_callback(
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -7082,7 +7082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -7092,7 +7092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -8248,7 +8248,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -8263,7 +8263,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -9051,7 +9051,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -9066,7 +9066,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -9818,7 +9818,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -9828,7 +9828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -9841,7 +9841,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -9851,7 +9851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -9863,7 +9863,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -9873,7 +9873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 

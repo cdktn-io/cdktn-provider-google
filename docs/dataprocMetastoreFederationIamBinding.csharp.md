@@ -4,7 +4,7 @@
 
 ### DataprocMetastoreFederationIamBinding <a name="DataprocMetastoreFederationIamBinding" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataprocMetastoreFederatio
 
 The id of the existing DataprocMetastoreFederationIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ new DataprocMetastoreFederationIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#expression DataprocMetastoreFederationIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#title DataprocMetastoreFederationIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#description DataprocMetastoreFederationIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#expression DataprocMetastoreFederationIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#title DataprocMetastoreFederationIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#description DataprocMetastoreFederationIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#expression DataprocMetastoreFederationIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#expression DataprocMetastoreFederationIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#title DataprocMetastoreFederationIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#title DataprocMetastoreFederationIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#description DataprocMetastoreFederationIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#description DataprocMetastoreFederationIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ new DataprocMetastoreFederationIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.federationId">FederationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#federation_id DataprocMetastoreFederationIamBinding#federation_id}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#members DataprocMetastoreFederationIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#role DataprocMetastoreFederationIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.federationId">FederationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#federation_id DataprocMetastoreFederationIamBinding#federation_id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#members DataprocMetastoreFederationIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#role DataprocMetastoreFederationIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingCondition">DataprocMetastoreFederationIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#id DataprocMetastoreFederationIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#location DataprocMetastoreFederationIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#project DataprocMetastoreFederationIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#id DataprocMetastoreFederationIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#location DataprocMetastoreFederationIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederationIamBinding.DataprocMetastoreFederationIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#project DataprocMetastoreFederationIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ public string FederationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#federation_id DataprocMetastoreFederationIamBinding#federation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#federation_id DataprocMetastoreFederationIamBinding#federation_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#members DataprocMetastoreFederationIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#members DataprocMetastoreFederationIamBinding#members}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#role DataprocMetastoreFederationIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#role DataprocMetastoreFederationIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public DataprocMetastoreFederationIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#condition DataprocMetastoreFederationIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#condition DataprocMetastoreFederationIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#id DataprocMetastoreFederationIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#id DataprocMetastoreFederationIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#location DataprocMetastoreFederationIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#location DataprocMetastoreFederationIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/dataproc_metastore_federation_iam_binding#project DataprocMetastoreFederationIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataproc_metastore_federation_iam_binding#project DataprocMetastoreFederationIamBinding#project}.
 
 ---
 

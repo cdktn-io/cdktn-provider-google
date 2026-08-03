@@ -4,7 +4,7 @@
 
 ### ChronicleParserExtension <a name="ChronicleParserExtension" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension google_chronicle_parser_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension google_chronicle_parser_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ChronicleParserExtension t
 
 The id of the existing ChronicleParserExtension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,9 +1186,9 @@ new ChronicleParserExtensionConfig {
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.dynamicParsing">DynamicParsing</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsing">ChronicleParserExtensionDynamicParsing</a></code> | dynamic_parsing block. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.fieldExtractors">FieldExtractors</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractors">ChronicleParserExtensionFieldExtractors</a></code> | field_extractors block. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.log">Log</a></code> | <code>string</code> | Raw log used to assist the user in creation of augmentation. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts">ChronicleParserExtensionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.validationSkipped">ValidationSkipped</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Flag to bypass parser extension validation. |
 
@@ -1274,7 +1274,7 @@ public string Instance { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#instance ChronicleParserExtension#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#instance ChronicleParserExtension#instance}
 
 ---
 
@@ -1288,7 +1288,7 @@ public string Location { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#location ChronicleParserExtension#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#location ChronicleParserExtension#location}
 
 ---
 
@@ -1302,7 +1302,7 @@ public string LogType { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#log_type ChronicleParserExtension#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#log_type ChronicleParserExtension#log_type}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string CbnSnippet { get; set; }
 
 Parser config could be a cbn snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#cbn_snippet ChronicleParserExtension#cbn_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#cbn_snippet ChronicleParserExtension#cbn_snippet}
 
 ---
 
@@ -1337,7 +1337,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#deletion_policy ChronicleParserExtension#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#deletion_policy ChronicleParserExtension#deletion_policy}
 
 ---
 
@@ -1351,7 +1351,7 @@ public ChronicleParserExtensionDynamicParsing DynamicParsing { get; set; }
 
 dynamic_parsing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#dynamic_parsing ChronicleParserExtension#dynamic_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#dynamic_parsing ChronicleParserExtension#dynamic_parsing}
 
 ---
 
@@ -1365,7 +1365,7 @@ public ChronicleParserExtensionFieldExtractors FieldExtractors { get; set; }
 
 field_extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#field_extractors ChronicleParserExtension#field_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#field_extractors ChronicleParserExtension#field_extractors}
 
 ---
 
@@ -1377,7 +1377,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1394,7 @@ public string Log { get; set; }
 
 Raw log used to assist the user in creation of augmentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#log ChronicleParserExtension#log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#log ChronicleParserExtension#log}
 
 ---
 
@@ -1406,7 +1406,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public ChronicleParserExtensionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#timeouts ChronicleParserExtension#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#timeouts ChronicleParserExtension#timeouts}
 
 ---
 
@@ -1437,7 +1437,7 @@ Flag to bypass parser extension validation.
 If enabled, the parser extension won't be rejected during the validation
 phase and validation will be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#validation_skipped ChronicleParserExtension#validation_skipped}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#validation_skipped ChronicleParserExtension#validation_skipped}
 
 ---
 
@@ -1471,7 +1471,7 @@ public IResolvable|ChronicleParserExtensionDynamicParsingOptedFields[] OptedFiel
 
 opted_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#opted_fields ChronicleParserExtension#opted_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#opted_fields ChronicleParserExtension#opted_fields}
 
 ---
 
@@ -1507,7 +1507,7 @@ public string Path { get; set; }
 
 Path of the log field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#path ChronicleParserExtension#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#path ChronicleParserExtension#path}
 
 ---
 
@@ -1521,7 +1521,7 @@ public string SampleValue { get; set; }
 
 Sample value of the log field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#sample_value ChronicleParserExtension#sample_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#sample_value ChronicleParserExtension#sample_value}
 
 ---
 
@@ -1561,7 +1561,7 @@ public bool|IResolvable AppendRepeatedFields { get; set; }
 
 Whether to append repeated fields or not. When false, repeated fields will be replaced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#append_repeated_fields ChronicleParserExtension#append_repeated_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#append_repeated_fields ChronicleParserExtension#append_repeated_fields}
 
 ---
 
@@ -1575,7 +1575,7 @@ public IResolvable|ChronicleParserExtensionFieldExtractorsExtractors[] Extractor
 
 extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#extractors ChronicleParserExtension#extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#extractors ChronicleParserExtension#extractors}
 
 ---
 
@@ -1589,7 +1589,7 @@ public string LogFormat { get; set; }
 
 Possible values: JSON CSV XML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#log_format ChronicleParserExtension#log_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#log_format ChronicleParserExtension#log_format}
 
 ---
 
@@ -1603,7 +1603,7 @@ public ChronicleParserExtensionFieldExtractorsPreprocessConfig PreprocessConfig 
 
 preprocess_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#preprocess_config ChronicleParserExtension#preprocess_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#preprocess_config ChronicleParserExtension#preprocess_config}
 
 ---
 
@@ -1650,7 +1650,7 @@ Path in generated event which is to be populated.
 This is required if the
 FieldExtractor is used to specify the parser extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#destination_path ChronicleParserExtension#destination_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#destination_path ChronicleParserExtension#destination_path}
 
 ---
 
@@ -1668,7 +1668,7 @@ It refers to a section or substring in raw log.
 This is required if the FieldExtractor is used to specify the parser
 extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#field_path ChronicleParserExtension#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#field_path ChronicleParserExtension#field_path}
 
 ---
 
@@ -1682,7 +1682,7 @@ public string PreconditionOp { get; set; }
 
 Operator used for precondition. Possible values: EQUALS NOT_EQUALS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#precondition_op ChronicleParserExtension#precondition_op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#precondition_op ChronicleParserExtension#precondition_op}
 
 ---
 
@@ -1698,7 +1698,7 @@ Precondition path could be a json path, xml path or csv column name depending on
 
 It refers to a section or substring in raw log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#precondition_path ChronicleParserExtension#precondition_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#precondition_path ChronicleParserExtension#precondition_path}
 
 ---
 
@@ -1712,7 +1712,7 @@ public string PreconditionValue { get; set; }
 
 Precondition value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#precondition_value ChronicleParserExtension#precondition_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#precondition_value ChronicleParserExtension#precondition_value}
 
 ---
 
@@ -1726,7 +1726,7 @@ public string Value { get; set; }
 
 Value to be mapped to the destination path directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#value ChronicleParserExtension#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#value ChronicleParserExtension#value}
 
 ---
 
@@ -1762,7 +1762,7 @@ public string GrokRegex { get; set; }
 
 GROK Regex to extract the structured part of the log. syntax documentation: www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#grok_regex ChronicleParserExtension#grok_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#grok_regex ChronicleParserExtension#grok_regex}
 
 ---
 
@@ -1776,7 +1776,7 @@ public string Target { get; set; }
 
 Target field name for the structured part of the log. This should match a SEMANTIC identifier from the grok expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#target ChronicleParserExtension#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#target ChronicleParserExtension#target}
 
 ---
 
@@ -1797,8 +1797,8 @@ new ChronicleParserExtensionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}. |
 
 ---
 
@@ -1810,7 +1810,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}.
 
 ---
 
@@ -1822,7 +1822,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}.
 
 ---
 

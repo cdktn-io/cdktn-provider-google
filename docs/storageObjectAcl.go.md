@@ -4,7 +4,7 @@
 
 ### StorageObjectAcl <a name="StorageObjectAcl" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl google_storage_object_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl google_storage_object_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the StorageObjectAcl to import
 
 The id of the existing StorageObjectAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,12 +879,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl
 | <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#bucket StorageObjectAcl#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.object">Object</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#object StorageObjectAcl#object}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#bucket StorageObjectAcl#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.object">Object</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#object StorageObjectAcl#object}. |
 | <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#id StorageObjectAcl#id}. |
-| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.predefinedAcl">PredefinedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#predefined_acl StorageObjectAcl#predefined_acl}. |
-| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#role_entity StorageObjectAcl#role_entity}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#id StorageObjectAcl#id}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.predefinedAcl">PredefinedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#predefined_acl StorageObjectAcl#predefined_acl}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#role_entity StorageObjectAcl#role_entity}. |
 
 ---
 
@@ -966,7 +966,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#bucket StorageObjectAcl#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#bucket StorageObjectAcl#bucket}.
 
 ---
 
@@ -978,7 +978,7 @@ Object *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#object StorageObjectAcl#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#object StorageObjectAcl#object}.
 
 ---
 
@@ -999,7 +999,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#deletion_policy StorageObjectAcl#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#deletion_policy StorageObjectAcl#deletion_policy}
 
 ---
 
@@ -1011,7 +1011,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#id StorageObjectAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#id StorageObjectAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ PredefinedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#predefined_acl StorageObjectAcl#predefined_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#predefined_acl StorageObjectAcl#predefined_acl}.
 
 ---
 
@@ -1038,7 +1038,7 @@ RoleEntity *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/storage_object_acl#role_entity StorageObjectAcl#role_entity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_object_acl#role_entity StorageObjectAcl#role_entity}.
 
 ---
 

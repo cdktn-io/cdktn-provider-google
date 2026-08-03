@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ApigeeInstanceAttachmentConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#deletion_policy ApigeeInstanceAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#deletion_policy ApigeeInstanceAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The resource ID of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#environment ApigeeInstanceAttachment#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#id ApigeeInstanceAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,23 +41,23 @@ export interface ApigeeInstanceAttachmentConfig extends cdktn.TerraformMetaArgum
   * The Apigee instance associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#instance_id ApigeeInstanceAttachment#instance_id}
   */
   readonly instanceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#timeouts ApigeeInstanceAttachment#timeouts}
   */
   readonly timeouts?: ApigeeInstanceAttachmentTimeouts;
 }
 export interface ApigeeInstanceAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#create ApigeeInstanceAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#delete ApigeeInstanceAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -180,7 +180,7 @@ export class ApigeeInstanceAttachmentTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment}
 */
 export class ApigeeInstanceAttachment extends cdktn.TerraformResource {
 
@@ -196,7 +196,7 @@ export class ApigeeInstanceAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeInstanceAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeInstanceAttachment to import
-  * @param importFromId The id of the existing ApigeeInstanceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeInstanceAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeInstanceAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -208,7 +208,7 @@ export class ApigeeInstanceAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apigee_instance_attachment google_apigee_instance_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class ApigeeInstanceAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_instance_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.41.0',
+        providerVersion: '7.42.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

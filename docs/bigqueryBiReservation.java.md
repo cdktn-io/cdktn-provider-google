@@ -4,7 +4,7 @@
 
 ### BigqueryBiReservation <a name="BigqueryBiReservation" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer"></a>
 
@@ -42,9 +42,9 @@ BigqueryBiReservation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | LOCATION_DESCRIPTION. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.preferredTables">preferredTables</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>></code> | preferred_tables block. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.size">size</a></code> | <code>java.lang.Number</code> | Size of a reservation, in bytes. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 LOCATION_DESCRIPTION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
 
 ---
 
@@ -133,7 +133,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#deletion_policy BigqueryBiReservation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#deletion_policy BigqueryBiReservation#deletion_policy}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -154,7 +154,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 preferred_tables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size of a reservation, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
 
 ---
 
@@ -699,7 +699,7 @@ The construct id used in the generated config for the BigqueryBiReservation to i
 
 The id of the existing BigqueryBiReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1108,9 +1108,9 @@ BigqueryBiReservationConfig.builder()
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.location">location</a></code> | <code>java.lang.String</code> | LOCATION_DESCRIPTION. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.preferredTables">preferredTables</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>></code> | preferred_tables block. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.size">size</a></code> | <code>java.lang.Number</code> | Size of a reservation, in bytes. |
 | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | timeouts block. |
 
@@ -1196,7 +1196,7 @@ public java.lang.String getLocation();
 
 LOCATION_DESCRIPTION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
 
 ---
 
@@ -1217,7 +1217,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#deletion_policy BigqueryBiReservation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#deletion_policy BigqueryBiReservation#deletion_policy}
 
 ---
 
@@ -1229,7 +1229,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1246,7 @@ public IResolvable|java.util.List<BigqueryBiReservationPreferredTables> getPrefe
 
 preferred_tables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
 
 ---
 
@@ -1258,7 +1258,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.Number getSize();
 
 Size of a reservation, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
 
 ---
 
@@ -1286,7 +1286,7 @@ public BigqueryBiReservationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getDatasetId();
 
 The ID of the dataset in the above project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#dataset_id BigqueryBiReservation#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#dataset_id BigqueryBiReservation#dataset_id}
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.lang.String getProjectId();
 
 The assigned project ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#project_id BigqueryBiReservation#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#project_id BigqueryBiReservation#project_id}
 
 ---
 
@@ -1352,7 +1352,7 @@ public java.lang.String getTableId();
 
 The ID of the table in the above dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#table_id BigqueryBiReservation#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#table_id BigqueryBiReservation#table_id}
 
 ---
 
@@ -1374,9 +1374,9 @@ BigqueryBiReservationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}. |
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.41.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}.
 
 ---
 
