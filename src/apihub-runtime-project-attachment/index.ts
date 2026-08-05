@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ApihubRuntimeProjectAttachmentConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#deletion_policy ApihubRuntimeProjectAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#deletion_policy ApihubRuntimeProjectAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#id ApihubRuntimeProjectAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#id ApihubRuntimeProjectAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,11 +34,11 @@ export interface ApihubRuntimeProjectAttachmentConfig extends cdktn.TerraformMet
   /**
   * Part of 'parent'. See documentation of 'projectsId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#location ApihubRuntimeProjectAttachment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#location ApihubRuntimeProjectAttachment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#project ApihubRuntimeProjectAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#project ApihubRuntimeProjectAttachment#project}
   */
   readonly project?: string;
   /**
@@ -46,7 +46,7 @@ export interface ApihubRuntimeProjectAttachmentConfig extends cdktn.TerraformMet
   * As input, project name with either project id or number are accepted.
   * As output, this field will contain project number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#runtime_project ApihubRuntimeProjectAttachment#runtime_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#runtime_project ApihubRuntimeProjectAttachment#runtime_project}
   */
   readonly runtimeProject: string;
   /**
@@ -55,23 +55,23 @@ export interface ApihubRuntimeProjectAttachmentConfig extends cdktn.TerraformMet
   * as the project ID of the Google cloud project specified in the
   * runtime_project_attachment.runtime_project field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#runtime_project_attachment_id ApihubRuntimeProjectAttachment#runtime_project_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#runtime_project_attachment_id ApihubRuntimeProjectAttachment#runtime_project_attachment_id}
   */
   readonly runtimeProjectAttachmentId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#timeouts ApihubRuntimeProjectAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#timeouts ApihubRuntimeProjectAttachment#timeouts}
   */
   readonly timeouts?: ApihubRuntimeProjectAttachmentTimeouts;
 }
 export interface ApihubRuntimeProjectAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#create ApihubRuntimeProjectAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#create ApihubRuntimeProjectAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#delete ApihubRuntimeProjectAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#delete ApihubRuntimeProjectAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -194,7 +194,7 @@ export class ApihubRuntimeProjectAttachmentTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment google_apihub_runtime_project_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment google_apihub_runtime_project_attachment}
 */
 export class ApihubRuntimeProjectAttachment extends cdktn.TerraformResource {
 
@@ -210,7 +210,7 @@ export class ApihubRuntimeProjectAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApihubRuntimeProjectAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApihubRuntimeProjectAttachment to import
-  * @param importFromId The id of the existing ApihubRuntimeProjectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApihubRuntimeProjectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApihubRuntimeProjectAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -222,7 +222,7 @@ export class ApihubRuntimeProjectAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_runtime_project_attachment google_apihub_runtime_project_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_runtime_project_attachment google_apihub_runtime_project_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -233,7 +233,7 @@ export class ApihubRuntimeProjectAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apihub_runtime_project_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

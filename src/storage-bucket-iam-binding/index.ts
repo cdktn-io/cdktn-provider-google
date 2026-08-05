@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktn from 'cdktn';
 
 export interface StorageBucketIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
   */
   readonly condition?: StorageBucketIamBindingCondition;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#timeouts StorageBucketIamBinding#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#timeouts StorageBucketIamBinding#timeouts}
   */
   readonly timeouts?: StorageBucketIamBindingTimeouts;
 }
 export interface StorageBucketIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}
   */
   readonly title: string;
 }
@@ -190,7 +190,7 @@ export class StorageBucketIamBindingConditionOutputReference extends cdktn.Compl
 }
 export interface StorageBucketIamBindingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}
   */
   readonly create?: string;
 }
@@ -284,7 +284,7 @@ export class StorageBucketIamBindingTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}
 */
 export class StorageBucketIamBinding extends cdktn.TerraformResource {
 
@@ -300,7 +300,7 @@ export class StorageBucketIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBucketIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBucketIamBinding to import
-  * @param importFromId The id of the existing StorageBucketIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBucketIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBucketIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -312,7 +312,7 @@ export class StorageBucketIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -323,7 +323,7 @@ export class StorageBucketIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_bucket_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

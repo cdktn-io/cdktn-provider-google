@@ -142,6 +142,7 @@ Object.defineProperty(exports, 'bigqueryAnalyticsHubListingIamBinding', { get: f
 Object.defineProperty(exports, 'bigqueryAnalyticsHubListingIamMember', { get: function () { return require('./bigquery-analytics-hub-listing-iam-member'); } });
 Object.defineProperty(exports, 'bigqueryAnalyticsHubListingIamPolicy', { get: function () { return require('./bigquery-analytics-hub-listing-iam-policy'); } });
 Object.defineProperty(exports, 'bigqueryAnalyticsHubListingSubscription', { get: function () { return require('./bigquery-analytics-hub-listing-subscription'); } });
+Object.defineProperty(exports, 'bigqueryAnalyticsHubQueryTemplate', { get: function () { return require('./bigquery-analytics-hub-query-template'); } });
 Object.defineProperty(exports, 'bigqueryBiReservation', { get: function () { return require('./bigquery-bi-reservation'); } });
 Object.defineProperty(exports, 'bigqueryCapacityCommitment', { get: function () { return require('./bigquery-capacity-commitment'); } });
 Object.defineProperty(exports, 'bigqueryConnection', { get: function () { return require('./bigquery-connection'); } });
@@ -266,6 +267,7 @@ Object.defineProperty(exports, 'cloudSchedulerJob', { get: function () { return 
 Object.defineProperty(exports, 'cloudSecurityComplianceCloudControl', { get: function () { return require('./cloud-security-compliance-cloud-control'); } });
 Object.defineProperty(exports, 'cloudSecurityComplianceFramework', { get: function () { return require('./cloud-security-compliance-framework'); } });
 Object.defineProperty(exports, 'cloudSecurityComplianceFrameworkDeployment', { get: function () { return require('./cloud-security-compliance-framework-deployment'); } });
+Object.defineProperty(exports, 'cloudSupportSupportEventSubscription', { get: function () { return require('./cloud-support-support-event-subscription'); } });
 Object.defineProperty(exports, 'cloudTasksQueue', { get: function () { return require('./cloud-tasks-queue'); } });
 Object.defineProperty(exports, 'cloudTasksQueueIamBinding', { get: function () { return require('./cloud-tasks-queue-iam-binding'); } });
 Object.defineProperty(exports, 'cloudTasksQueueIamMember', { get: function () { return require('./cloud-tasks-queue-iam-member'); } });
@@ -989,6 +991,7 @@ Object.defineProperty(exports, 'netappVolumeQuotaRule', { get: function () { ret
 Object.defineProperty(exports, 'netappVolumeReplication', { get: function () { return require('./netapp-volume-replication'); } });
 Object.defineProperty(exports, 'netappVolumeSnapshot', { get: function () { return require('./netapp-volume-snapshot'); } });
 Object.defineProperty(exports, 'networkConnectivityDestination', { get: function () { return require('./network-connectivity-destination'); } });
+Object.defineProperty(exports, 'networkConnectivityGatewayAdvertisedRoute', { get: function () { return require('./network-connectivity-gateway-advertised-route'); } });
 Object.defineProperty(exports, 'networkConnectivityGroup', { get: function () { return require('./network-connectivity-group'); } });
 Object.defineProperty(exports, 'networkConnectivityHub', { get: function () { return require('./network-connectivity-hub'); } });
 Object.defineProperty(exports, 'networkConnectivityHubIamBinding', { get: function () { return require('./network-connectivity-hub-iam-binding'); } });
