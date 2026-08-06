@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,26 +16,26 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * Specifies the Active Directory policy to be used. Format: 'projects/{{project}}/locations/{{location}}/activeDirectories/{{name}}'.
   * The policy needs to be in the same location as the storage pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
   */
   readonly activeDirectory?: string;
   /**
   * Optional. True if the storage pool supports Auto Tiering enabled volumes. Default is false.
   * Auto-tiering can be enabled after storage pool creation but it can't be disabled once enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
   */
   readonly allowAutoTiering?: boolean | cdktn.IResolvable;
   /**
   * Capacity of the storage pool (in GiB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
   */
   readonly capacityGib: string;
   /**
   * Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
   */
   readonly customPerformanceEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -47,31 +47,31 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#deletion_policy NetappStoragePool#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#deletion_policy NetappStoragePool#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
   */
   readonly description?: string;
   /**
   * Flag indicating that the hot-tier threshold will be auto-increased by 10% of the hot-tier when it hits 100%. Default is true.
   * The increment will kick in only if the new size after increment is still less than or equal to storage pool size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#enable_hot_tier_auto_resize NetappStoragePool#enable_hot_tier_auto_resize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#enable_hot_tier_auto_resize NetappStoragePool#enable_hot_tier_auto_resize}
   */
   readonly enableHotTierAutoResize?: boolean | cdktn.IResolvable;
   /**
   * Total hot tier capacity for the Storage Pool. It is applicable only to Flex service level.
   * It should be less than the minimum storage pool size and cannot be more than the current storage pool size. It cannot be decreased once set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#hot_tier_size_gib NetappStoragePool#hot_tier_size_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#hot_tier_size_gib NetappStoragePool#hot_tier_size_gib}
   */
   readonly hotTierSizeGib?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -81,7 +81,7 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * Specifies the CMEK policy to be used for volume encryption. Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{name}}'.
   * The policy needs to be in the same location as the storage pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
   */
   readonly kmsConfig?: string;
   /**
@@ -91,20 +91,20 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. Required to enable extended group support for NFSv3,
   * using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
   */
   readonly ldapEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
   */
   readonly location: string;
   /**
@@ -113,61 +113,61 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * via ONTAP Mode APIs, while DEFAULT mode enables operations via NetApp Volumes APIs.
   * If not specified during creation, the mode defaults to DEFAULT. Possible values: ["MODE_UNSPECIFIED", "DEFAULT", "ONTAP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#mode NetappStoragePool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#mode NetappStoragePool#mode}
   */
   readonly mode?: string;
   /**
   * The resource name of the storage pool. Needs to be unique per location/region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
   */
   readonly name: string;
   /**
   * VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
   */
   readonly network: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}
   */
   readonly project?: string;
   /**
   * QoS (Quality of Service) type of the storage pool.
   * Possible values are: AUTO, MANUAL. Possible values: ["QOS_TYPE_UNSPECIFIED", "AUTO", "MANUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#qos_type NetappStoragePool#qos_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#qos_type NetappStoragePool#qos_type}
   */
   readonly qosType?: string;
   /**
   * Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a
   * [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
   */
   readonly replicaZone?: string;
   /**
   * The scale type of the storage pool. Defaults to 'SCALE_TYPE_DEFAULT' if not specified. Possible values: ["SCALE_TYPE_UNSPECIFIED", "SCALE_TYPE_DEFAULT", "SCALE_TYPE_SCALEOUT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#scale_type NetappStoragePool#scale_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#scale_type NetappStoragePool#scale_type}
   */
   readonly scaleType?: string;
   /**
   * Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
   */
   readonly serviceLevel: string;
   /**
   * Optional. Custom Performance Total IOPS of the pool If not provided, it will be calculated based on the totalThroughputMibps
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
   */
   readonly totalIops?: string;
   /**
   * Optional. Custom Performance Total Throughput of the pool (in MiB/s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
   */
   readonly totalThroughputMibps?: string;
   /**
@@ -175,7 +175,7 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * This field is used to control whether the pool supports FILE based volumes only or UNIFIED (both FILE and BLOCK) volumes.
   * If not specified during creation, it defaults to FILE. Possible values: ["STORAGE_POOL_TYPE_UNSPECIFIED", "FILE", "UNIFIED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#type NetappStoragePool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#type NetappStoragePool#type}
   */
   readonly type?: string;
   /**
@@ -183,27 +183,27 @@ export interface NetappStoragePoolConfig extends cdktn.TerraformMetaArguments {
   * [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
   * If you want to create a zonal Flex pool, specify a zone name for 'location' and omit 'zone'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
   */
   readonly timeouts?: NetappStoragePoolTimeouts;
 }
 export interface NetappStoragePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}
   */
   readonly update?: string;
 }
@@ -355,7 +355,7 @@ export class NetappStoragePoolTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}
 */
 export class NetappStoragePool extends cdktn.TerraformResource {
 
@@ -371,7 +371,7 @@ export class NetappStoragePool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetappStoragePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappStoragePool to import
-  * @param importFromId The id of the existing NetappStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappStoragePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappStoragePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -383,7 +383,7 @@ export class NetappStoragePool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -394,7 +394,7 @@ export class NetappStoragePool extends cdktn.TerraformResource {
       terraformResourceType: 'google_netapp_storage_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
