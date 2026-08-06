@@ -4,7 +4,7 @@
 
 ### GkeHubRolloutSequence <a name="GkeHubRolloutSequence" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence google_gke_hub_rollout_sequence}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.Initializer"></a>
 
@@ -611,7 +611,7 @@ The construct id used in the generated config for the GkeHubRolloutSequence to i
 
 The id of the existing GkeHubRolloutSequence that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1221,7 +1221,7 @@ RolloutCreationScope GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope
 
 rollout_creation_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#rollout_creation_scope GkeHubRolloutSequence#rollout_creation_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#rollout_creation_scope GkeHubRolloutSequence#rollout_creation_scope}
 
 ---
 
@@ -1255,7 +1255,7 @@ UpgradeTypes *[]*string
 
 The list of enabled upgrade types. Current valid values are 'CONTROL_PLANE_MINOR', 'CONTROL_PLANE_PATCH', 'NODE_MINOR', and 'NODE_PATCH'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#upgrade_types GkeHubRolloutSequence#upgrade_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#upgrade_types GkeHubRolloutSequence#upgrade_types}
 
 ---
 
@@ -1305,12 +1305,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutseq
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.autoUpgradeConfig">AutoUpgradeConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfig">GkeHubRolloutSequenceAutoUpgradeConfig</a></code> | auto_upgrade_config block. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Human readable display name of the Rollout Sequence. |
-| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}. |
+| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.ignoredClustersSelector">IgnoredClustersSelector</a></code> | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceIgnoredClustersSelector">GkeHubRolloutSequenceIgnoredClustersSelector</a></code> | ignored_clusters_selector block. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels for this Rollout Sequence. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.minControlPlaneVersion">MinControlPlaneVersion</a></code> | <code>*string</code> | Minimum control plane version that the clusters in the sequence should be upgraded to. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.minNodeVersion">MinNodeVersion</a></code> | <code>*string</code> | Minimum node version that the clusters in the sequence should be upgraded to. |
-| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}. |
+| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}. |
 | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts">GkeHubRolloutSequenceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1395,7 +1395,7 @@ RolloutSequenceId *string
 
 The user-provided identifier of the RolloutSequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#rollout_sequence_id GkeHubRolloutSequence#rollout_sequence_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#rollout_sequence_id GkeHubRolloutSequence#rollout_sequence_id}
 
 ---
 
@@ -1409,7 +1409,7 @@ Stages interface{}
 
 stages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#stages GkeHubRolloutSequence#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#stages GkeHubRolloutSequence#stages}
 
 ---
 
@@ -1423,7 +1423,7 @@ AutoUpgradeConfig GkeHubRolloutSequenceAutoUpgradeConfig
 
 auto_upgrade_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#auto_upgrade_config GkeHubRolloutSequence#auto_upgrade_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#auto_upgrade_config GkeHubRolloutSequence#auto_upgrade_config}
 
 ---
 
@@ -1444,7 +1444,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#deletion_policy GkeHubRolloutSequence#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#deletion_policy GkeHubRolloutSequence#deletion_policy}
 
 ---
 
@@ -1458,7 +1458,7 @@ DisplayName *string
 
 Human readable display name of the Rollout Sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#display_name GkeHubRolloutSequence#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#display_name GkeHubRolloutSequence#display_name}
 
 ---
 
@@ -1470,7 +1470,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#id GkeHubRolloutSequence#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1487,7 +1487,7 @@ IgnoredClustersSelector GkeHubRolloutSequenceIgnoredClustersSelector
 
 ignored_clusters_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#ignored_clusters_selector GkeHubRolloutSequence#ignored_clusters_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#ignored_clusters_selector GkeHubRolloutSequence#ignored_clusters_selector}
 
 ---
 
@@ -1504,7 +1504,7 @@ Labels for this Rollout Sequence.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#labels GkeHubRolloutSequence#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#labels GkeHubRolloutSequence#labels}
 
 ---
 
@@ -1525,7 +1525,7 @@ Version aliases are supported, as described in the [cluster version docs](https:
 Note that the 'latest' and '-' aliases are not supported for this field.
 Supported formats: '1.X', '1.X.Y', '1.X.Y-gke.N'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#min_control_plane_version GkeHubRolloutSequence#min_control_plane_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#min_control_plane_version GkeHubRolloutSequence#min_control_plane_version}
 
 ---
 
@@ -1546,7 +1546,7 @@ Version aliases are supported, as described in the [cluster version docs](https:
 Note that the 'latest' and '-' aliases are not supported for this field.
 Supported formats: '1.X', '1.X.Y', '1.X.Y-gke.N'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#min_node_version GkeHubRolloutSequence#min_node_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#min_node_version GkeHubRolloutSequence#min_node_version}
 
 ---
 
@@ -1558,7 +1558,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#project GkeHubRolloutSequence#project}.
 
 ---
 
@@ -1572,7 +1572,7 @@ Timeouts GkeHubRolloutSequenceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#timeouts GkeHubRolloutSequence#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#timeouts GkeHubRolloutSequence#timeouts}
 
 ---
 
@@ -1606,7 +1606,7 @@ LabelSelector *string
 
 The label selector must be a valid CEL (Common Expression Language) expression which evaluates resource.labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
 
 ---
 
@@ -1657,7 +1657,7 @@ FleetProjects *[]*string
 
 List of Fleet projects to select the clusters from. Expected format: projects/{project}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#fleet_projects GkeHubRolloutSequence#fleet_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#fleet_projects GkeHubRolloutSequence#fleet_projects}
 
 ---
 
@@ -1671,7 +1671,7 @@ ClusterSelector GkeHubRolloutSequenceStagesClusterSelector
 
 cluster_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#cluster_selector GkeHubRolloutSequence#cluster_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#cluster_selector GkeHubRolloutSequence#cluster_selector}
 
 ---
 
@@ -1685,7 +1685,7 @@ SoakDuration *string
 
 Soak time after upgrading all the clusters in the stage. Has to be specified in seconds, minutes, hours or days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#soak_duration GkeHubRolloutSequence#soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#soak_duration GkeHubRolloutSequence#soak_duration}
 
 ---
 
@@ -1719,7 +1719,7 @@ LabelSelector *string
 
 The label selector must be a valid CEL (Common Expression Language) expression which evaluates resource.labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#label_selector GkeHubRolloutSequence#label_selector}
 
 ---
 
@@ -1741,9 +1741,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutseq
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}. |
-| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}. |
-| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}. |
+| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}. |
+| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}. |
+| <code><a href="#@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}. |
 
 ---
 
@@ -1755,7 +1755,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#create GkeHubRolloutSequence#create}.
 
 ---
 
@@ -1767,7 +1767,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#delete GkeHubRolloutSequence#delete}.
 
 ---
 
@@ -1779,7 +1779,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/gke_hub_rollout_sequence#update GkeHubRolloutSequence#update}.
 
 ---
 

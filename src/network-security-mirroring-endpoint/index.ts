@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,18 +21,18 @@ export interface NetworkSecurityMirroringEndpointConfig extends cdktn.TerraformM
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#deletion_policy NetworkSecurityMirroringEndpoint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#deletion_policy NetworkSecurityMirroringEndpoint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * User-provided description of the endpoint.
   * Used as additional context for the endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#description NetworkSecurityMirroringEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#description NetworkSecurityMirroringEndpoint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#id NetworkSecurityMirroringEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#id NetworkSecurityMirroringEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,13 +44,13 @@ export interface NetworkSecurityMirroringEndpointConfig extends cdktn.TerraformM
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#labels NetworkSecurityMirroringEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#labels NetworkSecurityMirroringEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The cloud location of the endpoint, e.g. 'us-central1-a' or 'asia-south1-b'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#location NetworkSecurityMirroringEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#location NetworkSecurityMirroringEndpoint#location}
   */
   readonly location: string;
   /**
@@ -58,38 +58,38 @@ export interface NetworkSecurityMirroringEndpointConfig extends cdktn.TerraformM
   * Format is:
   * 'projects/{project}/locations/{location}/mirroringEndpointGroups/{mirroringEndpointGroup}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#mirroring_endpoint_group NetworkSecurityMirroringEndpoint#mirroring_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#mirroring_endpoint_group NetworkSecurityMirroringEndpoint#mirroring_endpoint_group}
   */
   readonly mirroringEndpointGroup: string;
   /**
   * The ID to use for the new endpoint, which will become the final
   * component of the endpoint's resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#mirroring_endpoint_id NetworkSecurityMirroringEndpoint#mirroring_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#mirroring_endpoint_id NetworkSecurityMirroringEndpoint#mirroring_endpoint_id}
   */
   readonly mirroringEndpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#project NetworkSecurityMirroringEndpoint#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#project NetworkSecurityMirroringEndpoint#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#timeouts NetworkSecurityMirroringEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#timeouts NetworkSecurityMirroringEndpoint#timeouts}
   */
   readonly timeouts?: NetworkSecurityMirroringEndpointTimeouts;
 }
 export interface NetworkSecurityMirroringEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#create NetworkSecurityMirroringEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#create NetworkSecurityMirroringEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#delete NetworkSecurityMirroringEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#delete NetworkSecurityMirroringEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#update NetworkSecurityMirroringEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#update NetworkSecurityMirroringEndpoint#update}
   */
   readonly update?: string;
 }
@@ -241,7 +241,7 @@ export class NetworkSecurityMirroringEndpointTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint google_network_security_mirroring_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint google_network_security_mirroring_endpoint}
 */
 export class NetworkSecurityMirroringEndpoint extends cdktn.TerraformResource {
 
@@ -257,7 +257,7 @@ export class NetworkSecurityMirroringEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityMirroringEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityMirroringEndpoint to import
-  * @param importFromId The id of the existing NetworkSecurityMirroringEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityMirroringEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityMirroringEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -269,7 +269,7 @@ export class NetworkSecurityMirroringEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_security_mirroring_endpoint google_network_security_mirroring_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_mirroring_endpoint google_network_security_mirroring_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +280,7 @@ export class NetworkSecurityMirroringEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_mirroring_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

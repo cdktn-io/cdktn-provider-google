@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEndpoints <a name="ComputeNetworkEndpoints" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpoints.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ComputeNetworkEndpoints to
 
 The id of the existing ComputeNetworkEndpoints that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,9 +944,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworken
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.networkEndpointGroup">NetworkEndpointGroup</a></code> | <code>*string</code> | The network endpoint group these endpoints are part of. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.networkEndpoints">NetworkEndpoints</a></code> | <code>interface{}</code> | network_endpoints block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts">ComputeNetworkEndpointsTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsConfig.property.zone">Zone</a></code> | <code>*string</code> | Zone where the containing network endpoint group is located. |
 
@@ -1032,7 +1032,7 @@ NetworkEndpointGroup *string
 
 The network endpoint group these endpoints are part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
 
 ---
 
@@ -1053,7 +1053,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#deletion_policy ComputeNetworkEndpoints#deletion_policy}
 
 ---
 
@@ -1065,7 +1065,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#id ComputeNetworkEndpoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ NetworkEndpoints interface{}
 
 network_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
 
 ---
 
@@ -1094,7 +1094,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
 
 ---
 
@@ -1108,7 +1108,7 @@ Timeouts ComputeNetworkEndpointsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#timeouts ComputeNetworkEndpoints#timeouts}
 
 ---
 
@@ -1122,7 +1122,7 @@ Zone *string
 
 Zone where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
 
 ---
 
@@ -1163,7 +1163,7 @@ The name for a specific VM instance that the IP address belongs to.
 This is required for network endpoints of type GCE_VM_IP_PORT.
 The instance must be in the same zone as the network endpoint group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#instance ComputeNetworkEndpoints#instance}
 
 ---
 
@@ -1182,7 +1182,7 @@ to a VM in GCE (either the primary IP or as part of an aliased IP
 range).
 **Note** 'ip_address' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP_DEDICATED_BACKEND'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#ip_address ComputeNetworkEndpoints#ip_address}
 
 ---
 
@@ -1196,7 +1196,7 @@ Port *f64
 
 Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#port ComputeNetworkEndpoints#port}
 
 ---
 
@@ -1218,9 +1218,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computenetworken
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoints.ComputeNetworkEndpointsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#create ComputeNetworkEndpoints#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#delete ComputeNetworkEndpoints#delete}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_network_endpoints#update ComputeNetworkEndpoints#update}.
 
 ---
 

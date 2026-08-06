@@ -4,7 +4,7 @@
 
 ### ApihubPluginInstance <a name="ApihubPluginInstance" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance google_apihub_plugin_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance google_apihub_plugin_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.Initializer"></a>
 
@@ -83,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetDisable">ResetDisable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetSourceProjectId">ResetSourceProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -468,6 +469,12 @@ func ResetId()
 func ResetProject()
 ```
 
+##### `ResetSourceProjectId` <a name="ResetSourceProjectId" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetSourceProjectId"></a>
+
+```go
+func ResetSourceProjectId()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.resetTimeouts"></a>
 
 ```go
@@ -577,7 +584,7 @@ The construct id used in the generated config for the ApihubPluginInstance to im
 
 The id of the existing ApihubPluginInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,6 +632,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.pluginInput">PluginInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.pluginInstanceIdInput">PluginInstanceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.sourceProjectIdInput">SourceProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.disable">Disable</a></code> | <code>interface{}</code> | *No description.* |
@@ -634,6 +642,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.plugin">Plugin</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.pluginInstanceId">PluginInstanceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.sourceProjectId">SourceProjectId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -959,6 +968,16 @@ func ProjectInput() *string
 
 ---
 
+##### `SourceProjectIdInput`<sup>Optional</sup> <a name="SourceProjectIdInput" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.sourceProjectIdInput"></a>
+
+```go
+func SourceProjectIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.timeoutsInput"></a>
 
 ```go
@@ -1049,6 +1068,16 @@ func Project() *string
 
 ---
 
+##### `SourceProjectId`<sup>Required</sup> <a name="SourceProjectId" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.property.sourceProjectId"></a>
+
+```go
+func SourceProjectId() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1105,7 +1134,7 @@ ActionId *string
 
 This should map to one of the action id specified in actions_config in the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#action_id ApihubPluginInstance#action_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#action_id ApihubPluginInstance#action_id}
 
 ---
 
@@ -1119,7 +1148,7 @@ CurationConfig ApihubPluginInstanceActionsCurationConfig
 
 curation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#curation_config ApihubPluginInstance#curation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#curation_config ApihubPluginInstance#curation_config}
 
 ---
 
@@ -1136,7 +1165,7 @@ The schedule for this plugin instance action.
 This can only be set if the
 plugin supports API_HUB_SCHEDULE_TRIGGER mode for this action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#schedule_cron_expression ApihubPluginInstance#schedule_cron_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#schedule_cron_expression ApihubPluginInstance#schedule_cron_expression}
 
 ---
 
@@ -1150,7 +1179,7 @@ ScheduleTimeZone *string
 
 The time zone for the schedule cron expression. If not provided, UTC will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#schedule_time_zone ApihubPluginInstance#schedule_time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#schedule_time_zone ApihubPluginInstance#schedule_time_zone}
 
 ---
 
@@ -1186,7 +1215,7 @@ CurationType *string
 
 Possible values: CURATION_TYPE_UNSPECIFIED DEFAULT_CURATION_FOR_API_METADATA CUSTOM_CURATION_FOR_API_METADATA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#curation_type ApihubPluginInstance#curation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#curation_type ApihubPluginInstance#curation_type}
 
 ---
 
@@ -1200,7 +1229,7 @@ CustomCuration ApihubPluginInstanceActionsCurationConfigCustomCuration
 
 custom_curation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#custom_curation ApihubPluginInstance#custom_curation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#custom_curation ApihubPluginInstance#custom_curation}
 
 ---
 
@@ -1234,7 +1263,7 @@ Curation *string
 
 The unique name of the curation resource. This will be the name of the curation resource in the format: 'projects/{project}/locations/{location}/curations/{curation}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#curation ApihubPluginInstance#curation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#curation ApihubPluginInstance#curation}
 
 ---
 
@@ -1302,7 +1331,7 @@ AuthType *string
 
 Possible values: AUTH_TYPE_UNSPECIFIED NO_AUTH GOOGLE_SERVICE_ACCOUNT USER_PASSWORD API_KEY OAUTH2_CLIENT_CREDENTIALS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#auth_type ApihubPluginInstance#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#auth_type ApihubPluginInstance#auth_type}
 
 ---
 
@@ -1316,7 +1345,7 @@ ApiKeyConfig ApihubPluginInstanceAuthConfigApiKeyConfig
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#api_key_config ApihubPluginInstance#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#api_key_config ApihubPluginInstance#api_key_config}
 
 ---
 
@@ -1330,7 +1359,7 @@ GoogleServiceAccountConfig ApihubPluginInstanceAuthConfigGoogleServiceAccountCon
 
 google_service_account_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#google_service_account_config ApihubPluginInstance#google_service_account_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#google_service_account_config ApihubPluginInstance#google_service_account_config}
 
 ---
 
@@ -1344,7 +1373,7 @@ Oauth2ClientCredentialsConfig ApihubPluginInstanceAuthConfigOauth2ClientCredenti
 
 oauth2_client_credentials_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#oauth2_client_credentials_config ApihubPluginInstance#oauth2_client_credentials_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#oauth2_client_credentials_config ApihubPluginInstance#oauth2_client_credentials_config}
 
 ---
 
@@ -1358,7 +1387,7 @@ UserPasswordConfig ApihubPluginInstanceAuthConfigUserPasswordConfig
 
 user_password_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#user_password_config ApihubPluginInstance#user_password_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#user_password_config ApihubPluginInstance#user_password_config}
 
 ---
 
@@ -1396,7 +1425,7 @@ ApiKey ApihubPluginInstanceAuthConfigApiKeyConfigApiKey
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#api_key ApihubPluginInstance#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#api_key ApihubPluginInstance#api_key}
 
 ---
 
@@ -1410,7 +1439,7 @@ HttpElementLocation *string
 
 The location of the API key. The default value is QUERY. Possible values: HTTP_ELEMENT_LOCATION_UNSPECIFIED QUERY HEADER PATH BODY COOKIE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#http_element_location ApihubPluginInstance#http_element_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#http_element_location ApihubPluginInstance#http_element_location}
 
 ---
 
@@ -1424,7 +1453,7 @@ Name *string
 
 The parameter name of the API key. E.g. If the API request is "https://example.com/act?api_key=", "api_key" would be the parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#name ApihubPluginInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#name ApihubPluginInstance#name}
 
 ---
 
@@ -1458,7 +1487,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1497,7 +1526,7 @@ The service account to be used for authenticating request.
 The 'iam.serviceAccounts.getAccessToken' permission should be granted on
 this service account to the impersonator service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#service_account ApihubPluginInstance#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#service_account ApihubPluginInstance#service_account}
 
 ---
 
@@ -1533,7 +1562,7 @@ ClientId *string
 
 The client identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#client_id ApihubPluginInstance#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#client_id ApihubPluginInstance#client_id}
 
 ---
 
@@ -1547,7 +1576,7 @@ ClientSecret ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSe
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#client_secret ApihubPluginInstance#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#client_secret ApihubPluginInstance#client_secret}
 
 ---
 
@@ -1581,7 +1610,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1619,7 +1648,7 @@ Password ApihubPluginInstanceAuthConfigUserPasswordConfigPassword
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#password ApihubPluginInstance#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#password ApihubPluginInstance#password}
 
 ---
 
@@ -1633,7 +1662,7 @@ Username *string
 
 Username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#username ApihubPluginInstance#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#username ApihubPluginInstance#username}
 
 ---
 
@@ -1667,7 +1696,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1698,6 +1727,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apihubplugininst
 	Disable: interface{},
 	Id: *string,
 	Project: *string,
+	SourceProjectId: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apihubPluginInstance.ApihubPluginInstanceTimeouts,
 }
 ```
@@ -1721,8 +1751,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apihubplugininst
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.authConfig">AuthConfig</a></code> | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfig">ApihubPluginInstanceAuthConfig</a></code> | auth_config block. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.disable">Disable</a></code> | <code>interface{}</code> | The display name for this plugin instance. Max length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.sourceProjectId">SourceProjectId</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts">ApihubPluginInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1807,7 +1838,7 @@ DisplayName *string
 
 The display name for this plugin instance. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#display_name ApihubPluginInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#display_name ApihubPluginInstance#display_name}
 
 ---
 
@@ -1821,7 +1852,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#location ApihubPluginInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#location ApihubPluginInstance#location}
 
 ---
 
@@ -1835,7 +1866,7 @@ Plugin *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#plugin ApihubPluginInstance#plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#plugin ApihubPluginInstance#plugin}
 
 ---
 
@@ -1859,7 +1890,7 @@ This field is optional.
 This value should be 4-63 characters, and valid characters
 are /a-z[0-9]-_/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#plugin_instance_id ApihubPluginInstance#plugin_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#plugin_instance_id ApihubPluginInstance#plugin_instance_id}
 
 ---
 
@@ -1873,7 +1904,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#actions ApihubPluginInstance#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#actions ApihubPluginInstance#actions}
 
 ---
 
@@ -1887,7 +1918,7 @@ AuthConfig ApihubPluginInstanceAuthConfig
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#auth_config ApihubPluginInstance#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#auth_config ApihubPluginInstance#auth_config}
 
 ---
 
@@ -1908,7 +1939,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#deletion_policy ApihubPluginInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#deletion_policy ApihubPluginInstance#deletion_policy}
 
 ---
 
@@ -1922,7 +1953,7 @@ Disable interface{}
 
 The display name for this plugin instance. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#disable ApihubPluginInstance#disable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#disable ApihubPluginInstance#disable}
 
 ---
 
@@ -1934,7 +1965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1949,7 +1980,23 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}.
+
+---
+
+##### `SourceProjectId`<sup>Optional</sup> <a name="SourceProjectId" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.sourceProjectId"></a>
+
+```go
+SourceProjectId *string
+```
+
+- *Type:* *string
+
+Optional.
+
+The source project id of the plugin instance. This will be the id of runtime project in case of gcp based plugins and org id in case of non gcp based plugins. This field will be a required field for Google provided on-ramp plugins.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#source_project_id ApihubPluginInstance#source_project_id}
 
 ---
 
@@ -1963,7 +2010,7 @@ Timeouts ApihubPluginInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#timeouts ApihubPluginInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#timeouts ApihubPluginInstance#timeouts}
 
 ---
 
@@ -1985,9 +2032,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apihubplugininst
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}. |
 
 ---
 
@@ -1999,7 +2046,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}.
 
 ---
 
@@ -2011,7 +2058,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}.
 
 ---
 
@@ -2023,7 +2070,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}.
 
 ---
 

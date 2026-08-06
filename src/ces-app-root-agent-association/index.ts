@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,13 @@ export interface CesAppRootAgentAssociationConfig extends cdktn.TerraformMetaArg
   * The ID or fully qualified resource name of the agent to associate as the
   * root agent of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#agent_id CesAppRootAgentAssociation#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#agent_id CesAppRootAgentAssociation#agent_id}
   */
   readonly agentId: string;
   /**
   * The ID of the App. Used to construct the app resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#app_id CesAppRootAgentAssociation#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#app_id CesAppRootAgentAssociation#app_id}
   */
   readonly appId: string;
   /**
@@ -34,11 +34,11 @@ export interface CesAppRootAgentAssociationConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#deletion_policy CesAppRootAgentAssociation#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#deletion_policy CesAppRootAgentAssociation#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#id CesAppRootAgentAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#id CesAppRootAgentAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,31 +47,31 @@ export interface CesAppRootAgentAssociationConfig extends cdktn.TerraformMetaArg
   /**
   * The location of the App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#location CesAppRootAgentAssociation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#location CesAppRootAgentAssociation#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#project CesAppRootAgentAssociation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#project CesAppRootAgentAssociation#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#timeouts CesAppRootAgentAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#timeouts CesAppRootAgentAssociation#timeouts}
   */
   readonly timeouts?: CesAppRootAgentAssociationTimeouts;
 }
 export interface CesAppRootAgentAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#create CesAppRootAgentAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#create CesAppRootAgentAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#delete CesAppRootAgentAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#delete CesAppRootAgentAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#update CesAppRootAgentAssociation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#update CesAppRootAgentAssociation#update}
   */
   readonly update?: string;
 }
@@ -223,7 +223,7 @@ export class CesAppRootAgentAssociationTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association google_ces_app_root_agent_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association google_ces_app_root_agent_association}
 */
 export class CesAppRootAgentAssociation extends cdktn.TerraformResource {
 
@@ -239,7 +239,7 @@ export class CesAppRootAgentAssociation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesAppRootAgentAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesAppRootAgentAssociation to import
-  * @param importFromId The id of the existing CesAppRootAgentAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesAppRootAgentAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesAppRootAgentAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -251,7 +251,7 @@ export class CesAppRootAgentAssociation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/ces_app_root_agent_association google_ces_app_root_agent_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_app_root_agent_association google_ces_app_root_agent_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +262,7 @@ export class CesAppRootAgentAssociation extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_app_root_agent_association',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

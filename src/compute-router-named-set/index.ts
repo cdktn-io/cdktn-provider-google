@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ComputeRouterNamedSetConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#deletion_policy ComputeRouterNamedSet#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#deletion_policy ComputeRouterNamedSet#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of the Named Set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,41 +41,41 @@ export interface ComputeRouterNamedSetConfig extends cdktn.TerraformMetaArgument
   * The name of the Named Set, which must be a resource ID segment and unique
   * within all named sets owned by the Router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#name ComputeRouterNamedSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#name ComputeRouterNamedSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}
   */
   readonly project?: string;
   /**
   * Region where the router resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#region ComputeRouterNamedSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#region ComputeRouterNamedSet#region}
   */
   readonly region?: string;
   /**
   * The name of the Cloud Router in which this Named Set will be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#router ComputeRouterNamedSet#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#router ComputeRouterNamedSet#router}
   */
   readonly router: string;
   /**
   * The type of the Named Set. Possible values: ["NAMED_SET_TYPE_PREFIX", "NAMED_SET_TYPE_COMMUNITY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#type ComputeRouterNamedSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#type ComputeRouterNamedSet#type}
   */
   readonly type: string;
   /**
   * elements block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#elements ComputeRouterNamedSet#elements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#elements ComputeRouterNamedSet#elements}
   */
   readonly elements?: ComputeRouterNamedSetElements[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#timeouts ComputeRouterNamedSet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#timeouts ComputeRouterNamedSet#timeouts}
   */
   readonly timeouts?: ComputeRouterNamedSetTimeouts;
 }
@@ -83,25 +83,25 @@ export interface ComputeRouterNamedSetElements {
   /**
   * Description of the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#expression ComputeRouterNamedSet#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#expression ComputeRouterNamedSet#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#location ComputeRouterNamedSet#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#location ComputeRouterNamedSet#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#title ComputeRouterNamedSet#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#title ComputeRouterNamedSet#title}
   */
   readonly title?: string;
 }
@@ -301,15 +301,15 @@ export class ComputeRouterNamedSetElementsList extends cdktn.ComplexList {
 }
 export interface ComputeRouterNamedSetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}
   */
   readonly update?: string;
 }
@@ -461,7 +461,7 @@ export class ComputeRouterNamedSetTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set google_compute_router_named_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set google_compute_router_named_set}
 */
 export class ComputeRouterNamedSet extends cdktn.TerraformResource {
 
@@ -477,7 +477,7 @@ export class ComputeRouterNamedSet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeRouterNamedSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRouterNamedSet to import
-  * @param importFromId The id of the existing ComputeRouterNamedSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRouterNamedSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRouterNamedSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -489,7 +489,7 @@ export class ComputeRouterNamedSet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/compute_router_named_set google_compute_router_named_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router_named_set google_compute_router_named_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -500,7 +500,7 @@ export class ComputeRouterNamedSet extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_router_named_set',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### SpannerDatabaseIamMember <a name="SpannerDatabaseIamMember" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member google_spanner_database_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member google_spanner_database_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SpannerDatabaseIamMember t
 
 The id of the existing SpannerDatabaseIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,9 +901,9 @@ new SpannerDatabaseIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#expression SpannerDatabaseIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#title SpannerDatabaseIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#description SpannerDatabaseIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#expression SpannerDatabaseIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#title SpannerDatabaseIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#description SpannerDatabaseIamMember#description}. |
 
 ---
 
@@ -915,7 +915,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#expression SpannerDatabaseIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#expression SpannerDatabaseIamMember#expression}.
 
 ---
 
@@ -927,7 +927,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#title SpannerDatabaseIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#title SpannerDatabaseIamMember#title}.
 
 ---
 
@@ -939,7 +939,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#description SpannerDatabaseIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#description SpannerDatabaseIamMember#description}.
 
 ---
 
@@ -979,13 +979,13 @@ new SpannerDatabaseIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#database SpannerDatabaseIamMember#database}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.instance">Instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#instance SpannerDatabaseIamMember#instance}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#member SpannerDatabaseIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#role SpannerDatabaseIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#database SpannerDatabaseIamMember#database}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.instance">Instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#instance SpannerDatabaseIamMember#instance}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#member SpannerDatabaseIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#role SpannerDatabaseIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition">SpannerDatabaseIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#id SpannerDatabaseIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#project SpannerDatabaseIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#id SpannerDatabaseIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#project SpannerDatabaseIamMember#project}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Database { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#database SpannerDatabaseIamMember#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#database SpannerDatabaseIamMember#database}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public string Instance { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#instance SpannerDatabaseIamMember#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#instance SpannerDatabaseIamMember#instance}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#member SpannerDatabaseIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#member SpannerDatabaseIamMember#member}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#role SpannerDatabaseIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#role SpannerDatabaseIamMember#role}.
 
 ---
 
@@ -1117,7 +1117,7 @@ public SpannerDatabaseIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#condition SpannerDatabaseIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#condition SpannerDatabaseIamMember#condition}
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#id SpannerDatabaseIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#id SpannerDatabaseIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1144,7 +1144,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/spanner_database_iam_member#project SpannerDatabaseIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/spanner_database_iam_member#project SpannerDatabaseIamMember#project}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export
+// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ChronicleBigQueryExportConfig extends cdktn.TerraformMetaArgume
   /**
   * The BigQueryExportPackage entitled for the Chronicle instance. Possible values: ["BIG_QUERY_EXPORT_PACKAGE_BYOBQ", "BIG_QUERY_EXPORT_PACKAGE_ADVANCED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#big_query_export_package ChronicleBigQueryExport#big_query_export_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#big_query_export_package ChronicleBigQueryExport#big_query_export_package}
   */
   readonly bigQueryExportPackage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#id ChronicleBigQueryExport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#id ChronicleBigQueryExport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,53 +28,53 @@ export interface ChronicleBigQueryExportConfig extends cdktn.TerraformMetaArgume
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#instance ChronicleBigQueryExport#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#instance ChronicleBigQueryExport#instance}
   */
   readonly instance: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#location ChronicleBigQueryExport#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#location ChronicleBigQueryExport#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#project ChronicleBigQueryExport#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#project ChronicleBigQueryExport#project}
   */
   readonly project?: string;
   /**
   * entity_graph_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#entity_graph_settings ChronicleBigQueryExport#entity_graph_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#entity_graph_settings ChronicleBigQueryExport#entity_graph_settings}
   */
   readonly entityGraphSettings?: ChronicleBigQueryExportEntityGraphSettings;
   /**
   * ioc_matches_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#ioc_matches_settings ChronicleBigQueryExport#ioc_matches_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#ioc_matches_settings ChronicleBigQueryExport#ioc_matches_settings}
   */
   readonly iocMatchesSettings?: ChronicleBigQueryExportIocMatchesSettings;
   /**
   * rule_detections_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#rule_detections_settings ChronicleBigQueryExport#rule_detections_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#rule_detections_settings ChronicleBigQueryExport#rule_detections_settings}
   */
   readonly ruleDetectionsSettings?: ChronicleBigQueryExportRuleDetectionsSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#timeouts ChronicleBigQueryExport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#timeouts ChronicleBigQueryExport#timeouts}
   */
   readonly timeouts?: ChronicleBigQueryExportTimeouts;
   /**
   * udm_events_aggregates_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#udm_events_aggregates_settings ChronicleBigQueryExport#udm_events_aggregates_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#udm_events_aggregates_settings ChronicleBigQueryExport#udm_events_aggregates_settings}
   */
   readonly udmEventsAggregatesSettings?: ChronicleBigQueryExportUdmEventsAggregatesSettings;
   /**
   * udm_events_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#udm_events_settings ChronicleBigQueryExport#udm_events_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#udm_events_settings ChronicleBigQueryExport#udm_events_settings}
   */
   readonly udmEventsSettings?: ChronicleBigQueryExportUdmEventsSettings;
 }
@@ -82,13 +82,13 @@ export interface ChronicleBigQueryExportEntityGraphSettings {
   /**
   * Whether the data source is enabled for export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The retention period for the data source in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
   */
   readonly retentionDays: number;
 }
@@ -212,13 +212,13 @@ export interface ChronicleBigQueryExportIocMatchesSettings {
   /**
   * Whether the data source is enabled for export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The retention period for the data source in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
   */
   readonly retentionDays: number;
 }
@@ -342,13 +342,13 @@ export interface ChronicleBigQueryExportRuleDetectionsSettings {
   /**
   * Whether the data source is enabled for export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The retention period for the data source in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
   */
   readonly retentionDays: number;
 }
@@ -470,15 +470,15 @@ export class ChronicleBigQueryExportRuleDetectionsSettingsOutputReference extend
 }
 export interface ChronicleBigQueryExportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#create ChronicleBigQueryExport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#create ChronicleBigQueryExport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#delete ChronicleBigQueryExport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#delete ChronicleBigQueryExport#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#update ChronicleBigQueryExport#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#update ChronicleBigQueryExport#update}
   */
   readonly update?: string;
 }
@@ -632,13 +632,13 @@ export interface ChronicleBigQueryExportUdmEventsAggregatesSettings {
   /**
   * Whether the data source is enabled for export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The retention period for the data source in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
   */
   readonly retentionDays: number;
 }
@@ -762,13 +762,13 @@ export interface ChronicleBigQueryExportUdmEventsSettings {
   /**
   * Whether the data source is enabled for export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#enabled ChronicleBigQueryExport#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The retention period for the data source in days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#retention_days ChronicleBigQueryExport#retention_days}
   */
   readonly retentionDays: number;
 }
@@ -890,7 +890,7 @@ export class ChronicleBigQueryExportUdmEventsSettingsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export google_chronicle_big_query_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export google_chronicle_big_query_export}
 */
 export class ChronicleBigQueryExport extends cdktn.TerraformResource {
 
@@ -906,7 +906,7 @@ export class ChronicleBigQueryExport extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleBigQueryExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleBigQueryExport to import
-  * @param importFromId The id of the existing ChronicleBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleBigQueryExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleBigQueryExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -918,7 +918,7 @@ export class ChronicleBigQueryExport extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_big_query_export google_chronicle_big_query_export} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_big_query_export google_chronicle_big_query_export} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -929,7 +929,7 @@ export class ChronicleBigQueryExport extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_big_query_export',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.42.0',
+        providerVersion: '7.43.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

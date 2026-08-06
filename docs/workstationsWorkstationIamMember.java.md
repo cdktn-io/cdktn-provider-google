@@ -4,7 +4,7 @@
 
 ### WorkstationsWorkstationIamMember <a name="WorkstationsWorkstationIamMember" id="@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member google_workstations_workstation_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member google_workstations_workstation_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer"></a>
 
@@ -42,15 +42,15 @@ WorkstationsWorkstationIamMember.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationClusterId">workstationClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationConfigId">workstationConfigId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationId">workstationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationClusterId">workstationClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationConfigId">workstationConfigId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.workstationId">workstationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition">WorkstationsWorkstationIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#condition WorkstationsWorkstationIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#condition WorkstationsWorkstationIamMember#condition}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}.
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the WorkstationsWorkstationIam
 
 The id of the existing WorkstationsWorkstationIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1099,9 +1099,9 @@ WorkstationsWorkstationIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#expression WorkstationsWorkstationIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#title WorkstationsWorkstationIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#description WorkstationsWorkstationIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#expression WorkstationsWorkstationIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#title WorkstationsWorkstationIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#description WorkstationsWorkstationIamMember#description}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#expression WorkstationsWorkstationIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#expression WorkstationsWorkstationIamMember#expression}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#title WorkstationsWorkstationIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#title WorkstationsWorkstationIamMember#title}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#description WorkstationsWorkstationIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#description WorkstationsWorkstationIamMember#description}.
 
 ---
 
@@ -1179,15 +1179,15 @@ WorkstationsWorkstationIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationClusterId">workstationClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationConfigId">workstationConfigId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationId">workstationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationClusterId">workstationClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationConfigId">workstationConfigId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.workstationId">workstationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}. |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberCondition">WorkstationsWorkstationIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#member WorkstationsWorkstationIamMember#member}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#role WorkstationsWorkstationIamMember#role}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.lang.String getWorkstationClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_cluster_id WorkstationsWorkstationIamMember#workstation_cluster_id}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public java.lang.String getWorkstationConfigId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_config_id WorkstationsWorkstationIamMember#workstation_config_id}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public java.lang.String getWorkstationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#workstation_id WorkstationsWorkstationIamMember#workstation_id}.
 
 ---
 
@@ -1331,7 +1331,7 @@ public WorkstationsWorkstationIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#condition WorkstationsWorkstationIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#condition WorkstationsWorkstationIamMember#condition}
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#id WorkstationsWorkstationIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1358,7 +1358,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#location WorkstationsWorkstationIamMember#location}.
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workstations_workstation_iam_member#project WorkstationsWorkstationIamMember#project}.
 
 ---
 

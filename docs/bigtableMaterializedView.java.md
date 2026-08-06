@@ -4,7 +4,7 @@
 
 ### BigtableMaterializedView <a name="BigtableMaterializedView" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view google_bigtable_materialized_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view google_bigtable_materialized_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer"></a>
 
@@ -45,9 +45,9 @@ BigtableMaterializedView.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | The materialized view's select query. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to true to make the MaterializedView protected against deletion. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.instance">instance</a></code> | <code>java.lang.String</code> | The name of the instance to create the materialized view within. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedView.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts">BigtableMaterializedViewTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The unique name of the materialized view in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#materialized_view_id BigtableMaterializedView#materialized_view_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#materialized_view_id BigtableMaterializedView#materialized_view_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The materialized view's select query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#query BigtableMaterializedView#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#query BigtableMaterializedView#query}
 
 ---
 
@@ -145,7 +145,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#deletion_policy BigtableMaterializedView#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#deletion_policy BigtableMaterializedView#deletion_policy}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set to true to make the MaterializedView protected against deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#deletion_protection BigtableMaterializedView#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#deletion_protection BigtableMaterializedView#deletion_protection}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the instance to create the materialized view within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#instance BigtableMaterializedView#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#instance BigtableMaterializedView#instance}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#timeouts BigtableMaterializedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#timeouts BigtableMaterializedView#timeouts}
 
 ---
 
@@ -698,7 +698,7 @@ The construct id used in the generated config for the BigtableMaterializedView t
 
 The id of the existing BigtableMaterializedView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,9 +1121,9 @@ BigtableMaterializedViewConfig.builder()
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.query">query</a></code> | <code>java.lang.String</code> | The materialized view's select query. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Set to true to make the MaterializedView protected against deletion. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.instance">instance</a></code> | <code>java.lang.String</code> | The name of the instance to create the materialized view within. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}. |
 | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts">BigtableMaterializedViewTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1208,7 +1208,7 @@ public java.lang.String getMaterializedViewId();
 
 The unique name of the materialized view in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#materialized_view_id BigtableMaterializedView#materialized_view_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#materialized_view_id BigtableMaterializedView#materialized_view_id}
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.lang.String getQuery();
 
 The materialized view's select query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#query BigtableMaterializedView#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#query BigtableMaterializedView#query}
 
 ---
 
@@ -1243,7 +1243,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#deletion_policy BigtableMaterializedView#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#deletion_policy BigtableMaterializedView#deletion_policy}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.Boolean|IResolvable getDeletionProtection();
 
 Set to true to make the MaterializedView protected against deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#deletion_protection BigtableMaterializedView#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#deletion_protection BigtableMaterializedView#deletion_protection}
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#id BigtableMaterializedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1286,7 +1286,7 @@ public java.lang.String getInstance();
 
 The name of the instance to create the materialized view within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#instance BigtableMaterializedView#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#instance BigtableMaterializedView#instance}
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#project BigtableMaterializedView#project}.
 
 ---
 
@@ -1312,7 +1312,7 @@ public BigtableMaterializedViewTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#timeouts BigtableMaterializedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#timeouts BigtableMaterializedView#timeouts}
 
 ---
 
@@ -1334,9 +1334,9 @@ BigtableMaterializedViewTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#create BigtableMaterializedView#create}. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#delete BigtableMaterializedView#delete}. |
-| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#update BigtableMaterializedView#update}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#create BigtableMaterializedView#create}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#delete BigtableMaterializedView#delete}. |
+| <code><a href="#@cdktn/provider-google.bigtableMaterializedView.BigtableMaterializedViewTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#update BigtableMaterializedView#update}. |
 
 ---
 
@@ -1348,7 +1348,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#create BigtableMaterializedView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#create BigtableMaterializedView#create}.
 
 ---
 
@@ -1360,7 +1360,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#delete BigtableMaterializedView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#delete BigtableMaterializedView#delete}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/bigtable_materialized_view#update BigtableMaterializedView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/bigtable_materialized_view#update BigtableMaterializedView#update}.
 
 ---
 

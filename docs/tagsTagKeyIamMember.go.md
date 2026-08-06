@@ -4,7 +4,7 @@
 
 ### TagsTagKeyIamMember <a name="TagsTagKeyIamMember" id="@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMember.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the TagsTagKeyIamMember to imp
 
 The id of the existing TagsTagKeyIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiammem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#expression TagsTagKeyIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#title TagsTagKeyIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#description TagsTagKeyIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#expression TagsTagKeyIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#title TagsTagKeyIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#description TagsTagKeyIamMember#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#expression TagsTagKeyIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#expression TagsTagKeyIamMember#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#title TagsTagKeyIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#title TagsTagKeyIamMember#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#description TagsTagKeyIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#description TagsTagKeyIamMember#description}.
 
 ---
 
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagkeyiammem
 | <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#member TagsTagKeyIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#role TagsTagKeyIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#tag_key TagsTagKeyIamMember#tag_key}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#member TagsTagKeyIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#role TagsTagKeyIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#tag_key TagsTagKeyIamMember#tag_key}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberCondition">TagsTagKeyIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#id TagsTagKeyIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKeyIamMember.TagsTagKeyIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#id TagsTagKeyIamMember#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#member TagsTagKeyIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#member TagsTagKeyIamMember#member}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#role TagsTagKeyIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#role TagsTagKeyIamMember#role}.
 
 ---
 
@@ -1036,7 +1036,7 @@ TagKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#tag_key TagsTagKeyIamMember#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#tag_key TagsTagKeyIamMember#tag_key}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Condition TagsTagKeyIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#condition TagsTagKeyIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#condition TagsTagKeyIamMember#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/tags_tag_key_iam_member#id TagsTagKeyIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/tags_tag_key_iam_member#id TagsTagKeyIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

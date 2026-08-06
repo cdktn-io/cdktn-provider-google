@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineChatEngine <a name="DiscoveryEngineChatEngine" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer"></a>
 
@@ -55,9 +55,9 @@ discoveryEngineChatEngine.DiscoveryEngineChatEngine(
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.location">location</a></code> | <code>str</code> | Location. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.commonConfig">common_config</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfig">DiscoveryEngineChatEngineCommonConfig</a></code> | common_config block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.industryVertical">industry_vertical</a></code> | <code>str</code> | The industry vertical that the chat engine registers. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts">DiscoveryEngineChatEngineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 chat_engine_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#chat_engine_config DiscoveryEngineChatEngine#chat_engine_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#chat_engine_config DiscoveryEngineChatEngine#chat_engine_config}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The collection ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#collection_id DiscoveryEngineChatEngine#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#collection_id DiscoveryEngineChatEngine#collection_id}
 
 ---
 
@@ -150,7 +150,7 @@ The data stores associated with this engine.
 
 Multiple DataStores in the same Collection can be associated here. All listed DataStores must be 'SOLUTION_TYPE_CHAT'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#data_store_ids DiscoveryEngineChatEngine#data_store_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#data_store_ids DiscoveryEngineChatEngine#data_store_ids}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name of the engine. Should be human readable. UTF-8 encoded string with limit of 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#display_name DiscoveryEngineChatEngine#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#display_name DiscoveryEngineChatEngine#display_name}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID to use for chat engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#engine_id DiscoveryEngineChatEngine#engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#engine_id DiscoveryEngineChatEngine#engine_id}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 common_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#common_config DiscoveryEngineChatEngine#common_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#common_config DiscoveryEngineChatEngine#common_config}
 
 ---
 
@@ -207,7 +207,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#deletion_policy DiscoveryEngineChatEngine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#deletion_policy DiscoveryEngineChatEngine#deletion_policy}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -230,7 +230,7 @@ The industry vertical that the chat engine registers.
 
 Vertical on Engine has to match vertical of the DataStore linked to the engine. Default value: "GENERIC" Possible values: ["GENERIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#industry_vertical DiscoveryEngineChatEngine#industry_vertical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#industry_vertical DiscoveryEngineChatEngine#industry_vertical}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}.
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#timeouts DiscoveryEngineChatEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#timeouts DiscoveryEngineChatEngine#timeouts}
 
 ---
 
@@ -656,7 +656,7 @@ def put_chat_engine_config(
 
 agent_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#agent_creation_config DiscoveryEngineChatEngine#agent_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#agent_creation_config DiscoveryEngineChatEngine#agent_creation_config}
 
 ---
 
@@ -672,7 +672,7 @@ to EngineService.CreateEngine. It means they cannot be retrieved using
 EngineService.GetEngine or EngineService.ListEngines API after engine
 creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#allow_cross_region DiscoveryEngineChatEngine#allow_cross_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#allow_cross_region DiscoveryEngineChatEngine#allow_cross_region}
 
 ---
 
@@ -685,7 +685,7 @@ The resource name of an existing Dialogflow agent to link to this Chat Engine.
 Format: 'projects/<Project_ID>/locations/<Location_ID>/agents/<Agent_ID>'.
 Exactly one of 'agent_creation_config' or 'dialogflow_agent_to_link' must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#dialogflow_agent_to_link DiscoveryEngineChatEngine#dialogflow_agent_to_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#dialogflow_agent_to_link DiscoveryEngineChatEngine#dialogflow_agent_to_link}
 
 ---
 
@@ -705,7 +705,7 @@ The name of the company, business or entity that is associated with the engine.
 
 Setting this may help improve LLM related features.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
 
 ---
 
@@ -723,7 +723,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}.
 
 ---
 
@@ -731,7 +731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}.
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}.
 
 ---
 
@@ -893,7 +893,7 @@ The construct id used in the generated config for the DiscoveryEngineChatEngine 
 
 The id of the existing DiscoveryEngineChatEngine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1430,7 +1430,7 @@ agent_creation_config: DiscoveryEngineChatEngineChatEngineConfigAgentCreationCon
 
 agent_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#agent_creation_config DiscoveryEngineChatEngine#agent_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#agent_creation_config DiscoveryEngineChatEngine#agent_creation_config}
 
 ---
 
@@ -1450,7 +1450,7 @@ to EngineService.CreateEngine. It means they cannot be retrieved using
 EngineService.GetEngine or EngineService.ListEngines API after engine
 creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#allow_cross_region DiscoveryEngineChatEngine#allow_cross_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#allow_cross_region DiscoveryEngineChatEngine#allow_cross_region}
 
 ---
 
@@ -1467,7 +1467,7 @@ The resource name of an existing Dialogflow agent to link to this Chat Engine.
 Format: 'projects/<Project_ID>/locations/<Location_ID>/agents/<Agent_ID>'.
 Exactly one of 'agent_creation_config' or 'dialogflow_agent_to_link' must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#dialogflow_agent_to_link DiscoveryEngineChatEngine#dialogflow_agent_to_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#dialogflow_agent_to_link DiscoveryEngineChatEngine#dialogflow_agent_to_link}
 
 ---
 
@@ -1509,7 +1509,7 @@ The default language of the agent as a language tag.
 
 See [Language Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language codes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#default_language_code DiscoveryEngineChatEngine#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#default_language_code DiscoveryEngineChatEngine#default_language_code}
 
 ---
 
@@ -1523,7 +1523,7 @@ time_zone: str
 
 The time zone of the agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#time_zone DiscoveryEngineChatEngine#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#time_zone DiscoveryEngineChatEngine#time_zone}
 
 ---
 
@@ -1539,7 +1539,7 @@ Name of the company, organization or other entity that the agent represents.
 
 Used for knowledge connector LLM prompt and for knowledge search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#business DiscoveryEngineChatEngine#business}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#business DiscoveryEngineChatEngine#business}
 
 ---
 
@@ -1553,7 +1553,7 @@ location: str
 
 Agent location for Agent creation, currently supported values: global/us/eu, it needs to be the same region as the Chat Engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
 
 ---
 
@@ -1600,7 +1600,7 @@ The name of the company, business or entity that is associated with the engine.
 
 Setting this may help improve LLM related features.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
 
 ---
 
@@ -1653,9 +1653,9 @@ discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig(
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.location">location</a></code> | <code>str</code> | Location. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.commonConfig">common_config</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfig">DiscoveryEngineChatEngineCommonConfig</a></code> | common_config block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.industryVertical">industry_vertical</a></code> | <code>str</code> | The industry vertical that the chat engine registers. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts">DiscoveryEngineChatEngineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1740,7 +1740,7 @@ chat_engine_config: DiscoveryEngineChatEngineChatEngineConfig
 
 chat_engine_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#chat_engine_config DiscoveryEngineChatEngine#chat_engine_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#chat_engine_config DiscoveryEngineChatEngine#chat_engine_config}
 
 ---
 
@@ -1754,7 +1754,7 @@ collection_id: str
 
 The collection ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#collection_id DiscoveryEngineChatEngine#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#collection_id DiscoveryEngineChatEngine#collection_id}
 
 ---
 
@@ -1770,7 +1770,7 @@ The data stores associated with this engine.
 
 Multiple DataStores in the same Collection can be associated here. All listed DataStores must be 'SOLUTION_TYPE_CHAT'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#data_store_ids DiscoveryEngineChatEngine#data_store_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#data_store_ids DiscoveryEngineChatEngine#data_store_ids}
 
 ---
 
@@ -1784,7 +1784,7 @@ display_name: str
 
 The display name of the engine. Should be human readable. UTF-8 encoded string with limit of 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#display_name DiscoveryEngineChatEngine#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#display_name DiscoveryEngineChatEngine#display_name}
 
 ---
 
@@ -1798,7 +1798,7 @@ engine_id: str
 
 The ID to use for chat engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#engine_id DiscoveryEngineChatEngine#engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#engine_id DiscoveryEngineChatEngine#engine_id}
 
 ---
 
@@ -1812,7 +1812,7 @@ location: str
 
 Location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
 
 ---
 
@@ -1826,7 +1826,7 @@ common_config: DiscoveryEngineChatEngineCommonConfig
 
 common_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#common_config DiscoveryEngineChatEngine#common_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#common_config DiscoveryEngineChatEngine#common_config}
 
 ---
 
@@ -1847,7 +1847,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#deletion_policy DiscoveryEngineChatEngine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#deletion_policy DiscoveryEngineChatEngine#deletion_policy}
 
 ---
 
@@ -1859,7 +1859,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#id DiscoveryEngineChatEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1878,7 +1878,7 @@ The industry vertical that the chat engine registers.
 
 Vertical on Engine has to match vertical of the DataStore linked to the engine. Default value: "GENERIC" Possible values: ["GENERIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#industry_vertical DiscoveryEngineChatEngine#industry_vertical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#industry_vertical DiscoveryEngineChatEngine#industry_vertical}
 
 ---
 
@@ -1890,7 +1890,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#project DiscoveryEngineChatEngine#project}.
 
 ---
 
@@ -1904,7 +1904,7 @@ timeouts: DiscoveryEngineChatEngineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#timeouts DiscoveryEngineChatEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#timeouts DiscoveryEngineChatEngine#timeouts}
 
 ---
 
@@ -1926,9 +1926,9 @@ discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}. |
 
 ---
 
@@ -1940,7 +1940,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#create DiscoveryEngineChatEngine#create}.
 
 ---
 
@@ -1952,7 +1952,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#delete DiscoveryEngineChatEngine#delete}.
 
 ---
 
@@ -1964,7 +1964,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#update DiscoveryEngineChatEngine#update}.
 
 ---
 
@@ -2597,7 +2597,7 @@ The default language of the agent as a language tag.
 
 See [Language Support](https://cloud.google.com/dialogflow/docs/reference/language) for a list of the currently supported language codes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#default_language_code DiscoveryEngineChatEngine#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#default_language_code DiscoveryEngineChatEngine#default_language_code}
 
 ---
 
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The time zone of the agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#time_zone DiscoveryEngineChatEngine#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#time_zone DiscoveryEngineChatEngine#time_zone}
 
 ---
 
@@ -2619,7 +2619,7 @@ Name of the company, organization or other entity that the agent represents.
 
 Used for knowledge connector LLM prompt and for knowledge search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#business DiscoveryEngineChatEngine#business}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#business DiscoveryEngineChatEngine#business}
 
 ---
 
@@ -2629,7 +2629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Agent location for Agent creation, currently supported values: global/us/eu, it needs to be the same region as the Chat Engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/discovery_engine_chat_engine#location DiscoveryEngineChatEngine#location}
 
 ---
 
