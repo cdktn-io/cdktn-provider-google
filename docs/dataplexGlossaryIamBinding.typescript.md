@@ -4,7 +4,7 @@
 
 ### DataplexGlossaryIamBinding <a name="DataplexGlossaryIamBinding" id="@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding google_dataplex_glossary_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding google_dataplex_glossary_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataplexGlossaryIamBinding
 
 The id of the existing DataplexGlossaryIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const dataplexGlossaryIamBindingCondition: dataplexGlossaryIamBinding.DataplexGl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#expression DataplexGlossaryIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#title DataplexGlossaryIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#description DataplexGlossaryIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#expression DataplexGlossaryIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#title DataplexGlossaryIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#description DataplexGlossaryIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#expression DataplexGlossaryIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#expression DataplexGlossaryIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#title DataplexGlossaryIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#title DataplexGlossaryIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#description DataplexGlossaryIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#description DataplexGlossaryIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const dataplexGlossaryIamBindingConfig: dataplexGlossaryIamBinding.DataplexGloss
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.glossaryId">glossaryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#glossary_id DataplexGlossaryIamBinding#glossary_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#members DataplexGlossaryIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#role DataplexGlossaryIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.glossaryId">glossaryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#glossary_id DataplexGlossaryIamBinding#glossary_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#members DataplexGlossaryIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#role DataplexGlossaryIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingCondition">DataplexGlossaryIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#id DataplexGlossaryIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#location DataplexGlossaryIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#project DataplexGlossaryIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#id DataplexGlossaryIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#location DataplexGlossaryIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossaryIamBinding.DataplexGlossaryIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#project DataplexGlossaryIamBinding#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly glossaryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#glossary_id DataplexGlossaryIamBinding#glossary_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#glossary_id DataplexGlossaryIamBinding#glossary_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#members DataplexGlossaryIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#members DataplexGlossaryIamBinding#members}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#role DataplexGlossaryIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#role DataplexGlossaryIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: DataplexGlossaryIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#condition DataplexGlossaryIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#condition DataplexGlossaryIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#id DataplexGlossaryIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#id DataplexGlossaryIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#location DataplexGlossaryIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#location DataplexGlossaryIamBinding#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/dataplex_glossary_iam_binding#project DataplexGlossaryIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_glossary_iam_binding#project DataplexGlossaryIamBinding#project}.
 
 ---
 

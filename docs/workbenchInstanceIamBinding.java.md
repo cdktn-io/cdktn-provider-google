@@ -4,7 +4,7 @@
 
 ### WorkbenchInstanceIamBinding <a name="WorkbenchInstanceIamBinding" id="@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding google_workbench_instance_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding google_workbench_instance_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer"></a>
 
@@ -40,13 +40,13 @@ WorkbenchInstanceIamBinding.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition">WorkbenchInstanceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#condition WorkbenchInstanceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#condition WorkbenchInstanceIamBinding#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the WorkbenchInstanceIamBindin
 
 The id of the existing WorkbenchInstanceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ WorkbenchInstanceIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#expression WorkbenchInstanceIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#title WorkbenchInstanceIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#description WorkbenchInstanceIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#expression WorkbenchInstanceIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#title WorkbenchInstanceIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#description WorkbenchInstanceIamBinding#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#expression WorkbenchInstanceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#expression WorkbenchInstanceIamBinding#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#title WorkbenchInstanceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#title WorkbenchInstanceIamBinding#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#description WorkbenchInstanceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#description WorkbenchInstanceIamBinding#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ WorkbenchInstanceIamBindingConfig.builder()
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingCondition">WorkbenchInstanceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.workbenchInstanceIamBinding.WorkbenchInstanceIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#members WorkbenchInstanceIamBinding#members}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#name WorkbenchInstanceIamBinding#name}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#role WorkbenchInstanceIamBinding#role}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public WorkbenchInstanceIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#condition WorkbenchInstanceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#condition WorkbenchInstanceIamBinding#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#id WorkbenchInstanceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#location WorkbenchInstanceIamBinding#location}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/workbench_instance_iam_binding#project WorkbenchInstanceIamBinding#project}.
 
 ---
 

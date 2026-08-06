@@ -4,7 +4,7 @@
 
 ### ChronicleDataExport <a name="ChronicleDataExport" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export google_chronicle_data_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export google_chronicle_data_export}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataExport.ChronicleDataExport.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ChronicleDataExport to imp
 
 The id of the existing ChronicleDataExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,11 +1116,11 @@ new ChronicleDataExportConfig {
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.instance">Instance</a></code> | <code>string</code> | The unique identifier for the Chronicle instance. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.location">Location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.startTime">StartTime</a></code> | <code>string</code> | Start, inclusive time from the range. |
-| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#id ChronicleDataExport#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#id ChronicleDataExport#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.includeLogTypes">IncludeLogTypes</a></code> | <code>string[]</code> | The specific log types to include in the Data Export request. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.ingestionLabels">IngestionLabels</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportIngestionLabels">ChronicleDataExportIngestionLabels</a>[]</code> | ingestion_labels block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.namespaces">Namespaces</a></code> | <code>string[]</code> | The namespaces used to filter the export. |
-| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#project ChronicleDataExport#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#project ChronicleDataExport#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts">ChronicleDataExportTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1205,7 +1205,7 @@ public string EndTime { get; set; }
 
 Last, exclusive time from the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#end_time ChronicleDataExport#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#end_time ChronicleDataExport#end_time}
 
 ---
 
@@ -1219,7 +1219,7 @@ public string GcsBucket { get; set; }
 
 Link to the destination Cloud Storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#gcs_bucket ChronicleDataExport#gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#gcs_bucket ChronicleDataExport#gcs_bucket}
 
 ---
 
@@ -1233,7 +1233,7 @@ public string Instance { get; set; }
 
 The unique identifier for the Chronicle instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#instance ChronicleDataExport#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#instance ChronicleDataExport#instance}
 
 ---
 
@@ -1247,7 +1247,7 @@ public string Location { get; set; }
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#location ChronicleDataExport#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#location ChronicleDataExport#location}
 
 ---
 
@@ -1261,7 +1261,7 @@ public string StartTime { get; set; }
 
 Start, inclusive time from the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#start_time ChronicleDataExport#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#start_time ChronicleDataExport#start_time}
 
 ---
 
@@ -1273,7 +1273,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#id ChronicleDataExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#id ChronicleDataExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1290,7 +1290,7 @@ public string[] IncludeLogTypes { get; set; }
 
 The specific log types to include in the Data Export request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#include_log_types ChronicleDataExport#include_log_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#include_log_types ChronicleDataExport#include_log_types}
 
 ---
 
@@ -1304,7 +1304,7 @@ public IResolvable|ChronicleDataExportIngestionLabels[] IngestionLabels { get; s
 
 ingestion_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#ingestion_labels ChronicleDataExport#ingestion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#ingestion_labels ChronicleDataExport#ingestion_labels}
 
 ---
 
@@ -1318,7 +1318,7 @@ public string[] Namespaces { get; set; }
 
 The namespaces used to filter the export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#namespaces ChronicleDataExport#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#namespaces ChronicleDataExport#namespaces}
 
 ---
 
@@ -1330,7 +1330,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#project ChronicleDataExport#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#project ChronicleDataExport#project}.
 
 ---
 
@@ -1344,7 +1344,7 @@ public ChronicleDataExportTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#timeouts ChronicleDataExport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#timeouts ChronicleDataExport#timeouts}
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Key { get; set; }
 
 The key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#key ChronicleDataExport#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#key ChronicleDataExport#key}
 
 ---
 
@@ -1407,7 +1407,7 @@ public string Value { get; set; }
 
 The value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#value ChronicleDataExport#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#value ChronicleDataExport#value}
 
 ---
 
@@ -1428,8 +1428,8 @@ new ChronicleDataExportTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#create ChronicleDataExport#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#delete ChronicleDataExport#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#create ChronicleDataExport#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataExport.ChronicleDataExportTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#delete ChronicleDataExport#delete}. |
 
 ---
 
@@ -1441,7 +1441,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#create ChronicleDataExport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#create ChronicleDataExport#create}.
 
 ---
 
@@ -1453,7 +1453,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/chronicle_data_export#delete ChronicleDataExport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/chronicle_data_export#delete ChronicleDataExport#delete}.
 
 ---
 

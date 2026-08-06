@@ -4,7 +4,7 @@
 
 ### NetworkServicesMesh <a name="NetworkServicesMesh" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh google_network_services_mesh}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh google_network_services_mesh}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer"></a>
 
@@ -45,11 +45,11 @@ NetworkServicesMesh.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Short name of the Mesh resource to be created. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.interceptionPort">interceptionPort</a></code> | <code>java.lang.Number</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Set of label tags associated with the Mesh resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Location (region) of the Mesh resource to be created. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts">NetworkServicesMeshTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Short name of the Mesh resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
 
 ---
 
@@ -137,7 +137,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +174,7 @@ be redirected to this port regardless of its actual ip:port destination. If unse
 '15001' is used as the interception port. This will is applicable only for sidecar proxy
 deployments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
 
 ---
 
@@ -187,7 +187,7 @@ Set of label tags associated with the Mesh resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
 
 ---
 
@@ -199,7 +199,7 @@ Location (region) of the Mesh resource to be created.
 
 Only the value 'global' is currently allowed; defaults to 'global' if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
 
 ---
 
@@ -735,7 +735,7 @@ The construct id used in the generated config for the NetworkServicesMesh to imp
 
 The id of the existing NetworkServicesMesh that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1224,11 +1224,11 @@ NetworkServicesMeshConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.name">name</a></code> | <code>java.lang.String</code> | Short name of the Mesh resource to be created. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.description">description</a></code> | <code>java.lang.String</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.interceptionPort">interceptionPort</a></code> | <code>java.lang.Number</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Set of label tags associated with the Mesh resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.location">location</a></code> | <code>java.lang.String</code> | Location (region) of the Mesh resource to be created. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts">NetworkServicesMeshTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1313,7 +1313,7 @@ public java.lang.String getName();
 
 Short name of the Mesh resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
 
 ---
 
@@ -1334,7 +1334,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
 
 ---
 
@@ -1348,7 +1348,7 @@ public java.lang.String getDescription();
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
 
 ---
 
@@ -1360,7 +1360,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1383,7 +1383,7 @@ be redirected to this port regardless of its actual ip:port destination. If unse
 '15001' is used as the interception port. This will is applicable only for sidecar proxy
 deployments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
 
 ---
 
@@ -1400,7 +1400,7 @@ Set of label tags associated with the Mesh resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
 
 ---
 
@@ -1416,7 +1416,7 @@ Location (region) of the Mesh resource to be created.
 
 Only the value 'global' is currently allowed; defaults to 'global' if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
 
 ---
 
@@ -1428,7 +1428,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public NetworkServicesMeshTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
 
 ---
 
@@ -1464,9 +1464,9 @@ NetworkServicesMeshTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}. |
 
 ---
 
@@ -1478,7 +1478,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}.
 
 ---
 
@@ -1490,7 +1490,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}.
 
 ---
 
@@ -1502,7 +1502,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.42.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}.
 
 ---
 
