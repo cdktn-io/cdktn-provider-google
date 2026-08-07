@@ -740,7 +740,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.moveFromId.parameter.id"></a>
 
@@ -3979,7 +3979,9 @@ plain_text: str
 
 ---
 
-##### `plain_text_wo`<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+##### ~~`plain_text_wo`~~<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 plain_text_wo: str
@@ -5433,7 +5435,9 @@ plain_text: str
 
 ---
 
-##### `plain_text_wo`<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+##### ~~`plain_text_wo`~~<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 plain_text_wo: str
@@ -6889,7 +6893,9 @@ plain_text: str
 
 ---
 
-##### `plain_text_wo`<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWo"></a>
+##### ~~`plain_text_wo`~~<sup>Required</sup> <a name="plain_text_wo" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcClientSecretValueOutputReference.property.plainTextWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 plain_text_wo: str

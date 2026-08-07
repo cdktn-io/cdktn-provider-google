@@ -376,7 +376,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.alloydbCluster.AlloydbCluster.moveFromId.parameter.id"></a>
 
@@ -9552,7 +9552,9 @@ public string Password { get; }
 
 ---
 
-##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-google.alloydbCluster.AlloydbClusterInitialUserOutputReference.property.passwordWo"></a>
+##### ~~`PasswordWo`~~<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-google.alloydbCluster.AlloydbClusterInitialUserOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string PasswordWo { get; }
