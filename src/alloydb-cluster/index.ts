@@ -2263,6 +2263,9 @@ export class AlloydbClusterInitialUserOutputReference extends cdktn.ComplexObjec
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }

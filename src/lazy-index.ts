@@ -1798,5 +1798,12 @@ Object.defineProperty(exports, 'dataGoogleVpcAccessConnector', { get: function (
 Object.defineProperty(exports, 'dataGoogleWorkbenchInstanceIamPolicy', { get: function () { return require('./data-google-workbench-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleWorkstationsWorkstationConfigIamPolicy', { get: function () { return require('./data-google-workstations-workstation-config-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleWorkstationsWorkstationIamPolicy', { get: function () { return require('./data-google-workstations-workstation-iam-policy'); } });
+Object.defineProperty(exports, 'ephemeralGoogleClientConfig', { get: function () { return require('./ephemeral-google-client-config'); } });
+Object.defineProperty(exports, 'ephemeralGoogleSecretManagerSecretVersion', { get: function () { return require('./ephemeral-google-secret-manager-secret-version'); } });
+Object.defineProperty(exports, 'ephemeralGoogleServiceAccountAccessToken', { get: function () { return require('./ephemeral-google-service-account-access-token'); } });
+Object.defineProperty(exports, 'ephemeralGoogleServiceAccountIdToken', { get: function () { return require('./ephemeral-google-service-account-id-token'); } });
+Object.defineProperty(exports, 'ephemeralGoogleServiceAccountJwt', { get: function () { return require('./ephemeral-google-service-account-jwt'); } });
+Object.defineProperty(exports, 'ephemeralGoogleServiceAccountKey', { get: function () { return require('./ephemeral-google-service-account-key'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
+Object.defineProperty(exports, 'providerFunctions', { get: function () { return require('./provider-functions'); } });
 

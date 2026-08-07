@@ -331,6 +331,9 @@ export class IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretV
 
   // plain_text_wo - computed: false, optional: true, required: false
   private _plainTextWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get plainTextWo() {
     return this.getStringAttribute('plain_text_wo');
   }
@@ -888,6 +891,9 @@ export class IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValu
 
   // plain_text_wo - computed: false, optional: true, required: false
   private _plainTextWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get plainTextWo() {
     return this.getStringAttribute('plain_text_wo');
   }
@@ -1459,6 +1465,9 @@ export class IamWorkforcePoolProviderOidcClientSecretValueOutputReference extend
 
   // plain_text_wo - computed: false, optional: true, required: false
   private _plainTextWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get plainTextWo() {
     return this.getStringAttribute('plain_text_wo');
   }

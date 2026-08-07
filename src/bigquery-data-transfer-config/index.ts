@@ -605,6 +605,9 @@ export class BigqueryDataTransferConfigSensitiveParamsOutputReference extends cd
 
   // secret_access_key_wo - computed: false, optional: true, required: false
   private _secretAccessKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get secretAccessKeyWo() {
     return this.getStringAttribute('secret_access_key_wo');
   }

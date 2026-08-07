@@ -941,6 +941,7 @@ export function googleProviderExternalCredentialsToHclTerraform(struct?: GoogleP
 }
 
 
+import { GoogleProviderFunctions } from '../provider-functions/index';
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs google}
 */
@@ -4458,6 +4459,21 @@ export class GoogleProvider extends cdktn.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get externalCredentialsInput() {
     return this._externalCredentials;
+  }
+
+  // ==========================
+  // PROVIDER-DEFINED FUNCTIONS
+  // ==========================
+  private _functions?: GoogleProviderFunctions;
+
+  /**
+  * Provider-defined functions of the google provider.
+  */
+  public get functions(): GoogleProviderFunctions {
+    if (!this._functions) {
+      this._functions = new GoogleProviderFunctions(this.terraformResourceType);
+    }
+    return this._functions;
   }
 
   // =========

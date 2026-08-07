@@ -1271,6 +1271,9 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
 
   // shared_secret_wo - computed: false, optional: true, required: false
   private _sharedSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get sharedSecretWo() {
     return this.getStringAttribute('shared_secret_wo');
   }
@@ -1430,7 +1433,7 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
       remote_traffic_selector: cdktn.listMapper(cdktn.stringToTerraform, false)(this._remoteTrafficSelector),
       router: cdktn.stringToTerraform(this._router),
       shared_secret: cdktn.stringToTerraform(this._sharedSecret),
-      shared_secret_wo: cdktn.stringToTerraform(this._sharedSecretWo),
+      shared_secret_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._sharedSecretWo)),
       shared_secret_wo_version: cdktn.stringToTerraform(this._sharedSecretWoVersion),
       target_vpn_gateway: cdktn.stringToTerraform(this._targetVpnGateway),
       vpn_gateway: cdktn.stringToTerraform(this._vpnGateway),
@@ -1540,7 +1543,7 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       shared_secret_wo: {
-        value: cdktn.stringToHclTerraform(this._sharedSecretWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._sharedSecretWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
