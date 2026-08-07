@@ -393,6 +393,9 @@ export class AlloydbUser extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -476,7 +479,7 @@ export class AlloydbUser extends cdktn.TerraformResource {
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       id: cdktn.stringToTerraform(this._id),
       password: cdktn.stringToTerraform(this._password),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       password_wo_version: cdktn.stringToTerraform(this._passwordWoVersion),
       user_id: cdktn.stringToTerraform(this._userId),
       user_type: cdktn.stringToTerraform(this._userType),
@@ -517,7 +520,7 @@ export class AlloydbUser extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

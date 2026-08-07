@@ -340,6 +340,9 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
 
   // auth_token_wo - computed: false, optional: true, required: false
   private _authTokenWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get authTokenWo() {
     return this.getStringAttribute('auth_token_wo');
   }
@@ -388,6 +391,9 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -436,6 +442,9 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
 
   // service_key_wo - computed: false, optional: true, required: false
   private _serviceKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get serviceKeyWo() {
     return this.getStringAttribute('service_key_wo');
   }

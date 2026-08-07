@@ -424,6 +424,9 @@ export class ComputeRegionSslCertificate extends cdktn.TerraformResource {
 
   // private_key_wo - computed: false, optional: true, required: false
   private _privateKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get privateKeyWo() {
     return this.getStringAttribute('private_key_wo');
   }
@@ -520,7 +523,7 @@ export class ComputeRegionSslCertificate extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       name_prefix: cdktn.stringToTerraform(this._namePrefix),
       private_key: cdktn.stringToTerraform(this._privateKey),
-      private_key_wo: cdktn.stringToTerraform(this._privateKeyWo),
+      private_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._privateKeyWo)),
       private_key_wo_version: cdktn.stringToTerraform(this._privateKeyWoVersion),
       project: cdktn.stringToTerraform(this._project),
       region: cdktn.stringToTerraform(this._region),
@@ -573,7 +576,7 @@ export class ComputeRegionSslCertificate extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       private_key_wo: {
-        value: cdktn.stringToHclTerraform(this._privateKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._privateKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

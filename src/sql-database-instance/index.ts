@@ -7907,6 +7907,9 @@ export class SqlDatabaseInstance extends cdktn.TerraformResource {
 
   // root_password_wo - computed: false, optional: true, required: false
   private _rootPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get rootPasswordWo() {
     return this.getStringAttribute('root_password_wo');
   }
@@ -8105,7 +8108,7 @@ export class SqlDatabaseInstance extends cdktn.TerraformResource {
       region: cdktn.stringToTerraform(this._region),
       replica_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._replicaNames),
       root_password: cdktn.stringToTerraform(this._rootPassword),
-      root_password_wo: cdktn.stringToTerraform(this._rootPasswordWo),
+      root_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._rootPasswordWo)),
       root_password_wo_version: cdktn.stringToTerraform(this._rootPasswordWoVersion),
       switch_transaction_logs_to_cloud_storage_enabled: cdktn.booleanToTerraform(this._switchTransactionLogsToCloudStorageEnabled),
       clone: sqlDatabaseInstanceCloneToTerraform(this._clone.internalValue),
@@ -8229,7 +8232,7 @@ export class SqlDatabaseInstance extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       root_password_wo: {
-        value: cdktn.stringToHclTerraform(this._rootPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._rootPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1708,6 +1708,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.functions">functions</a></code> | <code>@cdktn/provider-google.providerFunctions.GoogleProviderFunctions</code> | Provider-defined functions of the google provider. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.accessApprovalCustomEndpointInput">accessApprovalCustomEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.accessContextManagerCustomEndpointInput">accessContextManagerCustomEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.accessTokenInput">accessTokenInput</a></code> | <code>string</code> | *No description.* |
@@ -2207,6 +2208,18 @@ public readonly alias: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-google.provider.GoogleProvider.property.functions"></a>
+
+```typescript
+public readonly functions: GoogleProviderFunctions;
+```
+
+- *Type:* @cdktn/provider-google.providerFunctions.GoogleProviderFunctions
+
+Provider-defined functions of the google provider.
 
 ---
 

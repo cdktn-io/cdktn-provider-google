@@ -349,7 +349,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel.moveFromId.parameter.id"></a>
 
@@ -2044,7 +2044,9 @@ func AuthToken() *string
 
 ---
 
-##### `AuthTokenWo`<sup>Required</sup> <a name="AuthTokenWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo"></a>
+##### ~~`AuthTokenWo`~~<sup>Required</sup> <a name="AuthTokenWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func AuthTokenWo() *string
@@ -2074,7 +2076,9 @@ func Password() *string
 
 ---
 
-##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo"></a>
+##### ~~`PasswordWo`~~<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func PasswordWo() *string
@@ -2104,7 +2108,9 @@ func ServiceKey() *string
 
 ---
 
-##### `ServiceKeyWo`<sup>Required</sup> <a name="ServiceKeyWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo"></a>
+##### ~~`ServiceKeyWo`~~<sup>Required</sup> <a name="ServiceKeyWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func ServiceKeyWo() *string

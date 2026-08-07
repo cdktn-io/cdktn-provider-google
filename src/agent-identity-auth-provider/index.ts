@@ -523,6 +523,9 @@ export class AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauthOutp
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -786,6 +789,9 @@ export class AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauthOutput
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }

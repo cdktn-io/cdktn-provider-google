@@ -1798,5 +1798,12 @@ export * as dataGoogleVpcAccessConnector from './data-google-vpc-access-connecto
 export * as dataGoogleWorkbenchInstanceIamPolicy from './data-google-workbench-instance-iam-policy/index';
 export * as dataGoogleWorkstationsWorkstationConfigIamPolicy from './data-google-workstations-workstation-config-iam-policy/index';
 export * as dataGoogleWorkstationsWorkstationIamPolicy from './data-google-workstations-workstation-iam-policy/index';
+export * as ephemeralGoogleClientConfig from './ephemeral-google-client-config/index';
+export * as ephemeralGoogleSecretManagerSecretVersion from './ephemeral-google-secret-manager-secret-version/index';
+export * as ephemeralGoogleServiceAccountAccessToken from './ephemeral-google-service-account-access-token/index';
+export * as ephemeralGoogleServiceAccountIdToken from './ephemeral-google-service-account-id-token/index';
+export * as ephemeralGoogleServiceAccountJwt from './ephemeral-google-service-account-jwt/index';
+export * as ephemeralGoogleServiceAccountKey from './ephemeral-google-service-account-key/index';
 export * as provider from './provider/index';
+export * as providerFunctions from './provider-functions/index';
 

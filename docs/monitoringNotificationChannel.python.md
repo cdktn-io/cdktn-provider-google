@@ -607,7 +607,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel.moveFromId.parameter.id"></a>
 
@@ -2465,7 +2465,9 @@ auth_token: str
 
 ---
 
-##### `auth_token_wo`<sup>Required</sup> <a name="auth_token_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo"></a>
+##### ~~`auth_token_wo`~~<sup>Required</sup> <a name="auth_token_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 auth_token_wo: str
@@ -2495,7 +2497,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -2525,7 +2529,9 @@ service_key: str
 
 ---
 
-##### `service_key_wo`<sup>Required</sup> <a name="service_key_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo"></a>
+##### ~~`service_key_wo`~~<sup>Required</sup> <a name="service_key_wo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 service_key_wo: str
