@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 serviceaccountiampolicy.NewServiceAccountIamPolicy(scope Construct, id *string, config ServiceAccountIamPolicyConfig) ServiceAccountIamPolicy
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 serviceaccountiampolicy.ServiceAccountIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 serviceaccountiampolicy.ServiceAccountIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ serviceaccountiampolicy.ServiceAccountIamPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 serviceaccountiampolicy.ServiceAccountIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ serviceaccountiampolicy.ServiceAccountIamPolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 serviceaccountiampolicy.ServiceAccountIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/serviceaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/serviceaccountiampolicy"
 
 &serviceaccountiampolicy.ServiceAccountIamPolicyConfig {
 	Connection: interface{},

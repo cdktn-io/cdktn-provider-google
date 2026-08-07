@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 datagooglebigquerydatapolicyv2datapolicyiampolicy.NewDataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy(scope Construct, id *string, config DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig) DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatapolicyv2datapolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebigquerydatapolicyv2datapolicyiampolicy"
 
 &datagooglebigquerydatapolicyv2datapolicyiampolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig {
 	Connection: interface{},

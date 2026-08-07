@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequence(scope Construct, id *string, config GkeHubRolloutSequenceConfig) GkeHubRolloutSequence
 ```
@@ -522,7 +522,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.GkeHubRolloutSequence_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.GkeHubRolloutSequence_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ gkehubrolloutsequence.GkeHubRolloutSequence_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.GkeHubRolloutSequence_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ gkehubrolloutsequence.GkeHubRolloutSequence_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.GkeHubRolloutSequence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1196,10 +1196,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceAutoUpgradeConfig {
-	RolloutCreationScope: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope,
+	RolloutCreationScope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope,
 }
 ```
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope {
 	UpgradeTypes: *[]*string,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceConfig {
 	Connection: interface{},
@@ -1276,16 +1276,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutseq
 	Provisioners: *[]interface{},
 	RolloutSequenceId: *string,
 	Stages: interface{},
-	AutoUpgradeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfig,
+	AutoUpgradeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfig,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
-	IgnoredClustersSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubRolloutSequence.GkeHubRolloutSequenceIgnoredClustersSelector,
+	IgnoredClustersSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubRolloutSequence.GkeHubRolloutSequenceIgnoredClustersSelector,
 	Labels: *map[string]*string,
 	MinControlPlaneVersion: *string,
 	MinNodeVersion: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts,
 }
 ```
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceIgnoredClustersSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceIgnoredClustersSelector {
 	LabelSelector: *string,
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceOperationalState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceOperationalState {
 
@@ -1628,11 +1628,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutseq
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceStages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceStages {
 	FleetProjects: *[]*string,
-	ClusterSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesClusterSelector,
+	ClusterSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesClusterSelector,
 	SoakDuration: *string,
 }
 ```
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesClusterSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceStagesClusterSelector {
 	LabelSelector: *string,
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 &gkehubrolloutsequence.GkeHubRolloutSequenceTimeouts {
 	Create: *string,
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceAutoUpgradeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubRolloutSequenceAutoUpgradeConfigOutputReference
 ```
@@ -2081,7 +2081,7 @@ func InternalValue() GkeHubRolloutSequenceAutoUpgradeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScopeOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() GkeHubRolloutSequenceAutoUpgradeConfigRolloutCreationScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceIgnoredClustersSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceIgnoredClustersSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubRolloutSequenceIgnoredClustersSelectorOutputReference
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() GkeHubRolloutSequenceIgnoredClustersSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceOperationalStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceOperationalStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubRolloutSequenceOperationalStateList
 ```
@@ -2779,7 +2779,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceOperationalStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceOperationalStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubRolloutSequenceOperationalStateOutputReference
 ```
@@ -3057,7 +3057,7 @@ func InternalValue() GkeHubRolloutSequenceOperationalState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesClusterSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceStagesClusterSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubRolloutSequenceStagesClusterSelectorOutputReference
 ```
@@ -3328,7 +3328,7 @@ func InternalValue() GkeHubRolloutSequenceStagesClusterSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeHubRolloutSequenceStagesList
 ```
@@ -3488,7 +3488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeHubRolloutSequenceStagesOutputReference
 ```
@@ -3848,7 +3848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubRolloutSequence.GkeHubRolloutSequenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubrolloutsequence"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/gkehubrolloutsequence"
 
 gkehubrolloutsequence.NewGkeHubRolloutSequenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubRolloutSequenceTimeoutsOutputReference
 ```

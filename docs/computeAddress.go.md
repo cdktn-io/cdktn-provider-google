@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeAddress.ComputeAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.NewComputeAddress(scope Construct, id *string, config ComputeAddressConfig) ComputeAddress
 ```
@@ -532,7 +532,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeAddress.ComputeAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.ComputeAddress_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeAddress.ComputeAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.ComputeAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ computeaddress.ComputeAddress_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeAddress.ComputeAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.ComputeAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ computeaddress.ComputeAddress_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeAddress.ComputeAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.ComputeAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1294,7 +1294,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeAddress.ComputeAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 &computeaddress.ComputeAddressConfig {
 	Connection: interface{},
@@ -1321,7 +1321,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
 	Purpose: *string,
 	Region: *string,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeAddress.ComputeAddressTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeAddress.ComputeAddressTimeouts,
 }
 ```
 
@@ -1746,7 +1746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeAddress.ComputeAddressTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 &computeaddress.ComputeAddressTimeouts {
 	Create: *string,
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeAddress.ComputeAddressTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeaddress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeaddress"
 
 computeaddress.NewComputeAddressTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeAddressTimeoutsOutputReference
 ```

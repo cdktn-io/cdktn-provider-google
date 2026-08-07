@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleclientconfig"
 
 ephemeralgoogleclientconfig.NewEphemeralGoogleClientConfig(scope Construct, id *string, config EphemeralGoogleClientConfigConfig) EphemeralGoogleClientConfig
 ```
@@ -295,7 +295,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleclientconfig"
 
 ephemeralgoogleclientconfig.EphemeralGoogleClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleclientconfig"
 
 ephemeralgoogleclientconfig.EphemeralGoogleClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ ephemeralgoogleclientconfig.EphemeralGoogleClientConfig_IsTerraformElement(x int
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleclientconfig"
 
 ephemeralgoogleclientconfig.EphemeralGoogleClientConfig_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleclientconfig"
 
 &ephemeralgoogleclientconfig.EphemeralGoogleClientConfigConfig {
 	Count: interface{},

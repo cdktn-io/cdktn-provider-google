@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.NewApigeeSpace(scope Construct, id *string, config ApigeeSpaceConfig) ApigeeSpace
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.ApigeeSpace_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.ApigeeSpace_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apigeespace.ApigeeSpace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.ApigeeSpace_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apigeespace.ApigeeSpace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.ApigeeSpace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 &apigeespace.ApigeeSpaceConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
 	SpaceId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeSpace.ApigeeSpaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeSpace.ApigeeSpaceTimeouts,
 }
 ```
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 &apigeespace.ApigeeSpaceTimeouts {
 	Create: *string,
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeespace"
 
 apigeespace.NewApigeeSpaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeSpaceTimeoutsOutputReference
 ```

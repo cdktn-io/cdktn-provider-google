@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.NewWorkstationsWorkstationConfigIamBinding(scope Construct, id *string, config WorkstationsWorkstationConfigIamBindingConfig) WorkstationsWorkstationConfigIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 &workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBindingCondition {
 	Expression: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 &workstationsworkstationconfigiambinding.WorkstationsWorkstationConfigIamBindingConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationswork
 	Role: *string,
 	WorkstationClusterId: *string,
 	WorkstationConfigId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfigIamBinding.WorkstationsWorkstationConfigIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/workstationsworkstationconfigiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiambinding"
 
 workstationsworkstationconfigiambinding.NewWorkstationsWorkstationConfigIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigIamBindingConditionOutputReference
 ```

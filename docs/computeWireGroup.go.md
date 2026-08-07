@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroup(scope Construct, id *string, config ComputeWireGroupConfig) ComputeWireGroup
 ```
@@ -495,7 +495,7 @@ func ResetWireProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.ComputeWireGroup_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.ComputeWireGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ computewiregroup.ComputeWireGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.ComputeWireGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ computewiregroup.ComputeWireGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.ComputeWireGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupConfig {
 	Connection: interface{},
@@ -1055,8 +1055,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 	Endpoints: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeWireGroup.ComputeWireGroupTimeouts,
-	WireProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeWireGroup.ComputeWireGroupWireProperties,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeWireGroup.ComputeWireGroupTimeouts,
+	WireProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeWireGroup.ComputeWireGroupWireProperties,
 }
 ```
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupEndpoints {
 	Endpoint: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupEndpointsInterconnects {
 	InterconnectName: *string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupTimeouts {
 	Create: *string,
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupTopology {
 
@@ -1494,7 +1494,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupTopologyEndpoints {
 
@@ -1507,7 +1507,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWireProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupWireProperties {
 	BandwidthAllocation: *string,
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWires.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupWires {
 
@@ -1592,7 +1592,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupWiresEndpoints {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWireProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 &computewiregroup.ComputeWireGroupWiresWireProperties {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupEndpointsInterconnectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupEndpointsInterconnectsList
 ```
@@ -1780,7 +1780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupEndpointsInterconnectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupEndpointsInterconnectsOutputReference
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupEndpointsList
 ```
@@ -2287,7 +2287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupEndpointsOutputReference
 ```
@@ -2618,7 +2618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeWireGroupTimeoutsOutputReference
 ```
@@ -2954,7 +2954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupTopologyEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupTopologyEndpointsList
 ```
@@ -3103,7 +3103,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupTopologyEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupTopologyEndpointsOutputReference
 ```
@@ -3392,7 +3392,7 @@ func InternalValue() ComputeWireGroupTopologyEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupTopologyList
 ```
@@ -3541,7 +3541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupTopologyOutputReference
 ```
@@ -3819,7 +3819,7 @@ func InternalValue() ComputeWireGroupTopology
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWirePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeWireGroupWirePropertiesOutputReference
 ```
@@ -4148,7 +4148,7 @@ func InternalValue() ComputeWireGroupWireProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupWiresEndpointsList
 ```
@@ -4297,7 +4297,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupWiresEndpointsOutputReference
 ```
@@ -4586,7 +4586,7 @@ func InternalValue() ComputeWireGroupWiresEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupWiresList
 ```
@@ -4735,7 +4735,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupWiresOutputReference
 ```
@@ -5046,7 +5046,7 @@ func InternalValue() ComputeWireGroupWires
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresWirePropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeWireGroupWiresWirePropertiesList
 ```
@@ -5195,7 +5195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computewiregroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computewiregroup"
 
 computewiregroup.NewComputeWireGroupWiresWirePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeWireGroupWiresWirePropertiesOutputReference
 ```

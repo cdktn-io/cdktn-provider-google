@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.NewBigqueryDatapolicyv2DataPolicy(scope Construct, id *string, config BigqueryDatapolicyv2DataPolicyConfig) BigqueryDatapolicyv2DataPolicy
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1059,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 &bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicyConfig {
 	Connection: interface{},
@@ -1072,14 +1072,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapoli
 	DataPolicyId: *string,
 	DataPolicyType: *string,
 	Location: *string,
-	DataGovernanceTag: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataGovernanceTag,
-	DataMaskingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataMaskingPolicy,
+	DataGovernanceTag: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataGovernanceTag,
+	DataMaskingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataMaskingPolicy,
 	DeletionPolicy: *string,
 	Etag: *string,
 	Grantees: *[]*string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyTimeouts,
 }
 ```
 
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataGovernanceTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 &bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicyDataGovernanceTag {
 	Key: *string,
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataMaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 &bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicyDataMaskingPolicy {
 	PredefinedExpression: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 &bigquerydatapolicyv2datapolicy.BigqueryDatapolicyv2DataPolicyTimeouts {
 	Create: *string,
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataGovernanceTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.NewBigqueryDatapolicyv2DataPolicyDataGovernanceTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDatapolicyv2DataPolicyDataGovernanceTagOutputReference
 ```
@@ -1828,7 +1828,7 @@ func InternalValue() BigqueryDatapolicyv2DataPolicyDataGovernanceTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.NewBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() BigqueryDatapolicyv2DataPolicyDataMaskingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatapolicyv2datapolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatapolicyv2datapolicy"
 
 bigquerydatapolicyv2datapolicy.NewBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDatapolicyv2DataPolicyTimeoutsOutputReference
 ```

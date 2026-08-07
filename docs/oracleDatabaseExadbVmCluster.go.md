@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmCluster(scope Construct, id *string, config OracleDatabaseExadbVmClusterConfig) OracleDatabaseExadbVmCluster
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1116,7 +1116,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterConfig {
 	Connection: interface{},
@@ -1131,14 +1131,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseex
 	ExadbVmClusterId: *string,
 	Location: *string,
 	OdbSubnet: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties,
 	DeletionPolicy: *string,
 	DeletionProtection: interface{},
 	Id: *string,
 	Labels: *map[string]*string,
 	OdbNetwork: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts,
 }
 ```
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterProperties {
 	EnabledEcpuCountPerNode: *f64,
@@ -1460,13 +1460,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseex
 	NodeCount: *f64,
 	ShapeAttribute: *string,
 	SshPublicKeys: *[]*string,
-	VmFileSystemStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage,
+	VmFileSystemStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage,
 	AdditionalEcpuCountPerNode: *f64,
 	ClusterName: *string,
-	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions,
+	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions,
 	LicenseModel: *string,
 	ScanListenerPortTcp: *f64,
-	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone,
+	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone,
 }
 ```
 
@@ -1711,7 +1711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions {
 	IsDiagnosticsEventsEnabled: interface{},
@@ -1777,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesTimeZone {
 	Id: *string,
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage {
 	SizeInGbsPerNode: *f64,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterTimeouts {
 	Create: *string,
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference
 ```
@@ -2265,7 +2265,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesOutputReference
 ```
@@ -2958,7 +2958,7 @@ func InternalValue() OracleDatabaseExadbVmClusterProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 ```
@@ -3265,7 +3265,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesTimeZone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference
 ```
@@ -3536,7 +3536,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterTimeoutsOutputReference
 ```

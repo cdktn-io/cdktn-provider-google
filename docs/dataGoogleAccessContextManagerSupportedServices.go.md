@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.NewDataGoogleAccessContextManagerSupportedServices(scope Construct, id *string, config DataGoogleAccessContextManagerSupportedServicesConfig) DataGoogleAccessContextManagerSupportedServices
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServices_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSu
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSu
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 &datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServicesConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 &datagoogleaccesscontextmanagersupportedservices.DataGoogleAccessContextManagerSupportedServicesSupportedServices {
 
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAccessContextManagerSupportedServicesSupportedServicesList
 ```
@@ -888,7 +888,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleaccesscontextmanagersupportedservices"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservices"
 
 datagoogleaccesscontextmanagersupportedservices.NewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference
 ```

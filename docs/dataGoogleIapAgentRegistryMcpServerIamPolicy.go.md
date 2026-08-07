@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 datagoogleiapagentregistrymcpserveriampolicy.NewDataGoogleIapAgentRegistryMcpServerIamPolicy(scope Construct, id *string, config DataGoogleIapAgentRegistryMcpServerIamPolicyConfig) DataGoogleIapAgentRegistryMcpServerIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServer
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServerIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIapAgentRegistryMcpServerIamPolicy.DataGoogleIapAgentRegistryMcpServerIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiapagentregistrymcpserveriampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapagentregistrymcpserveriampolicy"
 
 &datagoogleiapagentregistrymcpserveriampolicy.DataGoogleIapAgentRegistryMcpServerIamPolicyConfig {
 	Connection: interface{},

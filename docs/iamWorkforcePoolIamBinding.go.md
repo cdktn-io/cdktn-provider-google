@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.NewIamWorkforcePoolIamBinding(scope Construct, id *string, config IamWorkforcePoolIamBindingConfig) IamWorkforcePoolIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.IamWorkforcePoolIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.IamWorkforcePoolIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iamworkforcepooliambinding.IamWorkforcePoolIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.IamWorkforcePoolIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iamworkforcepooliambinding.IamWorkforcePoolIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.IamWorkforcePoolIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 &iamworkforcepooliambinding.IamWorkforcePoolIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 &iamworkforcepooliambinding.IamWorkforcePoolIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepool
 	Members: *[]*string,
 	Role: *string,
 	WorkforcePoolId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition,
 	Id: *string,
 	Location: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamworkforcepooliambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamworkforcepooliambinding"
 
 iamworkforcepooliambinding.NewIamWorkforcePoolIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamWorkforcePoolIamBindingConditionOutputReference
 ```

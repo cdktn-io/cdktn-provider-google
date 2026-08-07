@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.NewMigrationCenterImportDataFile(scope Construct, id *string, config MigrationCenterImportDataFileConfig) MigrationCenterImportDataFile
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.MigrationCenterImportDataFile_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.MigrationCenterImportDataFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ migrationcenterimportdatafile.MigrationCenterImportDataFile_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.MigrationCenterImportDataFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ migrationcenterimportdatafile.MigrationCenterImportDataFile_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.MigrationCenterImportDataFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 &migrationcenterimportdatafile.MigrationCenterImportDataFileConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenteri
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.migrationCenterImportDataFile.MigrationCenterImportDataFileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterImportDataFile.MigrationCenterImportDataFileTimeouts,
 }
 ```
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 &migrationcenterimportdatafile.MigrationCenterImportDataFileTimeouts {
 	Create: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileUploadFileInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 &migrationcenterimportdatafile.MigrationCenterImportDataFileUploadFileInfo {
 
@@ -1292,7 +1292,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenteri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.NewMigrationCenterImportDataFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterImportDataFileTimeoutsOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileUploadFileInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.NewMigrationCenterImportDataFileUploadFileInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterImportDataFileUploadFileInfoList
 ```
@@ -1748,7 +1748,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterImportDataFile.MigrationCenterImportDataFileUploadFileInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterimportdatafile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterimportdatafile"
 
 migrationcenterimportdatafile.NewMigrationCenterImportDataFileUploadFileInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterImportDataFileUploadFileInfoOutputReference
 ```

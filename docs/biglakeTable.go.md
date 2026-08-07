@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.NewBiglakeTable(scope Construct, id *string, config BiglakeTableConfig) BiglakeTable
 ```
@@ -468,7 +468,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.BiglakeTable_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.BiglakeTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ biglaketable.BiglakeTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.BiglakeTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ biglaketable.BiglakeTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.BiglakeTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 &biglaketable.BiglakeTableConfig {
 	Connection: interface{},
@@ -979,9 +979,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
 	Name: *string,
 	Database: *string,
 	DeletionPolicy: *string,
-	HiveOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeTable.BiglakeTableHiveOptions,
+	HiveOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeTable.BiglakeTableHiveOptions,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeTable.BiglakeTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeTable.BiglakeTableTimeouts,
 	Type: *string,
 }
 ```
@@ -1188,11 +1188,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 &biglaketable.BiglakeTableHiveOptions {
 	Parameters: *map[string]*string,
-	StorageDescriptor: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor,
+	StorageDescriptor: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor,
 	TableType: *string,
 }
 ```
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 &biglaketable.BiglakeTableHiveOptionsStorageDescriptor {
 	InputFormat: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 &biglaketable.BiglakeTableTimeouts {
 	Create: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.NewBiglakeTableHiveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeTableHiveOptionsOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() BiglakeTableHiveOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.NewBiglakeTableHiveOptionsStorageDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeTableHiveOptionsStorageDescriptorOutputReference
 ```
@@ -2071,7 +2071,7 @@ func InternalValue() BiglakeTableHiveOptionsStorageDescriptor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglaketable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 biglaketable.NewBiglakeTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeTableTimeoutsOutputReference
 ```

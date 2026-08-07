@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.ephemeralGoogleSecretManagerSecretVersion.EphemeralGoogleSecretManagerSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgooglesecretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgooglesecretmanagersecretversion"
 
 ephemeralgooglesecretmanagersecretversion.NewEphemeralGoogleSecretManagerSecretVersion(scope Construct, id *string, config EphemeralGoogleSecretManagerSecretVersionConfig) EphemeralGoogleSecretManagerSecretVersion
 ```
@@ -316,7 +316,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.ephemeralGoogleSecretManagerSecretVersion.EphemeralGoogleSecretManagerSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgooglesecretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgooglesecretmanagersecretversion"
 
 ephemeralgooglesecretmanagersecretversion.EphemeralGoogleSecretManagerSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.ephemeralGoogleSecretManagerSecretVersion.EphemeralGoogleSecretManagerSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgooglesecretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgooglesecretmanagersecretversion"
 
 ephemeralgooglesecretmanagersecretversion.EphemeralGoogleSecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ ephemeralgooglesecretmanagersecretversion.EphemeralGoogleSecretManagerSecretVers
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-google.ephemeralGoogleSecretManagerSecretVersion.EphemeralGoogleSecretManagerSecretVersion.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgooglesecretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgooglesecretmanagersecretversion"
 
 ephemeralgooglesecretmanagersecretversion.EphemeralGoogleSecretManagerSecretVersion_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.ephemeralGoogleSecretManagerSecretVersion.EphemeralGoogleSecretManagerSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/ephemeralgooglesecretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgooglesecretmanagersecretversion"
 
 &ephemeralgooglesecretmanagersecretversion.EphemeralGoogleSecretManagerSecretVersionConfig {
 	Count: interface{},

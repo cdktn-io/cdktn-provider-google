@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.NewBiglakeIcebergNamespace(scope Construct, id *string, config BiglakeIcebergNamespaceConfig) BiglakeIcebergNamespace
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.BiglakeIcebergNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.BiglakeIcebergNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ biglakeicebergnamespace.BiglakeIcebergNamespace_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.BiglakeIcebergNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ biglakeicebergnamespace.BiglakeIcebergNamespace_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.BiglakeIcebergNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 &biglakeicebergnamespace.BiglakeIcebergNamespaceConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergna
 	Id: *string,
 	Project: *string,
 	Properties: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeouts,
 }
 ```
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 &biglakeicebergnamespace.BiglakeIcebergNamespaceTimeouts {
 	Create: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergnamespace"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergnamespace"
 
 biglakeicebergnamespace.NewBiglakeIcebergNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergNamespaceTimeoutsOutputReference
 ```

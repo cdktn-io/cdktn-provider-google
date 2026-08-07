@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NewNetworkSecurityUllMirroringEngine(scope Construct, id *string, config NetworkSecurityUllMirroringEngineConfig) NetworkSecurityUllMirroringEngine
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NetworkSecurityUllMirroringEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 &networksecurityullmirroringengine.NetworkSecurityUllMirroringEngineConfig {
 	Connection: interface{},
@@ -973,7 +973,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityu
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts,
 }
 ```
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 &networksecurityullmirroringengine.NetworkSecurityUllMirroringEngineTimeouts {
 	Create: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityullmirroringengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityullmirroringengine"
 
 networksecurityullmirroringengine.NewNetworkSecurityUllMirroringEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityUllMirroringEngineTimeoutsOutputReference
 ```

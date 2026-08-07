@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicy(scope Construct, id *string, config DataGoogleFolderOrganizationPolicyConfig) DataGoogleFolderOrganizationPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyBooleanPolicy {
 
@@ -728,7 +728,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyListPolicy {
 
@@ -892,7 +892,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyListPolicyAllow {
 
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDeny.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyListPolicyDeny {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 &datagooglefolderorganizationpolicy.DataGoogleFolderOrganizationPolicyRestorePolicy {
 
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolder
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyBooleanPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFolderOrganizationPolicyBooleanPolicyList
 ```
@@ -1082,7 +1082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() DataGoogleFolderOrganizationPolicyBooleanPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyAllowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFolderOrganizationPolicyListPolicyAllowList
 ```
@@ -1509,7 +1509,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference
 ```
@@ -1798,7 +1798,7 @@ func InternalValue() DataGoogleFolderOrganizationPolicyListPolicyAllow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyDenyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFolderOrganizationPolicyListPolicyDenyList
 ```
@@ -1947,7 +1947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFolderOrganizationPolicyListPolicyDenyOutputReference
 ```
@@ -2236,7 +2236,7 @@ func InternalValue() DataGoogleFolderOrganizationPolicyListPolicyDeny
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFolderOrganizationPolicyListPolicyList
 ```
@@ -2385,7 +2385,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyListPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFolderOrganizationPolicyListPolicyOutputReference
 ```
@@ -2696,7 +2696,7 @@ func InternalValue() DataGoogleFolderOrganizationPolicyListPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyRestorePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyRestorePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFolderOrganizationPolicyRestorePolicyList
 ```
@@ -2845,7 +2845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglefolderorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglefolderorganizationpolicy"
 
 datagooglefolderorganizationpolicy.NewDataGoogleFolderOrganizationPolicyRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference
 ```

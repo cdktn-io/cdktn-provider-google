@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NewNetworkConnectivityTransport(scope Construct, id *string, config NetworkConnectivityTransportConfig) NetworkConnectivityTransport
 ```
@@ -497,7 +497,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NetworkConnectivityTransport_IsConstruct(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NetworkConnectivityTransport_IsTerraformElement(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ networkconnectivitytransport.NetworkConnectivityTransport_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NetworkConnectivityTransport_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ networkconnectivitytransport.NetworkConnectivityTransport_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NetworkConnectivityTransport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1193,7 +1193,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 &networkconnectivitytransport.NetworkConnectivityTransportConfig {
 	Connection: interface{},
@@ -1218,7 +1218,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectiv
 	ProvidedActivationKey: *string,
 	RemoteAccountId: *string,
 	StackType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkConnectivityTransport.NetworkConnectivityTransportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityTransport.NetworkConnectivityTransportTimeouts,
 }
 ```
 
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 &networkconnectivitytransport.NetworkConnectivityTransportTimeouts {
 	Create: *string,
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkconnectivitytransport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitytransport"
 
 networkconnectivitytransport.NewNetworkConnectivityTransportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityTransportTimeoutsOutputReference
 ```

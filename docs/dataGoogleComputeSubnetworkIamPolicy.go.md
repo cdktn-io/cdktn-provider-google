@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.NewDataGoogleComputeSubnetworkIamPolicy(scope Construct, id *string, config DataGoogleComputeSubnetworkIamPolicyConfig) DataGoogleComputeSubnetworkIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeSubnetworkIamPolicy.DataGoogleComputeSubnetworkIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputesubnetworkiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputesubnetworkiampolicy"
 
 &datagooglecomputesubnetworkiampolicy.DataGoogleComputeSubnetworkIamPolicyConfig {
 	Connection: interface{},

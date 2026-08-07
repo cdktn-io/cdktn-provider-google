@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResource(scope Construct, id *string, config VertexAiPersistentResourceConfig) VertexAiPersistentResource
 ```
@@ -549,7 +549,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.VertexAiPersistentResource_IsConstruct(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.VertexAiPersistentResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ vertexaipersistentresource.VertexAiPersistentResource_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.VertexAiPersistentResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ vertexaipersistentresource.VertexAiPersistentResource_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.VertexAiPersistentResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1256,7 +1256,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceConfig {
 	Connection: interface{},
@@ -1270,16 +1270,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersiste
 	ResourcePools: interface{},
 	DeletionPolicy: *string,
 	DisplayName: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
 	Network: *string,
 	Project: *string,
-	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfig,
+	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfig,
 	ReservedIpRanges: *[]*string,
-	ResourceRuntimeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpec,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceTimeouts,
+	ResourceRuntimeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpec,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceTimeouts,
 }
 ```
 
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceEncryptionSpec {
 	KmsKeyName: *string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceError {
 
@@ -1673,7 +1673,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersiste
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourcePscInterfaceConfig {
 	DnsPeeringConfigs: interface{},
@@ -1723,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs {
 	Domain: *string,
@@ -1792,12 +1792,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePools.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourcePools {
-	MachineSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsMachineSpec,
-	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsAutoscalingSpec,
-	DiskSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsDiskSpec,
+	MachineSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsMachineSpec,
+	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsAutoscalingSpec,
+	DiskSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsDiskSpec,
 	Id: *string,
 	ReplicaCount: *string,
 }
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsAutoscalingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourcePoolsAutoscalingSpec {
 	MaxReplicaCount: *string,
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsDiskSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourcePoolsDiskSpec {
 	BootDiskSizeGb: *f64,
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsMachineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourcePoolsMachineSpec {
 	AcceleratorCount: *f64,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourceRuntime {
 
@@ -2093,10 +2093,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersiste
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourceRuntimeSpec {
-	ServiceAccountSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec,
+	ServiceAccountSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec,
 }
 ```
 
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec {
 	EnableCustomServiceAccount: interface{},
@@ -2164,7 +2164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 &vertexaipersistentresource.VertexAiPersistentResourceTimeouts {
 	Create: *string,
@@ -2226,7 +2226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceEncryptionSpecOutputReference
 ```
@@ -2497,7 +2497,7 @@ func InternalValue() VertexAiPersistentResourceEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiPersistentResourceErrorList
 ```
@@ -2646,7 +2646,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiPersistentResourceErrorOutputReference
 ```
@@ -2935,7 +2935,7 @@ func InternalValue() VertexAiPersistentResourceError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsList
 ```
@@ -3095,7 +3095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigsOutputReference
 ```
@@ -3428,7 +3428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourcePscInterfaceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourcePscInterfaceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourcePscInterfaceConfigOutputReference
 ```
@@ -3748,7 +3748,7 @@ func InternalValue() VertexAiPersistentResourcePscInterfaceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsAutoscalingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourcePoolsAutoscalingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceResourcePoolsAutoscalingSpecOutputReference
 ```
@@ -4055,7 +4055,7 @@ func InternalValue() VertexAiPersistentResourceResourcePoolsAutoscalingSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsDiskSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourcePoolsDiskSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceResourcePoolsDiskSpecOutputReference
 ```
@@ -4362,7 +4362,7 @@ func InternalValue() VertexAiPersistentResourceResourcePoolsDiskSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourcePoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiPersistentResourceResourcePoolsList
 ```
@@ -4522,7 +4522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsMachineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourcePoolsMachineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceResourcePoolsMachineSpecOutputReference
 ```
@@ -4858,7 +4858,7 @@ func InternalValue() VertexAiPersistentResourceResourcePoolsMachineSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourcePoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourcePoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiPersistentResourceResourcePoolsOutputReference
 ```
@@ -5313,7 +5313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourceRuntimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiPersistentResourceResourceRuntimeList
 ```
@@ -5462,7 +5462,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourceRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiPersistentResourceResourceRuntimeOutputReference
 ```
@@ -5740,7 +5740,7 @@ func InternalValue() VertexAiPersistentResourceResourceRuntime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourceRuntimeSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceResourceRuntimeSpecOutputReference
 ```
@@ -6031,7 +6031,7 @@ func InternalValue() VertexAiPersistentResourceResourceRuntimeSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpecOutputReference
 ```
@@ -6302,7 +6302,7 @@ func InternalValue() VertexAiPersistentResourceResourceRuntimeSpecServiceAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiPersistentResource.VertexAiPersistentResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaipersistentresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaipersistentresource"
 
 vertexaipersistentresource.NewVertexAiPersistentResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiPersistentResourceTimeoutsOutputReference
 ```

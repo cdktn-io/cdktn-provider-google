@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstance(scope Construct, id *string, config LookerInstanceConfig) LookerInstance
 ```
@@ -704,7 +704,7 @@ func ResetUserMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.lookerInstance.LookerInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.LookerInstance_IsConstruct(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.lookerInstance.LookerInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.LookerInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ lookerinstance.LookerInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.lookerInstance.LookerInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.LookerInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -764,7 +764,7 @@ lookerinstance.LookerInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.lookerInstance.LookerInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.LookerInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1620,7 +1620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceAdminSettings {
 	AllowedEmailDomains: *[]*string,
@@ -1659,7 +1659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceConfig {
 	Connection: interface{},
@@ -1670,30 +1670,30 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceOauthConfig,
-	AdminSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceAdminSettings,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceOauthConfig,
+	AdminSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceAdminSettings,
 	ConsumerNetwork: *string,
-	ControlledEgressConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceControlledEgressConfig,
+	ControlledEgressConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceControlledEgressConfig,
 	ControlledEgressEnabled: interface{},
-	CustomDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceCustomDomain,
+	CustomDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceCustomDomain,
 	DeletionPolicy: *string,
-	DenyMaintenancePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriod,
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceEncryptionConfig,
+	DenyMaintenancePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceDenyMaintenancePeriod,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceEncryptionConfig,
 	FipsEnabled: interface{},
 	GeminiEnabled: interface{},
 	Id: *string,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceMaintenanceWindow,
-	PeriodicExportConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePeriodicExportConfig,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceMaintenanceWindow,
+	PeriodicExportConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstancePeriodicExportConfig,
 	PlatformEdition: *string,
 	PrivateIpEnabled: interface{},
 	Project: *string,
-	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePscConfig,
+	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstancePscConfig,
 	PscEnabled: interface{},
 	PublicIpEnabled: interface{},
 	Region: *string,
 	ReservedRange: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceTimeouts,
-	UserMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceUserMetadata,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceTimeouts,
+	UserMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceUserMetadata,
 }
 ```
 
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceControlledEgressConfig {
 	EgressFqdns: *[]*string,
@@ -2226,7 +2226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceCustomDomain {
 	Domain: *string,
@@ -2260,12 +2260,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriod {
-	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate,
-	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate,
-	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodTime,
+	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate,
+	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate,
+	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceDenyMaintenancePeriodTime,
 }
 ```
 
@@ -2326,7 +2326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodEndDate {
 	Day: *f64,
@@ -2398,7 +2398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodStartDate {
 	Day: *f64,
@@ -2470,7 +2470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodTime {
 	Hours: *f64,
@@ -2552,7 +2552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceEncryptionConfig {
 	KmsKeyName: *string,
@@ -2586,11 +2586,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceMaintenanceWindow {
 	DayOfWeek: *string,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceMaintenanceWindowStartTime,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstanceMaintenanceWindowStartTime,
 }
 ```
 
@@ -2644,7 +2644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceMaintenanceWindowStartTime {
 	Hours: *f64,
@@ -2726,7 +2726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceOauthConfig {
 	ClientId: *string,
@@ -2776,12 +2776,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstancePeriodicExportConfig {
 	GcsUri: *string,
 	KmsKey: *string,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePeriodicExportConfigStartTime,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lookerInstance.LookerInstancePeriodicExportConfigStartTime,
 }
 ```
 
@@ -2842,7 +2842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstancePeriodicExportConfigStartTime {
 	Hours: *f64,
@@ -2924,7 +2924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstancePscConfig {
 	AllowedVpcs: *[]*string,
@@ -2974,7 +2974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstancePscConfigServiceAttachments {
 	LocalFqdn: *string,
@@ -3024,7 +3024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceTimeouts {
 	Create: *string,
@@ -3084,7 +3084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 &lookerinstance.LookerInstanceUserMetadata {
 	AdditionalDeveloperUserCount: *f64,
@@ -3152,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceAdminSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceAdminSettingsOutputReference
 ```
@@ -3430,7 +3430,7 @@ func InternalValue() LookerInstanceAdminSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceControlledEgressConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceControlledEgressConfigOutputReference
 ```
@@ -3737,7 +3737,7 @@ func InternalValue() LookerInstanceControlledEgressConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceCustomDomainOutputReference
 ```
@@ -4026,7 +4026,7 @@ func InternalValue() LookerInstanceCustomDomain
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodEndDateOutputReference
 ```
@@ -4362,7 +4362,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodEndDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodOutputReference
 ```
@@ -4716,7 +4716,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriod
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodStartDateOutputReference
 ```
@@ -5052,7 +5052,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodStartDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodTimeOutputReference
 ```
@@ -5417,7 +5417,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceEncryptionConfigOutputReference
 ```
@@ -5717,7 +5717,7 @@ func InternalValue() LookerInstanceEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceMaintenanceWindowOutputReference
 ```
@@ -6023,7 +6023,7 @@ func InternalValue() LookerInstanceMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceMaintenanceWindowStartTimeOutputReference
 ```
@@ -6388,7 +6388,7 @@ func InternalValue() LookerInstanceMaintenanceWindowStartTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceOauthConfigOutputReference
 ```
@@ -6681,7 +6681,7 @@ func InternalValue() LookerInstanceOauthConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstancePeriodicExportConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePeriodicExportConfigOutputReference
 ```
@@ -7009,7 +7009,7 @@ func InternalValue() LookerInstancePeriodicExportConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstancePeriodicExportConfigStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePeriodicExportConfigStartTimeOutputReference
 ```
@@ -7374,7 +7374,7 @@ func InternalValue() LookerInstancePeriodicExportConfigStartTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePscConfigOutputReference
 ```
@@ -7705,7 +7705,7 @@ func InternalValue() LookerInstancePscConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigServiceAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LookerInstancePscConfigServiceAttachmentsList
 ```
@@ -7865,7 +7865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigServiceAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LookerInstancePscConfigServiceAttachmentsOutputReference
 ```
@@ -8201,7 +8201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceTimeoutsOutputReference
 ```
@@ -8537,7 +8537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lookerinstance"
 
 lookerinstance.NewLookerInstanceUserMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceUserMetadataOutputReference
 ```

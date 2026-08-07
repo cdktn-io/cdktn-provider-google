@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.NewIapWebRegionForwardingRuleServiceIamMember(scope Construct, id *string, config IapWebRegionForwardingRuleServiceIamMemberConfig) IapWebRegionForwardingRuleServiceIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamM
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamM
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 &iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 &iapwebregionforwardingruleserviceiammember.IapWebRegionForwardingRuleServiceIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforw
 	ForwardingRuleRegionServiceName: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamMember.IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebregionforwardingruleserviceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebregionforwardingruleserviceiammember"
 
 iapwebregionforwardingruleserviceiammember.NewIapWebRegionForwardingRuleServiceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference
 ```

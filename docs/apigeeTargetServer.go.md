@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.NewApigeeTargetServer(scope Construct, id *string, config ApigeeTargetServerConfig) ApigeeTargetServer
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.ApigeeTargetServer_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.ApigeeTargetServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ apigeetargetserver.ApigeeTargetServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.ApigeeTargetServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ apigeetargetserver.ApigeeTargetServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.ApigeeTargetServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1006,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 &apigeetargetserver.ApigeeTargetServerConfig {
 	Connection: interface{},
@@ -1025,8 +1025,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserv
 	Id: *string,
 	IsEnabled: interface{},
 	Protocol: *string,
-	SSlInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeTargetServer.ApigeeTargetServerSSlInfo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeTargetServer.ApigeeTargetServerTimeouts,
+	SSlInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeTargetServer.ApigeeTargetServerSSlInfo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeTargetServer.ApigeeTargetServerTimeouts,
 }
 ```
 
@@ -1294,13 +1294,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 &apigeetargetserver.ApigeeTargetServerSSlInfo {
 	Enabled: interface{},
 	Ciphers: *[]*string,
 	ClientAuthEnabled: interface{},
-	CommonName: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonName,
+	CommonName: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonName,
 	Enforce: interface{},
 	IgnoreValidationErrors: interface{},
 	KeyAlias: *string,
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 &apigeetargetserver.ApigeeTargetServerSSlInfoCommonName {
 	Value: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 &apigeetargetserver.ApigeeTargetServerTimeouts {
 	Create: *string,
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.NewApigeeTargetServerSSlInfoCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeTargetServerSSlInfoCommonNameOutputReference
 ```
@@ -1895,7 +1895,7 @@ func InternalValue() ApigeeTargetServerSSlInfoCommonName
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.NewApigeeTargetServerSSlInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeTargetServerSSlInfoOutputReference
 ```
@@ -2440,7 +2440,7 @@ func InternalValue() ApigeeTargetServerSSlInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeTargetServer.ApigeeTargetServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeetargetserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeetargetserver"
 
 apigeetargetserver.NewApigeeTargetServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeTargetServerTimeoutsOutputReference
 ```

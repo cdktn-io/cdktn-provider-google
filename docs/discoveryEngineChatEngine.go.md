@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngine(scope Construct, id *string, config DiscoveryEngineChatEngineConfig) DiscoveryEngineChatEngine
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.DiscoveryEngineChatEngine_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.DiscoveryEngineChatEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ discoveryenginechatengine.DiscoveryEngineChatEngine_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.DiscoveryEngineChatEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ discoveryenginechatengine.DiscoveryEngineChatEngine_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.DiscoveryEngineChatEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1078,10 +1078,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineChatEngineConfig {
-	AgentCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig,
+	AgentCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig,
 	AllowCrossRegion: interface{},
 	DialogflowAgentToLink: *string,
 }
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfig {
 	DefaultLanguageCode: *string,
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineChatEngineMetadata {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginec
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineCommonConfig {
 	CompanyName: *string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineConfig {
 	Connection: interface{},
@@ -1298,18 +1298,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginec
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ChatEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfig,
+	ChatEngineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfig,
 	CollectionId: *string,
 	DataStoreIds: *[]*string,
 	DisplayName: *string,
 	EngineId: *string,
 	Location: *string,
-	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfig,
+	CommonConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfig,
 	DeletionPolicy: *string,
 	Id: *string,
 	IndustryVertical: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts,
 }
 ```
 
@@ -1592,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 &discoveryenginechatengine.DiscoveryEngineChatEngineTimeouts {
 	Create: *string,
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfigOutputReference
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() DiscoveryEngineChatEngineChatEngineConfigAgentCreationConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineChatEngineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineChatEngineChatEngineConfigOutputReference
 ```
@@ -2354,7 +2354,7 @@ func InternalValue() DiscoveryEngineChatEngineChatEngineConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineChatEngineMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineChatEngineChatEngineMetadataList
 ```
@@ -2503,7 +2503,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineChatEngineMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineChatEngineMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineChatEngineChatEngineMetadataOutputReference
 ```
@@ -2781,7 +2781,7 @@ func InternalValue() DiscoveryEngineChatEngineChatEngineMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineCommonConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineCommonConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineChatEngineCommonConfigOutputReference
 ```
@@ -3059,7 +3059,7 @@ func InternalValue() DiscoveryEngineChatEngineCommonConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineChatEngine.DiscoveryEngineChatEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginechatengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginechatengine"
 
 discoveryenginechatengine.NewDiscoveryEngineChatEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineChatEngineTimeoutsOutputReference
 ```

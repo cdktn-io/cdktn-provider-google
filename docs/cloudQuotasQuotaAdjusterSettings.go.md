@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.NewCloudQuotasQuotaAdjusterSettings(scope Construct, id *string, config CloudQuotasQuotaAdjusterSettingsConfig) CloudQuotasQuotaAdjusterSettings
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 &cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettingsConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquota
 	Enablement: *string,
 	Id: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettingsTimeouts,
 }
 ```
 
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 &cloudquotasquotaadjustersettings.CloudQuotasQuotaAdjusterSettingsTimeouts {
 	Create: *string,
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudQuotasQuotaAdjusterSettings.CloudQuotasQuotaAdjusterSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudquotasquotaadjustersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudquotasquotaadjustersettings"
 
 cloudquotasquotaadjustersettings.NewCloudQuotasQuotaAdjusterSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudQuotasQuotaAdjusterSettingsTimeoutsOutputReference
 ```

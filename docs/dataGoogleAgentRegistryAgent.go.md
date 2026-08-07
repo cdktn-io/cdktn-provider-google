@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgent(scope Construct, id *string, config DataGoogleAgentRegistryAgentConfig) DataGoogleAgentRegistryAgent
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.DataGoogleAgentRegistryAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 &datagoogleagentregistryagent.DataGoogleAgentRegistryAgentConfig {
 	Connection: interface{},
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocols.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 &datagoogleagentregistryagent.DataGoogleAgentRegistryAgentProtocols {
 
@@ -1007,7 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocolsInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 &datagoogleagentregistryagent.DataGoogleAgentRegistryAgentProtocolsInterfaces {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentSkills.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 &datagoogleagentregistryagent.DataGoogleAgentRegistryAgentSkills {
 
@@ -1035,7 +1035,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocolsInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentProtocolsInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryAgentProtocolsInterfacesList
 ```
@@ -1184,7 +1184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocolsInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentProtocolsInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryAgentProtocolsInterfacesOutputReference
 ```
@@ -1473,7 +1473,7 @@ func InternalValue() DataGoogleAgentRegistryAgentProtocolsInterfaces
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentProtocolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryAgentProtocolsList
 ```
@@ -1622,7 +1622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentProtocolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentProtocolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryAgentProtocolsOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() DataGoogleAgentRegistryAgentProtocols
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentSkillsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentSkillsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryAgentSkillsList
 ```
@@ -2071,7 +2071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentSkillsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryagent"
 
 datagoogleagentregistryagent.NewDataGoogleAgentRegistryAgentSkillsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryAgentSkillsOutputReference
 ```

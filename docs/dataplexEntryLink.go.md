@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLink(scope Construct, id *string, config DataplexEntryLinkConfig) DataplexEntryLink
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.DataplexEntryLink_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.DataplexEntryLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ dataplexentrylink.DataplexEntryLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.DataplexEntryLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ dataplexentrylink.DataplexEntryLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.DataplexEntryLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1016,10 +1016,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 &dataplexentrylink.DataplexEntryLinkAspects {
-	Aspect: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexEntryLink.DataplexEntryLinkAspectsAspect,
+	Aspect: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexEntryLink.DataplexEntryLinkAspectsAspect,
 	AspectKey: *string,
 }
 ```
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 &dataplexentrylink.DataplexEntryLinkAspectsAspect {
 	Data: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 &dataplexentrylink.DataplexEntryLinkConfig {
 	Connection: interface{},
@@ -1123,7 +1123,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylin
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexEntryLink.DataplexEntryLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataplexEntryLink.DataplexEntryLinkTimeouts,
 }
 ```
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 &dataplexentrylink.DataplexEntryLinkEntryReferences {
 	Name: *string,
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 &dataplexentrylink.DataplexEntryLinkTimeouts {
 	Create: *string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkAspectsAspectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexEntryLinkAspectsAspectOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() DataplexEntryLinkAspectsAspect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkAspectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexEntryLinkAspectsList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkAspectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexEntryLinkAspectsOutputReference
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkEntryReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexEntryLinkEntryReferencesList
 ```
@@ -2461,7 +2461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkEntryReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexEntryLinkEntryReferencesOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataplexentrylink"
 
 dataplexentrylink.NewDataplexEntryLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexEntryLinkTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 datagooglecomputefirewallpolicyiampolicy.NewDataGoogleComputeFirewallPolicyIamPolicy(scope Construct, id *string, config DataGoogleComputeFirewallPolicyIamPolicyConfig) DataGoogleComputeFirewallPolicyIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolic
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeFirewallPolicyIamPolicy.DataGoogleComputeFirewallPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputefirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputefirewallpolicyiampolicy"
 
 &datagooglecomputefirewallpolicyiampolicy.DataGoogleComputeFirewallPolicyIamPolicyConfig {
 	Connection: interface{},

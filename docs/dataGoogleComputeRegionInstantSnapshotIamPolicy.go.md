@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 datagooglecomputeregioninstantsnapshotiampolicy.NewDataGoogleComputeRegionInstantSnapshotIamPolicy(scope Construct, id *string, config DataGoogleComputeRegionInstantSnapshotIamPolicyConfig) DataGoogleComputeRegionInstantSnapshotIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSn
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSn
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSnapshotIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionInstantSnapshotIamPolicy.DataGoogleComputeRegionInstantSnapshotIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeregioninstantsnapshotiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregioninstantsnapshotiampolicy"
 
 &datagooglecomputeregioninstantsnapshotiampolicy.DataGoogleComputeRegionInstantSnapshotIamPolicyConfig {
 	Connection: interface{},

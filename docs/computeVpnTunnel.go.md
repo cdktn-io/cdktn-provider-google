@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnel(scope Construct, id *string, config ComputeVpnTunnelConfig) ComputeVpnTunnel
 ```
@@ -600,7 +600,7 @@ func ResetVpnGatewayInterface()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ computevpntunnel.ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ computevpntunnel.ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1507,11 +1507,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelCipherSuite {
-	Phase1: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1,
-	Phase2: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2,
+	Phase1: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1,
+	Phase2: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2,
 }
 ```
 
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelCipherSuitePhase1 {
 	Dh: *[]*string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelCipherSuitePhase2 {
 	Encryption: *[]*string,
@@ -1705,7 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelConfig {
 	Connection: interface{},
@@ -1716,14 +1716,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CipherSuite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuite,
+	CipherSuite: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnTunnel.ComputeVpnTunnelCipherSuite,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	IkeVersion: *f64,
 	Labels: *map[string]*string,
 	LocalTrafficSelector: *[]*string,
-	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelParams,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnTunnel.ComputeVpnTunnelParams,
 	PeerExternalGateway: *string,
 	PeerExternalGatewayInterface: *f64,
 	PeerGcpGateway: *string,
@@ -1736,7 +1736,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel
 	SharedSecretWo: *string,
 	SharedSecretWoVersion: *string,
 	TargetVpnGateway: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeVpnTunnel.ComputeVpnTunnelTimeouts,
 	VpnGateway: *string,
 	VpnGatewayInterface: *f64,
 }
@@ -2227,7 +2227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelParams {
 	ResourceManagerTags: *map[string]*string,
@@ -2265,7 +2265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelTimeouts {
 	Create: *string,
@@ -2327,7 +2327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelCipherSuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuiteOutputReference
 ```
@@ -2660,7 +2660,7 @@ func InternalValue() ComputeVpnTunnelCipherSuite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelCipherSuitePhase1OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuitePhase1OutputReference
 ```
@@ -3025,7 +3025,7 @@ func InternalValue() ComputeVpnTunnelCipherSuitePhase1
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelCipherSuitePhase2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuitePhase2OutputReference
 ```
@@ -3361,7 +3361,7 @@ func InternalValue() ComputeVpnTunnelCipherSuitePhase2
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelParamsOutputReference
 ```
@@ -3639,7 +3639,7 @@ func InternalValue() ComputeVpnTunnelParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelTimeoutsOutputReference
 ```

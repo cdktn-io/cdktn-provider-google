@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeed(scope Construct, id *string, config ChronicleFeedConfig) ChronicleFeed
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleFeed.ChronicleFeed.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.ChronicleFeed_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleFeed.ChronicleFeed.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.ChronicleFeed_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ chroniclefeed.ChronicleFeed_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleFeed.ChronicleFeed.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.ChronicleFeed_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ chroniclefeed.ChronicleFeed_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleFeed.ChronicleFeed.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.ChronicleFeed_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedConfig {
 	Connection: interface{},
@@ -1145,14 +1145,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
 	Instance: *string,
 	Location: *string,
 	DeletionPolicy: *string,
-	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetails,
+	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetails,
 	DisplayName: *string,
 	Enabled: interface{},
-	FailureDetails: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedFailureDetails,
+	FailureDetails: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedFailureDetails,
 	Feed: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedTimeouts,
 }
 ```
 
@@ -1416,88 +1416,88 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetails {
 	LogType: *string,
-	AmazonKinesisFirehoseSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonKinesisFirehoseSettings,
-	AmazonS3Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3Settings,
-	AmazonS3V2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3V2Settings,
-	AmazonSqsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettings,
-	AmazonSqsV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2Settings,
-	AnomaliSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAnomaliSettings,
+	AmazonKinesisFirehoseSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonKinesisFirehoseSettings,
+	AmazonS3Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3Settings,
+	AmazonS3V2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3V2Settings,
+	AmazonSqsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettings,
+	AmazonSqsV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2Settings,
+	AnomaliSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAnomaliSettings,
 	AssetNamespace: *string,
-	AwsEc2HostsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettings,
-	AwsEc2InstancesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettings,
-	AwsEc2VpcsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettings,
-	AwsIamSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsIamSettings,
-	AzureAdAuditSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettings,
-	AzureAdContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettings,
-	AzureAdSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdSettings,
-	AzureBlobStoreSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettings,
-	AzureBlobStoreV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2Settings,
-	AzureEventHubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureEventHubSettings,
-	AzureMdmIntuneSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettings,
-	CloudPassageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCloudPassageSettings,
-	CortexXdrSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCortexXdrSettings,
-	CrowdstrikeAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettings,
-	CrowdstrikeDetectsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettings,
-	DummyLogTypeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettings,
-	DuoAuthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDuoAuthSettings,
-	DuoUserContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettings,
+	AwsEc2HostsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettings,
+	AwsEc2InstancesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettings,
+	AwsEc2VpcsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettings,
+	AwsIamSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsIamSettings,
+	AzureAdAuditSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettings,
+	AzureAdContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettings,
+	AzureAdSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdSettings,
+	AzureBlobStoreSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettings,
+	AzureBlobStoreV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2Settings,
+	AzureEventHubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureEventHubSettings,
+	AzureMdmIntuneSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettings,
+	CloudPassageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCloudPassageSettings,
+	CortexXdrSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCortexXdrSettings,
+	CrowdstrikeAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettings,
+	CrowdstrikeDetectsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettings,
+	DummyLogTypeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettings,
+	DuoAuthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDuoAuthSettings,
+	DuoUserContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettings,
 	FeedSourceType: *string,
-	FoxItStixSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsFoxItStixSettings,
-	GcsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGcsSettings,
-	GcsV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGcsV2Settings,
-	GoogleCloudIdentityDevicesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettings,
-	GoogleCloudIdentityDeviceUsersSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings,
-	GoogleCloudStorageEventDrivenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings,
-	HttpSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsHttpSettings,
-	HttpsPushAmazonKinesisFirehoseSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings,
-	HttpsPushGoogleCloudPubsubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings,
-	HttpsPushWebhookSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsHttpsPushWebhookSettings,
-	ImpervaWafSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsImpervaWafSettings,
+	FoxItStixSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsFoxItStixSettings,
+	GcsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGcsSettings,
+	GcsV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGcsV2Settings,
+	GoogleCloudIdentityDevicesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettings,
+	GoogleCloudIdentityDeviceUsersSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings,
+	GoogleCloudStorageEventDrivenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings,
+	HttpSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsHttpSettings,
+	HttpsPushAmazonKinesisFirehoseSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings,
+	HttpsPushGoogleCloudPubsubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings,
+	HttpsPushWebhookSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsHttpsPushWebhookSettings,
+	ImpervaWafSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsImpervaWafSettings,
 	Labels: *map[string]*string,
-	MandiantIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMandiantIocSettings,
-	MicrosoftGraphAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettings,
-	MicrosoftSecurityCenterAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings,
-	MimecastMailSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMimecastMailSettings,
-	MimecastMailV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMimecastMailV2Settings,
-	NetskopeAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettings,
-	NetskopeAlertV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2Settings,
-	Office365Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOffice365Settings,
-	OktaSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOktaSettings,
-	OktaUserContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettings,
-	PanIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsPanIocSettings,
-	PanPrismaCloudSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettings,
-	ProofpointMailSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsProofpointMailSettings,
-	ProofpointOnDemandSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettings,
-	PubsubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsPubsubSettings,
-	QualysScanSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsQualysScanSettings,
-	QualysVmSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsQualysVmSettings,
-	Rapid7InsightSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettings,
-	RecordedFutureIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettings,
-	RhIsacIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettings,
-	SalesforceSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSalesforceSettings,
-	SentineloneAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettings,
-	ServiceNowCmdbSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettings,
-	SftpSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSftpSettings,
-	SymantecEventExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettings,
-	ThinkstCanarySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettings,
-	ThreatConnectIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettings,
-	ThreatConnectIocV3Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3Settings,
-	TrellixHxAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettings,
-	TrellixHxBulkAcqsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettings,
-	TrellixHxHostsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettings,
-	WebhookSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWebhookSettings,
-	WorkdaySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkdaySettings,
-	WorkspaceActivitySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettings,
-	WorkspaceAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettings,
-	WorkspaceChromeOsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettings,
-	WorkspaceGroupsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettings,
-	WorkspaceMobileSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettings,
-	WorkspacePrivilegesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettings,
-	WorkspaceUsersSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettings,
+	MandiantIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMandiantIocSettings,
+	MicrosoftGraphAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettings,
+	MicrosoftSecurityCenterAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings,
+	MimecastMailSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMimecastMailSettings,
+	MimecastMailV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMimecastMailV2Settings,
+	NetskopeAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettings,
+	NetskopeAlertV2Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2Settings,
+	Office365Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOffice365Settings,
+	OktaSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOktaSettings,
+	OktaUserContextSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettings,
+	PanIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsPanIocSettings,
+	PanPrismaCloudSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettings,
+	ProofpointMailSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsProofpointMailSettings,
+	ProofpointOnDemandSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettings,
+	PubsubSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsPubsubSettings,
+	QualysScanSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsQualysScanSettings,
+	QualysVmSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsQualysVmSettings,
+	Rapid7InsightSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettings,
+	RecordedFutureIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettings,
+	RhIsacIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettings,
+	SalesforceSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSalesforceSettings,
+	SentineloneAlertSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettings,
+	ServiceNowCmdbSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettings,
+	SftpSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSftpSettings,
+	SymantecEventExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettings,
+	ThinkstCanarySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettings,
+	ThreatConnectIocSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettings,
+	ThreatConnectIocV3Settings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3Settings,
+	TrellixHxAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettings,
+	TrellixHxBulkAcqsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettings,
+	TrellixHxHostsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettings,
+	WebhookSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWebhookSettings,
+	WorkdaySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkdaySettings,
+	WorkspaceActivitySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettings,
+	WorkspaceAlertsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettings,
+	WorkspaceChromeOsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettings,
+	WorkspaceGroupsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettings,
+	WorkspaceMobileSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettings,
+	WorkspacePrivilegesSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettings,
+	WorkspaceUsersSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettings,
 }
 ```
 
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonKinesisFirehoseSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonKinesisFirehoseSettings {
 
@@ -2732,13 +2732,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3Settings {
 	S3Uri: *string,
 	SourceDeletionOption: *string,
 	SourceType: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3SettingsAuthentication,
 }
 ```
 
@@ -2814,7 +2814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3SettingsAuthentication {
 	Region: *string,
@@ -2928,10 +2928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3V2Settings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthentication,
 	S3Uri: *string,
 	MaxLookbackDays: *f64,
 	SourceDeletionOption: *string,
@@ -3010,11 +3010,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthentication {
-	AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth,
-	AwsIamRoleAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth,
+	AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth,
+	AwsIamRoleAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth,
 }
 ```
 
@@ -3060,7 +3060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth {
 	AccessKeyId: *string,
@@ -3110,7 +3110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth {
 	AwsIamRoleArn: *string,
@@ -3160,11 +3160,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsSettings {
 	AccountNumber: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthentication,
 	Queue: *string,
 	Region: *string,
 	SourceDeletionOption: *string,
@@ -3258,11 +3258,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsSettingsAuthentication {
-	AdditionalS3AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth,
-	SqsAccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth,
+	AdditionalS3AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth,
+	SqsAccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth,
 }
 ```
 
@@ -3308,7 +3308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth {
 	AccessKeyId: *string,
@@ -3358,7 +3358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth {
 	AccessKeyId: *string,
@@ -3408,10 +3408,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsV2Settings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthentication,
 	Queue: *string,
 	S3Uri: *string,
 	MaxLookbackDays: *f64,
@@ -3506,11 +3506,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthentication {
-	AwsIamRoleAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth,
-	SqsV2AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth,
+	AwsIamRoleAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth,
+	SqsV2AccessKeySecretAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth,
 }
 ```
 
@@ -3556,7 +3556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth {
 	AwsIamRoleArn: *string,
@@ -3606,7 +3606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth {
 	AccessKeyId: *string,
@@ -3656,10 +3656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAnomaliSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAnomaliSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAnomaliSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAnomaliSettingsAuthentication,
 }
 ```
 
@@ -3690,7 +3690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAnomaliSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAnomaliSettingsAuthentication {
 	Secret: *string,
@@ -3740,10 +3740,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2HostsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettingsAuthentication,
 }
 ```
 
@@ -3774,7 +3774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2HostsSettingsAuthentication {
 	Secret: *string,
@@ -3824,10 +3824,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2InstancesSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication,
 }
 ```
 
@@ -3858,7 +3858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication {
 	Secret: *string,
@@ -3908,10 +3908,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2VpcsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication,
 }
 ```
 
@@ -3942,7 +3942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication {
 	Secret: *string,
@@ -3992,11 +3992,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsIamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsIamSettings {
 	ApiType: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAwsIamSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAwsIamSettingsAuthentication,
 }
 ```
 
@@ -4042,7 +4042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsIamSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAwsIamSettingsAuthentication {
 	Secret: *string,
@@ -4092,11 +4092,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdAuditSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettingsAuthentication,
 	Hostname: *string,
 	TenantId: *string,
 }
@@ -4174,7 +4174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdAuditSettingsAuthentication {
 	ClientId: *string,
@@ -4224,11 +4224,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdContextSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettingsAuthentication,
 	Hostname: *string,
 	RetrieveDevices: interface{},
 	RetrieveGroups: interface{},
@@ -4338,7 +4338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdContextSettingsAuthentication {
 	ClientId: *string,
@@ -4388,11 +4388,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureAdSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureAdSettingsAuthentication,
 	Hostname: *string,
 	TenantId: *string,
 }
@@ -4470,7 +4470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureAdSettingsAuthentication {
 	ClientId: *string,
@@ -4520,10 +4520,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureBlobStoreSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettingsAuthentication,
 	AzureUri: *string,
 	SourceDeletionOption: *string,
 	SourceType: *string,
@@ -4602,7 +4602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureBlobStoreSettingsAuthentication {
 	SasToken: *string,
@@ -4652,10 +4652,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureBlobStoreV2Settings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication,
 	AzureUri: *string,
 	MaxLookbackDays: *f64,
 	SourceDeletionOption: *string,
@@ -4734,11 +4734,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication {
 	AccessKey: *string,
-	AzureV2WorkloadIdentityFederation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation,
+	AzureV2WorkloadIdentityFederation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation,
 	SasToken: *string,
 }
 ```
@@ -4800,7 +4800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation {
 	ClientId: *string,
@@ -4866,7 +4866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureEventHubSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureEventHubSettings {
 	ConsumerGroup: *string,
@@ -4980,11 +4980,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureMdmIntuneSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication,
 	Hostname: *string,
 	TenantId: *string,
 }
@@ -5062,7 +5062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication {
 	ClientId: *string,
@@ -5112,10 +5112,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCloudPassageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCloudPassageSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCloudPassageSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCloudPassageSettingsAuthentication,
 	EventTypes: *[]*string,
 }
 ```
@@ -5162,7 +5162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCloudPassageSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCloudPassageSettingsAuthentication {
 	Secret: *string,
@@ -5212,10 +5212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCortexXdrSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthentication,
 	Endpoint: *string,
 	Hostname: *string,
 }
@@ -5278,7 +5278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCortexXdrSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -5312,7 +5312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -5362,10 +5362,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCrowdstrikeAlertsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication,
 	Hostname: *string,
 	IngestionType: *string,
 }
@@ -5428,7 +5428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication {
 	ClientId: *string,
@@ -5494,10 +5494,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCrowdstrikeDetectsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication,
 	Hostname: *string,
 	IngestionType: *string,
 }
@@ -5560,7 +5560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication {
 	ClientId: *string,
@@ -5626,11 +5626,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDummyLogTypeSettings {
 	ApiEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthentication,
 }
 ```
 
@@ -5676,7 +5676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -5710,7 +5710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -5760,10 +5760,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoAuthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDuoAuthSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDuoAuthSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDuoAuthSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -5810,7 +5810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoAuthSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDuoAuthSettingsAuthentication {
 	Secret: *string,
@@ -5860,10 +5860,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDuoUserContextSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -5910,7 +5910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsDuoUserContextSettingsAuthentication {
 	Secret: *string,
@@ -5960,13 +5960,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsFoxItStixSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsAuthentication,
 	Collection: *string,
 	PollServiceUri: *string,
-	Ssl: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsSsl,
+	Ssl: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsSsl,
 }
 ```
 
@@ -6042,7 +6042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsFoxItStixSettingsAuthentication {
 	Secret: *string,
@@ -6092,7 +6092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsSsl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsFoxItStixSettingsSsl {
 	EncodedPrivateKey: *string,
@@ -6162,7 +6162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGcsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGcsSettings {
 	BucketUri: *string,
@@ -6228,7 +6228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGcsV2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGcsV2Settings {
 	BucketUri: *string,
@@ -6294,11 +6294,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettings {
 	ApiVersion: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication,
 }
 ```
 
@@ -6344,11 +6344,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -6410,7 +6410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims {
 	Audience: *string,
@@ -6476,7 +6476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -6510,10 +6510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication,
 }
 ```
 
@@ -6544,11 +6544,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -6610,7 +6610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims {
 	Audience: *string,
@@ -6676,7 +6676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -6710,7 +6710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings {
 	BucketUri: *string,
@@ -6792,7 +6792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsHttpSettings {
 	SourceDeletionOption: *string,
@@ -6858,7 +6858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings {
 	SplitDelimiter: *string,
@@ -6892,7 +6892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings {
 	SplitDelimiter: *string,
@@ -6926,7 +6926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushWebhookSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsHttpsPushWebhookSettings {
 	SplitDelimiter: *string,
@@ -6960,10 +6960,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsImpervaWafSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthentication,
 }
 ```
 
@@ -6994,7 +6994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsImpervaWafSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -7028,7 +7028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -7078,10 +7078,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMandiantIocSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthentication,
 	StartTime: *string,
 }
 ```
@@ -7128,7 +7128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMandiantIocSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -7162,7 +7162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -7212,11 +7212,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMicrosoftGraphAlertSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication,
 	Hostname: *string,
 	TenantId: *string,
 }
@@ -7294,7 +7294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication {
 	ClientId: *string,
@@ -7344,11 +7344,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication,
 	Hostname: *string,
 	SubscriptionId: *string,
 	TenantId: *string,
@@ -7442,7 +7442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication {
 	ClientId: *string,
@@ -7492,10 +7492,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMimecastMailSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -7542,7 +7542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMimecastMailSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -7576,7 +7576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -7626,10 +7626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailV2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMimecastMailV2Settings {
-	AuthCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials,
+	AuthCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials,
 }
 ```
 
@@ -7660,7 +7660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials {
 	ClientId: *string,
@@ -7710,10 +7710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthentication,
 	ContentType: *string,
 	Feedname: *string,
 	Hostname: *string,
@@ -7792,7 +7792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -7826,7 +7826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -7876,10 +7876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertV2Settings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication,
 	ContentCategory: *string,
 	ContentTypes: *[]*string,
 	Hostname: *string,
@@ -7958,7 +7958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -7992,7 +7992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -8042,11 +8042,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOffice365Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOffice365Settings {
 	AuthEndpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOffice365SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOffice365SettingsAuthentication,
 	ContentType: *string,
 	Hostname: *string,
 	TenantId: *string,
@@ -8140,7 +8140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOffice365SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOffice365SettingsAuthentication {
 	ClientId: *string,
@@ -8190,10 +8190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -8240,7 +8240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -8274,7 +8274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -8324,10 +8324,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaUserContextSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthentication,
 	Hostname: *string,
 	ManagerIdReferenceField: *string,
 }
@@ -8390,7 +8390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaUserContextSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -8424,7 +8424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -8474,10 +8474,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPanIocSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthentication,
 	Feed: *string,
 	FeedId: *string,
 }
@@ -8540,7 +8540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPanIocSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -8574,7 +8574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -8624,10 +8624,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPanPrismaCloudSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -8674,7 +8674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPanPrismaCloudSettingsAuthentication {
 	Password: *string,
@@ -8724,10 +8724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointMailSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsProofpointMailSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsProofpointMailSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsProofpointMailSettingsAuthentication,
 }
 ```
 
@@ -8758,7 +8758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointMailSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsProofpointMailSettingsAuthentication {
 	Secret: *string,
@@ -8808,10 +8808,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsProofpointOnDemandSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthentication,
 	ClusterId: *string,
 }
 ```
@@ -8858,7 +8858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -8892,7 +8892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -8942,7 +8942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPubsubSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsPubsubSettings {
 	GoogleServiceAccountEmail: *string,
@@ -8976,11 +8976,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysScanSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsQualysScanSettings {
 	ApiType: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsQualysScanSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsQualysScanSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -9042,7 +9042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysScanSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsQualysScanSettingsAuthentication {
 	Secret: *string,
@@ -9092,10 +9092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysVmSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsQualysVmSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsQualysVmSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsQualysVmSettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -9142,7 +9142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysVmSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsQualysVmSettingsAuthentication {
 	Secret: *string,
@@ -9192,10 +9192,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRapid7InsightSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthentication,
 	Endpoint: *string,
 	Hostname: *string,
 }
@@ -9258,7 +9258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRapid7InsightSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -9292,7 +9292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -9342,10 +9342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRecordedFutureIocSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthentication,
 }
 ```
 
@@ -9376,7 +9376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -9410,7 +9410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -9460,10 +9460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRhIsacIocSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettingsAuthentication,
 }
 ```
 
@@ -9494,7 +9494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsRhIsacIocSettingsAuthentication {
 	ClientId: *string,
@@ -9560,12 +9560,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSalesforceSettings {
 	Hostname: *string,
-	OauthJwtCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials,
-	OauthPasswordGrantAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth,
+	OauthJwtCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials,
+	OauthPasswordGrantAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth,
 }
 ```
 
@@ -9626,11 +9626,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -9692,7 +9692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims {
 	Audience: *string,
@@ -9758,7 +9758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials {
 	PrivateKey: *string,
@@ -9792,7 +9792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth {
 	ClientId: *string,
@@ -9890,10 +9890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSentineloneAlertSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthentication,
 	Hostname: *string,
 	InitialStartTime: *string,
 	IsAlertApiSubscribed: interface{},
@@ -9972,7 +9972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -10006,7 +10006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -10056,10 +10056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsServiceNowCmdbSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettingsAuthentication,
 	Feedname: *string,
 	Hostname: *string,
 }
@@ -10122,7 +10122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsServiceNowCmdbSettingsAuthentication {
 	Secret: *string,
@@ -10172,10 +10172,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSftpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSftpSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSftpSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSftpSettingsAuthentication,
 	SourceDeletionOption: *string,
 	SourceType: *string,
 	Uri: *string,
@@ -10254,7 +10254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSftpSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSftpSettingsAuthentication {
 	Password: *string,
@@ -10336,10 +10336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSymantecEventExportSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettingsAuthentication,
 }
 ```
 
@@ -10370,7 +10370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsSymantecEventExportSettingsAuthentication {
 	ClientId: *string,
@@ -10452,10 +10452,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThinkstCanarySettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthentication,
 	Hostname: *string,
 }
 ```
@@ -10502,7 +10502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThinkstCanarySettingsAuthentication {
 	HeaderKeyValues: interface{},
@@ -10536,7 +10536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValues {
 	Key: *string,
@@ -10586,10 +10586,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThreatConnectIocSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettingsAuthentication,
 	Hostname: *string,
 	Owners: *[]*string,
 }
@@ -10652,7 +10652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThreatConnectIocSettingsAuthentication {
 	Secret: *string,
@@ -10702,10 +10702,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThreatConnectIocV3Settings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication,
 	Fields: *[]*string,
 	Hostname: *string,
 	Owners: *[]*string,
@@ -10816,7 +10816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication {
 	Secret: *string,
@@ -10866,10 +10866,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxAlertsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication,
 	Endpoint: *string,
 }
 ```
@@ -10923,11 +10923,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication {
-	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso,
-	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam,
+	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso,
+	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam,
 }
 ```
 
@@ -10973,7 +10973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso {
 	ApiEndpoint: *string,
@@ -11053,7 +11053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam {
 	ClientId: *string,
@@ -11134,11 +11134,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettings {
 	Endpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication,
 }
 ```
 
@@ -11191,11 +11191,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication {
-	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso,
-	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam,
+	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso,
+	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam,
 }
 ```
 
@@ -11241,7 +11241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso {
 	ApiEndpoint: *string,
@@ -11321,7 +11321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam {
 	ClientId: *string,
@@ -11402,11 +11402,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxHostsSettings {
 	Endpoint: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthentication,
 }
 ```
 
@@ -11459,11 +11459,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthentication {
-	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso,
-	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam,
+	Msso: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso,
+	TrellixIam: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam,
 }
 ```
 
@@ -11509,7 +11509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso {
 	ApiEndpoint: *string,
@@ -11589,7 +11589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam {
 	ClientId: *string,
@@ -11670,7 +11670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWebhookSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWebhookSettings {
 
@@ -11683,10 +11683,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkdaySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkdaySettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkdaySettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkdaySettingsAuthentication,
 	Hostname: *string,
 	TenantId: *string,
 }
@@ -11749,7 +11749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkdaySettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkdaySettingsAuthentication {
 	ClientId: *string,
@@ -11873,11 +11873,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceActivitySettings {
 	Applications: *[]*string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -11939,11 +11939,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -12005,7 +12005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims {
 	Audience: *string,
@@ -12071,7 +12071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -12105,10 +12105,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceAlertsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -12155,11 +12155,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -12221,7 +12221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims {
 	Audience: *string,
@@ -12287,7 +12287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -12321,10 +12321,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceChromeOsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -12371,11 +12371,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -12437,7 +12437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims {
 	Audience: *string,
@@ -12503,7 +12503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -12537,10 +12537,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceGroupsSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -12587,11 +12587,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -12653,7 +12653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims {
 	Audience: *string,
@@ -12719,7 +12719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -12753,10 +12753,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceMobileSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -12803,11 +12803,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -12869,7 +12869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims {
 	Audience: *string,
@@ -12935,7 +12935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -12969,10 +12969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspacePrivilegesSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication,
 	WorkspaceCustomerId: *string,
 }
 ```
@@ -13019,11 +13019,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -13085,7 +13085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims {
 	Audience: *string,
@@ -13151,7 +13151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -13185,10 +13185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceUsersSettings {
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthentication,
 	ProjectionType: *string,
 	WorkspaceCustomerId: *string,
 }
@@ -13251,11 +13251,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthentication {
-	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims,
-	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v19.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials,
+	Claims: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims,
+	RsCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials,
 	TokenEndpoint: *string,
 }
 ```
@@ -13317,7 +13317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims {
 	Audience: *string,
@@ -13383,7 +13383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials {
 	PrivateKey: *string,
@@ -13417,7 +13417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedFailureDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedFailureDetails {
 
@@ -13430,7 +13430,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 &chroniclefeed.ChronicleFeedTimeouts {
 	Create: *string,
@@ -13492,7 +13492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference
 ```
@@ -13741,7 +13741,7 @@ func InternalValue() ChronicleFeedDetailsAmazonKinesisFirehoseSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference
 ```
@@ -14157,7 +14157,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3SettingsOutputReference
 ```
@@ -14514,7 +14514,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference
 ```
@@ -14807,7 +14807,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessK
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference
 ```
@@ -15114,7 +15114,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamR
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference
 ```
@@ -15447,7 +15447,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3V2SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonS3V2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonS3V2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonS3V2SettingsOutputReference
 ```
@@ -15822,7 +15822,7 @@ func InternalValue() ChronicleFeedDetailsAmazonS3V2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference
 ```
@@ -16129,7 +16129,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsSettingsAuthenticationAddition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference
 ```
@@ -16462,7 +16462,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference
 ```
@@ -16769,7 +16769,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAcces
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsSettingsOutputReference
 ```
@@ -17176,7 +17176,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference
 ```
@@ -17483,7 +17483,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIam
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference
 ```
@@ -17802,7 +17802,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsV2SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference
 ```
@@ -18109,7 +18109,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2A
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAmazonSqsV2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAmazonSqsV2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAmazonSqsV2SettingsOutputReference
 ```
@@ -18506,7 +18506,7 @@ func InternalValue() ChronicleFeedDetailsAmazonSqsV2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference
 ```
@@ -18813,7 +18813,7 @@ func InternalValue() ChronicleFeedDetailsAnomaliSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAnomaliSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAnomaliSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAnomaliSettingsOutputReference
 ```
@@ -19104,7 +19104,7 @@ func InternalValue() ChronicleFeedDetailsAnomaliSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference
 ```
@@ -19411,7 +19411,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2HostsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2HostsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2HostsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2HostsSettingsOutputReference
 ```
@@ -19702,7 +19702,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2HostsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference
 ```
@@ -20009,7 +20009,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference
 ```
@@ -20300,7 +20300,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2InstancesSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference
 ```
@@ -20607,7 +20607,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference
 ```
@@ -20898,7 +20898,7 @@ func InternalValue() ChronicleFeedDetailsAwsEc2VpcsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference
 ```
@@ -21205,7 +21205,7 @@ func InternalValue() ChronicleFeedDetailsAwsIamSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAwsIamSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAwsIamSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAwsIamSettingsOutputReference
 ```
@@ -21525,7 +21525,7 @@ func InternalValue() ChronicleFeedDetailsAwsIamSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference
 ```
@@ -21832,7 +21832,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdAuditSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdAuditSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdAuditSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdAuditSettingsOutputReference
 ```
@@ -22210,7 +22210,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdAuditSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference
 ```
@@ -22517,7 +22517,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdContextSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdContextSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdContextSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdContextSettingsOutputReference
 ```
@@ -22953,7 +22953,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdContextSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference
 ```
@@ -23260,7 +23260,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureAdSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureAdSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureAdSettingsOutputReference
 ```
@@ -23638,7 +23638,7 @@ func InternalValue() ChronicleFeedDetailsAzureAdSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference
 ```
@@ -23945,7 +23945,7 @@ func InternalValue() ChronicleFeedDetailsAzureBlobStoreSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureBlobStoreSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureBlobStoreSettingsOutputReference
 ```
@@ -24323,7 +24323,7 @@ func InternalValue() ChronicleFeedDetailsAzureBlobStoreSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference
 ```
@@ -24638,7 +24638,7 @@ func InternalValue() ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference
 ```
@@ -24966,7 +24966,7 @@ func InternalValue() ChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference
 ```
@@ -25341,7 +25341,7 @@ func InternalValue() ChronicleFeedDetailsAzureBlobStoreV2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureEventHubSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureEventHubSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureEventHubSettingsOutputReference
 ```
@@ -25754,7 +25754,7 @@ func InternalValue() ChronicleFeedDetailsAzureEventHubSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference
 ```
@@ -26061,7 +26061,7 @@ func InternalValue() ChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference
 ```
@@ -26439,7 +26439,7 @@ func InternalValue() ChronicleFeedDetailsAzureMdmIntuneSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference
 ```
@@ -26746,7 +26746,7 @@ func InternalValue() ChronicleFeedDetailsCloudPassageSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCloudPassageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCloudPassageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCloudPassageSettingsOutputReference
 ```
@@ -27066,7 +27066,7 @@ func InternalValue() ChronicleFeedDetailsCloudPassageSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -27226,7 +27226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -27551,7 +27551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference
 ```
@@ -27842,7 +27842,7 @@ func InternalValue() ChronicleFeedDetailsCortexXdrSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCortexXdrSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCortexXdrSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCortexXdrSettingsOutputReference
 ```
@@ -28191,7 +28191,7 @@ func InternalValue() ChronicleFeedDetailsCortexXdrSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference
 ```
@@ -28527,7 +28527,7 @@ func InternalValue() ChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference
 ```
@@ -28862,7 +28862,7 @@ func InternalValue() ChronicleFeedDetailsCrowdstrikeAlertsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference
 ```
@@ -29198,7 +29198,7 @@ func InternalValue() ChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference
 ```
@@ -29547,7 +29547,7 @@ func InternalValue() ChronicleFeedDetailsCrowdstrikeDetectsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -29707,7 +29707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -30032,7 +30032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference
 ```
@@ -30323,7 +30323,7 @@ func InternalValue() ChronicleFeedDetailsDummyLogTypeSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDummyLogTypeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDummyLogTypeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDummyLogTypeSettingsOutputReference
 ```
@@ -30643,7 +30643,7 @@ func InternalValue() ChronicleFeedDetailsDummyLogTypeSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference
 ```
@@ -30950,7 +30950,7 @@ func InternalValue() ChronicleFeedDetailsDuoAuthSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoAuthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDuoAuthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDuoAuthSettingsOutputReference
 ```
@@ -31270,7 +31270,7 @@ func InternalValue() ChronicleFeedDetailsDuoAuthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference
 ```
@@ -31577,7 +31577,7 @@ func InternalValue() ChronicleFeedDetailsDuoUserContextSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsDuoUserContextSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsDuoUserContextSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsDuoUserContextSettingsOutputReference
 ```
@@ -31897,7 +31897,7 @@ func InternalValue() ChronicleFeedDetailsDuoUserContextSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference
 ```
@@ -32204,7 +32204,7 @@ func InternalValue() ChronicleFeedDetailsFoxItStixSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsFoxItStixSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsFoxItStixSettingsOutputReference
 ```
@@ -32595,7 +32595,7 @@ func InternalValue() ChronicleFeedDetailsFoxItStixSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsFoxItStixSettingsSslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsFoxItStixSettingsSslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsFoxItStixSettingsSslOutputReference
 ```
@@ -32902,7 +32902,7 @@ func InternalValue() ChronicleFeedDetailsFoxItStixSettingsSsl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGcsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGcsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGcsSettingsOutputReference
 ```
@@ -33249,7 +33249,7 @@ func InternalValue() ChronicleFeedDetailsGcsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGcsV2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGcsV2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGcsV2SettingsOutputReference
 ```
@@ -33589,7 +33589,7 @@ func InternalValue() ChronicleFeedDetailsGcsV2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference
 ```
@@ -33925,7 +33925,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference
 ```
@@ -34287,7 +34287,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -34565,7 +34565,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference
 ```
@@ -34885,7 +34885,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDevicesSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference
 ```
@@ -35221,7 +35221,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference
 ```
@@ -35583,7 +35583,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -35861,7 +35861,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference
 ```
@@ -36152,7 +36152,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference
 ```
@@ -36514,7 +36514,7 @@ func InternalValue() ChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsHttpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsHttpSettingsOutputReference
 ```
@@ -36850,7 +36850,7 @@ func InternalValue() ChronicleFeedDetailsHttpSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference
 ```
@@ -37128,7 +37128,7 @@ func InternalValue() ChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference
 ```
@@ -37406,7 +37406,7 @@ func InternalValue() ChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference
 ```
@@ -37684,7 +37684,7 @@ func InternalValue() ChronicleFeedDetailsHttpsPushWebhookSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -37844,7 +37844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -38169,7 +38169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference
 ```
@@ -38460,7 +38460,7 @@ func InternalValue() ChronicleFeedDetailsImpervaWafSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsImpervaWafSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsImpervaWafSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsImpervaWafSettingsOutputReference
 ```
@@ -38751,7 +38751,7 @@ func InternalValue() ChronicleFeedDetailsImpervaWafSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -38911,7 +38911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -39236,7 +39236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference
 ```
@@ -39527,7 +39527,7 @@ func InternalValue() ChronicleFeedDetailsMandiantIocSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMandiantIocSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMandiantIocSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMandiantIocSettingsOutputReference
 ```
@@ -39847,7 +39847,7 @@ func InternalValue() ChronicleFeedDetailsMandiantIocSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference
 ```
@@ -40154,7 +40154,7 @@ func InternalValue() ChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference
 ```
@@ -40532,7 +40532,7 @@ func InternalValue() ChronicleFeedDetailsMicrosoftGraphAlertSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference
 ```
@@ -40839,7 +40839,7 @@ func InternalValue() ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAut
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference
 ```
@@ -41246,7 +41246,7 @@ func InternalValue() ChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -41406,7 +41406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -41731,7 +41731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference
 ```
@@ -42022,7 +42022,7 @@ func InternalValue() ChronicleFeedDetailsMimecastMailSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMimecastMailSettingsOutputReference
 ```
@@ -42342,7 +42342,7 @@ func InternalValue() ChronicleFeedDetailsMimecastMailSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference
 ```
@@ -42649,7 +42649,7 @@ func InternalValue() ChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsMimecastMailV2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsMimecastMailV2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsMimecastMailV2SettingsOutputReference
 ```
@@ -42940,7 +42940,7 @@ func InternalValue() ChronicleFeedDetailsMimecastMailV2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -43100,7 +43100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -43425,7 +43425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference
 ```
@@ -43716,7 +43716,7 @@ func InternalValue() ChronicleFeedDetailsNetskopeAlertSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsNetskopeAlertSettingsOutputReference
 ```
@@ -44094,7 +44094,7 @@ func InternalValue() ChronicleFeedDetailsNetskopeAlertSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList
 ```
@@ -44254,7 +44254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -44579,7 +44579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference
 ```
@@ -44870,7 +44870,7 @@ func InternalValue() ChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference
 ```
@@ -45248,7 +45248,7 @@ func InternalValue() ChronicleFeedDetailsNetskopeAlertV2Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference
 ```
@@ -45555,7 +45555,7 @@ func InternalValue() ChronicleFeedDetailsOffice365SettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOffice365SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOffice365SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOffice365SettingsOutputReference
 ```
@@ -45962,7 +45962,7 @@ func InternalValue() ChronicleFeedDetailsOffice365Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -46122,7 +46122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -46447,7 +46447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOktaSettingsAuthenticationOutputReference
 ```
@@ -46738,7 +46738,7 @@ func InternalValue() ChronicleFeedDetailsOktaSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOktaSettingsOutputReference
 ```
@@ -47058,7 +47058,7 @@ func InternalValue() ChronicleFeedDetailsOktaSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -47218,7 +47218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -47543,7 +47543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference
 ```
@@ -47834,7 +47834,7 @@ func InternalValue() ChronicleFeedDetailsOktaUserContextSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOktaUserContextSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOktaUserContextSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOktaUserContextSettingsOutputReference
 ```
@@ -48183,7 +48183,7 @@ func InternalValue() ChronicleFeedDetailsOktaUserContextSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsOutputReference
 ```
@@ -51702,7 +51702,7 @@ func InternalValue() ChronicleFeedDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -51862,7 +51862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -52187,7 +52187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference
 ```
@@ -52478,7 +52478,7 @@ func InternalValue() ChronicleFeedDetailsPanIocSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanIocSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanIocSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsPanIocSettingsOutputReference
 ```
@@ -52827,7 +52827,7 @@ func InternalValue() ChronicleFeedDetailsPanIocSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference
 ```
@@ -53134,7 +53134,7 @@ func InternalValue() ChronicleFeedDetailsPanPrismaCloudSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPanPrismaCloudSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPanPrismaCloudSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsPanPrismaCloudSettingsOutputReference
 ```
@@ -53454,7 +53454,7 @@ func InternalValue() ChronicleFeedDetailsPanPrismaCloudSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference
 ```
@@ -53761,7 +53761,7 @@ func InternalValue() ChronicleFeedDetailsProofpointMailSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointMailSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointMailSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsProofpointMailSettingsOutputReference
 ```
@@ -54052,7 +54052,7 @@ func InternalValue() ChronicleFeedDetailsProofpointMailSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -54212,7 +54212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -54537,7 +54537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference
 ```
@@ -54828,7 +54828,7 @@ func InternalValue() ChronicleFeedDetailsProofpointOnDemandSettingsAuthenticatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsProofpointOnDemandSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsProofpointOnDemandSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsProofpointOnDemandSettingsOutputReference
 ```
@@ -55148,7 +55148,7 @@ func InternalValue() ChronicleFeedDetailsProofpointOnDemandSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsPubsubSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsPubsubSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsPubsubSettingsOutputReference
 ```
@@ -55426,7 +55426,7 @@ func InternalValue() ChronicleFeedDetailsPubsubSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference
 ```
@@ -55733,7 +55733,7 @@ func InternalValue() ChronicleFeedDetailsQualysScanSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysScanSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsQualysScanSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsQualysScanSettingsOutputReference
 ```
@@ -56082,7 +56082,7 @@ func InternalValue() ChronicleFeedDetailsQualysScanSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference
 ```
@@ -56389,7 +56389,7 @@ func InternalValue() ChronicleFeedDetailsQualysVmSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsQualysVmSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsQualysVmSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsQualysVmSettingsOutputReference
 ```
@@ -56709,7 +56709,7 @@ func InternalValue() ChronicleFeedDetailsQualysVmSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -56869,7 +56869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -57194,7 +57194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference
 ```
@@ -57485,7 +57485,7 @@ func InternalValue() ChronicleFeedDetailsRapid7InsightSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRapid7InsightSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRapid7InsightSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRapid7InsightSettingsOutputReference
 ```
@@ -57834,7 +57834,7 @@ func InternalValue() ChronicleFeedDetailsRapid7InsightSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -57994,7 +57994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -58319,7 +58319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference
 ```
@@ -58610,7 +58610,7 @@ func InternalValue() ChronicleFeedDetailsRecordedFutureIocSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRecordedFutureIocSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRecordedFutureIocSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRecordedFutureIocSettingsOutputReference
 ```
@@ -58901,7 +58901,7 @@ func InternalValue() ChronicleFeedDetailsRecordedFutureIocSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference
 ```
@@ -59237,7 +59237,7 @@ func InternalValue() ChronicleFeedDetailsRhIsacIocSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsRhIsacIocSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsRhIsacIocSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsRhIsacIocSettingsOutputReference
 ```
@@ -59528,7 +59528,7 @@ func InternalValue() ChronicleFeedDetailsRhIsacIocSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference
 ```
@@ -59864,7 +59864,7 @@ func InternalValue() ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsCl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference
 ```
@@ -60226,7 +60226,7 @@ func InternalValue() ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference
 ```
@@ -60504,7 +60504,7 @@ func InternalValue() ChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference
 ```
@@ -60898,7 +60898,7 @@ func InternalValue() ChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAut
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSalesforceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSalesforceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSalesforceSettingsOutputReference
 ```
@@ -61260,7 +61260,7 @@ func InternalValue() ChronicleFeedDetailsSalesforceSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList
 ```
@@ -61420,7 +61420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -61745,7 +61745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference
 ```
@@ -62036,7 +62036,7 @@ func InternalValue() ChronicleFeedDetailsSentineloneAlertSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSentineloneAlertSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSentineloneAlertSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSentineloneAlertSettingsOutputReference
 ```
@@ -62414,7 +62414,7 @@ func InternalValue() ChronicleFeedDetailsSentineloneAlertSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference
 ```
@@ -62721,7 +62721,7 @@ func InternalValue() ChronicleFeedDetailsServiceNowCmdbSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsServiceNowCmdbSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsServiceNowCmdbSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsServiceNowCmdbSettingsOutputReference
 ```
@@ -63070,7 +63070,7 @@ func InternalValue() ChronicleFeedDetailsServiceNowCmdbSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSftpSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSftpSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSftpSettingsAuthenticationOutputReference
 ```
@@ -63435,7 +63435,7 @@ func InternalValue() ChronicleFeedDetailsSftpSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSftpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSftpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSftpSettingsOutputReference
 ```
@@ -63813,7 +63813,7 @@ func InternalValue() ChronicleFeedDetailsSftpSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference
 ```
@@ -64178,7 +64178,7 @@ func InternalValue() ChronicleFeedDetailsSymantecEventExportSettingsAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsSymantecEventExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsSymantecEventExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsSymantecEventExportSettingsOutputReference
 ```
@@ -64469,7 +64469,7 @@ func InternalValue() ChronicleFeedDetailsSymantecEventExportSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList
 ```
@@ -64629,7 +64629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference
 ```
@@ -64954,7 +64954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference
 ```
@@ -65245,7 +65245,7 @@ func InternalValue() ChronicleFeedDetailsThinkstCanarySettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThinkstCanarySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThinkstCanarySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThinkstCanarySettingsOutputReference
 ```
@@ -65565,7 +65565,7 @@ func InternalValue() ChronicleFeedDetailsThinkstCanarySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference
 ```
@@ -65872,7 +65872,7 @@ func InternalValue() ChronicleFeedDetailsThreatConnectIocSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThreatConnectIocSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThreatConnectIocSettingsOutputReference
 ```
@@ -66221,7 +66221,7 @@ func InternalValue() ChronicleFeedDetailsThreatConnectIocSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference
 ```
@@ -66528,7 +66528,7 @@ func InternalValue() ChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference
 ```
@@ -66964,7 +66964,7 @@ func InternalValue() ChronicleFeedDetailsThreatConnectIocV3Settings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference
 ```
@@ -67300,7 +67300,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference
 ```
@@ -67633,7 +67633,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference
 ```
@@ -67969,7 +67969,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference
 ```
@@ -68289,7 +68289,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxAlertsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference
 ```
@@ -68604,7 +68604,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference
 ```
@@ -68937,7 +68937,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference
 ```
@@ -69252,7 +69252,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference
 ```
@@ -69565,7 +69565,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxBulkAcqsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference
 ```
@@ -69880,7 +69880,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference
 ```
@@ -70213,7 +70213,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxHostsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference
 ```
@@ -70528,7 +70528,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTre
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsTrellixHxHostsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsTrellixHxHostsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsTrellixHxHostsSettingsOutputReference
 ```
@@ -70841,7 +70841,7 @@ func InternalValue() ChronicleFeedDetailsTrellixHxHostsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWebhookSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWebhookSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWebhookSettingsOutputReference
 ```
@@ -71090,7 +71090,7 @@ func InternalValue() ChronicleFeedDetailsWebhookSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference
 ```
@@ -71513,7 +71513,7 @@ func InternalValue() ChronicleFeedDetailsWorkdaySettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkdaySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkdaySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkdaySettingsOutputReference
 ```
@@ -71862,7 +71862,7 @@ func InternalValue() ChronicleFeedDetailsWorkdaySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference
 ```
@@ -72198,7 +72198,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference
 ```
@@ -72560,7 +72560,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -72838,7 +72838,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceActivitySettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceActivitySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceActivitySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceActivitySettingsOutputReference
 ```
@@ -73187,7 +73187,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceActivitySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference
 ```
@@ -73523,7 +73523,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationCl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference
 ```
@@ -73885,7 +73885,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -74163,7 +74163,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference
 ```
@@ -74483,7 +74483,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceAlertsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference
 ```
@@ -74819,7 +74819,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference
 ```
@@ -75181,7 +75181,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -75459,7 +75459,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference
 ```
@@ -75779,7 +75779,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceChromeOsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference
 ```
@@ -76115,7 +76115,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationCl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference
 ```
@@ -76477,7 +76477,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -76755,7 +76755,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference
 ```
@@ -77075,7 +77075,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceGroupsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference
 ```
@@ -77411,7 +77411,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationCl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference
 ```
@@ -77773,7 +77773,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceMobileSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -78051,7 +78051,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceMobileSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceMobileSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceMobileSettingsOutputReference
 ```
@@ -78371,7 +78371,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceMobileSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference
 ```
@@ -78707,7 +78707,7 @@ func InternalValue() ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference
 ```
@@ -79069,7 +79069,7 @@ func InternalValue() ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -79347,7 +79347,7 @@ func InternalValue() ChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference
 ```
@@ -79667,7 +79667,7 @@ func InternalValue() ChronicleFeedDetailsWorkspacePrivilegesSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference
 ```
@@ -80003,7 +80003,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationCla
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference
 ```
@@ -80365,7 +80365,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceUsersSettingsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference
 ```
@@ -80643,7 +80643,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedDetailsWorkspaceUsersSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedDetailsWorkspaceUsersSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedDetailsWorkspaceUsersSettingsOutputReference
 ```
@@ -80992,7 +80992,7 @@ func InternalValue() ChronicleFeedDetailsWorkspaceUsersSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedFailureDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedFailureDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedFailureDetailsOutputReference
 ```
@@ -81285,7 +81285,7 @@ func InternalValue() ChronicleFeedFailureDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleFeed.ChronicleFeedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/chroniclefeed"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclefeed"
 
 chroniclefeed.NewChronicleFeedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleFeedTimeoutsOutputReference
 ```

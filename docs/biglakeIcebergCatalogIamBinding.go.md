@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.NewBiglakeIcebergCatalogIamBinding(scope Construct, id *string, config BiglakeIcebergCatalogIamBindingConfig) BiglakeIcebergCatalogIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 &biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 &biglakeicebergcatalogiambinding.BiglakeIcebergCatalogIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergca
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiambinding"
 
 biglakeicebergcatalogiambinding.NewBiglakeIcebergCatalogIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogIamBindingConditionOutputReference
 ```

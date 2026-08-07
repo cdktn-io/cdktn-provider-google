@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.NewServiceDirectoryService(scope Construct, id *string, config ServiceDirectoryServiceConfig) ServiceDirectoryService
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.ServiceDirectoryService_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.ServiceDirectoryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ servicedirectoryservice.ServiceDirectoryService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.ServiceDirectoryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ servicedirectoryservice.ServiceDirectoryService_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.ServiceDirectoryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 &servicedirectoryservice.ServiceDirectoryServiceConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectory
 	DeletionPolicy: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.serviceDirectoryService.ServiceDirectoryServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.serviceDirectoryService.ServiceDirectoryServiceTimeouts,
 }
 ```
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 &servicedirectoryservice.ServiceDirectoryServiceTimeouts {
 	Create: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryService.ServiceDirectoryServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/servicedirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectoryservice"
 
 servicedirectoryservice.NewServiceDirectoryServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDirectoryServiceTimeoutsOutputReference
 ```

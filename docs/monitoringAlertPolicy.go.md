@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicy(scope Construct, id *string, config MonitoringAlertPolicyConfig) MonitoringAlertPolicy
 ```
@@ -522,7 +522,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.MonitoringAlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.MonitoringAlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ monitoringalertpolicy.MonitoringAlertPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.MonitoringAlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ monitoringalertpolicy.MonitoringAlertPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.MonitoringAlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1119,13 +1119,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyAlertStrategy {
 	AutoClose: *string,
 	NotificationChannelStrategy: interface{},
 	NotificationPrompts: *[]*string,
-	NotificationRateLimit: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit,
+	NotificationRateLimit: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit,
 }
 ```
 
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy {
 	NotificationChannelNames: *[]*string,
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit {
 	Period: *string,
@@ -1292,16 +1292,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditions {
 	DisplayName: *string,
-	ConditionAbsent: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsent,
-	ConditionMatchedLog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLog,
-	ConditionMonitoringQueryLanguage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage,
-	ConditionPrometheusQueryLanguage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage,
-	ConditionSql: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSql,
-	ConditionThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThreshold,
+	ConditionAbsent: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsent,
+	ConditionMatchedLog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLog,
+	ConditionMonitoringQueryLanguage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage,
+	ConditionPrometheusQueryLanguage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage,
+	ConditionSql: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSql,
+	ConditionThreshold: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThreshold,
 }
 ```
 
@@ -1426,13 +1426,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionAbsent {
 	Duration: *string,
 	Aggregations: interface{},
 	Filter: *string,
-	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger,
+	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger,
 }
 ```
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregations {
 	AlignmentPeriod: *string,
@@ -1666,7 +1666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger {
 	Count: *f64,
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionMatchedLog {
 	Filter: *string,
@@ -1773,13 +1773,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage {
 	Duration: *string,
 	Query: *string,
 	EvaluationMissingData: *string,
-	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger,
+	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger,
 }
 ```
 
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger {
 	Count: *f64,
@@ -1919,7 +1919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage {
 	Query: *string,
@@ -2091,15 +2091,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSql {
 	Query: *string,
-	BooleanTest: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlBooleanTest,
-	Daily: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDaily,
-	Hourly: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlHourly,
-	Minutes: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlMinutes,
-	RowCountTest: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlRowCountTest,
+	BooleanTest: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlBooleanTest,
+	Daily: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDaily,
+	Hourly: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlHourly,
+	Minutes: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlMinutes,
+	RowCountTest: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlRowCountTest,
 }
 ```
 
@@ -2211,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlBooleanTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlBooleanTest {
 	Column: *string,
@@ -2248,11 +2248,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlDaily {
 	Periodicity: *f64,
-	ExecutionTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime,
+	ExecutionTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime,
 }
 ```
 
@@ -2301,7 +2301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime {
 	Hours: *f64,
@@ -2392,7 +2392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlHourly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlHourly {
 	Periodicity: *f64,
@@ -2448,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlMinutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlMinutes {
 	Periodicity: *f64,
@@ -2485,7 +2485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlRowCountTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionSqlRowCountTest {
 	Comparison: *string,
@@ -2548,7 +2548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionThreshold {
 	Comparison: *string,
@@ -2558,9 +2558,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertp
 	DenominatorFilter: *string,
 	EvaluationMissingData: *string,
 	Filter: *string,
-	ForecastOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions,
+	ForecastOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions,
 	ThresholdValue: *f64,
-	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger,
+	Trigger: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger,
 }
 ```
 
@@ -2766,7 +2766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregations {
 	AlignmentPeriod: *string,
@@ -2920,7 +2920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations {
 	AlignmentPeriod: *string,
@@ -3074,7 +3074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions {
 	ForecastHorizon: *string,
@@ -3113,7 +3113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger {
 	Count: *f64,
@@ -3163,7 +3163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyConfig {
 	Connection: interface{},
@@ -3176,15 +3176,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertp
 	Combiner: *string,
 	Conditions: interface{},
 	DisplayName: *string,
-	AlertStrategy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategy,
+	AlertStrategy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategy,
 	DeletionPolicy: *string,
-	Documentation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyDocumentation,
+	Documentation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyDocumentation,
 	Enabled: interface{},
 	Id: *string,
 	NotificationChannels: *[]*string,
 	Project: *string,
 	Severity: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringAlertPolicy.MonitoringAlertPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringAlertPolicy.MonitoringAlertPolicyTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -3494,7 +3494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyCreationRecord {
 
@@ -3507,7 +3507,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertp
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyDocumentation {
 	Content: *string,
@@ -3598,7 +3598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyDocumentationLinks {
 	DisplayName: *string,
@@ -3652,7 +3652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 &monitoringalertpolicy.MonitoringAlertPolicyTimeouts {
 	Create: *string,
@@ -3714,7 +3714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
 ```
@@ -3874,7 +3874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference
 ```
@@ -4199,7 +4199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 ```
@@ -4477,7 +4477,7 @@ func InternalValue() MonitoringAlertPolicyAlertStrategyNotificationRateLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyAlertStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyAlertStrategyOutputReference
 ```
@@ -4868,7 +4868,7 @@ func InternalValue() MonitoringAlertPolicyAlertStrategy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionAbsentAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyConditionsConditionAbsentAggregationsList
 ```
@@ -5028,7 +5028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference
 ```
@@ -5411,7 +5411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionAbsentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionAbsentOutputReference
 ```
@@ -5795,7 +5795,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionAbsent
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference
 ```
@@ -6102,7 +6102,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionAbsentTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference
 ```
@@ -6402,7 +6402,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionMatchedLog
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference
 ```
@@ -6766,7 +6766,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionMonitoringQueryLang
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference
 ```
@@ -7073,7 +7073,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionMonitoringQueryLang
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
 ```
@@ -7518,7 +7518,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionPrometheusQueryLang
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlBooleanTestOutputReference
 ```
@@ -7789,7 +7789,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlBooleanTest
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference
 ```
@@ -8154,7 +8154,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference
 ```
@@ -8467,7 +8467,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlDaily
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlHourlyOutputReference
 ```
@@ -8767,7 +8767,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlHourly
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlMinutesOutputReference
 ```
@@ -9038,7 +9038,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlMinutes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlOutputReference
 ```
@@ -9519,7 +9519,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSql
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference
 ```
@@ -9812,7 +9812,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionSqlRowCountTest
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyConditionsConditionThresholdAggregationsList
 ```
@@ -9972,7 +9972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference
 ```
@@ -10355,7 +10355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList
 ```
@@ -10515,7 +10515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference
 ```
@@ -10898,7 +10898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
 ```
@@ -11169,7 +11169,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionThresholdForecastOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionThresholdOutputReference
 ```
@@ -11746,7 +11746,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionThreshold
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference
 ```
@@ -12053,7 +12053,7 @@ func InternalValue() MonitoringAlertPolicyConditionsConditionThresholdTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyConditionsList
 ```
@@ -12213,7 +12213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyConditionsOutputReference
 ```
@@ -12765,7 +12765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyCreationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyCreationRecordList
 ```
@@ -12914,7 +12914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyCreationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyCreationRecordOutputReference
 ```
@@ -13203,7 +13203,7 @@ func InternalValue() MonitoringAlertPolicyCreationRecord
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyDocumentationLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyDocumentationLinksList
 ```
@@ -13363,7 +13363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyDocumentationLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringAlertPolicyDocumentationLinksOutputReference
 ```
@@ -13688,7 +13688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyDocumentationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyDocumentationOutputReference
 ```
@@ -14066,7 +14066,7 @@ func InternalValue() MonitoringAlertPolicyDocumentation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringalertpolicy"
 
 monitoringalertpolicy.NewMonitoringAlertPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyTimeoutsOutputReference
 ```

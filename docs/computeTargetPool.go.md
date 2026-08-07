@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.NewComputeTargetPool(scope Construct, id *string, config ComputeTargetPoolConfig) ComputeTargetPool
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.ComputeTargetPool_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.ComputeTargetPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ computetargetpool.ComputeTargetPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.ComputeTargetPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ computetargetpool.ComputeTargetPool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.ComputeTargetPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 &computetargetpool.ComputeTargetPoolConfig {
 	Connection: interface{},
@@ -1075,7 +1075,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpoo
 	Project: *string,
 	Region: *string,
 	SessionAffinity: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeTargetPool.ComputeTargetPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeTargetPool.ComputeTargetPoolTimeouts,
 }
 ```
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 &computetargetpool.ComputeTargetPoolTimeouts {
 	Create: *string,
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetPool.ComputeTargetPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computetargetpool"
 
 computetargetpool.NewComputeTargetPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeTargetPoolTimeoutsOutputReference
 ```

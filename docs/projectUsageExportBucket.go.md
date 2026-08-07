@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.NewProjectUsageExportBucket(scope Construct, id *string, config ProjectUsageExportBucketConfig) ProjectUsageExportBucket
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.ProjectUsageExportBucket_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.ProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ projectusageexportbucket.ProjectUsageExportBucket_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.ProjectUsageExportBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ projectusageexportbucket.ProjectUsageExportBucket_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.ProjectUsageExportBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 &projectusageexportbucket.ProjectUsageExportBucketConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexpo
 	Id: *string,
 	Prefix: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectUsageExportBucket.ProjectUsageExportBucketTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectUsageExportBucket.ProjectUsageExportBucketTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 &projectusageexportbucket.ProjectUsageExportBucketTimeouts {
 	Create: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectUsageExportBucket.ProjectUsageExportBucketTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectusageexportbucket"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectusageexportbucket"
 
 projectusageexportbucket.NewProjectUsageExportBucketTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectUsageExportBucketTimeoutsOutputReference
 ```

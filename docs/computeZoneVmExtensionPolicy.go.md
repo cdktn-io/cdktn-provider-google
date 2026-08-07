@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicy(scope Construct, id *string, config ComputeZoneVmExtensionPolicyConfig) ComputeZoneVmExtensionPolicy
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.ComputeZoneVmExtensionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 &computezonevmextensionpolicy.ComputeZoneVmExtensionPolicyConfig {
 	Connection: interface{},
@@ -1041,7 +1041,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmext
 	InstanceSelectors: interface{},
 	Priority: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts,
 }
 ```
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 &computezonevmextensionpolicy.ComputeZoneVmExtensionPolicyExtensionPolicies {
 	ExtensionName: *string,
@@ -1338,10 +1338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 &computezonevmextensionpolicy.ComputeZoneVmExtensionPolicyInstanceSelectors {
-	LabelSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelector,
+	LabelSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelector,
 }
 ```
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 &computezonevmextensionpolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelector {
 	InclusionLabels: *map[string]*string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 &computezonevmextensionpolicy.ComputeZoneVmExtensionPolicyTimeouts {
 	Create: *string,
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyExtensionPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeZoneVmExtensionPolicyExtensionPoliciesList
 ```
@@ -1628,7 +1628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyExtensionPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeZoneVmExtensionPolicyExtensionPoliciesOutputReference
 ```
@@ -1975,7 +1975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference
 ```
@@ -2253,7 +2253,7 @@ func InternalValue() ComputeZoneVmExtensionPolicyInstanceSelectorsLabelSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyInstanceSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeZoneVmExtensionPolicyInstanceSelectorsList
 ```
@@ -2413,7 +2413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyInstanceSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeZoneVmExtensionPolicyInstanceSelectorsOutputReference
 ```
@@ -2722,7 +2722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computezonevmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computezonevmextensionpolicy"
 
 computezonevmextensionpolicy.NewComputeZoneVmExtensionPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeZoneVmExtensionPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.NewComputeRegionCompositeHealthCheck(scope Construct, id *string, config ComputeRegionCompositeHealthCheckConfig) ComputeRegionCompositeHealthCheck
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 &computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheckConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncom
 	Description: *string,
 	HealthSources: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 &computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheckTimeouts {
 	Create: *string,
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.NewComputeRegionCompositeHealthCheckTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionCompositeHealthCheckTimeoutsOutputReference
 ```

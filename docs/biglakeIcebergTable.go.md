@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTable(scope Construct, id *string, config BiglakeIcebergTableConfig) BiglakeIcebergTable
 ```
@@ -508,7 +508,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.BiglakeIcebergTable_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.BiglakeIcebergTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ biglakeicebergtable.BiglakeIcebergTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.BiglakeIcebergTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ biglakeicebergtable.BiglakeIcebergTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.BiglakeIcebergTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableConfig {
 	Connection: interface{},
@@ -1074,15 +1074,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergta
 	Catalog: *string,
 	Name: *string,
 	Namespace: *string,
-	Schema: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergTable.BiglakeIcebergTableSchema,
+	Schema: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergTable.BiglakeIcebergTableSchema,
 	DeletionPolicy: *string,
 	Id: *string,
 	Location: *string,
-	PartitionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec,
+	PartitionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec,
 	Project: *string,
 	Properties: *map[string]*string,
-	SortOrder: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergTable.BiglakeIcebergTableSortOrder,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergTable.BiglakeIcebergTableTimeouts,
+	SortOrder: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergTable.BiglakeIcebergTableSortOrder,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergTable.BiglakeIcebergTableTimeouts,
 }
 ```
 
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTablePartitionSpec {
 	Fields: interface{},
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTablePartitionSpecFields {
 	Name: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableSchema {
 	Fields: interface{},
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableSchemaFields {
 	Id: *f64,
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableSortOrder {
 	Fields: interface{},
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableSortOrderFields {
 	Direction: *string,
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 &biglakeicebergtable.BiglakeIcebergTableTimeouts {
 	Create: *string,
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTablePartitionSpecFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergTablePartitionSpecFieldsList
 ```
@@ -1966,7 +1966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTablePartitionSpecFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergTablePartitionSpecFieldsOutputReference
 ```
@@ -2310,7 +2310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTablePartitionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergTablePartitionSpecOutputReference
 ```
@@ -2605,7 +2605,7 @@ func InternalValue() BiglakeIcebergTablePartitionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergTableSchemaFieldsList
 ```
@@ -2765,7 +2765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergTableSchemaFieldsOutputReference
 ```
@@ -3149,7 +3149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergTableSchemaOutputReference
 ```
@@ -3502,7 +3502,7 @@ func InternalValue() BiglakeIcebergTableSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSortOrderFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BiglakeIcebergTableSortOrderFieldsList
 ```
@@ -3662,7 +3662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSortOrderFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BiglakeIcebergTableSortOrderFieldsOutputReference
 ```
@@ -4017,7 +4017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSortOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableSortOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergTableSortOrderOutputReference
 ```
@@ -4312,7 +4312,7 @@ func InternalValue() BiglakeIcebergTableSortOrder
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergtable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergtable"
 
 biglakeicebergtable.NewBiglakeIcebergTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergTableTimeoutsOutputReference
 ```

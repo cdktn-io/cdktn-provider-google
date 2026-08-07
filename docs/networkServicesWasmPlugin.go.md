@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPlugin(scope Construct, id *string, config NetworkServicesWasmPluginConfig) NetworkServicesWasmPlugin
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NetworkServicesWasmPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NetworkServicesWasmPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ networkserviceswasmplugin.NetworkServicesWasmPlugin_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NetworkServicesWasmPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ networkserviceswasmplugin.NetworkServicesWasmPlugin_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NetworkServicesWasmPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 &networkserviceswasmplugin.NetworkServicesWasmPluginConfig {
 	Connection: interface{},
@@ -1099,9 +1099,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesw
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfig,
+	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeouts,
 }
 ```
 
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 &networkserviceswasmplugin.NetworkServicesWasmPluginLogConfig {
 	Enable: interface{},
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 &networkserviceswasmplugin.NetworkServicesWasmPluginTimeouts {
 	Create: *string,
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 &networkserviceswasmplugin.NetworkServicesWasmPluginUsedBy {
 
@@ -1518,7 +1518,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesw
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 &networkserviceswasmplugin.NetworkServicesWasmPluginVersions {
 	VersionName: *string,
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesWasmPluginLogConfigOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() NetworkServicesWasmPluginLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesWasmPluginTimeoutsOutputReference
 ```
@@ -2316,7 +2316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginUsedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesWasmPluginUsedByList
 ```
@@ -2465,7 +2465,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginUsedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesWasmPluginUsedByOutputReference
 ```
@@ -2743,7 +2743,7 @@ func InternalValue() NetworkServicesWasmPluginUsedBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesWasmPluginVersionsList
 ```
@@ -2903,7 +2903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceswasmplugin"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceswasmplugin"
 
 networkserviceswasmplugin.NewNetworkServicesWasmPluginVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesWasmPluginVersionsOutputReference
 ```

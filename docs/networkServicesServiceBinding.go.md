@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NewNetworkServicesServiceBinding(scope Construct, id *string, config NetworkServicesServiceBindingConfig) NetworkServicesServiceBinding
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NetworkServicesServiceBinding_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkservicesservicebinding.NetworkServicesServiceBinding_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NetworkServicesServiceBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkservicesservicebinding.NetworkServicesServiceBinding_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NetworkServicesServiceBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 &networkservicesservicebinding.NetworkServicesServiceBindingConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicess
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts,
 }
 ```
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 &networkservicesservicebinding.NetworkServicesServiceBindingTimeouts {
 	Create: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesServiceBinding.NetworkServicesServiceBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesservicebinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesservicebinding"
 
 networkservicesservicebinding.NewNetworkServicesServiceBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesServiceBindingTimeoutsOutputReference
 ```

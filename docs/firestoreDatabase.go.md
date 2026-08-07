@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.NewFirestoreDatabase(scope Construct, id *string, config FirestoreDatabaseConfig) FirestoreDatabase
 ```
@@ -524,7 +524,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.FirestoreDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.FirestoreDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ firestoredatabase.FirestoreDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.FirestoreDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ firestoredatabase.FirestoreDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.FirestoreDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1264,7 +1264,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseCmekConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 &firestoredatabase.FirestoreDatabaseCmekConfig {
 	KmsKeyName: *string,
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 &firestoredatabase.FirestoreDatabaseConfig {
 	Connection: interface{},
@@ -1326,7 +1326,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabas
 	Name: *string,
 	Type: *string,
 	AppEngineIntegrationMode: *string,
-	CmekConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreDatabase.FirestoreDatabaseCmekConfig,
+	CmekConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreDatabase.FirestoreDatabaseCmekConfig,
 	ConcurrencyMode: *string,
 	DatabaseEdition: *string,
 	DeleteProtectionState: *string,
@@ -1338,7 +1338,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabas
 	Project: *string,
 	RealtimeUpdatesMode: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firestoreDatabase.FirestoreDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreDatabase.FirestoreDatabaseTimeouts,
 }
 ```
 
@@ -1723,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 &firestoredatabase.FirestoreDatabaseTimeouts {
 	Create: *string,
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseCmekConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.NewFirestoreDatabaseCmekConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreDatabaseCmekConfigOutputReference
 ```
@@ -2067,7 +2067,7 @@ func InternalValue() FirestoreDatabaseCmekConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firestoredatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestoredatabase"
 
 firestoredatabase.NewFirestoreDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreDatabaseTimeoutsOutputReference
 ```

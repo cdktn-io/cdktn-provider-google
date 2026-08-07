@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.NewDataGoogleKmsKeyHandles(scope Construct, id *string, config DataGoogleKmsKeyHandlesConfig) DataGoogleKmsKeyHandles
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.DataGoogleKmsKeyHandles_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.DataGoogleKmsKeyHandles_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglekmskeyhandles.DataGoogleKmsKeyHandles_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.DataGoogleKmsKeyHandles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglekmskeyhandles.DataGoogleKmsKeyHandles_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.DataGoogleKmsKeyHandles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 &datagooglekmskeyhandles.DataGoogleKmsKeyHandlesConfig {
 	Connection: interface{},
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 &datagooglekmskeyhandles.DataGoogleKmsKeyHandlesKeyHandles {
 
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.NewDataGoogleKmsKeyHandlesKeyHandlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleKmsKeyHandlesKeyHandlesList
 ```
@@ -1009,7 +1009,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglekmskeyhandles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglekmskeyhandles"
 
 datagooglekmskeyhandles.NewDataGoogleKmsKeyHandlesKeyHandlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleKmsKeyHandlesKeyHandlesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.NewIapWebBackendServiceIamBinding(scope Construct, id *string, config IapWebBackendServiceIamBindingConfig) IapWebBackendServiceIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.IapWebBackendServiceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 &iapwebbackendserviceiambinding.IapWebBackendServiceIamBindingCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 &iapwebbackendserviceiambinding.IapWebBackendServiceIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendser
 	Members: *[]*string,
 	Role: *string,
 	WebBackendService: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapwebbackendserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendserviceiambinding"
 
 iapwebbackendserviceiambinding.NewIapWebBackendServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebBackendServiceIamBindingConditionOutputReference
 ```
