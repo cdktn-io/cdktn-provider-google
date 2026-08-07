@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubService(scope Construct, id *string, config ApphubServiceConfig) ApphubService
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apphubService.ApphubService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.ApphubService_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apphubService.ApphubService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.ApphubService_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ apphubservice.ApphubService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apphubService.ApphubService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.ApphubService_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ apphubservice.ApphubService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apphubService.ApphubService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.ApphubService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,13 +1083,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributes {
 	BusinessOwners: interface{},
-	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apphubService.ApphubServiceAttributesCriticality,
+	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubService.ApphubServiceAttributesCriticality,
 	DeveloperOwners: interface{},
-	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apphubService.ApphubServiceAttributesEnvironment,
+	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubService.ApphubServiceAttributesEnvironment,
 	OperatorOwners: interface{},
 }
 ```
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributesBusinessOwners {
 	Email: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributesCriticality {
 	Type: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributesDeveloperOwners {
 	Email: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributesEnvironment {
 	Type: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceAttributesOperatorOwners {
 	Email: *string,
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceConfig {
 	Connection: interface{},
@@ -1413,13 +1413,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 	DiscoveredService: *string,
 	Location: *string,
 	ServiceId: *string,
-	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apphubService.ApphubServiceAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubService.ApphubServiceAttributes,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apphubService.ApphubServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubService.ApphubServiceTimeouts,
 }
 ```
 
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServiceProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServiceProperties {
 
@@ -1696,7 +1696,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServicePropertiesExtendedMetadata {
 
@@ -1709,7 +1709,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadataValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServicePropertiesExtendedMetadataValue {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesFunctionalType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServicePropertiesFunctionalType {
 
@@ -1735,7 +1735,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServicePropertiesIdentity {
 
@@ -1748,7 +1748,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesRegistrationType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServicePropertiesRegistrationType {
 
@@ -1761,7 +1761,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceServiceReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceServiceReference {
 
@@ -1774,7 +1774,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubService.ApphubServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 &apphubservice.ApphubServiceTimeouts {
 	Create: *string,
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceAttributesBusinessOwnersList
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceAttributesBusinessOwnersOutputReference
 ```
@@ -2314,7 +2314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubServiceAttributesCriticalityOutputReference
 ```
@@ -2585,7 +2585,7 @@ func InternalValue() ApphubServiceAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceAttributesDeveloperOwnersList
 ```
@@ -2745,7 +2745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceAttributesDeveloperOwnersOutputReference
 ```
@@ -3063,7 +3063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubServiceAttributesEnvironmentOutputReference
 ```
@@ -3334,7 +3334,7 @@ func InternalValue() ApphubServiceAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceAttributesOperatorOwnersList
 ```
@@ -3494,7 +3494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceAttributesOperatorOwnersOutputReference
 ```
@@ -3812,7 +3812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubServiceAttributesOutputReference
 ```
@@ -4271,7 +4271,7 @@ func InternalValue() ApphubServiceAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesExtendedMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesExtendedMetadataList
 ```
@@ -4420,7 +4420,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesExtendedMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesExtendedMetadataOutputReference
 ```
@@ -4709,7 +4709,7 @@ func InternalValue() ApphubServiceServicePropertiesExtendedMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadataValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesExtendedMetadataValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesExtendedMetadataValueList
 ```
@@ -4858,7 +4858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesExtendedMetadataValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesExtendedMetadataValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesExtendedMetadataValueOutputReference
 ```
@@ -5147,7 +5147,7 @@ func InternalValue() ApphubServiceServicePropertiesExtendedMetadataValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesFunctionalTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesFunctionalTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesFunctionalTypeList
 ```
@@ -5296,7 +5296,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesFunctionalTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesFunctionalTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesFunctionalTypeOutputReference
 ```
@@ -5574,7 +5574,7 @@ func InternalValue() ApphubServiceServicePropertiesFunctionalType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesIdentityList
 ```
@@ -5723,7 +5723,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesIdentityOutputReference
 ```
@@ -6001,7 +6001,7 @@ func InternalValue() ApphubServiceServicePropertiesIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesList
 ```
@@ -6150,7 +6150,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesOutputReference
 ```
@@ -6494,7 +6494,7 @@ func InternalValue() ApphubServiceServiceProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesRegistrationTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesRegistrationTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesRegistrationTypeList
 ```
@@ -6643,7 +6643,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServicePropertiesRegistrationTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServicePropertiesRegistrationTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServicePropertiesRegistrationTypeOutputReference
 ```
@@ -6921,7 +6921,7 @@ func InternalValue() ApphubServiceServicePropertiesRegistrationType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServiceReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServiceReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServiceReferenceList
 ```
@@ -7070,7 +7070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceServiceReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceServiceReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubServiceServiceReferenceOutputReference
 ```
@@ -7348,7 +7348,7 @@ func InternalValue() ApphubServiceServiceReference
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubService.ApphubServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apphubservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubservice"
 
 apphubservice.NewApphubServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubServiceTimeoutsOutputReference
 ```

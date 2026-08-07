@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.NewBiglakeIcebergCatalogIamMember(scope Construct, id *string, config BiglakeIcebergCatalogIamMemberConfig) BiglakeIcebergCatalogIamMember
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 &biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMemberCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 &biglakeicebergcatalogiammember.BiglakeIcebergCatalogIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergca
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergCatalogIamMember.BiglakeIcebergCatalogIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/biglakeicebergcatalogiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakeicebergcatalogiammember"
 
 biglakeicebergcatalogiammember.NewBiglakeIcebergCatalogIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeIcebergCatalogIamMemberConditionOutputReference
 ```

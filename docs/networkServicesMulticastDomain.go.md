@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomain(scope Construct, id *string, config NetworkServicesMulticastDomainConfig) NetworkServicesMulticastDomain
 ```
@@ -495,7 +495,7 @@ func ResetUllMulticastDomain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainConfig {
 	Connection: interface{},
@@ -1136,7 +1136,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AdminNetwork: *string,
-	ConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig,
+	ConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig,
 	Location: *string,
 	MulticastDomainId: *string,
 	DeletionPolicy: *string,
@@ -1145,8 +1145,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 	Labels: *map[string]*string,
 	MulticastDomainGroup: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts,
-	UllMulticastDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts,
+	UllMulticastDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain,
 }
 ```
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainConnectionConfig {
 	ConnectionType: *string,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainState {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainTimeouts {
 	Create: *string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainUllMulticastDomain {
 	PreconfiguredUllDomain: *string,
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainConnectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainConnectionConfigOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() NetworkServicesMulticastDomainConnectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastDomainStateList
 ```
@@ -2040,7 +2040,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastDomainStateOutputReference
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() NetworkServicesMulticastDomainState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainTimeoutsOutputReference
 ```
@@ -2654,7 +2654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainUllMulticastDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainUllMulticastDomainOutputReference
 ```

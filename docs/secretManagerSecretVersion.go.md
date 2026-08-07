@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.NewSecretManagerSecretVersion(scope Construct, id *string, config SecretManagerSecretVersionConfig) SecretManagerSecretVersion
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.SecretManagerSecretVersion_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.SecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ secretmanagersecretversion.SecretManagerSecretVersion_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.SecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ secretmanagersecretversion.SecretManagerSecretVersion_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.SecretManagerSecretVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 &secretmanagersecretversion.SecretManagerSecretVersionConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersec
 	SecretData: *string,
 	SecretDataWo: *string,
 	SecretDataWoVersion: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secretManagerSecretVersion.SecretManagerSecretVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secretManagerSecretVersion.SecretManagerSecretVersionTimeouts,
 }
 ```
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 &secretmanagersecretversion.SecretManagerSecretVersionTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagersecretversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/secretmanagersecretversion"
 
 secretmanagersecretversion.NewSecretManagerSecretVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerSecretVersionTimeoutsOutputReference
 ```

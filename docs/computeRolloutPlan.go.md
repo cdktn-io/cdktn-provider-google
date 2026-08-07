@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlan(scope Construct, id *string, config ComputeRolloutPlanConfig) ComputeRolloutPlan
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.ComputeRolloutPlan_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.ComputeRolloutPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ computerolloutplan.ComputeRolloutPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.ComputeRolloutPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computerolloutplan.ComputeRolloutPlan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.ComputeRolloutPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutpl
 	Id: *string,
 	LocationScope: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanTimeouts,
 }
 ```
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanTimeouts {
 	Create: *string,
@@ -1229,13 +1229,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWaves.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWaves {
 	Selectors: interface{},
-	Validation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanWavesValidation,
+	Validation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanWavesValidation,
 	DisplayName: *string,
-	OrchestrationOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptions,
+	OrchestrationOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptions,
 }
 ```
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesOrchestrationOptions {
 	Delays: interface{},
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptionsDelays.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesOrchestrationOptionsDelays {
 	Delimiter: *string,
@@ -1447,11 +1447,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesSelectors {
-	LocationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsLocationSelector,
-	ResourceHierarchySelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsResourceHierarchySelector,
+	LocationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsLocationSelector,
+	ResourceHierarchySelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsResourceHierarchySelector,
 }
 ```
 
@@ -1497,7 +1497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsLocationSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesSelectorsLocationSelector {
 	IncludedLocations: *[]*string,
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsResourceHierarchySelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesSelectorsResourceHierarchySelector {
 	IncludedFolders: *[]*string,
@@ -1597,11 +1597,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesValidation {
 	Type: *string,
-	TimeBasedValidationMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRolloutPlan.ComputeRolloutPlanWavesValidationTimeBasedValidationMetadata,
+	TimeBasedValidationMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRolloutPlan.ComputeRolloutPlanWavesValidationTimeBasedValidationMetadata,
 }
 ```
 
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesValidationTimeBasedValidationMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 &computerolloutplan.ComputeRolloutPlanWavesValidationTimeBasedValidationMetadata {
 	WaitDuration: *string,
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanTimeoutsOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRolloutPlanWavesList
 ```
@@ -2157,7 +2157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptionsDelaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesOrchestrationOptionsDelaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRolloutPlanWavesOrchestrationOptionsDelaysList
 ```
@@ -2317,7 +2317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptionsDelaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesOrchestrationOptionsDelaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRolloutPlanWavesOrchestrationOptionsDelaysOutputReference
 ```
@@ -2671,7 +2671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOrchestrationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesOrchestrationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanWavesOrchestrationOptionsOutputReference
 ```
@@ -3020,7 +3020,7 @@ func InternalValue() ComputeRolloutPlanWavesOrchestrationOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRolloutPlanWavesOutputReference
 ```
@@ -3439,7 +3439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRolloutPlanWavesSelectorsList
 ```
@@ -3599,7 +3599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanWavesSelectorsLocationSelectorOutputReference
 ```
@@ -3877,7 +3877,7 @@ func InternalValue() ComputeRolloutPlanWavesSelectorsLocationSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRolloutPlanWavesSelectorsOutputReference
 ```
@@ -4228,7 +4228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference
 ```
@@ -4564,7 +4564,7 @@ func InternalValue() ComputeRolloutPlanWavesSelectorsResourceHierarchySelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanWavesValidationOutputReference
 ```
@@ -4877,7 +4877,7 @@ func InternalValue() ComputeRolloutPlanWavesValidation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanWavesValidationTimeBasedValidationMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerolloutplan"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutplan"
 
 computerolloutplan.NewComputeRolloutPlanWavesValidationTimeBasedValidationMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRolloutPlanWavesValidationTimeBasedValidationMetadataOutputReference
 ```

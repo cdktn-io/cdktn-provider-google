@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 datagooglenetworksecurityaddressgroupiampolicy.NewDataGoogleNetworkSecurityAddressGroupIamPolicy(scope Construct, id *string, config DataGoogleNetworkSecurityAddressGroupIamPolicyConfig) DataGoogleNetworkSecurityAddressGroupIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressG
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressG
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressGroupIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkSecurityAddressGroupIamPolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglenetworksecurityaddressgroupiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglenetworksecurityaddressgroupiampolicy"
 
 &datagooglenetworksecurityaddressgroupiampolicy.DataGoogleNetworkSecurityAddressGroupIamPolicyConfig {
 	Connection: interface{},

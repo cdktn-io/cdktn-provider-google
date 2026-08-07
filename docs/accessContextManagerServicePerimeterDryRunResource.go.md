@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.NewAccessContextManagerServicePerimeterDryRunResource(scope Construct, id *string, config AccessContextManagerServicePerimeterDryRunResourceConfig) AccessContextManagerServicePerimeterDryRunResource
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResource_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 &accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResourceConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextman
 	Resource: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts,
 }
 ```
 
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 &accesscontextmanagerserviceperimeterdryrunresource.AccessContextManagerServicePerimeterDryRunResourceTimeouts {
 	Create: *string,
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/accesscontextmanagerserviceperimeterdryrunresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeterdryrunresource"
 
 accesscontextmanagerserviceperimeterdryrunresource.NewAccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference
 ```

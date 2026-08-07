@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicy(scope Construct, id *string, config ProjectOrganizationPolicyConfig) ProjectOrganizationPolicy
 ```
@@ -501,7 +501,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.ProjectOrganizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.ProjectOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ projectorganizationpolicy.ProjectOrganizationPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.ProjectOrganizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ projectorganizationpolicy.ProjectOrganizationPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.ProjectOrganizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyBooleanPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyBooleanPolicy {
 	Enforced: interface{},
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyConfig {
 	Connection: interface{},
@@ -1056,12 +1056,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizat
 	Provisioners: *[]interface{},
 	Constraint: *string,
 	Project: *string,
-	BooleanPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyBooleanPolicy,
+	BooleanPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyBooleanPolicy,
 	DeletionPolicy: *string,
 	Id: *string,
-	ListPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicy,
-	RestorePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicy,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts,
+	ListPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicy,
+	RestorePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicy,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts,
 	Version: *f64,
 }
 ```
@@ -1298,11 +1298,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyListPolicy {
-	Allow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllow,
-	Deny: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyDeny,
+	Allow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllow,
+	Deny: github.com/cdktn-io/cdktn-provider-google-go/google/v20.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyDeny,
 	InheritFromParent: interface{},
 	SuggestedValue: *string,
 }
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyListPolicyAllow {
 	All: interface{},
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyDeny.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyListPolicyDeny {
 	All: interface{},
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyRestorePolicy {
 	Default: interface{},
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 &projectorganizationpolicy.ProjectOrganizationPolicyTimeouts {
 	Create: *string,
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyBooleanPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyBooleanPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyBooleanPolicyOutputReference
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() ProjectOrganizationPolicyBooleanPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyListPolicyAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyListPolicyAllowOutputReference
 ```
@@ -2168,7 +2168,7 @@ func InternalValue() ProjectOrganizationPolicyListPolicyAllow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyDenyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyListPolicyDenyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyListPolicyDenyOutputReference
 ```
@@ -2475,7 +2475,7 @@ func InternalValue() ProjectOrganizationPolicyListPolicyDeny
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyListPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyListPolicyOutputReference
 ```
@@ -2866,7 +2866,7 @@ func InternalValue() ProjectOrganizationPolicyListPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyRestorePolicyOutputReference
 ```
@@ -3137,7 +3137,7 @@ func InternalValue() ProjectOrganizationPolicyRestorePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectorganizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/projectorganizationpolicy"
 
 projectorganizationpolicy.NewProjectOrganizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyTimeoutsOutputReference
 ```

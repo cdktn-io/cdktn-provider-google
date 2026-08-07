@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtension(scope Construct, id *string, config NetworkServicesLbRouteExtensionConfig) NetworkServicesLbRouteExtension
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ networkserviceslbrouteextension.NetworkServicesLbRouteExtension_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NetworkServicesLbRouteExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ networkserviceslbrouteextension.NetworkServicesLbRouteExtension_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NetworkServicesLbRouteExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 &networkserviceslbrouteextension.NetworkServicesLbRouteExtensionConfig {
 	Connection: interface{},
@@ -1041,7 +1041,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesl
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts,
 }
 ```
 
@@ -1313,11 +1313,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 &networkserviceslbrouteextension.NetworkServicesLbRouteExtensionExtensionChains {
 	Extensions: interface{},
-	MatchCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsMatchCondition,
+	MatchCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsMatchCondition,
 	Name: *string,
 }
 ```
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 &networkserviceslbrouteextension.NetworkServicesLbRouteExtensionExtensionChainsExtensions {
 	Name: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsMatchCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 &networkserviceslbrouteextension.NetworkServicesLbRouteExtensionExtensionChainsMatchCondition {
 	CelExpression: *string,
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 &networkserviceslbrouteextension.NetworkServicesLbRouteExtensionTimeouts {
 	Create: *string,
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionExtensionChainsExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesLbRouteExtensionExtensionChainsExtensionsList
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference
 ```
@@ -2447,7 +2447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionExtensionChainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesLbRouteExtensionExtensionChainsList
 ```
@@ -2607,7 +2607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference
 ```
@@ -2878,7 +2878,7 @@ func InternalValue() NetworkServicesLbRouteExtensionExtensionChainsMatchConditio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionExtensionChainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionExtensionChainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesLbRouteExtensionExtensionChainsOutputReference
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkserviceslbrouteextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkserviceslbrouteextension"
 
 networkserviceslbrouteextension.NewNetworkServicesLbRouteExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesLbRouteExtensionTimeoutsOutputReference
 ```

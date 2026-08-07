@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.NewApigeeDataCollector(scope Construct, id *string, config ApigeeDataCollectorConfig) ApigeeDataCollector
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.ApigeeDataCollector_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.ApigeeDataCollector_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apigeedatacollector.ApigeeDataCollector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.ApigeeDataCollector_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apigeedatacollector.ApigeeDataCollector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.ApigeeDataCollector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 &apigeedatacollector.ApigeeDataCollectorConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollec
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeDataCollector.ApigeeDataCollectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeDataCollector.ApigeeDataCollectorTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 &apigeedatacollector.ApigeeDataCollectorTimeouts {
 	Create: *string,
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDataCollector.ApigeeDataCollectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeedatacollector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedatacollector"
 
 apigeedatacollector.NewApigeeDataCollectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeDataCollectorTimeoutsOutputReference
 ```

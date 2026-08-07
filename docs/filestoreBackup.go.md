@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.NewFilestoreBackup(scope Construct, id *string, config FilestoreBackupConfig) FilestoreBackup
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.FilestoreBackup_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.FilestoreBackup_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ filestorebackup.FilestoreBackup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.FilestoreBackup_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ filestorebackup.FilestoreBackup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.filestoreBackup.FilestoreBackup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.FilestoreBackup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.filestoreBackup.FilestoreBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 &filestorebackup.FilestoreBackupConfig {
 	Connection: interface{},
@@ -1112,7 +1112,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
 	Labels: *map[string]*string,
 	Project: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.filestoreBackup.FilestoreBackupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.filestoreBackup.FilestoreBackupTimeouts,
 }
 ```
 
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 &filestorebackup.FilestoreBackupTimeouts {
 	Create: *string,
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/filestorebackup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/filestorebackup"
 
 filestorebackup.NewFilestoreBackupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FilestoreBackupTimeoutsOutputReference
 ```

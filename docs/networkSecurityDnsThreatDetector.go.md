@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NewNetworkSecurityDnsThreatDetector(scope Construct, id *string, config NetworkSecurityDnsThreatDetectorConfig) NetworkSecurityDnsThreatDetector
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 &networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetectorConfig {
 	Connection: interface{},
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityd
 	Location: *string,
 	Project: *string,
 	ThreatDetectorProvider: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetectorTimeouts,
 }
 ```
 
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 &networksecuritydnsthreatdetector.NetworkSecurityDnsThreatDetectorTimeouts {
 	Create: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityDnsThreatDetector.NetworkSecurityDnsThreatDetectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritydnsthreatdetector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritydnsthreatdetector"
 
 networksecuritydnsthreatdetector.NewNetworkSecurityDnsThreatDetectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityDnsThreatDetectorTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModule(scope Construct, id *string, config SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig) SccManagementProjectSecurityHealthAnalyticsCustomModule
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecu
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecu
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig {
 	Connection: interface{},
@@ -1001,14 +1001,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementpro
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig,
+	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	EnablementState: *string,
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts,
 }
 ```
 
@@ -1233,14 +1233,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig {
-	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate,
+	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate,
 	Recommendation: *string,
-	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector,
+	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector,
 	Severity: *string,
-	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput,
+	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput,
 	Description: *string,
 }
 ```
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput {
 	Properties: interface{},
@@ -1387,11 +1387,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties {
 	Name: *string,
-	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
+	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
 }
 ```
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression {
 	Expression: *string,
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate {
 	Expression: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector {
 	ResourceTypes: *[]*string,
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts {
 	Create: *string,
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference
 ```
@@ -2850,7 +2850,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference
 ```
@@ -3284,7 +3284,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference
 ```
@@ -3642,7 +3642,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference
 ```
@@ -3913,7 +3913,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference
 ```

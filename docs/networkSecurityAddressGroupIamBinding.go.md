@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NewNetworkSecurityAddressGroupIamBinding(scope Construct, id *string, config NetworkSecurityAddressGroupIamBindingConfig) NetworkSecurityAddressGroupIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 &networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBindingCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 &networksecurityaddressgroupiambinding.NetworkSecurityAddressGroupIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecuritya
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroupIamBinding.NetworkSecurityAddressGroupIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networksecurityaddressgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecurityaddressgroupiambinding"
 
 networksecurityaddressgroupiambinding.NewNetworkSecurityAddressGroupIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityAddressGroupIamBindingConditionOutputReference
 ```

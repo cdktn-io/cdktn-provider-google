@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettings(scope Construct, id *string, config DialogflowCxGenerativeSettingsConfig) DialogflowCxGenerativeSettings
 ```
@@ -514,7 +514,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_IsConstruct(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.DialogflowCxGenerativeSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsConfig {
 	Connection: interface{},
@@ -1001,13 +1001,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgene
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	LanguageCode: *string,
-	FallbackSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettings,
-	GenerativeSafetySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettings,
+	FallbackSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettings,
+	GenerativeSafetySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettings,
 	Id: *string,
-	KnowledgeConnectorSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettings,
-	LlmModelSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettings,
+	KnowledgeConnectorSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettings,
+	LlmModelSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettings,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeouts,
 }
 ```
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsFallbackSettings {
 	PromptTemplates: interface{},
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates {
 	DisplayName: *string,
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsGenerativeSafetySettings {
 	BannedPhrases: interface{},
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrases {
 	LanguageCode: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettings {
 	Agent: *string,
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsLlmModelSettings {
 	Model: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 &dialogflowcxgenerativesettings.DialogflowCxGenerativeSettingsTimeouts {
 	Create: *string,
@@ -1669,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsFallbackSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxGenerativeSettingsFallbackSettingsOutputReference
 ```
@@ -1989,7 +1989,7 @@ func InternalValue() DialogflowCxGenerativeSettingsFallbackSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList
 ```
@@ -2149,7 +2149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference
 ```
@@ -2503,7 +2503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList
 ```
@@ -2663,7 +2663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference
 ```
@@ -2974,7 +2974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() DialogflowCxGenerativeSettingsGenerativeSafetySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference
 ```
@@ -3717,7 +3717,7 @@ func InternalValue() DialogflowCxGenerativeSettingsKnowledgeConnectorSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsLlmModelSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference
 ```
@@ -4024,7 +4024,7 @@ func InternalValue() DialogflowCxGenerativeSettingsLlmModelSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxgenerativesettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxgenerativesettings"
 
 dialogflowcxgenerativesettings.NewDialogflowCxGenerativeSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxGenerativeSettingsTimeoutsOutputReference
 ```

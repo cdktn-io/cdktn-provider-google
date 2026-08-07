@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.NewVertexAiCacheConfig(scope Construct, id *string, config VertexAiCacheConfigConfig) VertexAiCacheConfig
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.VertexAiCacheConfig_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.VertexAiCacheConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ vertexaicacheconfig.VertexAiCacheConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.VertexAiCacheConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ vertexaicacheconfig.VertexAiCacheConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.VertexAiCacheConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 &vertexaicacheconfig.VertexAiCacheConfigConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicachecon
 	DisableCache: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiCacheConfig.VertexAiCacheConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiCacheConfig.VertexAiCacheConfigTimeouts,
 }
 ```
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 &vertexaicacheconfig.VertexAiCacheConfigTimeouts {
 	Create: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaicacheconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaicacheconfig"
 
 vertexaicacheconfig.NewVertexAiCacheConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiCacheConfigTimeoutsOutputReference
 ```

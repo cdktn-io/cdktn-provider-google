@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.NewBigqueryAnalyticsHubQueryTemplate(scope Construct, id *string, config BigqueryAnalyticsHubQueryTemplateConfig) BigqueryAnalyticsHubQueryTemplate
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1108,7 +1108,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 &bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplateConfig {
 	Connection: interface{},
@@ -1128,9 +1128,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalytic
 	Id: *string,
 	PrimaryContact: *string,
 	Project: *string,
-	Routine: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateRoutine,
+	Routine: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateRoutine,
 	Submit: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateTimeouts,
 }
 ```
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateRoutine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 &bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplateRoutine {
 	DefinitionBody: *string,
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 &bigqueryanalyticshubquerytemplate.BigqueryAnalyticsHubQueryTemplateTimeouts {
 	Create: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateRoutineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.NewBigqueryAnalyticsHubQueryTemplateRoutineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubQueryTemplateRoutineOutputReference
 ```
@@ -1850,7 +1850,7 @@ func InternalValue() BigqueryAnalyticsHubQueryTemplateRoutine
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubQueryTemplate.BigqueryAnalyticsHubQueryTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryanalyticshubquerytemplate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigqueryanalyticshubquerytemplate"
 
 bigqueryanalyticshubquerytemplate.NewBigqueryAnalyticsHubQueryTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubQueryTemplateTimeoutsOutputReference
 ```

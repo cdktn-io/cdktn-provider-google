@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NewNetworkServicesMulticastProducerAssociation(scope Construct, id *string, config NetworkServicesMulticastProducerAssociationConfig) NetworkServicesMulticastProducerAssociation
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAsso
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAsso
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 &networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociationConfig {
 	Connection: interface{},
@@ -1060,7 +1060,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts,
 }
 ```
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 &networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociationState {
 
@@ -1334,7 +1334,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 &networkservicesmulticastproducerassociation.NetworkServicesMulticastProducerAssociationTimeouts {
 	Create: *string,
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NewNetworkServicesMulticastProducerAssociationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastProducerAssociationStateList
 ```
@@ -1545,7 +1545,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NewNetworkServicesMulticastProducerAssociationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastProducerAssociationStateOutputReference
 ```
@@ -1823,7 +1823,7 @@ func InternalValue() NetworkServicesMulticastProducerAssociationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastProducerAssociation.NetworkServicesMulticastProducerAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/networkservicesmulticastproducerassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastproducerassociation"
 
 networkservicesmulticastproducerassociation.NewNetworkServicesMulticastProducerAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastProducerAssociationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.NewComputeSubnetworkIamMember(scope Construct, id *string, config ComputeSubnetworkIamMemberConfig) ComputeSubnetworkIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.ComputeSubnetworkIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.ComputeSubnetworkIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computesubnetworkiammember.ComputeSubnetworkIamMember_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.ComputeSubnetworkIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computesubnetworkiammember.ComputeSubnetworkIamMember_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.ComputeSubnetworkIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 &computesubnetworkiammember.ComputeSubnetworkIamMemberCondition {
 	Expression: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 &computesubnetworkiammember.ComputeSubnetworkIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetwor
 	Member: *string,
 	Role: *string,
 	Subnetwork: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeSubnetworkIamMember.ComputeSubnetworkIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeSubnetworkIamMember.ComputeSubnetworkIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesubnetworkiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computesubnetworkiammember"
 
 computesubnetworkiammember.NewComputeSubnetworkIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSubnetworkIamMemberConditionOutputReference
 ```

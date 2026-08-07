@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.NewFirebaseAppCheckRecaptchaV3Config(scope Construct, id *string, config FirebaseAppCheckRecaptchaV3ConfigConfig) FirebaseAppCheckRecaptchaV3Config
 ```
@@ -441,7 +441,7 @@ func ResetTokenTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3Config.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3Config.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3Config.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3Config.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3Config_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 &firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3ConfigConfig {
 	Connection: interface{},
@@ -898,7 +898,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheck
 	SiteSecret: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeouts,
 	TokenTtl: *string,
 }
 ```
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 &firebaseappcheckrecaptchav3config.FirebaseAppCheckRecaptchaV3ConfigTimeouts {
 	Create: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheckrecaptchav3config"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseappcheckrecaptchav3config"
 
 firebaseappcheckrecaptchav3config.NewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference
 ```

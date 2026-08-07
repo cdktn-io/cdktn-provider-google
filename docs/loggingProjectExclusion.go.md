@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 loggingprojectexclusion.NewLoggingProjectExclusion(scope Construct, id *string, config LoggingProjectExclusionConfig) LoggingProjectExclusion
 ```
@@ -428,7 +428,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 loggingprojectexclusion.LoggingProjectExclusion_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 loggingprojectexclusion.LoggingProjectExclusion_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ loggingprojectexclusion.LoggingProjectExclusion_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 loggingprojectexclusion.LoggingProjectExclusion_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ loggingprojectexclusion.LoggingProjectExclusion_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 loggingprojectexclusion.LoggingProjectExclusion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingProjectExclusion.LoggingProjectExclusionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingprojectexclusion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/loggingprojectexclusion"
 
 &loggingprojectexclusion.LoggingProjectExclusionConfig {
 	Connection: interface{},

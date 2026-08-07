@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.NewDiscoveryEngineSearchEngineIamBinding(scope Construct, id *string, config DiscoveryEngineSearchEngineIamBindingConfig) DiscoveryEngineSearchEngineIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 &discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBindingCondition {
 	Expression: *string,
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 &discoveryenginesearchengineiambinding.DiscoveryEngineSearchEngineIamBindingConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryengines
 	EngineId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngineIamBinding.DiscoveryEngineSearchEngineIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/discoveryenginesearchengineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiambinding"
 
 discoveryenginesearchengineiambinding.NewDiscoveryEngineSearchEngineIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineIamBindingConditionOutputReference
 ```

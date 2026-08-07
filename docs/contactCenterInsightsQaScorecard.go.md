@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.NewContactCenterInsightsQaScorecard(scope Construct, id *string, config ContactCenterInsightsQaScorecardConfig) ContactCenterInsightsQaScorecard
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 &contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecardConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterins
 	IsDefault: interface{},
 	Project: *string,
 	Source: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecardTimeouts,
 }
 ```
 
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 &contactcenterinsightsqascorecard.ContactCenterInsightsQaScorecardTimeouts {
 	Create: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecard.ContactCenterInsightsQaScorecardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/contactcenterinsightsqascorecard"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecard"
 
 contactcenterinsightsqascorecard.NewContactCenterInsightsQaScorecardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaScorecardTimeoutsOutputReference
 ```

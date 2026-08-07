@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.NewDataGoogleAgentRegistryEndpoint(scope Construct, id *string, config DataGoogleAgentRegistryEndpointConfig) DataGoogleAgentRegistryEndpoint
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 &datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpointConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpointInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 &datagoogleagentregistryendpoint.DataGoogleAgentRegistryEndpointInterfaces {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpointInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.NewDataGoogleAgentRegistryEndpointInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryEndpointInterfacesList
 ```
@@ -1125,7 +1125,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryEndpoint.DataGoogleAgentRegistryEndpointInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleagentregistryendpoint"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistryendpoint"
 
 datagoogleagentregistryendpoint.NewDataGoogleAgentRegistryEndpointInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryEndpointInterfacesOutputReference
 ```

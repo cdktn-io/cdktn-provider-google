@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfig(scope Construct, id *string, config BigqueryDataTransferConfigConfig) BigqueryDataTransferConfig
 ```
@@ -570,7 +570,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.BigqueryDataTransferConfig_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.BigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ bigquerydatatransferconfig.BigqueryDataTransferConfig_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.BigqueryDataTransferConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ bigquerydatatransferconfig.BigqueryDataTransferConfig_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.BigqueryDataTransferConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1266,7 +1266,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigConfig {
 	Connection: interface{},
@@ -1283,17 +1283,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatran
 	DeletionPolicy: *string,
 	DestinationDatasetId: *string,
 	Disabled: interface{},
-	EmailPreferences: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfiguration,
+	EmailPreferences: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfiguration,
 	Id: *string,
 	Location: *string,
 	NotificationPubsubTopic: *string,
 	Project: *string,
 	Schedule: *string,
-	ScheduleOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions,
-	SensitiveParams: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams,
+	ScheduleOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions,
+	SensitiveParams: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams,
 	ServiceAccountName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts,
 }
 ```
 
@@ -1687,7 +1687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigEmailPreferences {
 	EnableFailureEmail: interface{},
@@ -1721,7 +1721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigEncryptionConfiguration {
 	KmsKeyName: *string,
@@ -1755,7 +1755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigScheduleOptions {
 	DisableAutoScheduling: interface{},
@@ -1837,7 +1837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigSensitiveParams {
 	SecretAccessKey: *string,
@@ -1905,7 +1905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 &bigquerydatatransferconfig.BigqueryDataTransferConfigTimeouts {
 	Create: *string,
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfigEmailPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigEmailPreferencesOutputReference
 ```
@@ -2238,7 +2238,7 @@ func InternalValue() BigqueryDataTransferConfigEmailPreferences
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfigEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigEncryptionConfigurationOutputReference
 ```
@@ -2509,7 +2509,7 @@ func InternalValue() BigqueryDataTransferConfigEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfigScheduleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigScheduleOptionsOutputReference
 ```
@@ -2845,7 +2845,7 @@ func InternalValue() BigqueryDataTransferConfigScheduleOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfigSensitiveParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigSensitiveParamsOutputReference
 ```
@@ -3183,7 +3183,7 @@ func InternalValue() BigqueryDataTransferConfigSensitiveParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigquerydatatransferconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigquerydatatransferconfig"
 
 bigquerydatatransferconfig.NewBigqueryDataTransferConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigTimeoutsOutputReference
 ```

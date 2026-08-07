@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnection(scope Construct, id *string, config OracleDatabaseGoldengateConnectionConfig) OracleDatabaseGoldengateConnection
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1108,7 +1108,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionConfig {
 	Connection: interface{},
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasego
 	Provisioners: *[]interface{},
 	GoldengateConnectionId: *string,
 	Location: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionProperties,
 	DeletionPolicy: *string,
 	DeletionProtection: interface{},
 	GcpOracleZone: *string,
@@ -1129,7 +1129,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasego
 	OdbNetwork: *string,
 	OdbSubnet: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts,
 }
 ```
 
@@ -1426,42 +1426,42 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionProperties {
 	ConnectionType: *string,
 	DisplayName: *string,
-	AmazonKinesisConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionProperties,
-	AmazonRedshiftConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionProperties,
-	AmazonS3ConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionProperties,
-	AzureDataLakeStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionProperties,
-	AzureSynapseAnalyticsConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionProperties,
-	DatabricksConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionProperties,
-	Db2ConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionProperties,
+	AmazonKinesisConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionProperties,
+	AmazonRedshiftConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionProperties,
+	AmazonS3ConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionProperties,
+	AzureDataLakeStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionProperties,
+	AzureSynapseAnalyticsConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionProperties,
+	DatabricksConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionProperties,
+	Db2ConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionProperties,
 	Description: *string,
-	ElasticsearchConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionProperties,
-	GenericConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGenericConnectionProperties,
-	GoldengateConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionProperties,
-	GoogleBigQueryConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionProperties,
-	GoogleCloudStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionProperties,
-	GooglePubsubConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionProperties,
-	HdfsConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionProperties,
-	IcebergConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionProperties,
-	JavaMessageServiceConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionProperties,
-	KafkaConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionProperties,
-	KafkaSchemaRegistryConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionProperties,
-	MicrosoftFabricConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionProperties,
-	MicrosoftSqlserverConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionProperties,
-	MongodbConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionProperties,
-	MysqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionProperties,
-	OciObjectStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionProperties,
-	OracleAiDataPlatformConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionProperties,
-	OracleConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleConnectionProperties,
-	OracleNosqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionProperties,
-	PostgresqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionProperties,
-	RedisConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesRedisConnectionProperties,
+	ElasticsearchConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionProperties,
+	GenericConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGenericConnectionProperties,
+	GoldengateConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionProperties,
+	GoogleBigQueryConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionProperties,
+	GoogleCloudStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionProperties,
+	GooglePubsubConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionProperties,
+	HdfsConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionProperties,
+	IcebergConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionProperties,
+	JavaMessageServiceConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionProperties,
+	KafkaConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionProperties,
+	KafkaSchemaRegistryConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionProperties,
+	MicrosoftFabricConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionProperties,
+	MicrosoftSqlserverConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionProperties,
+	MongodbConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionProperties,
+	MysqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionProperties,
+	OciObjectStorageConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionProperties,
+	OracleAiDataPlatformConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionProperties,
+	OracleConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleConnectionProperties,
+	OracleNosqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionProperties,
+	PostgresqlConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionProperties,
+	RedisConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesRedisConnectionProperties,
 	RoutingMethod: *string,
-	SnowflakeConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionProperties,
+	SnowflakeConnectionProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionProperties,
 }
 ```
 
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionProperties {
 	AccessKeyId: *string,
@@ -2070,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionProperties {
 	ConnectionUrl: *string,
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionProperties {
 	AccessKeyId: *string,
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionProperties {
 	Account: *string,
@@ -2448,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionProperties {
 	ConnectionString: *string,
@@ -2551,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionProperties {
 	AuthenticationType: *string,
@@ -2701,7 +2701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionProperties {
 	AdditionalAttributes: interface{},
@@ -2917,7 +2917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributes {
 	Key: *string,
@@ -2967,7 +2967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionProperties {
 	AuthenticationType: *string,
@@ -3121,7 +3121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGenericConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesGenericConnectionProperties {
 	Host: *string,
@@ -3171,7 +3171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionProperties {
 	GoldengateDeploymentId: *string,
@@ -3305,7 +3305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionProperties {
 	ServiceAccountKeyFile: *string,
@@ -3355,7 +3355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionProperties {
 	ServiceAccountKeyFile: *string,
@@ -3405,7 +3405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionProperties {
 	ServiceAccountKeyFile: *string,
@@ -3455,7 +3455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionProperties {
 	CoreSiteXml: *string,
@@ -3505,11 +3505,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionProperties {
-	Catalog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalog,
-	Storage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorage,
+	Catalog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalog,
+	Storage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorage,
 	TechnologyType: *string,
 }
 ```
@@ -3571,14 +3571,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalog {
 	CatalogType: *string,
-	GlueIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalog,
-	NessieIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalog,
-	PolarisIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalog,
-	RestIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalog,
+	GlueIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalog,
+	NessieIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalog,
+	PolarisIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalog,
+	RestIcebergCatalog: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalog,
 }
 ```
 
@@ -3669,7 +3669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalog {
 	GlueId: *string,
@@ -3703,7 +3703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalog {
 	Branch: *string,
@@ -3753,7 +3753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalog {
 	ClientId: *string,
@@ -3851,7 +3851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalog {
 	Uri: *string,
@@ -3901,13 +3901,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorage {
 	StorageType: *string,
-	AmazonS3IcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorage,
-	AzureDataLakeStorageIcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorage,
-	GoogleCloudStorageIcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v19.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorage,
+	AmazonS3IcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorage,
+	AzureDataLakeStorageIcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorage,
+	GoogleCloudStorageIcebergStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorage,
 }
 ```
 
@@ -3983,7 +3983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorage {
 	AccessKeyId: *string,
@@ -4097,7 +4097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorage {
 	AzureAccount: *string,
@@ -4179,7 +4179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorage {
 	Bucket: *string,
@@ -4245,7 +4245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionProperties {
 	AuthenticationType: *string,
@@ -4624,7 +4624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionProperties {
 	BootstrapServers: interface{},
@@ -4954,7 +4954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServers {
 	Host: *string,
@@ -5020,7 +5020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionProperties {
 	AuthenticationType: *string,
@@ -5270,7 +5270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionProperties {
 	ClientId: *string,
@@ -5368,7 +5368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionProperties {
 	AdditionalAttributes: interface{},
@@ -5567,7 +5567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributes {
 	Key: *string,
@@ -5617,7 +5617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionProperties {
 	ConnectionString: *string,
@@ -5819,7 +5819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionProperties {
 	AdditionalAttributes: interface{},
@@ -6081,7 +6081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributes {
 	Key: *string,
@@ -6131,7 +6131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionProperties {
 	PrivateKeyFile: *string,
@@ -6282,7 +6282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionProperties {
 	ConnectionUrl: *string,
@@ -6444,7 +6444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesOracleConnectionProperties {
 	AuthenticationMode: *string,
@@ -6606,7 +6606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionProperties {
 	PrivateKeyFile: *string,
@@ -6752,7 +6752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionProperties {
 	AdditionalAttributes: interface{},
@@ -7014,7 +7014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributes {
 	Key: *string,
@@ -7064,7 +7064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesRedisConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesRedisConnectionProperties {
 	AuthenticationType: *string,
@@ -7313,7 +7313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionProperties {
 	AuthenticationType: *string,
@@ -7463,7 +7463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 &oracledatabasegoldengateconnection.OracleDatabaseGoldengateConnectionTimeouts {
 	Create: *string,
@@ -7525,7 +7525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisConnectionPropertiesOutputReference
 ```
@@ -7919,7 +7919,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesAmazonKinesisCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftConnectionPropertiesOutputReference
 ```
@@ -8313,7 +8313,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesAmazonRedshiftC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesAmazonS3ConnectionPropertiesOutputReference
 ```
@@ -8707,7 +8707,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesAmazonS3Connect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeStorageConnectionPropertiesOutputReference
 ```
@@ -9246,7 +9246,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesAzureDataLakeSt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAnalyticsConnectionPropertiesOutputReference
 ```
@@ -9640,7 +9640,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesAzureSynapseAna
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesDatabricksConnectionPropertiesOutputReference
 ```
@@ -10121,7 +10121,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesDatabricksConne
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesList
 ```
@@ -10281,7 +10281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesAdditionalAttributesOutputReference
 ```
@@ -10592,7 +10592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPropertiesOutputReference
 ```
@@ -11202,7 +11202,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesDb2ConnectionPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesElasticsearchConnectionPropertiesOutputReference
 ```
@@ -11683,7 +11683,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesElasticsearchCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGenericConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesGenericConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesGenericConnectionPropertiesOutputReference
 ```
@@ -11990,7 +11990,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesGenericConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesGoldengateConnectionPropertiesOutputReference
 ```
@@ -12442,7 +12442,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesGoldengateConne
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryConnectionPropertiesOutputReference
 ```
@@ -12749,7 +12749,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesGoogleBigQueryC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStorageConnectionPropertiesOutputReference
 ```
@@ -13056,7 +13056,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesGoogleCloudStor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesGooglePubsubConnectionPropertiesOutputReference
 ```
@@ -13363,7 +13363,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesGooglePubsubCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesHdfsConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionPropertiesOutputReference
 ```
@@ -13670,7 +13670,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesHdfsConnectionP
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogGlueIcebergCatalogOutputReference
 ```
@@ -13941,7 +13941,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogNessieIcebergCatalogOutputReference
 ```
@@ -14234,7 +14234,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogOutputReference
 ```
@@ -14673,7 +14673,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogPolarisIcebergCatalogOutputReference
 ```
@@ -15039,7 +15039,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesCatalogRestIcebergCatalogOutputReference
 ```
@@ -15339,7 +15339,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesOutputReference
 ```
@@ -15680,7 +15680,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAmazonS3IcebergStorageOutputReference
 ```
@@ -16075,7 +16075,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageAzureDataLakeStorageIcebergStorageOutputReference
 ```
@@ -16426,7 +16426,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageGoogleCloudStorageIcebergStorageOutputReference
 ```
@@ -16748,7 +16748,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesIcebergConnectionPropertiesStorageOutputReference
 ```
@@ -17145,7 +17145,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesIcebergConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesJavaMessageServiceConnectionPropertiesOutputReference
 ```
@@ -18032,7 +18032,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesJavaMessageServ
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersList
 ```
@@ -18192,7 +18192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesBootstrapServersOutputReference
 ```
@@ -18539,7 +18539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesKafkaConnectionPropertiesOutputReference
 ```
@@ -19352,7 +19352,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesKafkaConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegistryConnectionPropertiesOutputReference
 ```
@@ -20007,7 +20007,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesKafkaSchemaRegi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabricConnectionPropertiesOutputReference
 ```
@@ -20401,7 +20401,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesMicrosoftFabric
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesList
 ```
@@ -20561,7 +20561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesAdditionalAttributesOutputReference
 ```
@@ -20872,7 +20872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlserverConnectionPropertiesOutputReference
 ```
@@ -21453,7 +21453,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesMicrosoftSqlser
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMongodbConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesMongodbConnectionPropertiesOutputReference
 ```
@@ -22021,7 +22021,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesMongodbConnecti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesList
 ```
@@ -22181,7 +22181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesAdditionalAttributesOutputReference
 ```
@@ -22492,7 +22492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesMysqlConnectionPropertiesOutputReference
 ```
@@ -23189,7 +23189,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesMysqlConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesOciObjectStorageConnectionPropertiesOutputReference
 ```
@@ -23670,7 +23670,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesOciObjectStorag
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPlatformConnectionPropertiesOutputReference
 ```
@@ -24180,7 +24180,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesOracleAiDataPla
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesOracleConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesOracleConnectionPropertiesOutputReference
 ```
@@ -24690,7 +24690,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesOracleConnectio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConnectionPropertiesOutputReference
 ```
@@ -25171,7 +25171,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesOracleNosqlConn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesOutputReference
 ```
@@ -26795,7 +26795,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesList
 ```
@@ -26955,7 +26955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesAdditionalAttributesOutputReference
 ```
@@ -27266,7 +27266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesPostgresqlConnectionPropertiesOutputReference
 ```
@@ -27963,7 +27963,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesPostgresqlConne
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesRedisConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesRedisConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesRedisConnectionPropertiesOutputReference
 ```
@@ -28618,7 +28618,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesRedisConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnectionPropertiesOutputReference
 ```
@@ -29099,7 +29099,7 @@ func InternalValue() OracleDatabaseGoldengateConnectionPropertiesSnowflakeConnec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateConnection.OracleDatabaseGoldengateConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/oracledatabasegoldengateconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengateconnection"
 
 oracledatabasegoldengateconnection.NewOracleDatabaseGoldengateConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateConnectionTimeoutsOutputReference
 ```

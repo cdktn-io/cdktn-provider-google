@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.NewStorageManagedFolderIamBinding(scope Construct, id *string, config StorageManagedFolderIamBindingConfig) StorageManagedFolderIamBinding
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.StorageManagedFolderIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.StorageManagedFolderIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ storagemanagedfolderiambinding.StorageManagedFolderIamBinding_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.StorageManagedFolderIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ storagemanagedfolderiambinding.StorageManagedFolderIamBinding_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.StorageManagedFolderIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 &storagemanagedfolderiambinding.StorageManagedFolderIamBindingCondition {
 	Expression: *string,
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 &storagemanagedfolderiambinding.StorageManagedFolderIamBindingConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfo
 	ManagedFolder: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageManagedFolderIamBinding.StorageManagedFolderIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1112,7 +1112,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolderIamBinding.StorageManagedFolderIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagemanagedfolderiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagemanagedfolderiambinding"
 
 storagemanagedfolderiambinding.NewStorageManagedFolderIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageManagedFolderIamBindingConditionOutputReference
 ```

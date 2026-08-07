@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.NewComputeRouterInterface(scope Construct, id *string, config ComputeRouterInterfaceConfig) ComputeRouterInterface
 ```
@@ -497,7 +497,7 @@ func ResetVpnTunnel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsConstruct(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ computerouterinterface.ComputeRouterInterface_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ computerouterinterface.ComputeRouterInterface_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 &computerouterinterface.ComputeRouterInterfaceConfig {
 	Connection: interface{},
@@ -1116,7 +1116,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterint
 	RedundantInterface: *string,
 	Region: *string,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRouterInterface.ComputeRouterInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRouterInterface.ComputeRouterInterfaceTimeouts,
 	VpnTunnel: *string,
 }
 ```
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 &computerouterinterface.ComputeRouterInterfaceTimeouts {
 	Create: *string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
 
 computerouterinterface.NewComputeRouterInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterInterfaceTimeoutsOutputReference
 ```

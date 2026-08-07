@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProvider(scope Construct, id *string, config AgentIdentityAuthProviderConfig) AgentIdentityAuthProvider
 ```
@@ -489,7 +489,7 @@ func ResetWorkloadIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.AgentIdentityAuthProvider_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.AgentIdentityAuthProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ agentidentityauthprovider.AgentIdentityAuthProvider_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.AgentIdentityAuthProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ agentidentityauthprovider.AgentIdentityAuthProvider_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.AgentIdentityAuthProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1130,12 +1130,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderAuthProviderTypeParams {
-	ApiKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsApiKey,
-	ThreeLeggedOauth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth,
-	TwoLeggedOauth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth,
+	ApiKey: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsApiKey,
+	ThreeLeggedOauth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth,
+	TwoLeggedOauth: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth,
 }
 ```
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderAuthProviderTypeParamsApiKey {
 	ApiKey: *string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProvider {
 
@@ -1243,7 +1243,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityaut
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth {
 	AuthorizationUrl: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth {
 	ClientId: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderConfig {
 	Connection: interface{},
@@ -1502,7 +1502,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityaut
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AuthProviderId: *string,
-	AuthProviderTypeParams: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParams,
+	AuthProviderTypeParams: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParams,
 	Location: *string,
 	AllowedScopes: *[]*string,
 	BlockedScopes: *[]*string,
@@ -1511,7 +1511,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityaut
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.agentIdentityAuthProvider.AgentIdentityAuthProviderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentIdentityAuthProvider.AgentIdentityAuthProviderTimeouts,
 	WorkloadIds: *[]*string,
 }
 ```
@@ -1809,7 +1809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 &agentidentityauthprovider.AgentIdentityAuthProviderTimeouts {
 	Create: *string,
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentIdentityAuthProviderAuthProviderTypeParamsApiKeyOutputReference
 ```
@@ -2149,7 +2149,7 @@ func InternalValue() AgentIdentityAuthProviderAuthProviderTypeParamsApiKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderList
 ```
@@ -2298,7 +2298,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProviderOutputReference
 ```
@@ -2565,7 +2565,7 @@ func InternalValue() AgentIdentityAuthProviderAuthProviderTypeParamsGeAuthProvid
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentIdentityAuthProviderAuthProviderTypeParamsOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() AgentIdentityAuthProviderAuthProviderTypeParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauthOutputReference
 ```
@@ -3445,7 +3445,7 @@ func InternalValue() AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedO
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauthOutputReference
 ```
@@ -3841,7 +3841,7 @@ func InternalValue() AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOau
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProvider.AgentIdentityAuthProviderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/agentidentityauthprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentidentityauthprovider"
 
 agentidentityauthprovider.NewAgentIdentityAuthProviderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentIdentityAuthProviderTimeoutsOutputReference
 ```

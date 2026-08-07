@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.NewObservabilityTraceScope(scope Construct, id *string, config ObservabilityTraceScopeConfig) ObservabilityTraceScope
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ observabilitytracescope.ObservabilityTraceScope_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ observabilitytracescope.ObservabilityTraceScope_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 &observabilitytracescope.ObservabilityTraceScopeConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytra
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.observabilityTraceScope.ObservabilityTraceScopeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.observabilityTraceScope.ObservabilityTraceScopeTimeouts,
 }
 ```
 
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 &observabilitytracescope.ObservabilityTraceScopeTimeouts {
 	Create: *string,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
 
 observabilitytracescope.NewObservabilityTraceScopeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityTraceScopeTimeoutsOutputReference
 ```

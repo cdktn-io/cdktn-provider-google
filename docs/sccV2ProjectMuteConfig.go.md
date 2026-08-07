@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.NewSccV2ProjectMuteConfig(scope Construct, id *string, config SccV2ProjectMuteConfigConfig) SccV2ProjectMuteConfig
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.SccV2ProjectMuteConfig_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.SccV2ProjectMuteConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ sccv2projectmuteconfig.SccV2ProjectMuteConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.SccV2ProjectMuteConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ sccv2projectmuteconfig.SccV2ProjectMuteConfig_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.SccV2ProjectMuteConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 &sccv2projectmuteconfig.SccV2ProjectMuteConfigConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmute
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccV2ProjectMuteConfig.SccV2ProjectMuteConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccV2ProjectMuteConfig.SccV2ProjectMuteConfigTimeouts,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 &sccv2projectmuteconfig.SccV2ProjectMuteConfigTimeouts {
 	Create: *string,
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2ProjectMuteConfig.SccV2ProjectMuteConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2projectmuteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccv2projectmuteconfig"
 
 sccv2projectmuteconfig.NewSccV2ProjectMuteConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccV2ProjectMuteConfigTimeoutsOutputReference
 ```

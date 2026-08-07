@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJob(scope Construct, id *string, config DatabaseMigrationServiceMigrationJobConfig) DatabaseMigrationServiceMigrationJob
 ```
@@ -630,7 +630,7 @@ func ResetVpcPeeringConnectivity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_IsConstruct(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1480,7 +1480,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobConfig {
 	Connection: interface{},
@@ -1497,21 +1497,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigratio
 	DeletionPolicy: *string,
 	DesiredState: *string,
 	DisplayName: *string,
-	DumpFlags: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlags,
+	DumpFlags: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlags,
 	DumpPath: *string,
 	DumpType: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Location: *string,
-	ObjectsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfig,
-	PerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPerformanceConfig,
-	PostgresHomogeneousConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig,
+	ObjectsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfig,
+	PerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPerformanceConfig,
+	PostgresHomogeneousConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig,
 	Project: *string,
-	ReverseSshConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobReverseSshConnectivity,
-	StaticIpConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobStaticIpConnectivity,
+	ReverseSshConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobReverseSshConnectivity,
+	StaticIpConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobStaticIpConnectivity,
 	StopOnWarnings: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobTimeouts,
-	VpcPeeringConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobTimeouts,
+	VpcPeeringConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity,
 }
 ```
 
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobDumpFlags {
 	DumpFlags: interface{},
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags {
 	Name: *string,
@@ -2031,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobError {
 
@@ -2044,10 +2044,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigratio
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobObjectsConfig {
-	SourceObjectsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig,
+	SourceObjectsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig,
 }
 ```
 
@@ -2078,7 +2078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig {
 	ObjectConfigs: interface{},
@@ -2133,10 +2133,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs {
-	ObjectIdentifier: github.com/cdktn-io/cdktn-provider-google-go/google/v19.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier,
+	ObjectIdentifier: github.com/cdktn-io/cdktn-provider-google-go/google/v20.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier,
 }
 ```
 
@@ -2167,7 +2167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier {
 	Type: *string,
@@ -2249,7 +2249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobPerformanceConfig {
 	DumpParallelLevel: *string,
@@ -2283,7 +2283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfig {
 	IsNativeLogical: interface{},
@@ -2333,7 +2333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobReverseSshConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobReverseSshConnectivity {
 	Vm: *string,
@@ -2415,7 +2415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobStaticIpConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobStaticIpConnectivity {
 
@@ -2428,7 +2428,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigratio
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobTimeouts {
 	Create: *string,
@@ -2488,7 +2488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 &databasemigrationservicemigrationjob.DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity {
 	Vpc: *string,
@@ -2524,7 +2524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReference
 ```
@@ -3009,7 +3009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobDumpFlagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference
 ```
@@ -3300,7 +3300,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobDumpFlags
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseMigrationServiceMigrationJobErrorList
 ```
@@ -3449,7 +3449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseMigrationServiceMigrationJobErrorOutputReference
 ```
@@ -3749,7 +3749,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference
 ```
@@ -4040,7 +4040,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobObjectsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList
 ```
@@ -4200,7 +4200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference
 ```
@@ -4558,7 +4558,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobObjectsConfigSourceObje
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference
 ```
@@ -4867,7 +4867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference
 ```
@@ -5187,7 +5187,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobObjectsConfigSourceObje
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference
 ```
@@ -5465,7 +5465,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobPerformanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobPostgresHomogeneousConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobPostgresHomogeneousConfigOutputReference
 ```
@@ -5765,7 +5765,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobPostgresHomogeneousConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference
 ```
@@ -6130,7 +6130,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobReverseSshConnectivity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference
 ```
@@ -6379,7 +6379,7 @@ func InternalValue() DatabaseMigrationServiceMigrationJobStaticIpConnectivity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobTimeoutsOutputReference
 ```
@@ -6715,7 +6715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServiceMigrationJob.DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/databasemigrationservicemigrationjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/databasemigrationservicemigrationjob"
 
 databasemigrationservicemigrationjob.NewDatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference
 ```

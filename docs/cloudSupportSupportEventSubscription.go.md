@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.NewCloudSupportSupportEventSubscription(scope Construct, id *string, config CloudSupportSupportEventSubscriptionConfig) CloudSupportSupportEventSubscription
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 &cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscriptionConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupp
 	PubSubTopic: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscriptionTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 &cloudsupportsupporteventsubscription.CloudSupportSupportEventSubscriptionTimeouts {
 	Create: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudSupportSupportEventSubscription.CloudSupportSupportEventSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudsupportsupporteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudsupportsupporteventsubscription"
 
 cloudsupportsupporteventsubscription.NewCloudSupportSupportEventSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudSupportSupportEventSubscriptionTimeoutsOutputReference
 ```

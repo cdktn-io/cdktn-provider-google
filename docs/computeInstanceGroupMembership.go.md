@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.NewComputeInstanceGroupMembership(scope Construct, id *string, config ComputeInstanceGroupMembershipConfig) ComputeInstanceGroupMembership
 ```
@@ -448,7 +448,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.ComputeInstanceGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.ComputeInstanceGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeinstancegroupmembership.ComputeInstanceGroupMembership_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.ComputeInstanceGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeinstancegroupmembership.ComputeInstanceGroupMembership_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.ComputeInstanceGroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 &computeinstancegroupmembership.ComputeInstanceGroupMembershipConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceg
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts,
 	Zone: *string,
 }
 ```
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 &computeinstancegroupmembership.ComputeInstanceGroupMembershipTimeouts {
 	Create: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmembership"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupmembership"
 
 computeinstancegroupmembership.NewComputeInstanceGroupMembershipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupMembershipTimeoutsOutputReference
 ```

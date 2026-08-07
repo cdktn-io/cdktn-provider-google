@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 storageobjectacl.NewStorageObjectAcl(scope Construct, id *string, config StorageObjectAclConfig) StorageObjectAcl
 ```
@@ -428,7 +428,7 @@ func ResetRoleEntity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 storageobjectacl.StorageObjectAcl_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 storageobjectacl.StorageObjectAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ storageobjectacl.StorageObjectAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 storageobjectacl.StorageObjectAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ storageobjectacl.StorageObjectAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 storageobjectacl.StorageObjectAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageObjectAcl.StorageObjectAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storageobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacl"
 
 &storageobjectacl.StorageObjectAclConfig {
 	Connection: interface{},

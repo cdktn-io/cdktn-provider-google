@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 datagooglebillingaccountiampolicy.NewDataGoogleBillingAccountIamPolicy(scope Construct, id *string, config DataGoogleBillingAccountIamPolicyConfig) DataGoogleBillingAccountIamPolicy
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBillingAccountIamPolicy.DataGoogleBillingAccountIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebillingaccountiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebillingaccountiampolicy"
 
 &datagooglebillingaccountiampolicy.DataGoogleBillingAccountIamPolicyConfig {
 	Connection: interface{},

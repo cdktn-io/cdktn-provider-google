@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.NewDialogflowCxSecuritySettings(scope Construct, id *string, config DialogflowCxSecuritySettingsConfig) DialogflowCxSecuritySettings
 ```
@@ -530,7 +530,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.DialogflowCxSecuritySettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1160,7 +1160,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 &dialogflowcxsecuritysettings.DialogflowCxSecuritySettingsAudioExportSettings {
 	AudioExportPattern: *string,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 &dialogflowcxsecuritysettings.DialogflowCxSecuritySettingsConfig {
 	Connection: interface{},
@@ -1262,11 +1262,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecu
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Location: *string,
-	AudioExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettings,
+	AudioExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettings,
 	DeidentifyTemplate: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	InsightsExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettings,
+	InsightsExportSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettings,
 	InspectTemplate: *string,
 	Project: *string,
 	PurgeDataTypes: *[]*string,
@@ -1274,7 +1274,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecu
 	RedactionStrategy: *string,
 	RetentionStrategy: *string,
 	RetentionWindowDays: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeouts,
 }
 ```
 
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 &dialogflowcxsecuritysettings.DialogflowCxSecuritySettingsInsightsExportSettings {
 	EnableInsightsExport: interface{},
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 &dialogflowcxsecuritysettings.DialogflowCxSecuritySettingsTimeouts {
 	Create: *string,
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.NewDialogflowCxSecuritySettingsAudioExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxSecuritySettingsAudioExportSettingsOutputReference
 ```
@@ -2077,7 +2077,7 @@ func InternalValue() DialogflowCxSecuritySettingsAudioExportSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.NewDialogflowCxSecuritySettingsInsightsExportSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference
 ```
@@ -2348,7 +2348,7 @@ func InternalValue() DialogflowCxSecuritySettingsInsightsExportSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxsecuritysettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxsecuritysettings"
 
 dialogflowcxsecuritysettings.NewDialogflowCxSecuritySettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxSecuritySettingsTimeoutsOutputReference
 ```

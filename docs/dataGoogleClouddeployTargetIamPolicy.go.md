@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 datagoogleclouddeploytargetiampolicy.NewDataGoogleClouddeployTargetIamPolicy(scope Construct, id *string, config DataGoogleClouddeployTargetIamPolicyConfig) DataGoogleClouddeployTargetIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleClouddeployTargetIamPolicy.DataGoogleClouddeployTargetIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclouddeploytargetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleclouddeploytargetiampolicy"
 
 &datagoogleclouddeploytargetiampolicy.DataGoogleClouddeployTargetIamPolicyConfig {
 	Connection: interface{},

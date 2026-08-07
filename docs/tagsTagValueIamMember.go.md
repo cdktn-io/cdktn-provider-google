@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.NewTagsTagValueIamMember(scope Construct, id *string, config TagsTagValueIamMemberConfig) TagsTagValueIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.TagsTagValueIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.TagsTagValueIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ tagstagvalueiammember.TagsTagValueIamMember_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.TagsTagValueIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ tagstagvalueiammember.TagsTagValueIamMember_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.TagsTagValueIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 &tagstagvalueiammember.TagsTagValueIamMemberCondition {
 	Expression: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 &tagstagvalueiammember.TagsTagValueIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiamm
 	Member: *string,
 	Role: *string,
 	TagValue: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.tagsTagValueIamMember.TagsTagValueIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.tagsTagValueIamMember.TagsTagValueIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagValueIamMember.TagsTagValueIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/tagstagvalueiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/tagstagvalueiammember"
 
 tagstagvalueiammember.NewTagsTagValueIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagsTagValueIamMemberConditionOutputReference
 ```

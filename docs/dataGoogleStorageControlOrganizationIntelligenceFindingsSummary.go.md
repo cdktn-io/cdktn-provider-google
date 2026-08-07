@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.NewDataGoogleStorageControlOrganizationIntelligenceFindingsSummary(scope Construct, id *string, config DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig) DataGoogleStorageControlOrganizationIntelligenceFindingsSummary
 ```
@@ -326,7 +326,7 @@ func ResetResourceScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorag
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorag
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 &datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 &datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummaries {
 
@@ -914,7 +914,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 &datagooglestoragecontrolorganizationintelligencefindingssummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetails {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestorag
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.NewDataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesList
 ```
@@ -1078,7 +1078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.NewDataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesOutputReference
 ```
@@ -1422,7 +1422,7 @@ func InternalValue() DataGoogleStorageControlOrganizationIntelligenceFindingsSum
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.NewDataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsList
 ```
@@ -1571,7 +1571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolorganizationintelligencefindingssummary"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolorganizationintelligencefindingssummary"
 
 datagooglestoragecontrolorganizationintelligencefindingssummary.NewDataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryFindingSummariesSummaryDetailsOutputReference
 ```

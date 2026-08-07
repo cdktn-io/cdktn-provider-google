@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMap(scope Construct, id *string, config ComputeRegionUrlMapConfig) ComputeRegionUrlMap
 ```
@@ -582,7 +582,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.ComputeRegionUrlMap_IsConstruct(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ computeregionurlmap.ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.ComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ computeregionurlmap.ComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.ComputeRegionUrlMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1223,7 +1223,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapConfig {
 	Connection: interface{},
@@ -1234,19 +1234,19 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DefaultRouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction,
+	DefaultRouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction,
 	DefaultService: *string,
-	DefaultUrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect,
+	DefaultUrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect,
 	DeletionPolicy: *string,
 	Description: *string,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapHeaderAction,
 	HostRule: interface{},
 	Id: *string,
 	PathMatcher: interface{},
 	Project: *string,
 	Region: *string,
 	Test: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapTimeouts,
 }
 ```
 
@@ -1570,15 +1570,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteAction {
-	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy,
-	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy,
+	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -1857,11 +1857,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -1907,7 +1907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -1959,10 +1959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -2011,7 +2011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Nanos: *f64,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -2104,11 +2104,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -2183,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout {
 	Nanos: *f64,
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionTimeout {
 	Nanos: *f64,
@@ -2293,7 +2293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -2347,11 +2347,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices {
 	BackendService: *string,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction,
 	Weight: *f64,
 }
 ```
@@ -2418,7 +2418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -2500,7 +2500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -2638,7 +2638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapDefaultUrlRedirect {
 	StripQuery: interface{},
@@ -2780,7 +2780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -2862,7 +2862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -2931,7 +2931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -3000,7 +3000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapHostRule {
 	Hosts: *[]*string,
@@ -3071,15 +3071,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcher {
 	Name: *string,
-	DefaultRouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction,
+	DefaultRouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction,
 	DefaultService: *string,
-	DefaultUrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect,
+	DefaultUrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect,
 	Description: *string,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderAction,
 	PathRule: interface{},
 	RouteRules: interface{},
 }
@@ -3221,16 +3221,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteAction {
-	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy,
-	MaxStreamDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration,
-	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy,
-	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy,
+	MaxStreamDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration,
+	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy,
+	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -3367,7 +3367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -3523,11 +3523,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -3573,7 +3573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -3625,10 +3625,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -3677,7 +3677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Nanos: *f64,
@@ -3733,7 +3733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration {
 	Seconds: *string,
@@ -3789,7 +3789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -3823,11 +3823,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -3904,7 +3904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout {
 	Nanos: *f64,
@@ -3960,7 +3960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout {
 	Nanos: *f64,
@@ -4016,7 +4016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -4100,11 +4100,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices {
 	BackendService: *string,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction,
 	Weight: *f64,
 }
 ```
@@ -4176,7 +4176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -4258,7 +4258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -4326,7 +4326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -4394,7 +4394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect {
 	StripQuery: interface{},
@@ -4536,7 +4536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -4618,7 +4618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -4687,7 +4687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -4756,13 +4756,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRule {
 	Paths: *[]*string,
-	RouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction,
+	RouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction,
 	Service: *string,
-	UrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect,
+	UrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect,
 }
 ```
 
@@ -4850,15 +4850,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction {
-	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy,
-	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy,
+	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -4980,7 +4980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
 	Disabled: interface{},
@@ -5139,11 +5139,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -5189,7 +5189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -5242,10 +5242,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -5295,7 +5295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Seconds: *string,
@@ -5349,7 +5349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -5383,11 +5383,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -5470,7 +5470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout {
 	Seconds: *string,
@@ -5524,7 +5524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout {
 	Seconds: *string,
@@ -5578,7 +5578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -5634,12 +5634,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices {
 	BackendService: *string,
 	Weight: *f64,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction,
 }
 ```
 
@@ -5710,7 +5710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -5792,7 +5792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -5861,7 +5861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -5930,7 +5930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect {
 	StripQuery: interface{},
@@ -6074,15 +6074,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRules {
 	Priority: *f64,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction,
 	MatchRules: interface{},
-	RouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction,
+	RouteAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction,
 	Service: *string,
-	UrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect,
+	UrlRedirect: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect,
 }
 ```
 
@@ -6210,7 +6210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -6292,7 +6292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -6361,7 +6361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -6430,7 +6430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules {
 	FullPathMatch: *string,
@@ -6593,7 +6593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches {
 	HeaderName: *string,
@@ -6601,7 +6601,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurl
 	InvertMatch: interface{},
 	PrefixMatch: *string,
 	PresentMatch: interface{},
-	RangeMatch: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch,
+	RangeMatch: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch,
 	RegexMatch: *string,
 	SuffixMatch: *string,
 }
@@ -6768,7 +6768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch {
 	RangeEnd: *f64,
@@ -6818,7 +6818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
 	FilterLabels: interface{},
@@ -6873,7 +6873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels {
 	Name: *string,
@@ -6926,7 +6926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches {
 	Name: *string,
@@ -7021,15 +7021,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction {
-	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy,
-	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy,
-	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy,
-	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite,
+	CorsPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy,
+	FaultInjectionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy,
+	RequestMirrorPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy,
+	Timeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite,
 	WeightedBackendServices: interface{},
 }
 ```
@@ -7151,7 +7151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -7310,11 +7310,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy {
-	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -7360,7 +7360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -7413,10 +7413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay {
-	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay,
+	FixedDelay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay,
 	Percentage: *f64,
 }
 ```
@@ -7466,7 +7466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay {
 	Seconds: *string,
@@ -7520,7 +7520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy {
 	BackendService: *string,
@@ -7554,11 +7554,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy {
 	NumRetries: *f64,
-	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout,
+	PerTryTimeout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout,
 	RetryConditions: *[]*string,
 }
 ```
@@ -7641,7 +7641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout {
 	Seconds: *string,
@@ -7695,7 +7695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout {
 	Seconds: *string,
@@ -7749,7 +7749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite {
 	HostRewrite: *string,
@@ -7831,12 +7831,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices {
 	BackendService: *string,
 	Weight: *f64,
-	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction,
+	HeaderAction: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction,
 }
 ```
 
@@ -7907,7 +7907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction {
 	RequestHeadersToAdd: interface{},
@@ -7989,7 +7989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd {
 	HeaderName: *string,
@@ -8058,7 +8058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
 	HeaderName: *string,
@@ -8127,7 +8127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect {
 	HostRedirect: *string,
@@ -8270,7 +8270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapTest {
 	Host: *string,
@@ -8352,7 +8352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 &computeregionurlmap.ComputeRegionUrlMapTimeouts {
 	Create: *string,
@@ -8414,7 +8414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
 ```
@@ -8895,7 +8895,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionCorsPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -9202,7 +9202,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAb
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -9509,7 +9509,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -9829,7 +9829,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -10162,7 +10162,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionOutputReference
 ```
@@ -10705,7 +10705,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -10983,7 +10983,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference
 ```
@@ -11332,7 +11332,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -11639,7 +11639,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
 ```
@@ -11946,7 +11946,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
 ```
@@ -12253,7 +12253,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -12644,7 +12644,7 @@ func InternalValue() ComputeRegionUrlMapDefaultRouteActionWeightedBackendService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -12804,7 +12804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -13158,7 +13158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -13318,7 +13318,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -13672,7 +13672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList
 ```
@@ -13832,7 +13832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference
 ```
@@ -14199,7 +14199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapDefaultUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultUrlRedirectOutputReference
 ```
@@ -14615,7 +14615,7 @@ func InternalValue() ComputeRegionUrlMapDefaultUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapHeaderActionOutputReference
 ```
@@ -15006,7 +15006,7 @@ func InternalValue() ComputeRegionUrlMapHeaderAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapHeaderActionRequestHeadersToAddList
 ```
@@ -15166,7 +15166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -15520,7 +15520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapHeaderActionResponseHeadersToAddList
 ```
@@ -15680,7 +15680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -16034,7 +16034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHostRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapHostRuleList
 ```
@@ -16194,7 +16194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapHostRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapHostRuleOutputReference
 ```
@@ -16534,7 +16534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference
 ```
@@ -17015,7 +17015,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -17322,7 +17322,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInject
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -17629,7 +17629,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInject
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -17949,7 +17949,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInject
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -18282,7 +18282,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInject
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference
 ```
@@ -18582,7 +18582,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference
 ```
@@ -19167,7 +19167,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -19438,7 +19438,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference
 ```
@@ -19787,7 +19787,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -20094,7 +20094,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference
 ```
@@ -20401,7 +20401,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference
 ```
@@ -20737,7 +20737,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -21128,7 +21128,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBac
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -21288,7 +21288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -21642,7 +21642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -21802,7 +21802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -22156,7 +22156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList
 ```
@@ -22316,7 +22316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference
 ```
@@ -22683,7 +22683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference
 ```
@@ -23099,7 +23099,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherDefaultUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherHeaderActionOutputReference
 ```
@@ -23490,7 +23490,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherHeaderAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList
 ```
@@ -23650,7 +23650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -24004,7 +24004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList
 ```
@@ -24164,7 +24164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -24518,7 +24518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherList
 ```
@@ -24678,7 +24678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherOutputReference
 ```
@@ -25235,7 +25235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherPathRuleList
 ```
@@ -25395,7 +25395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherPathRuleOutputReference
 ```
@@ -25797,7 +25797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference
 ```
@@ -26271,7 +26271,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -26564,7 +26564,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -26864,7 +26864,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -27170,7 +27170,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -27503,7 +27503,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference
 ```
@@ -28046,7 +28046,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -28317,7 +28317,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMir
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference
 ```
@@ -28666,7 +28666,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -28966,7 +28966,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference
 ```
@@ -29266,7 +29266,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference
 ```
@@ -29573,7 +29573,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -29964,7 +29964,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -30124,7 +30124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -30457,7 +30457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -30617,7 +30617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -30950,7 +30950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList
 ```
@@ -31110,7 +31110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference
 ```
@@ -31463,7 +31463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference
 ```
@@ -31879,7 +31879,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference
 ```
@@ -32270,7 +32270,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList
 ```
@@ -32430,7 +32430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -32763,7 +32763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList
 ```
@@ -32923,7 +32923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -33256,7 +33256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesList
 ```
@@ -33416,7 +33416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList
 ```
@@ -33576,7 +33576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference
 ```
@@ -34081,7 +34081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference
 ```
@@ -34374,7 +34374,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList
 ```
@@ -34534,7 +34534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList
 ```
@@ -34694,7 +34694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference
 ```
@@ -35005,7 +35005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList
 ```
@@ -35165,7 +35165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference
 ```
@@ -35489,7 +35489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference
 ```
@@ -36027,7 +36027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList
 ```
@@ -36187,7 +36187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference
 ```
@@ -36563,7 +36563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesOutputReference
 ```
@@ -37049,7 +37049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference
 ```
@@ -37530,7 +37530,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPoli
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -37837,7 +37837,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference
 ```
@@ -38137,7 +38137,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -38457,7 +38457,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference
 ```
@@ -38790,7 +38790,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference
 ```
@@ -39333,7 +39333,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference
 ```
@@ -39604,7 +39604,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference
 ```
@@ -39946,7 +39946,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPol
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference
 ```
@@ -40246,7 +40246,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPol
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference
 ```
@@ -40546,7 +40546,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference
 ```
@@ -40882,7 +40882,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference
 ```
@@ -41273,7 +41273,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeighted
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList
 ```
@@ -41433,7 +41433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference
 ```
@@ -41766,7 +41766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList
 ```
@@ -41926,7 +41926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference
 ```
@@ -42259,7 +42259,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList
 ```
@@ -42419,7 +42419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference
 ```
@@ -42772,7 +42772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference
 ```
@@ -43195,7 +43195,7 @@ func InternalValue() ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapTestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRegionUrlMapTestList
 ```
@@ -43355,7 +43355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapTestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRegionUrlMapTestOutputReference
 ```
@@ -43717,7 +43717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionurlmap"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregionurlmap"
 
 computeregionurlmap.NewComputeRegionUrlMapTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapTimeoutsOutputReference
 ```

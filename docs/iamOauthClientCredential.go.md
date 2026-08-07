@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.NewIamOauthClientCredential(scope Construct, id *string, config IamOauthClientCredentialConfig) IamOauthClientCredential
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.IamOauthClientCredential_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.IamOauthClientCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iamoauthclientcredential.IamOauthClientCredential_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.IamOauthClientCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ iamoauthclientcredential.IamOauthClientCredential_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.IamOauthClientCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 &iamoauthclientcredential.IamOauthClientCredentialConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcr
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamOauthClientCredential.IamOauthClientCredentialTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamOauthClientCredential.IamOauthClientCredentialTimeouts,
 }
 ```
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 &iamoauthclientcredential.IamOauthClientCredentialTimeouts {
 	Create: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamoauthclientcredential"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamoauthclientcredential"
 
 iamoauthclientcredential.NewIamOauthClientCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamOauthClientCredentialTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityType(scope Construct, id *string, config DialogflowCxEntityTypeConfig) DialogflowCxEntityType
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.DialogflowCxEntityType_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.DialogflowCxEntityType_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ dialogflowcxentitytype.DialogflowCxEntityType_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.DialogflowCxEntityType_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ dialogflowcxentitytype.DialogflowCxEntityType_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.DialogflowCxEntityType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1066,7 +1066,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 &dialogflowcxentitytype.DialogflowCxEntityTypeConfig {
 	Connection: interface{},
@@ -1087,7 +1087,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxenti
 	LanguageCode: *string,
 	Parent: *string,
 	Redact: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts,
 }
 ```
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 &dialogflowcxentitytype.DialogflowCxEntityTypeEntities {
 	Synonyms: *[]*string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 &dialogflowcxentitytype.DialogflowCxEntityTypeExcludedPhrases {
 	Value: *string,
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 &dialogflowcxentitytype.DialogflowCxEntityTypeTimeouts {
 	Create: *string,
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityTypeEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxEntityTypeEntitiesList
 ```
@@ -1690,7 +1690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityTypeEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxEntityTypeEntitiesOutputReference
 ```
@@ -2015,7 +2015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityTypeExcludedPhrasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxEntityTypeExcludedPhrasesList
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityTypeExcludedPhrasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxEntityTypeExcludedPhrasesOutputReference
 ```
@@ -2471,7 +2471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxentitytype"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dialogflowcxentitytype"
 
 dialogflowcxentitytype.NewDialogflowCxEntityTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxEntityTypeTimeoutsOutputReference
 ```
