@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,29 +21,29 @@ export interface NetworkServicesGrpcRouteConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#deletion_policy NetworkServicesGrpcRoute#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#deletion_policy NetworkServicesGrpcRoute#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#description NetworkServicesGrpcRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#description NetworkServicesGrpcRoute#description}
   */
   readonly description?: string;
   /**
   * List of gateways this GrpcRoute is attached to, as one of the routing rules to route the requests served by the gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#gateways NetworkServicesGrpcRoute#gateways}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#gateways NetworkServicesGrpcRoute#gateways}
   */
   readonly gateways?: string[];
   /**
   * Required. Service hostnames with an optional port for which this route describes traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#hostnames NetworkServicesGrpcRoute#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#hostnames NetworkServicesGrpcRoute#hostnames}
   */
   readonly hostnames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#id NetworkServicesGrpcRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#id NetworkServicesGrpcRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,41 +55,41 @@ export interface NetworkServicesGrpcRouteConfig extends cdktn.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#labels NetworkServicesGrpcRoute#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#labels NetworkServicesGrpcRoute#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location (region) of the GRPCRoute resource to be created. Only the value 'global' is currently allowed; defaults to 'global' if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#location NetworkServicesGrpcRoute#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#location NetworkServicesGrpcRoute#location}
   */
   readonly location?: string;
   /**
   * List of meshes this GrpcRoute is attached to, as one of the routing rules to route the requests served by the mesh.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#meshes NetworkServicesGrpcRoute#meshes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#meshes NetworkServicesGrpcRoute#meshes}
   */
   readonly meshes?: string[];
   /**
   * Name of the GrpcRoute resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#name NetworkServicesGrpcRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#name NetworkServicesGrpcRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#project NetworkServicesGrpcRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#project NetworkServicesGrpcRoute#project}
   */
   readonly project?: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#rules NetworkServicesGrpcRoute#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#rules NetworkServicesGrpcRoute#rules}
   */
   readonly rules: NetworkServicesGrpcRouteRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#timeouts NetworkServicesGrpcRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#timeouts NetworkServicesGrpcRoute#timeouts}
   */
   readonly timeouts?: NetworkServicesGrpcRouteTimeouts;
 }
@@ -97,13 +97,13 @@ export interface NetworkServicesGrpcRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#service_name NetworkServicesGrpcRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#service_name NetworkServicesGrpcRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#weight NetworkServicesGrpcRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#weight NetworkServicesGrpcRoute#weight}
   */
   readonly weight?: number;
 }
@@ -250,13 +250,13 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort {
   /**
   * The HTTP status code used to abort the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#http_status NetworkServicesGrpcRoute#http_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#http_status NetworkServicesGrpcRoute#http_status}
   */
   readonly httpStatus?: number;
   /**
   * The percentage of traffic which will be aborted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#percentage NetworkServicesGrpcRoute#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#percentage NetworkServicesGrpcRoute#percentage}
   */
   readonly percentage?: number;
 }
@@ -371,13 +371,13 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay {
   /**
   * Specify a fixed delay before forwarding the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#fixed_delay NetworkServicesGrpcRoute#fixed_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#fixed_delay NetworkServicesGrpcRoute#fixed_delay}
   */
   readonly fixedDelay?: string;
   /**
   * The percentage of traffic on which delay will be injected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#percentage NetworkServicesGrpcRoute#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#percentage NetworkServicesGrpcRoute#percentage}
   */
   readonly percentage?: number;
 }
@@ -492,13 +492,13 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicy {
   /**
   * abort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#abort NetworkServicesGrpcRoute#abort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#abort NetworkServicesGrpcRoute#abort}
   */
   readonly abort?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort;
   /**
   * delay block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#delay NetworkServicesGrpcRoute#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#delay NetworkServicesGrpcRoute#delay}
   */
   readonly delay?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay;
 }
@@ -613,13 +613,13 @@ export interface NetworkServicesGrpcRouteRulesActionRetryPolicy {
   /**
   * Specifies the allowed number of retries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#num_retries NetworkServicesGrpcRoute#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#num_retries NetworkServicesGrpcRoute#num_retries}
   */
   readonly numRetries?: number;
   /**
   * Specifies one or more conditions when this retry policy applies. Possible values: ["connect-failure", "refused-stream", "cancelled", "deadline-exceeded", "resource-exhausted", "unavailable"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#retry_conditions NetworkServicesGrpcRoute#retry_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#retry_conditions NetworkServicesGrpcRoute#retry_conditions}
   */
   readonly retryConditions?: string[];
 }
@@ -734,25 +734,25 @@ export interface NetworkServicesGrpcRouteRulesAction {
   /**
   * Specifies the timeout for selected route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#timeout NetworkServicesGrpcRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#timeout NetworkServicesGrpcRoute#timeout}
   */
   readonly timeout?: string;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#destinations NetworkServicesGrpcRoute#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#destinations NetworkServicesGrpcRoute#destinations}
   */
   readonly destinations?: NetworkServicesGrpcRouteRulesActionDestinations[] | cdktn.IResolvable;
   /**
   * fault_injection_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#fault_injection_policy NetworkServicesGrpcRoute#fault_injection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#fault_injection_policy NetworkServicesGrpcRoute#fault_injection_policy}
   */
   readonly faultInjectionPolicy?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicy;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#retry_policy NetworkServicesGrpcRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#retry_policy NetworkServicesGrpcRoute#retry_policy}
   */
   readonly retryPolicy?: NetworkServicesGrpcRouteRulesActionRetryPolicy;
 }
@@ -925,19 +925,19 @@ export interface NetworkServicesGrpcRouteRulesMatchesHeaders {
   /**
   * Required. The key of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#key NetworkServicesGrpcRoute#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#key NetworkServicesGrpcRoute#key}
   */
   readonly key: string;
   /**
   * The type of match. Default value: "EXACT" Possible values: ["TYPE_UNSPECIFIED", "EXACT", "REGULAR_EXPRESSION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#type NetworkServicesGrpcRoute#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#type NetworkServicesGrpcRoute#type}
   */
   readonly type?: string;
   /**
   * Required. The value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#value NetworkServicesGrpcRoute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#value NetworkServicesGrpcRoute#value}
   */
   readonly value: string;
 }
@@ -1107,19 +1107,19 @@ export interface NetworkServicesGrpcRouteRulesMatchesMethod {
   /**
   * Specifies that matches are case sensitive. The default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#case_sensitive NetworkServicesGrpcRoute#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#case_sensitive NetworkServicesGrpcRoute#case_sensitive}
   */
   readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
   * Required. Name of the method to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#grpc_method NetworkServicesGrpcRoute#grpc_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#grpc_method NetworkServicesGrpcRoute#grpc_method}
   */
   readonly grpcMethod: string;
   /**
   * Required. Name of the service to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#grpc_service NetworkServicesGrpcRoute#grpc_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#grpc_service NetworkServicesGrpcRoute#grpc_service}
   */
   readonly grpcService: string;
 }
@@ -1257,13 +1257,13 @@ export interface NetworkServicesGrpcRouteRulesMatches {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#headers NetworkServicesGrpcRoute#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#headers NetworkServicesGrpcRoute#headers}
   */
   readonly headers?: NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktn.IResolvable;
   /**
   * method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#method NetworkServicesGrpcRoute#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#method NetworkServicesGrpcRoute#method}
   */
   readonly method?: NetworkServicesGrpcRouteRulesMatchesMethod;
 }
@@ -1410,13 +1410,13 @@ export interface NetworkServicesGrpcRouteRules {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#action NetworkServicesGrpcRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#action NetworkServicesGrpcRoute#action}
   */
   readonly action?: NetworkServicesGrpcRouteRulesAction;
   /**
   * matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#matches NetworkServicesGrpcRoute#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#matches NetworkServicesGrpcRoute#matches}
   */
   readonly matches?: NetworkServicesGrpcRouteRulesMatches[] | cdktn.IResolvable;
 }
@@ -1561,15 +1561,15 @@ export class NetworkServicesGrpcRouteRulesList extends cdktn.ComplexList {
 }
 export interface NetworkServicesGrpcRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#create NetworkServicesGrpcRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#create NetworkServicesGrpcRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#delete NetworkServicesGrpcRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#delete NetworkServicesGrpcRoute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#update NetworkServicesGrpcRoute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#update NetworkServicesGrpcRoute#update}
   */
   readonly update?: string;
 }
@@ -1721,7 +1721,7 @@ export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}
 */
 export class NetworkServicesGrpcRoute extends cdktn.TerraformResource {
 
@@ -1737,7 +1737,7 @@ export class NetworkServicesGrpcRoute extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesGrpcRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesGrpcRoute to import
-  * @param importFromId The id of the existing NetworkServicesGrpcRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesGrpcRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesGrpcRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1749,7 +1749,7 @@ export class NetworkServicesGrpcRoute extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1760,7 +1760,7 @@ export class NetworkServicesGrpcRoute extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_grpc_route',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

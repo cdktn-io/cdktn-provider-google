@@ -4,7 +4,7 @@
 
 ### AgentRegistryService <a name="AgentRegistryService" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service google_agent_registry_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service google_agent_registry_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.Initializer"></a>
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the AgentRegistryService to im
 
 The id of the existing AgentRegistryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Type { get; set; }
 
 The type of the Agent spec content. Possible values: ["NO_SPEC", "A2A_AGENT_CARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1175,7 +1175,7 @@ The content of the Agent spec in the JSON format.
 
 This payload is validated against the schema for the specified type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
 
 ---
 
@@ -1227,10 +1227,10 @@ new AgentRegistryServiceConfig {
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.description">Description</a></code> | <code>string</code> | The description of the Service. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User-defined display name for the Service. Can have a maximum length of 63 characters. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.endpointSpec">EndpointSpec</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceEndpointSpec">AgentRegistryServiceEndpointSpec</a></code> | endpoint_spec block. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#id AgentRegistryService#id}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#id AgentRegistryService#id}. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.interfaces">Interfaces</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceInterfaces">AgentRegistryServiceInterfaces</a>[]</code> | interfaces block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.mcpServerSpec">McpServerSpec</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceMcpServerSpec">AgentRegistryServiceMcpServerSpec</a></code> | mcp_server_spec block. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#project AgentRegistryService#project}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#project AgentRegistryService#project}. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts">AgentRegistryServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1315,7 +1315,7 @@ public string Location { get; set; }
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#location AgentRegistryService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#location AgentRegistryService#location}
 
 ---
 
@@ -1329,7 +1329,7 @@ public string ServiceId { get; set; }
 
 The name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#service_id AgentRegistryService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#service_id AgentRegistryService#service_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ public AgentRegistryServiceAgentSpec AgentSpec { get; set; }
 
 agent_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#agent_spec AgentRegistryService#agent_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#agent_spec AgentRegistryService#agent_spec}
 
 ---
 
@@ -1364,7 +1364,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#deletion_policy AgentRegistryService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#deletion_policy AgentRegistryService#deletion_policy}
 
 ---
 
@@ -1378,7 +1378,7 @@ public string Description { get; set; }
 
 The description of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#description AgentRegistryService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#description AgentRegistryService#description}
 
 ---
 
@@ -1392,7 +1392,7 @@ public string DisplayName { get; set; }
 
 User-defined display name for the Service. Can have a maximum length of 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#display_name AgentRegistryService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#display_name AgentRegistryService#display_name}
 
 ---
 
@@ -1406,7 +1406,7 @@ public AgentRegistryServiceEndpointSpec EndpointSpec { get; set; }
 
 endpoint_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#endpoint_spec AgentRegistryService#endpoint_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#endpoint_spec AgentRegistryService#endpoint_spec}
 
 ---
 
@@ -1418,7 +1418,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#id AgentRegistryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#id AgentRegistryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1435,7 +1435,7 @@ public IResolvable|AgentRegistryServiceInterfaces[] Interfaces { get; set; }
 
 interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#interfaces AgentRegistryService#interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#interfaces AgentRegistryService#interfaces}
 
 ---
 
@@ -1449,7 +1449,7 @@ public AgentRegistryServiceMcpServerSpec McpServerSpec { get; set; }
 
 mcp_server_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#mcp_server_spec AgentRegistryService#mcp_server_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#mcp_server_spec AgentRegistryService#mcp_server_spec}
 
 ---
 
@@ -1461,7 +1461,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#project AgentRegistryService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#project AgentRegistryService#project}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public AgentRegistryServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#timeouts AgentRegistryService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#timeouts AgentRegistryService#timeouts}
 
 ---
 
@@ -1509,7 +1509,7 @@ public string Type { get; set; }
 
 The type of the Endpoint spec content. Possible values: ["NO_SPEC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1545,7 +1545,7 @@ public string ProtocolBinding { get; set; }
 
 The protocol binding of the interface. Possible values: ["JSONRPC", "GRPC", "HTTP_JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#protocol_binding AgentRegistryService#protocol_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#protocol_binding AgentRegistryService#protocol_binding}
 
 ---
 
@@ -1559,7 +1559,7 @@ public string Url { get; set; }
 
 The destination URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#url AgentRegistryService#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#url AgentRegistryService#url}
 
 ---
 
@@ -1595,7 +1595,7 @@ public string Type { get; set; }
 
 The type of the MCP Server spec content. Possible values: ["NO_SPEC", "TOOL_SPEC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1609,7 +1609,7 @@ public string Content { get; set; }
 
 The content of the MCP Server spec. This payload is validated against the schema for the specified type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
 
 ---
 
@@ -1631,9 +1631,9 @@ new AgentRegistryServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#create AgentRegistryService#create}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#update AgentRegistryService#update}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#create AgentRegistryService#create}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#update AgentRegistryService#update}. |
 
 ---
 
@@ -1645,7 +1645,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#create AgentRegistryService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#create AgentRegistryService#create}.
 
 ---
 
@@ -1657,7 +1657,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}.
 
 ---
 
@@ -1669,7 +1669,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_registry_service#update AgentRegistryService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_registry_service#update AgentRegistryService#update}.
 
 ---
 

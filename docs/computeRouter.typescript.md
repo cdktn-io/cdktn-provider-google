@@ -4,7 +4,7 @@
 
 ### ComputeRouter <a name="ComputeRouter" id="@cdktn/provider-google.computeRouter.ComputeRouter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router google_compute_router}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router google_compute_router}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouter.ComputeRouter.Initializer"></a>
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the ComputeRouter to import.
 
 The id of the existing ComputeRouter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1166,7 +1166,7 @@ private ASN, either 16-bit or 32-bit. The value will be fixed for
 this router resource. All VPN tunnels that link to this router
 will have the same local ASN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#asn ComputeRouter#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#asn ComputeRouter#asn}
 
 ---
 
@@ -1187,7 +1187,7 @@ blank to advertise no custom groups.
 
 This enum field has the one valid value: ALL_SUBNETS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#advertised_groups ComputeRouter#advertised_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#advertised_groups ComputeRouter#advertised_groups}
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly advertisedIpRanges: IResolvable | ComputeRouterBgpAdvertisedIpRa
 
 advertised_ip_ranges block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#advertised_ip_ranges ComputeRouter#advertised_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#advertised_ip_ranges ComputeRouter#advertised_ip_ranges}
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly advertiseMode: string;
 
 User-specified flag to indicate which mode to use for advertisement. Default value: "DEFAULT" Possible values: ["DEFAULT", "CUSTOM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#advertise_mode ComputeRouter#advertise_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#advertise_mode ComputeRouter#advertise_mode}
 
 ---
 
@@ -1234,7 +1234,7 @@ size at least /30, even if the BGP sessions are over IPv6. It must
 not overlap with any IPv4 BGP session ranges. Other vendors commonly
 call this router ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#identifier_range ComputeRouter#identifier_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#identifier_range ComputeRouter#identifier_range}
 
 ---
 
@@ -1258,7 +1258,7 @@ peer's hold time value as the hold time for the BGP connection
 between the two peers. If set, this value must be between 20 and 60.
 The default is 20.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#keepalive_interval ComputeRouter#keepalive_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#keepalive_interval ComputeRouter#keepalive_interval}
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly range: string;
 
 The IP range to advertise. The value must be a CIDR-formatted string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#range ComputeRouter#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#range ComputeRouter#range}
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly description: string;
 
 User-specified description for the IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#description ComputeRouter#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#description ComputeRouter#description}
 
 ---
 
@@ -1335,12 +1335,12 @@ const computeRouterConfig: computeRouter.ComputeRouterConfig = { ... }
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.encryptedInterconnectRouter">encryptedInterconnectRouter</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). |
-| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#id ComputeRouter#id}. |
+| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#id ComputeRouter#id}. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.md5AuthenticationKeys">md5AuthenticationKeys</a></code> | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterMd5AuthenticationKeys">ComputeRouterMd5AuthenticationKeys</a></code> | md5_authentication_keys block. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.nccGateway">nccGateway</a></code> | <code>string</code> | A URI of an NCC Gateway spoke. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.network">network</a></code> | <code>string</code> | A reference to the network to which this router belongs. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterParams">ComputeRouterParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#project ComputeRouter#project}. |
+| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#project ComputeRouter#project}. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.region">region</a></code> | <code>string</code> | Region where the router resides. |
 | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts">ComputeRouterTimeouts</a></code> | timeouts block. |
 
@@ -1433,7 +1433,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#name ComputeRouter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#name ComputeRouter#name}
 
 ---
 
@@ -1447,7 +1447,7 @@ public readonly bgp: ComputeRouterBgp;
 
 bgp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#bgp ComputeRouter#bgp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#bgp ComputeRouter#bgp}
 
 ---
 
@@ -1469,7 +1469,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#deletion_policy ComputeRouter#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#deletion_policy ComputeRouter#deletion_policy}
 
 ---
 
@@ -1483,7 +1483,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#description ComputeRouter#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#description ComputeRouter#description}
 
 ---
 
@@ -1497,7 +1497,7 @@ public readonly encryptedInterconnectRouter: boolean | IResolvable;
 
 Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#encrypted_interconnect_router ComputeRouter#encrypted_interconnect_router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#encrypted_interconnect_router ComputeRouter#encrypted_interconnect_router}
 
 ---
 
@@ -1509,7 +1509,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#id ComputeRouter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#id ComputeRouter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1526,7 +1526,7 @@ public readonly md5AuthenticationKeys: ComputeRouterMd5AuthenticationKeys;
 
 md5_authentication_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#md5_authentication_keys ComputeRouter#md5_authentication_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#md5_authentication_keys ComputeRouter#md5_authentication_keys}
 
 ---
 
@@ -1540,7 +1540,7 @@ public readonly nccGateway: string;
 
 A URI of an NCC Gateway spoke.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#ncc_gateway ComputeRouter#ncc_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#ncc_gateway ComputeRouter#ncc_gateway}
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly network: string;
 
 A reference to the network to which this router belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#network ComputeRouter#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#network ComputeRouter#network}
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly params: ComputeRouterParams;
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#params ComputeRouter#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#params ComputeRouter#params}
 
 ---
 
@@ -1580,7 +1580,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#project ComputeRouter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#project ComputeRouter#project}.
 
 ---
 
@@ -1594,7 +1594,7 @@ public readonly region: string;
 
 Region where the router resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#region ComputeRouter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#region ComputeRouter#region}
 
 ---
 
@@ -1608,7 +1608,7 @@ public readonly timeouts: ComputeRouterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#timeouts ComputeRouter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#timeouts ComputeRouter#timeouts}
 
 ---
 
@@ -1641,7 +1641,7 @@ public readonly key: string;
 
 Value of the key used for MD5 authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#key ComputeRouter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#key ComputeRouter#key}
 
 ---
 
@@ -1658,7 +1658,7 @@ Name used to identify the key.
 Must be unique within a router.
 Must be referenced by exactly one bgpPeer. Must comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#name ComputeRouter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#name ComputeRouter#name}
 
 ---
 
@@ -1694,7 +1694,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#resource_manager_tags ComputeRouter#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#resource_manager_tags ComputeRouter#resource_manager_tags}
 
 ---
 
@@ -1712,9 +1712,9 @@ const computeRouterTimeouts: computeRouter.ComputeRouterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#create ComputeRouter#create}. |
-| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#delete ComputeRouter#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#update ComputeRouter#update}. |
+| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#create ComputeRouter#create}. |
+| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#delete ComputeRouter#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRouter.ComputeRouterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#update ComputeRouter#update}. |
 
 ---
 
@@ -1726,7 +1726,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#create ComputeRouter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#create ComputeRouter#create}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#delete ComputeRouter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#delete ComputeRouter#delete}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_router#update ComputeRouter#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_router#update ComputeRouter#update}.
 
 ---
 

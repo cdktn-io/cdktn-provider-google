@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkServicesMulticastProducerAssociationConfig extends cdktn
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#deletion_policy NetworkServicesMulticastProducerAssociation#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#deletion_policy NetworkServicesMulticastProducerAssociation#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional text description of the multicast producer association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#description NetworkServicesMulticastProducerAssociation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#id NetworkServicesMulticastProducerAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,13 +43,13 @@ export interface NetworkServicesMulticastProducerAssociationConfig extends cdktn
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#labels NetworkServicesMulticastProducerAssociation#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#location NetworkServicesMulticastProducerAssociation#location}
   */
   readonly location: string;
   /**
@@ -58,7 +58,7 @@ export interface NetworkServicesMulticastProducerAssociationConfig extends cdktn
   * Use the following format:
   * // 'projects/* /locations/* /multicastDomainActivations/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#multicast_domain_activation NetworkServicesMulticastProducerAssociation#multicast_domain_activation}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -69,7 +69,7 @@ export interface NetworkServicesMulticastProducerAssociationConfig extends cdktn
   * character a letter, and the last a letter or a number. The name must not
   * exceed 48 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#multicast_producer_association_id NetworkServicesMulticastProducerAssociation#multicast_producer_association_id}
   */
   readonly multicastProducerAssociationId: string;
   /**
@@ -77,17 +77,17 @@ export interface NetworkServicesMulticastProducerAssociationConfig extends cdktn
   * Use following format:
   * 'projects/{project}/locations/global/networks/{network}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#network NetworkServicesMulticastProducerAssociation#network}
   */
   readonly network: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#project NetworkServicesMulticastProducerAssociation#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#timeouts NetworkServicesMulticastProducerAssociation#timeouts}
   */
   readonly timeouts?: NetworkServicesMulticastProducerAssociationTimeouts;
 }
@@ -168,15 +168,15 @@ export class NetworkServicesMulticastProducerAssociationStateList extends cdktn.
 }
 export interface NetworkServicesMulticastProducerAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#create NetworkServicesMulticastProducerAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#delete NetworkServicesMulticastProducerAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#update NetworkServicesMulticastProducerAssociation#update}
   */
   readonly update?: string;
 }
@@ -328,7 +328,7 @@ export class NetworkServicesMulticastProducerAssociationTimeoutsOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association}
 */
 export class NetworkServicesMulticastProducerAssociation extends cdktn.TerraformResource {
 
@@ -344,7 +344,7 @@ export class NetworkServicesMulticastProducerAssociation extends cdktn.Terraform
   * Generates CDKTN code for importing a NetworkServicesMulticastProducerAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesMulticastProducerAssociation to import
-  * @param importFromId The id of the existing NetworkServicesMulticastProducerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesMulticastProducerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesMulticastProducerAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -356,7 +356,7 @@ export class NetworkServicesMulticastProducerAssociation extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_services_multicast_producer_association google_network_services_multicast_producer_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -367,7 +367,7 @@ export class NetworkServicesMulticastProducerAssociation extends cdktn.Terraform
       terraformResourceType: 'google_network_services_multicast_producer_association',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

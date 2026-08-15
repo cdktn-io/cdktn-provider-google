@@ -4,7 +4,7 @@
 
 ### SecureSourceManagerRepository <a name="SecureSourceManagerRepository" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.Initializer"></a>
 
@@ -75,12 +75,15 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putInitialConfig">putInitialConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putScanConfig">putScanConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetInitialConfig">resetInitialConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetScanConfig">resetScanConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -406,6 +409,18 @@ public putInitialConfig(value: SecureSourceManagerRepositoryInitialConfig): void
 
 ---
 
+##### `putScanConfig` <a name="putScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putScanConfig"></a>
+
+```typescript
+public putScanConfig(value: SecureSourceManagerRepositoryScanConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putScanConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.putTimeouts"></a>
 
 ```typescript
@@ -446,6 +461,18 @@ public resetInitialConfig(): void
 
 ```typescript
 public resetProject(): void
+```
+
+##### `resetScanConfig` <a name="resetScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetScanConfig"></a>
+
+```typescript
+public resetScanConfig(): void
+```
+
+##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetServiceAccount"></a>
+
+```typescript
+public resetServiceAccount(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.resetTimeouts"></a>
@@ -557,7 +584,7 @@ The construct id used in the generated config for the SecureSourceManagerReposit
 
 The id of the existing SecureSourceManagerRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,6 +617,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.initialConfig">initialConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfigOutputReference">SecureSourceManagerRepositoryInitialConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.scanConfig">scanConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference">SecureSourceManagerRepositoryScanConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeoutsOutputReference">SecureSourceManagerRepositoryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
@@ -602,6 +630,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.repositoryIdInput">repositoryIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.scanConfigInput">scanConfigInput</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts">SecureSourceManagerRepositoryTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -610,6 +640,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.repositoryId">repositoryId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -785,6 +816,16 @@ public readonly name: string;
 
 ---
 
+##### `scanConfig`<sup>Required</sup> <a name="scanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.scanConfig"></a>
+
+```typescript
+public readonly scanConfig: SecureSourceManagerRepositoryScanConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference">SecureSourceManagerRepositoryScanConfigOutputReference</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.timeouts"></a>
 
 ```typescript
@@ -905,6 +946,26 @@ public readonly repositoryIdInput: string;
 
 ---
 
+##### `scanConfigInput`<sup>Optional</sup> <a name="scanConfigInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.scanConfigInput"></a>
+
+```typescript
+public readonly scanConfigInput: SecureSourceManagerRepositoryScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a>
+
+---
+
+##### `serviceAccountInput`<sup>Optional</sup> <a name="serviceAccountInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.serviceAccountInput"></a>
+
+```typescript
+public readonly serviceAccountInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.timeoutsInput"></a>
 
 ```typescript
@@ -985,6 +1046,16 @@ public readonly repositoryId: string;
 
 ---
 
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1031,9 +1102,11 @@ const secureSourceManagerRepositoryConfig: secureSourceManagerRepository.SecureS
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.repositoryId">repositoryId</a></code> | <code>string</code> | The ID for the Repository. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.description">description</a></code> | <code>string</code> | Description of the repository, which cannot exceed 500 characters. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.initialConfig">initialConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig">SecureSourceManagerRepositoryInitialConfig</a></code> | initial_config block. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.scanConfig">scanConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a></code> | scan_config block. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Repository level service account. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts">SecureSourceManagerRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1118,7 +1191,7 @@ public readonly instance: string;
 
 The name of the instance in which the repository is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
 
 ---
 
@@ -1132,7 +1205,7 @@ public readonly location: string;
 
 The location for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
 
 ---
 
@@ -1146,7 +1219,7 @@ public readonly repositoryId: string;
 
 The ID for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
 
 ---
 
@@ -1168,7 +1241,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
 
 ---
 
@@ -1182,7 +1255,7 @@ public readonly description: string;
 
 Description of the repository, which cannot exceed 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
 
 ---
 
@@ -1194,7 +1267,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,7 +1284,7 @@ public readonly initialConfig: SecureSourceManagerRepositoryInitialConfig;
 
 initial_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
 
 ---
 
@@ -1223,7 +1296,35 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}.
+
+---
+
+##### `scanConfig`<sup>Optional</sup> <a name="scanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.scanConfig"></a>
+
+```typescript
+public readonly scanConfig: SecureSourceManagerRepositoryScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a>
+
+scan_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#scan_config SecureSourceManagerRepository#scan_config}
+
+---
+
+##### `serviceAccount`<sup>Optional</sup> <a name="serviceAccount" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+Repository level service account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#service_account SecureSourceManagerRepository#service_account}
 
 ---
 
@@ -1237,7 +1338,7 @@ public readonly timeouts: SecureSourceManagerRepositoryTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
 
 ---
 
@@ -1272,7 +1373,7 @@ public readonly defaultBranch: string;
 
 Default branch name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
 
 ---
 
@@ -1286,7 +1387,7 @@ public readonly gitignores: string[];
 
 List of gitignore template names user can choose from. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
 
 ---
 
@@ -1300,7 +1401,7 @@ public readonly license: string;
 
 License template name user can choose from. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
 
 ---
 
@@ -1314,7 +1415,86 @@ public readonly readme: string;
 
 README template name. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
+
+---
+
+### SecureSourceManagerRepositoryScanConfig <a name="SecureSourceManagerRepositoryScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig.Initializer"></a>
+
+```typescript
+import { secureSourceManagerRepository } from '@cdktn/provider-google'
+
+const secureSourceManagerRepositoryScanConfig: secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig.property.secretScanConfig">secretScanConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a></code> | secret_scan_config block. |
+
+---
+
+##### `secretScanConfig`<sup>Optional</sup> <a name="secretScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig.property.secretScanConfig"></a>
+
+```typescript
+public readonly secretScanConfig: SecureSourceManagerRepositoryScanConfigSecretScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a>
+
+secret_scan_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#secret_scan_config SecureSourceManagerRepository#secret_scan_config}
+
+---
+
+### SecureSourceManagerRepositoryScanConfigSecretScanConfig <a name="SecureSourceManagerRepositoryScanConfigSecretScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.Initializer"></a>
+
+```typescript
+import { secureSourceManagerRepository } from '@cdktn/provider-google'
+
+const secureSourceManagerRepositoryScanConfigSecretScanConfig: secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables secret scanning for the repository. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.property.inspectTemplate">inspectTemplate</a></code> | <code>string</code> | The DLP inspect template to use for secret scanning. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Enables secret scanning for the repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#enabled SecureSourceManagerRepository#enabled}
+
+---
+
+##### `inspectTemplate`<sup>Optional</sup> <a name="inspectTemplate" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.property.inspectTemplate"></a>
+
+```typescript
+public readonly inspectTemplate: string;
+```
+
+- *Type:* string
+
+The DLP inspect template to use for secret scanning.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#inspect_template SecureSourceManagerRepository#inspect_template}
 
 ---
 
@@ -1332,9 +1512,9 @@ const secureSourceManagerRepositoryTimeouts: secureSourceManagerRepository.Secur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}. |
 
 ---
 
@@ -1346,7 +1526,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}.
 
 ---
 
@@ -1358,7 +1538,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}.
 
 ---
 
@@ -1370,7 +1550,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}.
 
 ---
 
@@ -1748,6 +1928,604 @@ public readonly internalValue: SecureSourceManagerRepositoryInitialConfig;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig">SecureSourceManagerRepositoryInitialConfig</a>
+
+---
+
+
+### SecureSourceManagerRepositoryScanConfigOutputReference <a name="SecureSourceManagerRepositoryScanConfigOutputReference" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer"></a>
+
+```typescript
+import { secureSourceManagerRepository } from '@cdktn/provider-google'
+
+new secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.putSecretScanConfig">putSecretScanConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.resetSecretScanConfig">resetSecretScanConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSecretScanConfig` <a name="putSecretScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.putSecretScanConfig"></a>
+
+```typescript
+public putSecretScanConfig(value: SecureSourceManagerRepositoryScanConfigSecretScanConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.putSecretScanConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a>
+
+---
+
+##### `resetSecretScanConfig` <a name="resetSecretScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.resetSecretScanConfig"></a>
+
+```typescript
+public resetSecretScanConfig(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.secretScanConfig">secretScanConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference">SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.secretScanConfigInput">secretScanConfigInput</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secretScanConfig`<sup>Required</sup> <a name="secretScanConfig" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.secretScanConfig"></a>
+
+```typescript
+public readonly secretScanConfig: SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference">SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference</a>
+
+---
+
+##### `secretScanConfigInput`<sup>Optional</sup> <a name="secretScanConfigInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.secretScanConfigInput"></a>
+
+```typescript
+public readonly secretScanConfigInput: SecureSourceManagerRepositoryScanConfigSecretScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SecureSourceManagerRepositoryScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a>
+
+---
+
+
+### SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference <a name="SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer"></a>
+
+```typescript
+import { secureSourceManagerRepository } from '@cdktn/provider-google'
+
+new secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resetInspectTemplate">resetInspectTemplate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled(): void
+```
+
+##### `resetInspectTemplate` <a name="resetInspectTemplate" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.resetInspectTemplate"></a>
+
+```typescript
+public resetInspectTemplate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.inspectTemplateInput">inspectTemplateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.inspectTemplate">inspectTemplate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `inspectTemplateInput`<sup>Optional</sup> <a name="inspectTemplateInput" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.inspectTemplateInput"></a>
+
+```typescript
+public readonly inspectTemplateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `inspectTemplate`<sup>Required</sup> <a name="inspectTemplate" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.inspectTemplate"></a>
+
+```typescript
+public readonly inspectTemplate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SecureSourceManagerRepositoryScanConfigSecretScanConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig">SecureSourceManagerRepositoryScanConfigSecretScanConfig</a>
 
 ---
 

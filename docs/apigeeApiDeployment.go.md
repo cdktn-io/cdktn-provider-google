@@ -4,7 +4,7 @@
 
 ### ApigeeApiDeployment <a name="ApigeeApiDeployment" id="@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment google_apigee_api_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment google_apigee_api_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeployment.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ApigeeApiDeployment to imp
 
 The id of the existing ApigeeApiDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ Environment *string
 
 The Apigee Environment associated with the Apigee API deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#environment ApigeeApiDeployment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#environment ApigeeApiDeployment#environment}
 
 ---
 
@@ -1023,7 +1023,7 @@ OrgId *string
 
 The Apigee Organization associated with the Apigee API deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#org_id ApigeeApiDeployment#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#org_id ApigeeApiDeployment#org_id}
 
 ---
 
@@ -1037,7 +1037,7 @@ ProxyId *string
 
 The Apigee API associated with the Apigee API deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#proxy_id ApigeeApiDeployment#proxy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#proxy_id ApigeeApiDeployment#proxy_id}
 
 ---
 
@@ -1051,7 +1051,7 @@ Revision *string
 
 The revision of the API proxy to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#revision ApigeeApiDeployment#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#revision ApigeeApiDeployment#revision}
 
 ---
 
@@ -1072,7 +1072,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#deletion_policy ApigeeApiDeployment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#deletion_policy ApigeeApiDeployment#deletion_policy}
 
 ---
 
@@ -1088,7 +1088,7 @@ The Google Cloud IAM service account to use as the identity for the deployed pro
 
 The format must be '{ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#service_account ApigeeApiDeployment#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#service_account ApigeeApiDeployment#service_account}
 
 ---
 
@@ -1102,7 +1102,7 @@ Timeouts ApigeeApiDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#timeouts ApigeeApiDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#timeouts ApigeeApiDeployment#timeouts}
 
 ---
 
@@ -1123,8 +1123,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeapideploym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiDeployment.ApigeeApiDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}. |
 
 ---
 
@@ -1136,7 +1136,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#create ApigeeApiDeployment#create}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_api_deployment#delete ApigeeApiDeployment#delete}.
 
 ---
 

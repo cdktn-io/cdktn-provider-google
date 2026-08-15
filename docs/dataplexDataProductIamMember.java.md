@@ -4,7 +4,7 @@
 
 ### DataplexDataProductIamMember <a name="DataplexDataProductIamMember" id="@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member google_dataplex_data_product_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member google_dataplex_data_product_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer"></a>
 
@@ -40,13 +40,13 @@ DataplexDataProductIamMember.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.dataProductId">dataProductId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.dataProductId">dataProductId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition">DataplexDataProductIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#condition DataplexDataProductIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#condition DataplexDataProductIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the DataplexDataProductIamMemb
 
 The id of the existing DataplexDataProductIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ DataplexDataProductIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#expression DataplexDataProductIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#title DataplexDataProductIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#description DataplexDataProductIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#expression DataplexDataProductIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#title DataplexDataProductIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#description DataplexDataProductIamMember#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#expression DataplexDataProductIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#expression DataplexDataProductIamMember#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#title DataplexDataProductIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#title DataplexDataProductIamMember#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#description DataplexDataProductIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#description DataplexDataProductIamMember#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ DataplexDataProductIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.dataProductId">dataProductId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.dataProductId">dataProductId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberCondition">DataplexDataProductIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamMember.DataplexDataProductIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getDataProductId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#data_product_id DataplexDataProductIamMember#data_product_id}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#member DataplexDataProductIamMember#member}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#role DataplexDataProductIamMember#role}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public DataplexDataProductIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#condition DataplexDataProductIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#condition DataplexDataProductIamMember#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#id DataplexDataProductIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#location DataplexDataProductIamMember#location}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product_iam_member#project DataplexDataProductIamMember#project}.
 
 ---
 

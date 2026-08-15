@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,18 +21,18 @@ export interface ApphubServiceProjectAttachmentConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}
   */
   readonly project?: string;
   /**
@@ -40,29 +40,29 @@ export interface ApphubServiceProjectAttachmentConfig extends cdktn.TerraformMet
   * or \"projects/123\". As input, project name with either project id or number
   * are accepted. As output, this field will contain project number."
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
   */
   readonly serviceProject?: string;
   /**
   * Required. The service project attachment identifier must contain the project_id of the service project specified in the service_project_attachment.service_project field. Hint: "projects/{project_id}"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
   */
   readonly serviceProjectAttachmentId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
   */
   readonly timeouts?: ApphubServiceProjectAttachmentTimeouts;
 }
 export interface ApphubServiceProjectAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -185,7 +185,7 @@ export class ApphubServiceProjectAttachmentTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment}
 */
 export class ApphubServiceProjectAttachment extends cdktn.TerraformResource {
 
@@ -201,7 +201,7 @@ export class ApphubServiceProjectAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApphubServiceProjectAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApphubServiceProjectAttachment to import
-  * @param importFromId The id of the existing ApphubServiceProjectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApphubServiceProjectAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApphubServiceProjectAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,7 +213,7 @@ export class ApphubServiceProjectAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class ApphubServiceProjectAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'google_apphub_service_project_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

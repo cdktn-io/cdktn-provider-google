@@ -1,3 +1,3 @@
 # `google_dataproc_job`
 
-Refer to the Terraform Registry for docs: [`google_dataproc_job`](https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/dataproc_job).
+Refer to the Terraform Registry for docs: [`google_dataproc_job`](https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_job).

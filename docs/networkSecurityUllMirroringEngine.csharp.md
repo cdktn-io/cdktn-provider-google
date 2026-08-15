@@ -4,7 +4,7 @@
 
 ### NetworkSecurityUllMirroringEngine <a name="NetworkSecurityUllMirroringEngine" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine google_network_security_ull_mirroring_engine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine google_network_security_ull_mirroring_engine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngine.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the NetworkSecurityUllMirrorin
 
 The id of the existing NetworkSecurityUllMirroringEngine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,9 +991,9 @@ new NetworkSecurityUllMirroringEngineConfig {
 | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.location">Location</a></code> | <code>string</code> | The cloud location of the engine, e.g. 'us-south1-d' or 'us-south1-e'. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.ullMirroringEngineId">UllMirroringEngineId</a></code> | <code>string</code> | The ID to use for the new engine, which will become the final component of the engine's resource name. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#id NetworkSecurityUllMirroringEngine#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#id NetworkSecurityUllMirroringEngine#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels are key/value pairs that help to organize and filter resources. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#project NetworkSecurityUllMirroringEngine#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#project NetworkSecurityUllMirroringEngine#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts">NetworkSecurityUllMirroringEngineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1078,7 +1078,7 @@ public string Location { get; set; }
 
 The cloud location of the engine, e.g. 'us-south1-d' or 'us-south1-e'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#location NetworkSecurityUllMirroringEngine#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#location NetworkSecurityUllMirroringEngine#location}
 
 ---
 
@@ -1092,7 +1092,7 @@ public string UllMirroringEngineId { get; set; }
 
 The ID to use for the new engine, which will become the final component of the engine's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#ull_mirroring_engine_id NetworkSecurityUllMirroringEngine#ull_mirroring_engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#ull_mirroring_engine_id NetworkSecurityUllMirroringEngine#ull_mirroring_engine_id}
 
 ---
 
@@ -1113,7 +1113,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#deletion_policy NetworkSecurityUllMirroringEngine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#deletion_policy NetworkSecurityUllMirroringEngine#deletion_policy}
 
 ---
 
@@ -1125,7 +1125,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#id NetworkSecurityUllMirroringEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#id NetworkSecurityUllMirroringEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1145,7 @@ Labels are key/value pairs that help to organize and filter resources.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#labels NetworkSecurityUllMirroringEngine#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#labels NetworkSecurityUllMirroringEngine#labels}
 
 ---
 
@@ -1157,7 +1157,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#project NetworkSecurityUllMirroringEngine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#project NetworkSecurityUllMirroringEngine#project}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public NetworkSecurityUllMirroringEngineTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#timeouts NetworkSecurityUllMirroringEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#timeouts NetworkSecurityUllMirroringEngine#timeouts}
 
 ---
 
@@ -1193,9 +1193,9 @@ new NetworkSecurityUllMirroringEngineTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#create NetworkSecurityUllMirroringEngine#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#delete NetworkSecurityUllMirroringEngine#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#update NetworkSecurityUllMirroringEngine#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#create NetworkSecurityUllMirroringEngine#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#delete NetworkSecurityUllMirroringEngine#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityUllMirroringEngine.NetworkSecurityUllMirroringEngineTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#update NetworkSecurityUllMirroringEngine#update}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#create NetworkSecurityUllMirroringEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#create NetworkSecurityUllMirroringEngine#create}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#delete NetworkSecurityUllMirroringEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#delete NetworkSecurityUllMirroringEngine#delete}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_security_ull_mirroring_engine#update NetworkSecurityUllMirroringEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_security_ull_mirroring_engine#update NetworkSecurityUllMirroringEngine#update}.
 
 ---
 

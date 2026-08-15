@@ -4,7 +4,7 @@
 
 ### DataGoogleIapWebRegionForwardingRuleServiceIamPolicy <a name="DataGoogleIapWebRegionForwardingRuleServiceIamPolicy" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy google_iap_web_region_forwarding_rule_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy google_iap_web_region_forwarding_rule_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwa
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.forwardingRuleRegionServiceName">forwarding_rule_region_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.forwardingRuleRegionServiceName">forwarding_rule_region_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}.
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the DataGoogleIapWebRegionForw
 
 The id of the existing DataGoogleIapWebRegionForwardingRuleServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,10 +857,10 @@ dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwa
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.forwardingRuleRegionServiceName">forwarding_rule_region_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.forwardingRuleRegionServiceName">forwarding_rule_region_service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapWebRegionForwardingRuleServiceIamPolicy.DataGoogleIapWebRegionForwardingRuleServiceIamPolicyConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}. |
 
 ---
 
@@ -942,7 +942,7 @@ forwarding_rule_region_service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#forwarding_rule_region_service_name DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#forwarding_rule_region_service_name}.
 
 ---
 
@@ -954,7 +954,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#id DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#project DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#project}.
 
 ---
 
@@ -981,7 +981,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_web_region_forwarding_rule_service_iam_policy#region DataGoogleIapWebRegionForwardingRuleServiceIamPolicy#region}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#deletion_policy VertexAiPersistentResource#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#deletion_policy VertexAiPersistentResource#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -29,11 +29,11 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * The name can be up to 128 characters long and can consist of any UTF-8
   * characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#display_name VertexAiPersistentResource#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#display_name VertexAiPersistentResource#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#id VertexAiPersistentResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#id VertexAiPersistentResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -51,13 +51,13 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#labels VertexAiPersistentResource#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#labels VertexAiPersistentResource#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the PersistentResource. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#location VertexAiPersistentResource#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#location VertexAiPersistentResource#location}
   */
   readonly location?: string;
   /**
@@ -67,7 +67,7 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * The maximum length is 63 characters, and valid characters
   * are '/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#name VertexAiPersistentResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#name VertexAiPersistentResource#name}
   */
   readonly name: string;
   /**
@@ -87,11 +87,11 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * If this field is left unspecified, the resources aren't peered with any
   * network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#network VertexAiPersistentResource#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#network VertexAiPersistentResource#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#project VertexAiPersistentResource#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#project VertexAiPersistentResource#project}
   */
   readonly project?: string;
   /**
@@ -104,37 +104,37 @@ export interface VertexAiPersistentResourceConfig extends cdktn.TerraformMetaArg
   * 
   * Example: ['vertex-ai-ip-range'].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#reserved_ip_ranges VertexAiPersistentResource#reserved_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#reserved_ip_ranges VertexAiPersistentResource#reserved_ip_ranges}
   */
   readonly reservedIpRanges?: string[];
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#encryption_spec VertexAiPersistentResource#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#encryption_spec VertexAiPersistentResource#encryption_spec}
   */
   readonly encryptionSpec?: VertexAiPersistentResourceEncryptionSpec;
   /**
   * psc_interface_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#psc_interface_config VertexAiPersistentResource#psc_interface_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#psc_interface_config VertexAiPersistentResource#psc_interface_config}
   */
   readonly pscInterfaceConfig?: VertexAiPersistentResourcePscInterfaceConfig;
   /**
   * resource_pools block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#resource_pools VertexAiPersistentResource#resource_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#resource_pools VertexAiPersistentResource#resource_pools}
   */
   readonly resourcePools: VertexAiPersistentResourceResourcePools[] | cdktn.IResolvable;
   /**
   * resource_runtime_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#resource_runtime_spec VertexAiPersistentResource#resource_runtime_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#resource_runtime_spec VertexAiPersistentResource#resource_runtime_spec}
   */
   readonly resourceRuntimeSpec?: VertexAiPersistentResourceResourceRuntimeSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#timeouts VertexAiPersistentResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#timeouts VertexAiPersistentResource#timeouts}
   */
   readonly timeouts?: VertexAiPersistentResourceTimeouts;
 }
@@ -302,7 +302,7 @@ export interface VertexAiPersistentResourceEncryptionSpec {
   * the format
   * 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#kms_key_name VertexAiPersistentResource#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#kms_key_name VertexAiPersistentResource#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -386,7 +386,7 @@ export interface VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs {
   * The DNS name suffix of the zone being peered to, e.g.,
   * "my-internal-domain.corp.". Must end with a dot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#domain VertexAiPersistentResource#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#domain VertexAiPersistentResource#domain}
   */
   readonly domain: string;
   /**
@@ -394,7 +394,7 @@ export interface VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs {
   * in the target_project where the DNS zone specified by 'domain' is
   * visible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#target_network VertexAiPersistentResource#target_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#target_network VertexAiPersistentResource#target_network}
   */
   readonly targetNetwork: string;
   /**
@@ -402,7 +402,7 @@ export interface VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs {
   * contains the 'domain'. The Vertex AI Service Agent requires the
   * dns.peer role on this project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#target_project VertexAiPersistentResource#target_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#target_project VertexAiPersistentResource#target_project}
   */
   readonly targetProject: string;
 }
@@ -575,13 +575,13 @@ export interface VertexAiPersistentResourcePscInterfaceConfig {
   * (https://cloud.google.com/vpc/docs/create-manage-network-attachments#create-network-attachments).
   * This field is only used for resources using PSC-I.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#network_attachment VertexAiPersistentResource#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#network_attachment VertexAiPersistentResource#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
   * dns_peering_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#dns_peering_configs VertexAiPersistentResource#dns_peering_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#dns_peering_configs VertexAiPersistentResource#dns_peering_configs}
   */
   readonly dnsPeeringConfigs?: VertexAiPersistentResourcePscInterfaceConfigDnsPeeringConfigs[] | cdktn.IResolvable;
 }
@@ -697,7 +697,7 @@ export interface VertexAiPersistentResourceResourcePoolsAutoscalingSpec {
   * max replicas in the node pool,
   * must be ≥ replica_count and > min_replica_count or will throw error
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#max_replica_count VertexAiPersistentResource#max_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#max_replica_count VertexAiPersistentResource#max_replica_count}
   */
   readonly maxReplicaCount?: string;
   /**
@@ -710,7 +710,7 @@ export interface VertexAiPersistentResourceResourcePoolsAutoscalingSpec {
   * a corresponding validation inside
   * CreatePersistentResourceRequestValidator.java.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#min_replica_count VertexAiPersistentResource#min_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#min_replica_count VertexAiPersistentResource#min_replica_count}
   */
   readonly minReplicaCount?: string;
 }
@@ -825,7 +825,7 @@ export interface VertexAiPersistentResourceResourcePoolsDiskSpec {
   /**
   * Size in GB of the boot disk (default is 100GB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#boot_disk_size_gb VertexAiPersistentResource#boot_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#boot_disk_size_gb VertexAiPersistentResource#boot_disk_size_gb}
   */
   readonly bootDiskSizeGb?: number;
   /**
@@ -834,7 +834,7 @@ export interface VertexAiPersistentResourceResourcePoolsDiskSpec {
   * Valid values: "pd-ssd" (Persistent Disk Solid State Drive),
   * "pd-standard" (Persistent Disk Hard Disk Drive) or "hyperdisk-balanced".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#boot_disk_type VertexAiPersistentResource#boot_disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#boot_disk_type VertexAiPersistentResource#boot_disk_type}
   */
   readonly bootDiskType?: string;
 }
@@ -949,7 +949,7 @@ export interface VertexAiPersistentResourceResourcePoolsMachineSpec {
   /**
   * The number of accelerators to attach to the machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#accelerator_count VertexAiPersistentResource#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#accelerator_count VertexAiPersistentResource#accelerator_count}
   */
   readonly acceleratorCount?: number;
   /**
@@ -974,7 +974,7 @@ export interface VertexAiPersistentResourceResourcePoolsMachineSpec {
   * TPU_V4_POD
   * TPU_V5_LITEPOD
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#accelerator_type VertexAiPersistentResource#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#accelerator_type VertexAiPersistentResource#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
@@ -986,7 +986,7 @@ export interface VertexAiPersistentResourceResourcePoolsMachineSpec {
   * See the [list of machine types supported for custom
   * training](https://cloud.google.com/vertex-ai/docs/training/configure-compute#machine-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#machine_type VertexAiPersistentResource#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#machine_type VertexAiPersistentResource#machine_type}
   */
   readonly machineType?: string;
 }
@@ -1132,7 +1132,7 @@ export interface VertexAiPersistentResourceResourcePools {
   * User can specify it if necessary. Otherwise, it's generated
   * automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#id VertexAiPersistentResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#id VertexAiPersistentResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,25 +1141,25 @@ export interface VertexAiPersistentResourceResourcePools {
   /**
   * The total number of machines to use for this resource pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#replica_count VertexAiPersistentResource#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#replica_count VertexAiPersistentResource#replica_count}
   */
   readonly replicaCount?: string;
   /**
   * autoscaling_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#autoscaling_spec VertexAiPersistentResource#autoscaling_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#autoscaling_spec VertexAiPersistentResource#autoscaling_spec}
   */
   readonly autoscalingSpec?: VertexAiPersistentResourceResourcePoolsAutoscalingSpec;
   /**
   * disk_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#disk_spec VertexAiPersistentResource#disk_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#disk_spec VertexAiPersistentResource#disk_spec}
   */
   readonly diskSpec?: VertexAiPersistentResourceResourcePoolsDiskSpec;
   /**
   * machine_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#machine_spec VertexAiPersistentResource#machine_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#machine_spec VertexAiPersistentResource#machine_spec}
   */
   readonly machineSpec: VertexAiPersistentResourceResourcePoolsMachineSpec;
 }
@@ -1398,7 +1398,7 @@ export interface VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec
   * Otherwise, uses the [Vertex AI Custom Code Service
   * Agent](https://cloud.google.com/vertex-ai/docs/general/access-control#service-agents).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#enable_custom_service_account VertexAiPersistentResource#enable_custom_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#enable_custom_service_account VertexAiPersistentResource#enable_custom_service_account}
   */
   readonly enableCustomServiceAccount: boolean | cdktn.IResolvable;
 }
@@ -1481,7 +1481,7 @@ export interface VertexAiPersistentResourceResourceRuntimeSpec {
   /**
   * service_account_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#service_account_spec VertexAiPersistentResource#service_account_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#service_account_spec VertexAiPersistentResource#service_account_spec}
   */
   readonly serviceAccountSpec?: VertexAiPersistentResourceResourceRuntimeSpecServiceAccountSpec;
 }
@@ -1565,15 +1565,15 @@ export class VertexAiPersistentResourceResourceRuntimeSpecOutputReference extend
 }
 export interface VertexAiPersistentResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#create VertexAiPersistentResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#create VertexAiPersistentResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#delete VertexAiPersistentResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#delete VertexAiPersistentResource#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#update VertexAiPersistentResource#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#update VertexAiPersistentResource#update}
   */
   readonly update?: string;
 }
@@ -1725,7 +1725,7 @@ export class VertexAiPersistentResourceTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource google_vertex_ai_persistent_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource google_vertex_ai_persistent_resource}
 */
 export class VertexAiPersistentResource extends cdktn.TerraformResource {
 
@@ -1741,7 +1741,7 @@ export class VertexAiPersistentResource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiPersistentResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiPersistentResource to import
-  * @param importFromId The id of the existing VertexAiPersistentResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiPersistentResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiPersistentResource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1753,7 +1753,7 @@ export class VertexAiPersistentResource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_persistent_resource google_vertex_ai_persistent_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_persistent_resource google_vertex_ai_persistent_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1764,7 +1764,7 @@ export class VertexAiPersistentResource extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_persistent_resource',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

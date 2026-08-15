@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,13 @@ export interface ContactCenterInsightsQaQuestionConfig extends cdktn.TerraformMe
   * Short, descriptive string, used in the UI where it's not practical
   * to display the full question body. E.g., "Greeting".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#abbreviation ContactCenterInsightsQaQuestion#abbreviation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#abbreviation ContactCenterInsightsQaQuestion#abbreviation}
   */
   readonly abbreviation?: string;
   /**
   * Instructions describing how to determine the answer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#answer_instructions ContactCenterInsightsQaQuestion#answer_instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#answer_instructions ContactCenterInsightsQaQuestion#answer_instructions}
   */
   readonly answerInstructions?: string;
   /**
@@ -34,11 +34,11 @@ export interface ContactCenterInsightsQaQuestionConfig extends cdktn.TerraformMe
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#deletion_policy ContactCenterInsightsQaQuestion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#deletion_policy ContactCenterInsightsQaQuestion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#id ContactCenterInsightsQaQuestion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#id ContactCenterInsightsQaQuestion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,29 +47,29 @@ export interface ContactCenterInsightsQaQuestionConfig extends cdktn.TerraformMe
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#location ContactCenterInsightsQaQuestion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#location ContactCenterInsightsQaQuestion#location}
   */
   readonly location: string;
   /**
   * Defines the order of the question within its parent scorecard revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#order ContactCenterInsightsQaQuestion#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#order ContactCenterInsightsQaQuestion#order}
   */
   readonly order?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#project ContactCenterInsightsQaQuestion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#project ContactCenterInsightsQaQuestion#project}
   */
   readonly project?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#qa_scorecard ContactCenterInsightsQaQuestion#qa_scorecard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#qa_scorecard ContactCenterInsightsQaQuestion#qa_scorecard}
   */
   readonly qaScorecard: string;
   /**
   * Question text. E.g., "Did the agent greet the customer?"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#question_body ContactCenterInsightsQaQuestion#question_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#question_body ContactCenterInsightsQaQuestion#question_body}
   */
   readonly questionBody?: string;
   /**
@@ -78,13 +78,13 @@ export interface ContactCenterInsightsQaQuestionConfig extends cdktn.TerraformMe
   * CUSTOMIZABLE
   * PREDEFINED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#question_type ContactCenterInsightsQaQuestion#question_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#question_type ContactCenterInsightsQaQuestion#question_type}
   */
   readonly questionType?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#revision ContactCenterInsightsQaQuestion#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#revision ContactCenterInsightsQaQuestion#revision}
   */
   readonly revision: string;
   /**
@@ -97,43 +97,43 @@ export interface ContactCenterInsightsQaQuestionConfig extends cdktn.TerraformMe
   * Both default and custom tags are used to group questions and to influence
   * the scoring of each question.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#tags ContactCenterInsightsQaQuestion#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#tags ContactCenterInsightsQaQuestion#tags}
   */
   readonly tags?: string[];
   /**
   * answer_choices block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#answer_choices ContactCenterInsightsQaQuestion#answer_choices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#answer_choices ContactCenterInsightsQaQuestion#answer_choices}
   */
   readonly answerChoices?: ContactCenterInsightsQaQuestionAnswerChoices[] | cdktn.IResolvable;
   /**
   * metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#metrics ContactCenterInsightsQaQuestion#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#metrics ContactCenterInsightsQaQuestion#metrics}
   */
   readonly metrics?: ContactCenterInsightsQaQuestionMetrics;
   /**
   * predefined_question_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#predefined_question_config ContactCenterInsightsQaQuestion#predefined_question_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#predefined_question_config ContactCenterInsightsQaQuestion#predefined_question_config}
   */
   readonly predefinedQuestionConfig?: ContactCenterInsightsQaQuestionPredefinedQuestionConfig;
   /**
   * qa_question_data_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#qa_question_data_options ContactCenterInsightsQaQuestion#qa_question_data_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#qa_question_data_options ContactCenterInsightsQaQuestion#qa_question_data_options}
   */
   readonly qaQuestionDataOptions?: ContactCenterInsightsQaQuestionQaQuestionDataOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#timeouts ContactCenterInsightsQaQuestion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#timeouts ContactCenterInsightsQaQuestion#timeouts}
   */
   readonly timeouts?: ContactCenterInsightsQaQuestionTimeouts;
   /**
   * tuning_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#tuning_metadata ContactCenterInsightsQaQuestion#tuning_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#tuning_metadata ContactCenterInsightsQaQuestion#tuning_metadata}
   */
   readonly tuningMetadata?: ContactCenterInsightsQaQuestionTuningMetadata;
 }
@@ -141,13 +141,13 @@ export interface ContactCenterInsightsQaQuestionAnswerChoices {
   /**
   * Boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#bool_value ContactCenterInsightsQaQuestion#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#bool_value ContactCenterInsightsQaQuestion#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * A short string used as an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#key ContactCenterInsightsQaQuestion#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#key ContactCenterInsightsQaQuestion#key}
   */
   readonly key?: string;
   /**
@@ -155,26 +155,26 @@ export interface ContactCenterInsightsQaQuestionAnswerChoices {
   * be set to 'true'. If a question receives this answer, it will be
   * excluded from any score calculations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#na_value ContactCenterInsightsQaQuestion#na_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#na_value ContactCenterInsightsQaQuestion#na_value}
   */
   readonly naValue?: boolean | cdktn.IResolvable;
   /**
   * Numerical value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#num_value ContactCenterInsightsQaQuestion#num_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#num_value ContactCenterInsightsQaQuestion#num_value}
   */
   readonly numValue?: number;
   /**
   * Numerical score of the answer, used for generating the overall score of
   * a QaScorecardResult. If the answer uses na_value, this field is unused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#score ContactCenterInsightsQaQuestion#score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#score ContactCenterInsightsQaQuestion#score}
   */
   readonly score?: number;
   /**
   * String value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#str_value ContactCenterInsightsQaQuestion#str_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#str_value ContactCenterInsightsQaQuestion#str_value}
   */
   readonly strValue?: string;
 }
@@ -494,7 +494,7 @@ export interface ContactCenterInsightsQaQuestionPredefinedQuestionConfig {
   * CONVERSATION_OUTCOME
   * CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#type ContactCenterInsightsQaQuestion#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#type ContactCenterInsightsQaQuestion#type}
   */
   readonly type?: string;
 }
@@ -581,7 +581,7 @@ export interface ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversatio
   * Whether to include the per turn Dialogflow interaction data in conversation
   * transcript.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#include_dialogflow_interaction_data ContactCenterInsightsQaQuestion#include_dialogflow_interaction_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#include_dialogflow_interaction_data ContactCenterInsightsQaQuestion#include_dialogflow_interaction_data}
   */
   readonly includeDialogflowInteractionData?: boolean | cdktn.IResolvable;
 }
@@ -667,7 +667,7 @@ export interface ContactCenterInsightsQaQuestionQaQuestionDataOptions {
   /**
   * conversation_data_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#conversation_data_options ContactCenterInsightsQaQuestion#conversation_data_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#conversation_data_options ContactCenterInsightsQaQuestion#conversation_data_options}
   */
   readonly conversationDataOptions?: ContactCenterInsightsQaQuestionQaQuestionDataOptionsConversationDataOptions;
 }
@@ -751,15 +751,15 @@ export class ContactCenterInsightsQaQuestionQaQuestionDataOptionsOutputReference
 }
 export interface ContactCenterInsightsQaQuestionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#create ContactCenterInsightsQaQuestion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#create ContactCenterInsightsQaQuestion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#delete ContactCenterInsightsQaQuestion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#delete ContactCenterInsightsQaQuestion#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#update ContactCenterInsightsQaQuestion#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#update ContactCenterInsightsQaQuestion#update}
   */
   readonly update?: string;
 }
@@ -914,21 +914,21 @@ export interface ContactCenterInsightsQaQuestionTuningMetadata {
   * A list of any applicable data validation warnings about the question's
   * feedback labels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#dataset_validation_warnings ContactCenterInsightsQaQuestion#dataset_validation_warnings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#dataset_validation_warnings ContactCenterInsightsQaQuestion#dataset_validation_warnings}
   */
   readonly datasetValidationWarnings?: string[];
   /**
   * Total number of valid labels provided for the question at the time of
   * tuining.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#total_valid_label_count ContactCenterInsightsQaQuestion#total_valid_label_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#total_valid_label_count ContactCenterInsightsQaQuestion#total_valid_label_count}
   */
   readonly totalValidLabelCount?: string;
   /**
   * Error status of the tuning operation for the question. Will only be set
   * if the tuning operation failed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#tuning_error ContactCenterInsightsQaQuestion#tuning_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#tuning_error ContactCenterInsightsQaQuestion#tuning_error}
   */
   readonly tuningError?: string;
 }
@@ -1070,7 +1070,7 @@ export class ContactCenterInsightsQaQuestionTuningMetadataOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question google_contact_center_insights_qa_question}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question google_contact_center_insights_qa_question}
 */
 export class ContactCenterInsightsQaQuestion extends cdktn.TerraformResource {
 
@@ -1086,7 +1086,7 @@ export class ContactCenterInsightsQaQuestion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContactCenterInsightsQaQuestion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContactCenterInsightsQaQuestion to import
-  * @param importFromId The id of the existing ContactCenterInsightsQaQuestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContactCenterInsightsQaQuestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContactCenterInsightsQaQuestion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1098,7 +1098,7 @@ export class ContactCenterInsightsQaQuestion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/contact_center_insights_qa_question google_contact_center_insights_qa_question} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/contact_center_insights_qa_question google_contact_center_insights_qa_question} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1109,7 +1109,7 @@ export class ContactCenterInsightsQaQuestion extends cdktn.TerraformResource {
       terraformResourceType: 'google_contact_center_insights_qa_question',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

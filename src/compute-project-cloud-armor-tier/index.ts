@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ComputeProjectCloudArmorTierConfig extends cdktn.TerraformMetaA
   /**
   * Managed protection tier to be set. Possible values: ["CA_STANDARD", "CA_ENTERPRISE_PAYGO", "CA_ENTERPRISE_ANNUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#cloud_armor_tier ComputeProjectCloudArmorTier#cloud_armor_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#cloud_armor_tier ComputeProjectCloudArmorTier#cloud_armor_tier}
   */
   readonly cloudArmorTier: string;
   /**
@@ -27,38 +27,38 @@ export interface ComputeProjectCloudArmorTierConfig extends cdktn.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#deletion_policy ComputeProjectCloudArmorTier#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#deletion_policy ComputeProjectCloudArmorTier#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#id ComputeProjectCloudArmorTier#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#project ComputeProjectCloudArmorTier#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#timeouts ComputeProjectCloudArmorTier#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#timeouts ComputeProjectCloudArmorTier#timeouts}
   */
   readonly timeouts?: ComputeProjectCloudArmorTierTimeouts;
 }
 export interface ComputeProjectCloudArmorTierTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#create ComputeProjectCloudArmorTier#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#delete ComputeProjectCloudArmorTier#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#update ComputeProjectCloudArmorTier#update}
   */
   readonly update?: string;
 }
@@ -210,7 +210,7 @@ export class ComputeProjectCloudArmorTierTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}
 */
 export class ComputeProjectCloudArmorTier extends cdktn.TerraformResource {
 
@@ -226,7 +226,7 @@ export class ComputeProjectCloudArmorTier extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeProjectCloudArmorTier resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeProjectCloudArmorTier to import
-  * @param importFromId The id of the existing ComputeProjectCloudArmorTier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeProjectCloudArmorTier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeProjectCloudArmorTier to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -238,7 +238,7 @@ export class ComputeProjectCloudArmorTier extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +249,7 @@ export class ComputeProjectCloudArmorTier extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_project_cloud_armor_tier',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### NetworkConnectivityTransport <a name="NetworkConnectivityTransport" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport google_network_connectivity_transport}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport google_network_connectivity_transport}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer"></a>
 
@@ -22,7 +22,6 @@ networkConnectivityTransport.NetworkConnectivityTransport(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  network: str,
   region: str,
   remote_profile: str,
   advertised_routes: typing.List[str] = None,
@@ -32,6 +31,7 @@ networkConnectivityTransport.NetworkConnectivityTransport(
   id: str = None,
   labels: typing.Mapping[str] = None,
   mtu_limit: typing.Union[int, float] = None,
+  network: str = None,
   project: str = None,
   provided_activation_key: str = None,
   remote_account_id: str = None,
@@ -52,17 +52,17 @@ networkConnectivityTransport.NetworkConnectivityTransport(
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource, see google.aip.dev/122 for resource naming. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.network">network</a></code> | <code>str</code> | Resource URL of the Network that will be peered with this Transport. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of this resource. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.remoteProfile">remote_profile</a></code> | <code>str</code> | Resource URL of the remoteTransportProfile that this Transport is connecting to. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.advertisedRoutes">advertised_routes</a></code> | <code>typing.List[str]</code> | List of IP Prefixes that will be advertised to the remote provider. Both IPv4 and IPv6 addresses are supported. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.bandwidth">bandwidth</a></code> | <code>str</code> | Bandwidth of the Transport. This must be one of the supported bandwidths for the remote profile. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional labels in key:value format. For more information about labels, see [Requirements for labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements). |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.mtuLimit">mtu_limit</a></code> | <code>typing.Union[int, float]</code> | [Output only] The maximum transmission unit (MTU) of a packet that can be sent over this transport. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.network">network</a></code> | <code>str</code> | Resource URL of the Network that will be peered with this Transport. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.providedActivationKey">provided_activation_key</a></code> | <code>str</code> | Key used for establishing a connection with the remote transport. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.remoteAccountId">remote_account_id</a></code> | <code>str</code> | The user supplied account id for the CSP associated with the remote profile. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.stackType">stack_type</a></code> | <code>str</code> | IP version stack for the established connectivity. Possible values: ["IPV4_IPV6", "IPV4_ONLY"]. |
@@ -136,19 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the resource, see google.aip.dev/122 for resource naming.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
-
----
-
-##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.network"></a>
-
-- *Type:* str
-
-Resource URL of the Network that will be peered with this Transport.
-
-This field must be provided during resource creation and cannot be changed.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
 
 ---
 
@@ -160,7 +148,7 @@ The region of this resource.
 
 This is required to construct the resource name, but is not sent to the API since the region is already contained in the parent field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
 
 ---
 
@@ -170,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource URL of the remoteTransportProfile that this Transport is connecting to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
 
 ---
 
@@ -180,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of IP Prefixes that will be advertised to the remote provider. Both IPv4 and IPv6 addresses are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
 
 ---
 
@@ -190,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Bandwidth of the Transport. This must be one of the supported bandwidths for the remote profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
 
 ---
 
@@ -207,7 +195,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
 
 ---
 
@@ -217,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
 
 ---
 
@@ -225,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +229,7 @@ Optional labels in key:value format. For more information about labels, see [Req
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
 
 ---
 
@@ -251,7 +239,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 [Output only] The maximum transmission unit (MTU) of a packet that can be sent over this transport.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.Initializer.parameter.network"></a>
+
+- *Type:* str
+
+Resource URL of the Network that will be peered with this Transport.
+
+This field must be provided during resource creation and cannot be changed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
 
 ---
 
@@ -259,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}.
 
 ---
 
@@ -271,7 +271,7 @@ Key used for establishing a connection with the remote transport.
 
 This key can only be provided if the profile supports an INPUT key flow and the resource is in the PENDING_KEY state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user supplied account id for the CSP associated with the remote profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 IP version stack for the established connectivity. Possible values: ["IPV4_IPV6", "IPV4_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
 
 ---
 
@@ -301,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
 
 ---
 
@@ -341,6 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetMtuLimit">reset_mtu_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetNetwork">reset_network</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetProvidedActivationKey">reset_provided_activation_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetRemoteAccountId">reset_remote_account_id</a></code> | *No description.* |
@@ -711,7 +712,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}.
 
 ---
 
@@ -719,7 +720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}.
 
 ---
 
@@ -727,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}.
 
 ---
 
@@ -771,6 +772,12 @@ def reset_labels() -> None
 
 ```python
 def reset_mtu_limit() -> None
+```
+
+##### `reset_network` <a name="reset_network" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetNetwork"></a>
+
+```python
+def reset_network() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransport.resetProject"></a>
@@ -917,7 +924,7 @@ The construct id used in the generated config for the NetworkConnectivityTranspo
 
 The id of the existing NetworkConnectivityTransport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1535,7 +1542,6 @@ networkConnectivityTransport.NetworkConnectivityTransportConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  network: str,
   region: str,
   remote_profile: str,
   advertised_routes: typing.List[str] = None,
@@ -1545,6 +1551,7 @@ networkConnectivityTransport.NetworkConnectivityTransportConfig(
   id: str = None,
   labels: typing.Mapping[str] = None,
   mtu_limit: typing.Union[int, float] = None,
+  network: str = None,
   project: str = None,
   provided_activation_key: str = None,
   remote_account_id: str = None,
@@ -1565,17 +1572,17 @@ networkConnectivityTransport.NetworkConnectivityTransportConfig(
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.name">name</a></code> | <code>str</code> | Name of the resource, see google.aip.dev/122 for resource naming. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.network">network</a></code> | <code>str</code> | Resource URL of the Network that will be peered with this Transport. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.region">region</a></code> | <code>str</code> | The region of this resource. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.remoteProfile">remote_profile</a></code> | <code>str</code> | Resource URL of the remoteTransportProfile that this Transport is connecting to. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.advertisedRoutes">advertised_routes</a></code> | <code>typing.List[str]</code> | List of IP Prefixes that will be advertised to the remote provider. Both IPv4 and IPv6 addresses are supported. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.bandwidth">bandwidth</a></code> | <code>str</code> | Bandwidth of the Transport. This must be one of the supported bandwidths for the remote profile. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional labels in key:value format. For more information about labels, see [Requirements for labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements). |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.mtuLimit">mtu_limit</a></code> | <code>typing.Union[int, float]</code> | [Output only] The maximum transmission unit (MTU) of a packet that can be sent over this transport. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.network">network</a></code> | <code>str</code> | Resource URL of the Network that will be peered with this Transport. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.providedActivationKey">provided_activation_key</a></code> | <code>str</code> | Key used for establishing a connection with the remote transport. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.remoteAccountId">remote_account_id</a></code> | <code>str</code> | The user supplied account id for the CSP associated with the remote profile. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.stackType">stack_type</a></code> | <code>str</code> | IP version stack for the established connectivity. Possible values: ["IPV4_IPV6", "IPV4_ONLY"]. |
@@ -1663,23 +1670,7 @@ name: str
 
 Name of the resource, see google.aip.dev/122 for resource naming.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
-
----
-
-##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.network"></a>
-
-```python
-network: str
-```
-
-- *Type:* str
-
-Resource URL of the Network that will be peered with this Transport.
-
-This field must be provided during resource creation and cannot be changed.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
 
 ---
 
@@ -1695,7 +1686,7 @@ The region of this resource.
 
 This is required to construct the resource name, but is not sent to the API since the region is already contained in the parent field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
 
 ---
 
@@ -1709,7 +1700,7 @@ remote_profile: str
 
 Resource URL of the remoteTransportProfile that this Transport is connecting to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
 
 ---
 
@@ -1723,7 +1714,7 @@ advertised_routes: typing.List[str]
 
 List of IP Prefixes that will be advertised to the remote provider. Both IPv4 and IPv6 addresses are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
 
 ---
 
@@ -1737,7 +1728,7 @@ bandwidth: str
 
 Bandwidth of the Transport. This must be one of the supported bandwidths for the remote profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
 
 ---
 
@@ -1758,7 +1749,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
 
 ---
 
@@ -1772,7 +1763,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
 
 ---
 
@@ -1784,7 +1775,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1804,7 +1795,7 @@ Optional labels in key:value format. For more information about labels, see [Req
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
 
 ---
 
@@ -1818,7 +1809,23 @@ mtu_limit: typing.Union[int, float]
 
 [Output only] The maximum transmission unit (MTU) of a packet that can be sent over this transport.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportConfig.property.network"></a>
+
+```python
+network: str
+```
+
+- *Type:* str
+
+Resource URL of the Network that will be peered with this Transport.
+
+This field must be provided during resource creation and cannot be changed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
 
 ---
 
@@ -1830,7 +1837,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}.
 
 ---
 
@@ -1846,7 +1853,7 @@ Key used for establishing a connection with the remote transport.
 
 This key can only be provided if the profile supports an INPUT key flow and the resource is in the PENDING_KEY state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
 
 ---
 
@@ -1860,7 +1867,7 @@ remote_account_id: str
 
 The user supplied account id for the CSP associated with the remote profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
 
 ---
 
@@ -1874,7 +1881,7 @@ stack_type: str
 
 IP version stack for the established connectivity. Possible values: ["IPV4_IPV6", "IPV4_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
 
 ---
 
@@ -1888,7 +1895,7 @@ timeouts: NetworkConnectivityTransportTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
 
 ---
 
@@ -1910,9 +1917,9 @@ networkConnectivityTransport.NetworkConnectivityTransportTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityTransport.NetworkConnectivityTransportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}. |
 
 ---
 
@@ -1924,7 +1931,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}.
 
 ---
 
@@ -1936,7 +1943,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}.
 
 ---
 
@@ -1948,7 +1955,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}.
 
 ---
 

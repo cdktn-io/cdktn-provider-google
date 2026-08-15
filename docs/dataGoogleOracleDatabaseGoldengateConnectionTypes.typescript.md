@@ -4,7 +4,7 @@
 
 ### DataGoogleOracleDatabaseGoldengateConnectionTypes <a name="DataGoogleOracleDatabaseGoldengateConnectionTypes" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types google_oracle_database_goldengate_connection_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types google_oracle_database_goldengate_connection_types}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypes.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleOracleDatabaseGo
 
 The id of the existing DataGoogleOracleDatabaseGoldengateConnectionTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,7 +673,7 @@ const dataGoogleOracleDatabaseGoldengateConnectionTypesConfig: dataGoogleOracleD
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.location">location</a></code> | <code>string</code> | The location of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types#id DataGoogleOracleDatabaseGoldengateConnectionTypes#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types#id DataGoogleOracleDatabaseGoldengateConnectionTypes#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseGoldengateConnectionTypes.DataGoogleOracleDatabaseGoldengateConnectionTypesConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource is located. |
 
 ---
@@ -758,7 +758,7 @@ public readonly location: string;
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types#location DataGoogleOracleDatabaseGoldengateConnectionTypes#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types#location DataGoogleOracleDatabaseGoldengateConnectionTypes#location}
 
 ---
 
@@ -770,7 +770,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types#id DataGoogleOracleDatabaseGoldengateConnectionTypes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types#id DataGoogleOracleDatabaseGoldengateConnectionTypes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -789,7 +789,7 @@ The ID of the project in which the resource is located.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/oracle_database_goldengate_connection_types#project DataGoogleOracleDatabaseGoldengateConnectionTypes#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_goldengate_connection_types#project DataGoogleOracleDatabaseGoldengateConnectionTypes#project}
 
 ---
 

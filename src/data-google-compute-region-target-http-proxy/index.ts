@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRegionTargetHttpProxyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy#id DataGoogleComputeRegionTargetHttpProxy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,24 +28,24 @@ export interface DataGoogleComputeRegionTargetHttpProxyConfig extends cdktn.Terr
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy#name DataGoogleComputeRegionTargetHttpProxy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy#project DataGoogleComputeRegionTargetHttpProxy#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created target https proxy should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy#region DataGoogleComputeRegionTargetHttpProxy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy}
 */
 export class DataGoogleComputeRegionTargetHttpProxy extends cdktn.TerraformDataSource {
 
@@ -61,7 +61,7 @@ export class DataGoogleComputeRegionTargetHttpProxy extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataGoogleComputeRegionTargetHttpProxy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionTargetHttpProxy to import
-  * @param importFromId The id of the existing DataGoogleComputeRegionTargetHttpProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRegionTargetHttpProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionTargetHttpProxy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class DataGoogleComputeRegionTargetHttpProxy extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class DataGoogleComputeRegionTargetHttpProxy extends cdktn.TerraformDataS
       terraformResourceType: 'google_compute_region_target_http_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
