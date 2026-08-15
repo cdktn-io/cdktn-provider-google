@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,7 +20,7 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * 'allowed_scopes'.
   * The number of allowed scopes is limited to 200.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#allowed_scopes AgentIdentityAuthProvider#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#allowed_scopes AgentIdentityAuthProvider#allowed_scopes}
   */
   readonly allowedScopes?: string[];
   /**
@@ -30,7 +30,7 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * are /a-z-/. The first character must be a lowercase letter, and the
   * last character must be a lowercase letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#auth_provider_id AgentIdentityAuthProvider#auth_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#auth_provider_id AgentIdentityAuthProvider#auth_provider_id}
   */
   readonly authProviderId: string;
   /**
@@ -40,7 +40,7 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * precedence over 'allowed_scopes'. The number of blocked scopes is limited
   * to 200.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#blocked_scopes AgentIdentityAuthProvider#blocked_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#blocked_scopes AgentIdentityAuthProvider#blocked_scopes}
   */
   readonly blockedScopes?: string[];
   /**
@@ -52,18 +52,18 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#deletion_policy AgentIdentityAuthProvider#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#deletion_policy AgentIdentityAuthProvider#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the resource.
   * Must be less than 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#description AgentIdentityAuthProvider#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#description AgentIdentityAuthProvider#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#id AgentIdentityAuthProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#id AgentIdentityAuthProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -75,17 +75,17 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#labels AgentIdentityAuthProvider#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#labels AgentIdentityAuthProvider#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#location AgentIdentityAuthProvider#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#location AgentIdentityAuthProvider#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#project AgentIdentityAuthProvider#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#project AgentIdentityAuthProvider#project}
   */
   readonly project?: string;
   /**
@@ -93,19 +93,19 @@ export interface AgentIdentityAuthProviderConfig extends cdktn.TerraformMetaArgu
   * agent(s) that will use this AuthProvider. Example:
   * 'principal://agents.global.org-${ORG_ID}.system.id.goog/resources/aiplatform/projects/{PROJECT_ID}/locations/{LOCATIONS}/reasoningEngines/{ID}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#workload_ids AgentIdentityAuthProvider#workload_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#workload_ids AgentIdentityAuthProvider#workload_ids}
   */
   readonly workloadIds?: string[];
   /**
   * auth_provider_type_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#auth_provider_type_params AgentIdentityAuthProvider#auth_provider_type_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#auth_provider_type_params AgentIdentityAuthProvider#auth_provider_type_params}
   */
   readonly authProviderTypeParams: AgentIdentityAuthProviderAuthProviderTypeParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#timeouts AgentIdentityAuthProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#timeouts AgentIdentityAuthProvider#timeouts}
   */
   readonly timeouts?: AgentIdentityAuthProviderTimeouts;
 }
@@ -183,7 +183,7 @@ export interface AgentIdentityAuthProviderAuthProviderTypeParamsApiKey {
   /**
   * Input only. The API key for this auth_provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#api_key AgentIdentityAuthProvider#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#api_key AgentIdentityAuthProvider#api_key}
   */
   readonly apiKey?: string;
 }
@@ -271,52 +271,52 @@ export interface AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth
   * to the agent.
   * eg. "https://auth.atlassian.com/authorize"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#authorization_url AgentIdentityAuthProvider#authorization_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#authorization_url AgentIdentityAuthProvider#authorization_url}
   */
   readonly authorizationUrl?: string;
   /**
   * The client ID of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_id AgentIdentityAuthProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_id AgentIdentityAuthProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * Input only. The client secret of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret AgentIdentityAuthProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret AgentIdentityAuthProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Input only. The client secret of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret_wo AgentIdentityAuthProvider#client_secret_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret_wo AgentIdentityAuthProvider#client_secret_wo}
   */
   readonly clientSecretWo?: string;
   /**
   * Triggers update of 'client_secret_wo' write-only. Increment this value when an update to 'client_secret_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret_wo_version AgentIdentityAuthProvider#client_secret_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret_wo_version AgentIdentityAuthProvider#client_secret_wo_version}
   */
   readonly clientSecretWoVersion?: string;
   /**
   * The default continue URI for 3LO flow and it will be used when no continue
   * URI is provided in the RetrieveCredentials request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#default_continue_uri AgentIdentityAuthProvider#default_continue_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#default_continue_uri AgentIdentityAuthProvider#default_continue_uri}
   */
   readonly defaultContinueUri?: string;
   /**
   * Enables Proof Key for Code Exchange (PKCE) for the OAuth flow to prevent
   * authorization code interception attacks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#enable_pkce AgentIdentityAuthProvider#enable_pkce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#enable_pkce AgentIdentityAuthProvider#enable_pkce}
   */
   readonly enablePkce?: boolean | cdktn.IResolvable;
   /**
   * The token endpoint for requesting tokens on behalf of an end user.
   * eg. "https://auth.atlassian.com/oauth/token"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#token_url AgentIdentityAuthProvider#token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#token_url AgentIdentityAuthProvider#token_url}
   */
   readonly tokenUrl?: string;
 }
@@ -613,31 +613,31 @@ export interface AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth {
   /**
   * The client ID of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_id AgentIdentityAuthProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_id AgentIdentityAuthProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * Input only. The client secret of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret AgentIdentityAuthProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret AgentIdentityAuthProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Input only. The client secret of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret_wo AgentIdentityAuthProvider#client_secret_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret_wo AgentIdentityAuthProvider#client_secret_wo}
   */
   readonly clientSecretWo?: string;
   /**
   * Triggers update of 'client_secret_wo' write-only. Increment this value when an update to 'client_secret_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#client_secret_wo_version AgentIdentityAuthProvider#client_secret_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#client_secret_wo_version AgentIdentityAuthProvider#client_secret_wo_version}
   */
   readonly clientSecretWoVersion?: string;
   /**
   * The token endpoint of the OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#token_url AgentIdentityAuthProvider#token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#token_url AgentIdentityAuthProvider#token_url}
   */
   readonly tokenUrl?: string;
 }
@@ -842,19 +842,19 @@ export interface AgentIdentityAuthProviderAuthProviderTypeParams {
   /**
   * api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#api_key AgentIdentityAuthProvider#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#api_key AgentIdentityAuthProvider#api_key}
   */
   readonly apiKey?: AgentIdentityAuthProviderAuthProviderTypeParamsApiKey;
   /**
   * three_legged_oauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#three_legged_oauth AgentIdentityAuthProvider#three_legged_oauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#three_legged_oauth AgentIdentityAuthProvider#three_legged_oauth}
   */
   readonly threeLeggedOauth?: AgentIdentityAuthProviderAuthProviderTypeParamsThreeLeggedOauth;
   /**
   * two_legged_oauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#two_legged_oauth AgentIdentityAuthProvider#two_legged_oauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#two_legged_oauth AgentIdentityAuthProvider#two_legged_oauth}
   */
   readonly twoLeggedOauth?: AgentIdentityAuthProviderAuthProviderTypeParamsTwoLeggedOauth;
 }
@@ -1002,15 +1002,15 @@ export class AgentIdentityAuthProviderAuthProviderTypeParamsOutputReference exte
 }
 export interface AgentIdentityAuthProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#create AgentIdentityAuthProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#create AgentIdentityAuthProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#delete AgentIdentityAuthProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#delete AgentIdentityAuthProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#update AgentIdentityAuthProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#update AgentIdentityAuthProvider#update}
   */
   readonly update?: string;
 }
@@ -1162,7 +1162,7 @@ export class AgentIdentityAuthProviderTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider google_agent_identity_auth_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider google_agent_identity_auth_provider}
 */
 export class AgentIdentityAuthProvider extends cdktn.TerraformResource {
 
@@ -1178,7 +1178,7 @@ export class AgentIdentityAuthProvider extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AgentIdentityAuthProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentIdentityAuthProvider to import
-  * @param importFromId The id of the existing AgentIdentityAuthProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentIdentityAuthProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentIdentityAuthProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1190,7 +1190,7 @@ export class AgentIdentityAuthProvider extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/agent_identity_auth_provider google_agent_identity_auth_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/agent_identity_auth_provider google_agent_identity_auth_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1201,7 +1201,7 @@ export class AgentIdentityAuthProvider extends cdktn.TerraformResource {
       terraformResourceType: 'google_agent_identity_auth_provider',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

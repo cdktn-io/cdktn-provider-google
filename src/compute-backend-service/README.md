@@ -1,3 +1,3 @@
 # `google_compute_backend_service`
 
-Refer to the Terraform Registry for docs: [`google_compute_backend_service`](https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/compute_backend_service).
+Refer to the Terraform Registry for docs: [`google_compute_backend_service`](https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_backend_service).

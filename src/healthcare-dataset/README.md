@@ -1,3 +1,3 @@
 # `google_healthcare_dataset`
 
-Refer to the Terraform Registry for docs: [`google_healthcare_dataset`](https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/healthcare_dataset).
+Refer to the Terraform Registry for docs: [`google_healthcare_dataset`](https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/healthcare_dataset).

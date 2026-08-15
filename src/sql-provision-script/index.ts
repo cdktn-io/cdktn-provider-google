@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,7 +19,7 @@ export interface SqlProvisionScriptConfig extends cdktn.TerraformMetaArguments {
   * 				a database. You can create and use a database in the script or explicitly reference a
   * 				google_sql_database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
   */
   readonly database?: string;
   /**
@@ -27,17 +27,17 @@ export interface SqlProvisionScriptConfig extends cdktn.TerraformMetaArguments {
   * 				It must be "ABANDON" to allow Terraform to abandon the resources. If you want to delete resources, add statements
   * 				in the script such as "drop … if exists".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the provision script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +46,24 @@ export interface SqlProvisionScriptConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Cloud SQL instance. Changing this forces the script to be run on the new instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
   */
   readonly instance: string;
   /**
+  * The resource name of the Secret Manager secret storing the password. The secret
+  * 				should be a regional secret and stored in the exact same region as the Cloud SQL instance.
+  * 				Follow https://docs.cloud.google.com/secret-manager/regional-secrets/create-regional-secret.
+  * 				When user and password_secret_version are provided, the script is run using this user.
+  * 				Otherwise, the script is run using the identity account used to apply your Terraform config.
+  * 				Changing this field forces the script to be run again.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#password_secret_version SqlProvisionScript#password_secret_version}
+  */
+  readonly passwordSecretVersion?: string;
+  /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
   */
   readonly project?: string;
   /**
@@ -62,13 +73,23 @@ export interface SqlProvisionScriptConfig extends cdktn.TerraformMetaArguments {
   * 				"if not exists (select …) then … end if" to prevent existence-related errors. If it's not
   * 				possible to make a statement idempotent, you can run it once and then remove it from this script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
   */
   readonly script: string;
+  /**
+  * The name of the built-in database user to authenticate as. For MySQL user,
+  * 				omit '@' and the hostname. The user should exist as a built-in user in the database.
+  * 				When user and password_secret_version are provided, the script is run using this user. Otherwise,
+  * 				the script is run using the identity account used to apply your Terraform config.
+  * 				Changing this forces the script to be run using the new user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#user SqlProvisionScript#user}
+  */
+  readonly user?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script google_sql_provision_script}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script google_sql_provision_script}
 */
 export class SqlProvisionScript extends cdktn.TerraformResource {
 
@@ -84,7 +105,7 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SqlProvisionScript resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlProvisionScript to import
-  * @param importFromId The id of the existing SqlProvisionScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlProvisionScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlProvisionScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -96,7 +117,7 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script google_sql_provision_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script google_sql_provision_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -107,7 +128,7 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
       terraformResourceType: 'google_sql_provision_script',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -123,8 +144,10 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._instance = config.instance;
+    this._passwordSecretVersion = config.passwordSecretVersion;
     this._project = config.project;
     this._script = config.script;
+    this._user = config.user;
   }
 
   // ==========
@@ -208,6 +231,22 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
     return this._instance;
   }
 
+  // password_secret_version - computed: false, optional: true, required: false
+  private _passwordSecretVersion?: string; 
+  public get passwordSecretVersion() {
+    return this.getStringAttribute('password_secret_version');
+  }
+  public set passwordSecretVersion(value: string) {
+    this._passwordSecretVersion = value;
+  }
+  public resetPasswordSecretVersion() {
+    this._passwordSecretVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordSecretVersionInput() {
+    return this._passwordSecretVersion;
+  }
+
   // project - computed: true, optional: true, required: false
   private _project?: string; 
   public get project() {
@@ -237,6 +276,22 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
     return this._script;
   }
 
+  // user - computed: false, optional: true, required: false
+  private _user?: string; 
+  public get user() {
+    return this.getStringAttribute('user');
+  }
+  public set user(value: string) {
+    this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -248,8 +303,10 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       instance: cdktn.stringToTerraform(this._instance),
+      password_secret_version: cdktn.stringToTerraform(this._passwordSecretVersion),
       project: cdktn.stringToTerraform(this._project),
       script: cdktn.stringToTerraform(this._script),
+      user: cdktn.stringToTerraform(this._user),
     };
   }
 
@@ -285,6 +342,12 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      password_secret_version: {
+        value: cdktn.stringToHclTerraform(this._passwordSecretVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
@@ -293,6 +356,12 @@ export class SqlProvisionScript extends cdktn.TerraformResource {
       },
       script: {
         value: cdktn.stringToHclTerraform(this._script),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

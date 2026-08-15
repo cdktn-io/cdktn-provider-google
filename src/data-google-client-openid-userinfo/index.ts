@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/client_openid_userinfo
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/client_openid_userinfo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataGoogleClientOpenidUserinfoConfig extends cdktn.TerraformMet
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo}
 */
 export class DataGoogleClientOpenidUserinfo extends cdktn.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataGoogleClientOpenidUserinfo extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleClientOpenidUserinfo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleClientOpenidUserinfo to import
-  * @param importFromId The id of the existing DataGoogleClientOpenidUserinfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/client_openid_userinfo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleClientOpenidUserinfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/client_openid_userinfo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleClientOpenidUserinfo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataGoogleClientOpenidUserinfo extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataGoogleClientOpenidUserinfo extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_client_openid_userinfo',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

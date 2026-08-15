@@ -237,6 +237,7 @@ Object.defineProperty(exports, 'chronicleReferenceList', { get: function () { re
 Object.defineProperty(exports, 'chronicleRetrohunt', { get: function () { return require('./chronicle-retrohunt'); } });
 Object.defineProperty(exports, 'chronicleRule', { get: function () { return require('./chronicle-rule'); } });
 Object.defineProperty(exports, 'chronicleRuleDeployment', { get: function () { return require('./chronicle-rule-deployment'); } });
+Object.defineProperty(exports, 'chronicleSoarNetwork', { get: function () { return require('./chronicle-soar-network'); } });
 Object.defineProperty(exports, 'chronicleWatchlist', { get: function () { return require('./chronicle-watchlist'); } });
 Object.defineProperty(exports, 'cloudAssetFolderFeed', { get: function () { return require('./cloud-asset-folder-feed'); } });
 Object.defineProperty(exports, 'cloudAssetOrganizationFeed', { get: function () { return require('./cloud-asset-organization-feed'); } });
@@ -541,6 +542,10 @@ Object.defineProperty(exports, 'databaseMigrationServiceMigrationJob', { get: fu
 Object.defineProperty(exports, 'databaseMigrationServicePrivateConnection', { get: function () { return require('./database-migration-service-private-connection'); } });
 Object.defineProperty(exports, 'dataflowJob', { get: function () { return require('./dataflow-job'); } });
 Object.defineProperty(exports, 'dataformFolder', { get: function () { return require('./dataform-folder'); } });
+Object.defineProperty(exports, 'dataformRepository', { get: function () { return require('./dataform-repository'); } });
+Object.defineProperty(exports, 'dataformRepositoryIamBinding', { get: function () { return require('./dataform-repository-iam-binding'); } });
+Object.defineProperty(exports, 'dataformRepositoryIamMember', { get: function () { return require('./dataform-repository-iam-member'); } });
+Object.defineProperty(exports, 'dataformRepositoryIamPolicy', { get: function () { return require('./dataform-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataformTeamFolder', { get: function () { return require('./dataform-team-folder'); } });
 Object.defineProperty(exports, 'dataplexAspectType', { get: function () { return require('./dataplex-aspect-type'); } });
 Object.defineProperty(exports, 'dataplexAspectTypeIamBinding', { get: function () { return require('./dataplex-aspect-type-iam-binding'); } });
@@ -813,11 +818,14 @@ Object.defineProperty(exports, 'healthcareWorkspace', { get: function () { retur
 Object.defineProperty(exports, 'hypercomputeclusterCluster', { get: function () { return require('./hypercomputecluster-cluster'); } });
 Object.defineProperty(exports, 'iamAccessBoundaryPolicy', { get: function () { return require('./iam-access-boundary-policy'); } });
 Object.defineProperty(exports, 'iamDenyPolicy', { get: function () { return require('./iam-deny-policy'); } });
+Object.defineProperty(exports, 'iamFolderAccessPolicy', { get: function () { return require('./iam-folder-access-policy'); } });
 Object.defineProperty(exports, 'iamFoldersPolicyBinding', { get: function () { return require('./iam-folders-policy-binding'); } });
 Object.defineProperty(exports, 'iamOauthClient', { get: function () { return require('./iam-oauth-client'); } });
 Object.defineProperty(exports, 'iamOauthClientCredential', { get: function () { return require('./iam-oauth-client-credential'); } });
+Object.defineProperty(exports, 'iamOrganizationAccessPolicy', { get: function () { return require('./iam-organization-access-policy'); } });
 Object.defineProperty(exports, 'iamOrganizationsPolicyBinding', { get: function () { return require('./iam-organizations-policy-binding'); } });
 Object.defineProperty(exports, 'iamPrincipalAccessBoundaryPolicy', { get: function () { return require('./iam-principal-access-boundary-policy'); } });
+Object.defineProperty(exports, 'iamProjectAccessPolicy', { get: function () { return require('./iam-project-access-policy'); } });
 Object.defineProperty(exports, 'iamProjectsPolicyBinding', { get: function () { return require('./iam-projects-policy-binding'); } });
 Object.defineProperty(exports, 'iamWorkforcePool', { get: function () { return require('./iam-workforce-pool'); } });
 Object.defineProperty(exports, 'iamWorkforcePoolIamBinding', { get: function () { return require('./iam-workforce-pool-iam-binding'); } });
@@ -1291,6 +1299,7 @@ Object.defineProperty(exports, 'vertexAiDataset', { get: function () { return re
 Object.defineProperty(exports, 'vertexAiDeploymentResourcePool', { get: function () { return require('./vertex-ai-deployment-resource-pool'); } });
 Object.defineProperty(exports, 'vertexAiEndpoint', { get: function () { return require('./vertex-ai-endpoint'); } });
 Object.defineProperty(exports, 'vertexAiEndpointWithModelGardenDeployment', { get: function () { return require('./vertex-ai-endpoint-with-model-garden-deployment'); } });
+Object.defineProperty(exports, 'vertexAiEvaluationMetric', { get: function () { return require('./vertex-ai-evaluation-metric'); } });
 Object.defineProperty(exports, 'vertexAiFeatureGroup', { get: function () { return require('./vertex-ai-feature-group'); } });
 Object.defineProperty(exports, 'vertexAiFeatureGroupFeature', { get: function () { return require('./vertex-ai-feature-group-feature'); } });
 Object.defineProperty(exports, 'vertexAiFeatureOnlineStore', { get: function () { return require('./vertex-ai-feature-online-store'); } });
@@ -1546,6 +1555,7 @@ Object.defineProperty(exports, 'dataGoogleDataCatalogTaxonomy', { get: function 
 Object.defineProperty(exports, 'dataGoogleDataCatalogTaxonomyIamPolicy', { get: function () { return require('./data-google-data-catalog-taxonomy-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataFusionInstanceIamPolicy', { get: function () { return require('./data-google-data-fusion-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataLineageConfig', { get: function () { return require('./data-google-data-lineage-config'); } });
+Object.defineProperty(exports, 'dataGoogleDataformRepositoryIamPolicy', { get: function () { return require('./data-google-dataform-repository-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexAspectTypeIamPolicy', { get: function () { return require('./data-google-dataplex-aspect-type-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexAssetIamPolicy', { get: function () { return require('./data-google-dataplex-asset-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataplexDataProductIamPolicy', { get: function () { return require('./data-google-dataplex-data-product-iam-policy'); } });

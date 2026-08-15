@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example
+// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesExampleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name', defining the app the example belongs to. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#app CesExample#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#app CesExample#app}
   */
   readonly app: string;
   /**
@@ -27,19 +27,19 @@ export interface CesExampleConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#deletion_policy CesExample#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#deletion_policy CesExample#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable description of the example.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#description CesExample#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#description CesExample#description}
   */
   readonly description?: string;
   /**
   * Display name of the example.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#display_name CesExample#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#display_name CesExample#display_name}
   */
   readonly displayName: string;
   /**
@@ -47,18 +47,18 @@ export interface CesExampleConfig extends cdktn.TerraformMetaArguments {
   * example represents a conversation that is handled by the root agent.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#entry_agent CesExample#entry_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#entry_agent CesExample#entry_agent}
   */
   readonly entryAgent?: string;
   /**
   * The ID to use for the example, which will become the final component of
   * the example's resource name. In Terraform, this field is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#example_id CesExample#example_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#example_id CesExample#example_id}
   */
   readonly exampleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#id CesExample#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#id CesExample#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -67,23 +67,23 @@ export interface CesExampleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name', defining what region the parent app is in. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#location CesExample#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#location CesExample#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#project CesExample#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#project CesExample#project}
   */
   readonly project?: string;
   /**
   * messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#messages CesExample#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#messages CesExample#messages}
   */
   readonly messages?: CesExampleMessages[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#timeouts CesExample#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#timeouts CesExample#timeouts}
   */
   readonly timeouts?: CesExampleTimeouts;
 }
@@ -93,7 +93,7 @@ export interface CesExampleMessagesChunksAgentTransfer {
   * handle the conversation from this point forward.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#target_agent CesExample#target_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#target_agent CesExample#target_agent}
   */
   readonly targetAgent: string;
 }
@@ -181,7 +181,7 @@ export interface CesExampleMessagesChunksImage {
   /**
   * Raw bytes of the image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#data CesExample#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#data CesExample#data}
   */
   readonly data: string;
   /**
@@ -191,7 +191,7 @@ export interface CesExampleMessagesChunksImage {
   * * image/jpeg
   * * image/webp
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#mime_type CesExample#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#mime_type CesExample#mime_type}
   */
   readonly mimeType: string;
 }
@@ -300,7 +300,7 @@ export interface CesExampleMessagesChunksToolCallToolsetTool {
   /**
   * The tool ID to filter the tools to retrieve the schema for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool_id CesExample#tool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool_id CesExample#tool_id}
   */
   readonly toolId?: string;
   /**
@@ -308,7 +308,7 @@ export interface CesExampleMessagesChunksToolCallToolsetTool {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#toolset CesExample#toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#toolset CesExample#toolset}
   */
   readonly toolset: string;
 }
@@ -420,7 +420,7 @@ export interface CesExampleMessagesChunksToolCall {
   /**
   * The input parameters and values for the tool in JSON object format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#args CesExample#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#args CesExample#args}
   */
   readonly args?: string;
   /**
@@ -428,7 +428,7 @@ export interface CesExampleMessagesChunksToolCall {
   * return the execution result with the matching ID in
   * ToolResponse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#id CesExample#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#id CesExample#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -438,13 +438,13 @@ export interface CesExampleMessagesChunksToolCall {
   * The name of the tool to execute.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool CesExample#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool CesExample#tool}
   */
   readonly tool?: string;
   /**
   * toolset_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
   */
   readonly toolsetTool?: CesExampleMessagesChunksToolCallToolsetTool;
 }
@@ -622,7 +622,7 @@ export interface CesExampleMessagesChunksToolResponseToolsetTool {
   /**
   * The tool ID to filter the tools to retrieve the schema for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool_id CesExample#tool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool_id CesExample#tool_id}
   */
   readonly toolId?: string;
   /**
@@ -630,7 +630,7 @@ export interface CesExampleMessagesChunksToolResponseToolsetTool {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#toolset CesExample#toolset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#toolset CesExample#toolset}
   */
   readonly toolset: string;
 }
@@ -742,7 +742,7 @@ export interface CesExampleMessagesChunksToolResponse {
   /**
   * The matching ID of the tool call the response is for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#id CesExample#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#id CesExample#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -754,20 +754,20 @@ export interface CesExampleMessagesChunksToolResponse {
   * error details (if any). If "output" and "error" keys are not specified,
   * then whole "response" is treated as tool execution result.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#response CesExample#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#response CesExample#response}
   */
   readonly response: string;
   /**
   * The name of the tool to execute.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool CesExample#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool CesExample#tool}
   */
   readonly tool?: string;
   /**
   * toolset_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
   */
   readonly toolsetTool?: CesExampleMessagesChunksToolResponseToolsetTool;
 }
@@ -942,38 +942,38 @@ export interface CesExampleMessagesChunks {
   /**
   * Text data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#text CesExample#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#text CesExample#text}
   */
   readonly text?: string;
   /**
   * A struct represents variables that were updated in the conversation,
   * keyed by variable names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#updated_variables CesExample#updated_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#updated_variables CesExample#updated_variables}
   */
   readonly updatedVariables?: string;
   /**
   * agent_transfer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#agent_transfer CesExample#agent_transfer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#agent_transfer CesExample#agent_transfer}
   */
   readonly agentTransfer?: CesExampleMessagesChunksAgentTransfer;
   /**
   * image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#image CesExample#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#image CesExample#image}
   */
   readonly image?: CesExampleMessagesChunksImage;
   /**
   * tool_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool_call CesExample#tool_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool_call CesExample#tool_call}
   */
   readonly toolCall?: CesExampleMessagesChunksToolCall;
   /**
   * tool_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#tool_response CesExample#tool_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#tool_response CesExample#tool_response}
   */
   readonly toolResponse?: CesExampleMessagesChunksToolResponse;
 }
@@ -1236,13 +1236,13 @@ export interface CesExampleMessages {
   /**
   * The role within the conversation, e.g., user, agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#role CesExample#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#role CesExample#role}
   */
   readonly role?: string;
   /**
   * chunks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#chunks CesExample#chunks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#chunks CesExample#chunks}
   */
   readonly chunks?: CesExampleMessagesChunks[] | cdktn.IResolvable;
 }
@@ -1387,15 +1387,15 @@ export class CesExampleMessagesList extends cdktn.ComplexList {
 }
 export interface CesExampleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#create CesExample#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#create CesExample#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#delete CesExample#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#delete CesExample#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#update CesExample#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#update CesExample#update}
   */
   readonly update?: string;
 }
@@ -1547,7 +1547,7 @@ export class CesExampleTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example google_ces_example}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example google_ces_example}
 */
 export class CesExample extends cdktn.TerraformResource {
 
@@ -1563,7 +1563,7 @@ export class CesExample extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesExample resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesExample to import
-  * @param importFromId The id of the existing CesExample that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesExample that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesExample to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1575,7 +1575,7 @@ export class CesExample extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/ces_example google_ces_example} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_example google_ces_example} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1586,7 +1586,7 @@ export class CesExample extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_example',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.43.0',
+        providerVersion: '7.44.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
