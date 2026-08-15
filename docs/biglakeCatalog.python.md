@@ -4,7 +4,7 @@
 
 ### BiglakeCatalog <a name="BiglakeCatalog" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog google_biglake_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog google_biglake_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer"></a>
 
@@ -44,8 +44,8 @@ biglakeCatalog.BiglakeCatalog(
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.location">location</a></code> | <code>str</code> | The geographic location where the Catalog should reside. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts">BiglakeCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The geographic location where the Catalog should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#location BiglakeCatalog#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#location BiglakeCatalog#location}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#name BiglakeCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#name BiglakeCatalog#name}
 
 ---
 
@@ -143,7 +143,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -162,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
 
 ---
 
@@ -573,7 +573,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
 
 ---
 
@@ -723,7 +723,7 @@ The construct id used in the generated config for the BiglakeCatalog to import.
 
 The id of the existing BiglakeCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1132,8 +1132,8 @@ biglakeCatalog.BiglakeCatalogConfig(
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.location">location</a></code> | <code>str</code> | The geographic location where the Catalog should reside. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.name">name</a></code> | <code>str</code> | The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts">BiglakeCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1218,7 +1218,7 @@ location: str
 
 The geographic location where the Catalog should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#location BiglakeCatalog#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#location BiglakeCatalog#location}
 
 ---
 
@@ -1232,7 +1232,7 @@ name: str
 
 The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#name BiglakeCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#name BiglakeCatalog#name}
 
 ---
 
@@ -1253,7 +1253,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
 
 ---
 
@@ -1265,7 +1265,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1280,7 +1280,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
 
 ---
 
@@ -1294,7 +1294,7 @@ timeouts: BiglakeCatalogTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
 
 ---
 
@@ -1315,8 +1315,8 @@ biglakeCatalog.BiglakeCatalogTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
 
 ---
 
@@ -1340,7 +1340,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### OrganizationIamMember <a name="OrganizationIamMember" id="@cdktn/provider-google.organizationIamMember.OrganizationIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member google_organization_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member google_organization_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.organizationIamMember.OrganizationIamMember.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the OrganizationIamMember to i
 
 The id of the existing OrganizationIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ new OrganizationIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#expression OrganizationIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#title OrganizationIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#description OrganizationIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#expression OrganizationIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#title OrganizationIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#description OrganizationIamMember#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#expression OrganizationIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#expression OrganizationIamMember#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#title OrganizationIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#title OrganizationIamMember#title}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#description OrganizationIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#description OrganizationIamMember#description}.
 
 ---
 
@@ -926,11 +926,11 @@ new OrganizationIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#member OrganizationIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#member OrganizationIamMember#member}. |
 | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.orgId">OrgId</a></code> | <code>string</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#role OrganizationIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#role OrganizationIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberCondition">OrganizationIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#id OrganizationIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.organizationIamMember.OrganizationIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#id OrganizationIamMember#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#member OrganizationIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#member OrganizationIamMember#member}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public string OrgId { get; set; }
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#org_id OrganizationIamMember#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#org_id OrganizationIamMember#org_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#role OrganizationIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#role OrganizationIamMember#role}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public OrganizationIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#condition OrganizationIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#condition OrganizationIamMember#condition}
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/organization_iam_member#id OrganizationIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/organization_iam_member#id OrganizationIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

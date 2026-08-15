@@ -4,7 +4,7 @@
 
 ### OsConfigV2PolicyOrchestratorForFolder <a name="OsConfigV2PolicyOrchestratorForFolder" id="@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder google_os_config_v2_policy_orchestrator_for_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolder.Initializer"></a>
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the OsConfigV2PolicyOrchestrat
 
 The id of the existing OsConfigV2PolicyOrchestratorForFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1129,7 +1129,7 @@ const osConfigV2PolicyOrchestratorForFolderConfig: osConfigV2PolicyOrchestratorF
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.policyOrchestratorId">policyOrchestratorId</a></code> | <code>string</code> | The logical identifier of the policy orchestrator, with the following restrictions:. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.description">description</a></code> | <code>string</code> | Freeform text describing the purpose of the resource. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.orchestrationScope">orchestrationScope</a></code> | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderOrchestrationScope">OsConfigV2PolicyOrchestratorForFolderOrchestrationScope</a></code> | orchestration_scope block. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderConfig.property.state">state</a></code> | <code>string</code> | State of the orchestrator. |
@@ -1221,7 +1221,7 @@ Allowed values:
 - 'UPSERT' - Orchestrator will create or update target resources.
 - 'DELETE' - Orchestrator will delete target resources, if they exist
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#action OsConfigV2PolicyOrchestratorForFolder#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#action OsConfigV2PolicyOrchestratorForFolder#action}
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly folderId: string;
 
 The parent resource name in the form of 'folders/{folder_id}/locations/global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#folder_id OsConfigV2PolicyOrchestratorForFolder#folder_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#folder_id OsConfigV2PolicyOrchestratorForFolder#folder_id}
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly orchestratedResource: OsConfigV2PolicyOrchestratorForFolderOrche
 
 orchestrated_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#orchestrated_resource OsConfigV2PolicyOrchestratorForFolder#orchestrated_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#orchestrated_resource OsConfigV2PolicyOrchestratorForFolder#orchestrated_resource}
 
 ---
 
@@ -1269,7 +1269,7 @@ The logical identifier of the policy orchestrator, with the following restrictio
 * Must end with a number or a letter.
 * Must be unique within the parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#policy_orchestrator_id OsConfigV2PolicyOrchestratorForFolder#policy_orchestrator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#policy_orchestrator_id OsConfigV2PolicyOrchestratorForFolder#policy_orchestrator_id}
 
 ---
 
@@ -1291,7 +1291,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#deletion_policy OsConfigV2PolicyOrchestratorForFolder#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#deletion_policy OsConfigV2PolicyOrchestratorForFolder#deletion_policy}
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly description: string;
 
 Freeform text describing the purpose of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
 
 ---
 
@@ -1317,7 +1317,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1337,7 +1337,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly orchestrationScope: OsConfigV2PolicyOrchestratorForFolderOrchest
 
 orchestration_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#orchestration_scope OsConfigV2PolicyOrchestratorForFolder#orchestration_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#orchestration_scope OsConfigV2PolicyOrchestratorForFolder#orchestration_scope}
 
 ---
 
@@ -1374,7 +1374,7 @@ Note: There might be more states added in the future. We use string here
 instead of an enum, to avoid the need of propagating new states to all the
 client code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#state OsConfigV2PolicyOrchestratorForFolder#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#state OsConfigV2PolicyOrchestratorForFolder#state}
 
 ---
 
@@ -1388,7 +1388,7 @@ public readonly timeouts: OsConfigV2PolicyOrchestratorForFolderTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#timeouts OsConfigV2PolicyOrchestratorForFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#timeouts OsConfigV2PolicyOrchestratorForFolder#timeouts}
 
 ---
 
@@ -1434,7 +1434,7 @@ restrictions:
 For DELETE action, ID must be specified explicitly during
 PolicyOrchestrator creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1451,7 +1451,7 @@ public readonly osPolicyAssignmentV1Payload: OsConfigV2PolicyOrchestratorForFold
 
 os_policy_assignment_v1_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_policy_assignment_v1_payload OsConfigV2PolicyOrchestratorForFolder#os_policy_assignment_v1_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_policy_assignment_v1_payload OsConfigV2PolicyOrchestratorForFolder#os_policy_assignment_v1_payload}
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly instanceFilter: OsConfigV2PolicyOrchestratorForFolderOrchestrate
 
 instance_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#instance_filter OsConfigV2PolicyOrchestratorForFolder#instance_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#instance_filter OsConfigV2PolicyOrchestratorForFolder#instance_filter}
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly osPolicies: IResolvable | OsConfigV2PolicyOrchestratorForFolderO
 
 os_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_policies OsConfigV2PolicyOrchestratorForFolder#os_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_policies OsConfigV2PolicyOrchestratorForFolder#os_policies}
 
 ---
 
@@ -1515,7 +1515,7 @@ public readonly rollout: OsConfigV2PolicyOrchestratorForFolderOrchestratedResour
 
 rollout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#rollout OsConfigV2PolicyOrchestratorForFolder#rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#rollout OsConfigV2PolicyOrchestratorForFolder#rollout}
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly description: string;
 
 OS policy assignment description. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
 
 ---
 
@@ -1548,7 +1548,7 @@ Format:
 
 This field is ignored when you create an OS policy assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly all: boolean | IResolvable;
 
 Target all VMs in the project. If true, no other criteria is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#all OsConfigV2PolicyOrchestratorForFolder#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#all OsConfigV2PolicyOrchestratorForFolder#all}
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly exclusionLabels: IResolvable | OsConfigV2PolicyOrchestratorForFo
 
 exclusion_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#exclusion_labels OsConfigV2PolicyOrchestratorForFolder#exclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#exclusion_labels OsConfigV2PolicyOrchestratorForFolder#exclusion_labels}
 
 ---
 
@@ -1611,7 +1611,7 @@ public readonly inclusionLabels: IResolvable | OsConfigV2PolicyOrchestratorForFo
 
 inclusion_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inclusion_labels OsConfigV2PolicyOrchestratorForFolder#inclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inclusion_labels OsConfigV2PolicyOrchestratorForFolder#inclusion_labels}
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly inventories: IResolvable | OsConfigV2PolicyOrchestratorForFolder
 
 inventories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inventories OsConfigV2PolicyOrchestratorForFolder#inventories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inventories OsConfigV2PolicyOrchestratorForFolder#inventories}
 
 ---
 
@@ -1660,7 +1660,7 @@ Labels are identified by key/value pairs in this map.
 A VM should contain all the key/value pairs specified in this
 map to be selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
 
 ---
 
@@ -1695,7 +1695,7 @@ Labels are identified by key/value pairs in this map.
 A VM should contain all the key/value pairs specified in this
 map to be selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#labels OsConfigV2PolicyOrchestratorForFolder#labels}
 
 ---
 
@@ -1728,7 +1728,7 @@ public readonly osShortName: string;
 
 The OS short name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_short_name OsConfigV2PolicyOrchestratorForFolder#os_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_short_name OsConfigV2PolicyOrchestratorForFolder#os_short_name}
 
 ---
 
@@ -1748,7 +1748,7 @@ version of '7', specify the following value for this field '7.*'
 
 An empty string matches all OS versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_version OsConfigV2PolicyOrchestratorForFolder#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_version OsConfigV2PolicyOrchestratorForFolder#os_version}
 
 ---
 
@@ -1790,7 +1790,7 @@ The id of the OS policy with the following restrictions:.
 * Must end with a number or a letter.
 * Must be unique within the assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1807,7 +1807,7 @@ public readonly mode: string;
 
 Policy mode Possible values: ["VALIDATION", "ENFORCEMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#mode OsConfigV2PolicyOrchestratorForFolder#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#mode OsConfigV2PolicyOrchestratorForFolder#mode}
 
 ---
 
@@ -1821,7 +1821,7 @@ public readonly resourceGroups: IResolvable | OsConfigV2PolicyOrchestratorForFol
 
 resource_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resource_groups OsConfigV2PolicyOrchestratorForFolder#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resource_groups OsConfigV2PolicyOrchestratorForFolder#resource_groups}
 
 ---
 
@@ -1839,7 +1839,7 @@ Set this value
 to 'true' if the policy needs to be reported as compliant even if the
 policy has nothing to validate or enforce.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_no_resource_group_match OsConfigV2PolicyOrchestratorForFolder#allow_no_resource_group_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_no_resource_group_match OsConfigV2PolicyOrchestratorForFolder#allow_no_resource_group_match}
 
 ---
 
@@ -1853,7 +1853,7 @@ public readonly description: string;
 
 Policy description. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#description OsConfigV2PolicyOrchestratorForFolder#description}
 
 ---
 
@@ -1886,7 +1886,7 @@ public readonly resources: IResolvable | OsConfigV2PolicyOrchestratorForFolderOr
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resources OsConfigV2PolicyOrchestratorForFolder#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resources OsConfigV2PolicyOrchestratorForFolder#resources}
 
 ---
 
@@ -1900,7 +1900,7 @@ public readonly inventoryFilters: IResolvable | OsConfigV2PolicyOrchestratorForF
 
 inventory_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inventory_filters OsConfigV2PolicyOrchestratorForFolder#inventory_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#inventory_filters OsConfigV2PolicyOrchestratorForFolder#inventory_filters}
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly osShortName: string;
 
 The OS short name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_short_name OsConfigV2PolicyOrchestratorForFolder#os_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_short_name OsConfigV2PolicyOrchestratorForFolder#os_short_name}
 
 ---
 
@@ -1953,7 +1953,7 @@ version of '7', specify the following value for this field '7.*'
 
 An empty string matches all OS versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_version OsConfigV2PolicyOrchestratorForFolder#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_version OsConfigV2PolicyOrchestratorForFolder#os_version}
 
 ---
 
@@ -1995,7 +1995,7 @@ The id of the resource with the following restrictions:.
 * Must end with a number or a letter.
 * Must be unique within the OS policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2012,7 +2012,7 @@ public readonly exec: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceO
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#exec OsConfigV2PolicyOrchestratorForFolder#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#exec OsConfigV2PolicyOrchestratorForFolder#exec}
 
 ---
 
@@ -2026,7 +2026,7 @@ public readonly file: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceO
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
 
 ---
 
@@ -2040,7 +2040,7 @@ public readonly pkg: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 pkg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pkg OsConfigV2PolicyOrchestratorForFolder#pkg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pkg OsConfigV2PolicyOrchestratorForFolder#pkg}
 
 ---
 
@@ -2054,7 +2054,7 @@ public readonly repository: OsConfigV2PolicyOrchestratorForFolderOrchestratedRes
 
 repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#repository OsConfigV2PolicyOrchestratorForFolder#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#repository OsConfigV2PolicyOrchestratorForFolder#repository}
 
 ---
 
@@ -2087,7 +2087,7 @@ public readonly validate: OsConfigV2PolicyOrchestratorForFolderOrchestratedResou
 
 validate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#validate OsConfigV2PolicyOrchestratorForFolder#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#validate OsConfigV2PolicyOrchestratorForFolder#validate}
 
 ---
 
@@ -2101,7 +2101,7 @@ public readonly enforce: OsConfigV2PolicyOrchestratorForFolderOrchestratedResour
 
 enforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#enforce OsConfigV2PolicyOrchestratorForFolder#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#enforce OsConfigV2PolicyOrchestratorForFolder#enforce}
 
 ---
 
@@ -2137,7 +2137,7 @@ public readonly interpreter: string;
 
 The script interpreter to use. Possible values: ["NONE", "SHELL", "POWERSHELL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#interpreter OsConfigV2PolicyOrchestratorForFolder#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#interpreter OsConfigV2PolicyOrchestratorForFolder#interpreter}
 
 ---
 
@@ -2151,7 +2151,7 @@ public readonly args: string[];
 
 Optional arguments to pass to the source during execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#args OsConfigV2PolicyOrchestratorForFolder#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#args OsConfigV2PolicyOrchestratorForFolder#args}
 
 ---
 
@@ -2165,7 +2165,7 @@ public readonly file: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceO
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
 
 ---
 
@@ -2185,7 +2185,7 @@ successful run. Absence or failure to read this file will result in
 this ExecResource being non-compliant. Output file size is limited to
 500K bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#output_file_path OsConfigV2PolicyOrchestratorForFolder#output_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#output_file_path OsConfigV2PolicyOrchestratorForFolder#output_file_path}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly script: string;
 
 An inline script. The size of the script is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#script OsConfigV2PolicyOrchestratorForFolder#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#script OsConfigV2PolicyOrchestratorForFolder#script}
 
 ---
 
@@ -2237,7 +2237,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -2251,7 +2251,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -2265,7 +2265,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -2279,7 +2279,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -2313,7 +2313,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -2327,7 +2327,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -2341,7 +2341,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -2374,7 +2374,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -2388,7 +2388,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -2424,7 +2424,7 @@ public readonly interpreter: string;
 
 The script interpreter to use. Possible values: ["NONE", "SHELL", "POWERSHELL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#interpreter OsConfigV2PolicyOrchestratorForFolder#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#interpreter OsConfigV2PolicyOrchestratorForFolder#interpreter}
 
 ---
 
@@ -2438,7 +2438,7 @@ public readonly args: string[];
 
 Optional arguments to pass to the source during execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#args OsConfigV2PolicyOrchestratorForFolder#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#args OsConfigV2PolicyOrchestratorForFolder#args}
 
 ---
 
@@ -2452,7 +2452,7 @@ public readonly file: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceO
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
 
 ---
 
@@ -2472,7 +2472,7 @@ successful run. Absence or failure to read this file will result in
 this ExecResource being non-compliant. Output file size is limited to
 500K bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#output_file_path OsConfigV2PolicyOrchestratorForFolder#output_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#output_file_path OsConfigV2PolicyOrchestratorForFolder#output_file_path}
 
 ---
 
@@ -2486,7 +2486,7 @@ public readonly script: string;
 
 An inline script. The size of the script is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#script OsConfigV2PolicyOrchestratorForFolder#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#script OsConfigV2PolicyOrchestratorForFolder#script}
 
 ---
 
@@ -2524,7 +2524,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -2538,7 +2538,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -2552,7 +2552,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -2566,7 +2566,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -2600,7 +2600,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -2614,7 +2614,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -2628,7 +2628,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -2661,7 +2661,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -2675,7 +2675,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -2711,7 +2711,7 @@ public readonly path: string;
 
 The absolute path of the file within the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#path OsConfigV2PolicyOrchestratorForFolder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#path OsConfigV2PolicyOrchestratorForFolder#path}
 
 ---
 
@@ -2725,7 +2725,7 @@ public readonly state: string;
 
 Desired state of the file. Possible values: ["PRESENT", "ABSENT", "CONTENTS_MATCH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#state OsConfigV2PolicyOrchestratorForFolder#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#state OsConfigV2PolicyOrchestratorForFolder#state}
 
 ---
 
@@ -2739,7 +2739,7 @@ public readonly content: string;
 
 A a file with this content. The size of the content is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#content OsConfigV2PolicyOrchestratorForFolder#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#content OsConfigV2PolicyOrchestratorForFolder#content}
 
 ---
 
@@ -2753,7 +2753,7 @@ public readonly file: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceO
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#file OsConfigV2PolicyOrchestratorForFolder#file}
 
 ---
 
@@ -2778,7 +2778,7 @@ read and execute: 5
 read and write: 6
 read only: 4
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#permissions OsConfigV2PolicyOrchestratorForFolder#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#permissions OsConfigV2PolicyOrchestratorForFolder#permissions}
 
 ---
 
@@ -2816,7 +2816,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -2830,7 +2830,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -2844,7 +2844,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -2858,7 +2858,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -2892,7 +2892,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -2906,7 +2906,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -2920,7 +2920,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -2953,7 +2953,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -2967,7 +2967,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -3006,7 +3006,7 @@ public readonly desiredState: string;
 
 The desired state the agent should maintain for this package. Possible values: ["INSTALLED", "REMOVED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#desired_state OsConfigV2PolicyOrchestratorForFolder#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#desired_state OsConfigV2PolicyOrchestratorForFolder#desired_state}
 
 ---
 
@@ -3020,7 +3020,7 @@ public readonly apt: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#apt OsConfigV2PolicyOrchestratorForFolder#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#apt OsConfigV2PolicyOrchestratorForFolder#apt}
 
 ---
 
@@ -3034,7 +3034,7 @@ public readonly deb: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 deb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#deb OsConfigV2PolicyOrchestratorForFolder#deb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#deb OsConfigV2PolicyOrchestratorForFolder#deb}
 
 ---
 
@@ -3048,7 +3048,7 @@ public readonly googet: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 googet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#googet OsConfigV2PolicyOrchestratorForFolder#googet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#googet OsConfigV2PolicyOrchestratorForFolder#googet}
 
 ---
 
@@ -3062,7 +3062,7 @@ public readonly msi: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 msi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#msi OsConfigV2PolicyOrchestratorForFolder#msi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#msi OsConfigV2PolicyOrchestratorForFolder#msi}
 
 ---
 
@@ -3076,7 +3076,7 @@ public readonly rpm: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 rpm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#rpm OsConfigV2PolicyOrchestratorForFolder#rpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#rpm OsConfigV2PolicyOrchestratorForFolder#rpm}
 
 ---
 
@@ -3090,7 +3090,7 @@ public readonly yum: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#yum OsConfigV2PolicyOrchestratorForFolder#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#yum OsConfigV2PolicyOrchestratorForFolder#yum}
 
 ---
 
@@ -3104,7 +3104,7 @@ public readonly zypper: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#zypper OsConfigV2PolicyOrchestratorForFolder#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#zypper OsConfigV2PolicyOrchestratorForFolder#zypper}
 
 ---
 
@@ -3136,7 +3136,7 @@ public readonly name: string;
 
 Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -3169,7 +3169,7 @@ public readonly source: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
 
 ---
 
@@ -3187,7 +3187,7 @@ install when false: 'dpkg -i package'
 - install when true: 'apt-get update && apt-get -y install
 package.deb'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pull_deps OsConfigV2PolicyOrchestratorForFolder#pull_deps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pull_deps OsConfigV2PolicyOrchestratorForFolder#pull_deps}
 
 ---
 
@@ -3225,7 +3225,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -3239,7 +3239,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -3253,7 +3253,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -3267,7 +3267,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -3301,7 +3301,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -3315,7 +3315,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -3329,7 +3329,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -3362,7 +3362,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -3376,7 +3376,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -3408,7 +3408,7 @@ public readonly name: string;
 
 Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -3441,7 +3441,7 @@ public readonly source: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
 
 ---
 
@@ -3455,7 +3455,7 @@ public readonly properties: string[];
 
 Additional properties to use during installation. This should be in the format of Property=Setting. Appended to the defaults of 'ACTION=INSTALL REBOOT=ReallySuppress'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#properties OsConfigV2PolicyOrchestratorForFolder#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#properties OsConfigV2PolicyOrchestratorForFolder#properties}
 
 ---
 
@@ -3493,7 +3493,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -3507,7 +3507,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -3521,7 +3521,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -3535,7 +3535,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -3569,7 +3569,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -3583,7 +3583,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -3597,7 +3597,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -3630,7 +3630,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -3644,7 +3644,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -3677,7 +3677,7 @@ public readonly source: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#source OsConfigV2PolicyOrchestratorForFolder#source}
 
 ---
 
@@ -3695,7 +3695,7 @@ install when false: 'rpm --upgrade --replacepkgs package.rpm'
 - install when true: 'yum -y install package.rpm' or
 'zypper -y install package.rpm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pull_deps OsConfigV2PolicyOrchestratorForFolder#pull_deps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#pull_deps OsConfigV2PolicyOrchestratorForFolder#pull_deps}
 
 ---
 
@@ -3733,7 +3733,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#allow_insecure OsConfigV2PolicyOrchestratorForFolder#allow_insecure}
 
 ---
 
@@ -3747,7 +3747,7 @@ public readonly gcs: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gcs OsConfigV2PolicyOrchestratorForFolder#gcs}
 
 ---
 
@@ -3761,7 +3761,7 @@ public readonly localPath: string;
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#local_path OsConfigV2PolicyOrchestratorForFolder#local_path}
 
 ---
 
@@ -3775,7 +3775,7 @@ public readonly remote: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#remote OsConfigV2PolicyOrchestratorForFolder#remote}
 
 ---
 
@@ -3809,7 +3809,7 @@ public readonly bucket: string;
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#bucket OsConfigV2PolicyOrchestratorForFolder#bucket}
 
 ---
 
@@ -3823,7 +3823,7 @@ public readonly object: string;
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#object OsConfigV2PolicyOrchestratorForFolder#object}
 
 ---
 
@@ -3837,7 +3837,7 @@ public readonly generation: string;
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#generation OsConfigV2PolicyOrchestratorForFolder#generation}
 
 ---
 
@@ -3870,7 +3870,7 @@ public readonly uri: string;
 
 URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -3884,7 +3884,7 @@ public readonly sha256Checksum: string;
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#sha256_checksum OsConfigV2PolicyOrchestratorForFolder#sha256_checksum}
 
 ---
 
@@ -3916,7 +3916,7 @@ public readonly name: string;
 
 Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -3948,7 +3948,7 @@ public readonly name: string;
 
 Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -3983,7 +3983,7 @@ public readonly apt: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#apt OsConfigV2PolicyOrchestratorForFolder#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#apt OsConfigV2PolicyOrchestratorForFolder#apt}
 
 ---
 
@@ -3997,7 +3997,7 @@ public readonly goo: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 goo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#goo OsConfigV2PolicyOrchestratorForFolder#goo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#goo OsConfigV2PolicyOrchestratorForFolder#goo}
 
 ---
 
@@ -4011,7 +4011,7 @@ public readonly yum: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOs
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#yum OsConfigV2PolicyOrchestratorForFolder#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#yum OsConfigV2PolicyOrchestratorForFolder#yum}
 
 ---
 
@@ -4025,7 +4025,7 @@ public readonly zypper: OsConfigV2PolicyOrchestratorForFolderOrchestratedResourc
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#zypper OsConfigV2PolicyOrchestratorForFolder#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#zypper OsConfigV2PolicyOrchestratorForFolder#zypper}
 
 ---
 
@@ -4061,7 +4061,7 @@ public readonly archiveType: string;
 
 Type of archive files in this repository. Possible values: ["DEB", "DEB_SRC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#archive_type OsConfigV2PolicyOrchestratorForFolder#archive_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#archive_type OsConfigV2PolicyOrchestratorForFolder#archive_type}
 
 ---
 
@@ -4075,7 +4075,7 @@ public readonly components: string[];
 
 List of components for this repository. Must contain at least one item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#components OsConfigV2PolicyOrchestratorForFolder#components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#components OsConfigV2PolicyOrchestratorForFolder#components}
 
 ---
 
@@ -4089,7 +4089,7 @@ public readonly distribution: string;
 
 Distribution of this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#distribution OsConfigV2PolicyOrchestratorForFolder#distribution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#distribution OsConfigV2PolicyOrchestratorForFolder#distribution}
 
 ---
 
@@ -4103,7 +4103,7 @@ public readonly uri: string;
 
 URI for this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#uri OsConfigV2PolicyOrchestratorForFolder#uri}
 
 ---
 
@@ -4117,7 +4117,7 @@ public readonly gpgKey: string;
 
 URI of the key file for this repository. The agent maintains a keyring at '/etc/apt/trusted.gpg.d/osconfig_agent_managed.gpg'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_key OsConfigV2PolicyOrchestratorForFolder#gpg_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_key OsConfigV2PolicyOrchestratorForFolder#gpg_key}
 
 ---
 
@@ -4150,7 +4150,7 @@ public readonly name: string;
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 
 ---
 
@@ -4164,7 +4164,7 @@ public readonly url: string;
 
 The url of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#url OsConfigV2PolicyOrchestratorForFolder#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#url OsConfigV2PolicyOrchestratorForFolder#url}
 
 ---
 
@@ -4199,7 +4199,7 @@ public readonly baseUrl: string;
 
 The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#base_url OsConfigV2PolicyOrchestratorForFolder#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#base_url OsConfigV2PolicyOrchestratorForFolder#base_url}
 
 ---
 
@@ -4218,7 +4218,7 @@ id' in the yum config file and also the 'display_name' if
 'display_name' is omitted. This id is also used as the unique
 identifier when checking for resource conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4235,7 +4235,7 @@ public readonly displayName: string;
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#display_name OsConfigV2PolicyOrchestratorForFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#display_name OsConfigV2PolicyOrchestratorForFolder#display_name}
 
 ---
 
@@ -4249,7 +4249,7 @@ public readonly gpgKeys: string[];
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_keys OsConfigV2PolicyOrchestratorForFolder#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_keys OsConfigV2PolicyOrchestratorForFolder#gpg_keys}
 
 ---
 
@@ -4284,7 +4284,7 @@ public readonly baseUrl: string;
 
 The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#base_url OsConfigV2PolicyOrchestratorForFolder#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#base_url OsConfigV2PolicyOrchestratorForFolder#base_url}
 
 ---
 
@@ -4303,7 +4303,7 @@ id' in the zypper config file and also the 'display_name' if
 'display_name' is omitted. This id is also used as the unique
 identifier when checking for GuestPolicy conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#id OsConfigV2PolicyOrchestratorForFolder#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4320,7 +4320,7 @@ public readonly displayName: string;
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#display_name OsConfigV2PolicyOrchestratorForFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#display_name OsConfigV2PolicyOrchestratorForFolder#display_name}
 
 ---
 
@@ -4334,7 +4334,7 @@ public readonly gpgKeys: string[];
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_keys OsConfigV2PolicyOrchestratorForFolder#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#gpg_keys OsConfigV2PolicyOrchestratorForFolder#gpg_keys}
 
 ---
 
@@ -4367,7 +4367,7 @@ public readonly disruptionBudget: OsConfigV2PolicyOrchestratorForFolderOrchestra
 
 disruption_budget block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#disruption_budget OsConfigV2PolicyOrchestratorForFolder#disruption_budget}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#disruption_budget OsConfigV2PolicyOrchestratorForFolder#disruption_budget}
 
 ---
 
@@ -4386,7 +4386,7 @@ VM continues to count towards the 'disruption_budget' at least
 until this duration of time has passed after configuration changes are
 applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#min_wait_duration OsConfigV2PolicyOrchestratorForFolder#min_wait_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#min_wait_duration OsConfigV2PolicyOrchestratorForFolder#min_wait_duration}
 
 ---
 
@@ -4419,7 +4419,7 @@ public readonly fixed: number;
 
 Specifies a fixed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#fixed OsConfigV2PolicyOrchestratorForFolder#fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#fixed OsConfigV2PolicyOrchestratorForFolder#fixed}
 
 ---
 
@@ -4433,7 +4433,7 @@ public readonly percent: number;
 
 Specifies the relative value defined as a percentage, which will be multiplied by a reference value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#percent OsConfigV2PolicyOrchestratorForFolder#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#percent OsConfigV2PolicyOrchestratorForFolder#percent}
 
 ---
 
@@ -4465,7 +4465,7 @@ public readonly selectors: IResolvable | OsConfigV2PolicyOrchestratorForFolderOr
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#selectors OsConfigV2PolicyOrchestratorForFolder#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#selectors OsConfigV2PolicyOrchestratorForFolder#selectors}
 
 ---
 
@@ -4498,7 +4498,7 @@ public readonly locationSelector: OsConfigV2PolicyOrchestratorForFolderOrchestra
 
 location_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#location_selector OsConfigV2PolicyOrchestratorForFolder#location_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#location_selector OsConfigV2PolicyOrchestratorForFolder#location_selector}
 
 ---
 
@@ -4512,7 +4512,7 @@ public readonly resourceHierarchySelector: OsConfigV2PolicyOrchestratorForFolder
 
 resource_hierarchy_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resource_hierarchy_selector OsConfigV2PolicyOrchestratorForFolder#resource_hierarchy_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#resource_hierarchy_selector OsConfigV2PolicyOrchestratorForFolder#resource_hierarchy_selector}
 
 ---
 
@@ -4544,7 +4544,7 @@ public readonly includedLocations: string[];
 
 Names of the locations in scope. Format: 'us-central1-a'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_locations OsConfigV2PolicyOrchestratorForFolder#included_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_locations OsConfigV2PolicyOrchestratorForFolder#included_locations}
 
 ---
 
@@ -4577,7 +4577,7 @@ public readonly includedFolders: string[];
 
 Names of the folders in scope. Format: 'folders/{folder_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_folders OsConfigV2PolicyOrchestratorForFolder#included_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_folders OsConfigV2PolicyOrchestratorForFolder#included_folders}
 
 ---
 
@@ -4591,7 +4591,7 @@ public readonly includedProjects: string[];
 
 Names of the projects in scope. Format: 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_projects OsConfigV2PolicyOrchestratorForFolder#included_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#included_projects OsConfigV2PolicyOrchestratorForFolder#included_projects}
 
 ---
 
@@ -4686,9 +4686,9 @@ const osConfigV2PolicyOrchestratorForFolderTimeouts: osConfigV2PolicyOrchestrato
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#create OsConfigV2PolicyOrchestratorForFolder#create}. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#delete OsConfigV2PolicyOrchestratorForFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#update OsConfigV2PolicyOrchestratorForFolder#update}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#create OsConfigV2PolicyOrchestratorForFolder#create}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#delete OsConfigV2PolicyOrchestratorForFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestratorForFolder.OsConfigV2PolicyOrchestratorForFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#update OsConfigV2PolicyOrchestratorForFolder#update}. |
 
 ---
 
@@ -4700,7 +4700,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#create OsConfigV2PolicyOrchestratorForFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#create OsConfigV2PolicyOrchestratorForFolder#create}.
 
 ---
 
@@ -4712,7 +4712,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#delete OsConfigV2PolicyOrchestratorForFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#delete OsConfigV2PolicyOrchestratorForFolder#delete}.
 
 ---
 
@@ -4724,7 +4724,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#update OsConfigV2PolicyOrchestratorForFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#update OsConfigV2PolicyOrchestratorForFolder#update}.
 
 ---
 

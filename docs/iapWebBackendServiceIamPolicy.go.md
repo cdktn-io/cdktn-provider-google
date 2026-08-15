@@ -4,7 +4,7 @@
 
 ### IapWebBackendServiceIamPolicy <a name="IapWebBackendServiceIamPolicy" id="@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IapWebBackendServiceIamPol
 
 The id of the existing IapWebBackendServiceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,10 +830,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iapwebbackendser
 | <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#policy_data IapWebBackendServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.webBackendService">WebBackendService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#web_backend_service IapWebBackendServiceIamPolicy#web_backend_service}. |
-| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#id IapWebBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#project IapWebBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#policy_data IapWebBackendServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.webBackendService">WebBackendService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#web_backend_service IapWebBackendServiceIamPolicy#web_backend_service}. |
+| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#id IapWebBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iapWebBackendServiceIamPolicy.IapWebBackendServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#project IapWebBackendServiceIamPolicy#project}. |
 
 ---
 
@@ -915,7 +915,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#policy_data IapWebBackendServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#policy_data IapWebBackendServiceIamPolicy#policy_data}.
 
 ---
 
@@ -927,7 +927,7 @@ WebBackendService *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#web_backend_service IapWebBackendServiceIamPolicy#web_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#web_backend_service IapWebBackendServiceIamPolicy#web_backend_service}.
 
 ---
 
@@ -939,7 +939,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#id IapWebBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#id IapWebBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,7 +954,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/iap_web_backend_service_iam_policy#project IapWebBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_web_backend_service_iam_policy#project IapWebBackendServiceIamPolicy#project}.
 
 ---
 

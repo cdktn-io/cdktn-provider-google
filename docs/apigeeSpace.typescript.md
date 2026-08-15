@@ -4,7 +4,7 @@
 
 ### ApigeeSpace <a name="ApigeeSpace" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space google_apigee_space}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space google_apigee_space}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSpace.ApigeeSpace.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ApigeeSpace to import.
 
 The id of the existing ApigeeSpace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ const apigeeSpaceConfig: apigeeSpace.ApigeeSpaceConfig = { ... }
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.orgId">orgId</a></code> | <code>string</code> | The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.spaceId">spaceId</a></code> | <code>string</code> | Space ID of the Apigee Space. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#id ApigeeSpace#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts">ApigeeSpaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -993,7 +993,7 @@ public readonly displayName: string;
 
 The display name of the Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#display_name ApigeeSpace#display_name}
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly orgId: string;
 
 The Apigee Organization associated with the Apigee Space, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#org_id ApigeeSpace#org_id}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly spaceId: string;
 
 Space ID of the Apigee Space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#space_id ApigeeSpace#space_id}
 
 ---
 
@@ -1043,7 +1043,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#deletion_policy ApigeeSpace#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#deletion_policy ApigeeSpace#deletion_policy}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#id ApigeeSpace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#id ApigeeSpace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public readonly timeouts: ApigeeSpaceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#timeouts ApigeeSpace#timeouts}
 
 ---
 
@@ -1090,9 +1090,9 @@ const apigeeSpaceTimeouts: apigeeSpace.ApigeeSpaceTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#create ApigeeSpace#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#delete ApigeeSpace#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#update ApigeeSpace#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#create ApigeeSpace#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#delete ApigeeSpace#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSpace.ApigeeSpaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#update ApigeeSpace#update}. |
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#create ApigeeSpace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#create ApigeeSpace#create}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#delete ApigeeSpace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#delete ApigeeSpace#delete}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/apigee_space#update ApigeeSpace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_space#update ApigeeSpace#update}.
 
 ---
 

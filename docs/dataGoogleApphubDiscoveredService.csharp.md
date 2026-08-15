@@ -4,7 +4,7 @@
 
 ### DataGoogleApphubDiscoveredService <a name="DataGoogleApphubDiscoveredService" id="@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service google_apphub_discovered_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service google_apphub_discovered_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleApphubDiscovered
 
 The id of the existing DataGoogleApphubDiscoveredService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,10 +728,10 @@ new DataGoogleApphubDiscoveredServiceConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#location DataGoogleApphubDiscoveredService#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.serviceUri">ServiceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#service_uri DataGoogleApphubDiscoveredService#service_uri}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#id DataGoogleApphubDiscoveredService#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#project DataGoogleApphubDiscoveredService#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#location DataGoogleApphubDiscoveredService#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.serviceUri">ServiceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#service_uri DataGoogleApphubDiscoveredService#service_uri}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#id DataGoogleApphubDiscoveredService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#project DataGoogleApphubDiscoveredService#project}. |
 
 ---
 
@@ -813,7 +813,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#location DataGoogleApphubDiscoveredService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#location DataGoogleApphubDiscoveredService#location}.
 
 ---
 
@@ -825,7 +825,7 @@ public string ServiceUri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#service_uri DataGoogleApphubDiscoveredService#service_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#service_uri DataGoogleApphubDiscoveredService#service_uri}.
 
 ---
 
@@ -837,7 +837,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#id DataGoogleApphubDiscoveredService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#id DataGoogleApphubDiscoveredService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -852,7 +852,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/data-sources/apphub_discovered_service#project DataGoogleApphubDiscoveredService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/apphub_discovered_service#project DataGoogleApphubDiscoveredService#project}.
 
 ---
 

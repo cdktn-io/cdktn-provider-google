@@ -4,7 +4,7 @@
 
 ### VertexAiTensorboardExperiment <a name="VertexAiTensorboardExperiment" id="@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperiment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperiment.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the VertexAiTensorboardExperim
 
 The id of the existing VertexAiTensorboardExperiment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1077,9 +1077,9 @@ const vertexAiTensorboardExperimentConfig: vertexAiTensorboardExperiment.VertexA
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.description">description</a></code> | <code>string</code> | Description of this TensorboardExperiment. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.displayName">displayName</a></code> | <code>string</code> | User provided name of this TensorboardExperiment. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The labels with user-defined metadata to organize your TensorboardExperiment. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.source">source</a></code> | <code>string</code> | Source of the TensorboardExperiment. Example: a custom training job. |
 | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts">VertexAiTensorboardExperimentTimeouts</a></code> | timeouts block. |
 
@@ -1165,7 +1165,7 @@ public readonly location: string;
 
 The location of the Tensorboard Experiment. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#location VertexAiTensorboardExperiment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#location VertexAiTensorboardExperiment#location}
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly tensorboard: string;
 
 The Tensorboard instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard VertexAiTensorboardExperiment#tensorboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard VertexAiTensorboardExperiment#tensorboard}
 
 ---
 
@@ -1196,7 +1196,7 @@ The ID to use for the Tensorboard experiment, which becomes the final component 
 This value should be 1-128 characters, and valid characters
 are '/a-z-/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard_experiment_id VertexAiTensorboardExperiment#tensorboard_experiment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard_experiment_id VertexAiTensorboardExperiment#tensorboard_experiment_id}
 
 ---
 
@@ -1218,7 +1218,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#deletion_policy VertexAiTensorboardExperiment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#deletion_policy VertexAiTensorboardExperiment#deletion_policy}
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly description: string;
 
 Description of this TensorboardExperiment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#description VertexAiTensorboardExperiment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#description VertexAiTensorboardExperiment#description}
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly displayName: string;
 
 User provided name of this TensorboardExperiment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#display_name VertexAiTensorboardExperiment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#display_name VertexAiTensorboardExperiment#display_name}
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1291,7 +1291,7 @@ value is the metadata_schema's title.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#labels VertexAiTensorboardExperiment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#labels VertexAiTensorboardExperiment#labels}
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public readonly source: string;
 
 Source of the TensorboardExperiment. Example: a custom training job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#source VertexAiTensorboardExperiment#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#source VertexAiTensorboardExperiment#source}
 
 ---
 
@@ -1331,7 +1331,7 @@ public readonly timeouts: VertexAiTensorboardExperimentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#timeouts VertexAiTensorboardExperiment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#timeouts VertexAiTensorboardExperiment#timeouts}
 
 ---
 
@@ -1349,9 +1349,9 @@ const vertexAiTensorboardExperimentTimeouts: vertexAiTensorboardExperiment.Verte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiTensorboardExperiment.VertexAiTensorboardExperimentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}. |
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}.
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}.
 
 ---
 

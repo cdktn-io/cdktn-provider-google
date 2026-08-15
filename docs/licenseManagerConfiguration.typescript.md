@@ -4,7 +4,7 @@
 
 ### LicenseManagerConfiguration <a name="LicenseManagerConfiguration" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration google_license_manager_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration google_license_manager_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfiguration.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the LicenseManagerConfiguratio
 
 The id of the existing LicenseManagerConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,9 +1052,9 @@ const licenseManagerConfigurationConfig: licenseManagerConfiguration.LicenseMana
 | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.product">product</a></code> | <code>string</code> | Name of the product for which you are setting the license configuration. |
 | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.active">active</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the configuration is active. |
 | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#id LicenseManagerConfiguration#id}. |
+| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#id LicenseManagerConfiguration#id}. |
 | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#project LicenseManagerConfiguration#project}. |
+| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#project LicenseManagerConfiguration#project}. |
 | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts">LicenseManagerConfigurationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1139,7 +1139,7 @@ public readonly configurationId: string;
 
 Id of the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#configuration_id LicenseManagerConfiguration#configuration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#configuration_id LicenseManagerConfiguration#configuration_id}
 
 ---
 
@@ -1155,7 +1155,7 @@ Number of units to bill for.
 
 When licensing a product that is billed per-user, this means number of users. When licensing a product that is billed per-pack (e.g. SQL Server), this means the number of packs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#license_count LicenseManagerConfiguration#license_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#license_count LicenseManagerConfiguration#license_count}
 
 ---
 
@@ -1171,7 +1171,7 @@ The region where the configuration should be created.
 
 This region must be the same where the licensed software will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#location LicenseManagerConfiguration#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#location LicenseManagerConfiguration#location}
 
 ---
 
@@ -1187,7 +1187,7 @@ Name of the product for which you are setting the license configuration.
 
 For supported products see https://docs.cloud.google.com/compute/docs/instances/windows/license-manager#supported-license-products. Available values include Office2021ProfessionalPlus
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#product LicenseManagerConfiguration#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#product LicenseManagerConfiguration#product}
 
 ---
 
@@ -1203,7 +1203,7 @@ Whether the configuration is active.
 
 We suggest you deactivate a configuration instead of deleting it, and allow License Manager to manage deletion of the configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#active LicenseManagerConfiguration#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#active LicenseManagerConfiguration#active}
 
 ---
 
@@ -1225,7 +1225,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#deletion_policy LicenseManagerConfiguration#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#deletion_policy LicenseManagerConfiguration#deletion_policy}
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#id LicenseManagerConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#id LicenseManagerConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,7 +1257,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#labels LicenseManagerConfiguration#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#labels LicenseManagerConfiguration#labels}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#project LicenseManagerConfiguration#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#project LicenseManagerConfiguration#project}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly timeouts: LicenseManagerConfigurationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#timeouts LicenseManagerConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#timeouts LicenseManagerConfiguration#timeouts}
 
 ---
 
@@ -1301,9 +1301,9 @@ const licenseManagerConfigurationTimeouts: licenseManagerConfiguration.LicenseMa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#create LicenseManagerConfiguration#create}. |
-| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#delete LicenseManagerConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#update LicenseManagerConfiguration#update}. |
+| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#create LicenseManagerConfiguration#create}. |
+| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#delete LicenseManagerConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-google.licenseManagerConfiguration.LicenseManagerConfigurationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#update LicenseManagerConfiguration#update}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#create LicenseManagerConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#create LicenseManagerConfiguration#create}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#delete LicenseManagerConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#delete LicenseManagerConfiguration#delete}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/license_manager_configuration#update LicenseManagerConfiguration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/license_manager_configuration#update LicenseManagerConfiguration#update}.
 
 ---
 

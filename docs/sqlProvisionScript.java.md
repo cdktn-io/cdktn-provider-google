@@ -4,7 +4,7 @@
 
 ### SqlProvisionScript <a name="SqlProvisionScript" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script google_sql_provision_script}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script google_sql_provision_script}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer"></a>
 
@@ -25,7 +25,9 @@ SqlProvisionScript.Builder.create(Construct scope, java.lang.String id)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
+//  .passwordSecretVersion(java.lang.String)
 //  .project(java.lang.String)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -45,8 +47,10 @@ SqlProvisionScript.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The name of the database to which Terraform connects. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the resources created by the script. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the provision script. |
-| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.passwordSecretVersion">passwordSecretVersion</a></code> | <code>java.lang.String</code> | The resource name of the Secret Manager secret storing the password. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | The name of the built-in database user to authenticate as. |
 
 ---
 
@@ -116,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Cloud SQL instance. Changing this forces the script to be run on the new instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
 
 ---
 
@@ -132,7 +136,7 @@ You can use statements like "create if not exists …" or
 "if not exists (select …) then … end if" to prevent existence-related errors. If it's not
 possible to make a statement idempotent, you can run it once and then remove it from this script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
 
 ---
 
@@ -148,7 +152,7 @@ required for Postgres instances. It's optional for MySQL, but some of your queri
 a database. You can create and use a database in the script or explicitly reference a
 google_sql_database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
 
 ---
 
@@ -162,7 +166,7 @@ The default is "ABANDON".
 It must be "ABANDON" to allow Terraform to abandon the resources. If you want to delete resources, add statements
 in the script such as "drop … if exists".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
 
 ---
 
@@ -172,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the provision script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
 
 ---
 
@@ -180,10 +184,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `passwordSecretVersion`<sup>Optional</sup> <a name="passwordSecretVersion" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.passwordSecretVersion"></a>
+
+- *Type:* java.lang.String
+
+The resource name of the Secret Manager secret storing the password.
+
+The secret
+should be a regional secret and stored in the exact same region as the Cloud SQL instance.
+Follow https://docs.cloud.google.com/secret-manager/regional-secrets/create-regional-secret.
+When user and password_secret_version are provided, the script is run using this user.
+Otherwise, the script is run using the identity account used to apply your Terraform config.
+Changing this field forces the script to be run again.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#password_secret_version SqlProvisionScript#password_secret_version}
 
 ---
 
@@ -195,7 +216,23 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.Initializer.parameter.user"></a>
+
+- *Type:* java.lang.String
+
+The name of the built-in database user to authenticate as.
+
+For MySQL user,
+omit '@' and the hostname. The user should exist as a built-in user in the database.
+When user and password_secret_version are provided, the script is run using this user. Otherwise,
+the script is run using the identity account used to apply your Terraform config.
+Changing this forces the script to be run using the new user.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#user SqlProvisionScript#user}
 
 ---
 
@@ -231,7 +268,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetPasswordSecretVersion">resetPasswordSecretVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetUser">resetUser</a></code> | *No description.* |
 
 ---
 
@@ -570,10 +609,22 @@ public void resetDescription()
 public void resetId()
 ```
 
+##### `resetPasswordSecretVersion` <a name="resetPasswordSecretVersion" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetPasswordSecretVersion"></a>
+
+```java
+public void resetPasswordSecretVersion()
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetProject"></a>
 
 ```java
 public void resetProject()
+```
+
+##### `resetUser` <a name="resetUser" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.resetUser"></a>
+
+```java
+public void resetUser()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -679,7 +730,7 @@ The construct id used in the generated config for the SqlProvisionScript to impo
 
 The id of the existing SqlProvisionScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -714,15 +765,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.instanceInput">instanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.passwordSecretVersionInput">passwordSecretVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.scriptInput">scriptInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.instance">instance</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.passwordSecretVersion">passwordSecretVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.script">script</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -918,6 +973,16 @@ public java.lang.String getInstanceInput();
 
 ---
 
+##### `passwordSecretVersionInput`<sup>Optional</sup> <a name="passwordSecretVersionInput" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.passwordSecretVersionInput"></a>
+
+```java
+public java.lang.String getPasswordSecretVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.projectInput"></a>
 
 ```java
@@ -932,6 +997,16 @@ public java.lang.String getProjectInput();
 
 ```java
 public java.lang.String getScriptInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `userInput`<sup>Optional</sup> <a name="userInput" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.userInput"></a>
+
+```java
+public java.lang.String getUserInput();
 ```
 
 - *Type:* java.lang.String
@@ -988,6 +1063,16 @@ public java.lang.String getInstance();
 
 ---
 
+##### `passwordSecretVersion`<sup>Required</sup> <a name="passwordSecretVersion" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.passwordSecretVersion"></a>
+
+```java
+public java.lang.String getPasswordSecretVersion();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.project"></a>
 
 ```java
@@ -1002,6 +1087,16 @@ public java.lang.String getProject();
 
 ```java
 public java.lang.String getScript();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `user`<sup>Required</sup> <a name="user" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScript.property.user"></a>
+
+```java
+public java.lang.String getUser();
 ```
 
 - *Type:* java.lang.String
@@ -1049,7 +1144,9 @@ SqlProvisionScriptConfig.builder()
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
+//  .passwordSecretVersion(java.lang.String)
 //  .project(java.lang.String)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -1069,8 +1166,10 @@ SqlProvisionScriptConfig.builder()
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.database">database</a></code> | <code>java.lang.String</code> | The name of the database to which Terraform connects. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the resources created by the script. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the provision script. |
-| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.passwordSecretVersion">passwordSecretVersion</a></code> | <code>java.lang.String</code> | The resource name of the Secret Manager secret storing the password. |
 | <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.user">user</a></code> | <code>java.lang.String</code> | The name of the built-in database user to authenticate as. |
 
 ---
 
@@ -1154,7 +1253,7 @@ public java.lang.String getInstance();
 
 The name of the Cloud SQL instance. Changing this forces the script to be run on the new instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#instance SqlProvisionScript#instance}
 
 ---
 
@@ -1174,7 +1273,7 @@ You can use statements like "create if not exists …" or
 "if not exists (select …) then … end if" to prevent existence-related errors. If it's not
 possible to make a statement idempotent, you can run it once and then remove it from this script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#script SqlProvisionScript#script}
 
 ---
 
@@ -1194,7 +1293,7 @@ required for Postgres instances. It's optional for MySQL, but some of your queri
 a database. You can create and use a database in the script or explicitly reference a
 google_sql_database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#database SqlProvisionScript#database}
 
 ---
 
@@ -1212,7 +1311,7 @@ The default is "ABANDON".
 It must be "ABANDON" to allow Terraform to abandon the resources. If you want to delete resources, add statements
 in the script such as "drop … if exists".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#deletion_policy SqlProvisionScript#deletion_policy}
 
 ---
 
@@ -1226,7 +1325,7 @@ public java.lang.String getDescription();
 
 The description of the provision script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#description SqlProvisionScript#description}
 
 ---
 
@@ -1238,10 +1337,31 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#id SqlProvisionScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `passwordSecretVersion`<sup>Optional</sup> <a name="passwordSecretVersion" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.passwordSecretVersion"></a>
+
+```java
+public java.lang.String getPasswordSecretVersion();
+```
+
+- *Type:* java.lang.String
+
+The resource name of the Secret Manager secret storing the password.
+
+The secret
+should be a regional secret and stored in the exact same region as the Cloud SQL instance.
+Follow https://docs.cloud.google.com/secret-manager/regional-secrets/create-regional-secret.
+When user and password_secret_version are provided, the script is run using this user.
+Otherwise, the script is run using the identity account used to apply your Terraform config.
+Changing this field forces the script to be run again.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#password_secret_version SqlProvisionScript#password_secret_version}
 
 ---
 
@@ -1257,7 +1377,27 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.43.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#project SqlProvisionScript#project}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktn/provider-google.sqlProvisionScript.SqlProvisionScriptConfig.property.user"></a>
+
+```java
+public java.lang.String getUser();
+```
+
+- *Type:* java.lang.String
+
+The name of the built-in database user to authenticate as.
+
+For MySQL user,
+omit '@' and the hostname. The user should exist as a built-in user in the database.
+When user and password_secret_version are provided, the script is run using this user. Otherwise,
+the script is run using the identity account used to apply your Terraform config.
+Changing this forces the script to be run using the new user.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/sql_provision_script#user SqlProvisionScript#user}
 
 ---
 
