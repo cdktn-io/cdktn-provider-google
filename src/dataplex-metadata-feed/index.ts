@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface DataplexMetadataFeedConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#deletion_policy DataplexMetadataFeed#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#deletion_policy DataplexMetadataFeed#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#id DataplexMetadataFeed#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#id DataplexMetadataFeed#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,47 +37,47 @@ export interface DataplexMetadataFeedConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#labels DataplexMetadataFeed#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#labels DataplexMetadataFeed#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#location DataplexMetadataFeed#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#location DataplexMetadataFeed#location}
   */
   readonly location: string;
   /**
   * The metadata job ID. If not provided, a unique ID is generated with the prefix metadata-job-.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#metadata_feed_id DataplexMetadataFeed#metadata_feed_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#metadata_feed_id DataplexMetadataFeed#metadata_feed_id}
   */
   readonly metadataFeedId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#project DataplexMetadataFeed#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#project DataplexMetadataFeed#project}
   */
   readonly project?: string;
   /**
   * The pubsub topic that you want the metadata feed messages to publish to. Please grant Dataplex service account the permission to publish messages to the topic. The service account is: service-{PROJECT_NUMBER}@gcp-sa-dataplex.iam.gserviceaccount.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#pubsub_topic DataplexMetadataFeed#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#pubsub_topic DataplexMetadataFeed#pubsub_topic}
   */
   readonly pubsubTopic?: string;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#filters DataplexMetadataFeed#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#filters DataplexMetadataFeed#filters}
   */
   readonly filters?: DataplexMetadataFeedFilters;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#scope DataplexMetadataFeed#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#scope DataplexMetadataFeed#scope}
   */
   readonly scope: DataplexMetadataFeedScope;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#timeouts DataplexMetadataFeed#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#timeouts DataplexMetadataFeed#timeouts}
   */
   readonly timeouts?: DataplexMetadataFeedTimeouts;
 }
@@ -85,19 +85,19 @@ export interface DataplexMetadataFeedFilters {
   /**
   * The aspect types that you want to listen to. Depending on how the aspect is attached to the entry, in the format: projects/{project_id_or_number}/locations/{location}/aspectTypes/{aspect_type_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#aspect_types DataplexMetadataFeed#aspect_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#aspect_types DataplexMetadataFeed#aspect_types}
   */
   readonly aspectTypes?: string[];
   /**
   * The type of change that you want to listen to. If not specified, all changes are published.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#change_types DataplexMetadataFeed#change_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#change_types DataplexMetadataFeed#change_types}
   */
   readonly changeTypes?: string[];
   /**
   * The entry types that you want to listen to, specified as relative resource names in the format projects/{project_id_or_number}/locations/{location}/entryTypes/{entry_type_id}. Only entries that belong to the specified entry types are published.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#entry_types DataplexMetadataFeed#entry_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#entry_types DataplexMetadataFeed#entry_types}
   */
   readonly entryTypes?: string[];
 }
@@ -241,7 +241,7 @@ export interface DataplexMetadataFeedScope {
   /**
   * The entry groups whose entries you want to listen to. Must be in the format: projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#entry_groups DataplexMetadataFeed#entry_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#entry_groups DataplexMetadataFeed#entry_groups}
   */
   readonly entryGroups?: string[];
   /**
@@ -249,13 +249,13 @@ export interface DataplexMetadataFeedScope {
   * If true, all changes happened to the entries in the same organization as the feed are published.
   * If false, you must specify a list of projects or a list of entry groups whose entries you want to listen to.The default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#organization_level DataplexMetadataFeed#organization_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#organization_level DataplexMetadataFeed#organization_level}
   */
   readonly organizationLevel?: boolean | cdktn.IResolvable;
   /**
   * The projects whose entries you want to listen to. Must be in the same organization as the feed. Must be in the format: projects/{project_id_or_number}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#projects DataplexMetadataFeed#projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#projects DataplexMetadataFeed#projects}
   */
   readonly projects?: string[];
 }
@@ -397,15 +397,15 @@ export class DataplexMetadataFeedScopeOutputReference extends cdktn.ComplexObjec
 }
 export interface DataplexMetadataFeedTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#create DataplexMetadataFeed#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#create DataplexMetadataFeed#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#delete DataplexMetadataFeed#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#delete DataplexMetadataFeed#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#update DataplexMetadataFeed#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#update DataplexMetadataFeed#update}
   */
   readonly update?: string;
 }
@@ -557,7 +557,7 @@ export class DataplexMetadataFeedTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed google_dataplex_metadata_feed}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed google_dataplex_metadata_feed}
 */
 export class DataplexMetadataFeed extends cdktn.TerraformResource {
 
@@ -573,7 +573,7 @@ export class DataplexMetadataFeed extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexMetadataFeed resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexMetadataFeed to import
-  * @param importFromId The id of the existing DataplexMetadataFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexMetadataFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexMetadataFeed to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -585,7 +585,7 @@ export class DataplexMetadataFeed extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_metadata_feed google_dataplex_metadata_feed} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_metadata_feed google_dataplex_metadata_feed} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -596,7 +596,7 @@ export class DataplexMetadataFeed extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_metadata_feed',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -28,6 +28,7 @@ Object.defineProperty(exports, 'activeDirectoryDomainTrust', { get: function () 
 Object.defineProperty(exports, 'agentIdentityAuthProvider', { get: function () { return require('./agent-identity-auth-provider'); } });
 Object.defineProperty(exports, 'agentRegistryBinding', { get: function () { return require('./agent-registry-binding'); } });
 Object.defineProperty(exports, 'agentRegistryService', { get: function () { return require('./agent-registry-service'); } });
+Object.defineProperty(exports, 'agenticApplicationsAnalystAgentPersona', { get: function () { return require('./agentic-applications-analyst-agent-persona'); } });
 Object.defineProperty(exports, 'alloydbBackup', { get: function () { return require('./alloydb-backup'); } });
 Object.defineProperty(exports, 'alloydbCluster', { get: function () { return require('./alloydb-cluster'); } });
 Object.defineProperty(exports, 'alloydbInstance', { get: function () { return require('./alloydb-instance'); } });
@@ -732,6 +733,7 @@ Object.defineProperty(exports, 'firebaseRemoteConfigRemoteConfig', { get: functi
 Object.defineProperty(exports, 'firebaserulesRelease', { get: function () { return require('./firebaserules-release'); } });
 Object.defineProperty(exports, 'firebaserulesRuleset', { get: function () { return require('./firebaserules-ruleset'); } });
 Object.defineProperty(exports, 'firestoreBackupSchedule', { get: function () { return require('./firestore-backup-schedule'); } });
+Object.defineProperty(exports, 'firestoreChangeStream', { get: function () { return require('./firestore-change-stream'); } });
 Object.defineProperty(exports, 'firestoreDatabase', { get: function () { return require('./firestore-database'); } });
 Object.defineProperty(exports, 'firestoreDocument', { get: function () { return require('./firestore-document'); } });
 Object.defineProperty(exports, 'firestoreField', { get: function () { return require('./firestore-field'); } });
@@ -1613,6 +1615,7 @@ Object.defineProperty(exports, 'dataGoogleIamTestablePermissions', { get: functi
 Object.defineProperty(exports, 'dataGoogleIamWorkforcePoolIamPolicy', { get: function () { return require('./data-google-iam-workforce-pool-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPool', { get: function () { return require('./data-google-iam-workload-identity-pool'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolIamPolicy', { get: function () { return require('./data-google-iam-workload-identity-pool-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolOpenidConfig', { get: function () { return require('./data-google-iam-workload-identity-pool-openid-config'); } });
 Object.defineProperty(exports, 'dataGoogleIamWorkloadIdentityPoolProvider', { get: function () { return require('./data-google-iam-workload-identity-pool-provider'); } });
 Object.defineProperty(exports, 'dataGoogleIapAgentRegistryAgentIamPolicy', { get: function () { return require('./data-google-iap-agent-registry-agent-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleIapAgentRegistryEndpointIamPolicy', { get: function () { return require('./data-google-iap-agent-registry-endpoint-iam-policy'); } });

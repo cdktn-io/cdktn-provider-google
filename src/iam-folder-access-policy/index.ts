@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface IamFolderAccessPolicyConfig extends cdktn.TerraformMetaArgument
   * /a-z{2,62}/.
   * This value must be unique among all access policies with the same parent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
   */
   readonly accessPolicyId: string;
   /**
@@ -31,7 +31,7 @@ export interface IamFolderAccessPolicyConfig extends cdktn.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -43,24 +43,24 @@ export interface IamFolderAccessPolicyConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the access policy. Must be less than
   * or equal to 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
   */
   readonly displayName?: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -69,19 +69,19 @@ export interface IamFolderAccessPolicyConfig extends cdktn.TerraformMetaArgument
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
   */
   readonly location: string;
   /**
   * details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
   */
   readonly details?: IamFolderAccessPolicyDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
   */
   readonly timeouts?: IamFolderAccessPolicyTimeouts;
 }
@@ -90,11 +90,11 @@ export interface IamFolderAccessPolicyDetailsRulesConditions {
   * Textual representation of an expression in Common Expression Language
   * syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#expression IamFolderAccessPolicy#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#expression IamFolderAccessPolicy#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}
   */
   readonly service: string;
 }
@@ -243,7 +243,7 @@ export interface IamFolderAccessPolicyDetailsRulesOperation {
   * The excluded permissions can be specified using the same syntax as
   * 'permissions'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
   */
   readonly excludedPermissions?: string[];
   /**
@@ -253,7 +253,7 @@ export interface IamFolderAccessPolicyDetailsRulesOperation {
   * Currently supported permissions are as follows:
   * * 'eventarc.googleapis.com/messageBuses.publish'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
   */
   readonly permissions: string[];
 }
@@ -366,7 +366,7 @@ export interface IamFolderAccessPolicyDetailsRules {
   * Customer specified description of the rule. Must be less than or equal to
   * 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#description IamFolderAccessPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#description IamFolderAccessPolicy#description}
   */
   readonly description?: string;
   /**
@@ -375,7 +375,7 @@ export interface IamFolderAccessPolicyDetailsRules {
   * DENY
   * ALLOW Possible values: ["DENY", "ALLOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#effect IamFolderAccessPolicy#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#effect IamFolderAccessPolicy#effect}
   */
   readonly effect: string;
   /**
@@ -384,7 +384,7 @@ export interface IamFolderAccessPolicyDetailsRules {
   * group to the 'principals', then exclude specific users who belong to
   * that group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#excluded_principals IamFolderAccessPolicy#excluded_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#excluded_principals IamFolderAccessPolicy#excluded_principals}
   */
   readonly excludedPrincipals?: string[];
   /**
@@ -422,19 +422,19 @@ export interface IamFolderAccessPolicyDetailsRules {
   * If the service account is undeleted, this identifier reverts to the
   * standard identifier for a service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#principals IamFolderAccessPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#principals IamFolderAccessPolicy#principals}
   */
   readonly principals: string[];
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#conditions IamFolderAccessPolicy#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#conditions IamFolderAccessPolicy#conditions}
   */
   readonly conditions?: IamFolderAccessPolicyDetailsRulesConditions[] | cdktn.IResolvable;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#operation IamFolderAccessPolicy#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#operation IamFolderAccessPolicy#operation}
   */
   readonly operation: IamFolderAccessPolicyDetailsRulesOperation;
 }
@@ -688,7 +688,7 @@ export interface IamFolderAccessPolicyDetails {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
   */
   readonly rules: IamFolderAccessPolicyDetailsRules[] | cdktn.IResolvable;
 }
@@ -769,15 +769,15 @@ export class IamFolderAccessPolicyDetailsOutputReference extends cdktn.ComplexOb
 }
 export interface IamFolderAccessPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}
   */
   readonly update?: string;
 }
@@ -929,7 +929,7 @@ export class IamFolderAccessPolicyTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy google_iam_folder_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy google_iam_folder_access_policy}
 */
 export class IamFolderAccessPolicy extends cdktn.TerraformResource {
 
@@ -945,7 +945,7 @@ export class IamFolderAccessPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IamFolderAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamFolderAccessPolicy to import
-  * @param importFromId The id of the existing IamFolderAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamFolderAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamFolderAccessPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -957,7 +957,7 @@ export class IamFolderAccessPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_folder_access_policy google_iam_folder_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_folder_access_policy google_iam_folder_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -968,7 +968,7 @@ export class IamFolderAccessPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_iam_folder_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

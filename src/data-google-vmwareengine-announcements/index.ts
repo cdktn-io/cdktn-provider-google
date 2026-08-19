@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVmwareengineAnnouncementsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleVmwareengineAnnouncementsConfig extends cdktn.Terrafo
   /**
   * The resource name of the specific Announcements to retrieve. If provided, the 'announcements' list will contain only this announcement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements#name DataGoogleVmwareengineAnnouncements#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements#name DataGoogleVmwareengineAnnouncements#name}
   */
   readonly name?: string;
   /**
   * Required. The resource name of the location to be queried for announcements. Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names. For example: projects/my-project/locations/us-west1-a
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements#parent DataGoogleVmwareengineAnnouncements#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements#parent DataGoogleVmwareengineAnnouncements#parent}
   */
   readonly parent: string;
 }
@@ -125,7 +125,7 @@ export class DataGoogleVmwareengineAnnouncementsAnnouncementsList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements}
 */
 export class DataGoogleVmwareengineAnnouncements extends cdktn.TerraformDataSource {
 
@@ -141,7 +141,7 @@ export class DataGoogleVmwareengineAnnouncements extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataGoogleVmwareengineAnnouncements resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineAnnouncements to import
-  * @param importFromId The id of the existing DataGoogleVmwareengineAnnouncements that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVmwareengineAnnouncements that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineAnnouncements to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class DataGoogleVmwareengineAnnouncements extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class DataGoogleVmwareengineAnnouncements extends cdktn.TerraformDataSour
       terraformResourceType: 'google_vmwareengine_announcements',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

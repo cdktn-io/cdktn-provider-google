@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface CloudAssetFolderFeedConfig extends cdktn.TerraformMetaArguments
   * exported to the feed. For example: //compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1.
   * See https://cloud.google.com/apis/design/resourceNames#fullResourceName for more info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#asset_names CloudAssetFolderFeed#asset_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#asset_names CloudAssetFolderFeed#asset_names}
   */
   readonly assetNames?: string[];
   /**
@@ -28,7 +28,7 @@ export interface CloudAssetFolderFeedConfig extends cdktn.TerraformMetaArguments
   * See https://cloud.google.com/asset-inventory/docs/supported-asset-types for a list of all
   * supported asset types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#asset_types CloudAssetFolderFeed#asset_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#asset_types CloudAssetFolderFeed#asset_types}
   */
   readonly assetTypes?: string[];
   /**
@@ -36,13 +36,13 @@ export interface CloudAssetFolderFeedConfig extends cdktn.TerraformMetaArguments
   * destination pubsub topic. It also specifies the project for API
   * enablement check, quota, and billing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#billing_project CloudAssetFolderFeed#billing_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#billing_project CloudAssetFolderFeed#billing_project}
   */
   readonly billingProject: string;
   /**
   * Asset content type. If not specified, no content but the asset name and type will be returned. Possible values: ["CONTENT_TYPE_UNSPECIFIED", "RESOURCE", "IAM_POLICY", "ORG_POLICY", "OS_INVENTORY", "ACCESS_POLICY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#content_type CloudAssetFolderFeed#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#content_type CloudAssetFolderFeed#content_type}
   */
   readonly contentType?: string;
   /**
@@ -54,23 +54,23 @@ export interface CloudAssetFolderFeedConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#deletion_policy CloudAssetFolderFeed#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#deletion_policy CloudAssetFolderFeed#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * This is the client-assigned asset feed identifier and it needs to be unique under a specific parent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#feed_id CloudAssetFolderFeed#feed_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#feed_id CloudAssetFolderFeed#feed_id}
   */
   readonly feedId: string;
   /**
   * The folder this feed should be created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#folder CloudAssetFolderFeed#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#folder CloudAssetFolderFeed#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#id CloudAssetFolderFeed#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#id CloudAssetFolderFeed#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -79,19 +79,19 @@ export interface CloudAssetFolderFeedConfig extends cdktn.TerraformMetaArguments
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#condition CloudAssetFolderFeed#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#condition CloudAssetFolderFeed#condition}
   */
   readonly condition?: CloudAssetFolderFeedCondition;
   /**
   * feed_output_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#feed_output_config CloudAssetFolderFeed#feed_output_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#feed_output_config CloudAssetFolderFeed#feed_output_config}
   */
   readonly feedOutputConfig: CloudAssetFolderFeedFeedOutputConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#timeouts CloudAssetFolderFeed#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#timeouts CloudAssetFolderFeed#timeouts}
   */
   readonly timeouts?: CloudAssetFolderFeedTimeouts;
 }
@@ -100,27 +100,27 @@ export interface CloudAssetFolderFeedCondition {
   * Description of the expression. This is a longer text which describes the expression,
   * e.g. when hovered over it in a UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#description CloudAssetFolderFeed#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#description CloudAssetFolderFeed#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#expression CloudAssetFolderFeed#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#expression CloudAssetFolderFeed#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting, e.g. a file
   * name and a position in the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#location CloudAssetFolderFeed#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#location CloudAssetFolderFeed#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
   * This can be used e.g. in UIs which allow to enter the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#title CloudAssetFolderFeed#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#title CloudAssetFolderFeed#title}
   */
   readonly title?: string;
 }
@@ -290,7 +290,7 @@ export interface CloudAssetFolderFeedFeedOutputConfigPubsubDestination {
   /**
   * Destination on Cloud Pubsub topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#topic CloudAssetFolderFeed#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#topic CloudAssetFolderFeed#topic}
   */
   readonly topic: string;
 }
@@ -373,7 +373,7 @@ export interface CloudAssetFolderFeedFeedOutputConfig {
   /**
   * pubsub_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#pubsub_destination CloudAssetFolderFeed#pubsub_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#pubsub_destination CloudAssetFolderFeed#pubsub_destination}
   */
   readonly pubsubDestination: CloudAssetFolderFeedFeedOutputConfigPubsubDestination;
 }
@@ -454,15 +454,15 @@ export class CloudAssetFolderFeedFeedOutputConfigOutputReference extends cdktn.C
 }
 export interface CloudAssetFolderFeedTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#create CloudAssetFolderFeed#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#create CloudAssetFolderFeed#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#delete CloudAssetFolderFeed#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#delete CloudAssetFolderFeed#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#update CloudAssetFolderFeed#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#update CloudAssetFolderFeed#update}
   */
   readonly update?: string;
 }
@@ -614,7 +614,7 @@ export class CloudAssetFolderFeedTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}
 */
 export class CloudAssetFolderFeed extends cdktn.TerraformResource {
 
@@ -630,7 +630,7 @@ export class CloudAssetFolderFeed extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudAssetFolderFeed resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAssetFolderFeed to import
-  * @param importFromId The id of the existing CloudAssetFolderFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAssetFolderFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAssetFolderFeed to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -642,7 +642,7 @@ export class CloudAssetFolderFeed extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -653,7 +653,7 @@ export class CloudAssetFolderFeed extends cdktn.TerraformResource {
       terraformResourceType: 'google_cloud_asset_folder_feed',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

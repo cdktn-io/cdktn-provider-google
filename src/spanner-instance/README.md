@@ -1,3 +1,3 @@
 # `google_spanner_instance`
 
-Refer to the Terraform Registry for docs: [`google_spanner_instance`](https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/spanner_instance).
+Refer to the Terraform Registry for docs: [`google_spanner_instance`](https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_instance).

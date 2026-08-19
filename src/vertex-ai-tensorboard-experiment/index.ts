@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface VertexAiTensorboardExperimentConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#deletion_policy VertexAiTensorboardExperiment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#deletion_policy VertexAiTensorboardExperiment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of this TensorboardExperiment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#description VertexAiTensorboardExperiment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#description VertexAiTensorboardExperiment#description}
   */
   readonly description?: string;
   /**
   * User provided name of this TensorboardExperiment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#display_name VertexAiTensorboardExperiment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#display_name VertexAiTensorboardExperiment#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#id VertexAiTensorboardExperiment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,29 +63,29 @@ export interface VertexAiTensorboardExperimentConfig extends cdktn.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#labels VertexAiTensorboardExperiment#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#labels VertexAiTensorboardExperiment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the Tensorboard Experiment. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#location VertexAiTensorboardExperiment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#location VertexAiTensorboardExperiment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#project VertexAiTensorboardExperiment#project}
   */
   readonly project?: string;
   /**
   * Source of the TensorboardExperiment. Example: a custom training job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#source VertexAiTensorboardExperiment#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#source VertexAiTensorboardExperiment#source}
   */
   readonly source?: string;
   /**
   * The Tensorboard instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard VertexAiTensorboardExperiment#tensorboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard VertexAiTensorboardExperiment#tensorboard}
   */
   readonly tensorboard: string;
   /**
@@ -95,27 +95,27 @@ export interface VertexAiTensorboardExperimentConfig extends cdktn.TerraformMeta
   * This value should be 1-128 characters, and valid characters
   * are '/a-z-/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard_experiment_id VertexAiTensorboardExperiment#tensorboard_experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#tensorboard_experiment_id VertexAiTensorboardExperiment#tensorboard_experiment_id}
   */
   readonly tensorboardExperimentId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#timeouts VertexAiTensorboardExperiment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#timeouts VertexAiTensorboardExperiment#timeouts}
   */
   readonly timeouts?: VertexAiTensorboardExperimentTimeouts;
 }
 export interface VertexAiTensorboardExperimentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#create VertexAiTensorboardExperiment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#delete VertexAiTensorboardExperiment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#update VertexAiTensorboardExperiment#update}
   */
   readonly update?: string;
 }
@@ -267,7 +267,7 @@ export class VertexAiTensorboardExperimentTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment}
 */
 export class VertexAiTensorboardExperiment extends cdktn.TerraformResource {
 
@@ -283,7 +283,7 @@ export class VertexAiTensorboardExperiment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiTensorboardExperiment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiTensorboardExperiment to import
-  * @param importFromId The id of the existing VertexAiTensorboardExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiTensorboardExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiTensorboardExperiment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -295,7 +295,7 @@ export class VertexAiTensorboardExperiment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_tensorboard_experiment google_vertex_ai_tensorboard_experiment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -306,7 +306,7 @@ export class VertexAiTensorboardExperiment extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_tensorboard_experiment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

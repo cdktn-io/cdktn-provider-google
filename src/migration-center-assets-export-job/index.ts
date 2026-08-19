@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface MigrationCenterAssetsExportJobConfig extends cdktn.TerraformMet
   /**
   * The ID to use for the asset export job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#assets_export_job_id MigrationCenterAssetsExportJob#assets_export_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#assets_export_job_id MigrationCenterAssetsExportJob#assets_export_job_id}
   */
   readonly assetsExportJobId: string;
   /**
@@ -27,11 +27,11 @@ export interface MigrationCenterAssetsExportJobConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#deletion_policy MigrationCenterAssetsExportJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#deletion_policy MigrationCenterAssetsExportJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,48 +53,48 @@ export interface MigrationCenterAssetsExportJobConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#labels MigrationCenterAssetsExportJob#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#labels MigrationCenterAssetsExportJob#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#location MigrationCenterAssetsExportJob#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#location MigrationCenterAssetsExportJob#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}
   */
   readonly project?: string;
   /**
   * When this value is set to 'true' the response will include all assets,
   * including those that are hidden.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#show_hidden MigrationCenterAssetsExportJob#show_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#show_hidden MigrationCenterAssetsExportJob#show_hidden}
   */
   readonly showHidden?: boolean | cdktn.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#condition MigrationCenterAssetsExportJob#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#condition MigrationCenterAssetsExportJob#condition}
   */
   readonly condition?: MigrationCenterAssetsExportJobCondition;
   /**
   * performance_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#performance_data MigrationCenterAssetsExportJob#performance_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#performance_data MigrationCenterAssetsExportJob#performance_data}
   */
   readonly performanceData?: MigrationCenterAssetsExportJobPerformanceData;
   /**
   * signed_uri_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#signed_uri_destination MigrationCenterAssetsExportJob#signed_uri_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#signed_uri_destination MigrationCenterAssetsExportJob#signed_uri_destination}
   */
   readonly signedUriDestination?: MigrationCenterAssetsExportJobSignedUriDestination;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#timeouts MigrationCenterAssetsExportJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#timeouts MigrationCenterAssetsExportJob#timeouts}
   */
   readonly timeouts?: MigrationCenterAssetsExportJobTimeouts;
 }
@@ -1228,7 +1228,7 @@ export interface MigrationCenterAssetsExportJobCondition {
   /**
   * Assets filter, supports the same syntax as asset listing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#filter MigrationCenterAssetsExportJob#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#filter MigrationCenterAssetsExportJob#filter}
   */
   readonly filter?: string;
 }
@@ -1319,7 +1319,7 @@ export interface MigrationCenterAssetsExportJobPerformanceData {
   * The maximum value is 420; values above 420 will be coerced to 420.
   * If unset (0 value) a default value of 40 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#max_days MigrationCenterAssetsExportJob#max_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#max_days MigrationCenterAssetsExportJob#max_days}
   */
   readonly maxDays?: number;
 }
@@ -1408,7 +1408,7 @@ export interface MigrationCenterAssetsExportJobSignedUriDestination {
   * CSV
   * XLSX
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#file_format MigrationCenterAssetsExportJob#file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#file_format MigrationCenterAssetsExportJob#file_format}
   */
   readonly fileFormat: string;
 }
@@ -1489,15 +1489,15 @@ export class MigrationCenterAssetsExportJobSignedUriDestinationOutputReference e
 }
 export interface MigrationCenterAssetsExportJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}
   */
   readonly update?: string;
 }
@@ -1649,7 +1649,7 @@ export class MigrationCenterAssetsExportJobTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job}
 */
 export class MigrationCenterAssetsExportJob extends cdktn.TerraformResource {
 
@@ -1665,7 +1665,7 @@ export class MigrationCenterAssetsExportJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MigrationCenterAssetsExportJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MigrationCenterAssetsExportJob to import
-  * @param importFromId The id of the existing MigrationCenterAssetsExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MigrationCenterAssetsExportJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MigrationCenterAssetsExportJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1677,7 +1677,7 @@ export class MigrationCenterAssetsExportJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1688,7 +1688,7 @@ export class MigrationCenterAssetsExportJob extends cdktn.TerraformResource {
       terraformResourceType: 'google_migration_center_assets_export_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

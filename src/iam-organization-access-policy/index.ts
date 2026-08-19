@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,7 +21,7 @@ export interface IamOrganizationAccessPolicyConfig extends cdktn.TerraformMetaAr
   * /a-z{2,62}/.
   * This value must be unique among all access policies with the same parent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#access_policy_id IamOrganizationAccessPolicy#access_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#access_policy_id IamOrganizationAccessPolicy#access_policy_id}
   */
   readonly accessPolicyId: string;
   /**
@@ -31,7 +31,7 @@ export interface IamOrganizationAccessPolicyConfig extends cdktn.TerraformMetaAr
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#annotations IamOrganizationAccessPolicy#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#annotations IamOrganizationAccessPolicy#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -43,18 +43,18 @@ export interface IamOrganizationAccessPolicyConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#deletion_policy IamOrganizationAccessPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#deletion_policy IamOrganizationAccessPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the access policy. Must be less than
   * or equal to 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#display_name IamOrganizationAccessPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#display_name IamOrganizationAccessPolicy#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#id IamOrganizationAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#id IamOrganizationAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,25 +63,25 @@ export interface IamOrganizationAccessPolicyConfig extends cdktn.TerraformMetaAr
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#location IamOrganizationAccessPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#location IamOrganizationAccessPolicy#location}
   */
   readonly location: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#organization IamOrganizationAccessPolicy#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#organization IamOrganizationAccessPolicy#organization}
   */
   readonly organization: string;
   /**
   * details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#details IamOrganizationAccessPolicy#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#details IamOrganizationAccessPolicy#details}
   */
   readonly details?: IamOrganizationAccessPolicyDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#timeouts IamOrganizationAccessPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#timeouts IamOrganizationAccessPolicy#timeouts}
   */
   readonly timeouts?: IamOrganizationAccessPolicyTimeouts;
 }
@@ -90,11 +90,11 @@ export interface IamOrganizationAccessPolicyDetailsRulesConditions {
   * Textual representation of an expression in Common Expression Language
   * syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#expression IamOrganizationAccessPolicy#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#expression IamOrganizationAccessPolicy#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#service IamOrganizationAccessPolicy#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#service IamOrganizationAccessPolicy#service}
   */
   readonly service: string;
 }
@@ -243,7 +243,7 @@ export interface IamOrganizationAccessPolicyDetailsRulesOperation {
   * The excluded permissions can be specified using the same syntax as
   * 'permissions'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#excluded_permissions IamOrganizationAccessPolicy#excluded_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#excluded_permissions IamOrganizationAccessPolicy#excluded_permissions}
   */
   readonly excludedPermissions?: string[];
   /**
@@ -253,7 +253,7 @@ export interface IamOrganizationAccessPolicyDetailsRulesOperation {
   * Currently supported permissions are as follows:
   * * 'eventarc.googleapis.com/messageBuses.publish'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#permissions IamOrganizationAccessPolicy#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#permissions IamOrganizationAccessPolicy#permissions}
   */
   readonly permissions: string[];
 }
@@ -366,7 +366,7 @@ export interface IamOrganizationAccessPolicyDetailsRules {
   * Customer specified description of the rule. Must be less than or equal to
   * 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#description IamOrganizationAccessPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#description IamOrganizationAccessPolicy#description}
   */
   readonly description?: string;
   /**
@@ -375,7 +375,7 @@ export interface IamOrganizationAccessPolicyDetailsRules {
   * DENY
   * ALLOW Possible values: ["DENY", "ALLOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#effect IamOrganizationAccessPolicy#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#effect IamOrganizationAccessPolicy#effect}
   */
   readonly effect: string;
   /**
@@ -384,7 +384,7 @@ export interface IamOrganizationAccessPolicyDetailsRules {
   * group to the 'principals', then exclude specific users who belong to
   * that group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#excluded_principals IamOrganizationAccessPolicy#excluded_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#excluded_principals IamOrganizationAccessPolicy#excluded_principals}
   */
   readonly excludedPrincipals?: string[];
   /**
@@ -422,19 +422,19 @@ export interface IamOrganizationAccessPolicyDetailsRules {
   * If the service account is undeleted, this identifier reverts to the
   * standard identifier for a service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#principals IamOrganizationAccessPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#principals IamOrganizationAccessPolicy#principals}
   */
   readonly principals: string[];
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#conditions IamOrganizationAccessPolicy#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#conditions IamOrganizationAccessPolicy#conditions}
   */
   readonly conditions?: IamOrganizationAccessPolicyDetailsRulesConditions[] | cdktn.IResolvable;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#operation IamOrganizationAccessPolicy#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#operation IamOrganizationAccessPolicy#operation}
   */
   readonly operation: IamOrganizationAccessPolicyDetailsRulesOperation;
 }
@@ -688,7 +688,7 @@ export interface IamOrganizationAccessPolicyDetails {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#rules IamOrganizationAccessPolicy#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#rules IamOrganizationAccessPolicy#rules}
   */
   readonly rules: IamOrganizationAccessPolicyDetailsRules[] | cdktn.IResolvable;
 }
@@ -769,15 +769,15 @@ export class IamOrganizationAccessPolicyDetailsOutputReference extends cdktn.Com
 }
 export interface IamOrganizationAccessPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#create IamOrganizationAccessPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#create IamOrganizationAccessPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#delete IamOrganizationAccessPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#delete IamOrganizationAccessPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#update IamOrganizationAccessPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#update IamOrganizationAccessPolicy#update}
   */
   readonly update?: string;
 }
@@ -929,7 +929,7 @@ export class IamOrganizationAccessPolicyTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy google_iam_organization_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy google_iam_organization_access_policy}
 */
 export class IamOrganizationAccessPolicy extends cdktn.TerraformResource {
 
@@ -945,7 +945,7 @@ export class IamOrganizationAccessPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IamOrganizationAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOrganizationAccessPolicy to import
-  * @param importFromId The id of the existing IamOrganizationAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamOrganizationAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOrganizationAccessPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -957,7 +957,7 @@ export class IamOrganizationAccessPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_organization_access_policy google_iam_organization_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_organization_access_policy google_iam_organization_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -968,7 +968,7 @@ export class IamOrganizationAccessPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_iam_organization_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

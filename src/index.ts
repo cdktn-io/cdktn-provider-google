@@ -28,6 +28,7 @@ export * as activeDirectoryDomainTrust from './active-directory-domain-trust/ind
 export * as agentIdentityAuthProvider from './agent-identity-auth-provider/index';
 export * as agentRegistryBinding from './agent-registry-binding/index';
 export * as agentRegistryService from './agent-registry-service/index';
+export * as agenticApplicationsAnalystAgentPersona from './agentic-applications-analyst-agent-persona/index';
 export * as alloydbBackup from './alloydb-backup/index';
 export * as alloydbCluster from './alloydb-cluster/index';
 export * as alloydbInstance from './alloydb-instance/index';
@@ -732,6 +733,7 @@ export * as firebaseRemoteConfigRemoteConfig from './firebase-remote-config-remo
 export * as firebaserulesRelease from './firebaserules-release/index';
 export * as firebaserulesRuleset from './firebaserules-ruleset/index';
 export * as firestoreBackupSchedule from './firestore-backup-schedule/index';
+export * as firestoreChangeStream from './firestore-change-stream/index';
 export * as firestoreDatabase from './firestore-database/index';
 export * as firestoreDocument from './firestore-document/index';
 export * as firestoreField from './firestore-field/index';
@@ -1613,6 +1615,7 @@ export * as dataGoogleIamTestablePermissions from './data-google-iam-testable-pe
 export * as dataGoogleIamWorkforcePoolIamPolicy from './data-google-iam-workforce-pool-iam-policy/index';
 export * as dataGoogleIamWorkloadIdentityPool from './data-google-iam-workload-identity-pool/index';
 export * as dataGoogleIamWorkloadIdentityPoolIamPolicy from './data-google-iam-workload-identity-pool-iam-policy/index';
+export * as dataGoogleIamWorkloadIdentityPoolOpenidConfig from './data-google-iam-workload-identity-pool-openid-config/index';
 export * as dataGoogleIamWorkloadIdentityPoolProvider from './data-google-iam-workload-identity-pool-provider/index';
 export * as dataGoogleIapAgentRegistryAgentIamPolicy from './data-google-iap-agent-registry-agent-iam-policy/index';
 export * as dataGoogleIapAgentRegistryEndpointIamPolicy from './data-google-iap-agent-registry-endpoint-iam-policy/index';

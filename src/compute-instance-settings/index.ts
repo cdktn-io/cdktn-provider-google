@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,36 +21,36 @@ export interface ComputeInstanceSettingsConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#deletion_policy ComputeInstanceSettings#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#deletion_policy ComputeInstanceSettings#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}
   */
   readonly project?: string;
   /**
   * A reference to the zone where the machine resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#zone ComputeInstanceSettings#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#zone ComputeInstanceSettings#zone}
   */
   readonly zone: string;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#metadata ComputeInstanceSettings#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#metadata ComputeInstanceSettings#metadata}
   */
   readonly metadata?: ComputeInstanceSettingsMetadata;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#timeouts ComputeInstanceSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#timeouts ComputeInstanceSettings#timeouts}
   */
   readonly timeouts?: ComputeInstanceSettingsTimeouts;
 }
@@ -58,7 +58,7 @@ export interface ComputeInstanceSettingsMetadata {
   /**
   * A metadata key/value items map. The total size of all keys and values must be less than 512KB
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#items ComputeInstanceSettings#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#items ComputeInstanceSettings#items}
   */
   readonly items?: { [key: string]: string };
 }
@@ -142,15 +142,15 @@ export class ComputeInstanceSettingsMetadataOutputReference extends cdktn.Comple
 }
 export interface ComputeInstanceSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}
   */
   readonly update?: string;
 }
@@ -302,7 +302,7 @@ export class ComputeInstanceSettingsTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings google_compute_instance_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings google_compute_instance_settings}
 */
 export class ComputeInstanceSettings extends cdktn.TerraformResource {
 
@@ -318,7 +318,7 @@ export class ComputeInstanceSettings extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeInstanceSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInstanceSettings to import
-  * @param importFromId The id of the existing ComputeInstanceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInstanceSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInstanceSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -330,7 +330,7 @@ export class ComputeInstanceSettings extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -341,7 +341,7 @@ export class ComputeInstanceSettings extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_instance_settings',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

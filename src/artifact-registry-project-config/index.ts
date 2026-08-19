@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface ArtifactRegistryProjectConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#id ArtifactRegistryProjectConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#id ArtifactRegistryProjectConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +22,23 @@ export interface ArtifactRegistryProjectConfigConfig extends cdktn.TerraformMeta
   /**
   * The name of the location this config is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#location ArtifactRegistryProjectConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#location ArtifactRegistryProjectConfig#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#project ArtifactRegistryProjectConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#project ArtifactRegistryProjectConfig#project}
   */
   readonly project?: string;
   /**
   * platform_logs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#platform_logs_config ArtifactRegistryProjectConfig#platform_logs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#platform_logs_config ArtifactRegistryProjectConfig#platform_logs_config}
   */
   readonly platformLogsConfig?: ArtifactRegistryProjectConfigPlatformLogsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#timeouts ArtifactRegistryProjectConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#timeouts ArtifactRegistryProjectConfig#timeouts}
   */
   readonly timeouts?: ArtifactRegistryProjectConfigTimeouts;
 }
@@ -46,14 +46,14 @@ export interface ArtifactRegistryProjectConfigPlatformLogsConfig {
   /**
   * The state of the platform logs: enabled or disabled. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#logging_state ArtifactRegistryProjectConfig#logging_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#logging_state ArtifactRegistryProjectConfig#logging_state}
   */
   readonly loggingState?: string;
   /**
   * The severity level for the logs. Logs will be generated if their
   * severity level is >= than the value of the severity level mentioned here. Possible values: ["DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#severity_level ArtifactRegistryProjectConfig#severity_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#severity_level ArtifactRegistryProjectConfig#severity_level}
   */
   readonly severityLevel?: string;
 }
@@ -166,15 +166,15 @@ export class ArtifactRegistryProjectConfigPlatformLogsConfigOutputReference exte
 }
 export interface ArtifactRegistryProjectConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#create ArtifactRegistryProjectConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#create ArtifactRegistryProjectConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#delete ArtifactRegistryProjectConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#delete ArtifactRegistryProjectConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#update ArtifactRegistryProjectConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#update ArtifactRegistryProjectConfig#update}
   */
   readonly update?: string;
 }
@@ -326,7 +326,7 @@ export class ArtifactRegistryProjectConfigTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config google_artifact_registry_project_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config google_artifact_registry_project_config}
 */
 export class ArtifactRegistryProjectConfig extends cdktn.TerraformResource {
 
@@ -342,7 +342,7 @@ export class ArtifactRegistryProjectConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ArtifactRegistryProjectConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArtifactRegistryProjectConfig to import
-  * @param importFromId The id of the existing ArtifactRegistryProjectConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArtifactRegistryProjectConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArtifactRegistryProjectConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -354,7 +354,7 @@ export class ArtifactRegistryProjectConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/artifact_registry_project_config google_artifact_registry_project_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/artifact_registry_project_config google_artifact_registry_project_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -365,7 +365,7 @@ export class ArtifactRegistryProjectConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_artifact_registry_project_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
